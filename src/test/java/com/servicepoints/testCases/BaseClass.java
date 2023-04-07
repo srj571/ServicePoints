@@ -42,7 +42,14 @@ public class BaseClass {
 	public String agentSupplierName = rc.getAgentSupplierName();
 	public String agentSupportName = rc.getAgentSupportName();
 	public String adminSupplierName = rc.getAdminSUPName();
-
+	public String cpass=rc.getcPass();
+	public String pass=rc.getPass();
+	public String amail=rc.getEmail();
+	public String accode=rc.getCode();
+	public String alname=rc.getAgentlname();
+	public String afname=rc.getAgentfname();
+	public String adminagpass=rc.getAdminPass();
+	public String adminemail=rc.getAdminSUPmail();
 	public static WebDriver driver;
 
 	@BeforeClass

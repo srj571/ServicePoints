@@ -14,7 +14,8 @@
 			<!--<class name="com.servicepoints.testCases.TC03_UserSignUpTest"></class>-->
 			<!--<class name="com.servicepoints.testCases.TC04_VerifyClientApprovalTest"></class>-->
 			<!--<class name="com.servicepoints.testCases.TC05_VerifyAdminSUPLoginTest"></class>-->
-			<class name="com.servicepoints.testCases.TC06_VerifySupplierSignUp"></class>
+			<!--<class name="com.servicepoints.testCases.TC06_VerifySupplierSignUp"></class>-->
+			<class name="com.servicepoints.testCases.TC07_VerifyAddAgentSupBySup"></class>
 		 </classes>
      </test> 
 </suite> 

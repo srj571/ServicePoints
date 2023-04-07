@@ -631,3 +631,100 @@
 [INFO ] 2023-04-07 14:39:25.299 [main] BaseClass - Mailid is entered.
 [INFO ] 2023-04-07 14:39:25.347 [main] BaseClass - Password is entered.
 [INFO ] 2023-04-07 14:39:28.763 [main] BaseClass - Verification of Supplier Sign in is failed.
+[INFO ] 2023-04-07 14:53:03.840 [main] BaseClass - Supplier name is entered.
+[INFO ] 2023-04-07 14:53:03.892 [main] BaseClass - Supplier last name is entered.
+[INFO ] 2023-04-07 14:53:03.941 [main] BaseClass - Country code is entered.
+[INFO ] 2023-04-07 14:53:04.033 [main] BaseClass - Mobile number is entered.
+[INFO ] 2023-04-07 14:53:07.202 [main] BaseClass - Supplier mail is entered.
+[INFO ] 2023-04-07 14:53:07.269 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-07 14:53:10.522 [main] BaseClass - Supplier is Successfully Signed up.
+[INFO ] 2023-04-07 14:53:18.274 [main] BaseClass - Mailid is entered.
+[INFO ] 2023-04-07 14:53:18.321 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-07 14:53:21.721 [main] BaseClass - Verification of Supplier Sign in is failed.
+[INFO ] 2023-04-07 15:01:53.004 [main] BaseClass - Supplier name is entered.
+[INFO ] 2023-04-07 15:01:53.058 [main] BaseClass - Supplier last name is entered.
+[INFO ] 2023-04-07 15:01:53.114 [main] BaseClass - Country code is entered.
+[INFO ] 2023-04-07 15:01:53.210 [main] BaseClass - Mobile number is entered.
+[INFO ] 2023-04-07 15:01:56.346 [main] BaseClass - Supplier mail is entered.
+[INFO ] 2023-04-07 15:01:56.415 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-07 15:01:59.670 [main] BaseClass - Supplier is Successfully Signed up.
+[INFO ] 2023-04-07 15:02:07.431 [main] BaseClass - Mailid is entered.
+[INFO ] 2023-04-07 15:02:07.484 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-07 15:02:13.888 [main] BaseClass - Verification of Supplier Sign in is failed.
+[INFO ] 2023-04-07 15:05:56.181 [main] BaseClass - Supplier name is entered.
+[INFO ] 2023-04-07 15:05:56.236 [main] BaseClass - Supplier last name is entered.
+[INFO ] 2023-04-07 15:05:56.292 [main] BaseClass - Country code is entered.
+[INFO ] 2023-04-07 15:05:56.394 [main] BaseClass - Mobile number is entered.
+[INFO ] 2023-04-07 15:05:59.601 [main] BaseClass - Supplier mail is entered.
+[INFO ] 2023-04-07 15:05:59.674 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-07 15:06:02.930 [main] BaseClass - Supplier is Successfully Signed up.
+[INFO ] 2023-04-07 15:06:10.726 [main] BaseClass - Mailid is entered.
+[INFO ] 2023-04-07 15:06:10.772 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-07 15:06:14.188 [main] BaseClass - Verification of Supplier Sign in is failed.
+[INFO ] 2023-04-07 15:09:08.064 [main] BaseClass - Supplier name is entered.
+[INFO ] 2023-04-07 15:09:08.116 [main] BaseClass - Supplier last name is entered.
+[INFO ] 2023-04-07 15:09:08.169 [main] BaseClass - Country code is entered.
+[INFO ] 2023-04-07 15:09:08.265 [main] BaseClass - Mobile number is entered.
+[INFO ] 2023-04-07 15:09:11.425 [main] BaseClass - Supplier mail is entered.
+[INFO ] 2023-04-07 15:09:11.499 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-07 15:09:15.110 [main] BaseClass - Supplier is Failed to Signed up.
+[INFO ] 2023-04-07 15:09:18.628 [main] BaseClass - Mailid is entered.
+[INFO ] 2023-04-07 15:09:18.681 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-07 15:09:25.098 [main] BaseClass - Verification of Supplier Sign in is failed.
+[INFO ] 2023-04-07 15:10:28.410 [main] BaseClass - Supplier name is entered.
+[INFO ] 2023-04-07 15:10:28.466 [main] BaseClass - Supplier last name is entered.
+[INFO ] 2023-04-07 15:10:28.515 [main] BaseClass - Country code is entered.
+[INFO ] 2023-04-07 15:10:28.609 [main] BaseClass - Mobile number is entered.
+[INFO ] 2023-04-07 15:10:31.754 [main] BaseClass - Supplier mail is entered.
+[INFO ] 2023-04-07 15:10:31.824 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-07 15:10:35.401 [main] BaseClass - Supplier is Failed to Signed up.
+[INFO ] 2023-04-07 15:10:38.963 [main] BaseClass - Mailid is entered.
+[INFO ] 2023-04-07 15:10:39.014 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-07 15:10:42.093 [main] BaseClass - Verification of Supplier Sign in is Successed.
+[INFO ] 2023-04-07 17:04:43.948 [main] BaseClass - Supplier name is entered.
+[INFO ] 2023-04-07 17:04:44.002 [main] BaseClass - Supplier last name is entered.
+[INFO ] 2023-04-07 17:04:44.051 [main] BaseClass - Country code is entered.
+[INFO ] 2023-04-07 17:04:44.147 [main] BaseClass - Mobile number is entered.
+[INFO ] 2023-04-07 17:04:47.304 [main] BaseClass - Supplier mail is entered.
+[INFO ] 2023-04-07 17:04:47.385 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-07 17:04:50.985 [main] BaseClass - Supplier is Failed to Signed up.
+[INFO ] 2023-04-07 17:06:08.642 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-07 17:06:08.720 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-07 17:06:11.794 [main] BaseClass - Admin(SUP) Loged in.
+[INFO ] 2023-04-07 17:06:12.492 [main] BaseClass - Go to the Team page.
+[INFO ] 2023-04-07 17:06:16.686 [main] BaseClass - First name is entered.
+[INFO ] 2023-04-07 17:06:16.761 [main] BaseClass - Last name is entered.
+[INFO ] 2023-04-07 17:06:16.872 [main] BaseClass - Country code is entered.
+[INFO ] 2023-04-07 17:06:16.984 [main] BaseClass - Mobile number is entered.
+[INFO ] 2023-04-07 17:06:20.371 [main] BaseClass - Agent info is saved.
+[INFO ] 2023-04-07 17:06:31.745 [main] BaseClass - erification of Agent Supplier Login is Failed.
+[INFO ] 2023-04-07 17:09:54.159 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-07 17:09:54.236 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-07 17:09:57.308 [main] BaseClass - Admin(SUP) Loged in.
+[INFO ] 2023-04-07 17:09:58.511 [main] BaseClass - Go to the Team page.
+[INFO ] 2023-04-07 17:10:02.704 [main] BaseClass - First name is entered.
+[INFO ] 2023-04-07 17:10:02.776 [main] BaseClass - Last name is entered.
+[INFO ] 2023-04-07 17:10:02.857 [main] BaseClass - Country code is entered.
+[INFO ] 2023-04-07 17:10:02.957 [main] BaseClass - Mobile number is entered.
+[INFO ] 2023-04-07 17:10:06.374 [main] BaseClass - Agent info is saved.
+[INFO ] 2023-04-07 17:10:17.814 [main] BaseClass - Verification of Agent Supplier Login is Failed.
+[INFO ] 2023-04-07 17:12:11.371 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-07 17:12:11.454 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-07 17:12:14.525 [main] BaseClass - Admin(SUP) Loged in.
+[INFO ] 2023-04-07 17:12:15.538 [main] BaseClass - Go to the Team page.
+[INFO ] 2023-04-07 17:12:19.793 [main] BaseClass - First name is entered.
+[INFO ] 2023-04-07 17:12:19.869 [main] BaseClass - Last name is entered.
+[INFO ] 2023-04-07 17:12:19.952 [main] BaseClass - Country code is entered.
+[INFO ] 2023-04-07 17:12:20.058 [main] BaseClass - Mobile number is entered.
+[INFO ] 2023-04-07 17:12:23.441 [main] BaseClass - Agent info is saved.
+[INFO ] 2023-04-07 17:12:34.822 [main] BaseClass - Verification of Agent Supplier Login is Failed.
+[INFO ] 2023-04-07 17:14:43.039 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-07 17:14:43.123 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-07 17:14:46.193 [main] BaseClass - Admin(SUP) Loged in.
+[INFO ] 2023-04-07 17:14:47.595 [main] BaseClass - Go to the Team page.
+[INFO ] 2023-04-07 17:14:51.795 [main] BaseClass - First name is entered.
+[INFO ] 2023-04-07 17:14:51.873 [main] BaseClass - Last name is entered.
+[INFO ] 2023-04-07 17:14:51.960 [main] BaseClass - Country code is entered.
+[INFO ] 2023-04-07 17:14:52.058 [main] BaseClass - Mobile number is entered.
+[INFO ] 2023-04-07 17:14:55.484 [main] BaseClass - Agent info is saved.
+[INFO ] 2023-04-07 17:15:06.851 [main] BaseClass - Verification of Agent Supplier Login is Failed.

@@ -24,8 +24,11 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TC06_VerifySupplierSignUp {
 	WebDriver driver;
+	
 	ReadConfig rc = new ReadConfig();
+	
 	public static Logger logger = LogManager.getLogger(BaseClass.class.getName());
+	
 	public String baseURL = rc.getApplicationUrl();
 	public String supurl = rc.getSuppllierURL();
 	public String supfname = rc.getSupFirstName();
@@ -34,29 +37,27 @@ public class TC06_VerifySupplierSignUp {
 	public String supemail = rc.getSupEmail();
 	public String suppass = rc.getSupPass();
 	public String supcpass = rc.getSupCpass();
-	public String supfullname=supfname+suplname;
 
 	@BeforeTest
 	public void setUp() {
 		WebDriverManager.chromedriver().setup();
-		driver = new ChromeDriver();	
+		driver = new ChromeDriver();
 	}
 
 	@Test
 	public void verifySupplierSignUp() throws InterruptedException, IOException {
-		
+
 		driver.get(supurl);
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		
-		
+
 		SignUpPage sup = new SignUpPage(driver);
 		sup.setUserFirstName(supfname);
 		logger.info("Supplier name is entered.");
 
 		sup.setUserLastName(suplname);
 		logger.info("Supplier last name is entered.");
-		
+
 		sup.setCountryCode(supccode);
 		logger.info("Country code is entered.");
 
@@ -86,20 +87,19 @@ public class TC06_VerifySupplierSignUp {
 			logger.info("Supplier is Failed to Signed up.");
 			Assert.assertTrue(false);
 		}
-		
+
 		driver.get(baseURL);
 		Thread.sleep(3000);
-		
-		LoginPage lp=new LoginPage(driver);
+
+		LoginPage lp = new LoginPage(driver);
 		lp.setAdminMailId(supemail);
 		logger.info("Mailid is entered.");
 		lp.setAdminPassword(suppass);
 		logger.info("Password is entered.");
 		lp.clickLoginbtn();
 		Thread.sleep(3000);
-		
-		
-		if(driver.getPageSource().contains(supfullname)) {
+
+		if (driver.getTitle().contains("Admin Supplier Dashboard | Service Points")) {
 			logger.info("Verification of Supplier Sign in is Successed.");
 			Assert.assertTrue(true);
 			Thread.sleep(4000);
@@ -108,7 +108,6 @@ public class TC06_VerifySupplierSignUp {
 			logger.info("Verification of Supplier Sign in is failed.");
 			Assert.assertTrue(false);
 		}
-		
 
 	}
 

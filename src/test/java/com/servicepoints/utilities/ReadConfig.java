@@ -138,9 +138,45 @@ public class ReadConfig {
 		return supcpass;
 	}
 	
+	public String getAdminSUPmail() {
+		String admemail=po.getProperty("AdminSupEmail");
+		return admemail;
+	}
 	
+	public String getAdminPass() {
+		String suppass=po.getProperty("AdminsupPass");
+		return suppass;
+	}
 	
+	public String getAgentfname() {
+		String fname=po.getProperty("Fname");
+		return fname;
+	}
 	
+	public String getAgentlname() {
+		String lname=po.getProperty("Lname");
+		return lname;
+	}
 	
+	public String getCode() {
+		String code=po.getProperty("Code");
+		return code;
+	}
+	
+	public String getEmail() {
+		String mail=po.getProperty("Email");
+		return mail;
+	}
+	
+	public String getPass() {
+		String pass=po.getProperty("Pass");
+		return pass;
+	}
+	
+	public String getcPass() {
+		String cpass=po.getProperty("cpass");
+		return cpass;
+	}
 }
+
 
