@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" >
+	<listeners>
+		<listener class-name="com.servicepoints.utilities.Reporting"></listener>
+	</listeners>
+		
+	<parameter name="browser" value="chrome"></parameter>
+	
+     <test  name="Testng">
+         <classes>
+			<!--<class name="com.servicepoints.testCases.TC01_AdminLoginTest"></class>-->
+			<!--<class name="com.servicepoints.testCases.TC02_VerifyClientLoginTest"></class>-->
+			<!--<class name="com.servicepoints.testCases.TC03_UserSignUpTest"></class>-->
+			<!--<class name="com.servicepoints.testCases.TC04_VerifyClientApprovalTest"></class>-->
+			<!--<class name="com.servicepoints.testCases.TC05_VerifyAdminSUPLoginTest"></class>-->
+			<class name="com.servicepoints.testCases.TC06_VerifySupplierSignUp"></class>
+		 </classes>
+     </test> 
+</suite> 
