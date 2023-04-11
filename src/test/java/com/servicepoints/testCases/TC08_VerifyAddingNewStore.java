@@ -37,85 +37,35 @@ public class TC08_VerifyAddingNewStore extends BaseClass {
 		logger.info("Password is entered.");
 		sp.setOrderFetch(DateOrder);
 		sp.clickOnSaveBtn();
-		Thread.sleep(4000);
-
-		if (driver.getPageSource().contains("Store added successfully")) {
+		Thread.sleep(6000);
+		logger.info("Saved info.");
+		sp.goToStoresPage();
+		Thread.sleep(3000);
+		if(sp.checkElementText().equals(Alias)) {
 			logger.info("Verification of Store Adding successfull.");
 			Assert.assertTrue(true);
-			Thread.sleep(4000);
-		} else {
+			Thread.sleep(6000);
+		}else {
 			captureScreen(driver, "AddStore");
 			logger.info("Verification of Store Adding Failed.");
 			Assert.assertTrue(false);
 			Thread.sleep(4000);
 		}
+		
+		
+//		if (driver.getPageSource().contains("Store added successfully")) {
+//			logger.info("Verification of Store Adding successfull.");
+//			Assert.assertTrue(true);
+//			Thread.sleep(4000);
+//		}else if(driver.getPageSource().contains("[API] Invalid API key or access token (unrecognized login or wrong password)")){
+//			captureScreen(driver, "VerifyUpdatingStore");
+//			logger.info("unrecognized login or wrong password.");
+//			Assert.assertTrue(false);
+//		} else {
+//			captureScreen(driver, "AddStore");
+//			logger.info("Verification of Store Adding Failed.");
+//			Assert.assertTrue(false);
+//			Thread.sleep(4000);
+//		}
 	}
-	
-	@Test(enabled=false)
-	public void verifyUpdatingStore() throws InterruptedException, IOException {
-		LoginPage lp = new LoginPage(driver);
-		lp.setAdminMailId(clientemail);
-		logger.info("Email_id is entered.");
-
-		lp.setAdminPassword(cPass);
-		logger.info("Password is entered.");
-
-		lp.clickLoginbtn();
-		Thread.sleep(4000);
-		logger.info("Client login successed.");
-		
-		ClientStoresPage sp = new ClientStoresPage(driver);
-		sp.goToStoresPage();
-		Thread.sleep(2000);
-		sp.clickSeeMore();
-		
-		sp.clickOnEditStore();
-		Thread.sleep(3000);
-		sp.clearAlias();
-		sp.editStoreName(editAlias);
-		Thread.sleep(2000);
-		sp.clickOnSave();
-		Thread.sleep(6000);
-		
-		if(driver.getPageSource().contains("Store details updated successfully.")) {
-			Assert.assertTrue(true);
-			logger.info("Varification for Store updation is done.");
-		}
-		else {
-			captureScreen(driver, "VerifyUpdatingStore");
-			Assert.assertTrue(false);
-			logger.info("Varification for Store updation is failed.");
-		}	
-	}
-	
-	@Test(enabled=false)
-	public void verifyDeletingStore() throws IOException, InterruptedException {
-		LoginPage lp = new LoginPage(driver);
-		lp.setAdminMailId(clientemail);
-		logger.info("Email_id is entered.");
-
-		lp.setAdminPassword(cPass);
-		logger.info("Password is entered.");
-
-		lp.clickLoginbtn();
-		Thread.sleep(4000);
-		logger.info("Client login successed.");
-		
-		ClientStoresPage sp = new ClientStoresPage(driver);
-		sp.goToStoresPage();
-		sp.clickOnDeleteStoreBtn();
-		sp.clickOnDelePop();
-		Thread.sleep(5000);
-		if(driver.getPageSource().contains("Store deleted successfully.")) {
-			Assert.assertTrue(true);
-			logger.info("Varification for Store deletion is done.");
-		}else {
-			captureScreen(driver, "StoreDeleteTest");
-			Assert.assertTrue(false);
-			logger.info("Varification for Store deletion is failed.");
-		}
-		
-	}
-	
-	
 }

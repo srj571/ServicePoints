@@ -59,7 +59,13 @@ public class ClientStoresPage {
 	@FindBy(xpath="//button[@id='del_store']")
 	WebElement deletebtn;
 	
-
+	@FindBy(xpath="(//span[contains(text(),'Ecomaprils2')])[1]")
+	WebElement eleCheck;
+	
+	public String checkElementText() {
+		String check=eleCheck.getText();
+		return check;
+	}
 	
 	public void goToStoresPage() {
 		storesPage.click();

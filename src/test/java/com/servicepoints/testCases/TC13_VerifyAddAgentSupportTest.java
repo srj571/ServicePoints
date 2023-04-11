@@ -11,56 +11,56 @@ import com.servicepoints.PageObjects.AdminAccountsPage;
 import com.servicepoints.PageObjects.AdminSupplierPage;
 import com.servicepoints.PageObjects.LoginPage;
 
-public class TC13_VerifyAddAgentSupportTest extends BaseClass{
-	
+public class TC13_VerifyAddAgentSupportTest extends BaseClass {
+
 	@Test
 	public void verifyAddAgentSupport() throws InterruptedException {
-		LoginPage lp=new LoginPage(driver);
+		LoginPage lp = new LoginPage(driver);
 		logger.info("Application Opened.");
-		
+
 		lp.setAdminMailId(AdminMailID);
 		logger.info("Admin Email_id is entered.");
 		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-		
+
 		lp.setAdminPassword(AdminPassword);
 		logger.info("Admin password is entered.");
 		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-		
+
 		lp.clickLoginbtn();
-		
-		AdminAccountsPage adminAccount=new AdminAccountsPage(driver);
+
+		AdminAccountsPage adminAccount = new AdminAccountsPage(driver);
 		adminAccount.getAdminAccountsPage();
 		logger.info("Accounts page opened.");
 		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-		
+
 		adminAccount.enterUserName(TeamLName);
 		logger.info("Entered Teamleader name in search field.");
 		Thread.sleep(4000);
 		adminAccount.clickOnTeamleaderTab();
-		
+
 		adminAccount.clickOnLoginBtn();
 		logger.info("Logged in to the Teamleader Account.");
 		Thread.sleep(6000);
-		
-		Set<String> window=driver.getWindowHandles();
-		Iterator<String> it=window.iterator();
-		String parent=it.next();
-		String child=it.next();
+
+		Set<String> window = driver.getWindowHandles();
+		Iterator<String> it = window.iterator();
+		String parent = it.next();
+		String child = it.next();
 		driver.switchTo().window(child);
 		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-		
+
 		adminAccount.clickONTeamTab();
-		
+
 		adminAccount.clickOnAddAgentTab();
 		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-		AdminSupplierPage asp=new AdminSupplierPage(driver);
+		AdminSupplierPage asp = new AdminSupplierPage(driver);
 		asp.sendFName(TAfname);
 		Thread.sleep(1000);
 		asp.sendLname(TAlname);
 		Thread.sleep(1000);
 		asp.sendCCode(TACode);
 		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-		String num = BaseClass.getRandomNum();		
+		String num = BaseClass.getRandomNum();
 		asp.sendmobNum(num);
 		Thread.sleep(1000);
 		asp.sendEmail(TAEmail);
@@ -72,45 +72,41 @@ public class TC13_VerifyAddAgentSupportTest extends BaseClass{
 		adminAccount.clickOnAddAgetSP();
 		logger.info("Click on Add Agent Button.");
 		Thread.sleep(4000);
-		
-		
-		if(driver.getPageSource().contains("Agents are successfully registered.")) {
+
+		if (driver.getPageSource().contains("Agents are successfully registered.")) {
 			logger.info("Verification of AgentSupport adding Successfull.");
-			Assert.assertTrue(true);	
+			Assert.assertTrue(true);
 			Thread.sleep(4000);
-		}else {
+		} else {
 			logger.info("Verification of AgentSupport adding failed.");
-			Assert.assertTrue(false);	
+			Assert.assertTrue(false);
 			driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 		}
-		
+
 		adminAccount.closeAgentPopUp();
 		Thread.sleep(2000);
 		adminAccount.logoutTeaml();
 		Thread.sleep(3000);
-		
+
 		lp.setAdminMailId(TAEmail);
 		logger.info("Agent Support email is entered.");
 		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-		
+
 		lp.setAdminPassword(TAPass);
 		logger.info("Agent Support password is entered.");
 		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-		
+
 		lp.clickLoginbtn();
 		Thread.sleep(5000);
-		
-		if(driver.getPageSource().contains(TAfname)) {
+
+		if (driver.getPageSource().contains(TAfname)) {
 			logger.info("Verification of AgentSupport login Successfull.");
-			Assert.assertTrue(true);	
+			Assert.assertTrue(true);
 			driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-		}else {
+		} else {
 			logger.info("Verification of AgentSupport login failed.");
-			Assert.assertTrue(false);	
+			Assert.assertTrue(false);
 			driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 		}
-		
-		
-		
 	}
 }

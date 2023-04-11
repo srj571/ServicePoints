@@ -1520,3 +1520,108 @@
 [INFO ] 2023-04-11 16:57:35.160 [main] BaseClass - Agent Support email is entered.
 [INFO ] 2023-04-11 16:57:35.227 [main] BaseClass - Agent Support password is entered.
 [INFO ] 2023-04-11 16:57:40.342 [main] BaseClass - Verification of AgentSupport login Successfull.
+[INFO ] 2023-04-11 17:24:00.223 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-11 17:24:00.322 [main] BaseClass - Admin Email_id is entered.
+[INFO ] 2023-04-11 17:24:00.403 [main] BaseClass - Admin password is entered.
+[INFO ] 2023-04-11 17:24:04.237 [main] BaseClass - Accounts page opened.
+[INFO ] 2023-04-11 17:24:04.310 [main] BaseClass - Entered Teamleader name in search field.
+[INFO ] 2023-04-11 17:24:08.472 [main] BaseClass - Logged in to the Teamleader Account.
+[INFO ] 2023-04-11 17:24:22.087 [main] BaseClass - Click on Add Agent Button.
+[INFO ] 2023-04-11 17:24:26.155 [main] BaseClass - Verification of AgentSupport adding Successfull.
+[INFO ] 2023-04-11 17:24:36.073 [main] BaseClass - Agent Support email is entered.
+[INFO ] 2023-04-11 17:24:36.147 [main] BaseClass - Agent Support password is entered.
+[INFO ] 2023-04-11 17:24:41.263 [main] BaseClass - Verification of AgentSupport login Successfull.
+[INFO ] 2023-04-11 17:27:43.066 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-11 17:27:43.147 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-11 17:27:47.216 [main] BaseClass - Client login successed.
+[INFO ] 2023-04-11 17:27:56.798 [main] BaseClass - Domain name is entered.
+[INFO ] 2023-04-11 17:28:01.019 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-11 17:28:05.268 [main] BaseClass - Verification of Store Adding successfull.
+[INFO ] 2023-04-11 17:28:15.137 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-11 17:28:15.219 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-11 17:28:19.291 [main] BaseClass - Client login successed.
+[INFO ] 2023-04-11 17:28:35.755 [main] BaseClass - Varification for Store updation is done.
+[INFO ] 2023-04-11 17:28:40.589 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-11 17:28:40.668 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-11 17:28:44.738 [main] BaseClass - Client login successed.
+[INFO ] 2023-04-11 17:28:51.040 [main] BaseClass - Varification for Store deletion is done.
+[INFO ] 2023-04-11 18:05:42.068 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-11 18:05:42.146 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-11 18:05:46.218 [main] BaseClass - Client login successed.
+[INFO ] 2023-04-11 18:05:48.244 [main] BaseClass - Domain name is entered.
+[INFO ] 2023-04-11 18:05:52.458 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-11 18:05:56.726 [main] BaseClass - Verification of Store Adding successfull.
+[INFO ] 2023-04-11 18:06:49.382 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-11 18:06:49.464 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-11 18:06:53.543 [main] BaseClass - Client login successed.
+[INFO ] 2023-04-11 18:06:56.094 [main] BaseClass - Domain name is entered.
+[INFO ] 2023-04-11 18:07:00.307 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-11 18:07:04.559 [main] BaseClass - Verification of Store Adding successfull.
+[INFO ] 2023-04-11 18:08:21.013 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-11 18:08:21.089 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-11 18:08:25.159 [main] BaseClass - Client login successed.
+[INFO ] 2023-04-11 18:08:27.592 [main] BaseClass - Domain name is entered.
+[INFO ] 2023-04-11 18:08:31.796 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-11 18:08:36.035 [main] BaseClass - Verification of Store Adding successfull.
+[INFO ] 2023-04-11 18:10:45.504 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-11 18:10:45.594 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-11 18:10:49.664 [main] BaseClass - Client login successed.
+[INFO ] 2023-04-11 18:10:51.665 [main] BaseClass - Domain name is entered.
+[INFO ] 2023-04-11 18:10:55.829 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-11 18:11:00.055 [main] BaseClass - Verification of Store Adding successfull.
+[INFO ] 2023-04-11 18:14:01.767 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-11 18:14:01.842 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-11 18:14:05.908 [main] BaseClass - Client login successed.
+[INFO ] 2023-04-11 18:14:10.089 [main] BaseClass - Domain name is entered.
+[INFO ] 2023-04-11 18:14:14.282 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-11 18:14:18.518 [main] BaseClass - Verification of Store Adding successfull.
+[INFO ] 2023-04-11 18:18:58.396 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-11 18:18:58.470 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-11 18:19:02.538 [main] BaseClass - Client login successed.
+[INFO ] 2023-04-11 18:19:05.601 [main] BaseClass - Domain name is entered.
+[INFO ] 2023-04-11 18:19:09.791 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-11 18:19:14.038 [main] BaseClass - Verification of Store Adding successfull.
+[INFO ] 2023-04-11 18:43:16.579 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-11 18:43:16.664 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-11 18:43:20.741 [main] BaseClass - Client login successed.
+[INFO ] 2023-04-11 18:43:23.503 [main] BaseClass - Domain name is entered.
+[INFO ] 2023-04-11 18:43:27.697 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-11 18:43:34.600 [main] BaseClass - Verification of Store Adding successfull.
+[INFO ] 2023-04-11 18:44:55.691 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-11 18:44:55.764 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-11 18:44:59.834 [main] BaseClass - Client login successed.
+[INFO ] 2023-04-11 18:45:02.193 [main] BaseClass - Domain name is entered.
+[INFO ] 2023-04-11 18:45:06.383 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-11 18:48:15.750 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-11 18:48:15.826 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-11 18:48:19.896 [main] BaseClass - Client login successed.
+[INFO ] 2023-04-11 18:48:22.519 [main] BaseClass - Domain name is entered.
+[INFO ] 2023-04-11 18:48:26.708 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-11 18:50:37.968 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-11 18:50:38.044 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-11 18:50:42.110 [main] BaseClass - Client login successed.
+[INFO ] 2023-04-11 18:50:47.370 [main] BaseClass - Domain name is entered.
+[INFO ] 2023-04-11 18:50:51.577 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-11 18:50:58.417 [main] BaseClass - Verification of Store Adding successfull.
+[INFO ] 2023-04-11 18:51:45.691 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-11 18:51:45.779 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-11 18:51:49.853 [main] BaseClass - Client login successed.
+[INFO ] 2023-04-11 18:51:54.275 [main] BaseClass - Domain name is entered.
+[INFO ] 2023-04-11 18:51:58.543 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-11 18:53:21.254 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-11 18:53:21.336 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-11 18:53:25.404 [main] BaseClass - Client login successed.
+[INFO ] 2023-04-11 18:53:28.038 [main] BaseClass - Domain name is entered.
+[INFO ] 2023-04-11 18:54:25.410 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-11 18:54:25.489 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-11 18:54:29.556 [main] BaseClass - Client login successed.
+[INFO ] 2023-04-11 18:54:38.217 [main] BaseClass - Domain name is entered.
+[INFO ] 2023-04-11 18:54:42.429 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-11 18:54:48.629 [main] BaseClass - Saved info.
+[INFO ] 2023-04-11 18:57:25.654 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-11 18:57:25.746 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-11 18:57:29.823 [main] BaseClass - Client login successed.
+[INFO ] 2023-04-11 18:57:32.387 [main] BaseClass - Domain name is entered.
+[INFO ] 2023-04-11 18:57:36.606 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-11 18:57:42.815 [main] BaseClass - Saved info.
+[INFO ] 2023-04-11 18:57:47.088 [main] BaseClass - Verification of Store Adding Failed.
