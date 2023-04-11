@@ -252,6 +252,42 @@ public class ReadConfig {
 		String editAlias=po.getProperty("EditStoreAlias");
 		return editAlias;
 	}
+	
+	public String setTeamlName() {
+		String tname=po.getProperty("TeamleaderName");
+		return tname;
+	}
+	
+	public String setFName() {
+		String tfname=po.getProperty("tfname");
+		return tfname;
+	}
+	
+	public String setlName() {
+		String tlname=po.getProperty("tlname");
+		return tlname;
+	}
+	
+	public String settCode() {
+		String tcode=po.getProperty("tcode");
+		return tcode;
+	}
+	
+	public String settEmail() {
+		String temail=po.getProperty("temail");
+		return temail;
+	}
+	
+	public String setTPass() {
+		String tpass=po.getProperty("tpass");
+		return tpass;
+	}
+	
+	public String setCPass() {
+		String cpass=po.getProperty("tcpass");
+		return cpass;
+	}
+	
 }
 
 

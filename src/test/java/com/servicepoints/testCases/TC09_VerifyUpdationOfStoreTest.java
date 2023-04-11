@@ -9,7 +9,7 @@ import com.servicepoints.PageObjects.LoginPage;
 
 import junit.framework.Assert;
 
-public class TC_VerifyUpdationOfStore extends BaseClass{
+public class TC09_VerifyUpdationOfStoreTest extends BaseClass{
 	
 	
 	@Test

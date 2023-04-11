@@ -10,7 +10,7 @@ import com.servicepoints.PageObjects.LoginPage;
 
 import junit.framework.Assert;
 
-public class TC10_VerifyAcceptQuotation extends BaseClass {
+public class TC12_VerifyAcceptQuotationTest extends BaseClass {
 
 	@Test
 	public void verifyAcceptQuote() throws InterruptedException {

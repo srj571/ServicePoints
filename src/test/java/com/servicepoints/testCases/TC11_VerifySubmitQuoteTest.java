@@ -11,7 +11,7 @@ import com.servicepoints.PageObjects.LoginPage;
 
 import junit.framework.Assert;
 
-public class TC09_VerifySubmitQuote extends BaseClass {
+public class TC11_VerifySubmitQuoteTest extends BaseClass {
 
 	@Test
 	public void verifySubmitQuote() throws InterruptedException, IOException {

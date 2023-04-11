@@ -65,7 +65,14 @@ public class BaseClass {
 	public String StorePass=rc.setStorePass();
 	public String DateOrder=rc.setFetchDate();
 	public String editAlias=rc.editAlias();
-	
+	public String TeamLName=rc.setTeamlName();
+	public String TAfname=rc.setFName();
+	public String TAlname=rc.setlName();
+	public String TACode=rc.settCode();
+	public String TAEmail=rc.settEmail();
+	public String TAPass=rc.setTPass();
+	public String TAcPass=rc.setCPass();
+					
 	public static WebDriver driver;
 
 	@BeforeClass

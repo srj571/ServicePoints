@@ -9,7 +9,7 @@ import com.servicepoints.PageObjects.LoginPage;
 
 import junit.framework.Assert;
 
-public class Tc_DeletionOfStore extends BaseClass{
+public class TC10_VerifyDeletionOfStoreTest extends BaseClass{
 	@Test
 	public void verifyDeletingStore() throws IOException, InterruptedException {
 		LoginPage lp = new LoginPage(driver);

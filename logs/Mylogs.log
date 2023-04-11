@@ -1363,3 +1363,160 @@
 [INFO ] 2023-04-11 12:39:33.081 [main] BaseClass - Domain name is entered.
 [INFO ] 2023-04-11 12:39:37.278 [main] BaseClass - Password is entered.
 [INFO ] 2023-04-11 12:39:41.566 [main] BaseClass - Verification of Store Adding successfull.
+[INFO ] 2023-04-11 12:47:48.770 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-11 12:47:48.855 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-11 12:47:52.944 [main] BaseClass - Client login successed.
+[INFO ] 2023-04-11 12:47:56.853 [main] BaseClass - Domain name is entered.
+[INFO ] 2023-04-11 12:48:01.087 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-11 12:48:05.346 [main] BaseClass - Verification of Store Adding successfull.
+[INFO ] 2023-04-11 12:48:19.803 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-11 12:48:19.879 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-11 12:48:23.951 [main] BaseClass - Client login successed.
+[INFO ] 2023-04-11 12:48:40.683 [main] BaseClass - Varification for Store updation is done.
+[INFO ] 2023-04-11 12:48:47.952 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-11 12:48:48.049 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-11 12:48:52.138 [main] BaseClass - Client login successed.
+[INFO ] 2023-04-11 12:48:58.621 [main] BaseClass - Varification for Store deletion is done.
+[INFO ] 2023-04-11 16:04:51.475 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-11 16:04:51.599 [main] BaseClass - Admin Email_id is entered.
+[INFO ] 2023-04-11 16:04:51.692 [main] BaseClass - Admin password is entered.
+[INFO ] 2023-04-11 16:04:55.902 [main] BaseClass - Accounts page opened.
+[INFO ] 2023-04-11 16:04:55.990 [main] BaseClass - Entered Teamleader name in search field.
+[INFO ] 2023-04-11 16:04:56.113 [main] BaseClass - Logged in to the Teamleader Account.
+[INFO ] 2023-04-11 16:06:21.385 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-11 16:06:21.481 [main] BaseClass - Admin Email_id is entered.
+[INFO ] 2023-04-11 16:06:21.569 [main] BaseClass - Admin password is entered.
+[INFO ] 2023-04-11 16:06:25.412 [main] BaseClass - Accounts page opened.
+[INFO ] 2023-04-11 16:06:25.504 [main] BaseClass - Entered Teamleader name in search field.
+[INFO ] 2023-04-11 16:06:25.626 [main] BaseClass - Logged in to the Teamleader Account.
+[INFO ] 2023-04-11 16:08:01.817 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-11 16:08:01.917 [main] BaseClass - Admin Email_id is entered.
+[INFO ] 2023-04-11 16:08:02.003 [main] BaseClass - Admin password is entered.
+[INFO ] 2023-04-11 16:08:06.027 [main] BaseClass - Accounts page opened.
+[INFO ] 2023-04-11 16:08:06.120 [main] BaseClass - Entered Teamleader name in search field.
+[INFO ] 2023-04-11 16:08:06.262 [main] BaseClass - Logged in to the Teamleader Account.
+[INFO ] 2023-04-11 16:10:21.210 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-11 16:10:21.329 [main] BaseClass - Admin Email_id is entered.
+[INFO ] 2023-04-11 16:10:21.413 [main] BaseClass - Admin password is entered.
+[INFO ] 2023-04-11 16:10:26.762 [main] BaseClass - Accounts page opened.
+[INFO ] 2023-04-11 16:10:26.838 [main] BaseClass - Entered Teamleader name in search field.
+[INFO ] 2023-04-11 16:10:26.963 [main] BaseClass - Logged in to the Teamleader Account.
+[INFO ] 2023-04-11 16:13:10.436 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-11 16:13:10.553 [main] BaseClass - Admin Email_id is entered.
+[INFO ] 2023-04-11 16:13:10.633 [main] BaseClass - Admin password is entered.
+[INFO ] 2023-04-11 16:13:14.608 [main] BaseClass - Accounts page opened.
+[INFO ] 2023-04-11 16:13:14.679 [main] BaseClass - Entered Teamleader name in search field.
+[INFO ] 2023-04-11 16:13:14.824 [main] BaseClass - Logged in to the Teamleader Account.
+[INFO ] 2023-04-11 16:14:35.074 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-11 16:14:35.169 [main] BaseClass - Admin Email_id is entered.
+[INFO ] 2023-04-11 16:14:35.251 [main] BaseClass - Admin password is entered.
+[INFO ] 2023-04-11 16:14:39.056 [main] BaseClass - Accounts page opened.
+[INFO ] 2023-04-11 16:14:39.165 [main] BaseClass - Entered Teamleader name in search field.
+[INFO ] 2023-04-11 16:14:39.284 [main] BaseClass - Logged in to the Teamleader Account.
+[INFO ] 2023-04-11 16:17:39.285 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-11 16:17:39.388 [main] BaseClass - Admin Email_id is entered.
+[INFO ] 2023-04-11 16:17:39.466 [main] BaseClass - Admin password is entered.
+[INFO ] 2023-04-11 16:17:42.399 [main] BaseClass - Accounts page opened.
+[INFO ] 2023-04-11 16:17:42.488 [main] BaseClass - Entered Teamleader name in search field.
+[INFO ] 2023-04-11 16:17:42.602 [main] BaseClass - Logged in to the Teamleader Account.
+[INFO ] 2023-04-11 16:18:17.170 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-11 16:18:17.277 [main] BaseClass - Admin Email_id is entered.
+[INFO ] 2023-04-11 16:18:17.357 [main] BaseClass - Admin password is entered.
+[INFO ] 2023-04-11 16:18:20.296 [main] BaseClass - Accounts page opened.
+[INFO ] 2023-04-11 16:18:20.385 [main] BaseClass - Entered Teamleader name in search field.
+[INFO ] 2023-04-11 16:18:20.500 [main] BaseClass - Logged in to the Teamleader Account.
+[INFO ] 2023-04-11 16:19:39.548 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-11 16:19:39.649 [main] BaseClass - Admin Email_id is entered.
+[INFO ] 2023-04-11 16:19:39.728 [main] BaseClass - Admin password is entered.
+[INFO ] 2023-04-11 16:19:42.799 [main] BaseClass - Accounts page opened.
+[INFO ] 2023-04-11 16:19:42.889 [main] BaseClass - Entered Teamleader name in search field.
+[INFO ] 2023-04-11 16:19:43.006 [main] BaseClass - Logged in to the Teamleader Account.
+[INFO ] 2023-04-11 16:23:59.304 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-11 16:23:59.405 [main] BaseClass - Admin Email_id is entered.
+[INFO ] 2023-04-11 16:23:59.490 [main] BaseClass - Admin password is entered.
+[INFO ] 2023-04-11 16:24:03.208 [main] BaseClass - Accounts page opened.
+[INFO ] 2023-04-11 16:24:03.294 [main] BaseClass - Entered Teamleader name in search field.
+[INFO ] 2023-04-11 16:24:09.409 [main] BaseClass - Logged in to the Teamleader Account.
+[INFO ] 2023-04-11 16:26:00.010 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-11 16:26:00.110 [main] BaseClass - Admin Email_id is entered.
+[INFO ] 2023-04-11 16:26:00.191 [main] BaseClass - Admin password is entered.
+[INFO ] 2023-04-11 16:26:03.927 [main] BaseClass - Accounts page opened.
+[INFO ] 2023-04-11 16:26:04.000 [main] BaseClass - Entered Teamleader name in search field.
+[INFO ] 2023-04-11 16:26:08.139 [main] BaseClass - Logged in to the Teamleader Account.
+[INFO ] 2023-04-11 16:26:15.715 [main] BaseClass - Verification of AgentSupport adding failed.
+[INFO ] 2023-04-11 16:29:39.162 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-11 16:29:39.256 [main] BaseClass - Admin Email_id is entered.
+[INFO ] 2023-04-11 16:29:39.349 [main] BaseClass - Admin password is entered.
+[INFO ] 2023-04-11 16:29:44.416 [main] BaseClass - Accounts page opened.
+[INFO ] 2023-04-11 16:29:44.486 [main] BaseClass - Entered Teamleader name in search field.
+[INFO ] 2023-04-11 16:29:48.615 [main] BaseClass - Logged in to the Teamleader Account.
+[INFO ] 2023-04-11 16:30:07.210 [main] BaseClass - Verification of AgentSupport adding failed.
+[INFO ] 2023-04-11 16:34:32.304 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-11 16:34:32.397 [main] BaseClass - Admin Email_id is entered.
+[INFO ] 2023-04-11 16:34:32.485 [main] BaseClass - Admin password is entered.
+[INFO ] 2023-04-11 16:34:36.258 [main] BaseClass - Accounts page opened.
+[INFO ] 2023-04-11 16:34:36.381 [main] BaseClass - Entered Teamleader name in search field.
+[INFO ] 2023-04-11 16:34:40.510 [main] BaseClass - Logged in to the Teamleader Account.
+[INFO ] 2023-04-11 16:34:59.094 [main] BaseClass - Verification of AgentSupport adding failed.
+[INFO ] 2023-04-11 16:41:23.654 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-11 16:41:23.798 [main] BaseClass - Admin Email_id is entered.
+[INFO ] 2023-04-11 16:41:23.899 [main] BaseClass - Admin password is entered.
+[INFO ] 2023-04-11 16:41:32.411 [main] BaseClass - Accounts page opened.
+[INFO ] 2023-04-11 16:41:32.492 [main] BaseClass - Entered Teamleader name in search field.
+[INFO ] 2023-04-11 16:41:36.629 [main] BaseClass - Logged in to the Teamleader Account.
+[INFO ] 2023-04-11 16:41:55.413 [main] BaseClass - Verification of AgentSupport adding failed.
+[INFO ] 2023-04-11 16:45:49.864 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-11 16:45:49.961 [main] BaseClass - Admin Email_id is entered.
+[INFO ] 2023-04-11 16:45:50.046 [main] BaseClass - Admin password is entered.
+[INFO ] 2023-04-11 16:45:53.745 [main] BaseClass - Accounts page opened.
+[INFO ] 2023-04-11 16:45:53.819 [main] BaseClass - Entered Teamleader name in search field.
+[INFO ] 2023-04-11 16:45:57.936 [main] BaseClass - Logged in to the Teamleader Account.
+[INFO ] 2023-04-11 16:46:11.683 [main] BaseClass - Click on Add Agent Button.
+[INFO ] 2023-04-11 16:46:11.722 [main] BaseClass - Verification of AgentSupport adding failed.
+[INFO ] 2023-04-11 16:47:08.825 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-11 16:47:08.922 [main] BaseClass - Admin Email_id is entered.
+[INFO ] 2023-04-11 16:47:09.005 [main] BaseClass - Admin password is entered.
+[INFO ] 2023-04-11 16:47:13.033 [main] BaseClass - Accounts page opened.
+[INFO ] 2023-04-11 16:47:13.117 [main] BaseClass - Entered Teamleader name in search field.
+[INFO ] 2023-04-11 16:47:17.266 [main] BaseClass - Logged in to the Teamleader Account.
+[INFO ] 2023-04-11 16:47:30.960 [main] BaseClass - Click on Add Agent Button.
+[INFO ] 2023-04-11 16:47:35.036 [main] BaseClass - Verification of AgentSupport adding Successfull.
+[INFO ] 2023-04-11 16:49:19.762 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-11 16:49:19.857 [main] BaseClass - Admin Email_id is entered.
+[INFO ] 2023-04-11 16:49:19.938 [main] BaseClass - Admin password is entered.
+[INFO ] 2023-04-11 16:49:23.107 [main] BaseClass - Accounts page opened.
+[INFO ] 2023-04-11 16:49:23.204 [main] BaseClass - Entered Teamleader name in search field.
+[INFO ] 2023-04-11 16:49:27.353 [main] BaseClass - Logged in to the Teamleader Account.
+[INFO ] 2023-04-11 16:49:41.049 [main] BaseClass - Click on Add Agent Button.
+[INFO ] 2023-04-11 16:49:45.085 [main] BaseClass - Verification of AgentSupport adding failed.
+[INFO ] 2023-04-11 16:52:24.539 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-11 16:52:24.634 [main] BaseClass - Admin Email_id is entered.
+[INFO ] 2023-04-11 16:52:24.723 [main] BaseClass - Admin password is entered.
+[INFO ] 2023-04-11 16:52:30.154 [main] BaseClass - Accounts page opened.
+[INFO ] 2023-04-11 16:52:30.226 [main] BaseClass - Entered Teamleader name in search field.
+[INFO ] 2023-04-11 16:52:34.365 [main] BaseClass - Logged in to the Teamleader Account.
+[INFO ] 2023-04-11 16:52:48.185 [main] BaseClass - Click on Add Agent Button.
+[INFO ] 2023-04-11 16:52:52.228 [main] BaseClass - Verification of AgentSupport adding failed.
+[INFO ] 2023-04-11 16:52:58.423 [main] BaseClass - Agent Support email is entered.
+[INFO ] 2023-04-11 16:52:58.491 [main] BaseClass - Agent Support password is entered.
+[INFO ] 2023-04-11 16:54:08.189 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-11 16:54:08.281 [main] BaseClass - Admin Email_id is entered.
+[INFO ] 2023-04-11 16:54:08.363 [main] BaseClass - Admin password is entered.
+[INFO ] 2023-04-11 16:54:11.423 [main] BaseClass - Accounts page opened.
+[INFO ] 2023-04-11 16:54:11.509 [main] BaseClass - Entered Teamleader name in search field.
+[INFO ] 2023-04-11 16:54:15.631 [main] BaseClass - Logged in to the Teamleader Account.
+[INFO ] 2023-04-11 16:54:29.312 [main] BaseClass - Click on Add Agent Button.
+[INFO ] 2023-04-11 16:54:33.350 [main] BaseClass - Verification of AgentSupport adding failed.
+[INFO ] 2023-04-11 16:54:39.302 [main] BaseClass - Agent Support email is entered.
+[INFO ] 2023-04-11 16:54:39.370 [main] BaseClass - Agent Support password is entered.
+[INFO ] 2023-04-11 16:57:03.502 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-11 16:57:03.602 [main] BaseClass - Admin Email_id is entered.
+[INFO ] 2023-04-11 16:57:03.680 [main] BaseClass - Admin password is entered.
+[INFO ] 2023-04-11 16:57:07.351 [main] BaseClass - Accounts page opened.
+[INFO ] 2023-04-11 16:57:07.461 [main] BaseClass - Entered Teamleader name in search field.
+[INFO ] 2023-04-11 16:57:11.609 [main] BaseClass - Logged in to the Teamleader Account.
+[INFO ] 2023-04-11 16:57:25.218 [main] BaseClass - Click on Add Agent Button.
+[INFO ] 2023-04-11 16:57:29.259 [main] BaseClass - Verification of AgentSupport adding failed.
+[INFO ] 2023-04-11 16:57:35.160 [main] BaseClass - Agent Support email is entered.
+[INFO ] 2023-04-11 16:57:35.227 [main] BaseClass - Agent Support password is entered.
+[INFO ] 2023-04-11 16:57:40.342 [main] BaseClass - Verification of AgentSupport login Successfull.

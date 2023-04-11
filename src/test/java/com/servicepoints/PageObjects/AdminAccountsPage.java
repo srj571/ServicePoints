@@ -70,6 +70,59 @@ public class AdminAccountsPage {
 	@FindBy(xpath = "//li[@role='option']")
 	WebElement firstOption;
 
+	//WebElements for Add Agent Support 
+	
+	@FindBy(xpath="//a[normalize-space()='Teamleader (SP)']")
+	WebElement teamleaderTab;
+	
+	@FindBy(xpath="//div[normalize-space()='Team']")
+	WebElement teamTabl;
+	
+	@FindBy(xpath="//button[@type='submit']")
+	WebElement addNewAgent;
+	
+	@FindBy(xpath="//input[@id='signupagent']")
+	WebElement addagentbtn;
+	
+	
+	
+	@FindBy(xpath="(//span[@aria-hidden='true'][normalize-space()='×'])[1]")
+	WebElement closePopupAgent;
+	
+	@FindBy(xpath="(//*[name()='svg'])[10]")
+	WebElement logoutTeamL;
+	
+	@FindBy(xpath="(//span[@class='name_overflow'][contains(text(),'John')])[1]")
+	WebElement verifyName;
+	
+	public String verifyName() {
+		String name=verifyName.getText();
+		return name;
+	}
+	public void clickOnAddAgetSP() {
+		addagentbtn.click();
+	}
+	
+	public void clickOnTeamleaderTab() {
+		teamleaderTab.click();
+	}
+	
+	public void clickONTeamTab() {
+		teamTabl.click();
+	}
+	
+	public void clickOnAddAgentTab() {
+		addNewAgent.click();
+	}
+	
+	public void closeAgentPopUp() {
+		closePopupAgent.click();
+	}
+	
+	public void logoutTeaml() {
+		logoutTeamL.click();
+	}
+	
 	// VerifyClientloginTest
 
 	public void getAdminAccountsPage() {
