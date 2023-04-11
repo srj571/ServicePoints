@@ -177,6 +177,81 @@ public class ReadConfig {
 		String cpass=po.getProperty("cpass");
 		return cpass;
 	}
+	
+	public String setAgentSupEmail() {
+		String mail=po.getProperty("AgentSupplierEmail");
+		return mail;
+	}
+	
+	public String setAgentSupPass() {
+		String suppass=po.getProperty("AgentSupplierPass");
+		return suppass;
+	}
+	
+	public String setProduct() {
+		String product=po.getProperty("Product");
+		return product;			
+	}
+	
+	public String set1PcsPrice() {
+		String fpcs=po.getProperty("1PcsPrice");
+		return fpcs;
+	}
+	
+	public String set2PcsPrice() {
+		String spcs=po.getProperty("2PcsPrice");
+		return spcs;
+	}
+	
+	public String set3PcsPrice() {
+		String tpcs=po.getProperty("3PcsPrice");
+		return tpcs;
+	}
+	
+	public String set4PcsPrice() {
+		String ffpcs=po.getProperty("4PcsPrice");
+		return ffpcs;
+	}
+	
+	public String setClientEmail() {
+		String cemail=po.getProperty("ClientEmail");
+		return cemail;
+	}
+	
+	public String setClientPassword() {
+		String clpass=po.getProperty("ClientPass");
+		return clpass;
+	}
+	
+	public String setProductName() {
+		String product=po.getProperty("SelProduct");
+		return product;
+	}
+	
+	public String setDomainName() {
+		String  domain=po.getProperty("DomainName");
+		return domain;
+	}
+	
+	public String setAlias() {
+		String alias=po.getProperty("Alias");
+		return alias;
+	}
+	
+	public String setStorePass() {
+		String storePass=po.getProperty("StorePass");
+		return storePass;
+	}
+	
+	public String setFetchDate() {
+		String fetchDate=po.getProperty("OrderFetchDate");
+		return fetchDate;
+	}
+	
+	public String editAlias() {
+		String editAlias=po.getProperty("EditStoreAlias");
+		return editAlias;
+	}
 }
 
 

@@ -17,12 +17,15 @@ public class TC03_UserSignUpTest extends BaseClass{
 		
 		sp.setUserFirstName(fname);
 		logger.info("First Name is entered.");
+		Thread.sleep(4000);
 		
 		sp.setUserLastName(lname);
 		logger.info("Last Name is entered.");
+		Thread.sleep(4000);
 		
 		sp.setCountryCode(code);
 		logger.info("Country code is entered.");
+		Thread.sleep(4000);
 		
 		String num=BaseClass.getRandomNum();
 		sp.setMobileNum(num);
@@ -33,6 +36,7 @@ public class TC03_UserSignUpTest extends BaseClass{
 //		String email=val+"@yopmail.com";	
 		sp.setEmail(userEmail);
 		logger.info("Email is entered.");
+		Thread.sleep(4000);
 		
 		sp.setDailyOrder(orders);
 		logger.info("Order is set.");

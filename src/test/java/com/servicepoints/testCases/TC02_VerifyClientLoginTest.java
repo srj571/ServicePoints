@@ -20,9 +20,11 @@ public class TC02_VerifyClientLoginTest extends BaseClass{
 		
 		lp.setAdminMailId(AdminMailID);
 		logger.info("Admin Email_id is entered.");
+		Thread.sleep(3000);
 		
 		lp.setAdminPassword(AdminPassword);
 		logger.info("Admin password is entered.");
+		Thread.sleep(3000);
 		
 		lp.clickLoginbtn();
 		
@@ -42,8 +44,9 @@ public class TC02_VerifyClientLoginTest extends BaseClass{
 		
 		Set<String> window=driver.getWindowHandles();
 		Iterator<String> it=window.iterator();
-		String second=it.next();
-		driver.switchTo().window(second);
+		String parent=it.next();
+		String child=it.next();
+		driver.switchTo().window(child);
 		Thread.sleep(3000);
 			
 		if(driver.getPageSource().contains(clientName)) {

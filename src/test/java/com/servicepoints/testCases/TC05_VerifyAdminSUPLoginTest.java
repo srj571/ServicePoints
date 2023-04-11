@@ -24,30 +24,30 @@ public class TC05_VerifyAdminSUPLoginTest  extends BaseClass {
 		logger.info("Admin password is entered.");
 
 		lp.clickLoginbtn();
-		Thread.sleep(3000);
+		Thread.sleep(4000);
 		logger.info("Admin Loged in.");
 		
 		AdminAccountsPage adminAccount=new AdminAccountsPage(driver);
 		adminAccount.getAdminAccountsPage();
 		logger.info("Accounts page opened.");
-		Thread.sleep(3000);
+		Thread.sleep(4000);
 		
 		adminAccount.enterUserName(adminSupplierName);
 		logger.info("Entered Admin Supplier name in search field.");
-		Thread.sleep(3000);
+		Thread.sleep(4000);
 		
 		adminAccount.goToAdminSUPTab();
-		Thread.sleep(3000);
+		Thread.sleep(4000);
 		
 		adminAccount.clickOnLoginBtn();
 		logger.info("Logged in to the clients Account.");
-		Thread.sleep(3000);
+		Thread.sleep(4000);
 		
 		Set<String> window=driver.getWindowHandles();
 		Iterator<String> it=window.iterator();
 		String second=it.next();
 		driver.switchTo().window(second);
-		Thread.sleep(3000);
+		Thread.sleep(4000);
 		
 		if(driver.getPageSource().contains(adminSupplierName)) {
 			logger.info("Verification of Admin Supplier login Successfull.");

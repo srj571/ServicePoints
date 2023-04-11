@@ -728,3 +728,638 @@
 [INFO ] 2023-04-07 17:14:52.058 [main] BaseClass - Mobile number is entered.
 [INFO ] 2023-04-07 17:14:55.484 [main] BaseClass - Agent info is saved.
 [INFO ] 2023-04-07 17:15:06.851 [main] BaseClass - Verification of Agent Supplier Login is Failed.
+[INFO ] 2023-04-07 17:23:18.398 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-07 17:23:18.481 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-07 17:23:21.559 [main] BaseClass - Admin(SUP) Loged in.
+[INFO ] 2023-04-07 17:23:22.515 [main] BaseClass - Go to the Team page.
+[INFO ] 2023-04-07 17:23:26.689 [main] BaseClass - First name is entered.
+[INFO ] 2023-04-07 17:23:26.773 [main] BaseClass - Last name is entered.
+[INFO ] 2023-04-07 17:23:26.864 [main] BaseClass - Country code is entered.
+[INFO ] 2023-04-07 17:23:26.968 [main] BaseClass - Mobile number is entered.
+[INFO ] 2023-04-07 17:23:30.371 [main] BaseClass - Agent info is saved.
+[INFO ] 2023-04-07 17:23:41.744 [main] BaseClass - Verification of Agent Supplier Login is Failed.
+[INFO ] 2023-04-07 17:25:41.981 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-07 17:25:42.065 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-07 17:25:45.137 [main] BaseClass - Admin(SUP) Loged in.
+[INFO ] 2023-04-07 17:25:46.048 [main] BaseClass - Go to the Team page.
+[INFO ] 2023-04-07 17:25:50.207 [main] BaseClass - First name is entered.
+[INFO ] 2023-04-07 17:25:50.283 [main] BaseClass - Last name is entered.
+[INFO ] 2023-04-07 17:25:50.368 [main] BaseClass - Country code is entered.
+[INFO ] 2023-04-07 17:25:50.469 [main] BaseClass - Mobile number is entered.
+[INFO ] 2023-04-07 17:25:53.891 [main] BaseClass - Agent info is saved.
+[INFO ] 2023-04-07 17:26:05.274 [main] BaseClass - Verification of Agent Supplier Login is Failed.
+[INFO ] 2023-04-07 17:27:17.722 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-07 17:27:17.814 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-07 17:27:20.897 [main] BaseClass - Admin(SUP) Loged in.
+[INFO ] 2023-04-07 17:27:22.073 [main] BaseClass - Go to the Team page.
+[INFO ] 2023-04-07 17:27:26.291 [main] BaseClass - First name is entered.
+[INFO ] 2023-04-07 17:27:26.374 [main] BaseClass - Last name is entered.
+[INFO ] 2023-04-07 17:27:26.466 [main] BaseClass - Country code is entered.
+[INFO ] 2023-04-07 17:27:26.570 [main] BaseClass - Mobile number is entered.
+[INFO ] 2023-04-07 17:27:29.980 [main] BaseClass - Agent info is saved.
+[INFO ] 2023-04-07 17:27:44.469 [main] BaseClass - Verification of Agent Supplier Login is Successfull.
+[INFO ] 2023-04-07 17:28:23.535 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-07 17:28:23.620 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-07 17:28:26.687 [main] BaseClass - Admin(SUP) Loged in.
+[INFO ] 2023-04-07 17:28:27.543 [main] BaseClass - Go to the Team page.
+[INFO ] 2023-04-07 17:28:31.745 [main] BaseClass - First name is entered.
+[INFO ] 2023-04-07 17:28:31.823 [main] BaseClass - Last name is entered.
+[INFO ] 2023-04-07 17:28:31.896 [main] BaseClass - Country code is entered.
+[INFO ] 2023-04-07 17:28:31.989 [main] BaseClass - Mobile number is entered.
+[INFO ] 2023-04-07 17:28:35.362 [main] BaseClass - Agent info is saved.
+[INFO ] 2023-04-07 17:28:49.800 [main] BaseClass - Verification of Agent Supplier Login is Successfull.
+[INFO ] 2023-04-10 09:22:23.619 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-10 09:22:23.821 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-10 09:22:23.941 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-10 09:22:27.056 [main] BaseClass - Login to the Admin Dashboard Successfully.
+[INFO ] 2023-04-10 09:22:30.500 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-10 09:22:30.606 [main] BaseClass - Admin Email_id is entered.
+[INFO ] 2023-04-10 09:22:30.697 [main] BaseClass - Admin password is entered.
+[INFO ] 2023-04-10 09:22:33.425 [main] BaseClass - Accounts page opened.
+[INFO ] 2023-04-10 09:22:36.551 [main] BaseClass - Entered Client name in search field.
+[INFO ] 2023-04-10 09:22:39.730 [main] BaseClass - Logged in to the clients Account.
+[INFO ] 2023-04-10 09:22:45.820 [main] BaseClass - Verification of client login Successfull.
+[INFO ] 2023-04-10 09:22:56.131 [main] BaseClass - First Name is entered.
+[INFO ] 2023-04-10 09:22:56.189 [main] BaseClass - Last Name is entered.
+[INFO ] 2023-04-10 09:22:56.254 [main] BaseClass - Country code is entered.
+[INFO ] 2023-04-10 09:22:56.350 [main] BaseClass - Mobile number is entered.
+[INFO ] 2023-04-10 09:22:59.500 [main] BaseClass - Email is entered.
+[INFO ] 2023-04-10 09:22:59.563 [main] BaseClass - Order is set.
+[INFO ] 2023-04-10 09:22:59.640 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-10 09:22:59.724 [main] BaseClass - Confirm password is entered.
+[INFO ] 2023-04-10 09:23:05.989 [main] BaseClass - User is Successfully Signed up.
+[INFO ] 2023-04-10 09:23:13.913 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-10 09:23:14.012 [main] BaseClass - Admin Email_id is entered.
+[INFO ] 2023-04-10 09:23:14.091 [main] BaseClass - Admin password is entered.
+[INFO ] 2023-04-10 09:23:17.889 [main] BaseClass - Accounts page opened.
+[INFO ] 2023-04-10 09:23:21.008 [main] BaseClass - Entered User name in search field.
+[INFO ] 2023-04-10 09:23:28.366 [main] BaseClass - Client type is selected.
+[INFO ] 2023-04-10 09:23:32.607 [main] BaseClass - Agent Supplier name is selected.
+[INFO ] 2023-04-10 09:23:32.966 [main] BaseClass - Agent support name is selected.
+[INFO ] 2023-04-10 09:23:36.225 [main] BaseClass - Invoice type is selected.
+[INFO ] 2023-04-10 09:23:42.519 [main] BaseClass - User info is saved.
+[INFO ] 2023-04-10 09:23:45.599 [main] BaseClass - Account updated successfully
+[INFO ] 2023-04-10 09:23:49.413 [main] BaseClass - Admin Logout...
+[INFO ] 2023-04-10 09:23:52.552 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-10 09:23:52.617 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-10 09:23:55.726 [main] BaseClass - Account updated successfully
+[INFO ] 2023-04-10 09:24:02.682 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-10 09:24:02.808 [main] BaseClass - Admin Email_id is entered.
+[INFO ] 2023-04-10 09:24:02.884 [main] BaseClass - Admin password is entered.
+[INFO ] 2023-04-10 09:24:05.957 [main] BaseClass - Admin Loged in.
+[INFO ] 2023-04-10 09:24:06.677 [main] BaseClass - Accounts page opened.
+[INFO ] 2023-04-10 09:24:09.810 [main] BaseClass - Entered Admin Supplier name in search field.
+[INFO ] 2023-04-10 09:24:15.958 [main] BaseClass - Logged in to the clients Account.
+[INFO ] 2023-04-10 09:24:22.014 [main] BaseClass - Verification of Admin Supplier login Successfull.
+[INFO ] 2023-04-10 09:24:30.333 [main] BaseClass - Supplier name is entered.
+[INFO ] 2023-04-10 09:24:30.381 [main] BaseClass - Supplier last name is entered.
+[INFO ] 2023-04-10 09:24:30.452 [main] BaseClass - Country code is entered.
+[INFO ] 2023-04-10 09:24:30.545 [main] BaseClass - Mobile number is entered.
+[INFO ] 2023-04-10 09:24:33.665 [main] BaseClass - Supplier mail is entered.
+[INFO ] 2023-04-10 09:24:33.742 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-10 09:24:36.974 [main] BaseClass - Supplier is Successfully Signed up.
+[INFO ] 2023-04-10 09:24:44.750 [main] BaseClass - Mailid is entered.
+[INFO ] 2023-04-10 09:24:44.797 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-10 09:24:47.872 [main] BaseClass - Verification of Supplier Sign in is Successed.
+[INFO ] 2023-04-10 09:24:55.631 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-10 09:24:55.708 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-10 09:24:58.776 [main] BaseClass - Admin(SUP) Loged in.
+[INFO ] 2023-04-10 09:25:01.729 [main] BaseClass - Go to the Team page.
+[INFO ] 2023-04-10 09:25:05.956 [main] BaseClass - First name is entered.
+[INFO ] 2023-04-10 09:25:06.045 [main] BaseClass - Last name is entered.
+[INFO ] 2023-04-10 09:25:06.127 [main] BaseClass - Country code is entered.
+[INFO ] 2023-04-10 09:25:06.220 [main] BaseClass - Mobile number is entered.
+[INFO ] 2023-04-10 09:25:09.608 [main] BaseClass - Agent info is saved.
+[INFO ] 2023-04-10 09:25:17.822 [main] BaseClass - Agent email is entered.
+[INFO ] 2023-04-10 09:25:17.884 [main] BaseClass - Agent password is entered.
+[INFO ] 2023-04-10 09:25:25.015 [main] BaseClass - Verification of Agent Supplier Login is Successfull.
+[INFO ] 2023-04-10 11:44:55.926 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-10 11:44:56.050 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-10 11:44:56.139 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-10 11:45:06.650 [main] BaseClass - Product name entered.
+[INFO ] 2023-04-10 11:45:11.145 [main] BaseClass - Price entered
+[INFO ] 2023-04-10 11:51:31.857 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-10 11:51:31.971 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-10 11:51:32.044 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-10 11:51:45.630 [main] BaseClass - Product name entered.
+[INFO ] 2023-04-10 11:51:50.042 [main] BaseClass - Price entered
+[INFO ] 2023-04-10 12:00:40.309 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-10 12:00:40.415 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-10 12:00:40.492 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-10 12:00:55.473 [main] BaseClass - Product name entered.
+[INFO ] 2023-04-10 12:00:59.915 [main] BaseClass - Price entered
+[INFO ] 2023-04-10 12:01:08.324 [main] BaseClass - Verification of Submit quotation failed..
+[INFO ] 2023-04-10 12:02:48.072 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-10 12:02:48.176 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-10 12:02:48.254 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-10 12:03:03.690 [main] BaseClass - Product name entered.
+[INFO ] 2023-04-10 12:03:08.079 [main] BaseClass - Price entered
+[INFO ] 2023-04-10 12:03:22.239 [main] BaseClass - Verification of Submit quotation Successed..
+[INFO ] 2023-04-10 13:04:32.319 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-10 13:04:32.446 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-10 13:04:32.526 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-10 13:04:46.882 [main] BaseClass - Product name entered.
+[INFO ] 2023-04-10 13:05:24.148 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-10 13:05:24.288 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-10 13:05:24.393 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-10 13:05:40.947 [main] BaseClass - Product name entered.
+[INFO ] 2023-04-10 13:08:11.516 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-10 13:08:11.620 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-10 13:08:11.704 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-10 13:16:04.135 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-10 13:16:04.220 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-10 13:16:28.362 [main] BaseClass - Verification of accepting Quotation is Successed.
+[INFO ] 2023-04-10 17:03:42.356 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-10 17:03:42.440 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-10 17:03:46.523 [main] BaseClass - Client login seccessed.
+[INFO ] 2023-04-10 17:07:26.733 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-10 17:07:26.820 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-10 17:07:30.896 [main] BaseClass - Client login seccessed.
+[INFO ] 2023-04-10 17:07:33.228 [main] BaseClass - Domain name is entered.
+[INFO ] 2023-04-10 17:07:37.447 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-10 17:07:41.700 [main] BaseClass - Verification of Store Adding successfull.
+[INFO ] 2023-04-10 17:33:05.849 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-10 17:33:05.970 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-10 17:33:06.045 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-10 17:33:12.142 [main] BaseClass - Login to the Admin Dashboard Successfully.
+[INFO ] 2023-04-10 17:33:17.884 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-10 17:33:17.979 [main] BaseClass - Admin Email_id is entered.
+[INFO ] 2023-04-10 17:33:21.078 [main] BaseClass - Admin password is entered.
+[INFO ] 2023-04-10 17:33:27.669 [main] BaseClass - Accounts page opened.
+[INFO ] 2023-04-10 17:33:30.790 [main] BaseClass - Entered Client name in search field.
+[INFO ] 2023-04-10 17:33:33.941 [main] BaseClass - Logged in to the clients Account.
+[INFO ] 2023-04-10 17:33:40.023 [main] BaseClass - Verification of client login Successfull.
+[INFO ] 2023-04-10 17:33:51.614 [main] BaseClass - First Name is entered.
+[INFO ] 2023-04-10 17:33:55.692 [main] BaseClass - Last Name is entered.
+[INFO ] 2023-04-10 17:33:59.827 [main] BaseClass - Country code is entered.
+[INFO ] 2023-04-10 17:34:03.993 [main] BaseClass - Mobile number is entered.
+[INFO ] 2023-04-10 17:34:07.164 [main] BaseClass - Email is entered.
+[INFO ] 2023-04-10 17:34:11.240 [main] BaseClass - Order is set.
+[INFO ] 2023-04-10 17:34:11.327 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-10 17:34:11.413 [main] BaseClass - Confirm password is entered.
+[INFO ] 2023-04-10 17:34:17.680 [main] BaseClass - User is Successfully Signed up.
+[INFO ] 2023-04-10 17:34:26.618 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-10 17:34:26.721 [main] BaseClass - Admin Email_id is entered.
+[INFO ] 2023-04-10 17:34:26.809 [main] BaseClass - Admin password is entered.
+[INFO ] 2023-04-10 17:34:31.697 [main] BaseClass - Accounts page opened.
+[INFO ] 2023-04-10 17:34:35.796 [main] BaseClass - Entered User name in search field.
+[INFO ] 2023-04-10 17:34:44.212 [main] BaseClass - Client type is selected.
+[INFO ] 2023-04-10 17:34:51.397 [main] BaseClass - Agent Supplier name is selected.
+[INFO ] 2023-04-10 17:34:51.739 [main] BaseClass - Agent support name is selected.
+[INFO ] 2023-04-10 17:34:56.037 [main] BaseClass - Invoice type is selected.
+[INFO ] 2023-04-10 17:35:04.222 [main] BaseClass - User info is saved.
+[INFO ] 2023-04-10 17:35:08.501 [main] BaseClass - Account updation failed.
+[INFO ] 2023-04-10 17:35:14.061 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-10 17:35:14.164 [main] BaseClass - Admin Email_id is entered.
+[INFO ] 2023-04-10 17:35:14.247 [main] BaseClass - Admin password is entered.
+[INFO ] 2023-04-10 17:35:18.323 [main] BaseClass - Admin Loged in.
+[INFO ] 2023-04-10 17:35:19.062 [main] BaseClass - Accounts page opened.
+[INFO ] 2023-04-10 17:35:23.174 [main] BaseClass - Entered Admin Supplier name in search field.
+[INFO ] 2023-04-10 17:35:31.345 [main] BaseClass - Logged in to the clients Account.
+[INFO ] 2023-04-10 17:35:39.401 [main] BaseClass - Verification of Admin Supplier login Successfull.
+[INFO ] 2023-04-10 17:35:51.739 [main] BaseClass - Supplier name is entered.
+[INFO ] 2023-04-10 17:35:51.785 [main] BaseClass - Supplier last name is entered.
+[INFO ] 2023-04-10 17:35:51.852 [main] BaseClass - Country code is entered.
+[INFO ] 2023-04-10 17:35:51.948 [main] BaseClass - Mobile number is entered.
+[INFO ] 2023-04-10 17:35:56.054 [main] BaseClass - Supplier mail is entered.
+[INFO ] 2023-04-10 17:35:56.113 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-10 17:36:03.332 [main] BaseClass - Supplier is Successfully Signed up.
+[INFO ] 2023-04-10 17:36:11.950 [main] BaseClass - Mailid is entered.
+[INFO ] 2023-04-10 17:36:11.999 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-10 17:36:16.074 [main] BaseClass - Verification of Supplier Sign in is Successed.
+[INFO ] 2023-04-10 17:36:27.217 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-10 17:36:27.309 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-10 17:36:31.396 [main] BaseClass - Admin(SUP) Loged in.
+[INFO ] 2023-04-10 17:36:32.258 [main] BaseClass - Go to the Team page.
+[INFO ] 2023-04-10 17:36:38.514 [main] BaseClass - First name is entered.
+[INFO ] 2023-04-10 17:36:38.605 [main] BaseClass - Last name is entered.
+[INFO ] 2023-04-10 17:36:38.714 [main] BaseClass - Country code is entered.
+[INFO ] 2023-04-10 17:36:38.836 [main] BaseClass - Mobile number is entered.
+[INFO ] 2023-04-10 17:36:43.282 [main] BaseClass - Agent info is saved.
+[INFO ] 2023-04-10 17:36:52.782 [main] BaseClass - Agent email is entered.
+[INFO ] 2023-04-10 17:36:52.863 [main] BaseClass - Agent password is entered.
+[INFO ] 2023-04-10 17:37:00.985 [main] BaseClass - Verification of Agent Supplier Login is Successfull.
+[INFO ] 2023-04-10 17:38:55.154 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-10 17:38:55.284 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-10 17:38:55.360 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-10 17:39:01.456 [main] BaseClass - Login to the Admin Dashboard Successfully.
+[INFO ] 2023-04-10 17:39:06.058 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-10 17:39:06.200 [main] BaseClass - Admin Email_id is entered.
+[INFO ] 2023-04-10 17:39:09.306 [main] BaseClass - Admin password is entered.
+[INFO ] 2023-04-10 17:39:22.268 [main] BaseClass - Accounts page opened.
+[INFO ] 2023-04-10 17:39:25.385 [main] BaseClass - Entered Client name in search field.
+[INFO ] 2023-04-10 17:39:28.492 [main] BaseClass - Logged in to the clients Account.
+[INFO ] 2023-04-10 17:39:34.606 [main] BaseClass - Verification of client login Successfull.
+[INFO ] 2023-04-10 17:39:45.464 [main] BaseClass - First Name is entered.
+[INFO ] 2023-04-10 17:39:49.549 [main] BaseClass - Last Name is entered.
+[INFO ] 2023-04-10 17:39:53.631 [main] BaseClass - Country code is entered.
+[INFO ] 2023-04-10 17:39:57.725 [main] BaseClass - Mobile number is entered.
+[INFO ] 2023-04-10 17:40:00.834 [main] BaseClass - Email is entered.
+[INFO ] 2023-04-10 17:40:04.903 [main] BaseClass - Order is set.
+[INFO ] 2023-04-10 17:40:04.996 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-10 17:40:05.074 [main] BaseClass - Confirm password is entered.
+[INFO ] 2023-04-10 17:40:11.630 [main] BaseClass - User is Failed to Signed up.
+[INFO ] 2023-04-10 17:40:16.341 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-10 17:40:16.444 [main] BaseClass - Admin Email_id is entered.
+[INFO ] 2023-04-10 17:40:16.520 [main] BaseClass - Admin password is entered.
+[INFO ] 2023-04-10 17:40:21.284 [main] BaseClass - Accounts page opened.
+[INFO ] 2023-04-10 17:40:25.364 [main] BaseClass - Entered User name in search field.
+[INFO ] 2023-04-10 17:40:44.836 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-10 17:40:44.937 [main] BaseClass - Admin Email_id is entered.
+[INFO ] 2023-04-10 17:40:45.017 [main] BaseClass - Admin password is entered.
+[INFO ] 2023-04-10 17:40:49.094 [main] BaseClass - Admin Loged in.
+[INFO ] 2023-04-10 17:40:49.900 [main] BaseClass - Accounts page opened.
+[INFO ] 2023-04-10 17:40:54.041 [main] BaseClass - Entered Admin Supplier name in search field.
+[INFO ] 2023-04-10 17:41:02.213 [main] BaseClass - Logged in to the clients Account.
+[INFO ] 2023-04-10 17:41:10.269 [main] BaseClass - Verification of Admin Supplier login Successfull.
+[INFO ] 2023-04-10 17:41:19.070 [main] BaseClass - Supplier name is entered.
+[INFO ] 2023-04-10 17:41:19.117 [main] BaseClass - Supplier last name is entered.
+[INFO ] 2023-04-10 17:41:19.185 [main] BaseClass - Country code is entered.
+[INFO ] 2023-04-10 17:41:19.267 [main] BaseClass - Mobile number is entered.
+[INFO ] 2023-04-10 17:41:23.383 [main] BaseClass - Supplier mail is entered.
+[INFO ] 2023-04-10 17:41:23.448 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-10 17:41:30.970 [main] BaseClass - Supplier is Failed to Signed up.
+[INFO ] 2023-04-10 17:41:35.763 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-10 17:41:35.849 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-10 17:41:39.927 [main] BaseClass - Admin(SUP) Loged in.
+[INFO ] 2023-04-10 17:41:40.670 [main] BaseClass - Go to the Team page.
+[INFO ] 2023-04-10 17:41:46.815 [main] BaseClass - First name is entered.
+[INFO ] 2023-04-10 17:41:46.898 [main] BaseClass - Last name is entered.
+[INFO ] 2023-04-10 17:41:46.988 [main] BaseClass - Country code is entered.
+[INFO ] 2023-04-10 17:41:47.083 [main] BaseClass - Mobile number is entered.
+[INFO ] 2023-04-10 17:41:51.459 [main] BaseClass - Agent info is saved.
+[INFO ] 2023-04-10 17:42:00.689 [main] BaseClass - Agent email is entered.
+[INFO ] 2023-04-10 17:42:00.753 [main] BaseClass - Agent password is entered.
+[INFO ] 2023-04-10 17:42:08.839 [main] BaseClass - Verification of Agent Supplier Login is Successfull.
+[INFO ] 2023-04-10 18:06:34.500 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-10 18:06:34.591 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-10 18:06:38.680 [main] BaseClass - Admin(SUP) Loged in.
+[INFO ] 2023-04-10 18:06:42.100 [main] BaseClass - Go to the Team page.
+[INFO ] 2023-04-10 18:06:48.324 [main] BaseClass - First name is entered.
+[INFO ] 2023-04-10 18:06:48.405 [main] BaseClass - Last name is entered.
+[INFO ] 2023-04-10 18:06:48.502 [main] BaseClass - Country code is entered.
+[INFO ] 2023-04-10 18:06:48.624 [main] BaseClass - Mobile number is entered.
+[INFO ] 2023-04-10 18:06:53.035 [main] BaseClass - Agent info is saved.
+[INFO ] 2023-04-10 18:06:57.116 [main] BaseClass - Agent with the same email address already exists.
+[INFO ] 2023-04-10 18:37:17.024 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-10 18:37:17.347 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-10 18:37:17.547 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-10 18:37:24.153 [main] BaseClass - Login to the Admin Dashboard Successfully.
+[INFO ] 2023-04-10 18:37:31.426 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-10 18:37:31.659 [main] BaseClass - Admin Email_id is entered.
+[INFO ] 2023-04-10 18:37:34.855 [main] BaseClass - Admin password is entered.
+[INFO ] 2023-04-10 18:37:42.532 [main] BaseClass - Accounts page opened.
+[INFO ] 2023-04-10 18:37:45.695 [main] BaseClass - Entered Client name in search field.
+[INFO ] 2023-04-10 18:37:48.888 [main] BaseClass - Logged in to the clients Account.
+[INFO ] 2023-04-10 18:37:55.060 [main] BaseClass - Verification of client login Successfull.
+[INFO ] 2023-04-10 18:38:09.003 [main] BaseClass - First Name is entered.
+[INFO ] 2023-04-10 18:38:13.184 [main] BaseClass - Last Name is entered.
+[INFO ] 2023-04-10 18:38:17.379 [main] BaseClass - Country code is entered.
+[INFO ] 2023-04-10 18:38:21.634 [main] BaseClass - Mobile number is entered.
+[INFO ] 2023-04-10 18:38:24.828 [main] BaseClass - Email is entered.
+[INFO ] 2023-04-10 18:38:29.020 [main] BaseClass - Order is set.
+[INFO ] 2023-04-10 18:38:29.174 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-10 18:38:29.291 [main] BaseClass - Confirm password is entered.
+[INFO ] 2023-04-10 18:38:35.751 [main] BaseClass - User is Successfully Signed up.
+[INFO ] 2023-04-10 18:38:47.258 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-10 18:38:47.489 [main] BaseClass - Admin Email_id is entered.
+[INFO ] 2023-04-10 18:38:47.755 [main] BaseClass - Admin password is entered.
+[INFO ] 2023-04-10 18:38:52.769 [main] BaseClass - Accounts page opened.
+[INFO ] 2023-04-10 18:38:56.927 [main] BaseClass - Entered User name in search field.
+[INFO ] 2023-04-10 18:39:05.794 [main] BaseClass - Client type is selected.
+[INFO ] 2023-04-10 18:39:13.211 [main] BaseClass - Agent Supplier name is selected.
+[INFO ] 2023-04-10 18:39:13.925 [main] BaseClass - Agent support name is selected.
+[INFO ] 2023-04-10 18:39:18.358 [main] BaseClass - Invoice type is selected.
+[INFO ] 2023-04-10 18:39:26.761 [main] BaseClass - User info is saved.
+[INFO ] 2023-04-10 18:39:31.175 [main] BaseClass - Account updation failed.
+[INFO ] 2023-04-10 18:39:38.085 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-10 18:39:38.283 [main] BaseClass - Admin Email_id is entered.
+[INFO ] 2023-04-10 18:39:38.394 [main] BaseClass - Admin password is entered.
+[INFO ] 2023-04-10 18:39:42.503 [main] BaseClass - Admin Loged in.
+[INFO ] 2023-04-10 18:39:43.326 [main] BaseClass - Accounts page opened.
+[INFO ] 2023-04-10 18:39:47.541 [main] BaseClass - Entered Admin Supplier name in search field.
+[INFO ] 2023-04-10 18:39:55.802 [main] BaseClass - Logged in to the clients Account.
+[INFO ] 2023-04-10 18:40:03.923 [main] BaseClass - Verification of Admin Supplier login Successfull.
+[INFO ] 2023-04-10 18:40:13.322 [main] BaseClass - Supplier name is entered.
+[INFO ] 2023-04-10 18:40:13.401 [main] BaseClass - Supplier last name is entered.
+[INFO ] 2023-04-10 18:40:13.528 [main] BaseClass - Country code is entered.
+[INFO ] 2023-04-10 18:40:13.732 [main] BaseClass - Mobile number is entered.
+[INFO ] 2023-04-10 18:40:17.986 [main] BaseClass - Supplier mail is entered.
+[INFO ] 2023-04-10 18:40:18.103 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-10 18:40:25.448 [main] BaseClass - Supplier is Successfully Signed up.
+[INFO ] 2023-04-10 18:40:34.474 [main] BaseClass - Mailid is entered.
+[INFO ] 2023-04-10 18:40:34.561 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-10 18:40:43.186 [main] BaseClass - Verification of Supplier Sign in is Successed.
+[INFO ] 2023-04-10 18:40:55.173 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-10 18:40:55.392 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-10 18:40:59.552 [main] BaseClass - Admin(SUP) Loged in.
+[INFO ] 2023-04-10 18:41:01.366 [main] BaseClass - Go to the Team page.
+[INFO ] 2023-04-10 18:41:07.689 [main] BaseClass - First name is entered.
+[INFO ] 2023-04-10 18:41:07.951 [main] BaseClass - Last name is entered.
+[INFO ] 2023-04-10 18:41:08.269 [main] BaseClass - Country code is entered.
+[INFO ] 2023-04-10 18:41:08.562 [main] BaseClass - Mobile number is entered.
+[INFO ] 2023-04-10 18:41:13.309 [main] BaseClass - Agent info is saved.
+[INFO ] 2023-04-10 18:41:23.276 [main] BaseClass - Agent email is entered.
+[INFO ] 2023-04-10 18:41:23.467 [main] BaseClass - Agent password is entered.
+[INFO ] 2023-04-10 18:41:31.622 [main] BaseClass - Verification of Agent Supplier Login is Successfull.
+[INFO ] 2023-04-10 18:50:18.270 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-10 18:50:18.407 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-10 18:50:18.488 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-10 18:50:27.229 [main] BaseClass - Login to the Admin Dashboard Successfully.
+[INFO ] 2023-04-10 18:50:33.719 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-10 18:50:33.830 [main] BaseClass - Admin Email_id is entered.
+[INFO ] 2023-04-10 18:50:36.932 [main] BaseClass - Admin password is entered.
+[INFO ] 2023-04-10 18:50:43.599 [main] BaseClass - Accounts page opened.
+[INFO ] 2023-04-10 18:50:46.703 [main] BaseClass - Entered Client name in search field.
+[INFO ] 2023-04-10 18:50:49.851 [main] BaseClass - Logged in to the clients Account.
+[INFO ] 2023-04-10 18:50:55.963 [main] BaseClass - Verification of client login Successfull.
+[INFO ] 2023-04-10 18:51:07.102 [main] BaseClass - First Name is entered.
+[INFO ] 2023-04-10 18:51:11.207 [main] BaseClass - Last Name is entered.
+[INFO ] 2023-04-10 18:51:15.304 [main] BaseClass - Country code is entered.
+[INFO ] 2023-04-10 18:51:19.429 [main] BaseClass - Mobile number is entered.
+[INFO ] 2023-04-10 18:51:22.578 [main] BaseClass - Email is entered.
+[INFO ] 2023-04-10 18:51:26.682 [main] BaseClass - Order is set.
+[INFO ] 2023-04-10 18:51:26.781 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-10 18:51:26.887 [main] BaseClass - Confirm password is entered.
+[INFO ] 2023-04-10 18:51:33.176 [main] BaseClass - User is Successfully Signed up.
+[INFO ] 2023-04-10 18:51:44.778 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-10 18:51:44.901 [main] BaseClass - Admin Email_id is entered.
+[INFO ] 2023-04-10 18:51:45.002 [main] BaseClass - Admin password is entered.
+[INFO ] 2023-04-10 18:51:50.228 [main] BaseClass - Accounts page opened.
+[INFO ] 2023-04-10 18:51:54.326 [main] BaseClass - Entered User name in search field.
+[INFO ] 2023-04-10 18:52:02.829 [main] BaseClass - Client type is selected.
+[INFO ] 2023-04-10 18:52:10.060 [main] BaseClass - Agent Supplier name is selected.
+[INFO ] 2023-04-10 18:52:10.473 [main] BaseClass - Agent support name is selected.
+[INFO ] 2023-04-10 18:52:14.802 [main] BaseClass - Invoice type is selected.
+[INFO ] 2023-04-10 18:52:23.042 [main] BaseClass - User info is saved.
+[INFO ] 2023-04-10 18:52:27.208 [main] BaseClass - Account updation failed.
+[INFO ] 2023-04-10 18:52:34.083 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-10 18:52:34.209 [main] BaseClass - Admin Email_id is entered.
+[INFO ] 2023-04-10 18:52:34.303 [main] BaseClass - Admin password is entered.
+[INFO ] 2023-04-10 18:52:38.392 [main] BaseClass - Admin Loged in.
+[INFO ] 2023-04-10 18:52:39.107 [main] BaseClass - Accounts page opened.
+[INFO ] 2023-04-10 18:52:43.235 [main] BaseClass - Entered Admin Supplier name in search field.
+[INFO ] 2023-04-10 18:52:51.406 [main] BaseClass - Logged in to the clients Account.
+[INFO ] 2023-04-10 18:52:59.487 [main] BaseClass - Verification of Admin Supplier login Successfull.
+[INFO ] 2023-04-10 18:53:10.678 [main] BaseClass - Supplier name is entered.
+[INFO ] 2023-04-10 18:53:10.730 [main] BaseClass - Supplier last name is entered.
+[INFO ] 2023-04-10 18:53:10.827 [main] BaseClass - Country code is entered.
+[INFO ] 2023-04-10 18:53:10.950 [main] BaseClass - Mobile number is entered.
+[INFO ] 2023-04-10 18:53:15.091 [main] BaseClass - Supplier mail is entered.
+[INFO ] 2023-04-10 18:53:15.151 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-10 18:53:22.431 [main] BaseClass - Supplier is Successfully Signed up.
+[INFO ] 2023-04-10 18:53:31.035 [main] BaseClass - Mailid is entered.
+[INFO ] 2023-04-10 18:53:31.090 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-10 18:53:35.187 [main] BaseClass - Verification of Supplier Sign in is Successed.
+[INFO ] 2023-04-10 18:53:44.507 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-10 18:53:44.601 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-10 18:53:48.701 [main] BaseClass - Admin(SUP) Loged in.
+[INFO ] 2023-04-10 18:53:51.083 [main] BaseClass - Go to the Team page.
+[INFO ] 2023-04-10 18:53:57.450 [main] BaseClass - First name is entered.
+[INFO ] 2023-04-10 18:53:57.623 [main] BaseClass - Last name is entered.
+[INFO ] 2023-04-10 18:53:57.787 [main] BaseClass - Country code is entered.
+[INFO ] 2023-04-10 18:53:57.988 [main] BaseClass - Mobile number is entered.
+[INFO ] 2023-04-10 18:54:02.585 [main] BaseClass - Agent info is saved.
+[INFO ] 2023-04-10 18:54:12.189 [main] BaseClass - Agent email is entered.
+[INFO ] 2023-04-10 18:54:12.386 [main] BaseClass - Agent password is entered.
+[INFO ] 2023-04-10 18:54:20.570 [main] BaseClass - Verification of Agent Supplier Login is Successfull.
+[INFO ] 2023-04-10 19:01:49.882 [main] BaseClass - First Name is entered.
+[INFO ] 2023-04-10 19:01:53.984 [main] BaseClass - Last Name is entered.
+[INFO ] 2023-04-10 19:01:58.084 [main] BaseClass - Country code is entered.
+[INFO ] 2023-04-10 19:02:02.251 [main] BaseClass - Mobile number is entered.
+[INFO ] 2023-04-10 19:02:05.384 [main] BaseClass - Email is entered.
+[INFO ] 2023-04-10 19:02:09.471 [main] BaseClass - Order is set.
+[INFO ] 2023-04-10 19:02:09.574 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-10 19:02:09.658 [main] BaseClass - Confirm password is entered.
+[INFO ] 2023-04-10 19:02:15.963 [main] BaseClass - User is Successfully Signed up.
+[INFO ] 2023-04-10 19:02:27.187 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-10 19:02:27.337 [main] BaseClass - Admin Email_id is entered.
+[INFO ] 2023-04-10 19:02:27.423 [main] BaseClass - Admin password is entered.
+[INFO ] 2023-04-10 19:02:32.238 [main] BaseClass - Accounts page opened.
+[INFO ] 2023-04-10 19:02:36.376 [main] BaseClass - Entered User name in search field.
+[INFO ] 2023-04-10 19:02:44.935 [main] BaseClass - Client type is selected.
+[INFO ] 2023-04-10 19:02:52.191 [main] BaseClass - Agent Supplier name is selected.
+[INFO ] 2023-04-10 19:02:52.588 [main] BaseClass - Agent support name is selected.
+[INFO ] 2023-04-10 19:02:56.887 [main] BaseClass - Invoice type is selected.
+[INFO ] 2023-04-10 19:03:05.137 [main] BaseClass - User info is saved.
+[INFO ] 2023-04-10 19:03:09.363 [main] BaseClass - Account updation failed.
+[INFO ] 2023-04-10 19:04:28.337 [main] BaseClass - First Name is entered.
+[INFO ] 2023-04-10 19:04:32.554 [main] BaseClass - Last Name is entered.
+[INFO ] 2023-04-10 19:04:36.772 [main] BaseClass - Country code is entered.
+[INFO ] 2023-04-10 19:04:41.027 [main] BaseClass - Mobile number is entered.
+[INFO ] 2023-04-10 19:04:44.324 [main] BaseClass - Email is entered.
+[INFO ] 2023-04-10 19:04:48.504 [main] BaseClass - Order is set.
+[INFO ] 2023-04-10 19:04:48.704 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-10 19:04:48.862 [main] BaseClass - Confirm password is entered.
+[INFO ] 2023-04-10 19:04:55.191 [main] BaseClass - User is Successfully Signed up.
+[INFO ] 2023-04-10 19:05:04.180 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-10 19:05:04.308 [main] BaseClass - Admin Email_id is entered.
+[INFO ] 2023-04-10 19:05:04.405 [main] BaseClass - Admin password is entered.
+[INFO ] 2023-04-10 19:05:09.258 [main] BaseClass - Accounts page opened.
+[INFO ] 2023-04-10 19:05:13.352 [main] BaseClass - Entered User name in search field.
+[INFO ] 2023-04-10 19:05:22.071 [main] BaseClass - Client type is selected.
+[INFO ] 2023-04-10 19:05:29.304 [main] BaseClass - Agent Supplier name is selected.
+[INFO ] 2023-04-10 19:05:29.726 [main] BaseClass - Agent support name is selected.
+[INFO ] 2023-04-10 19:05:34.025 [main] BaseClass - Invoice type is selected.
+[INFO ] 2023-04-10 19:05:42.267 [main] BaseClass - User info is saved.
+[INFO ] 2023-04-10 19:05:46.889 [main] BaseClass - Account updation failed.
+[INFO ] 2023-04-10 19:06:42.524 [main] BaseClass - First Name is entered.
+[INFO ] 2023-04-10 19:06:46.616 [main] BaseClass - Last Name is entered.
+[INFO ] 2023-04-10 19:07:55.749 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-10 19:07:55.934 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-10 19:07:56.043 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-10 19:08:03.491 [main] BaseClass - Login to the Admin Dashboard Successfully.
+[INFO ] 2023-04-10 19:08:10.981 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-10 19:08:11.144 [main] BaseClass - Admin Email_id is entered.
+[INFO ] 2023-04-10 19:08:14.294 [main] BaseClass - Admin password is entered.
+[INFO ] 2023-04-10 19:08:23.861 [main] BaseClass - Accounts page opened.
+[INFO ] 2023-04-10 19:08:27.138 [main] BaseClass - Entered Client name in search field.
+[INFO ] 2023-04-10 19:08:30.368 [main] BaseClass - Logged in to the clients Account.
+[INFO ] 2023-04-10 19:08:36.552 [main] BaseClass - Verification of client login Successfull.
+[INFO ] 2023-04-10 19:10:45.728 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-10 19:10:46.010 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-10 19:10:46.153 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-10 19:10:52.524 [main] BaseClass - Login to the Admin Dashboard Successfully.
+[INFO ] 2023-04-10 19:10:58.993 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-10 19:10:59.195 [main] BaseClass - Admin Email_id is entered.
+[INFO ] 2023-04-10 19:11:02.371 [main] BaseClass - Admin password is entered.
+[INFO ] 2023-04-10 19:11:09.204 [main] BaseClass - Accounts page opened.
+[INFO ] 2023-04-10 19:11:12.439 [main] BaseClass - Entered Client name in search field.
+[INFO ] 2023-04-10 19:11:15.687 [main] BaseClass - Logged in to the clients Account.
+[INFO ] 2023-04-10 19:11:21.851 [main] BaseClass - Verification of client login Successfull.
+[INFO ] 2023-04-10 19:11:34.927 [main] BaseClass - First Name is entered.
+[INFO ] 2023-04-10 19:11:39.056 [main] BaseClass - Last Name is entered.
+[INFO ] 2023-04-10 19:11:43.252 [main] BaseClass - Country code is entered.
+[INFO ] 2023-04-10 19:11:47.497 [main] BaseClass - Mobile number is entered.
+[INFO ] 2023-04-10 19:11:50.788 [main] BaseClass - Email is entered.
+[INFO ] 2023-04-10 19:11:54.855 [main] BaseClass - Order is set.
+[INFO ] 2023-04-10 19:11:54.991 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-10 19:11:55.123 [main] BaseClass - Confirm password is entered.
+[INFO ] 2023-04-10 19:12:01.536 [main] BaseClass - User is Successfully Signed up.
+[INFO ] 2023-04-10 19:12:10.703 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-10 19:12:10.874 [main] BaseClass - Admin Email_id is entered.
+[INFO ] 2023-04-10 19:12:11.016 [main] BaseClass - Admin password is entered.
+[INFO ] 2023-04-10 19:12:17.961 [main] BaseClass - Accounts page opened.
+[INFO ] 2023-04-10 19:12:22.087 [main] BaseClass - Entered User name in search field.
+[INFO ] 2023-04-10 19:12:30.859 [main] BaseClass - Client type is selected.
+[INFO ] 2023-04-10 19:12:38.213 [main] BaseClass - Agent Supplier name is selected.
+[INFO ] 2023-04-10 19:12:38.841 [main] BaseClass - Agent support name is selected.
+[INFO ] 2023-04-10 19:12:43.194 [main] BaseClass - Invoice type is selected.
+[INFO ] 2023-04-10 19:12:51.429 [main] BaseClass - User info is saved.
+[INFO ] 2023-04-10 19:12:55.741 [main] BaseClass - Account updation failed.
+[INFO ] 2023-04-10 19:13:02.703 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-10 19:13:02.856 [main] BaseClass - Admin Email_id is entered.
+[INFO ] 2023-04-10 19:13:02.987 [main] BaseClass - Admin password is entered.
+[INFO ] 2023-04-10 19:13:07.097 [main] BaseClass - Admin Loged in.
+[INFO ] 2023-04-10 19:13:07.852 [main] BaseClass - Accounts page opened.
+[INFO ] 2023-04-10 19:13:11.972 [main] BaseClass - Entered Admin Supplier name in search field.
+[INFO ] 2023-04-10 19:13:20.128 [main] BaseClass - Logged in to the clients Account.
+[INFO ] 2023-04-10 19:13:30.113 [main] BaseClass - Supplier name is entered.
+[INFO ] 2023-04-10 19:13:30.166 [main] BaseClass - Supplier last name is entered.
+[INFO ] 2023-04-10 19:13:30.237 [main] BaseClass - Country code is entered.
+[INFO ] 2023-04-10 19:13:30.342 [main] BaseClass - Mobile number is entered.
+[INFO ] 2023-04-10 19:16:36.753 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-10 19:16:36.938 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-10 19:16:37.037 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-10 19:16:43.153 [main] BaseClass - Login to the Admin Dashboard Successfully.
+[INFO ] 2023-04-10 19:16:50.127 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-10 19:16:50.320 [main] BaseClass - Admin Email_id is entered.
+[INFO ] 2023-04-10 19:16:53.527 [main] BaseClass - Admin password is entered.
+[INFO ] 2023-04-10 19:17:01.253 [main] BaseClass - Accounts page opened.
+[INFO ] 2023-04-10 19:17:04.519 [main] BaseClass - Entered Client name in search field.
+[INFO ] 2023-04-10 19:17:07.677 [main] BaseClass - Logged in to the clients Account.
+[INFO ] 2023-04-10 19:17:13.820 [main] BaseClass - Verification of client login Successfull.
+[INFO ] 2023-04-10 19:17:27.482 [main] BaseClass - First Name is entered.
+[INFO ] 2023-04-10 19:17:31.684 [main] BaseClass - Last Name is entered.
+[INFO ] 2023-04-10 19:17:35.823 [main] BaseClass - Country code is entered.
+[INFO ] 2023-04-10 19:17:39.970 [main] BaseClass - Mobile number is entered.
+[INFO ] 2023-04-10 19:17:43.223 [main] BaseClass - Email is entered.
+[INFO ] 2023-04-10 19:17:47.409 [main] BaseClass - Order is set.
+[INFO ] 2023-04-10 19:17:47.621 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-10 19:17:47.752 [main] BaseClass - Confirm password is entered.
+[INFO ] 2023-04-10 19:17:54.150 [main] BaseClass - User is Successfully Signed up.
+[INFO ] 2023-04-10 19:18:03.715 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-10 19:18:03.897 [main] BaseClass - Admin Email_id is entered.
+[INFO ] 2023-04-10 19:18:04.034 [main] BaseClass - Admin password is entered.
+[INFO ] 2023-04-10 19:18:08.923 [main] BaseClass - Accounts page opened.
+[INFO ] 2023-04-10 19:18:13.057 [main] BaseClass - Entered User name in search field.
+[INFO ] 2023-04-10 19:18:21.720 [main] BaseClass - Client type is selected.
+[INFO ] 2023-04-10 19:18:28.962 [main] BaseClass - Agent Supplier name is selected.
+[INFO ] 2023-04-10 19:18:29.531 [main] BaseClass - Agent support name is selected.
+[INFO ] 2023-04-10 19:18:33.964 [main] BaseClass - Invoice type is selected.
+[INFO ] 2023-04-10 19:18:42.320 [main] BaseClass - User info is saved.
+[INFO ] 2023-04-10 19:18:46.670 [main] BaseClass - Account updated successfully
+[INFO ] 2023-04-10 19:18:51.520 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-10 19:18:51.687 [main] BaseClass - Admin Email_id is entered.
+[INFO ] 2023-04-10 19:18:51.827 [main] BaseClass - Admin password is entered.
+[INFO ] 2023-04-10 19:18:55.943 [main] BaseClass - Admin Loged in.
+[INFO ] 2023-04-10 19:18:56.741 [main] BaseClass - Accounts page opened.
+[INFO ] 2023-04-10 19:19:00.855 [main] BaseClass - Entered Admin Supplier name in search field.
+[INFO ] 2023-04-10 19:19:09.090 [main] BaseClass - Logged in to the clients Account.
+[INFO ] 2023-04-10 19:19:17.182 [main] BaseClass - Verification of Admin Supplier login Successfull.
+[INFO ] 2023-04-10 19:19:26.625 [main] BaseClass - Supplier name is entered.
+[INFO ] 2023-04-10 19:19:26.708 [main] BaseClass - Supplier last name is entered.
+[INFO ] 2023-04-10 19:19:26.807 [main] BaseClass - Country code is entered.
+[INFO ] 2023-04-10 19:19:26.964 [main] BaseClass - Mobile number is entered.
+[INFO ] 2023-04-10 19:19:31.201 [main] BaseClass - Supplier mail is entered.
+[INFO ] 2023-04-10 19:19:31.287 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-10 19:19:38.575 [main] BaseClass - Supplier is Successfully Signed up.
+[INFO ] 2023-04-10 19:19:47.239 [main] BaseClass - Mailid is entered.
+[INFO ] 2023-04-10 19:19:47.303 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-10 19:19:51.426 [main] BaseClass - Verification of Supplier Sign in is Successed.
+[INFO ] 2023-04-10 19:20:02.956 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-10 19:20:03.116 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-10 19:20:07.255 [main] BaseClass - Admin(SUP) Loged in.
+[INFO ] 2023-04-10 19:20:12.112 [main] BaseClass - Go to the Team page.
+[INFO ] 2023-04-10 19:20:18.592 [main] BaseClass - First name is entered.
+[INFO ] 2023-04-10 19:20:18.775 [main] BaseClass - Last name is entered.
+[INFO ] 2023-04-10 19:20:18.979 [main] BaseClass - Country code is entered.
+[INFO ] 2023-04-10 19:20:19.247 [main] BaseClass - Mobile number is entered.
+[INFO ] 2023-04-10 19:20:24.128 [main] BaseClass - Agent info is saved.
+[INFO ] 2023-04-10 19:20:33.773 [main] BaseClass - Agent email is entered.
+[INFO ] 2023-04-10 19:20:33.880 [main] BaseClass - Agent password is entered.
+[INFO ] 2023-04-10 19:20:42.140 [main] BaseClass - Verification of Agent Supplier Login is Successfull.
+[INFO ] 2023-04-11 11:41:29.792 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-11 11:41:29.877 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-11 11:41:33.956 [main] BaseClass - Client login successed.
+[INFO ] 2023-04-11 11:41:35.779 [main] BaseClass - Domain name is entered.
+[INFO ] 2023-04-11 11:41:39.974 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-11 11:41:44.199 [main] BaseClass - Verification of Store Adding successfull.
+[INFO ] 2023-04-11 11:44:42.284 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-11 11:44:42.378 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-11 11:44:46.468 [main] BaseClass - Client login successed.
+[INFO ] 2023-04-11 11:46:22.599 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-11 11:46:22.679 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-11 11:46:26.751 [main] BaseClass - Client login successed.
+[INFO ] 2023-04-11 11:51:06.471 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-11 11:51:06.547 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-11 11:51:10.614 [main] BaseClass - Client login successed.
+[INFO ] 2023-04-11 11:52:48.798 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-11 11:52:48.878 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-11 11:52:52.945 [main] BaseClass - Client login successed.
+[INFO ] 2023-04-11 11:54:27.002 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-11 11:54:27.083 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-11 11:54:31.152 [main] BaseClass - Client login successed.
+[INFO ] 2023-04-11 11:59:49.292 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-11 11:59:49.371 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-11 11:59:53.450 [main] BaseClass - Client login successed.
+[INFO ] 2023-04-11 12:02:56.260 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-11 12:02:56.341 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-11 12:03:00.412 [main] BaseClass - Client login successed.
+[INFO ] 2023-04-11 12:04:39.554 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-11 12:04:39.650 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-11 12:04:43.731 [main] BaseClass - Client login successed.
+[INFO ] 2023-04-11 12:06:28.658 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-11 12:06:28.740 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-11 12:06:32.809 [main] BaseClass - Client login successed.
+[INFO ] 2023-04-11 12:06:35.370 [main] BaseClass - Domain name is entered.
+[INFO ] 2023-04-11 12:06:39.567 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-11 12:06:43.797 [main] BaseClass - Verification of Store Adding successfull.
+[INFO ] 2023-04-11 12:11:00.910 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-11 12:11:00.996 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-11 12:11:05.070 [main] BaseClass - Client login successed.
+[INFO ] 2023-04-11 12:11:07.100 [main] BaseClass - Domain name is entered.
+[INFO ] 2023-04-11 12:11:11.292 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-11 12:11:15.536 [main] BaseClass - Verification of Store Adding successfull.
+[INFO ] 2023-04-11 12:14:41.577 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-11 12:14:41.652 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-11 12:14:45.721 [main] BaseClass - Client login successed.
+[INFO ] 2023-04-11 12:14:47.765 [main] BaseClass - Domain name is entered.
+[INFO ] 2023-04-11 12:14:51.959 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-11 12:14:56.195 [main] BaseClass - Verification of Store Adding successfull.
+[INFO ] 2023-04-11 12:15:05.209 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-11 12:15:05.289 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-11 12:15:09.360 [main] BaseClass - Client login successed.
+[INFO ] 2023-04-11 12:15:24.378 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-11 12:15:24.460 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-11 12:15:28.534 [main] BaseClass - Client login successed.
+[INFO ] 2023-04-11 12:21:23.892 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-11 12:21:23.976 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-11 12:21:28.044 [main] BaseClass - Client login successed.
+[INFO ] 2023-04-11 12:21:38.659 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-11 12:21:38.750 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-11 12:21:42.822 [main] BaseClass - Client login successed.
+[INFO ] 2023-04-11 12:21:49.131 [main] BaseClass - Varification for Store deletion is done.
+[INFO ] 2023-04-11 12:22:27.288 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-11 12:22:27.364 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-11 12:22:31.433 [main] BaseClass - Client login successed.
+[INFO ] 2023-04-11 12:23:17.315 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-11 12:23:17.401 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-11 12:23:21.480 [main] BaseClass - Client login successed.
+[INFO ] 2023-04-11 12:25:16.403 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-11 12:25:16.485 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-11 12:25:20.554 [main] BaseClass - Client login successed.
+[INFO ] 2023-04-11 12:29:58.536 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-11 12:29:58.613 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-11 12:30:02.680 [main] BaseClass - Client login successed.
+[INFO ] 2023-04-11 12:30:20.712 [main] BaseClass - Varification for Store updation is done.
+[INFO ] 2023-04-11 12:34:10.593 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-11 12:34:10.669 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-11 12:34:14.745 [main] BaseClass - Client login successed.
+[INFO ] 2023-04-11 12:34:30.762 [main] BaseClass - Varification for Store updation is done.
+[INFO ] 2023-04-11 12:39:25.825 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-11 12:39:25.909 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-11 12:39:29.984 [main] BaseClass - Client login successed.
+[INFO ] 2023-04-11 12:39:33.081 [main] BaseClass - Domain name is entered.
+[INFO ] 2023-04-11 12:39:37.278 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-11 12:39:41.566 [main] BaseClass - Verification of Store Adding successfull.

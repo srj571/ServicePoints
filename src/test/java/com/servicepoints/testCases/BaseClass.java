@@ -50,6 +50,22 @@ public class BaseClass {
 	public String afname=rc.getAgentfname();
 	public String adminagpass=rc.getAdminPass();
 	public String adminemail=rc.getAdminSUPmail();
+	public String agentsupmail=rc.setAgentSupEmail();
+	public String agentsuppass=rc.setAgentSupPass();
+	public String product=rc.setProduct();
+	public String FirstPcsPrice=rc.set1PcsPrice();
+	public String SecPcsPrice=rc.set2PcsPrice();
+	public String ThirdPcsPrice=rc.set3PcsPrice();
+	public String ForthPcsprice=rc.set4PcsPrice();
+	public String clientemail=rc.setClientEmail();
+	public String cPass = rc.setClientPassword();
+	public String proToAcceptQuo=rc.setProductName();
+	public String DomainName=rc.setDomainName();
+	public String Alias=rc.setAlias();
+	public String StorePass=rc.setStorePass();
+	public String DateOrder=rc.setFetchDate();
+	public String editAlias=rc.editAlias();
+	
 	public static WebDriver driver;
 
 	@BeforeClass
@@ -65,7 +81,7 @@ public class BaseClass {
 		}
 		driver.get(baseURL);
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
 	}
 
 	@AfterClass

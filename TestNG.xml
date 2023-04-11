@@ -15,7 +15,12 @@
 			<!--<class name="com.servicepoints.testCases.TC04_VerifyClientApprovalTest"></class>-->
 			<!--<class name="com.servicepoints.testCases.TC05_VerifyAdminSUPLoginTest"></class>-->
 			<!--<class name="com.servicepoints.testCases.TC06_VerifySupplierSignUp"></class>-->
-			<class name="com.servicepoints.testCases.TC07_VerifyAddAgentSupBySup"></class>
+			<!--<class name="com.servicepoints.testCases.TC07_VerifyAddAgentSupBySupplier"></class>-->
+			<!--<class name="com.servicepoints.testCases.TC09_VerifySubmitQuote"></class>-->
+			<class name="com.servicepoints.testCases.TC08_VerifyAddingNewStore"></class>
+			<!--<class name="com.servicepoints.testCases.TC_VerifyUpdationOfStore"></class>-->
+			<!--<class name="com.servicepoints.testCases.Tc_DeletionOfStore"></class>-->
+			
 		 </classes>
      </test> 
 </suite> 

@@ -24,10 +24,12 @@ public class TC01_AdminLoginTest extends BaseClass {
 
 		if (driver.getTitle().equals("Admin Dashboard | Service Points")) {
 			Assert.assertTrue(true);
+			Thread.sleep(3000);
 			logger.info("Login to the Admin Dashboard Successfully.");
 		} else {
 			captureScreen(driver, "AdminLoginPage");
 			logger.info("Login to Admin Dashboard failed.");
+			Thread.sleep(3000);
 			Assert.assertTrue(false);
 		}
 	}

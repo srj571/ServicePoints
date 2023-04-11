@@ -64,14 +64,15 @@ public class TC06_VerifySupplierSignUp {
 		String num = BaseClass.getRandomNum();
 		sup.setMobileNum(num);
 		logger.info("Mobile number is entered.");
-		Thread.sleep(3000);
+		Thread.sleep(4000);
 
 		sup.setEmail(supemail);
 		logger.info("Supplier mail is entered.");
 
 		sup.setPassword(suppass);
 		logger.info("Password is entered.");
-
+		Thread.sleep(4000);
+		
 		sup.setCofirmPass(supcpass);
 		sup.clickTermCheckBox();
 		sup.clickBtnSignUp();
@@ -89,7 +90,7 @@ public class TC06_VerifySupplierSignUp {
 		}
 
 		driver.get(baseURL);
-		Thread.sleep(3000);
+		Thread.sleep(4000);
 
 		LoginPage lp = new LoginPage(driver);
 		lp.setAdminMailId(supemail);
@@ -97,7 +98,7 @@ public class TC06_VerifySupplierSignUp {
 		lp.setAdminPassword(suppass);
 		logger.info("Password is entered.");
 		lp.clickLoginbtn();
-		Thread.sleep(3000);
+		Thread.sleep(4000);
 
 		if (driver.getTitle().contains("Admin Supplier Dashboard | Service Points")) {
 			logger.info("Verification of Supplier Sign in is Successed.");

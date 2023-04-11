@@ -7,13 +7,14 @@
   </listeners>
   <test thread-count="5" name="Testng(failed)">
     <classes>
-      <class name="com.servicepoints.testCases.TC07_VerifyAddAgentSupBySup">
+      <class name="com.servicepoints.testCases.TC08_VerifyAddingNewStore">
         <methods>
-          <include name="verifyAddAgent"/>
+          <include name="verifyDeletingStore"/>
+          <include name="verifyUpdatingStore"/>
           <include name="setup"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.servicepoints.testCases.TC07_VerifyAddAgentSupBySup -->
+      </class> <!-- com.servicepoints.testCases.TC08_VerifyAddingNewStore -->
     </classes>
   </test> <!-- Testng(failed) -->
 </suite> <!-- Failed suite [Suite] -->
