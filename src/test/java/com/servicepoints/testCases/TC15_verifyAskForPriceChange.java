@@ -1,0 +1,116 @@
+package com.servicepoints.testCases;
+
+import java.util.Iterator;
+import java.util.Set;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.Test;
+
+import com.servicepoints.PageObjects.AgentSupProductsPage;
+import com.servicepoints.PageObjects.ClientProductPage;
+import com.servicepoints.PageObjects.LoginPage;
+import com.servicepoints.utilities.ReadConfig;
+
+public class TC15_verifyAskForPriceChange extends BaseClass {
+
+	ReadConfig rc = new ReadConfig();
+	public String c1price = rc.setChangePrice1Pcs();
+	public String c2price = rc.setChangePrice2Pcs();
+	public String c3price = rc.setChangePrice3Pcs();
+	public String c4price = rc.setChangePrice4Pcs();
+
+
+	@Test
+	public void verifyAskForPriceChange() throws InterruptedException {
+		AgentSupProductsPage asop = new AgentSupProductsPage(driver);
+		LoginPage lp = new LoginPage(driver);
+		ClientProductPage cl = new ClientProductPage(driver);
+		WebDriverWait wait=new WebDriverWait(driver, 5);
+		
+		Thread.sleep(3000);
+		lp.setAdminMailId(agentsupmail);
+		logger.info("Email_id is entered.");
+
+		lp.setAdminPassword(agentsuppass);
+		logger.info("Password is entered.");
+
+		lp.clickLoginbtn();
+		Thread.sleep(3000);
+
+		asop.getProductsPage();
+		Thread.sleep(4000);
+
+		asop.clickOnProductsTab();
+		asop.searchProductName(product);
+		Thread.sleep(4000);
+		logger.info("Product name entered.");
+		asop.clickOnfdiv();
+
+		Set<String> window = driver.getWindowHandles();
+		Iterator<String> it = window.iterator();
+		String parent = it.next();
+		String child = it.next();
+		driver.switchTo().window(child);
+		Thread.sleep(4000);
+
+		asop.clckOnAskForPrceChng();
+		logger.info("Click on Ask for Price changed.");
+		Thread.sleep(2000);
+
+		asop.firstPcsPrice(c1price);
+		asop.secPcsPrice(c2price);
+		asop.thirdPcsPrice(c3price);
+		asop.forthPcsPrice(c4price);
+		asop.clickOnSbmtNewPrice();
+		logger.info("Entered changed price and Clicked on submit.");
+		//driver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
+
+		//if(asop.clsNotifyPopUpisDisplays() == true) {
+			asop.closeNotifyPopUp();
+			logger.info("Pop up get closed.");
+			Thread.sleep(6000);
+//		} else {
+//			Thread.sleep(6000);
+//		}
+//		
+		//Thread.sleep(3000);
+		
+//		if (driver.getPageSource().contains("New Price")) {
+//			logger.info("Status changed to New Price.");
+//		}
+		asop.logpOutAgent();
+		
+		lp.setAdminMailId(clientemail);
+		logger.info("Email_id is entered.");
+
+		lp.setAdminPassword(cPass);
+		logger.info("Password is entered.");
+
+		lp.clickLoginbtn();
+		Thread.sleep(4000);
+		logger.info("Client loged in successfully.");
+
+		cl.getProductsPage();
+
+		cl.searchProduct(proToAcceptQuo);
+		Thread.sleep(4000);
+		cl.selectProductTab();
+		logger.info("Product selected.");
+		Thread.sleep(3000);
+
+		String childer = it.next();
+
+		driver.switchTo().window(childer);
+		Thread.sleep(6000);
+		cl.clsePopUpFrmClntSideAskPr();
+		logger.info("Pop up closed.");
+		cl.acceptAskforPriceChange();
+		logger.info("Changed price is get accepted by the Client.");
+		cl.clickOnYesImSure();
+		cl.closeThankUPopUp();
+		logger.info("Now verification is to be done.");
+		Thread.sleep(6000);
+
+	}
+}

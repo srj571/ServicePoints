@@ -16,10 +16,11 @@ public class TC07_VerifyAddAgentSupBySupplier extends BaseClass {
 
 		lp.setAdminMailId(adminemail);
 		logger.info("Email_id is entered.");
-
+		Thread.sleep(1000);
 		lp.setAdminPassword(adminagpass);
 		logger.info("Password is entered.");
-
+		Thread.sleep(1000);
+		
 		lp.clickLoginbtn();
 		Thread.sleep(4000);
 		logger.info("Admin(SUP) Loged in.");
@@ -34,23 +35,29 @@ public class TC07_VerifyAddAgentSupBySupplier extends BaseClass {
 
 		asp.sendFName(afname);
 		logger.info("First name is entered.");
-
+		Thread.sleep(1000);
+		
 		asp.sendLname(alname);
 		logger.info("Last name is entered.");
+		Thread.sleep(1000);
 
 		asp.sendCCode(accode);
 		logger.info("Country code is entered.");
+		Thread.sleep(1000);
 
 		String num = BaseClass.getRandomNum();
 		asp.sendmobNum(num);
 		logger.info("Mobile number is entered.");
-		Thread.sleep(4000);
+		Thread.sleep(1000);
 
 		asp.sendEmail(amail);
+		Thread.sleep(1000);
 
 		asp.sendPass(pass);
+		Thread.sleep(1000);
 
 		asp.sendcpass(cpass);
+		Thread.sleep(1000);
 
 		asp.clickOnAddAgentbtn();
 		logger.info("Agent info is saved.");
@@ -68,10 +75,11 @@ public class TC07_VerifyAddAgentSupBySupplier extends BaseClass {
 
 		lp.setAdminMailId(amail);
 		logger.info("Agent email is entered.");
-
+		Thread.sleep(1000);
+		
 		lp.setAdminPassword(pass);
 		logger.info("Agent password is entered.");
-		Thread.sleep(4000);
+		Thread.sleep(1000);
 
 		lp.clickLoginbtn();
 		Thread.sleep(4000);

@@ -54,30 +54,35 @@ public class TC06_VerifySupplierSignUp {
 		SignUpPage sup = new SignUpPage(driver);
 		sup.setUserFirstName(supfname);
 		logger.info("Supplier name is entered.");
-
+		Thread.sleep(1000);
+		
 		sup.setUserLastName(suplname);
 		logger.info("Supplier last name is entered.");
+		Thread.sleep(1000);
 
 		sup.setCountryCode(supccode);
 		logger.info("Country code is entered.");
-
+		Thread.sleep(1000);
+		
 		String num = BaseClass.getRandomNum();
 		sup.setMobileNum(num);
 		logger.info("Mobile number is entered.");
-		Thread.sleep(4000);
+		Thread.sleep(1000);
 
 		sup.setEmail(supemail);
 		logger.info("Supplier mail is entered.");
-
+		Thread.sleep(1000);
+		
 		sup.setPassword(suppass);
 		logger.info("Password is entered.");
-		Thread.sleep(4000);
+		Thread.sleep(1000);
 		
 		sup.setCofirmPass(supcpass);
+		Thread.sleep(1000);
 		sup.clickTermCheckBox();
 		sup.clickBtnSignUp();
 
-		Thread.sleep(3000);
+		Thread.sleep(4000);
 
 		if (driver.getPageSource().contains("Congratulations! You have successfully signed up for Service Points.")) {
 			logger.info("Supplier is Successfully Signed up.");
@@ -95,8 +100,10 @@ public class TC06_VerifySupplierSignUp {
 		LoginPage lp = new LoginPage(driver);
 		lp.setAdminMailId(supemail);
 		logger.info("Mailid is entered.");
+		Thread.sleep(1000);
 		lp.setAdminPassword(suppass);
 		logger.info("Password is entered.");
+		Thread.sleep(1000);
 		lp.clickLoginbtn();
 		Thread.sleep(4000);
 

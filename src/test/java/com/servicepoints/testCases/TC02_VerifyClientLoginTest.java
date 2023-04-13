@@ -32,23 +32,23 @@ public class TC02_VerifyClientLoginTest extends BaseClass{
 		AdminAccountsPage adminAccount=new AdminAccountsPage(driver);
 		adminAccount.getAdminAccountsPage();
 		logger.info("Accounts page opened.");
-		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+		Thread.sleep(3000);
 		
 		adminAccount.enterUserName(clientName);
 		logger.info("Entered Client name in search field.");
 		
 		adminAccount.getClientsTab();
-		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+		Thread.sleep(3000);
 		adminAccount.clickOnLoginBtn();
 		logger.info("Logged in to the clients Account.");
-		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+		Thread.sleep(3000);
 		
 		Set<String> window=driver.getWindowHandles();
 		Iterator<String> it=window.iterator();
 		String parent=it.next();
 		String child=it.next();
 		driver.switchTo().window(child);
-		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+		Thread.sleep(3000);
 			
 		if(driver.getPageSource().contains(clientName)) {
 			logger.info("Verification of client login Successfull.");

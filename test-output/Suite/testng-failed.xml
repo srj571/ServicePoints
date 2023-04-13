@@ -7,13 +7,13 @@
   </listeners>
   <test thread-count="5" name="Testng(failed)">
     <classes>
-      <class name="com.servicepoints.testCases.TC08_VerifyAddingNewStore">
+      <class name="com.servicepoints.testCases.TC03_UserSignUpTest">
         <methods>
-          <include name="verifyAddStore"/>
+          <include name="testUserSignUp"/>
           <include name="setup"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.servicepoints.testCases.TC08_VerifyAddingNewStore -->
+      </class> <!-- com.servicepoints.testCases.TC03_UserSignUpTest -->
     </classes>
   </test> <!-- Testng(failed) -->
 </suite> <!-- Failed suite [Suite] -->

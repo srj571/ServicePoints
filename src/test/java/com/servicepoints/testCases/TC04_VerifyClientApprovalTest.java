@@ -17,7 +17,7 @@ public class TC04_VerifyClientApprovalTest extends BaseClass{
 	public String supsupfull=fname+" "+lname;
 	
 	
-	@Test(dependsOnMethods = { "testUserSignUp" })
+	@Test
 	public void verifyClientApproval() throws InterruptedException {
 		logger.info("Application Opened.");
 		LoginPage lp = new LoginPage(driver);

@@ -40,7 +40,7 @@ public class TC13_VerifyAddAgentSupportTest extends BaseClass {
 
 		adminAccount.clickOnLoginBtn();
 		logger.info("Logged in to the Teamleader Account.");
-		Thread.sleep(6000);
+		Thread.sleep(5000);
 
 		Set<String> window = driver.getWindowHandles();
 		Iterator<String> it = window.iterator();
@@ -56,19 +56,25 @@ public class TC13_VerifyAddAgentSupportTest extends BaseClass {
 		AdminSupplierPage asp = new AdminSupplierPage(driver);
 		asp.sendFName(TAfname);
 		Thread.sleep(1000);
+		
 		asp.sendLname(TAlname);
 		Thread.sleep(1000);
+		
 		asp.sendCCode(TACode);
 		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 		String num = BaseClass.getRandomNum();
 		asp.sendmobNum(num);
 		Thread.sleep(1000);
+		
 		asp.sendEmail(TAEmail);
 		Thread.sleep(1000);
+		
 		asp.sendPass(TAPass);
 		Thread.sleep(1000);
+		
 		asp.sendcpass(TAcPass);
 		Thread.sleep(1000);
+		
 		adminAccount.clickOnAddAgetSP();
 		logger.info("Click on Add Agent Button.");
 		Thread.sleep(4000);

@@ -20,7 +20,7 @@ public class AdminAccountsPage {
 
 	@FindBy(xpath = "//input[@id='accountSearch']")
 	WebElement searchNameField;
-
+	
 	@FindBy(xpath = "//a[@data-type='clients']")
 	WebElement clientbtnTab;
 
@@ -94,6 +94,29 @@ public class AdminAccountsPage {
 	
 	@FindBy(xpath="(//span[@class='name_overflow'][contains(text(),'John')])[1]")
 	WebElement verifyName;
+	
+	@FindBy(xpath="//div[@class='custom-control custom-switch right-switch switch-mod float-left']")
+	WebElement excludebtn;
+	
+	@FindBy(xpath="//a[normalize-space()='Agent (SUP)']")
+	WebElement agentSUPtab;
+	
+	public void goToTheAgentSUPTab() {
+		agentSUPtab.click();
+	}
+	
+	public boolean verifyExcludeBtn() {
+		boolean tr=excludebtn.isSelected();
+		return tr;
+	}
+	
+	public void clearSearchField() {
+		searchNameField.clear();
+	}
+	
+	public void clickOnExcludeQuotebtn() {
+		excludebtn.click();
+	}
 	
 	public String verifyName() {
 		String name=verifyName.getText();

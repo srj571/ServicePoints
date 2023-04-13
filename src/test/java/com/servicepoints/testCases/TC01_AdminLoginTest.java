@@ -22,7 +22,7 @@ public class TC01_AdminLoginTest extends BaseClass {
 		logger.info("Password is entered.");
 
 		lp.clickLoginbtn();
-		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+		Thread.sleep(3000);
 
 		if (driver.getTitle().equals("Admin Dashboard | Service Points")) {
 			Assert.assertTrue(true);

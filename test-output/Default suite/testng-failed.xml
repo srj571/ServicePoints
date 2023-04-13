@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.servicepoints.testCases.TC08_VerifySubmitQuote">
+      <class name="com.servicepoints.testCases.TC02_VerifyClientLoginTest">
         <methods>
-          <include name="verifySubmitQuote"/>
+          <include name="verifyClientLogin"/>
           <include name="setup"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.servicepoints.testCases.TC08_VerifySubmitQuote -->
+      </class> <!-- com.servicepoints.testCases.TC02_VerifyClientLoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -288,6 +288,38 @@ public class ReadConfig {
 		return cpass;
 	}
 	
+	public String setAgentNameForExcldOpen() {
+		String clname=po.getProperty("AgentSupplier");
+		return clname;
+	}
+	
+	public String setAgentsAdminName() {
+		String cladminName=po.getProperty("AgentOfAdmin");
+		return cladminName;
+	}
+	
+	
+	//Methods for change price in Ask for price change
+	public String setChangePrice1Pcs() {
+		String c1price=po.getProperty("1CPcsPrice");
+		return c1price;
+	}
+	
+	public String setChangePrice2Pcs() {
+		String c2price=po.getProperty("2CPcsPrice");
+		return c2price;
+	}
+	
+	public String setChangePrice3Pcs() {
+		String c3price=po.getProperty("3CPcsPrice");
+		return c3price;
+	}
+	
+	public String setChangePrice4Pcs() {
+		String c4price=po.getProperty("4CPcsPrice");
+		return c4price;
+	}
+	
 }
 
 

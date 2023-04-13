@@ -17,10 +17,12 @@ public class TC11_VerifySubmitQuoteTest extends BaseClass {
 	public void verifySubmitQuote() throws InterruptedException, IOException {
 		logger.info("Application Opened.");
 		LoginPage lp = new LoginPage(driver);
-
+		Thread.sleep(1000);
+		
 		lp.setAdminMailId(agentsupmail);
 		logger.info("Email_id is entered.");
-
+		Thread.sleep(1000);
+		
 		lp.setAdminPassword(agentsuppass);
 		logger.info("Password is entered.");
 
@@ -34,7 +36,7 @@ public class TC11_VerifySubmitQuoteTest extends BaseClass {
 		Thread.sleep(2000);
 
 		aspp.searchProductName(product);
-		Thread.sleep(4000);
+		Thread.sleep(2000);
 		logger.info("Product name entered.");
 		aspp.clickOnfdiv();
 

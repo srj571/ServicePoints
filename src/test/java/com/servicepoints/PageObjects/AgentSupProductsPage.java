@@ -13,9 +13,9 @@ public class AgentSupProductsPage {
 		PageFactory.initElements(ldriver, this);
 	}
 	
-	@FindBy(xpath="//div[contains(text(),'Products')]")
+	@FindBy(xpath="//div[normalize-space()='Products']")
 	WebElement ProductsTab;
-	
+	//div[normalize-space()='Products']
 	@FindBy(xpath="//label[normalize-space()='Quotations clients']")
 	WebElement QuotationsClients;
 	
@@ -59,6 +59,8 @@ public class AgentSupProductsPage {
 		divfield.click();
 	}
 	
+	
+	
 	public void firstPcsPrice(String fpcs) {
 		txt1Pcs.sendKeys(fpcs);
 	}
@@ -79,13 +81,62 @@ public class AgentSupProductsPage {
 		submitquote.click();
 	}
 	
+	public boolean isSubmitQuotebtnEnabled() {
+		boolean submitQuote=submitquote.isEnabled();
+		return submitQuote;
+	}
+	
 	public String getStatus() {
 		String text=QuoteStatus.getText();
 		return text;
 	}
 	
 	
+	//AskForPriceChangeFunctionality
+	@FindBy(xpath="//button[normalize-space()='Ask for price change']")
+	WebElement askForPriceCh;
+	
+	public void clckOnAskForPrceChng() {
+		askForPriceCh.click();
+	}
+	
+	@FindBy(xpath="//button[normalize-space()='Submit the new price']")
+	WebElement sbmtNewPrice;
+	
+	public void clickOnSbmtNewPrice() {
+		sbmtNewPrice.click();
+	}
+	
+	@FindBy(xpath="//button[normalize-space()='I have notified the SP Account manager']")
+	WebElement notifyPopUp;
+	
+	public void closeNotifyPopUp() {
+		notifyPopUp.click();
+	}
+	
+	public boolean clsNotifyPopUpisDisplays() {
+		boolean val=notifyPopUp.isDisplayed();
+		return val;
+	}
+	
+	@FindBy(xpath="//label[@id='is_quotation_or_product_label3']")
+	WebElement productsTab;
+	
+	public void clickOnProductsTab() {
+		productsTab.click();
+	}
+	
+	@FindBy(xpath="//body/div[2]/div[1]/div[2]/a[3]/*[1]")
+	WebElement logout;
+	
+	public void logpOutAgent() {
+		logout.click();
+	}
 	
 	
 	
+	
+	
+	
+
 }
