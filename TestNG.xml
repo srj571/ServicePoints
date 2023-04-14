@@ -20,10 +20,11 @@
 			<!--<class name="com.servicepoints.testCases.TC09_VerifyUpdationOfStoreTest"></class>-->
 			<!--<class name="com.servicepoints.testCases.TC10_VerifyDeletionOfStoreTest"></class>-->
 			<!--<class name="com.servicepoints.testCases.TC11_VerifySubmitQuoteTest"></class>-->
-		    <!-- <class name="com.servicepoints.testCases.TC12_VerifyAcceptQuotationTest"></class>-->
+		    <!--<class name="com.servicepoints.testCases.TC12_VerifyAcceptQuotationTest"></class>-->
 			<!-- <class name="com.servicepoints.testCases.TC13_VerifyAddAgentSupportTest"></class>-->
-		    <!-- <class name="com.servicepoints.testCases.TC14_VerifyExcludeFunctionTest"></class>-->
+		    <!--<class name="com.servicepoints.testCases.TC14_VerifyExcludeFunctionTest"></class>-->
 			<class name="com.servicepoints.testCases.TC15_verifyAskForPriceChange"></class>
+			<!--<class name="com.servicepoints.testCases.TC16_VerifyUpdateQuotation"></class>-->
 		 </classes>
      </test> 
 </suite> 

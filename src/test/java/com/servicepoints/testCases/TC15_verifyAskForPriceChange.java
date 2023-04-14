@@ -23,9 +23,13 @@ public class TC15_verifyAskForPriceChange extends BaseClass {
 
 	@Test
 	public void verifyAskForPriceChange() throws InterruptedException {
+		
 		AgentSupProductsPage asop = new AgentSupProductsPage(driver);
+		
 		LoginPage lp = new LoginPage(driver);
+		
 		ClientProductPage cl = new ClientProductPage(driver);
+		
 		WebDriverWait wait=new WebDriverWait(driver, 5);
 		
 		lp.setAdminMailId(agentsupmail);
@@ -53,6 +57,8 @@ public class TC15_verifyAskForPriceChange extends BaseClass {
 		Iterator<String> it = window.iterator();
 		String parent = it.next();
 		String child = it.next();
+		
+		
 		driver.switchTo().window(child);
 		Thread.sleep(4000);
 
@@ -66,22 +72,22 @@ public class TC15_verifyAskForPriceChange extends BaseClass {
 		asop.forthPcsPrice(c4price);
 		asop.clickOnSbmtNewPrice();
 		logger.info("Entered changed price and Clicked on submit.");
-		System.out.println(asop.isDivVisible());
+		System.out.println(asop.checkCancelBtnDisplayed());
 		
-		if(asop.isDivVisible() == false) {
+		if(asop.checkCancelBtnDisplayed() == true) {
 			asop.closeNotifyPopUp();
 			logger.info("Pop up get closed.");
-			Thread.sleep(3000);
+			Thread.sleep(5000);
 		}
-		//Thread.sleep(3000);
-		
+		Thread.sleep(5000);
 		if (driver.getPageSource().contains("New price")) {
 			logger.info("Status changed to New Price.");
 		}
-			
-		logger.info("Logged out from Agent account.");
-		asop.logpOutAgent();
 		Thread.sleep(4000);
+		driver.get(baseURL);
+		logger.info("Logged out from Agent account.");
+		Thread.sleep(4000);
+		
 		lp.setAdminMailId(clientemail);
 		logger.info("Email_id is entered.");
 
@@ -89,21 +95,23 @@ public class TC15_verifyAskForPriceChange extends BaseClass {
 		logger.info("Password is entered.");
 
 		lp.clickLoginbtn();
-		Thread.sleep(4000);
+		Thread.sleep(3000);
 		logger.info("Client loged in successfully.");
 
 		cl.getProductsPage();
+		Thread.sleep(2000);
 
-		cl.searchProduct(proToAcceptQuo);
-		Thread.sleep(4000);
+		cl.searchProduct(product);
+		Thread.sleep(3000);
+		
 		cl.selectProductTab();
 		logger.info("Product selected.");
 		Thread.sleep(3000);
-
+		
 		String childer = it.next();
-
 		driver.switchTo().window(childer);
 		Thread.sleep(6000);
+		
 		cl.clsePopUpFrmClntSideAskPr();
 		logger.info("Pop up closed.");
 		cl.acceptAskforPriceChange();

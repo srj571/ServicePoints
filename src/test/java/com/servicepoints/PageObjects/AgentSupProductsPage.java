@@ -81,6 +81,11 @@ public class AgentSupProductsPage {
 		submitquote.click();
 	}
 	
+	public boolean checkSubmitQuotebtn() {
+		boolean tr=submitquote.isDisplayed();
+		return tr;
+	}
+	
 	public boolean isSubmitQuotebtnEnabled() {
 		boolean submitQuote=submitquote.isEnabled();
 		return submitQuote;
@@ -109,7 +114,7 @@ public class AgentSupProductsPage {
 	
 	@FindBy(xpath="//button[normalize-space()='I have notified the SP Account manager']")
 	WebElement notifyPopUp;
-	
+
 	public void closeNotifyPopUp() {
 		notifyPopUp.click();
 	}
@@ -126,7 +131,7 @@ public class AgentSupProductsPage {
 		productsTab.click();
 	}
 	
-	@FindBy(xpath="//body/div/div/div/a[3]//*[name()='svg']")
+	@FindBy(xpath="//div[@class='leftside-menu-fixed-bottom --transition-ease']//a[2]")
 	WebElement logout;
 	
 	public void logpOutAgent() {
@@ -141,8 +146,33 @@ public class AgentSupProductsPage {
 		return div;
 	}
 	
+	@FindBy(xpath="//button[normalize-space()='Update quotation']")
+	WebElement updateQuotation;
 	
+	public void updateQuotation() {
+		updateQuotation.click();
+	}
 	
+	@FindBy(xpath="//a[normalize-space()='Delete quotation']")
+	WebElement deletequote;
 	
+	public void deleteQuote() {
+		deletequote.click();
+	}
+	
+	@FindBy(xpath="//button[@class='btn btn-danger deleteQuotationConfirmedBtn btn-sm']")
+	WebElement yesImSure;
+	
+	public void clickOnYesImSure() {
+		yesImSure.click();
+	}
+	
+	@FindBy(xpath="(//button[@class='br10 btn btn-border btn-sm'])[1]")
+	WebElement dropDownCancelbtn;
+	
+	public boolean checkCancelBtnDisplayed() {
+		boolean value=dropDownCancelbtn.isDisplayed();
+		return value;
+	}
 
 }

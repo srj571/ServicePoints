@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-14T11:19:26 IST" name="Suite" finished-at="2023-04-14T11:19:59 IST" duration-ms="32998">
+  <suite started-at="2023-04-14T18:44:48 IST" name="Suite" finished-at="2023-04-14T18:45:48 IST" duration-ms="60175">
     <groups>
     </groups>
-    <test started-at="2023-04-14T11:19:26 IST" name="Testng" finished-at="2023-04-14T11:19:59 IST" duration-ms="32998">
+    <test started-at="2023-04-14T18:44:48 IST" name="Testng" finished-at="2023-04-14T18:45:48 IST" duration-ms="60175">
       <class name="com.servicepoints.testCases.TC15_verifyAskForPriceChange">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.servicepoints.testCases.TC15_verifyAskForPriceChange@3faf2e7d]" started-at="2023-04-14T11:19:26 IST" name="setup" finished-at="2023-04-14T11:19:33 IST" duration-ms="6278" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.servicepoints.testCases.TC15_verifyAskForPriceChange@3faf2e7d]" started-at="2023-04-14T18:44:48 IST" name="setup" finished-at="2023-04-14T18:44:54 IST" duration-ms="6229" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,46 +18,13 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyAskForPriceChange()[pri:0, instance:com.servicepoints.testCases.TC15_verifyAskForPriceChange@3faf2e7d]" started-at="2023-04-14T11:19:33 IST" name="verifyAskForPriceChange" finished-at="2023-04-14T11:19:59 IST" duration-ms="26522" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element <svg xmlns="http://www.w3.org/2000/svg" width="33.506" height="32" viewBox="0 0 33.506 32">...</svg> is not clickable at point (151, 909). Other element would receive the click: <div id="new_price_popup" class="modal fade bd-example-modal-sm show" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-modal="true" style="padding-right: 15px; display: block;">...</div>
-  (Session info: chrome=111.0.5563.64)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'sarasvati-Precision-Tower-3420', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-69-generic', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.64, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: /tmp/.com.google.Chrome.syB2tR}, goog:chromeOptions: {debuggerAddress: localhost:33175}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7f9bafe5fb30b60bda9bd5586c613b51]]>
-            </message>
+        <test-method signature="verifyAskForPriceChange()[pri:0, instance:com.servicepoints.testCases.TC15_verifyAskForPriceChange@3faf2e7d]" started-at="2023-04-14T18:44:54 IST" name="verifyAskForPriceChange" finished-at="2023-04-14T18:45:48 IST" duration-ms="53724" status="FAIL">
+          <exception class="java.util.NoSuchElementException">
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <svg xmlns="http://www.w3.org/2000/svg" width="33.506" height="32" viewBox="0 0 33.506 32">...</svg> is not clickable at point (151, 909). Other element would receive the click: <div id="new_price_popup" class="modal fade bd-example-modal-sm show" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-modal="true" style="padding-right: 15px; display: block;">...</div>
-  (Session info: chrome=111.0.5563.64)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'sarasvati-Precision-Tower-3420', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-69-generic', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.64, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: /tmp/.com.google.Chrome.syB2tR}, goog:chromeOptions: {debuggerAddress: localhost:33175}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7f9bafe5fb30b60bda9bd5586c613b51
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy28.click(Unknown Source)
-at com.servicepoints.PageObjects.AgentSupProductsPage.logpOutAgent(AgentSupProductsPage.java:133)
-at com.servicepoints.testCases.TC15_verifyAskForPriceChange.verifyAskForPriceChange(TC15_verifyAskForPriceChange.java:83)
+              <![CDATA[java.util.NoSuchElementException
+at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:758)
+at java.base/java.util.LinkedHashMap$LinkedKeyIterator.next(LinkedHashMap.java:778)
+at com.servicepoints.testCases.TC15_verifyAskForPriceChange.verifyAskForPriceChange(TC15_verifyAskForPriceChange.java:111)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -88,11 +55,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          </exception> <!-- java.util.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAskForPriceChange -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.servicepoints.testCases.TC15_verifyAskForPriceChange@3faf2e7d]" started-at="2023-04-14T11:19:59 IST" name="tearDown" finished-at="2023-04-14T11:19:59 IST" duration-ms="76" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.servicepoints.testCases.TC15_verifyAskForPriceChange@3faf2e7d]" started-at="2023-04-14T18:45:48 IST" name="tearDown" finished-at="2023-04-14T18:45:48 IST" duration-ms="79" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

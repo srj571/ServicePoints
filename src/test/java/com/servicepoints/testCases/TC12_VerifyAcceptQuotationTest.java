@@ -15,7 +15,7 @@ import junit.framework.Assert;
 
 public class TC12_VerifyAcceptQuotationTest extends BaseClass {
 
-	ClientProductPage cpp=new ClientProductPage(driver);
+	
 	
 	@Test
 	public void verifyAcceptQuote() throws InterruptedException, IOException {
@@ -28,7 +28,7 @@ public class TC12_VerifyAcceptQuotationTest extends BaseClass {
 
 		lp.clickLoginbtn();
 		Thread.sleep(4000);
-
+		AgentSupProductsPage aspp = new AgentSupProductsPage(driver);
 		ClientProductPage cl = new ClientProductPage(driver);
 		cl.getProductsPage();
 
@@ -40,6 +40,7 @@ public class TC12_VerifyAcceptQuotationTest extends BaseClass {
 		Iterator<String> it = window.iterator();
 		String parent = it.next();
 		String child = it.next();
+		String newChild=it.next();
 		
 		driver.switchTo().window(child);
 
@@ -82,6 +83,87 @@ public class TC12_VerifyAcceptQuotationTest extends BaseClass {
 			logger.info("Verification of Stop fullfillment of Quotation is Failed.");
 			Assert.assertTrue(false);
 		}
+		
+		//...............Client Logout and login to Agent acount................
+		cl.logoutTheClient();
+		
+		lp.setAdminMailId(agentsupmail);
+		logger.info("Agent supplier email is entered.");
+		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+
+		lp.setAdminPassword(agentsuppass);
+		logger.info("Agent supplier password is entered.");
+		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+
+		lp.clickLoginbtn();
+		Thread.sleep(5000);
+		
+		aspp.getProductsPage();
+		Thread.sleep(4000);
+		
+		aspp.searchProductName(product);
+		Thread.sleep(4000);
+		logger.info("Product name entered.");
+		
+		aspp.clickQuotationsClientsTab();
+		Thread.sleep(2000);
+		
+		if(driver.getPageSource().contains("No more product quotations")) {
+			logger.info("Verification of Stop fullfilled product in Agent side is Successfull.");
+			Assert.assertTrue(true);
+			Thread.sleep(2000);
+		}else {
+			logger.info("Verification of Stop fullfilled product in Agent side is failed.");
+			Assert.assertTrue(false);
+			Thread.sleep(2000);
+		}
+		
+		
+		aspp.clickOnProductsTab();
+		Thread.sleep(3000);
+		
+		if(driver.getPageSource().contains("No more product quotations")) {
+			logger.info("Verification of Stop fullfilled product in Agent side is Successfull.");
+			Assert.assertTrue(true);
+			Thread.sleep(2000);
+		}else {
+			logger.info("Verification of Stop fullfilled product in Agent side is failed.");
+			Assert.assertTrue(false);
+			Thread.sleep(2000);
+		}
+		
+		
+		aspp.logpOutAgent();
+		Thread.sleep(3000);
+		lp.setAdminMailId(clientemail);
+		logger.info("Email_id is entered.");
+		Thread.sleep(1000);
+		
+		lp.setAdminPassword(cPass);
+		logger.info("Password is entered.");
+		Thread.sleep(1000);
+		
+		lp.clickLoginbtn();
+		Thread.sleep(4000);
+		cl.getProductsPage();
+		
+		cl.searchProduct(proToAcceptQuo);
+		Thread.sleep(4000);
+		cl.selectProductTab();
+		Thread.sleep(3000);
+		
+		driver.switchTo().window(newChild);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		cl.clickOnSpecialRequestDrop();
 		Thread.sleep(2000);
@@ -136,7 +218,6 @@ public class TC12_VerifyAcceptQuotationTest extends BaseClass {
 		lp.clickLoginbtn();
 		Thread.sleep(5000);
 		
-		AgentSupProductsPage aspp = new AgentSupProductsPage(driver);
 		aspp.getProductsPage();
 		Thread.sleep(4000);
 		aspp.clickQuotationsClientsTab();

@@ -129,27 +129,12 @@
                   <a name="verifyAskForPriceChange">
                   </a> <!-- verifyAskForPriceChange -->
                   <span class="method-name">verifyAskForPriceChange</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;33.506&quot; height=&quot;32&quot; viewBox=&quot;0 0 33.506 32&quot;&gt;...&lt;/svg&gt; is not clickable at point (151, 909). Other element would receive the click: &lt;div id=&quot;new_price_popup&quot; class=&quot;modal fade bd-example-modal-sm show&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;mySmallModalLabel&quot; aria-modal=&quot;true&quot; style=&quot;padding-right: 15px; display: block;&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=111.0.5563.64)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;sarasvati-Precision-Tower-3420&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-69-generic&apos;, java.version: &apos;17.0.5&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.64, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: /tmp/.com.google.Chrome.syB2tR}, goog:chromeOptions: {debuggerAddress: localhost:33175}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7f9bafe5fb30b60bda9bd5586c613b51
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy28.click(Unknown Source)
-	at com.servicepoints.PageObjects.AgentSupProductsPage.logpOutAgent(AgentSupProductsPage.java:133)
-	at com.servicepoints.testCases.TC15_verifyAskForPriceChange.verifyAskForPriceChange(TC15_verifyAskForPriceChange.java:83)
+                  <div class="stack-trace">java.util.NoSuchElementException
+	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:758)
+	at java.base/java.util.LinkedHashMap$LinkedKeyIterator.next(LinkedHashMap.java:778)
+	at com.servicepoints.testCases.TC15_verifyAskForPriceChange.verifyAskForPriceChange(TC15_verifyAskForPriceChange.java:111)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 36 stack frames
+... Removed 27 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -215,12 +200,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyAskForPriceChange')
 data.setCell(0, 2, 'com.servicepoints.testCases.TC15_verifyAskForPriceChange')
-data.setCell(0, 3, 26522);
+data.setCell(0, 3, 53724);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 26 seconds</span>
+              <span class="suite-total-time">Total running time: 53 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -255,11 +240,11 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">verifyAskForPriceChange</span>
-                <span class="method-start">6283 ms</span>
+                <span class="method-start">6243 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">32823 ms</span>
+                <span class="method-start">59982 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -381,3 +381,174 @@
 [INFO ] 2023-04-14 11:19:58.257 [main] BaseClass - Entered changed price and Clicked on submit.
 [INFO ] 2023-04-14 11:19:58.508 [main] BaseClass - Status changed to New Price.
 [INFO ] 2023-04-14 11:19:58.509 [main] BaseClass - Logged out from Agent account.
+[INFO ] 2023-04-14 11:44:40.003 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-14 11:44:41.163 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-14 11:44:55.357 [main] BaseClass - Product name entered.
+[INFO ] 2023-04-14 11:45:49.326 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-14 11:45:50.436 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-14 11:46:04.603 [main] BaseClass - Product name entered.
+[INFO ] 2023-04-14 11:46:09.474 [main] BaseClass - Click on Ask for Price changed.
+[INFO ] 2023-04-14 11:46:11.844 [main] BaseClass - Entered changed price and Clicked on submit.
+[INFO ] 2023-04-14 11:46:12.095 [main] BaseClass - Pop up get closed.
+[INFO ] 2023-04-14 11:46:15.171 [main] BaseClass - Status changed to New Price.
+[INFO ] 2023-04-14 11:46:15.171 [main] BaseClass - Logged out from Agent account.
+[INFO ] 2023-04-14 12:48:41.895 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-14 12:48:43.047 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-14 12:48:57.545 [main] BaseClass - Product name entered.
+[INFO ] 2023-04-14 12:49:02.454 [main] BaseClass - Click on Ask for Price changed.
+[INFO ] 2023-04-14 12:49:04.838 [main] BaseClass - Entered changed price and Clicked on submit.
+[INFO ] 2023-04-14 12:49:05.315 [main] BaseClass - Pop up get closed.
+[INFO ] 2023-04-14 12:49:08.391 [main] BaseClass - Status changed to New Price.
+[INFO ] 2023-04-14 12:49:08.391 [main] BaseClass - Logged out from Agent account.
+[INFO ] 2023-04-14 12:55:26.345 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-14 12:55:27.446 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-14 12:55:28.539 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-14 12:55:43.018 [main] BaseClass - Product name entered.
+[INFO ] 2023-04-14 12:55:47.537 [main] BaseClass - Price entered
+[INFO ] 2023-04-14 12:55:59.695 [main] BaseClass - Verification of Submit quotation Successed..
+[INFO ] 2023-04-14 12:56:06.287 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-14 12:56:06.368 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-14 12:56:26.865 [main] BaseClass - Verification of accepting quotation is Successed.
+[INFO ] 2023-04-14 12:56:39.122 [main] BaseClass - button is closed.
+[INFO ] 2023-04-14 12:56:39.155 [main] BaseClass - Verification of Stop fullfilment of Quotation is Successed.
+[INFO ] 2023-04-14 12:56:56.621 [main] BaseClass - Verification of Start fullfilment of Quotation is Successed.
+[INFO ] 2023-04-14 12:57:09.039 [main] BaseClass - Verification of Client side Requote is Successed.
+[INFO ] 2023-04-14 12:57:09.987 [main] BaseClass - Agent supplier email is entered.
+[INFO ] 2023-04-14 12:57:10.082 [main] BaseClass - Agent supplier password is entered.
+[INFO ] 2023-04-14 12:57:26.185 [main] BaseClass - Product name entered.
+[INFO ] 2023-04-14 14:55:24.466 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-14 14:55:25.588 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-14 14:55:39.766 [main] BaseClass - Product name entered.
+[INFO ] 2023-04-14 15:31:41.753 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-14 15:31:42.878 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-14 15:31:57.485 [main] BaseClass - Product name entered.
+[INFO ] 2023-04-14 15:35:08.007 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-14 15:35:09.097 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-14 15:35:10.200 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-14 15:35:22.420 [main] BaseClass - Product name entered.
+[INFO ] 2023-04-14 15:35:26.862 [main] BaseClass - Price entered
+[INFO ] 2023-04-14 15:35:39.019 [main] BaseClass - Verification of Submit quotation Successed..
+[INFO ] 2023-04-14 15:35:39.363 [main] BaseClass - Price entered
+[INFO ] 2023-04-14 15:35:49.550 [main] BaseClass - Verification of Quotation updation Successed..
+[INFO ] 2023-04-14 15:48:43.622 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-14 15:48:44.714 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-14 15:48:45.876 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-14 15:48:59.301 [main] BaseClass - Product name entered.
+[INFO ] 2023-04-14 15:49:03.791 [main] BaseClass - Price entered
+[INFO ] 2023-04-14 15:49:15.944 [main] BaseClass - Verification of Submit quotation Successed..
+[INFO ] 2023-04-14 15:49:16.229 [main] BaseClass - Price entered
+[INFO ] 2023-04-14 15:49:26.384 [main] BaseClass - Verification of Quotation updation Successed..
+[INFO ] 2023-04-14 16:49:43.797 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-14 16:49:44.929 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-14 16:49:46.085 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-14 16:49:58.611 [main] BaseClass - Product name entered.
+[INFO ] 2023-04-14 16:50:02.996 [main] BaseClass - Price entered
+[INFO ] 2023-04-14 17:13:35.545 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-14 17:13:36.643 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-14 17:13:37.795 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-14 17:13:50.034 [main] BaseClass - Product name entered.
+[INFO ] 2023-04-14 17:13:54.449 [main] BaseClass - Price entered
+[INFO ] 2023-04-14 17:14:06.613 [main] BaseClass - Verification of Submit quotation Successed..
+[INFO ] 2023-04-14 17:14:06.911 [main] BaseClass - Price entered
+[INFO ] 2023-04-14 17:14:17.131 [main] BaseClass - Verification of Quotation updation Successed..
+[INFO ] 2023-04-14 17:15:38.685 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-14 17:15:39.840 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-14 17:15:40.927 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-14 17:15:53.076 [main] BaseClass - Product name entered.
+[INFO ] 2023-04-14 17:15:57.520 [main] BaseClass - Price entered
+[INFO ] 2023-04-14 17:16:09.688 [main] BaseClass - Verification of Submit quotation Successed..
+[INFO ] 2023-04-14 17:16:10.026 [main] BaseClass - Price entered
+[INFO ] 2023-04-14 17:16:20.251 [main] BaseClass - Verification of Quotation updation Successed..
+[INFO ] 2023-04-14 17:18:02.243 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-14 17:18:03.332 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-14 17:18:04.430 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-14 17:18:17.917 [main] BaseClass - Product name entered.
+[INFO ] 2023-04-14 17:18:22.364 [main] BaseClass - Price entered
+[INFO ] 2023-04-14 17:18:34.517 [main] BaseClass - Verification of Submit quotation Successed..
+[INFO ] 2023-04-14 17:18:34.785 [main] BaseClass - Price entered
+[INFO ] 2023-04-14 17:18:44.966 [main] BaseClass - Verification of Quotation updation Successed..
+[INFO ] 2023-04-14 17:20:56.553 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-14 17:20:57.643 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-14 17:20:58.726 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-14 17:21:11.170 [main] BaseClass - Product name entered.
+[INFO ] 2023-04-14 17:21:15.579 [main] BaseClass - Price entered
+[INFO ] 2023-04-14 17:21:27.744 [main] BaseClass - Verification of Submit quotation Successed..
+[INFO ] 2023-04-14 17:21:28.020 [main] BaseClass - Price entered
+[INFO ] 2023-04-14 17:21:38.167 [main] BaseClass - Verification of Quotation updation Successed..
+[INFO ] 2023-04-14 17:21:42.257 [main] BaseClass - Clicke on delete Quote.
+[INFO ] 2023-04-14 17:21:46.342 [main] BaseClass - Yes Im sure.
+[INFO ] 2023-04-14 17:26:33.093 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-14 17:26:34.190 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-14 17:26:35.288 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-14 17:26:47.547 [main] BaseClass - Product name entered.
+[INFO ] 2023-04-14 17:26:52.010 [main] BaseClass - Price entered
+[INFO ] 2023-04-14 17:27:04.159 [main] BaseClass - Verification of Submit quotation Successed..
+[INFO ] 2023-04-14 17:27:04.417 [main] BaseClass - Price entered
+[INFO ] 2023-04-14 17:27:14.607 [main] BaseClass - Verification of Quotation updation Successed..
+[INFO ] 2023-04-14 17:27:18.672 [main] BaseClass - Clicke on delete Quote.
+[INFO ] 2023-04-14 17:27:22.769 [main] BaseClass - Yes Im sure.
+[INFO ] 2023-04-14 17:27:29.077 [main] BaseClass - Verification of Quotation deletion Successed..
+[INFO ] 2023-04-14 17:54:39.135 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-14 17:54:40.255 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-14 17:54:54.366 [main] BaseClass - Product name entered.
+[INFO ] 2023-04-14 18:04:33.399 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-14 18:04:34.560 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-14 18:04:48.695 [main] BaseClass - Product name entered.
+[INFO ] 2023-04-14 18:04:53.506 [main] BaseClass - Click on Ask for Price changed.
+[INFO ] 2023-04-14 18:04:55.878 [main] BaseClass - Entered changed price and Clicked on submit.
+[INFO ] 2023-04-14 18:04:56.211 [main] BaseClass - Logged out from Agent account.
+[INFO ] 2023-04-14 18:13:28.188 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-14 18:13:29.294 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-14 18:13:43.386 [main] BaseClass - Product name entered.
+[INFO ] 2023-04-14 18:13:48.260 [main] BaseClass - Click on Ask for Price changed.
+[INFO ] 2023-04-14 18:13:50.646 [main] BaseClass - Entered changed price and Clicked on submit.
+[INFO ] 2023-04-14 18:13:50.932 [main] BaseClass - Pop up get closed.
+[INFO ] 2023-04-14 18:13:56.457 [main] BaseClass - Status changed to New Price.
+[INFO ] 2023-04-14 18:13:57.440 [main] BaseClass - Logged out from Agent account.
+[INFO ] 2023-04-14 18:18:16.914 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-14 18:18:18.030 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-14 18:18:32.380 [main] BaseClass - Product name entered.
+[INFO ] 2023-04-14 18:18:37.255 [main] BaseClass - Click on Ask for Price changed.
+[INFO ] 2023-04-14 18:18:39.604 [main] BaseClass - Entered changed price and Clicked on submit.
+[INFO ] 2023-04-14 18:18:41.063 [main] BaseClass - Logged out from Agent account.
+[INFO ] 2023-04-14 18:18:45.145 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-14 18:18:45.212 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-14 18:18:49.283 [main] BaseClass - Client loged in successfully.
+[INFO ] 2023-04-14 18:18:54.257 [main] BaseClass - Product selected.
+[INFO ] 2023-04-14 18:20:38.589 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-14 18:20:39.667 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-14 18:20:54.137 [main] BaseClass - Product name entered.
+[INFO ] 2023-04-14 18:20:58.969 [main] BaseClass - Click on Ask for Price changed.
+[INFO ] 2023-04-14 18:21:01.297 [main] BaseClass - Entered changed price and Clicked on submit.
+[INFO ] 2023-04-14 18:21:06.810 [main] BaseClass - Status changed to New Price.
+[INFO ] 2023-04-14 18:21:07.234 [main] BaseClass - Logged out from Agent account.
+[INFO ] 2023-04-14 18:21:11.381 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-14 18:21:11.451 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-14 18:21:15.527 [main] BaseClass - Client loged in successfully.
+[INFO ] 2023-04-14 18:21:20.499 [main] BaseClass - Product selected.
+[INFO ] 2023-04-14 18:24:18.761 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-14 18:24:19.909 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-14 18:24:34.024 [main] BaseClass - Product name entered.
+[INFO ] 2023-04-14 18:24:38.834 [main] BaseClass - Click on Ask for Price changed.
+[INFO ] 2023-04-14 18:24:41.215 [main] BaseClass - Entered changed price and Clicked on submit.
+[INFO ] 2023-04-14 18:24:46.438 [main] BaseClass - Status changed to New Price.
+[INFO ] 2023-04-14 18:24:50.857 [main] BaseClass - Logged out from Agent account.
+[INFO ] 2023-04-14 18:24:54.944 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-14 18:24:55.016 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-14 18:24:58.085 [main] BaseClass - Client loged in successfully.
+[INFO ] 2023-04-14 18:25:04.076 [main] BaseClass - Product selected.
+[INFO ] 2023-04-14 18:44:11.367 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-14 18:44:12.463 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-14 18:44:26.632 [main] BaseClass - Product name entered.
+[INFO ] 2023-04-14 18:44:55.116 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-14 18:44:56.246 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-14 18:45:10.588 [main] BaseClass - Product name entered.
+[INFO ] 2023-04-14 18:45:15.389 [main] BaseClass - Click on Ask for Price changed.
+[INFO ] 2023-04-14 18:45:17.745 [main] BaseClass - Entered changed price and Clicked on submit.
+[INFO ] 2023-04-14 18:45:18.004 [main] BaseClass - Pop up get closed.
+[INFO ] 2023-04-14 18:45:28.051 [main] BaseClass - Status changed to New Price.
+[INFO ] 2023-04-14 18:45:32.460 [main] BaseClass - Logged out from Agent account.
+[INFO ] 2023-04-14 18:45:36.567 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-14 18:45:36.635 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-14 18:45:39.704 [main] BaseClass - Client loged in successfully.
+[INFO ] 2023-04-14 18:45:45.718 [main] BaseClass - Product selected.
