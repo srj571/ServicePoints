@@ -57,19 +57,19 @@ public class TC14_VerifyExcludeFunctionTest extends BaseClass{
 		Thread.sleep(4000);
 		AgentSupProductsPage aspp=new AgentSupProductsPage(driver);
 		aspp.getProductsPage();
+		logger.info("Check for quotation status.");
 		
 		if(driver.getPageSource().contains("No more product quotations")) {
 			Thread.sleep(3000);
 			driver.switchTo().window(parent);
-		
+			Thread.sleep(3000);
+			logger.info("In the first for loop.");
 			adminAccount.clearSearchField();
 			adminAccount.enterUserName(AgadminName);
-			Thread.sleep(4000);
-			System.out.println(adminAccount.verifyExcludeBtn());
 			logger.info("AdminSupplier name is entered.");			
 			Thread.sleep(2000);
 			adminAccount.goToAdminSUPTab();
-			Thread.sleep(6000);
+			Thread.sleep(3000);
 			
 			if(adminAccount.verifyExcludeBtn()== true) {
 				Thread.sleep(3000);

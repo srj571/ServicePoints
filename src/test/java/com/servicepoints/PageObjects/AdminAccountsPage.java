@@ -95,8 +95,11 @@ public class AdminAccountsPage {
 	@FindBy(xpath="(//span[@class='name_overflow'][contains(text(),'John')])[1]")
 	WebElement verifyName;
 	
-	@FindBy(xpath="//div[@class='custom-control custom-switch right-switch switch-mod float-left']")
+	@FindBy(xpath="(//input[@id='customSwitches_238'])[1]")
 	WebElement excludebtn;
+	
+	@FindBy(xpath="//div[@id='accounts-content']//div//div//div//div//div")
+	WebElement excludebtnForClick;
 	
 	@FindBy(xpath="//a[normalize-space()='Agent (SUP)']")
 	WebElement agentSUPtab;
@@ -115,7 +118,7 @@ public class AdminAccountsPage {
 	}
 	
 	public void clickOnExcludeQuotebtn() {
-		excludebtn.click();
+		excludebtnForClick.click();
 	}
 	
 	public String verifyName() {

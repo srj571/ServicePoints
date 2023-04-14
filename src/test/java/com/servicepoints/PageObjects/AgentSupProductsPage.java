@@ -126,14 +126,20 @@ public class AgentSupProductsPage {
 		productsTab.click();
 	}
 	
-	@FindBy(xpath="//body/div[2]/div[1]/div[2]/a[3]/*[1]")
+	@FindBy(xpath="//body/div/div/div/a[3]//*[name()='svg']")
 	WebElement logout;
 	
 	public void logpOutAgent() {
 		logout.click();
 	}
 	
+	@FindBy(xpath="//body/div[@id='new_price_popup']/div/div[1]")
+	WebElement divIhvNotify;
 	
+	public boolean isDivVisible() {
+		boolean div=divIhvNotify.isDisplayed();
+		return div;
+	}
 	
 	
 	

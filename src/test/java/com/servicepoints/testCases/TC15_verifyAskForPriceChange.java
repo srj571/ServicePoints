@@ -28,13 +28,14 @@ public class TC15_verifyAskForPriceChange extends BaseClass {
 		ClientProductPage cl = new ClientProductPage(driver);
 		WebDriverWait wait=new WebDriverWait(driver, 5);
 		
-		Thread.sleep(3000);
 		lp.setAdminMailId(agentsupmail);
 		logger.info("Email_id is entered.");
-
+		Thread.sleep(1000);
+		
 		lp.setAdminPassword(agentsuppass);
 		logger.info("Password is entered.");
-
+		Thread.sleep(1000);
+		
 		lp.clickLoginbtn();
 		Thread.sleep(3000);
 
@@ -42,6 +43,7 @@ public class TC15_verifyAskForPriceChange extends BaseClass {
 		Thread.sleep(4000);
 
 		asop.clickOnProductsTab();
+		Thread.sleep(1000);
 		asop.searchProductName(product);
 		Thread.sleep(4000);
 		logger.info("Product name entered.");
@@ -64,23 +66,22 @@ public class TC15_verifyAskForPriceChange extends BaseClass {
 		asop.forthPcsPrice(c4price);
 		asop.clickOnSbmtNewPrice();
 		logger.info("Entered changed price and Clicked on submit.");
-		//driver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
-
-		//if(asop.clsNotifyPopUpisDisplays() == true) {
+		System.out.println(asop.isDivVisible());
+		
+		if(asop.isDivVisible() == false) {
 			asop.closeNotifyPopUp();
 			logger.info("Pop up get closed.");
-			Thread.sleep(6000);
-//		} else {
-//			Thread.sleep(6000);
-//		}
-//		
+			Thread.sleep(3000);
+		}
 		//Thread.sleep(3000);
 		
-//		if (driver.getPageSource().contains("New Price")) {
-//			logger.info("Status changed to New Price.");
-//		}
+		if (driver.getPageSource().contains("New price")) {
+			logger.info("Status changed to New Price.");
+		}
+			
+		logger.info("Logged out from Agent account.");
 		asop.logpOutAgent();
-		
+		Thread.sleep(4000);
 		lp.setAdminMailId(clientemail);
 		logger.info("Email_id is entered.");
 
