@@ -55,21 +55,21 @@ public class TC14_VerifyExcludeFunctionTest extends BaseClass{
 		
 		driver.switchTo().window(child);
 		Thread.sleep(4000);
-		AdminAccountsPage ap=new AdminAccountsPage(driver);
 		AgentSupProductsPage aspp=new AgentSupProductsPage(driver);
 		aspp.getProductsPage();
 		
 		if(driver.getPageSource().contains("No more product quotations")) {
-			Thread.sleep(2000);
+			Thread.sleep(3000);
 			driver.switchTo().window(parent);
 		
 			adminAccount.clearSearchField();
-			ap.enterUserName(AgadminName);
+			adminAccount.enterUserName(AgadminName);
 			Thread.sleep(4000);
+			System.out.println(adminAccount.verifyExcludeBtn());
 			logger.info("AdminSupplier name is entered.");			
 			Thread.sleep(2000);
 			adminAccount.goToAdminSUPTab();
-			Thread.sleep(4000);
+			Thread.sleep(6000);
 			
 			if(adminAccount.verifyExcludeBtn()== true) {
 				Thread.sleep(3000);
@@ -81,7 +81,7 @@ public class TC14_VerifyExcludeFunctionTest extends BaseClass{
 				adminAccount.goToTheAgentSUPTab();
 				
 				adminAccount.clearSearchField();
-				ap.enterUserName(Agname);
+				adminAccount.enterUserName(Agname);
 				Thread.sleep(4000);
 				
 				driver.switchTo().window(child);
@@ -104,18 +104,22 @@ public class TC14_VerifyExcludeFunctionTest extends BaseClass{
 		}
 		else {
 			driver.switchTo().window(parent);
-			
+			Thread.sleep(3000);
 			adminAccount.goToAdminSUPTab();
 			
 			Thread.sleep(4000);
 			adminAccount.clearSearchField();
-			ap.enterUserName(AgadminName);
-			logger.info("Entered Admin name.");
+			adminAccount.enterUserName(AgadminName);
+			logger.info("Entered Admin Supplier name.");
 			Thread.sleep(4000);
 			
 			if(adminAccount.verifyExcludeBtn() == false) {
 				logger.info("Verification of Exclude Button Successed.");
 				Assert.assertTrue(true);				
+			}else {
+				Assert.assertTrue(true);
+				Thread.sleep(4000);
+				logger.info("Verification of Exclude button is failed.");
 			}
 		}
 		

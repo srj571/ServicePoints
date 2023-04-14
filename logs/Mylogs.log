@@ -150,3 +150,108 @@
 [INFO ] 2023-04-13 18:56:21.279 [main] BaseClass - Agent Support email is entered.
 [INFO ] 2023-04-13 18:56:21.351 [main] BaseClass - Agent Support password is entered.
 [INFO ] 2023-04-13 18:56:26.479 [main] BaseClass - Verification of AgentSupport login Successfull.
+[INFO ] 2023-04-14 09:19:37.682 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-14 09:19:37.805 [main] BaseClass - Admin Email_id is entered.
+[INFO ] 2023-04-14 09:19:37.890 [main] BaseClass - Admin password is entered.
+[INFO ] 2023-04-14 09:19:40.725 [main] BaseClass - Accounts page opened.
+[INFO ] 2023-04-14 09:19:40.904 [main] BaseClass - Entered Teamleader name in search field.
+[INFO ] 2023-04-14 09:19:45.041 [main] BaseClass - Logged in to the Teamleader Account.
+[INFO ] 2023-04-14 09:19:57.783 [main] BaseClass - Click on Add Agent Button.
+[INFO ] 2023-04-14 09:20:01.857 [main] BaseClass - Verification of AgentSupport adding Successfull.
+[INFO ] 2023-04-14 09:20:11.866 [main] BaseClass - Agent Support email is entered.
+[INFO ] 2023-04-14 09:20:11.933 [main] BaseClass - Agent Support password is entered.
+[INFO ] 2023-04-14 09:20:17.052 [main] BaseClass - Verification of AgentSupport login Successfull.
+[INFO ] 2023-04-14 09:27:36.998 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-14 09:27:37.095 [main] BaseClass - Admin Email_id is entered.
+[INFO ] 2023-04-14 09:27:37.169 [main] BaseClass - Admin password is entered.
+[INFO ] 2023-04-14 09:27:39.971 [main] BaseClass - Accounts page opened.
+[INFO ] 2023-04-14 09:27:40.102 [main] BaseClass - Entered Teamleader name in search field.
+[INFO ] 2023-04-14 09:27:44.266 [main] BaseClass - Logged in to the Teamleader Account.
+[INFO ] 2023-04-14 09:27:57.101 [main] BaseClass - Click on Add Agent Button.
+[INFO ] 2023-04-14 09:28:01.151 [main] BaseClass - Verification of AgentSupport adding failed.
+[INFO ] 2023-04-14 09:28:49.646 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-14 09:28:49.747 [main] BaseClass - Admin Email_id is entered.
+[INFO ] 2023-04-14 09:28:49.834 [main] BaseClass - Admin password is entered.
+[INFO ] 2023-04-14 09:28:54.160 [main] BaseClass - Accounts page opened.
+[INFO ] 2023-04-14 09:28:54.244 [main] BaseClass - Entered Agent name in search field.
+[INFO ] 2023-04-14 09:28:58.400 [main] BaseClass - Logged in to the Agents Account.
+[INFO ] 2023-04-14 09:29:11.930 [main] BaseClass - Entered Admin name.
+[INFO ] 2023-04-14 09:29:15.967 [main] BaseClass - Verification of Exclude Button Successed.
+[INFO ] 2023-04-14 09:36:26.674 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-14 09:36:26.797 [main] BaseClass - Admin Email_id is entered.
+[INFO ] 2023-04-14 09:36:26.890 [main] BaseClass - Admin password is entered.
+[INFO ] 2023-04-14 09:36:30.566 [main] BaseClass - Accounts page opened.
+[INFO ] 2023-04-14 09:36:30.686 [main] BaseClass - Entered Agent name in search field.
+[INFO ] 2023-04-14 09:36:34.816 [main] BaseClass - Logged in to the Agents Account.
+[INFO ] 2023-04-14 09:36:48.188 [main] BaseClass - Entered Admin name.
+[INFO ] 2023-04-14 09:36:52.233 [main] BaseClass - Verification of Exclude Button Successed.
+[INFO ] 2023-04-14 09:38:12.761 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-14 09:38:12.872 [main] BaseClass - Admin Email_id is entered.
+[INFO ] 2023-04-14 09:38:12.957 [main] BaseClass - Admin password is entered.
+[INFO ] 2023-04-14 09:38:16.341 [main] BaseClass - Accounts page opened.
+[INFO ] 2023-04-14 09:38:16.543 [main] BaseClass - Entered Agent name in search field.
+[INFO ] 2023-04-14 09:38:20.787 [main] BaseClass - Logged in to the Agents Account.
+[INFO ] 2023-04-14 09:38:34.215 [main] BaseClass - Entered Admin name.
+[INFO ] 2023-04-14 09:38:38.251 [main] BaseClass - Verification of Exclude Button Successed.
+[INFO ] 2023-04-14 09:39:27.470 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-14 09:39:27.578 [main] BaseClass - Admin Email_id is entered.
+[INFO ] 2023-04-14 09:39:27.659 [main] BaseClass - Admin password is entered.
+[INFO ] 2023-04-14 09:39:30.780 [main] BaseClass - Accounts page opened.
+[INFO ] 2023-04-14 09:39:30.992 [main] BaseClass - Entered Agent name in search field.
+[INFO ] 2023-04-14 09:39:35.120 [main] BaseClass - Logged in to the Agents Account.
+[INFO ] 2023-04-14 09:39:51.567 [main] BaseClass - Entered Admin name.
+[INFO ] 2023-04-14 09:39:55.627 [main] BaseClass - Verification of Exclude Button Successed.
+[INFO ] 2023-04-14 09:40:40.909 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-14 09:40:41.023 [main] BaseClass - Admin Email_id is entered.
+[INFO ] 2023-04-14 09:40:41.113 [main] BaseClass - Admin password is entered.
+[INFO ] 2023-04-14 09:40:44.167 [main] BaseClass - Accounts page opened.
+[INFO ] 2023-04-14 09:40:44.361 [main] BaseClass - Entered Agent name in search field.
+[INFO ] 2023-04-14 09:40:48.501 [main] BaseClass - Logged in to the Agents Account.
+[INFO ] 2023-04-14 09:41:03.663 [main] BaseClass - AdminSupplier name is entered.
+[INFO ] 2023-04-14 09:42:49.829 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-14 09:42:49.939 [main] BaseClass - Admin Email_id is entered.
+[INFO ] 2023-04-14 09:42:50.024 [main] BaseClass - Admin password is entered.
+[INFO ] 2023-04-14 09:42:54.598 [main] BaseClass - Accounts page opened.
+[INFO ] 2023-04-14 09:42:54.712 [main] BaseClass - Entered Agent name in search field.
+[INFO ] 2023-04-14 09:42:58.834 [main] BaseClass - Logged in to the Agents Account.
+[INFO ] 2023-04-14 09:43:13.981 [main] BaseClass - AdminSupplier name is entered.
+[INFO ] 2023-04-14 09:44:25.350 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-14 09:44:25.452 [main] BaseClass - Admin Email_id is entered.
+[INFO ] 2023-04-14 09:44:25.537 [main] BaseClass - Admin password is entered.
+[INFO ] 2023-04-14 09:44:30.212 [main] BaseClass - Accounts page opened.
+[INFO ] 2023-04-14 09:44:30.292 [main] BaseClass - Entered Agent name in search field.
+[INFO ] 2023-04-14 09:44:34.410 [main] BaseClass - Logged in to the Agents Account.
+[INFO ] 2023-04-14 09:45:15.832 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-14 09:45:15.961 [main] BaseClass - Admin Email_id is entered.
+[INFO ] 2023-04-14 09:45:16.048 [main] BaseClass - Admin password is entered.
+[INFO ] 2023-04-14 09:45:20.058 [main] BaseClass - Accounts page opened.
+[INFO ] 2023-04-14 09:45:20.149 [main] BaseClass - Entered Agent name in search field.
+[INFO ] 2023-04-14 09:45:24.328 [main] BaseClass - Logged in to the Agents Account.
+[INFO ] 2023-04-14 09:49:13.407 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-14 09:49:13.505 [main] BaseClass - Admin Email_id is entered.
+[INFO ] 2023-04-14 09:49:13.585 [main] BaseClass - Admin password is entered.
+[INFO ] 2023-04-14 09:49:16.429 [main] BaseClass - Accounts page opened.
+[INFO ] 2023-04-14 09:49:16.639 [main] BaseClass - Entered Agent name in search field.
+[INFO ] 2023-04-14 09:49:20.825 [main] BaseClass - Logged in to the Agents Account.
+[INFO ] 2023-04-14 09:52:44.977 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-14 09:52:45.091 [main] BaseClass - Admin Email_id is entered.
+[INFO ] 2023-04-14 09:52:45.181 [main] BaseClass - Admin password is entered.
+[INFO ] 2023-04-14 09:52:50.043 [main] BaseClass - Accounts page opened.
+[INFO ] 2023-04-14 09:52:50.244 [main] BaseClass - Entered Agent name in search field.
+[INFO ] 2023-04-14 09:52:54.404 [main] BaseClass - Logged in to the Agents Account.
+[INFO ] 2023-04-14 09:53:10.802 [main] BaseClass - Entered Admin name.
+[INFO ] 2023-04-14 09:53:14.848 [main] BaseClass - Verification of Exclude Button Successed.
+[INFO ] 2023-04-14 09:54:59.600 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-14 09:54:59.711 [main] BaseClass - Admin Email_id is entered.
+[INFO ] 2023-04-14 09:54:59.795 [main] BaseClass - Admin password is entered.
+[INFO ] 2023-04-14 09:55:02.796 [main] BaseClass - Accounts page opened.
+[INFO ] 2023-04-14 09:55:02.954 [main] BaseClass - Entered Agent name in search field.
+[INFO ] 2023-04-14 09:55:07.074 [main] BaseClass - Logged in to the Agents Account.
+[INFO ] 2023-04-14 09:55:23.674 [main] BaseClass - Entered Admin Supplier name.
+[INFO ] 2023-04-14 09:55:27.699 [main] BaseClass - Verification of Exclude Button Successed.
+[INFO ] 2023-04-14 10:01:56.848 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-14 10:01:56.949 [main] BaseClass - Admin Email_id is entered.
+[INFO ] 2023-04-14 10:01:57.036 [main] BaseClass - Admin password is entered.
+[INFO ] 2023-04-14 10:02:00.075 [main] BaseClass - Accounts page opened.
+[INFO ] 2023-04-14 10:02:00.269 [main] BaseClass - Entered Agent name in search field.
+[INFO ] 2023-04-14 10:02:04.466 [main] BaseClass - Logged in to the Agents Account.
