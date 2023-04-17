@@ -65,7 +65,7 @@ public class ClientProductPage {
 	@FindBy(xpath="(//span[@aria-hidden='true'][normalize-space()='×'])[3]")
 	WebElement clseTabAfterQuoteAcpt;
 	
-	@FindBy(xpath="//body/div[2]/div[2]/a[3]/*[1]")
+	@FindBy(xpath="(//*[name()='svg'])[12]")
 	WebElement logoutClient;
 	
 	//Required for- AskForPriceChange

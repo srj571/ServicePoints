@@ -319,7 +319,50 @@ public class ReadConfig {
 		String c4price=po.getProperty("4CPcsPrice");
 		return c4price;
 	}
+	//Methods for Veify Add New Varient
+	public String fetchProducts() {
+		String purl=po.getProperty("ProductFetchURL");
+		return purl;
+	}
 	
+	public String fetchOrders() {
+		String ourl=po.getProperty("OrderFetchURL");
+		return ourl;
+	}
+	
+	public String setCemail() {
+		String cmail=po.getProperty("Cemail");
+		return cmail;
+	}
+	
+	public String setClientpass() {
+		String cpass=po.getProperty("CPass");
+		return cpass;
+	}
+	
+	public String setProductAdded() {
+		String cpro=po.getProperty("ProductAdded");
+		return cpro;
+	}
+	
+	public String setDropDownStatus() {
+		String status=po.getProperty("Status");
+		return status;
+	}
+	
+	public String setAgentEmail() {
+		String email=po.getProperty("Aemail");
+		return email;
+	}
+	public String setAgentPass() {
+		String pass=po.getProperty("Apass");
+		return pass;
+	}
+	
+	public String setOrderStatus2() {
+		String status2=po.getProperty("Status2");
+		return status2;
+	}
 }
 
 

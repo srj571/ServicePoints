@@ -1,8 +1,7 @@
 package com.servicepoints.testCases;
 
-import java.util.Iterator;
+import java.io.IOException;
 import java.util.Set;
-import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
@@ -12,6 +11,8 @@ import com.servicepoints.PageObjects.ClientProductPage;
 import com.servicepoints.PageObjects.LoginPage;
 import com.servicepoints.utilities.ReadConfig;
 
+import junit.framework.Assert;
+
 public class TC15_verifyAskForPriceChange extends BaseClass {
 
 	ReadConfig rc = new ReadConfig();
@@ -20,9 +21,8 @@ public class TC15_verifyAskForPriceChange extends BaseClass {
 	public String c3price = rc.setChangePrice3Pcs();
 	public String c4price = rc.setChangePrice4Pcs();
 
-
 	@Test
-	public void verifyAskForPriceChange() throws InterruptedException {
+	public void verifyAskForPriceChange() throws InterruptedException, IOException {
 		
 		AgentSupProductsPage asop = new AgentSupProductsPage(driver);
 		
@@ -51,17 +51,19 @@ public class TC15_verifyAskForPriceChange extends BaseClass {
 		asop.searchProductName(product);
 		Thread.sleep(4000);
 		logger.info("Product name entered.");
+		
 		asop.clickOnfdiv();
 
+		String parentWindow=driver.getWindowHandle();
 		Set<String> window = driver.getWindowHandles();
-		Iterator<String> it = window.iterator();
-		String parent = it.next();
-		String child = it.next();
 		
+		for(String handle:window) {
+			if(!handle.equals(parentWindow)) {
+				driver.switchTo().window(handle);
+				break;
+			}
+		}
 		
-		driver.switchTo().window(child);
-		Thread.sleep(4000);
-
 		asop.clckOnAskForPrceChng();
 		logger.info("Click on Ask for Price changed.");
 		Thread.sleep(2000);
@@ -72,18 +74,22 @@ public class TC15_verifyAskForPriceChange extends BaseClass {
 		asop.forthPcsPrice(c4price);
 		asop.clickOnSbmtNewPrice();
 		logger.info("Entered changed price and Clicked on submit.");
-		System.out.println(asop.checkCancelBtnDisplayed());
 		
-		if(asop.checkCancelBtnDisplayed() == true) {
+		try {
 			asop.closeNotifyPopUp();
 			logger.info("Pop up get closed.");
-			Thread.sleep(5000);
+			Thread.sleep(3000);
+		}catch(Exception e) {
+			logger.info("Element is not found.");
+			Thread.sleep(4000);
 		}
-		Thread.sleep(5000);
+		
+		
 		if (driver.getPageSource().contains("New price")) {
 			logger.info("Status changed to New Price.");
 		}
-		Thread.sleep(4000);
+		Thread.sleep(3000);
+		
 		driver.get(baseURL);
 		logger.info("Logged out from Agent account.");
 		Thread.sleep(4000);
@@ -102,24 +108,46 @@ public class TC15_verifyAskForPriceChange extends BaseClass {
 		Thread.sleep(2000);
 
 		cl.searchProduct(product);
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		
 		cl.selectProductTab();
 		logger.info("Product selected.");
-		Thread.sleep(3000);
+		Thread.sleep(1000);
 		
-		String childer = it.next();
-		driver.switchTo().window(childer);
-		Thread.sleep(6000);
+		window = driver.getWindowHandles();
+		for(String handle: window) {
+			if(!handle.equals(parentWindow) && !handle.equals(driver.getWindowHandle())) {
+				driver.switchTo().window(handle);
+				break;
+			}
+		}
 		
-		cl.clsePopUpFrmClntSideAskPr();
-		logger.info("Pop up closed.");
+		
+		try {
+			Thread.sleep(3000);
+			cl.clsePopUpFrmClntSideAskPr();
+			logger.info("Pop up closed.");
+		}catch(Exception e) {
+			logger.info("Now accepting the quotation.");
+		}
+		
 		cl.acceptAskforPriceChange();
 		logger.info("Changed price is get accepted by the Client.");
 		cl.clickOnYesImSure();
+		logger.info("Clicked on yes im sure");
+		Thread.sleep(2000);
 		cl.closeThankUPopUp();
 		logger.info("Now verification is to be done.");
-		Thread.sleep(6000);
+		Thread.sleep(3000);
+		
+		if(driver.getPageSource().contains("Quotation accepted")) {
+			Assert.assertTrue(true);
+			logger.info("Verification is done from Client side for Ask for Price change test.");
+		}else {
+			captureScreen(driver, "askForPriceChange");
+			Assert.assertTrue(false);
+			logger.info("Verification is for Ask for Price change test is failed.");
+		}
 
 	}
 }

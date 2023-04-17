@@ -36,13 +36,15 @@ public class TC12_VerifyAcceptQuotationTest extends BaseClass {
 		Thread.sleep(4000);
 		cl.selectProductTab();
 		Thread.sleep(3000);
-		Set<String> window = driver.getWindowHandles();
-		Iterator<String> it = window.iterator();
-		String parent = it.next();
-		String child = it.next();
-		String newChild=it.next();
 		
-		driver.switchTo().window(child);
+		String parentWindow=driver.getWindowHandle();
+		Set<String> windowHandles = driver.getWindowHandles();
+		for(String handle: windowHandles) {
+			if(!handle.equals(parentWindow)) {
+				driver.switchTo().window(handle);
+				break;
+			}
+		}
 
 		cl.selectQuoteTab();
 		cl.selectAcceptQuoteBtn();
@@ -51,7 +53,6 @@ public class TC12_VerifyAcceptQuotationTest extends BaseClass {
 		if (driver.getPageSource().contains("Quotation accepted successfully.")) {
 			Thread.sleep(4000);
 			Assert.assertTrue(true);
-			//cl.clickOnClosebtn();
 			logger.info("Verification of accepting quotation is Successed.");
 		
 		} else {
@@ -85,7 +86,9 @@ public class TC12_VerifyAcceptQuotationTest extends BaseClass {
 		}
 		
 		//...............Client Logout and login to Agent acount................
-		cl.logoutTheClient();
+		driver.get(baseURL);
+		
+		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 		
 		lp.setAdminMailId(agentsupmail);
 		logger.info("Agent supplier email is entered.");
@@ -109,11 +112,11 @@ public class TC12_VerifyAcceptQuotationTest extends BaseClass {
 		Thread.sleep(2000);
 		
 		if(driver.getPageSource().contains("No more product quotations")) {
-			logger.info("Verification of Stop fullfilled product in Agent side is Successfull.");
+			logger.info("Verification of visiblity of product after Stop fullifilling in Quotations Client tab in Agent side is Successfull.");
 			Assert.assertTrue(true);
 			Thread.sleep(2000);
 		}else {
-			logger.info("Verification of Stop fullfilled product in Agent side is failed.");
+			logger.info("Verification of visiblity of product after Stop fullifilling in Products tab in Agent side is failed.");
 			Assert.assertTrue(false);
 			Thread.sleep(2000);
 		}
@@ -123,17 +126,16 @@ public class TC12_VerifyAcceptQuotationTest extends BaseClass {
 		Thread.sleep(3000);
 		
 		if(driver.getPageSource().contains("No more product quotations")) {
-			logger.info("Verification of Stop fullfilled product in Agent side is Successfull.");
+			logger.info("Verification of visiblity of product after Stop fullifilling in Products tab in Agent side is Successfull.");
 			Assert.assertTrue(true);
 			Thread.sleep(2000);
 		}else {
-			logger.info("Verification of Stop fullfilled product in Agent side is failed.");
+			logger.info("Verification of visiblity of product after Stop fullifilling in Products tab in Agent side is failed.");
 			Assert.assertTrue(false);
 			Thread.sleep(2000);
 		}
 		
-		
-		aspp.logpOutAgent();
+		driver.get(baseURL);
 		Thread.sleep(3000);
 		lp.setAdminMailId(clientemail);
 		logger.info("Email_id is entered.");
@@ -152,18 +154,14 @@ public class TC12_VerifyAcceptQuotationTest extends BaseClass {
 		cl.selectProductTab();
 		Thread.sleep(3000);
 		
-		driver.switchTo().window(newChild);
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+		//driver.switchTo().window(newChild);
+		windowHandles = driver.getWindowHandles();
+		for(String handle : windowHandles) {
+			if(!handle.equals(parentWindow) && !handle.equals(driver.getWindowHandle())) {
+				driver.switchTo().window(handle);
+				break;
+			}
+		}
 		
 		cl.clickOnSpecialRequestDrop();
 		Thread.sleep(2000);
@@ -229,20 +227,39 @@ public class TC12_VerifyAcceptQuotationTest extends BaseClass {
 		aspp.clickOnfdiv();
 		//Thread.sleep(4000);
 		
-		String childg=it.next();
-		driver.switchTo().window(childg);
-		logger.info("Switched to new window.");
-		Thread.sleep(5000);
+	//	String childg=it.next();
+	//	driver.switchTo().window(childg);
+		windowHandles = driver.getWindowHandles();
+		for(String handle : windowHandles) {
+			if(!handle.equals(parentWindow) && !handle.equals(driver.getWindowHandle())) {
+				driver.switchTo().window(handle);
+				break;
+			}
+		}
 		
-		aspp.firstPcsPrice(FirstPcsPrice);
-		aspp.secPcsPrice(SecPcsPrice);
-		aspp.thirdPcsPrice(ThirdPcsPrice);
-		aspp.forthPcsPrice(ForthPcsprice);
-		logger.info("Price entered");
-		Thread.sleep(4000);
-
-		aspp.clickOnSubmitQuote();
-		Thread.sleep(6000);
+		if (aspp.getStatus().equals("Awating quotation")) {
+			Thread.sleep(2000);
+			Assert.assertTrue(true);
+			logger.info("Verification of Requotation Successed..");
+		} else {
+			captureScreen(driver, "Submit Quote Test");
+			logger.info("Verification of Requotation failed..");
+			Assert.assertTrue(false);
+			Thread.sleep(4000);
+		}
+		
+//		logger.info("Switched to new window.");
+//		Thread.sleep(5000);
+//		
+//		aspp.firstPcsPrice(FirstPcsPrice);
+//		aspp.secPcsPrice(SecPcsPrice);
+//		aspp.thirdPcsPrice(ThirdPcsPrice);
+//		aspp.forthPcsPrice(ForthPcsprice);
+//		logger.info("Price entered");
+//		Thread.sleep(4000);
+//
+//		aspp.clickOnSubmitQuote();
+//		Thread.sleep(6000);
 
 		
 		
@@ -262,16 +279,16 @@ public class TC12_VerifyAcceptQuotationTest extends BaseClass {
 //			Assert.assertTrue(false);
 //		}
 		
-		if (aspp.getStatus().equals("Quotation done")) {
-			Thread.sleep(2000);
-			Assert.assertTrue(true);
-			logger.info("Verification of Submit Requotation Successed..");
-		} else {
-			captureScreen(driver, "Submit Quote Test");
-			logger.info("Verification of Submit Requotation failed..");
-			Assert.assertTrue(true);
-			Thread.sleep(4000);
-		}
+//		if (aspp.getStatus().equals("Quotation done")) {
+//			Thread.sleep(2000);
+//			Assert.assertTrue(true);
+//			logger.info("Verification of Submit Requotation Successed..");
+//		} else {
+//			captureScreen(driver, "Submit Quote Test");
+//			logger.info("Verification of Submit Requotation failed..");
+//			Assert.assertTrue(true);
+//			Thread.sleep(4000);
+//		}
 	
 	}
 }
