@@ -193,6 +193,11 @@ public class ReadConfig {
 		return product;			
 	}
 	
+	public String setProductForVerifyUpdate() {
+		String setProduct=po.getProperty("verifyProduct");
+		return setProduct;
+	}
+	
 	public String set1PcsPrice() {
 		String fpcs=po.getProperty("1PcsPrice");
 		return fpcs;
@@ -362,6 +367,46 @@ public class ReadConfig {
 	public String setOrderStatus2() {
 		String status2=po.getProperty("Status2");
 		return status2;
+	}
+	
+	public String setCEmailFrDispt() {
+		String cdispute=po.getProperty("CMailDispute");
+		return cdispute;
+	}
+	
+	public String setCpassForDispute() {
+		String cpassdis=po.getProperty("CPassDispute");
+		return cpassdis;
+	}
+	
+	public String setProductForDsp() {
+		String pdsp=po.getProperty("ProductDsp");
+		return pdsp;
+	}
+	
+	public String setQueries() {
+		String queries=po.getProperty("Queries");
+		return queries;
+	}
+	
+	public String setAMailDsp() {
+		String amail=po.getProperty("AgentMailDsp");
+		return amail;
+	}
+	
+	public String setApassDsp() {
+		String apass=po.getProperty("AgentPassDsp");
+		return apass;
+	}
+	
+	public String setProductDsp() {
+		String padsp=po.getProperty("ProductAcceptDsp");
+		return padsp;
+	}
+	
+	public String setAnswer() {
+		String ans=po.getProperty("Answer");
+		return ans;
 	}
 }
 

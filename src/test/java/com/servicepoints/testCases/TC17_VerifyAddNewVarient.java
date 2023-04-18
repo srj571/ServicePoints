@@ -1,7 +1,7 @@
 package com.servicepoints.testCases;
 
-import static org.testng.Assert.assertTrue;
 
+import java.io.IOException;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
@@ -26,7 +26,7 @@ public class TC17_VerifyAddNewVarient extends BaseClass{
 	
 
 	@Test
-	public void verifyAddNewVarient() throws InterruptedException {
+	public void verifyAddNewVarient() throws InterruptedException, IOException {
 		
 		LoginPage lp=new LoginPage(driver);
 		ClientOrdersPage cop=new ClientOrdersPage(driver);
@@ -52,7 +52,7 @@ public class TC17_VerifyAddNewVarient extends BaseClass{
 		
 		cop.sendPnameinSearch(pname);
 		Thread.sleep(3000);
-		//driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		
 		cop.clickOnStatusDrop();
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
@@ -65,33 +65,36 @@ public class TC17_VerifyAddNewVarient extends BaseClass{
 		cop.clickOnNotQuotedSel();
 		Thread.sleep(4000);
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		logger.info("Not Quoted order status selected.");
+		logger.info("Not Quoted order status verified.");
 		cop.clickOnFDiv();
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		Thread.sleep(3000);
 		
 		logger.info("Verification of New Varient added product is done..");
-		
+		logger.info("Client logged out Sucessfully.");
 		driver.get(baseURL);
 		
 		lp.setAdminMailId(rd.setAgentEmail());
 		lp.setAdminPassword(rd.setAgentPass());
 		
 		lp.clickLoginbtn();
-		logger.info("Loggin to the Agent account.");
+		logger.info("Logged in to the Agent account.");
 		
 		AgentSupProductsPage aspp = new AgentSupProductsPage(driver);
 		aspp.getProductsPage();
-		Thread.sleep(4000);
+		Thread.sleep(2000);
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		aspp.searchProductName(pname);
-		Thread.sleep(4000);
+		Thread.sleep(2000);
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		logger.info("Product name entered.");
 		aspp.clickQuotationsClientsTab();
-		Thread.sleep(2000);
-		
+		Thread.sleep(3000);
+	
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		
 		aspp.clickOnfdiv();
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		String parentWindow=driver.getWindowHandle();
 		Set<String> windowHandles = driver.getWindowHandles();
 
@@ -107,18 +110,20 @@ public class TC17_VerifyAddNewVarient extends BaseClass{
 		aspp.thirdPcsPrice(ThirdPcsPrice);
 		aspp.forthPcsPrice(ForthPcsprice);
 		logger.info("Price entered");
-		Thread.sleep(4000);
-
+		Thread.sleep(3000);
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		try {
 			aspp.clickOnSubmitQuote();
 			Thread.sleep(4000);
+			logger.info("Quotation submitted successfully.");
+			driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 			
 		}catch(Exception e) {
 			logger.info("Price entered");
 			aspp.updateQuotation();
 		}
 		
-		
+		logger.info("Agent logged out Sucessfully.");
 		driver.get(baseURL);
 		
 		lp.setAdminMailId(rd.setCemail());
@@ -127,15 +132,19 @@ public class TC17_VerifyAddNewVarient extends BaseClass{
 		
 		lp.clickLoginbtn();
 		Thread.sleep(4000);
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		logger.info("Client logged in Sucessfully.");
 		
 		ClientProductPage cl = new ClientProductPage(driver);
 		cl.getProductsPage();
-		Thread.sleep(4000);
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		Thread.sleep(2000);
 		cl.searchProduct(pname);
-		Thread.sleep(4000);
+		Thread.sleep(2000);
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		cl.selectProductTab();
 		Thread.sleep(3000);
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		
 		windowHandles = driver.getWindowHandles();
 		for(String handle: windowHandles) {
@@ -157,22 +166,23 @@ public class TC17_VerifyAddNewVarient extends BaseClass{
 		
 		cop.clickOnOrdersTab();
 		logger.info("GO to the orders page.");
-		Thread.sleep(6000);
+		Thread.sleep(2000);
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		cop.sendPnameinSearch(pname);
-		Thread.sleep(6000);
+		Thread.sleep(3000);
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		cop.clickOnStatusDrop();
-		//driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		Thread.sleep(5000);
 		
 		cop.dropdownSearch(status2);
-		logger.info("GO to the orders page.");
-		
-		//driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		Thread.sleep(7000);
+				
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		Thread.sleep(4000);
 		cop.clickOnProcessingSel();
 		Thread.sleep(4000);
-		logger.info("GO to the orders page.");
-		///driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		//cop.clickOnFDiv();
 		//driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		//Thread.sleep(3000);
@@ -183,6 +193,7 @@ public class TC17_VerifyAddNewVarient extends BaseClass{
 			logger.info("Verification of accept quotation after Adding new varient is successfull. ");
 			
 		}else{
+			captureScreen(driver, "verify add new varient");
 			Assert.assertTrue(false);
 			logger.info("Verification of accept quotation after Adding new varient is failed. ");
 		}

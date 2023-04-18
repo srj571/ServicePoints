@@ -224,18 +224,19 @@ public class TC12_VerifyAcceptQuotationTest extends BaseClass {
 		aspp.searchProductName(product);
 		Thread.sleep(4000);
 		logger.info("Product name entered.");
-		aspp.clickOnfdiv();
+//		aspp.clickOnfdiv();
 		//Thread.sleep(4000);
 		
 	//	String childg=it.next();
 	//	driver.switchTo().window(childg);
-		windowHandles = driver.getWindowHandles();
-		for(String handle : windowHandles) {
-			if(!handle.equals(parentWindow) && !handle.equals(driver.getWindowHandle())) {
-				driver.switchTo().window(handle);
-				break;
-			}
-		}
+//		String pwin=driver.getWindowHandle();
+//		Set<String>windowHs = driver.getWindowHandles();
+//		for(String handle : windowHs) {
+//			if(!handle.equals(pwin)) {
+//				driver.switchTo().window(handle);
+//				break;
+//			}
+//		}
 		
 		if (aspp.getStatus().equals("Awating quotation")) {
 			Thread.sleep(2000);

@@ -24,8 +24,10 @@
 			<!--<class name="com.servicepoints.testCases.TC13_VerifyAddAgentSupportTest"></class>-->
 		    <!--<class name="com.servicepoints.testCases.TC14_VerifyExcludeFunctionTest"></class>-->
 			<!--<class name="com.servicepoints.testCases.TC15_verifyAskForPriceChange"></class>-->
-			<!--<class name="com.servicepoints.testCases.TC16_VerifyUpdateQuotation"></class>-->
-			<class name="com.servicepoints.testCases.TC17_VerifyAddNewVarient"></class>
+			<!--<class name="com.servicepoints.testCases.TC16_VerifyUpdateDeleteQuotation"></class>-->
+			<!--<class name="com.servicepoints.testCases.TC17_VerifyAddNewVarient"></class>-->
+			<class name="com.servicepoints.testCases.TC18_VerifyOpenDisputFunction"></class>
+			<class name="com.servicepoints.testCases.TC19_VerifyAcceptDispute"></class>
 		 </classes>
      </test> 
 </suite> 

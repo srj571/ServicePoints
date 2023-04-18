@@ -18,7 +18,8 @@ public class TC16_VerifyUpdateDeleteQuotation extends BaseClass {
 	public String c2price = rc.setChangePrice2Pcs();
 	public String c3price = rc.setChangePrice3Pcs();
 	public String c4price = rc.setChangePrice4Pcs();
-
+	public String ProductForUpdate=rc.setProductForVerifyUpdate();
+	
 	@Test
 	public void verifyUpdateQuotation() throws InterruptedException, IOException {
 		logger.info("Application Opened.");
@@ -41,7 +42,7 @@ public class TC16_VerifyUpdateDeleteQuotation extends BaseClass {
 		aspp.clickQuotationsClientsTab();
 		Thread.sleep(2000);
 
-		aspp.searchProductName(product);
+		aspp.searchProductName(ProductForUpdate);
 		Thread.sleep(2000);
 		logger.info("Product name entered.");
 		aspp.clickOnfdiv();
