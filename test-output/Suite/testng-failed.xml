@@ -2,18 +2,15 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <parameter name="browser" value="chrome"/>
-  <listeners>
-    <listener class-name="com.servicepoints.utilities.Reporting"/>
-  </listeners>
   <test thread-count="5" name="Testng(failed)">
     <classes>
-      <class name="com.servicepoints.testCases.TC19_VerifyAcceptDispute">
+      <class name="com.servicepoints.testCases.TC22_VerifyEndToEndFunctionality">
         <methods>
+          <include name="verifyEndToEndFunctionality"/>
           <include name="setup"/>
-          <include name="verifyAcceptDispute"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.servicepoints.testCases.TC19_VerifyAcceptDispute -->
+      </class> <!-- com.servicepoints.testCases.TC22_VerifyEndToEndFunctionality -->
     </classes>
   </test> <!-- Testng(failed) -->
 </suite> <!-- Failed suite [Suite] -->

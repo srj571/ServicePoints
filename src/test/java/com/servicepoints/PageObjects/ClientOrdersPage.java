@@ -88,6 +88,19 @@ public class ClientOrdersPage {
 		sel.selectByIndex(1);
 	}
 	
+	public void selectOtherDspOption() {
+		Select sel=new Select(dspIssue);
+		sel.selectByIndex(4);
+	}
+	
+	@FindBy(xpath="//textarea[@id='otherIssue']")
+	WebElement txtotherOption;
+	
+	public void setOtherInfo(String text) {
+		txtotherOption.sendKeys(text);
+	}
+	
+	
 	@FindBy(xpath="//select[@id='dispute_type_list']")
 	WebElement dspSolutions;
 	
@@ -107,8 +120,7 @@ public class ClientOrdersPage {
 	List<WebElement> checkBoxTable;
 	
 	public void clickOnCheckBox() {
-	//	checkF.click();
-		//checkS.click();
+	
 		for(WebElement checkbox : checkBoxTable) {
 			checkbox.click();
 		}
@@ -127,6 +139,71 @@ public class ClientOrdersPage {
 	public void sendQueries(String queries) {
 		enterQueries.sendKeys(queries);
 	}
+	
+	@FindBy(xpath="(//a[normalize-space()='Special request'])[1]")
+	WebElement specialRequestBtn;
+	
+	public void clickOnSpecialRequest() {
+		specialRequestBtn.click();
+	}
+	
+	@FindBy(xpath="//select[@id='select']")
+	WebElement requestDropDown;
+	
+	public void handleRequestDropdown() {
+		Select sel=new Select(requestDropDown);
+		sel.selectByIndex(1);	
+	}
+	
+	@FindBy(xpath="(//div[@class='mb-2 p-2 sacol withedit multi_list bg-transparent'])[1]//input[@name='order_mapping_ids[]' and @type='checkbox']")
+	List<WebElement> specialRequestCheckBoxses;
+	
+	public void clickOnSpecialRequestchecks() {
+		for(WebElement checks: specialRequestCheckBoxses) {
+			checks.click();
+		}
+	}
+	
+	@FindBy(xpath="//input[@id='disputeButton']")
+	WebElement sendRequestbtn;
+	
+	public void clickOnSendRequestBtn() {
+		sendRequestbtn.click();
+	}
+	
+	@FindBy(xpath="//a[contains(text(),'Cancel order')]")
+	WebElement cancelOrderBtn;
+	
+	public void clickOnCancelBtn() {
+		cancelOrderBtn.click();
+	}
+	
+	@FindBy(xpath="(//div[@class='mb-2 multi_data'])[1]//input[@name='cancel_items[]' and @type='checkbox']")
+	List<WebElement> cancelOrderCheckBoxes;
+	
+	public void clickOnFirstCheckbox() {
+		if(cancelOrderCheckBoxes.size() > 0) {
+			cancelOrderCheckBoxes.get(0).click();
+		}
+	}	
+	
+	
+	@FindBy(xpath="//button[normalize-space()='Submit']")
+	WebElement submitCancelOrder;
+	
+	public void clickOnSubmitOrder() {
+		submitCancelOrder.click();
+	}
+	
+	@FindBy(xpath="(//button[@type='button'][normalize-space()='Close'])[1]")
+	WebElement cancelBtn;
+	
+	public void clickOnCancelOrderBtn() {
+		cancelBtn.click();
+	}
+	
+	
+	
 	
 	
 	

@@ -103,6 +103,16 @@ public class ClientProductPage {
 	public void closeThankUPopUp() {
 		clsethankUPopUp.click();
 	}
+	
+	@FindBy(xpath="//a[@class='table_expand_abso cp_link']")
+	WebElement fPdiv;
+	
+	public void clickOnFirstPDiv() {
+		fPdiv.click();
+	}
+	
+	
+	
 	//....................................
 	public void logoutTheClient() {
 		logoutClient.click();

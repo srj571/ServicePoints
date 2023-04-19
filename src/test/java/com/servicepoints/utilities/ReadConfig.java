@@ -408,6 +408,11 @@ public class ReadConfig {
 		String ans=po.getProperty("Answer");
 		return ans;
 	}
+	
+	public String setOtherTxt() {
+		String txt=po.getProperty("OtherTextBox");
+		return txt;
+	}
 }
 
 
