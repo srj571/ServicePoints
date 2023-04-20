@@ -54,7 +54,7 @@ public class ClientOrdersPage {
 	
 	@FindBy(xpath="//div[@class='js_table_expand_two table_expand_abso']")
 	WebElement firstDiv;
-	
+
 	public void clickOnFDiv() {
 		firstDiv.click();
 	}
@@ -74,7 +74,7 @@ public class ClientOrdersPage {
 	}
 	
 	@FindBy(xpath="//a[@id='raiseDispute']")
-	WebElement openDspbtn;
+	public WebElement openDspbtn;
 	
 	public void clickOnOpenDspbtn() {
 		openDspbtn.click();
@@ -110,6 +110,11 @@ public class ClientOrdersPage {
 		sl.selectByIndex(3);
 	}
 	
+	public void refundSolutionDsp() {
+		Select sl=new Select(dspSolutions);
+		sl.selectByIndex(1);
+	}
+	
 	@FindBy(xpath="(//input[@name='order_mapping_ids[]'])[6]")
 	WebElement checkF;
 	
@@ -123,6 +128,12 @@ public class ClientOrdersPage {
 	
 		for(WebElement checkbox : checkBoxTable) {
 			checkbox.click();
+		}
+	}
+	
+	public void clickOnFirstCheckBoxForDsp() {
+		if(checkBoxTable.size() > 0) {
+			checkBoxTable.get(0).click();
 		}
 	}
 	
@@ -201,10 +212,20 @@ public class ClientOrdersPage {
 	public void clickOnCancelOrderBtn() {
 		cancelBtn.click();
 	}
+
+	@FindBy(xpath="(//li[@id='select2--result-xd2z-2'])[1]")
+	WebElement fullfillTabInSearch;
 	
+	public void clickOnFulfillTab() {
+		fullfillTabInSearch.click();
+	}
+
+	@FindBy(xpath="(//li[@id='select2-b5v1-result-bmjm-1'])[1]")
+	WebElement fProcessingTab;
 	
-	
-	
+	public void clickOnFProcessingTab() {
+		fProcessingTab.click();
+	}
 	
 	
 }

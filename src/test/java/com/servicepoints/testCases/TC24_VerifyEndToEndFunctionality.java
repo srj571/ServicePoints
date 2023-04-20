@@ -15,7 +15,7 @@ import com.servicepoints.utilities.ReadConfig;
 
 import junit.framework.Assert;
 
-public class TC22_VerifyEndToEndFunctionality extends BaseClass{
+public class TC24_VerifyEndToEndFunctionality extends BaseClass{
 	
 	ReadConfig rd=new ReadConfig();
 	
@@ -200,7 +200,5 @@ public class TC22_VerifyEndToEndFunctionality extends BaseClass{
 			logger.info("Verification of client side Requote is failed.");
 			//Assert.assertTrue(false);
 		}
-		
-		
 	}
 }

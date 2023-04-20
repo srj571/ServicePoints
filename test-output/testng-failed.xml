@@ -4,13 +4,20 @@
   <parameter name="browser" value="chrome"/>
   <test thread-count="5" name="Testng(failed)">
     <classes>
-      <class name="com.servicepoints.testCases.TC22_VerifyEndToEndFunctionality">
+      <class name="com.servicepoints.testCases.TC22_VerifyCloseSpecialRequestFunction">
         <methods>
-          <include name="verifyEndToEndFunctionality"/>
+          <include name="verifyCloseSpecialRequest"/>
           <include name="setup"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.servicepoints.testCases.TC22_VerifyEndToEndFunctionality -->
+      </class> <!-- com.servicepoints.testCases.TC22_VerifyCloseSpecialRequestFunction -->
+      <class name="com.servicepoints.testCases.TC21_VerifySpecialRequestFunction">
+        <methods>
+          <include name="setup"/>
+          <include name="verifySpecialRequest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.servicepoints.testCases.TC21_VerifySpecialRequestFunction -->
     </classes>
   </test> <!-- Testng(failed) -->
 </suite> <!-- Failed suite [Suite] -->

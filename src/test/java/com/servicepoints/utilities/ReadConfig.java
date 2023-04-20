@@ -413,6 +413,46 @@ public class ReadConfig {
 		String txt=po.getProperty("OtherTextBox");
 		return txt;
 	}
+	
+	public String setAgentTrackMail() {
+		String atrackmail=po.getProperty("AgentTrackMail");
+		return atrackmail;
+	}
+	
+	public String setAgentTrackPass() {
+		String atrackpass=po.getProperty("AgentTrackPass");
+		return atrackpass;
+	}
+	
+	public String setPnameTracking() {
+		String ptname=po.getProperty("ProductTrackingName");
+		return ptname;
+	}
+	
+	public String setProcessStatus() {
+		String process=po.getProperty("ProcessStatus");
+		return process;
+	}
+	
+	public String setTrackingNum() {
+		String trackingNum=po.getProperty("TrackingNumber");
+		return trackingNum;
+	}
+	
+	public String setClientTrackMail() {
+		String clientMail=po.getProperty("ClientTrackMail");
+		return clientMail;
+	}
+	
+	public String setClientTrackPass() {
+		String clientPass=po.getProperty("ClientTrackPass");
+		return clientPass;
+	}
+	
+	public String setFullfill() {
+		String fullfill=po.getProperty("OrderStatus");
+		return fullfill;
+	}
 }
 
 

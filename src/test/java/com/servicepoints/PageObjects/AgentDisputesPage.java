@@ -65,6 +65,51 @@ public class AgentDisputesPage {
 		btnSendAnswer.click();
 	}
 	
+	@FindBy(xpath="//a[@id='specialDispute']")
+	WebElement specialRequestTab;
+	
+	public void clickOnSpecialRequestTab() {
+		specialRequestTab.click();
+	}
+	
+	@FindBy(xpath="//a[normalize-space()='Open']")
+	WebElement openInSpecialReTab;
+	
+	public void clickOnOpenTabInSreq() {
+		openInSpecialReTab.click();
+	}
+	
+	@FindBy(xpath="(//a[normalize-space()='Show request'])[1]")
+	WebElement showRequestTab;
+	
+	public void clickOnShowRequestTab() {
+		showRequestTab.click();
+	}
+	
+	@FindBy(xpath="//input[@id='disputeButton']")
+	WebElement sendAnsForSpRequest;
+	
+	public void clickOnSendAnsSpRequest() {
+		sendAnsForSpRequest.click();
+	}
+	
+	@FindBy(xpath="//textarea[@id='answerSupplier']")
+	WebElement txtAnsFieldSpReq;
+	
+	public void setTxtAnsSpRequest(String ans) {
+		txtAnsFieldSpReq.sendKeys(ans);
+	}
+	
+	@FindBy(xpath="//input[@id='uploadFile']")
+	WebElement sendFile;
+	
+	public void sendFileToInASpReq(String file) {
+		sendFile.sendKeys(file);
+	}
+	
+	
+	
+	
 	
 	
 	
