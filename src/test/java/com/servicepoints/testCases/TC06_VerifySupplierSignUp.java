@@ -116,6 +116,8 @@ public class TC06_VerifySupplierSignUp {
 			logger.info("Verification of Supplier Sign in is failed.");
 			Assert.assertTrue(false);
 		}
+		
+		driver.close();
 
 	}
 

@@ -26,6 +26,7 @@ public class TC24_VerifyEndToEndFunctionality extends BaseClass{
 	public String productFetch=rd.fetchProducts();
 	public String ordersFetch=rd.fetchOrders();
 	public String status2=rd.setOrderStatus2();
+	public String productTrack=rd.setPnameTracking();
 
 	
 	@Test
@@ -52,7 +53,7 @@ public class TC24_VerifyEndToEndFunctionality extends BaseClass{
 		aspp.clickQuotationsClientsTab();
 		Thread.sleep(2000);
 
-		aspp.searchProductName(proToAcceptQuo);
+		aspp.searchProductName(productTrack);
 		Thread.sleep(2000);
 		logger.info("Product name entered.");
 		aspp.clickOnfdiv();
@@ -104,7 +105,7 @@ public class TC24_VerifyEndToEndFunctionality extends BaseClass{
 		ClientProductPage cl = new ClientProductPage(driver);
 		cl.getProductsPage();
 
-		cl.searchProduct(proToAcceptQuo);
+		cl.searchProduct(productTrack);
 		Thread.sleep(4000);
 		cl.selectProductTab();
 		Thread.sleep(3000);
@@ -136,7 +137,7 @@ public class TC24_VerifyEndToEndFunctionality extends BaseClass{
 		cop.clickOnOrdersTab();
 		logger.info("Clicked on orders tab.");
 		Thread.sleep(2000);
-		cop.sendPnameinSearch(proToAcceptQuo);
+		cop.sendPnameinSearch(productTrack);
 		Thread.sleep(4000);
 	
 		cop.clickOnDropdown();
@@ -166,7 +167,7 @@ public class TC24_VerifyEndToEndFunctionality extends BaseClass{
 		
 		cl.getProductsPage();
 		Thread.sleep(2000);
-		cl.searchProduct(proToAcceptQuo);
+		cl.searchProduct(productTrack);
 		Thread.sleep(2000);
 		logger.info("Go to products page.");
 		cl.clickOnFirstPDiv();
