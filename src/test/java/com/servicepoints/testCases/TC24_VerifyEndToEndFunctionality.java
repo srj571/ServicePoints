@@ -200,7 +200,7 @@ public class TC24_VerifyEndToEndFunctionality extends BaseClass{
 		Thread.sleep(2000);
 		cl.clickOnSpecialRequestDrop();
 		Thread.sleep(2000);
-		cl.pleaseRequote();
+		cl.pleaseRequote(); 
 		Thread.sleep(2000);
 		cl.clickOnYesImSure();
 		Thread.sleep(3000);
