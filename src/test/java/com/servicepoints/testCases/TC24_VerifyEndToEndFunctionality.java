@@ -58,22 +58,22 @@ public class TC24_VerifyEndToEndFunctionality extends BaseClass{
 		logger.info("Product name entered.");
 		aspp.clickOnfdiv();
 
-//		Set<String> window = driver.getWindowHandles();
-//		Iterator<String> it = window.iterator();
-//		String parent = it.next();
-//		String child = it.next();
-//		driver.switchTo().window(child);
-//		Thread.sleep(4000);
-
 		String parentWindow=driver.getWindowHandle();
-		Set<String> windowHandles = driver.getWindowHandles();
-		for(String handle: windowHandles) {
-			if(!handle.equals(parentWindow)) {
-				driver.switchTo().window(handle);
-				break;
-			}
-		}
-		
+		Set<String> window = driver.getWindowHandles();
+		Iterator<String> it = window.iterator();
+		String parent = it.next();
+		String child = it.next();
+		driver.switchTo().window(child);
+		Thread.sleep(4000);
+
+//		String parentWindow=driver.getWindowHandle();
+//		Set<String> windowHandles = driver.getWindowHandles();
+//		for(String handle: windowHandles) {
+//			if(!handle.equals(parentWindow)) {
+//				driver.switchTo().window(handle);
+//				break;
+//			}
+//		}
 		
 		aspp.firstPcsPrice(FirstPcsPrice);
 		aspp.secPcsPrice(SecPcsPrice);
@@ -110,14 +110,22 @@ public class TC24_VerifyEndToEndFunctionality extends BaseClass{
 		cl.selectProductTab();
 		Thread.sleep(3000);
 		
-		windowHandles = driver.getWindowHandles();
-		for(String handle: windowHandles) {
+//		String schild = it.next();
+//		driver.switchTo().window(schild);
+//		
+		
+		
+		window = driver.getWindowHandles();
+		for(String handle: window) {
 			if(!handle.equals(parentWindow) && !handle.equals(driver.getWindowHandle())) {
 				driver.switchTo().window(handle);
 				break;
 			}
 		}
-
+		
+		
+		System.out.println(window);
+		
 		cl.selectQuoteTab();
 		cl.selectAcceptQuoteBtn();
 		Thread.sleep(4000);
@@ -168,20 +176,26 @@ public class TC24_VerifyEndToEndFunctionality extends BaseClass{
 		cl.getProductsPage();
 		Thread.sleep(2000);
 		cl.searchProduct(productTrack);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		logger.info("Go to products page.");
 		cl.clickOnFirstPDiv();
+		logger.info("Go to products page.");
 		Thread.sleep(2000);
 		
-		// Switch to the fourth child window
-		windowHandles = driver.getWindowHandles();
-		for (String handle : windowHandles) {
-		    if (!handle.equals(parentWindow) && !handle.equals(driver.getWindowHandle())) {
-		        driver.switchTo().window(handle);
-		        // We are now in the fourth child window
-		        break;
-		    }
-		}
+		
+//		// Switch to the fourth child window
+//		windowHandles = driver.getWindowHandles();
+//		for (String handle : windowHandles) {
+//		    if (!handle.equals(parentWindow) && !handle.equals(driver.getWindowHandle())) {
+//		        driver.switchTo().window(handle);
+//		        // We are now in the fourth child window
+//		        break;
+//		    }
+//		}
+		
+		
+		driver.switchTo().window(child);
+		
 		
 		Thread.sleep(2000);
 		cl.clickOnSpecialRequestDrop();
@@ -195,11 +209,11 @@ public class TC24_VerifyEndToEndFunctionality extends BaseClass{
 		
 		if(driver.getPageSource().contains("Requote - Bidding")) {
 			logger.info("Verification of Client side Requote is Successed.");
-			//Assert.assertTrue(true);
+			Assert.assertTrue(true);
 		}
 		else {
 			logger.info("Verification of client side Requote is failed.");
-			//Assert.assertTrue(false);
+			Assert.assertTrue(false);
 		}
 	}
 }

@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.servicepoints.testCases.TC17_VerifyAddNewVarient">
+      <class name="com.servicepoints.testCases.TC24_VerifyEndToEndFunctionality">
         <methods>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="verifyAddNewVarient"/>
+          <include name="verifyEndToEndFunctionality"/>
         </methods>
-      </class> <!-- com.servicepoints.testCases.TC17_VerifyAddNewVarient -->
+      </class> <!-- com.servicepoints.testCases.TC24_VerifyEndToEndFunctionality -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

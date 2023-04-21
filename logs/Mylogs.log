@@ -848,3 +848,96 @@
 [INFO ] 2023-04-21 17:34:17.345 [main] BaseClass - Clicked on first checkbox.
 [INFO ] 2023-04-21 17:34:21.549 [main] BaseClass - Clicked on Submit order.
 [INFO ] 2023-04-21 17:34:26.501 [main] BaseClass - Go to products page.
+[INFO ] 2023-04-21 17:53:40.299 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-04-21 17:53:53.140 [main] BaseClass - Product name entered.
+[INFO ] 2023-04-21 17:54:34.405 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-04-21 17:54:47.149 [main] BaseClass - Product name entered.
+[INFO ] 2023-04-21 17:54:48.410 [main] BaseClass - Price entered
+[INFO ] 2023-04-21 17:55:00.572 [main] BaseClass - Verification of Submit quotation Successed..
+[INFO ] 2023-04-21 17:55:01.270 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-04-21 17:55:18.788 [main] BaseClass - Verification of accepting quotation is Successed.
+[INFO ] 2023-04-21 17:55:19.992 [main] BaseClass - Clicked on orders tab.
+[INFO ] 2023-04-21 17:55:36.446 [main] BaseClass - Clicked on cancel order.
+[INFO ] 2023-04-21 17:55:40.583 [main] BaseClass - Clicked on first checkbox.
+[INFO ] 2023-04-21 17:55:44.729 [main] BaseClass - Clicked on Submit order.
+[INFO ] 2023-04-21 17:55:49.625 [main] BaseClass - Go to products page.
+[INFO ] 2023-04-21 18:02:39.288 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-04-21 18:03:09.800 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-04-21 18:03:25.333 [main] BaseClass - Product name entered.
+[INFO ] 2023-04-21 18:03:29.792 [main] BaseClass - Price entered
+[INFO ] 2023-04-21 18:04:08.488 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-04-21 18:04:21.770 [main] BaseClass - Product name entered.
+[INFO ] 2023-04-21 18:04:26.307 [main] BaseClass - Price entered
+[INFO ] 2023-04-21 18:04:38.548 [main] BaseClass - Verification of Submit quotation Successed..
+[INFO ] 2023-04-21 18:04:39.290 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-04-21 18:06:42.243 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-04-21 18:06:57.749 [main] BaseClass - Product name entered.
+[INFO ] 2023-04-21 18:07:02.173 [main] BaseClass - Price entered
+[INFO ] 2023-04-21 18:07:32.978 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-04-21 18:07:47.223 [main] BaseClass - Product name entered.
+[INFO ] 2023-04-21 18:07:51.655 [main] BaseClass - Price entered
+[INFO ] 2023-04-21 18:08:03.860 [main] BaseClass - Verification of Submit quotation Successed..
+[INFO ] 2023-04-21 18:08:04.597 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-04-21 18:09:49.160 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-04-21 18:10:00.809 [main] BaseClass - Product name entered.
+[INFO ] 2023-04-21 18:10:05.217 [main] BaseClass - Price entered
+[INFO ] 2023-04-21 18:10:17.569 [main] BaseClass - Verification of Submit quotation Successed..
+[INFO ] 2023-04-21 18:10:18.504 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-04-21 18:13:16.604 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-04-21 18:13:29.285 [main] BaseClass - Product name entered.
+[INFO ] 2023-04-21 18:13:33.702 [main] BaseClass - Price entered
+[INFO ] 2023-04-21 18:13:45.896 [main] BaseClass - Verification of Submit quotation Successed..
+[INFO ] 2023-04-21 18:13:46.578 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-04-21 18:14:04.127 [main] BaseClass - Verification of accepting quotation is Successed.
+[INFO ] 2023-04-21 18:14:05.343 [main] BaseClass - Clicked on orders tab.
+[INFO ] 2023-04-21 18:15:12.888 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-04-21 18:15:27.332 [main] BaseClass - Product name entered.
+[INFO ] 2023-04-21 18:15:31.733 [main] BaseClass - Price entered
+[INFO ] 2023-04-21 18:15:43.901 [main] BaseClass - Verification of Submit quotation Successed..
+[INFO ] 2023-04-21 18:15:44.577 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-04-21 18:16:02.398 [main] BaseClass - Verification of accepting quotation is Successed.
+[INFO ] 2023-04-21 18:16:03.574 [main] BaseClass - Clicked on orders tab.
+[INFO ] 2023-04-21 18:16:20.184 [main] BaseClass - Clicked on cancel order.
+[INFO ] 2023-04-21 18:16:24.290 [main] BaseClass - Clicked on first checkbox.
+[INFO ] 2023-04-21 18:16:28.480 [main] BaseClass - Clicked on Submit order.
+[INFO ] 2023-04-21 18:16:33.783 [main] BaseClass - Go to products page.
+[INFO ] 2023-04-21 18:22:09.372 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-04-21 18:22:23.765 [main] BaseClass - Product name entered.
+[INFO ] 2023-04-21 18:23:00.921 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-04-21 18:23:19.507 [main] BaseClass - Product name entered.
+[INFO ] 2023-04-21 18:23:23.975 [main] BaseClass - Price entered
+[INFO ] 2023-04-21 18:23:36.147 [main] BaseClass - Verification of Submit quotation Successed..
+[INFO ] 2023-04-21 18:23:36.810 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-04-21 18:23:54.897 [main] BaseClass - Verification of accepting quotation is Successed.
+[INFO ] 2023-04-21 18:23:56.324 [main] BaseClass - Clicked on orders tab.
+[INFO ] 2023-04-21 18:24:12.986 [main] BaseClass - Clicked on cancel order.
+[INFO ] 2023-04-21 18:24:17.059 [main] BaseClass - Clicked on first checkbox.
+[INFO ] 2023-04-21 18:24:21.195 [main] BaseClass - Clicked on Submit order.
+[INFO ] 2023-04-21 18:24:27.729 [main] BaseClass - Go to products page.
+[INFO ] 2023-04-21 18:26:59.529 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-04-21 18:27:12.342 [main] BaseClass - Product name entered.
+[INFO ] 2023-04-21 18:27:16.816 [main] BaseClass - Price entered
+[INFO ] 2023-04-21 18:27:29.025 [main] BaseClass - Verification of Submit quotation Successed..
+[INFO ] 2023-04-21 18:27:29.738 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-04-21 18:27:47.333 [main] BaseClass - Verification of accepting quotation is Successed.
+[INFO ] 2023-04-21 18:27:48.542 [main] BaseClass - Clicked on orders tab.
+[INFO ] 2023-04-21 18:28:05.176 [main] BaseClass - Clicked on cancel order.
+[INFO ] 2023-04-21 18:28:09.290 [main] BaseClass - Clicked on first checkbox.
+[INFO ] 2023-04-21 18:28:13.487 [main] BaseClass - Clicked on Submit order.
+[INFO ] 2023-04-21 18:28:19.455 [main] BaseClass - Go to products page.
+[INFO ] 2023-04-21 18:28:19.542 [main] BaseClass - Go to products page.
+[INFO ] 2023-04-21 18:44:51.929 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-04-21 18:45:04.646 [main] BaseClass - Product name entered.
+[INFO ] 2023-04-21 18:45:09.092 [main] BaseClass - Price entered
+[INFO ] 2023-04-21 18:45:43.418 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-04-21 18:45:58.197 [main] BaseClass - Product name entered.
+[INFO ] 2023-04-21 18:46:02.658 [main] BaseClass - Price entered
+[INFO ] 2023-04-21 18:46:14.836 [main] BaseClass - Verification of Submit quotation Successed..
+[INFO ] 2023-04-21 18:46:15.518 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-04-21 18:46:33.132 [main] BaseClass - Verification of accepting quotation is Successed.
+[INFO ] 2023-04-21 18:46:34.479 [main] BaseClass - Clicked on orders tab.
+[INFO ] 2023-04-21 18:46:51.034 [main] BaseClass - Clicked on cancel order.
+[INFO ] 2023-04-21 18:46:55.147 [main] BaseClass - Clicked on first checkbox.
+[INFO ] 2023-04-21 18:46:59.373 [main] BaseClass - Clicked on Submit order.
+[INFO ] 2023-04-21 18:47:05.329 [main] BaseClass - Go to products page.
+[INFO ] 2023-04-21 18:47:05.460 [main] BaseClass - Go to products page.
