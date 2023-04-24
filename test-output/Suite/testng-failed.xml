@@ -4,13 +4,13 @@
   <parameter name="browser" value="chrome"/>
   <test thread-count="5" name="Testng(failed)">
     <classes>
-      <class name="com.servicepoints.testCases.TC24_VerifyEndToEndFunctionality">
+      <class name="com.servicepoints.testCases.TC27_VerifyDisputeForConversation">
         <methods>
           <include name="setup"/>
+          <include name="verifyDisputeForConversation"/>
           <include name="tearDown"/>
-          <include name="verifyEndToEndFunctionality"/>
         </methods>
-      </class> <!-- com.servicepoints.testCases.TC24_VerifyEndToEndFunctionality -->
+      </class> <!-- com.servicepoints.testCases.TC27_VerifyDisputeForConversation -->
     </classes>
   </test> <!-- Testng(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -15,7 +15,7 @@ import com.servicepoints.utilities.ReadConfig;
 
 import junit.framework.Assert;
 
-public class TC23_VerifyAddTrackingFunction extends BaseClass{
+public class TC24_VerifyAddTrackingAndRefundDspFunction extends BaseClass{
 	
 	ReadConfig rd=new ReadConfig();
 	public String agmail=rd.setAgentTrackMail();

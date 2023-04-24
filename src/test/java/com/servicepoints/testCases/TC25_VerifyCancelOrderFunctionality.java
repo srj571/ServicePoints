@@ -15,7 +15,7 @@ import com.servicepoints.utilities.ReadConfig;
 
 import junit.framework.Assert;
 
-public class TC24_VerifyEndToEndFunctionality extends BaseClass{
+public class TC25_VerifyCancelOrderFunctionality extends BaseClass{
 	
 	ReadConfig rd=new ReadConfig();
 	
@@ -32,13 +32,13 @@ public class TC24_VerifyEndToEndFunctionality extends BaseClass{
 	@Test
 	public void verifyEndToEndFunctionality() throws InterruptedException, IOException {
 		
-//		driver.get(productFetch);
-//		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-//		
-//		driver.get(ordersFetch);
-//		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-//		
-//		driver.get(baseURL);
+		driver.get(productFetch);
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		
+		driver.get(ordersFetch);
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		
+		driver.get(baseURL);
 		
 		LoginPage lp=new LoginPage(driver);
 		
@@ -110,11 +110,6 @@ public class TC24_VerifyEndToEndFunctionality extends BaseClass{
 		cl.selectProductTab();
 		Thread.sleep(3000);
 		
-//		String schild = it.next();
-//		driver.switchTo().window(schild);
-//		
-		
-		
 		window = driver.getWindowHandles();
 		for(String handle: window) {
 			if(!handle.equals(parentWindow) && !handle.equals(driver.getWindowHandle())) {
@@ -122,7 +117,6 @@ public class TC24_VerifyEndToEndFunctionality extends BaseClass{
 				break;
 			}
 		}
-		
 		
 		System.out.println(window);
 		
@@ -170,50 +164,62 @@ public class TC24_VerifyEndToEndFunctionality extends BaseClass{
 		Thread.sleep(2000);
 		
 		cop.clickOnCancelOrderBtn();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		logger.info("Clicked on Submit order.");
 		
-		cl.getProductsPage();
-		Thread.sleep(2000);
-		cl.searchProduct(productTrack);
-		Thread.sleep(3000);
-		logger.info("Go to products page.");
-		cl.clickOnFirstPDiv();
-		logger.info("Go to products page.");
-		Thread.sleep(2000);
 		
-		
-//		// Switch to the fourth child window
-//		windowHandles = driver.getWindowHandles();
-//		for (String handle : windowHandles) {
-//		    if (!handle.equals(parentWindow) && !handle.equals(driver.getWindowHandle())) {
-//		        driver.switchTo().window(handle);
-//		        // We are now in the fourth child window
-//		        break;
-//		    }
-//		}
-		
-		
-		driver.switchTo().window(child);
-		
-		
-		Thread.sleep(2000);
-		cl.clickOnSpecialRequestDrop();
-		Thread.sleep(2000);
-		cl.pleaseRequote(); 
-		Thread.sleep(2000);
-		cl.clickOnYesImSure();
-		Thread.sleep(3000);
-		cl.clickOnClosebtn();
-		Thread.sleep(3000);
-		
-		if(driver.getPageSource().contains("Requote - Bidding")) {
-			logger.info("Verification of Client side Requote is Successed.");
+		if(driver.getPageSource().contains("Order cancelled successfully")) {
 			Assert.assertTrue(true);
-		}
-		else {
-			logger.info("Verification of client side Requote is failed.");
+			logger.info("Verification of cancel variant is Successed.");
+		}else {
+			Thread.sleep(4000);
+			logger.info("Verification of cancel variant is failed.");
 			Assert.assertTrue(false);
 		}
+		
+//		cl.getProductsPage();
+//		Thread.sleep(2000);
+//		cl.searchProduct(productTrack);
+//		Thread.sleep(3000);
+//		logger.info("Go to products page.");
+//		cl.clickOnFirstPDiv();
+//		logger.info("Go to products page.");
+//		Thread.sleep(2000);
+//		System.out.println(window);
+//		
+////		// Switch to the fourth child window
+////		windowHandles = driver.getWindowHandles();
+////		for (String handle : windowHandles) {
+////		    if (!handle.equals(parentWindow) && !handle.equals(driver.getWindowHandle())) {
+////		        driver.switchTo().window(handle);
+////		        // We are now in the fourth child window
+////		        break;
+////		    }
+////		}
+//		
+//		Set<String> newWin=driver.getWindowHandles();
+//		Iterator<String> itr=newWin.iterator();
+//		String childd=itr.next();
+//		driver.switchTo().window(childd);
+//		
+//		
+//		Thread.sleep(2000);
+//		cl.clickOnSpecialRequestDrop();
+//		Thread.sleep(2000);
+//		cl.pleaseRequote(); 
+//		Thread.sleep(2000);
+//		cl.clickOnYesImSure();
+//		Thread.sleep(3000);
+//		cl.clickOnClosebtn();
+//		Thread.sleep(3000);
+//		
+//		if(driver.getPageSource().contains("Requote - Bidding")) {
+//			logger.info("Verification of Client side Requote is Successed.");
+//			Assert.assertTrue(true);
+//		}
+//		else {
+//			logger.info("Verification of client side Requote is failed.");
+//			Assert.assertTrue(false);
+//		}
 	}
 }

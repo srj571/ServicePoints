@@ -115,6 +115,13 @@ public class ClientOrdersPage {
 		sl.selectByIndex(1);
 	}
 	
+	@FindBy(xpath="//input[@name='disput-file']")
+	WebElement sendFiles;
+	
+	public void sendFiles(String str) {
+		sendFiles.sendKeys(str);
+	}
+	
 	@FindBy(xpath="(//input[@name='order_mapping_ids[]'])[6]")
 	WebElement checkF;
 	
@@ -198,7 +205,6 @@ public class ClientOrdersPage {
 		}
 	}	
 	
-	
 	@FindBy(xpath="//button[normalize-space()='Submit']")
 	WebElement submitCancelOrder;
 	
@@ -227,5 +233,10 @@ public class ClientOrdersPage {
 		fProcessingTab.click();
 	}
 	
+	@FindBy(xpath="//a[normalize-space()='Show dispute']")
+	WebElement showDispute;
 	
+	public void clickOnShowDispute() {
+		showDispute.click();
+	}
 }

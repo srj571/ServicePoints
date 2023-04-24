@@ -51,6 +51,11 @@ public class AgentDisputesPage {
 		sel.selectByIndex(1);
 	}
 	
+	public void selectDspStatusToDeclined() {
+		Select sel=new Select(dspDropdown);
+		sel.selectByIndex(2);
+	}
+	
 	@FindBy(xpath="//textarea[@id='textarea']")
 	WebElement txtanswer;
 	
@@ -106,14 +111,6 @@ public class AgentDisputesPage {
 	public void sendFileToInASpReq(String file) {
 		sendFile.sendKeys(file);
 	}
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	
 }

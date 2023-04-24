@@ -22,7 +22,7 @@ public class AgentSupProductsPage {
 	@FindBy(xpath="//input[@placeholder='Products, Stores or Clients']")
 	WebElement serachField;
 	
-	@FindBy(xpath="//a[@class='table_expand_abso cp_link']")
+	@FindBy(xpath="(//a[@class='table_expand_abso cp_link'])[1]")
 	WebElement divfield;
 	
 	@FindBy(xpath="(//input[@placeholder='1 Pcs price'])[1]")
@@ -43,6 +43,10 @@ public class AgentSupProductsPage {
 	@FindBy(xpath="//span[@class='badge-mod badge-info']")
 	WebElement QuoteStatus;
 	
+	@FindBy(xpath="(//div[@class='d-flex justify-content-center align-items-center mh100p'])[2]")
+	WebElement seeMoreBtn;
+	
+	
 	public void getProductsPage() {
 		ProductsTab.click();
 	}
@@ -57,6 +61,10 @@ public class AgentSupProductsPage {
 	
 	public void clickOnfdiv() {
 		divfield.click();
+	}
+	
+	public void clickOnSeeMore() {
+		seeMoreBtn.click();
 	}
 	
 	

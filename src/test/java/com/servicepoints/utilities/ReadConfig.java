@@ -453,6 +453,31 @@ public class ReadConfig {
 		String fullfill=po.getProperty("OrderStatus");
 		return fullfill;
 	}
+	
+	public String setAgent1NameTwoQuote() {
+		String name=po.getProperty("AgentSUPname1");
+		return name;
+	}
+	
+	public String setProductForTwoQuote() {
+		String product=po.getProperty("ProductTQuote");
+		return product;
+	}
+	
+	public String setAgent2NameTwoQuote() {
+		String pname=po.getProperty("AgentSUPname2");
+		return pname;
+	}
+	
+	public String setProductToDeclinedDsp() {
+		String pdsp=po.getProperty("ProductToDeclinedDsp");
+		return pdsp;
+	}
+	
+	public String setProductForConversation() {
+		String pc=po.getProperty("productToConverse");
+		return pc;
+	}
 }
 
 

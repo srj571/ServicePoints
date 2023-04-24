@@ -8,7 +8,7 @@ import com.servicepoints.utilities.ReadConfig;
 
 import junit.framework.Assert;
 
-public class TC22_VerifyCloseSpecialRequestFunction extends BaseClass{
+public class TC23_VerifyCloseSpecialRequestFunction extends BaseClass{
 	
 	ReadConfig rd=new ReadConfig();
 	
