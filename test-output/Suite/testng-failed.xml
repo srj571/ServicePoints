@@ -4,13 +4,13 @@
   <parameter name="browser" value="chrome"/>
   <test thread-count="5" name="Testng(failed)">
     <classes>
-      <class name="com.servicepoints.testCases.TC27_VerifyDisputeForConversation">
+      <class name="com.servicepoints.testCases.TC32_VerifySpecialRequestCloseByAll">
         <methods>
           <include name="setup"/>
-          <include name="verifyDisputeForConversation"/>
+          <include name="verifySpecialRequestClosingByAll"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.servicepoints.testCases.TC27_VerifyDisputeForConversation -->
+      </class> <!-- com.servicepoints.testCases.TC32_VerifySpecialRequestCloseByAll -->
     </classes>
   </test> <!-- Testng(failed) -->
 </suite> <!-- Failed suite [Suite] -->

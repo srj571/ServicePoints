@@ -2,7 +2,6 @@ package com.servicepoints.testCases;
 
 import java.io.IOException;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
@@ -89,12 +88,12 @@ public class TC24_VerifyAddTrackingAndRefundDspFunction extends BaseClass{
 		Thread.sleep(6000);
 		
 		if(driver.getPageSource().contains("Tracking number successfully added")) {
-			logger.info("Verification of tracking number is Successfull.");
+			logger.info("Verification of adding tracking number is Successfull.");
 			Assert.assertTrue(true);
 			Thread.sleep(2000);
 		}else {
 			Assert.assertTrue(false);
-			logger.info("Verification of tracking number is failed.");
+			logger.info("Verification of adding tracking number is failed.");
 		}
 		
 		driver.get(baseURL);
@@ -189,7 +188,7 @@ public class TC24_VerifyAddTrackingAndRefundDspFunction extends BaseClass{
 		Thread.sleep(3000);
 		
 		
-		if(driver.getPageSource().contains("Information saved successfully")) {
+		if(driver.getPageSource().contains("Dispute accepted successfully")) {
 			Assert.assertTrue(true);
 			logger.info("Verification of Dispute acceptance is successfull.");
 		}else {

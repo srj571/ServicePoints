@@ -46,6 +46,13 @@ public class AgentSupProductsPage {
 	@FindBy(xpath="(//div[@class='d-flex justify-content-center align-items-center mh100p'])[2]")
 	WebElement seeMoreBtn;
 	
+	@FindBy(xpath="//span[@class='badge-mod badge-warning']")
+	WebElement getStatusRequote;
+	
+	public String getStatusRequote() {
+		String val=getStatusRequote.getText();
+		return val;
+	}
 	
 	public void getProductsPage() {
 		ProductsTab.click();

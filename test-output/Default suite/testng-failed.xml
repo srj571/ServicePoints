@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.servicepoints.testCases.TC24_VerifyEndToEndFunctionality">
+      <class name="com.servicepoints.testCases.TC32_VerifySpecialRequestCloseByAll">
         <methods>
           <include name="setup"/>
+          <include name="verifySpecialRequestClosingByAll"/>
           <include name="tearDown"/>
-          <include name="verifyEndToEndFunctionality"/>
         </methods>
-      </class> <!-- com.servicepoints.testCases.TC24_VerifyEndToEndFunctionality -->
+      </class> <!-- com.servicepoints.testCases.TC32_VerifySpecialRequestCloseByAll -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

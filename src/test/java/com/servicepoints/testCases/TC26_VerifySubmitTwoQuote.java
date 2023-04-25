@@ -1,9 +1,14 @@
 package com.servicepoints.testCases;
 
+import java.awt.Desktop.Action;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Set;
 
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
 import com.servicepoints.PageObjects.AdminAccountsPage;
@@ -53,13 +58,21 @@ public class TC26_VerifySubmitTwoQuote extends BaseClass{
 		Thread.sleep(3000);
 		
 		String parentWindow=driver.getWindowHandle();
+//		List<String> windows=new ArrayList<String>(driver.getWindowHandles());
 		Set<String> window=driver.getWindowHandles();
 		Iterator<String> it=window.iterator();
 		String parent=it.next();
 		String second=it.next();
-		
 		driver.switchTo().window(second);
-		Thread.sleep(4000);
+		
+//		for(int i=0; i< windows.size();i++) {
+//			driver.switchTo().window(windows.get(0));
+//			Thread.sleep(2000);
+//		}
+		
+		Actions action=new Actions(driver);
+//		action.sendKeys(Keys.chord(Keys.CONTROL,Keys.TAB)).build().perform();
+//		Thread.sleep(4000);
 		
 		AgentSupProductsPage aspp = new AgentSupProductsPage(driver);
 		
@@ -82,10 +95,17 @@ public class TC26_VerifySubmitTwoQuote extends BaseClass{
 		for(String handle: window) {
 			if(!handle.equals(parentWindow) && !handle.equals(driver.getWindowHandle())) {
 				driver.switchTo().window(handle);
-				break;
-			}
+				break;			}
 		}
-	
+		
+//		for(int i=0; i< windows.size();i++) {
+//			driver.switchTo().window(windows.get(1));
+//			Thread.sleep(2000);
+//		}
+		
+//		action.sendKeys(Keys.chord(Keys.CONTROL,Keys.TAB)).build().perform();
+		Thread.sleep(2000);
+		
 		aspp.firstPcsPrice(FirstPcsPrice);
 		aspp.secPcsPrice(SecPcsPrice);
 		aspp.thirdPcsPrice(ThirdPcsPrice);
@@ -107,7 +127,7 @@ public class TC26_VerifySubmitTwoQuote extends BaseClass{
 			Thread.sleep(4000);
 		}
 		
-		driver.close();
+	//	driver.close();
 		driver.switchTo().window(parent);
 		Thread.sleep(3000);
 		adminAccount.clearSearchField();
@@ -123,6 +143,14 @@ public class TC26_VerifySubmitTwoQuote extends BaseClass{
 		
 //		String thirdWin=it.next();
 //		driver.switchTo().window(second);
+		
+//		for(int i=0; i< windows.size();i++) {
+//			driver.switchTo().window(windows.get(2));
+//			Thread.sleep(2000);
+//		}
+		
+		action.sendKeys(Keys.chord(Keys.CONTROL,Keys.TAB)).build().perform();
+		Thread.sleep(2000);
 		
 		aspp.getProductsPage();
 		Thread.sleep(4000);

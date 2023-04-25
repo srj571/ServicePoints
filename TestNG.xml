@@ -31,11 +31,16 @@
 			<!--<class name="com.servicepoints.testCases.TC20_VerifyOpenAcceptDisputeForOtherIssue"></class>-->
 			<!--<class name="com.servicepoints.testCases.TC21_VerifyDeclinedDisputeFunction"></class>-->
 			<!--<class name="com.servicepoints.testCases.TC22_VerifyCloseSpecialRequestFunction"></class>-->
-			<!--<class name="com.servicepoints.testCases.TC23_VerifyAddTrackingFunction"></class>-->
+			<!--<class name="com.servicepoints.testCases.TC23_VerifyAddTrackingAndRefundDspFunction"></class>-->
 			<!--<class name="com.servicepoints.testCases.TC24_VerifyEndToEndFunctionality"></class>-->
 			<!--<class name="com.servicepoints.testCases.TC25_VerifySubmitTwoQuote"></class>-->
-			<!--<class name="com.servicepoints.testCases.TC26_VerifyPaymentPendingOrder"></class>-->
-			<class name="com.servicepoints.testCases.TC27_VerifyDisputeForConversation"></class>
+			<!--<class name="com.servicepoints.testCases.TC26_VerifySubmitTwoQuote"></class>-->
+			<!--<class name="com.servicepoints.testCases.TC27_VerifyDisputeForConversation"></class>-->
+			<!--<class name="com.servicepoints.testCases.TC28_VerifyRefundDspDeclined"></class>-->
+			<!--<class name="com.servicepoints.testCases.TC29_VerifyRefundAndConversation"></class>-->
+			<!--<class name="com.servicepoints.testCases.TC30_VerifyAddTrackingAndResend"></class>-->
+			<!--<class name="com.servicepoints.testCases.TC31_VerifyDeclinedResendDispute"></class>-->
+			<class name="com.servicepoints.testCases.TC32_VerifySpecialRequestCloseByAll"></class>
 		 </classes>
      </test> 
 </suite>  	

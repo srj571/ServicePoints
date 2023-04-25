@@ -115,6 +115,11 @@ public class ClientOrdersPage {
 		sl.selectByIndex(1);
 	}
 	
+	public void resendSolutionDsp() {
+		Select sl=new Select(dspSolutions);
+		sl.selectByIndex(2);
+	}
+	
 	@FindBy(xpath="//input[@name='disput-file']")
 	WebElement sendFiles;
 	
@@ -238,5 +243,19 @@ public class ClientOrdersPage {
 	
 	public void clickOnShowDispute() {
 		showDispute.click();
+	}
+	
+	@FindBy(xpath="//li[@role='option']")
+	WebElement proTab;
+	
+	public void clickOnProcessingTab() {
+		proTab.click();
+	}
+	
+	@FindBy(xpath="(//span[@class='btn btn-border btn-block mb-3 '])[1]")
+	WebElement disputeHistory;
+	
+	public void clickOnDispHistory() {
+		disputeHistory.click();
 	}
 }
