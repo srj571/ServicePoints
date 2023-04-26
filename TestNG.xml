@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite" >
-	<!-- <listeners>
+ <suite name="Suite" >
+	<!--<listeners>
 		<listener class-name="com.servicepoints.utilities.Reporting"></listener>
-	</listeners>-->
+	</listeners> -->
 		
 	<parameter name="browser" value="chrome"></parameter>
 	
      <test  name="Testng">
          <classes>
-			<!--<class name="com.servicepoints.testCases.TC01_AdminLoginTest"></class>-->
-			<!--<class name="com.servicepoints.testCases.TC02_VerifyClientLoginTest"></class>-->
-			<!--<class name="com.servicepoints.testCases.TC03_UserSignUpTest"></class>-->
-			<!--<class name="com.servicepoints.testCases.TC04_VerifyClientApprovalTest"></class>-->
-		    <!--<class name="com.servicepoints.testCases.TC05_VerifyAdminSUPLoginTest"></class>-->
-			<!--<class name="com.servicepoints.testCases.TC06_VerifySupplierSignUp"></class>-->
-			<!--<class name="com.servicepoints.testCases.TC07_VerifyAddAgentSupBySupplier"></class>-->
-			<!--<class name="com.servicepoints.testCases.TC08_VerifyAddingNewStore"></class>-->
-			<!--<class name="com.servicepoints.testCases.TC09_VerifyUpdationOfStoreTest"></class>-->
-			<!--<class name="com.servicepoints.testCases.TC10_VerifyDeletionOfStoreTest"></class>-->
+			<class name="com.servicepoints.testCases.TC01_AdminLoginTest"></class>
+			<class name="com.servicepoints.testCases.TC02_VerifyClientLoginTest"></class>
+			<class name="com.servicepoints.testCases.TC03_UserSignUpTest"></class>
+			<class name="com.servicepoints.testCases.TC04_VerifyClientApprovalTest"></class>
+		    <class name="com.servicepoints.testCases.TC05_VerifyAdminSUPLoginTest"></class>
+			<class name="com.servicepoints.testCases.TC06_VerifySupplierSignUp"></class>
+			<class name="com.servicepoints.testCases.TC07_VerifyAddAgentSupBySupplier"></class>
+			<class name="com.servicepoints.testCases.TC08_VerifyAddingNewStore"></class>
+			<class name="com.servicepoints.testCases.TC09_VerifyUpdationOfStoreTest"></class>
+			<class name="com.servicepoints.testCases.TC10_VerifyDeletionOfStoreTest"></class>
 			<!--<class name="com.servicepoints.testCases.TC11_VerifySubmitQuoteTest"></class>-->
 		    <!--<class name="com.servicepoints.testCases.TC12_VerifyAcceptQuotationTest"></class>-->
 			<!--<class name="com.servicepoints.testCases.TC13_VerifyAddAgentSupportTest"></class>-->
@@ -40,7 +40,7 @@
 			<!--<class name="com.servicepoints.testCases.TC29_VerifyRefundAndConversation"></class>-->
 			<!--<class name="com.servicepoints.testCases.TC30_VerifyAddTrackingAndResend"></class>-->
 			<!--<class name="com.servicepoints.testCases.TC31_VerifyDeclinedResendDispute"></class>-->
-			<class name="com.servicepoints.testCases.TC32_VerifySpecialRequestCloseByAll"></class>
+			<!--<class name="com.servicepoints.testCases.TC32_VerifySpecialRequestCloseByAll"></class>-->
 		 </classes>
      </test> 
 </suite>  	

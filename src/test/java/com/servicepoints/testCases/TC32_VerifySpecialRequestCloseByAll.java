@@ -95,6 +95,7 @@ public class TC32_VerifySpecialRequestCloseByAll extends BaseClass{
 		logger.info("Logged in to the admin supplier Account.");
 		Thread.sleep(3000);
 		
+		String parentWindow=driver.getWindowHandle();
 		Set<String> window=driver.getWindowHandles();
 		Iterator<String> it=window.iterator();
 		String parent=it.next();
@@ -164,7 +165,7 @@ public class TC32_VerifySpecialRequestCloseByAll extends BaseClass{
 		cop.handleRequestDropdown();
 		Thread.sleep(3000);
 		
-		cop.clickOnTwoThirdCheckBoxes();
+		cop.clickOnSpecialRequestchecks();;
 		Thread.sleep(3000);
 		logger.info("Checkboxes selected.");
 		
@@ -204,9 +205,13 @@ public class TC32_VerifySpecialRequestCloseByAll extends BaseClass{
 		logger.info("Logged in to the teamleader Account.");
 		Thread.sleep(3000);
 		
-		String third=it.next();
-		driver.switchTo().window(third);
-		Thread.sleep(4000);
+		window = driver.getWindowHandles();
+		for(String handle: window) {
+			if(!handle.equals(parentWindow) && !handle.equals(driver.getWindowHandle())) {
+				driver.switchTo().window(handle);
+				break;
+			}
+		}
 		
 		asop.clickOnDisputesTab();
 		Thread.sleep(3000);
@@ -244,8 +249,5 @@ public class TC32_VerifySpecialRequestCloseByAll extends BaseClass{
 			Assert.assertTrue(false);
 			logger.info("Verification of Close Special request by Teamleader is failed..");
 		}
-		
-		
-		
 	}
 }

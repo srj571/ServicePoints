@@ -1,15 +1,12 @@
 package com.servicepoints.testCases;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.servicepoints.PageObjects.AdminAccountsPage;
 import com.servicepoints.PageObjects.LoginPage;
 
-import junit.framework.Assert;
-
 public class TC04_VerifyClientApprovalTest extends BaseClass{
-	
-	
 	public String supemail = rc.getSupEmail();
 	public String suppass = rc.getSupPass();
 	public String supfname = rc.getSupFirstName();
@@ -38,6 +35,7 @@ public class TC04_VerifyClientApprovalTest extends BaseClass{
 		
 		adminAccount.enterUserName(userName);
 		logger.info("Entered User name in search field.");
+		Thread.sleep(2000);
 		
 		adminAccount.getClientsTab();
 		Thread.sleep(4000);
@@ -107,6 +105,4 @@ public class TC04_VerifyClientApprovalTest extends BaseClass{
 //			Assert.assertTrue(false);
 //		}
 	}
-	
-	
 }
