@@ -18,7 +18,7 @@ import com.servicepoints.utilities.ReadConfig;
 
 import junit.framework.Assert;
 
-public class TC26_VerifySubmitTwoQuote extends BaseClass{
+public class TC30_VerifySubmitTwoQuote extends BaseClass{
 	
 	ReadConfig read=new ReadConfig();
 	public String agentSUP1name=read.setAgent1NameTwoQuote();

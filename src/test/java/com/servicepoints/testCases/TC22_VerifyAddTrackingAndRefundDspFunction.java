@@ -14,8 +14,7 @@ import com.servicepoints.utilities.ReadConfig;
 
 import junit.framework.Assert;
 
-
-public class TC30_VerifyAddTrackingAndResend extends BaseClass{
+public class TC22_VerifyAddTrackingAndRefundDspFunction extends BaseClass{
 	
 	ReadConfig rd=new ReadConfig();
 	public String agmail=rd.setAgentTrackMail();
@@ -27,13 +26,13 @@ public class TC30_VerifyAddTrackingAndResend extends BaseClass{
 	public String clpass=rd.setClientTrackPass();
 	public String fulfillStatus=rd.setFullfill();
 	public String agentAnswer=rd.setAnswer();
-	public String queries=rd.setQueries();
 	
 	@Test
-	public void verifyAddTrackingAndResendProduct() throws InterruptedException, IOException {
+	public void verifyAddTracking() throws InterruptedException, IOException {
+		
 		LoginPage lp=new LoginPage(driver);
 		WebDriverWait wait=new WebDriverWait(driver,10);
-		ClientOrdersPage cop=new ClientOrdersPage(driver);
+		
 		lp.setAdminMailId(agmail);
 		lp.setAdminPassword(agpass);
 		lp.clickLoginbtn();
@@ -61,7 +60,6 @@ public class TC30_VerifyAddTrackingAndResend extends BaseClass{
 		logger.info("Processing status is searched.");
 		Thread.sleep(2000);
 		
-		
 		wait.until(ExpectedConditions.visibilityOf(aop.fdiv));
 		logger.info("Processing status is searched.");
 		aop.clickOnfDiv();
@@ -86,6 +84,7 @@ public class TC30_VerifyAddTrackingAndResend extends BaseClass{
 		
 		aop.clickOnSbmtTracking();
 		logger.info("Clicked on submit tracking button.");
+		//wait.until(ExpectedConditions.visibi);
 		Thread.sleep(6000);
 		
 		if(driver.getPageSource().contains("Tracking number successfully added")) {
@@ -95,7 +94,6 @@ public class TC30_VerifyAddTrackingAndResend extends BaseClass{
 		}else {
 			Assert.assertTrue(false);
 			logger.info("Verification of adding tracking number is failed.");
-			Thread.sleep(2000);
 		}
 		
 		driver.get(baseURL);
@@ -103,9 +101,9 @@ public class TC30_VerifyAddTrackingAndResend extends BaseClass{
 		lp.setAdminMailId(clmail);
 		lp.setAdminPassword(clpass);
 		lp.clickLoginbtn();
-		logger.info("Client logged in Successfully.");
+		logger.info("Agent logged in Successfully.");
 		Thread.sleep(3000);
-		
+		ClientOrdersPage cop=new ClientOrdersPage(driver);
 		
 		cop.clickOnOrdersTab();
 		Thread.sleep(3000);
@@ -114,28 +112,16 @@ public class TC30_VerifyAddTrackingAndResend extends BaseClass{
 		Thread.sleep(3000);
 		logger.info("Product name is entered.");
 		
-		cop.clickOnStatusDrop();
+		//cop.clickOnStatusDrop();
 		//Thread.sleep(3000);
-		cop.dropdownSearch(process);
+		//cop.dropdownSearch(process);
 		//logger.info("fulfilled status is entered.");
 		//cop.clickOnFulfillTab();
 		//cop.clickOnFProcessingTab();
-		//aop.clickOnProcessTab();
-		cop.clickOnProcessingTab();
-		Thread.sleep(3000);
+		//Thread.sleep(3000);
+		
 		cop.clickOnFDiv();
-		
-		if(driver.getPageSource().contains("No orders found ")) {
-			cop.clickOnStatusDrop();
-			Thread.sleep(1000);
-			cop.dropdownSearch(fulfillStatus);
-			Thread.sleep(1000);
-			cop.clickOnFulfillTab();
-			Thread.sleep(1000);
-			cop.clickOnFDiv();
-			Thread.sleep(1000);
-		}
-		
+		Thread.sleep(3000);
 		logger.info("clicked on first div");
 		
 		wait.until(ExpectedConditions.visibilityOf(cop.openDspbtn));
@@ -146,14 +132,12 @@ public class TC30_VerifyAddTrackingAndResend extends BaseClass{
 		cop.handleDspIssues();
 		Thread.sleep(3000);
 		
-		cop.resendSolutionDsp();
+		cop.refundSolutionDsp();
 		Thread.sleep(3000);
 		logger.info("dispute solution entered.");
 		
 		cop.clickOnFirstCheckBoxForDsp();
 		Thread.sleep(3000);
-		
-		cop.sendQueries(queries);
 		
 		cop.SaveDispute();
 		Thread.sleep(5000);
@@ -162,13 +146,13 @@ public class TC30_VerifyAddTrackingAndResend extends BaseClass{
 		
 		Thread.sleep(3000);
 		if(driver.getPageSource().contains("Dispute raised successfully")) {
-			Assert.assertTrue(true);
-			logger.info("Verification of Dispute for resend raised Successfully.");
+			//Assert.assertTrue(true);
+			logger.info("Verification of Dispute for refund raised Successfully.");
 			Thread.sleep(3000);
 		}else {
 			//captureScreen(driver, "disputeRaised");
-			logger.info("Verification of Dispute for resend raising failed.");
-			Assert.assertTrue(false);
+			logger.info("Verification of Dispute for refund raised failed.");
+			//Assert.assertTrue(false);
 		}
 		
 		driver.get(baseURL);
@@ -191,7 +175,7 @@ public class TC30_VerifyAddTrackingAndResend extends BaseClass{
 		asop.clickOnShowDsp();
 		logger.info("Clicked on show disputes.");
 		Thread.sleep(3000);
-
+		
 		asop.selectDspStatus();
 		logger.info("Dispute Accepted.");
 		Thread.sleep(3000);
@@ -201,7 +185,7 @@ public class TC30_VerifyAddTrackingAndResend extends BaseClass{
 		
 		asop.clickOnSendAnswer();
 		logger.info("Dispute send.");
-		Thread.sleep(5000);
+		Thread.sleep(3000);
 		
 		
 		if(driver.getPageSource().contains("Dispute accepted successfully")) {
@@ -213,5 +197,17 @@ public class TC30_VerifyAddTrackingAndResend extends BaseClass{
 			logger.info("Verification of Dispute acceptance is failed.");
 		}
 		
+		
+		AgentOrdersPage aaop=new AgentOrdersPage(driver);
+		
+		Thread.sleep(4000);
+		aaop.clickOnOrdersTab();
+		Thread.sleep(2000);
+		aaop.searchPnameTrack(productTrack);
+		Thread.sleep(2000);
+		aaop.clickOnfDiv();
+		Thread.sleep(4000);
+		
+		logger.info("Verification of Refund Dispute acceptance is successfully.");
 	}
 }

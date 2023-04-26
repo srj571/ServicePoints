@@ -15,7 +15,7 @@ import com.servicepoints.utilities.ReadConfig;
 
 import junit.framework.Assert;
 
-public class TC25_VerifyCancelOrderFunctionality extends BaseClass{
+public class TC31_VerifyCancelOrderFunctionality extends BaseClass{
 	
 	ReadConfig rd=new ReadConfig();
 	
@@ -187,15 +187,15 @@ public class TC25_VerifyCancelOrderFunctionality extends BaseClass{
 //		Thread.sleep(2000);
 //		System.out.println(window);
 //		
-////		// Switch to the fourth child window
-////		windowHandles = driver.getWindowHandles();
-////		for (String handle : windowHandles) {
-////		    if (!handle.equals(parentWindow) && !handle.equals(driver.getWindowHandle())) {
-////		        driver.switchTo().window(handle);
-////		        // We are now in the fourth child window
-////		        break;
-////		    }
-////		}
+//		// Switch to the fourth child window
+//		windowHandles = driver.getWindowHandles();
+//		for (String handle : windowHandles) {
+//		    if (!handle.equals(parentWindow) && !handle.equals(driver.getWindowHandle())) {
+//		        driver.switchTo().window(handle);
+//           // We are now in the fourth child window
+//		        break;
+//		    }
+//		}
 //		
 //		Set<String> newWin=driver.getWindowHandles();
 //		Iterator<String> itr=newWin.iterator();

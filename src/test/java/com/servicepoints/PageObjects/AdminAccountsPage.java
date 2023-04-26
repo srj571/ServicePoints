@@ -239,5 +239,12 @@ public class AdminAccountsPage {
 	public void goToAdminSUPTab() {
 		adminSUPTab.click();
 	}
+	
+	@FindBy(xpath="//a[contains(text(),'Teamleader (SP)')]")
+	WebElement teamleader;
+	
+	public void getTeamleaderTab() {
+		teamleader.click();
+	}
 
 }

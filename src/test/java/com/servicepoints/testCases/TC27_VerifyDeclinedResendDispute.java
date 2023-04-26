@@ -14,7 +14,7 @@ import com.servicepoints.utilities.ReadConfig;
 
 import junit.framework.Assert;
 
-public class TC31_VerifyDeclinedResendDispute extends BaseClass {
+public class TC27_VerifyDeclinedResendDispute extends BaseClass {
 
 	ReadConfig rd=new ReadConfig();
 	public String agmail=rd.setAgentTrackMail();

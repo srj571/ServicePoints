@@ -14,7 +14,8 @@ import com.servicepoints.utilities.ReadConfig;
 
 import junit.framework.Assert;
 
-public class TC28_VerifyRefundDspDeclined extends BaseClass{
+
+public class TC26_VerifyAddTrackingAndResend extends BaseClass{
 	
 	ReadConfig rd=new ReadConfig();
 	public String agmail=rd.setAgentTrackMail();
@@ -29,10 +30,10 @@ public class TC28_VerifyRefundDspDeclined extends BaseClass{
 	public String queries=rd.setQueries();
 	
 	@Test
-	public void verifyRefundDspDeclined() throws InterruptedException, IOException {
+	public void verifyAddTrackingAndResendProduct() throws InterruptedException, IOException {
 		LoginPage lp=new LoginPage(driver);
 		WebDriverWait wait=new WebDriverWait(driver,10);
-		
+		ClientOrdersPage cop=new ClientOrdersPage(driver);
 		lp.setAdminMailId(agmail);
 		lp.setAdminPassword(agpass);
 		lp.clickLoginbtn();
@@ -59,6 +60,7 @@ public class TC28_VerifyRefundDspDeclined extends BaseClass{
 		aop.clickOnProcessTab();
 		logger.info("Processing status is searched.");
 		Thread.sleep(2000);
+		
 		
 		wait.until(ExpectedConditions.visibilityOf(aop.fdiv));
 		logger.info("Processing status is searched.");
@@ -103,7 +105,7 @@ public class TC28_VerifyRefundDspDeclined extends BaseClass{
 		lp.clickLoginbtn();
 		logger.info("Client logged in Successfully.");
 		Thread.sleep(3000);
-		ClientOrdersPage cop=new ClientOrdersPage(driver);
+		
 		
 		cop.clickOnOrdersTab();
 		Thread.sleep(3000);
@@ -121,9 +123,19 @@ public class TC28_VerifyRefundDspDeclined extends BaseClass{
 		//aop.clickOnProcessTab();
 		cop.clickOnProcessingTab();
 		Thread.sleep(3000);
-		
 		cop.clickOnFDiv();
-		Thread.sleep(3000);
+		
+		if(driver.getPageSource().contains("No orders found ")) {
+			cop.clickOnStatusDrop();
+			Thread.sleep(1000);
+			cop.dropdownSearch(fulfillStatus);
+			Thread.sleep(1000);
+			cop.clickOnFulfillTab();
+			Thread.sleep(1000);
+			cop.clickOnFDiv();
+			Thread.sleep(1000);
+		}
+		
 		logger.info("clicked on first div");
 		
 		wait.until(ExpectedConditions.visibilityOf(cop.openDspbtn));
@@ -134,7 +146,7 @@ public class TC28_VerifyRefundDspDeclined extends BaseClass{
 		cop.handleDspIssues();
 		Thread.sleep(3000);
 		
-		cop.refundSolutionDsp();
+		cop.resendSolutionDsp();
 		Thread.sleep(3000);
 		logger.info("dispute solution entered.");
 		
@@ -151,11 +163,11 @@ public class TC28_VerifyRefundDspDeclined extends BaseClass{
 		Thread.sleep(3000);
 		if(driver.getPageSource().contains("Dispute raised successfully")) {
 			Assert.assertTrue(true);
-			logger.info("Verification of Dispute for refund raised Successfully.");
+			logger.info("Verification of Dispute for resend raised Successfully.");
 			Thread.sleep(3000);
 		}else {
 			//captureScreen(driver, "disputeRaised");
-			logger.info("Verification of Dispute for refund raising failed.");
+			logger.info("Verification of Dispute for resend raising failed.");
 			Assert.assertTrue(false);
 		}
 		
@@ -179,9 +191,9 @@ public class TC28_VerifyRefundDspDeclined extends BaseClass{
 		asop.clickOnShowDsp();
 		logger.info("Clicked on show disputes.");
 		Thread.sleep(3000);
-		
-		asop.selectDspStatusToDeclined();
-		logger.info("Dispute Declined status selected.");
+
+		asop.selectDspStatus();
+		logger.info("Dispute Accepted.");
 		Thread.sleep(3000);
 		
 		asop.sendAnswer(agentAnswer);
@@ -189,29 +201,17 @@ public class TC28_VerifyRefundDspDeclined extends BaseClass{
 		
 		asop.clickOnSendAnswer();
 		logger.info("Dispute send.");
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 		
 		
-		if(driver.getPageSource().contains("Dispute declined successfully")) {
+		if(driver.getPageSource().contains("Dispute accepted successfully")) {
 			Assert.assertTrue(true);
-			logger.info("Verification of Dispute declined is successfull.");
+			logger.info("Verification of Dispute acceptance is successfull.");
 		}else {
 			captureScreen(driver, "acceptDispute");
 			Assert.assertTrue(false);
-			logger.info("Verification of Dispute declined is failed.");
+			logger.info("Verification of Dispute acceptance is failed.");
 		}
 		
-		
-		AgentOrdersPage aaop=new AgentOrdersPage(driver);
-		
-		Thread.sleep(4000);
-		aaop.clickOnOrdersTab();
-		Thread.sleep(2000);
-		aaop.searchPnameTrack(productTrack);
-		Thread.sleep(2000);
-		aaop.clickOnfDiv();
-		Thread.sleep(4000);
-		
-		logger.info("Verification of Refund Dispute acceptance is successfully.");
 	}
 }

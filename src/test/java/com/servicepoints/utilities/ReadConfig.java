@@ -478,6 +478,43 @@ public class ReadConfig {
 		String pc=po.getProperty("productToConverse");
 		return pc;
 	}
+	
+	public String setSRClientMail() {
+		String srcmail=po.getProperty("ClientMailSR");
+		return srcmail;
+	}
+	
+	public String setSRClientPass() {
+		String srcpass=po.getProperty("ClientPassSR");
+		return srcpass;
+	}
+	
+	public String setProductSR() {
+		String srproduct=po.getProperty("PoductSR");
+		return srproduct;
+	}
+	
+	public String setTeamleadSR() {
+		String teamlead=po.getProperty("TeamleadSR");
+		return teamlead;
+	}
+	
+	public String setAdminSPSR() {
+		String adminSr=po.getProperty("AdminSupportSR");
+		return adminSr;
+	}
+	
+	public String setAgentSPSR() {
+		String agentsp=po.getProperty("AgentSupportSR");
+		return agentsp;
+	}
+	
+	public String setAnswerSR() {
+		String answerSr=po.getProperty("AnswerSR");
+		return answerSr;
+	}
+	
 }
+
 
 

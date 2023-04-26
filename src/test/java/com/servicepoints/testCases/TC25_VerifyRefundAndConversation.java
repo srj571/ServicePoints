@@ -14,7 +14,7 @@ import com.servicepoints.utilities.ReadConfig;
 
 import junit.framework.Assert;
 
-public class TC29_VerifyRefundAndConversation extends BaseClass{
+public class TC25_VerifyRefundAndConversation extends BaseClass{
 
 	ReadConfig rd=new ReadConfig();
 	public String agmail=rd.setAgentTrackMail();

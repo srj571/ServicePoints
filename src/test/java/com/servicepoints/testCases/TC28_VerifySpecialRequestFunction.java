@@ -10,7 +10,7 @@ import com.servicepoints.utilities.ReadConfig;
 
 import junit.framework.Assert;
 
-public class TC22_VerifySpecialRequestFunction extends BaseClass{
+public class TC28_VerifySpecialRequestFunction extends BaseClass{
 
 	ReadConfig con=new ReadConfig();
 	

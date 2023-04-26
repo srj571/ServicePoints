@@ -12,7 +12,7 @@ import com.servicepoints.utilities.ReadConfig;
 import junit.framework.Assert;
 
 
-public class TC27_VerifyDisputeForConversation extends BaseClass{
+public class TC24_VerifyDisputeForConversation extends BaseClass{
 	
 	ReadConfig con=new ReadConfig();
 	public String CMail=con.setCEmailFrDispt();

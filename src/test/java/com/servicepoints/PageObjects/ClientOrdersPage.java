@@ -187,6 +187,18 @@ public class ClientOrdersPage {
 		}
 	}
 	
+	public void clickOnFirstTwoCheckBoxes() {
+		for(int i=0;i<=1; i++) {
+			specialRequestCheckBoxses.get(i).click();
+		}
+	}
+	
+	public void clickOnTwoThirdCheckBoxes() {
+		for(int i=2;i<=3;i++) {
+			specialRequestCheckBoxses.get(i).click();
+		}
+	}
+	
 	@FindBy(xpath="//input[@id='disputeButton']")
 	WebElement sendRequestbtn;
 	

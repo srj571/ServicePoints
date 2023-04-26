@@ -129,15 +129,15 @@
                   <a name="verifySpecialRequestClosingByAll">
                   </a> <!-- verifySpecialRequestClosingByAll -->
                   <span class="method-name">verifySpecialRequestClosingByAll</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//div[@class=&apos;js_table_expand_two table_expand_abso full_expand&apos;])[1]&quot;}
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;useremail&apos;]&quot;}
   (Session info: chrome=111.0.5563.64)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;sarasvati-Precision-Tower-3420&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-69-generic&apos;, java.version: &apos;17.0.5&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.64, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: /tmp/.com.google.Chrome.BLQOff}, goog:chromeOptions: {debuggerAddress: localhost:43297}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9c701a3f439687f9bf375c73a8d7d537
-*** Element info: {Using=xpath, value=(//div[@class=&apos;js_table_expand_two table_expand_abso full_expand&apos;])[1]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.64, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: /tmp/.com.google.Chrome.5NolfN}, goog:chromeOptions: {debuggerAddress: localhost:45705}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 66aa02874475e0e153f91716538b9e9d
+*** Element info: {Using=name, value=useremail}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -145,14 +145,14 @@ Session ID: 9c701a3f439687f9bf375c73a8d7d537
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
+	at org.openqa.selenium.By$ByName.findElement(By.java:284)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy28.click(Unknown Source)
-	at com.servicepoints.PageObjects.AgentDisputesPage.clickOnFrstDsp(AgentDisputesPage.java:36)
-	at com.servicepoints.testCases.TC32_VerifySpecialRequestCloseByAll.verifySpecialRequestClosingByAll(TC32_VerifySpecialRequestCloseByAll.java:93)
+	at jdk.proxy2/jdk.proxy2.$Proxy28.sendKeys(Unknown Source)
+	at com.servicepoints.PageObjects.LoginPage.setAdminMailId(LoginPage.java:26)
+	at com.servicepoints.testCases.TC32_VerifySpecialRequestCloseByAll.verifySpecialRequestClosingByAll(TC32_VerifySpecialRequestCloseByAll.java:35)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 32 stack frames
 </div> <!-- stack-trace -->
@@ -217,12 +217,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifySpecialRequestClosingByAll')
 data.setCell(0, 2, 'com.servicepoints.testCases.TC32_VerifySpecialRequestCloseByAll')
-data.setCell(0, 3, 76353);
+data.setCell(0, 3, 7110);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 7 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -257,11 +257,11 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">verifySpecialRequestClosingByAll</span>
-                <span class="method-start">1920 ms</span>
+                <span class="method-start">1870 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">78283 ms</span>
+                <span class="method-start">8989 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

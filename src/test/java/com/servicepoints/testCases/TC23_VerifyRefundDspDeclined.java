@@ -14,7 +14,7 @@ import com.servicepoints.utilities.ReadConfig;
 
 import junit.framework.Assert;
 
-public class TC24_VerifyAddTrackingAndRefundDspFunction extends BaseClass{
+public class TC23_VerifyRefundDspDeclined extends BaseClass{
 	
 	ReadConfig rd=new ReadConfig();
 	public String agmail=rd.setAgentTrackMail();
@@ -26,10 +26,10 @@ public class TC24_VerifyAddTrackingAndRefundDspFunction extends BaseClass{
 	public String clpass=rd.setClientTrackPass();
 	public String fulfillStatus=rd.setFullfill();
 	public String agentAnswer=rd.setAnswer();
+	public String queries=rd.setQueries();
 	
 	@Test
-	public void verifyAddTracking() throws InterruptedException, IOException {
-		
+	public void verifyRefundDspDeclined() throws InterruptedException, IOException {
 		LoginPage lp=new LoginPage(driver);
 		WebDriverWait wait=new WebDriverWait(driver,10);
 		
@@ -84,7 +84,6 @@ public class TC24_VerifyAddTrackingAndRefundDspFunction extends BaseClass{
 		
 		aop.clickOnSbmtTracking();
 		logger.info("Clicked on submit tracking button.");
-		//wait.until(ExpectedConditions.visibi);
 		Thread.sleep(6000);
 		
 		if(driver.getPageSource().contains("Tracking number successfully added")) {
@@ -94,6 +93,7 @@ public class TC24_VerifyAddTrackingAndRefundDspFunction extends BaseClass{
 		}else {
 			Assert.assertTrue(false);
 			logger.info("Verification of adding tracking number is failed.");
+			Thread.sleep(2000);
 		}
 		
 		driver.get(baseURL);
@@ -101,7 +101,7 @@ public class TC24_VerifyAddTrackingAndRefundDspFunction extends BaseClass{
 		lp.setAdminMailId(clmail);
 		lp.setAdminPassword(clpass);
 		lp.clickLoginbtn();
-		logger.info("Agent logged in Successfully.");
+		logger.info("Client logged in Successfully.");
 		Thread.sleep(3000);
 		ClientOrdersPage cop=new ClientOrdersPage(driver);
 		
@@ -112,13 +112,15 @@ public class TC24_VerifyAddTrackingAndRefundDspFunction extends BaseClass{
 		Thread.sleep(3000);
 		logger.info("Product name is entered.");
 		
-		//cop.clickOnStatusDrop();
+		cop.clickOnStatusDrop();
 		//Thread.sleep(3000);
-		//cop.dropdownSearch(process);
+		cop.dropdownSearch(process);
 		//logger.info("fulfilled status is entered.");
 		//cop.clickOnFulfillTab();
 		//cop.clickOnFProcessingTab();
-		//Thread.sleep(3000);
+		//aop.clickOnProcessTab();
+		cop.clickOnProcessingTab();
+		Thread.sleep(3000);
 		
 		cop.clickOnFDiv();
 		Thread.sleep(3000);
@@ -139,6 +141,8 @@ public class TC24_VerifyAddTrackingAndRefundDspFunction extends BaseClass{
 		cop.clickOnFirstCheckBoxForDsp();
 		Thread.sleep(3000);
 		
+		cop.sendQueries(queries);
+		
 		cop.SaveDispute();
 		Thread.sleep(5000);
 		
@@ -146,13 +150,13 @@ public class TC24_VerifyAddTrackingAndRefundDspFunction extends BaseClass{
 		
 		Thread.sleep(3000);
 		if(driver.getPageSource().contains("Dispute raised successfully")) {
-			//Assert.assertTrue(true);
+			Assert.assertTrue(true);
 			logger.info("Verification of Dispute for refund raised Successfully.");
 			Thread.sleep(3000);
 		}else {
 			//captureScreen(driver, "disputeRaised");
-			logger.info("Verification of Dispute for refund raised failed.");
-			//Assert.assertTrue(false);
+			logger.info("Verification of Dispute for refund raising failed.");
+			Assert.assertTrue(false);
 		}
 		
 		driver.get(baseURL);
@@ -176,8 +180,8 @@ public class TC24_VerifyAddTrackingAndRefundDspFunction extends BaseClass{
 		logger.info("Clicked on show disputes.");
 		Thread.sleep(3000);
 		
-		asop.selectDspStatus();
-		logger.info("Dispute Accepted.");
+		asop.selectDspStatusToDeclined();
+		logger.info("Dispute Declined status selected.");
 		Thread.sleep(3000);
 		
 		asop.sendAnswer(agentAnswer);
@@ -188,13 +192,13 @@ public class TC24_VerifyAddTrackingAndRefundDspFunction extends BaseClass{
 		Thread.sleep(3000);
 		
 		
-		if(driver.getPageSource().contains("Dispute accepted successfully")) {
+		if(driver.getPageSource().contains("Dispute declined successfully")) {
 			Assert.assertTrue(true);
-			logger.info("Verification of Dispute acceptance is successfull.");
+			logger.info("Verification of Dispute declined is successfull.");
 		}else {
 			captureScreen(driver, "acceptDispute");
 			Assert.assertTrue(false);
-			logger.info("Verification of Dispute acceptance is failed.");
+			logger.info("Verification of Dispute declined is failed.");
 		}
 		
 		

@@ -70,6 +70,13 @@ public class AgentDisputesPage {
 		btnSendAnswer.click();
 	}
 	
+	@FindBy(xpath="//a[contains(text(),'Special requests')]")
+	WebElement Srteamleader;
+	
+	public void goToSRTabInTL() {
+		Srteamleader.click();
+	}
+	
 	@FindBy(xpath="//a[@id='specialDispute']")
 	WebElement specialRequestTab;
 	
