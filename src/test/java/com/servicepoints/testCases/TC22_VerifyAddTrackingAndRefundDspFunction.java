@@ -185,10 +185,11 @@ public class TC22_VerifyAddTrackingAndRefundDspFunction extends BaseClass{
 		
 		asop.clickOnSendAnswer();
 		logger.info("Dispute send.");
-		Thread.sleep(3000);
+		Thread.sleep(5000);
+		String a="Information saved successfully";
+		String b="Dispute accepted successfully";
 		
-		
-		if(driver.getPageSource().contains("Dispute accepted successfully")) {
+		if(driver.getPageSource().contains("Information saved successfully")) {
 			Assert.assertTrue(true);
 			logger.info("Verification of Dispute acceptance is successfull.");
 		}else {

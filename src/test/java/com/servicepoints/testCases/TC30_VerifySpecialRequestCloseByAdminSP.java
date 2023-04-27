@@ -14,7 +14,7 @@ import com.servicepoints.utilities.ReadConfig;
 
 import junit.framework.Assert;
 
-public class TC32_VerifySpecialRequestCloseByAll extends BaseClass{
+public class TC30_VerifySpecialRequestCloseByAdminSP extends BaseClass{
 
 	ReadConfig con=new ReadConfig();
 	
@@ -28,10 +28,11 @@ public class TC32_VerifySpecialRequestCloseByAll extends BaseClass{
 	public String adminSp=con.setAdminSPSR();
 	public String agentSp=con.setAgentSPSR();
 	public String answerSR=con.setAnswerSR();
+	
 	@Test
 	public void verifySpecialRequestClosingByAll() throws InterruptedException, IOException {
-		LoginPage lp=new LoginPage(driver);
 		
+		LoginPage lp=new LoginPage(driver);
 		lp.setAdminMailId(CMail);
 		lp.setAdminPassword(CPass);
 		lp.clickLoginbtn();
@@ -138,116 +139,6 @@ public class TC32_VerifySpecialRequestCloseByAll extends BaseClass{
 			logger.info("Verification of Close Special request by Admin supplier is failed..");
 		}
 		
-		driver.close();
-		driver.switchTo().window(parent);
-		driver.get(baseURL);
 		
-		lp.setAdminMailId(CMail);
-		Thread.sleep(2000);
-		lp.setAdminPassword(CPass);
-		Thread.sleep(2000);
-		lp.clickLoginbtn();
-		logger.info("Client logged in Successfull.");
-		Thread.sleep(2000);
-		
-		cop.clickOnOrdersTab();
-		
-		cop.sendPnameinSearch(productSR);
-		logger.info("Product name is entered.");
-		Thread.sleep(2000);
-		
-		cop.clickOnFDiv();		
-		logger.info("Clicked on first div.");
-		Thread.sleep(3000);
-		
-		cop.clickOnSpecialRequest();
-		Thread.sleep(3000);
-		cop.handleRequestDropdown();
-		Thread.sleep(3000);
-		
-		cop.clickOnSpecialRequestchecks();;
-		Thread.sleep(3000);
-		logger.info("Checkboxes selected.");
-		
-		cop.clickOnSendRequestBtn();
-		logger.info("Clicked on Send Request.");
-		
-		Thread.sleep(6000);
-		if(driver.getPageSource().contains("Proof of shipment will be sent to you within 24 hours")) {
-			Assert.assertTrue(true);
-			logger.info("Special Request is open by Client Successfully..");		
-		}
-		else {
-			captureScreen(driver, "Special Request");
-			Assert.assertTrue(false);
-			logger.info("Special Request is failed to open by Client..");		
-		}
-		
-		driver.get(baseURL);
-		Thread.sleep(3000);
-		lp.setAdminMailId(AdminMailID);
-		lp.setAdminPassword(AdminPassword);
-		lp.clickLoginbtn();
-		logger.info("Admin logged in Successfully.");
-		
-		adminAccount.getAdminAccountsPage();
-		logger.info("Accounts page opened.");
-		Thread.sleep(3000);
-		
-		adminAccount.enterUserName(teamleaderSr);
-		logger.info("Entered teamleader name in search field.");
-		Thread.sleep(3000);
-		
-		adminAccount.getTeamleaderTab();;
-		Thread.sleep(3000);
-		
-		adminAccount.clickOnLoginBtn();
-		logger.info("Logged in to the teamleader Account.");
-		Thread.sleep(3000);
-		
-		window = driver.getWindowHandles();
-		for(String handle: window) {
-			if(!handle.equals(parentWindow) && !handle.equals(driver.getWindowHandle())) {
-				driver.switchTo().window(handle);
-				break;
-			}
-		}
-		
-		asop.clickOnDisputesTab();
-		Thread.sleep(3000);
-		logger.info("Open disputes page.");
-		
-		asop.clickOnSpecialRequestTab();
-		Thread.sleep(3000);
-		logger.info("Click on special request.");
-		
-		asop.clickOnOpenTabInSreq();
-		Thread.sleep(3000);
-		logger.info("Click on special request.");
-		
-		asop.searchProductForDsp(productSR);
-		Thread.sleep(3000);
-		logger.info("Searched product name.");
-		
-		asop.clickOnFrstDsp();
-		Thread.sleep(3000);
-		
-		asop.clickOnShowRequestTab();
-		Thread.sleep(3000);
-		
-		asop.setTxtAnsSpRequest(answerSR);
-		Thread.sleep(3000);
-		logger.info("Answer is given by teamlead.");
-		
-		asop.clickOnSendAnsSpRequest();
-		Thread.sleep(3000);
-		
-		if(driver.getPageSource().contains("Thanks for the answer.")) {
-			Assert.assertTrue(true);
-			logger.info("Verification of Close Special request by Teamleader is successfull..");
-		}else {
-			Assert.assertTrue(false);
-			logger.info("Verification of Close Special request by Teamleader is failed..");
-		}
 	}
 }

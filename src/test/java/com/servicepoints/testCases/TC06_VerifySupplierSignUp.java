@@ -82,7 +82,7 @@ public class TC06_VerifySupplierSignUp {
 		sup.clickTermCheckBox();
 		sup.clickBtnSignUp();
 
-		Thread.sleep(4000);
+		Thread.sleep(6000);
 
 		if (driver.getPageSource().contains("Congratulations! You have successfully signed up for Service Points.")) {
 			logger.info("Supplier is Successfully Signed up.");

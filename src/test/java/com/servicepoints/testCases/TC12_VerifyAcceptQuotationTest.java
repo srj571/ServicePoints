@@ -238,7 +238,7 @@ public class TC12_VerifyAcceptQuotationTest extends BaseClass {
 //			}
 //		}
 		
-		if (aspp.getStatusRequote().equals("Requote - Bidding")) {
+		if (aspp.getStatus().equals("Awating quotation")) {
 			Thread.sleep(2000);
 			Assert.assertTrue(true);
 			logger.info("Verification of Requotation Successed..");

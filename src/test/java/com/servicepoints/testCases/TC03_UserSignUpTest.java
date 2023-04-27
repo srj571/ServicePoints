@@ -54,7 +54,7 @@ public class TC03_UserSignUpTest extends BaseClass{
 		sp.clickOrderCheckBox();
 		Thread.sleep(2000);
 		sp.clickBtnSignUp();
-		Thread.sleep(4000);
+		Thread.sleep(5000);
 		
 		if(driver.getPageSource().contains("Congratulations! You have successfully signed up for Service Points.")) {
 			logger.info("User is Successfully Signed up.");

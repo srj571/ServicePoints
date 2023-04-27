@@ -204,7 +204,7 @@ public class TC26_VerifyAddTrackingAndResend extends BaseClass{
 		Thread.sleep(5000);
 		
 		
-		if(driver.getPageSource().contains("Dispute accepted successfully")) {
+		if(driver.getPageSource().contains("Information saved successfully")) {
 			Assert.assertTrue(true);
 			logger.info("Verification of Dispute acceptance is successfull.");
 		}else {

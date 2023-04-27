@@ -24,7 +24,7 @@ public class TC18_VerifyOpenDisputFunction extends BaseClass{
 	public void verifyOpenDispute() throws InterruptedException, IOException {
 		LoginPage lp=new LoginPage(driver);
 		//WebDriverWait wait=new WebDriverWait(driver,10);
-		
+		Thread.sleep(3000);
 		lp.setAdminMailId(CMail);
 		lp.setAdminPassword(CPass);
 		lp.clickLoginbtn();

@@ -29,12 +29,12 @@ public class TC24_VerifyDisputeForConversation extends BaseClass{
 	@Test
 	public void verifyDisputeForConversation() throws InterruptedException, IOException {
 		LoginPage lp=new LoginPage(driver);
-		
+		Thread.sleep(3000);
 		lp.setAdminMailId(CMail);
 		lp.setAdminPassword(CPass);
 		lp.clickLoginbtn();
 		logger.info("Client logged in Successfully.");
-		
+		Thread.sleep(2000);
 		ClientOrdersPage cop=new ClientOrdersPage(driver);
 		cop.clickOnOrdersTab();
 		cop.sendPnameinSearch(proForConversation);

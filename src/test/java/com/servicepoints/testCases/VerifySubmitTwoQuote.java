@@ -18,7 +18,7 @@ import com.servicepoints.utilities.ReadConfig;
 
 import junit.framework.Assert;
 
-public class TC30_VerifySubmitTwoQuote extends BaseClass{
+public class VerifySubmitTwoQuote extends BaseClass{
 	
 	ReadConfig read=new ReadConfig();
 	public String agentSUP1name=read.setAgent1NameTwoQuote();
@@ -73,6 +73,8 @@ public class TC30_VerifySubmitTwoQuote extends BaseClass{
 		Actions action=new Actions(driver);
 //		action.sendKeys(Keys.chord(Keys.CONTROL,Keys.TAB)).build().perform();
 //		Thread.sleep(4000);
+		
+
 		
 		AgentSupProductsPage aspp = new AgentSupProductsPage(driver);
 		
