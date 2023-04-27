@@ -20,6 +20,7 @@ public class TC15_verifyAskForPriceChange extends BaseClass {
 	public String c2price = rc.setChangePrice2Pcs();
 	public String c3price = rc.setChangePrice3Pcs();
 	public String c4price = rc.setChangePrice4Pcs();
+	public String prdctForPChange=rc.setProductForPriceChange();
 
 	@Test
 	public void verifyAskForPriceChange() throws InterruptedException, IOException {
@@ -48,7 +49,7 @@ public class TC15_verifyAskForPriceChange extends BaseClass {
 
 		asop.clickOnProductsTab();
 		Thread.sleep(1000);
-		asop.searchProductName(product);
+		asop.searchProductName(prdctForPChange);
 		Thread.sleep(4000);
 		logger.info("Product name entered.");
 		
@@ -69,9 +70,13 @@ public class TC15_verifyAskForPriceChange extends BaseClass {
 		Thread.sleep(2000);
 
 		asop.firstPcsPrice(c1price);
+		Thread.sleep(1000);
 		asop.secPcsPrice(c2price);
+		Thread.sleep(1000);
 		asop.thirdPcsPrice(c3price);
+		Thread.sleep(1000);
 		asop.forthPcsPrice(c4price);
+		Thread.sleep(1000);
 		asop.clickOnSbmtNewPrice();
 		logger.info("Entered changed price and Clicked on submit.");
 		
@@ -107,7 +112,7 @@ public class TC15_verifyAskForPriceChange extends BaseClass {
 		cl.getProductsPage();
 		Thread.sleep(2000);
 
-		cl.searchProduct(product);
+		cl.searchProduct(prdctForPChange);
 		Thread.sleep(2000);
 		
 		cl.selectProductTab();

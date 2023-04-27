@@ -79,11 +79,10 @@ public class BaseClass {
 	@Parameters("browser")
 	public void setup(String br) {
 		if (br.equalsIgnoreCase("chrome")) {
-			// System.setProperty("webdriver.chrome.driver",rc.getChromePath());
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 		} else if (br.equalsIgnoreCase("firefox")) {
-			System.setProperty("webdriver.gecko.driver", rc.getFirefoxPath());
+			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
 		}
 		driver.get(baseURL);

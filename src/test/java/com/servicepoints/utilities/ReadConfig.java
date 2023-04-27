@@ -538,6 +538,11 @@ public class ReadConfig {
 		String proCancelOrder=po.getProperty("proCancelOrder");
 		return proCancelOrder;
 	}
+	
+	public String setProductForPriceChange() {
+		String proPrice=po.getProperty("ProductAskForPrice");
+		return proPrice;
+	}
 }
 
 

@@ -104,7 +104,7 @@ public class TC12_VerifyAcceptQuotationTest extends BaseClass {
 		aspp.getProductsPage();
 		Thread.sleep(4000);
 		
-		aspp.searchProductName(product);
+		aspp.searchProductName(proToAcceptQuo);
 		Thread.sleep(4000);
 		logger.info("Product name entered.");
 		
@@ -221,7 +221,7 @@ public class TC12_VerifyAcceptQuotationTest extends BaseClass {
 		aspp.clickQuotationsClientsTab();
 		Thread.sleep(2000);
 
-		aspp.searchProductName(product);
+		aspp.searchProductName(proToAcceptQuo);
 		Thread.sleep(4000);
 		logger.info("Product name entered.");
 //		aspp.clickOnfdiv();

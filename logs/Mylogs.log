@@ -11,3 +11,321 @@
 [INFO ] 2023-04-27 12:49:59.885 [main] BaseClass - Open disputes page.
 [INFO ] 2023-04-27 12:50:03.665 [main] BaseClass - Click on special request.
 [INFO ] 2023-04-27 12:50:22.335 [main] BaseClass - Verification of Close Special request by Admin supplier is successfull..
+[INFO ] 2023-04-27 16:12:31.198 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-27 16:12:32.289 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-27 16:12:33.375 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-27 16:12:47.713 [main] BaseClass - Product name entered.
+[INFO ] 2023-04-27 16:12:52.134 [main] BaseClass - Price entered
+[INFO ] 2023-04-27 16:13:04.287 [main] BaseClass - Verification of Submit quotation Successed..
+[INFO ] 2023-04-27 16:13:11.231 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-27 16:13:11.323 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-27 16:13:31.961 [main] BaseClass - Verification of accepting quotation is Successed.
+[INFO ] 2023-04-27 16:13:44.293 [main] BaseClass - button is closed.
+[INFO ] 2023-04-27 16:13:44.348 [main] BaseClass - Verification of Stop fullfilment of Quotation is Successed.
+[INFO ] 2023-04-27 16:13:46.881 [main] BaseClass - Agent supplier email is entered.
+[INFO ] 2023-04-27 16:13:46.973 [main] BaseClass - Agent supplier password is entered.
+[INFO ] 2023-04-27 16:14:01.029 [main] BaseClass - Product name entered.
+[INFO ] 2023-04-27 16:14:03.131 [main] BaseClass - Verification of visiblity of product after Stop fullifilling in Quotations Client tab in Agent side is Successfull.
+[INFO ] 2023-04-27 16:14:08.212 [main] BaseClass - Verification of visiblity of product after Stop fullifilling in Products tab in Agent side is Successfull.
+[INFO ] 2023-04-27 16:14:13.764 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-27 16:14:14.859 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-27 16:14:43.509 [main] BaseClass - Verification of Start fullfilment of Quotation is Successed.
+[INFO ] 2023-04-27 16:14:55.921 [main] BaseClass - Verification of Client side Requote is Successed.
+[INFO ] 2023-04-27 16:14:56.810 [main] BaseClass - Agent supplier email is entered.
+[INFO ] 2023-04-27 16:14:56.934 [main] BaseClass - Agent supplier password is entered.
+[INFO ] 2023-04-27 16:15:13.100 [main] BaseClass - Product name entered.
+[INFO ] 2023-04-27 16:22:03.524 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-27 16:22:04.616 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-27 16:22:05.746 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-27 16:22:19.827 [main] BaseClass - Product name entered.
+[INFO ] 2023-04-27 16:22:24.232 [main] BaseClass - Price entered
+[INFO ] 2023-04-27 16:22:36.447 [main] BaseClass - Verification of Submit quotation Successed..
+[INFO ] 2023-04-27 16:22:41.396 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-27 16:22:41.479 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-27 16:23:02.040 [main] BaseClass - Verification of accepting quotation is Successed.
+[INFO ] 2023-04-27 16:23:14.418 [main] BaseClass - button is closed.
+[INFO ] 2023-04-27 16:23:14.475 [main] BaseClass - Verification of Stop fullfilment of Quotation is Successed.
+[INFO ] 2023-04-27 16:23:17.024 [main] BaseClass - Agent supplier email is entered.
+[INFO ] 2023-04-27 16:23:17.127 [main] BaseClass - Agent supplier password is entered.
+[INFO ] 2023-04-27 16:23:31.154 [main] BaseClass - Product name entered.
+[INFO ] 2023-04-27 16:23:33.344 [main] BaseClass - Verification of visiblity of product after Stop fullifilling in Quotations Client tab in Agent side is Successfull.
+[INFO ] 2023-04-27 16:23:38.464 [main] BaseClass - Verification of visiblity of product after Stop fullifilling in Products tab in Agent side is Successfull.
+[INFO ] 2023-04-27 16:23:44.286 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-27 16:23:45.389 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-27 16:24:13.886 [main] BaseClass - Verification of Start fullfilment of Quotation is Successed.
+[INFO ] 2023-04-27 16:24:26.304 [main] BaseClass - Verification of Client side Requote is Successed.
+[INFO ] 2023-04-27 16:24:27.192 [main] BaseClass - Agent supplier email is entered.
+[INFO ] 2023-04-27 16:24:27.296 [main] BaseClass - Agent supplier password is entered.
+[INFO ] 2023-04-27 16:24:43.293 [main] BaseClass - Product name entered.
+[INFO ] 2023-04-27 16:25:38.367 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-27 16:25:49.763 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-27 16:25:50.916 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-27 16:26:03.476 [main] BaseClass - Product name entered.
+[INFO ] 2023-04-27 16:26:07.897 [main] BaseClass - Price entered
+[INFO ] 2023-04-27 16:26:20.585 [main] BaseClass - Verification of Submit quotation Successed..
+[INFO ] 2023-04-27 16:26:32.337 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-27 16:26:32.403 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-27 16:26:53.999 [main] BaseClass - Verification of accepting quotation is Successed.
+[INFO ] 2023-04-27 16:27:06.331 [main] BaseClass - button is closed.
+[INFO ] 2023-04-27 16:27:06.389 [main] BaseClass - Verification of Stop fullfilment of Quotation is Successed.
+[INFO ] 2023-04-27 16:27:12.354 [main] BaseClass - Agent supplier email is entered.
+[INFO ] 2023-04-27 16:27:12.448 [main] BaseClass - Agent supplier password is entered.
+[INFO ] 2023-04-27 16:27:27.066 [main] BaseClass - Product name entered.
+[INFO ] 2023-04-27 16:27:29.177 [main] BaseClass - Verification of visiblity of product after Stop fullifilling in Quotations Client tab in Agent side is Successfull.
+[INFO ] 2023-04-27 16:27:34.274 [main] BaseClass - Verification of visiblity of product after Stop fullifilling in Products tab in Agent side is Successfull.
+[INFO ] 2023-04-27 16:27:43.711 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-27 16:27:44.833 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-27 16:28:14.515 [main] BaseClass - Verification of Start fullfilment of Quotation is Successed.
+[INFO ] 2023-04-27 16:28:26.936 [main] BaseClass - Verification of Client side Requote is Successed.
+[INFO ] 2023-04-27 16:28:31.812 [main] BaseClass - Agent supplier email is entered.
+[INFO ] 2023-04-27 16:28:31.902 [main] BaseClass - Agent supplier password is entered.
+[INFO ] 2023-04-27 16:28:48.442 [main] BaseClass - Product name entered.
+[INFO ] 2023-04-27 16:28:50.514 [main] BaseClass - Verification of Requotation Successed..
+[INFO ] 2023-04-27 17:48:37.342 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-27 17:48:43.929 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-27 17:48:46.213 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-27 17:52:12.071 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-27 17:52:13.174 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-27 17:52:14.227 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-27 17:52:26.933 [main] BaseClass - Product name entered.
+[INFO ] 2023-04-27 17:52:31.182 [main] BaseClass - Price entered
+[INFO ] 2023-04-27 17:52:43.557 [main] BaseClass - Verification of Submit quotation Successed..
+[INFO ] 2023-04-27 17:53:00.488 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-27 17:53:00.522 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-27 17:53:21.646 [main] BaseClass - Verification of accepting quotation is Successed.
+[INFO ] 2023-04-27 17:53:34.630 [main] BaseClass - button is closed.
+[INFO ] 2023-04-27 17:53:34.682 [main] BaseClass - Verification of Stop fullfilment of Quotation is Successed.
+[INFO ] 2023-04-27 17:53:37.202 [main] BaseClass - Agent supplier email is entered.
+[INFO ] 2023-04-27 17:53:37.248 [main] BaseClass - Agent supplier password is entered.
+[INFO ] 2023-04-27 17:53:51.641 [main] BaseClass - Product name entered.
+[INFO ] 2023-04-27 17:53:53.929 [main] BaseClass - Verification of visiblity of product after Stop fullifilling in Quotations Client tab in Agent side is Successfull.
+[INFO ] 2023-04-27 17:53:59.194 [main] BaseClass - Verification of visiblity of product after Stop fullifilling in Products tab in Agent side is Successfull.
+[INFO ] 2023-04-27 17:54:05.391 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-27 17:54:06.441 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-27 17:54:36.870 [main] BaseClass - Verification of Start fullfilment of Quotation is Successed.
+[INFO ] 2023-04-27 17:54:49.943 [main] BaseClass - Verification of Client side Requote is Successed.
+[INFO ] 2023-04-27 17:54:51.691 [main] BaseClass - Agent supplier email is entered.
+[INFO ] 2023-04-27 17:54:51.732 [main] BaseClass - Agent supplier password is entered.
+[INFO ] 2023-04-27 17:55:08.176 [main] BaseClass - Product name entered.
+[INFO ] 2023-04-27 17:55:10.215 [main] BaseClass - Verification of Requotation Successed..
+[INFO ] 2023-04-27 17:55:20.150 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-27 17:55:20.259 [main] BaseClass - Admin Email_id is entered.
+[INFO ] 2023-04-27 17:55:20.292 [main] BaseClass - Admin password is entered.
+[INFO ] 2023-04-27 17:55:22.217 [main] BaseClass - Accounts page opened.
+[INFO ] 2023-04-27 17:55:35.132 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-27 17:55:35.251 [main] BaseClass - Admin Email_id is entered.
+[INFO ] 2023-04-27 17:55:35.282 [main] BaseClass - Admin password is entered.
+[INFO ] 2023-04-27 17:55:37.103 [main] BaseClass - Accounts page opened.
+[INFO ] 2023-04-27 17:55:50.020 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-27 17:55:51.071 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-27 17:56:06.738 [main] BaseClass - Product name entered.
+[INFO ] 2023-04-27 17:56:30.517 [main] BaseClass - Client logged in Sucessfully.
+[INFO ] 2023-04-27 17:56:51.610 [main] BaseClass - Not Quoted order status verified.
+[INFO ] 2023-04-27 17:56:54.844 [main] BaseClass - Verification of New Varient added product is done..
+[INFO ] 2023-04-27 17:56:54.844 [main] BaseClass - Client logged out Sucessfully.
+[INFO ] 2023-04-27 17:56:55.641 [main] BaseClass - Logged in to the Agent account.
+[INFO ] 2023-04-27 17:57:02.632 [main] BaseClass - Product name entered.
+[INFO ] 2023-04-27 17:57:07.816 [main] BaseClass - Price entered
+[INFO ] 2023-04-27 17:57:15.119 [main] BaseClass - Quotation submitted successfully.
+[INFO ] 2023-04-27 17:57:15.124 [main] BaseClass - Agent logged out Sucessfully.
+[INFO ] 2023-04-27 17:57:20.455 [main] BaseClass - Client logged in Sucessfully.
+[INFO ] 2023-04-27 17:57:28.955 [main] BaseClass - New added varient is added to the quotation successfully..
+[INFO ] 2023-04-27 17:57:30.369 [main] BaseClass - GO to the orders page.
+[INFO ] 2023-04-27 17:57:49.569 [main] BaseClass - Verification of accept quotation after Adding new varient is successfull. 
+[INFO ] 2023-04-27 17:58:03.006 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-04-27 17:58:07.664 [main] BaseClass - Product name is entered.
+[INFO ] 2023-04-27 17:58:09.919 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-04-27 17:58:23.354 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-04-27 17:58:27.166 [main] BaseClass - Open disputes page.
+[INFO ] 2023-04-27 17:58:45.871 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-04-27 17:58:48.757 [main] BaseClass - Product name is entered.
+[INFO ] 2023-04-27 17:58:51.030 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-04-27 18:08:07.435 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-27 18:08:08.547 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-27 18:08:09.594 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-27 18:08:23.307 [main] BaseClass - Product name entered.
+[INFO ] 2023-04-27 18:08:27.540 [main] BaseClass - Price entered
+[INFO ] 2023-04-27 18:08:39.908 [main] BaseClass - Verification of Submit quotation Successed..
+[INFO ] 2023-04-27 18:08:48.651 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-27 18:08:48.680 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-27 18:09:09.773 [main] BaseClass - Verification of accepting quotation is Successed.
+[INFO ] 2023-04-27 18:09:22.794 [main] BaseClass - button is closed.
+[INFO ] 2023-04-27 18:09:22.852 [main] BaseClass - Verification of Stop fullfilment of Quotation is Successed.
+[INFO ] 2023-04-27 18:09:25.340 [main] BaseClass - Agent supplier email is entered.
+[INFO ] 2023-04-27 18:09:25.379 [main] BaseClass - Agent supplier password is entered.
+[INFO ] 2023-04-27 18:09:39.504 [main] BaseClass - Product name entered.
+[INFO ] 2023-04-27 18:09:41.818 [main] BaseClass - Verification of visiblity of product after Stop fullifilling in Quotations Client tab in Agent side is Successfull.
+[INFO ] 2023-04-27 18:09:47.099 [main] BaseClass - Verification of visiblity of product after Stop fullifilling in Products tab in Agent side is Successfull.
+[INFO ] 2023-04-27 18:09:52.899 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-27 18:09:53.945 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-27 18:10:23.403 [main] BaseClass - Verification of Start fullfilment of Quotation is Successed.
+[INFO ] 2023-04-27 18:10:36.427 [main] BaseClass - Verification of Client side Requote is Successed.
+[INFO ] 2023-04-27 18:10:37.293 [main] BaseClass - Agent supplier email is entered.
+[INFO ] 2023-04-27 18:10:37.334 [main] BaseClass - Agent supplier password is entered.
+[INFO ] 2023-04-27 18:10:53.770 [main] BaseClass - Product name entered.
+[INFO ] 2023-04-27 18:11:03.471 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-27 18:11:03.597 [main] BaseClass - Admin Email_id is entered.
+[INFO ] 2023-04-27 18:11:03.643 [main] BaseClass - Admin password is entered.
+[INFO ] 2023-04-27 18:11:06.642 [main] BaseClass - Accounts page opened.
+[INFO ] 2023-04-27 18:11:06.686 [main] BaseClass - Entered Teamleader name in search field.
+[INFO ] 2023-04-27 18:11:11.002 [main] BaseClass - Logged in to the Teamleader Account.
+[INFO ] 2023-04-27 18:11:26.066 [main] BaseClass - Click on Add Agent Button.
+[INFO ] 2023-04-27 18:11:30.097 [main] BaseClass - Verification of AgentSupport adding failed.
+[INFO ] 2023-04-27 18:11:38.545 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-27 18:11:38.689 [main] BaseClass - Admin Email_id is entered.
+[INFO ] 2023-04-27 18:11:38.717 [main] BaseClass - Admin password is entered.
+[INFO ] 2023-04-27 18:11:42.527 [main] BaseClass - Accounts page opened.
+[INFO ] 2023-04-27 18:11:42.622 [main] BaseClass - Entered Agent name in search field.
+[INFO ] 2023-04-27 18:11:46.925 [main] BaseClass - Logged in to the Agents Account.
+[INFO ] 2023-04-27 18:11:58.021 [main] BaseClass - Check for quotation status.
+[INFO ] 2023-04-27 18:12:05.408 [main] BaseClass - Entered Admin Supplier name.
+[INFO ] 2023-04-27 18:12:09.424 [main] BaseClass - Verification of Exclude Button Successed.
+[INFO ] 2023-04-27 18:12:20.062 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-27 18:12:21.109 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-27 18:12:37.376 [main] BaseClass - Product name entered.
+[INFO ] 2023-04-27 18:13:06.415 [main] BaseClass - Client logged in Sucessfully.
+[INFO ] 2023-04-27 18:13:27.832 [main] BaseClass - Not Quoted order status verified.
+[INFO ] 2023-04-27 18:13:31.067 [main] BaseClass - Verification of New Varient added product is done..
+[INFO ] 2023-04-27 18:13:31.068 [main] BaseClass - Client logged out Sucessfully.
+[INFO ] 2023-04-27 18:13:31.859 [main] BaseClass - Logged in to the Agent account.
+[INFO ] 2023-04-27 18:13:37.478 [main] BaseClass - Product name entered.
+[INFO ] 2023-04-27 18:13:41.284 [main] BaseClass - Price entered
+[INFO ] 2023-04-27 18:13:48.605 [main] BaseClass - Quotation submitted successfully.
+[INFO ] 2023-04-27 18:13:48.611 [main] BaseClass - Agent logged out Sucessfully.
+[INFO ] 2023-04-27 18:13:53.681 [main] BaseClass - Client logged in Sucessfully.
+[INFO ] 2023-04-27 18:14:01.935 [main] BaseClass - New added varient is added to the quotation successfully..
+[INFO ] 2023-04-27 18:14:03.134 [main] BaseClass - GO to the orders page.
+[INFO ] 2023-04-27 18:14:22.313 [main] BaseClass - Verification of accept quotation after Adding new varient is successfull. 
+[INFO ] 2023-04-27 18:14:34.622 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-04-27 18:14:38.705 [main] BaseClass - Product name is entered.
+[INFO ] 2023-04-27 18:14:40.967 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-04-27 18:14:51.751 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-04-27 18:14:55.428 [main] BaseClass - Open disputes page.
+[INFO ] 2023-04-27 18:15:12.395 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-04-27 18:15:15.731 [main] BaseClass - Product name is entered.
+[INFO ] 2023-04-27 18:15:17.968 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-04-27 18:23:51.356 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-27 18:23:52.450 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-27 18:23:53.580 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-27 18:24:06.317 [main] BaseClass - Product name entered.
+[INFO ] 2023-04-27 18:24:10.763 [main] BaseClass - Price entered
+[INFO ] 2023-04-27 18:24:22.927 [main] BaseClass - Verification of Submit quotation Successed..
+[INFO ] 2023-04-27 18:24:33.676 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-27 18:24:33.757 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-27 18:24:54.346 [main] BaseClass - Verification of accepting quotation is Successed.
+[INFO ] 2023-04-27 18:25:06.655 [main] BaseClass - button is closed.
+[INFO ] 2023-04-27 18:25:06.686 [main] BaseClass - Verification of Stop fullfilment of Quotation is Successed.
+[INFO ] 2023-04-27 18:25:09.253 [main] BaseClass - Agent supplier email is entered.
+[INFO ] 2023-04-27 18:25:09.348 [main] BaseClass - Agent supplier password is entered.
+[INFO ] 2023-04-27 18:25:23.389 [main] BaseClass - Product name entered.
+[INFO ] 2023-04-27 18:25:25.567 [main] BaseClass - Verification of visiblity of product after Stop fullifilling in Quotations Client tab in Agent side is Successfull.
+[INFO ] 2023-04-27 18:25:30.733 [main] BaseClass - Verification of visiblity of product after Stop fullifilling in Products tab in Agent side is Successfull.
+[INFO ] 2023-04-27 18:25:36.621 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-27 18:25:37.753 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-27 18:26:06.215 [main] BaseClass - Verification of Start fullfilment of Quotation is Successed.
+[INFO ] 2023-04-27 18:26:18.612 [main] BaseClass - Verification of Client side Requote is Successed.
+[INFO ] 2023-04-27 18:26:19.553 [main] BaseClass - Agent supplier email is entered.
+[INFO ] 2023-04-27 18:26:19.647 [main] BaseClass - Agent supplier password is entered.
+[INFO ] 2023-04-27 18:32:00.028 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-27 18:32:01.119 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-27 18:32:02.263 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-27 18:32:19.025 [main] BaseClass - Product name entered.
+[INFO ] 2023-04-27 18:32:23.478 [main] BaseClass - Price entered
+[INFO ] 2023-04-27 18:32:35.628 [main] BaseClass - Verification of Submit quotation Successed..
+[INFO ] 2023-04-27 18:32:42.446 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-27 18:32:42.525 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-27 18:33:03.152 [main] BaseClass - Verification of accepting quotation is Successed.
+[INFO ] 2023-04-27 18:33:15.435 [main] BaseClass - button is closed.
+[INFO ] 2023-04-27 18:33:15.492 [main] BaseClass - Verification of Stop fullfilment of Quotation is Successed.
+[INFO ] 2023-04-27 18:33:18.034 [main] BaseClass - Agent supplier email is entered.
+[INFO ] 2023-04-27 18:33:18.132 [main] BaseClass - Agent supplier password is entered.
+[INFO ] 2023-04-27 18:33:32.231 [main] BaseClass - Product name entered.
+[INFO ] 2023-04-27 18:33:34.348 [main] BaseClass - Verification of visiblity of product after Stop fullifilling in Quotations Client tab in Agent side is Successfull.
+[INFO ] 2023-04-27 18:33:39.495 [main] BaseClass - Verification of visiblity of product after Stop fullifilling in Products tab in Agent side is Successfull.
+[INFO ] 2023-04-27 18:33:47.665 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-27 18:33:48.766 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-27 18:34:17.515 [main] BaseClass - Verification of Start fullfilment of Quotation is Successed.
+[INFO ] 2023-04-27 18:34:29.816 [main] BaseClass - Verification of Client side Requote is Successed.
+[INFO ] 2023-04-27 18:34:30.730 [main] BaseClass - Agent supplier email is entered.
+[INFO ] 2023-04-27 18:34:30.827 [main] BaseClass - Agent supplier password is entered.
+[INFO ] 2023-04-27 18:34:46.977 [main] BaseClass - Product name entered.
+[INFO ] 2023-04-27 18:34:57.332 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-27 18:34:57.432 [main] BaseClass - Admin Email_id is entered.
+[INFO ] 2023-04-27 18:34:57.523 [main] BaseClass - Admin password is entered.
+[INFO ] 2023-04-27 18:35:02.279 [main] BaseClass - Accounts page opened.
+[INFO ] 2023-04-27 18:35:02.362 [main] BaseClass - Entered Teamleader name in search field.
+[INFO ] 2023-04-27 18:35:06.525 [main] BaseClass - Logged in to the Teamleader Account.
+[INFO ] 2023-04-27 18:35:19.361 [main] BaseClass - Click on Add Agent Button.
+[INFO ] 2023-04-27 18:35:23.415 [main] BaseClass - Verification of AgentSupport adding Successfull.
+[INFO ] 2023-04-27 18:35:33.431 [main] BaseClass - Agent Support email is entered.
+[INFO ] 2023-04-27 18:35:33.513 [main] BaseClass - Agent Support password is entered.
+[INFO ] 2023-04-27 18:35:38.611 [main] BaseClass - Verification of AgentSupport login Successfull.
+[INFO ] 2023-04-27 18:35:45.665 [main] BaseClass - Application Opened.
+[INFO ] 2023-04-27 18:35:45.762 [main] BaseClass - Admin Email_id is entered.
+[INFO ] 2023-04-27 18:35:45.843 [main] BaseClass - Admin password is entered.
+[INFO ] 2023-04-27 18:35:50.028 [main] BaseClass - Accounts page opened.
+[INFO ] 2023-04-27 18:35:50.102 [main] BaseClass - Entered Agent name in search field.
+[INFO ] 2023-04-27 18:35:54.234 [main] BaseClass - Logged in to the Agents Account.
+[INFO ] 2023-04-27 18:36:07.725 [main] BaseClass - Check for quotation status.
+[INFO ] 2023-04-27 18:36:15.064 [main] BaseClass - Entered Admin Supplier name.
+[INFO ] 2023-04-27 18:36:19.091 [main] BaseClass - Verification of Exclude Button Successed.
+[INFO ] 2023-04-27 18:36:27.817 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-27 18:36:28.888 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-27 18:36:45.353 [main] BaseClass - Product name entered.
+[INFO ] 2023-04-27 18:37:06.819 [main] BaseClass - Client logged in Sucessfully.
+[INFO ] 2023-04-27 18:37:32.012 [main] BaseClass - Not Quoted order status verified.
+[INFO ] 2023-04-27 18:37:35.137 [main] BaseClass - Verification of New Varient added product is done..
+[INFO ] 2023-04-27 18:37:35.137 [main] BaseClass - Client logged out Sucessfully.
+[INFO ] 2023-04-27 18:37:35.867 [main] BaseClass - Logged in to the Agent account.
+[INFO ] 2023-04-27 18:37:41.964 [main] BaseClass - Product name entered.
+[INFO ] 2023-04-27 18:37:46.126 [main] BaseClass - Price entered
+[INFO ] 2023-04-27 18:37:53.245 [main] BaseClass - Quotation submitted successfully.
+[INFO ] 2023-04-27 18:37:53.249 [main] BaseClass - Agent logged out Sucessfully.
+[INFO ] 2023-04-27 18:37:58.005 [main] BaseClass - Client logged in Sucessfully.
+[INFO ] 2023-04-27 18:38:06.485 [main] BaseClass - Quotation accepted successfully.
+[INFO ] 2023-04-27 18:38:15.409 [main] BaseClass - GO to the orders page.
+[INFO ] 2023-04-27 18:38:33.857 [main] BaseClass - Verification of accept quotation after Adding new varient is successfull. 
+[INFO ] 2023-04-27 18:38:50.711 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-04-27 18:38:55.945 [main] BaseClass - Product name is entered.
+[INFO ] 2023-04-27 18:38:58.016 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-04-27 18:39:03.185 [main] BaseClass - Customer got wrong product option selected.
+[INFO ] 2023-04-27 18:39:03.331 [main] BaseClass - I want the order to be shipped immediately option is selected.
+[INFO ] 2023-04-27 18:39:11.671 [main] BaseClass - Dispute saved.
+[INFO ] 2023-04-27 18:39:11.748 [main] BaseClass - Verification of Dispute raised Successfully.
+[INFO ] 2023-04-27 18:39:18.862 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-04-27 18:39:25.057 [main] BaseClass - Open disputes page.
+[INFO ] 2023-04-27 18:39:31.263 [main] BaseClass - Clicked on show disputes.
+[INFO ] 2023-04-27 18:39:34.398 [main] BaseClass - Dispute Accepted.
+[INFO ] 2023-04-27 18:39:40.658 [main] BaseClass - Dispute send.
+[INFO ] 2023-04-27 18:39:43.713 [main] BaseClass - Verification of Dispute acceptance is successed.
+[INFO ] 2023-04-27 18:39:49.869 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-04-27 18:39:53.938 [main] BaseClass - Product name is entered.
+[INFO ] 2023-04-27 18:39:56.040 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-04-27 18:40:01.294 [main] BaseClass - Customer got wrong product option selected.
+[INFO ] 2023-04-27 18:40:03.552 [main] BaseClass - I want the order to be shipped immediately option is selected.
+[INFO ] 2023-04-27 18:40:11.881 [main] BaseClass - Dispute saved.
+[INFO ] 2023-04-27 18:40:11.963 [main] BaseClass - Verification of Dispute raised Successfully.
+[INFO ] 2023-04-27 18:40:11.963 [main] BaseClass - Client logged out Successfully.
+[INFO ] 2023-04-27 18:40:12.655 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-04-27 18:40:14.634 [main] BaseClass - Open disputes page.
+[INFO ] 2023-04-27 18:40:20.837 [main] BaseClass - Clicked on show disputes.
+[INFO ] 2023-04-27 18:40:23.970 [main] BaseClass - Dispute Accepted.
+[INFO ] 2023-04-27 18:40:30.197 [main] BaseClass - Dispute send.
+[INFO ] 2023-04-27 18:40:33.250 [main] BaseClass - Verification of Dispute acceptance is successed.
+[INFO ] 2023-04-27 18:55:22.722 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-27 18:55:23.884 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-27 18:55:38.187 [main] BaseClass - Product name entered.
+[INFO ] 2023-04-27 18:55:39.989 [main] BaseClass - Click on Ask for Price changed.
+[INFO ] 2023-04-27 18:55:46.427 [main] BaseClass - Entered changed price and Clicked on submit.
+[INFO ] 2023-04-27 18:55:46.623 [main] BaseClass - Pop up get closed.
+[INFO ] 2023-04-27 18:55:49.704 [main] BaseClass - Status changed to New Price.
+[INFO ] 2023-04-27 18:55:53.125 [main] BaseClass - Logged out from Agent account.
+[INFO ] 2023-04-27 18:55:57.217 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-27 18:55:57.283 [main] BaseClass - Password is entered.
+[INFO ] 2023-04-27 18:56:00.357 [main] BaseClass - Client loged in successfully.
+[INFO ] 2023-04-27 18:56:05.679 [main] BaseClass - Product selected.
+[INFO ] 2023-04-27 18:56:09.806 [main] BaseClass - Pop up closed.
+[INFO ] 2023-04-27 18:56:10.140 [main] BaseClass - Changed price is get accepted by the Client.
+[INFO ] 2023-04-27 18:56:10.686 [main] BaseClass - Clicked on yes im sure
+[INFO ] 2023-04-27 18:56:12.782 [main] BaseClass - Now verification is to be done.
+[INFO ] 2023-04-27 18:56:15.837 [main] BaseClass - Verification is done from Client side for Ask for Price change test.

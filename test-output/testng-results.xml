@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-27T12:48:59 IST" name="Suite" finished-at="2023-04-27T12:50:22 IST" duration-ms="83023">
+  <suite started-at="2023-04-27T18:55:16 IST" name="Suite" finished-at="2023-04-27T18:56:15 IST" duration-ms="59368">
     <groups>
     </groups>
-    <test started-at="2023-04-27T12:48:59 IST" name="Testng" finished-at="2023-04-27T12:50:22 IST" duration-ms="83023">
-      <class name="com.servicepoints.testCases.TC32_VerifySpecialRequestCloseByAdminSP">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.servicepoints.testCases.TC32_VerifySpecialRequestCloseByAdminSP@24faea88]" started-at="2023-04-27T12:48:59 IST" name="setup" finished-at="2023-04-27T12:49:07 IST" duration-ms="7635" status="PASS">
+    <test started-at="2023-04-27T18:55:16 IST" name="Testng" finished-at="2023-04-27T18:56:15 IST" duration-ms="59368">
+      <class name="com.servicepoints.testCases.TC15_verifyAskForPriceChange">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.servicepoints.testCases.TC15_verifyAskForPriceChange@3faf2e7d]" started-at="2023-04-27T18:55:16 IST" name="setup" finished-at="2023-04-27T18:55:22 IST" duration-ms="5921" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifySpecialRequestClosingByAll()[pri:0, instance:com.servicepoints.testCases.TC32_VerifySpecialRequestCloseByAdminSP@24faea88]" started-at="2023-04-27T12:49:07 IST" name="verifySpecialRequestClosingByAll" finished-at="2023-04-27T12:50:22 IST" duration-ms="75266" status="PASS">
+        <test-method signature="verifyAskForPriceChange()[pri:0, instance:com.servicepoints.testCases.TC15_verifyAskForPriceChange@3faf2e7d]" started-at="2023-04-27T18:55:22 IST" name="verifyAskForPriceChange" finished-at="2023-04-27T18:56:15 IST" duration-ms="53238" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifySpecialRequestClosingByAll -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.servicepoints.testCases.TC32_VerifySpecialRequestCloseByAdminSP@24faea88]" started-at="2023-04-27T12:50:22 IST" name="tearDown" finished-at="2023-04-27T12:50:22 IST" duration-ms="88" status="PASS">
+        </test-method> <!-- verifyAskForPriceChange -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.servicepoints.testCases.TC15_verifyAskForPriceChange@3faf2e7d]" started-at="2023-04-27T18:56:15 IST" name="tearDown" finished-at="2023-04-27T18:56:15 IST" duration-ms="77" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.servicepoints.testCases.TC32_VerifySpecialRequestCloseByAdminSP -->
+      </class> <!-- com.servicepoints.testCases.TC15_verifyAskForPriceChange -->
     </test> <!-- Testng -->
   </suite> <!-- Suite -->
 </testng-results>

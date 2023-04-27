@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
  <suite name="Suite" >
-	<!--<listeners>
+	<listeners>
 		<listener class-name="com.servicepoints.utilities.Reporting"></listener>
-	</listeners> -->
+	</listeners> 
 		
 	<parameter name="browser" value="chrome"></parameter>
 	
@@ -22,8 +22,8 @@
 			<!--<class name="com.servicepoints.testCases.TC11_VerifySubmitQuoteTest"></class>-->
 		    <!--<class name="com.servicepoints.testCases.TC12_VerifyAcceptQuotationTest"></class>-->
 			<!--<class name="com.servicepoints.testCases.TC13_VerifyAddAgentSupportTest"></class>-->
-		    <!--<class name="com.servicepoints.testCases.TC14_VerifyExcludeFunctionTest"></class>-->
-			<!--<class name="com.servicepoints.testCases.TC15_verifyAskForPriceChange"></class>-->
+		    <!--class name="com.servicepoints.testCases.TC14_VerifyExcludeFunctionTest"></class>-->
+			<class name="com.servicepoints.testCases.TC15_verifyAskForPriceChange"></class>
 			<!--<class name="com.servicepoints.testCases.TC16_VerifyUpdateDeleteQuotation"></class>-->
 			<!--<class name="com.servicepoints.testCases.TC17_VerifyAddNewVarient"></class>-->
 			<!--<class name="com.servicepoints.testCases.TC18_VerifyOpenDisputFunction"></class>-->
@@ -41,7 +41,7 @@
 			<!--<class name="com.servicepoints.testCases.TC28_VerifySpecialRequestFunction"></class>-->
 			<!--<class name="com.servicepoints.testCases.TC29_VerifyCloseSpecialRequestFunction"></class>-->
 			<!--<class name="com.servicepoints.testCases.TC31_VerifyCancelOrderFunctionality"></class>-->
-			<class name="com.servicepoints.testCases.TC32_VerifySpecialRequestCloseByAdminSP"></class>
+			<!--<class name="com.servicepoints.testCases.TC32_VerifySpecialRequestCloseByAdminSP"></class>-->
 			
 		 </classes>
      </test> 
