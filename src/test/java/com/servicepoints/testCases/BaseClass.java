@@ -12,6 +12,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -80,7 +81,11 @@ public class BaseClass {
 	public void setup(String br) {
 		if (br.equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver();
+			
+			ChromeOptions option=new ChromeOptions();
+			option.addArguments("--ignore-certificate-errors");
+			option.addArguments("--allow-running-insecure-content");
+			driver = new ChromeDriver(option);
 		} else if (br.equalsIgnoreCase("firefox")) {
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();

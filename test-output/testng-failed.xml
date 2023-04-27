@@ -14,13 +14,6 @@
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.servicepoints.testCases.TC15_verifyAskForPriceChange -->
-      <class name="com.servicepoints.testCases.TC12_VerifyAcceptQuotationTest">
-        <methods>
-          <include name="setup"/>
-          <include name="verifyAcceptQuote"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.servicepoints.testCases.TC12_VerifyAcceptQuotationTest -->
     </classes>
   </test> <!-- Testng(failed) -->
 </suite> <!-- Failed suite [Suite] -->

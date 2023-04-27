@@ -329,3 +329,5 @@
 [INFO ] 2023-04-27 18:56:10.686 [main] BaseClass - Clicked on yes im sure
 [INFO ] 2023-04-27 18:56:12.782 [main] BaseClass - Now verification is to be done.
 [INFO ] 2023-04-27 18:56:15.837 [main] BaseClass - Verification is done from Client side for Ask for Price change test.
+[INFO ] 2023-04-27 19:13:52.478 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-04-27 19:13:53.593 [main] BaseClass - Password is entered.
