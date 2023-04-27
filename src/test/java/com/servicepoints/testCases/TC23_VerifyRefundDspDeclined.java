@@ -19,7 +19,7 @@ public class TC23_VerifyRefundDspDeclined extends BaseClass{
 	ReadConfig rd=new ReadConfig();
 	public String agmail=rd.setAgentTrackMail();
 	public String agpass=rd.setAgentTrackPass();
-	public String productTrack=rd.setPnameTracking();
+	public String productRefundDD=rd.setProductRefundDD();
 	public String process=rd.setProcessStatus();
 	public String trackingNum=rd.setTrackingNum();
 	public String clmail=rd.setClientTrackMail();
@@ -42,7 +42,7 @@ public class TC23_VerifyRefundDspDeclined extends BaseClass{
 		aop.clickOnOrdersTab();
 		Thread.sleep(3000);
 		
-		aop.searchPnameTrack(productTrack);
+		aop.searchPnameTrack(productRefundDD);
 		logger.info("Product name is entered.");
 		Thread.sleep(3000);
 		
@@ -108,7 +108,7 @@ public class TC23_VerifyRefundDspDeclined extends BaseClass{
 		cop.clickOnOrdersTab();
 		Thread.sleep(3000);
 		
-		cop.sendPnameinSearch(productTrack);
+		cop.sendPnameinSearch(productRefundDD);
 		Thread.sleep(3000);
 		logger.info("Product name is entered.");
 		
@@ -170,7 +170,7 @@ public class TC23_VerifyRefundDspDeclined extends BaseClass{
 		asop.clickOnDisputesTab();
 		logger.info("Open disputes page.");
 		
-		asop.searchProductForDsp(productTrack);
+		asop.searchProductForDsp(productRefundDD);
 		Thread.sleep(3000);
 		
 		asop.clickOnFrstDsp();
@@ -207,7 +207,7 @@ public class TC23_VerifyRefundDspDeclined extends BaseClass{
 		Thread.sleep(4000);
 		aaop.clickOnOrdersTab();
 		Thread.sleep(2000);
-		aaop.searchPnameTrack(productTrack);
+		aaop.searchPnameTrack(productRefundDD);
 		Thread.sleep(2000);
 		aaop.clickOnfDiv();
 		Thread.sleep(4000);

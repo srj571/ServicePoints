@@ -26,7 +26,7 @@ public class TC31_VerifyCancelOrderFunctionality extends BaseClass{
 	public String productFetch=rd.fetchProducts();
 	public String ordersFetch=rd.fetchOrders();
 	public String status2=rd.setOrderStatus2();
-	public String productTrack=rd.setPnameTracking();
+	public String productCancelOrder=rd.setProductCancelOrder();
 
 	
 	@Test
@@ -53,7 +53,7 @@ public class TC31_VerifyCancelOrderFunctionality extends BaseClass{
 		aspp.clickQuotationsClientsTab();
 		Thread.sleep(2000);
 
-		aspp.searchProductName(productTrack);
+		aspp.searchProductName(productCancelOrder);
 		Thread.sleep(2000);
 		logger.info("Product name entered.");
 		aspp.clickOnfdiv();
@@ -105,7 +105,7 @@ public class TC31_VerifyCancelOrderFunctionality extends BaseClass{
 		ClientProductPage cl = new ClientProductPage(driver);
 		cl.getProductsPage();
 
-		cl.searchProduct(productTrack);
+		cl.searchProduct(productCancelOrder);
 		Thread.sleep(4000);
 		cl.selectProductTab();
 		Thread.sleep(3000);
@@ -139,7 +139,7 @@ public class TC31_VerifyCancelOrderFunctionality extends BaseClass{
 		cop.clickOnOrdersTab();
 		logger.info("Clicked on orders tab.");
 		Thread.sleep(2000);
-		cop.sendPnameinSearch(productTrack);
+		cop.sendPnameinSearch(productCancelOrder);
 		Thread.sleep(4000);
 	
 		cop.clickOnDropdown();

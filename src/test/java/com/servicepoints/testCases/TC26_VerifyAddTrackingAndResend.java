@@ -20,7 +20,7 @@ public class TC26_VerifyAddTrackingAndResend extends BaseClass{
 	ReadConfig rd=new ReadConfig();
 	public String agmail=rd.setAgentTrackMail();
 	public String agpass=rd.setAgentTrackPass();
-	public String productTrack=rd.setPnameTracking();
+	public String productResend=rd.setProductResend();
 	public String process=rd.setProcessStatus();
 	public String trackingNum=rd.setTrackingNum();
 	public String clmail=rd.setClientTrackMail();
@@ -43,7 +43,7 @@ public class TC26_VerifyAddTrackingAndResend extends BaseClass{
 		aop.clickOnOrdersTab();
 		Thread.sleep(3000);
 		
-		aop.searchPnameTrack(productTrack);
+		aop.searchPnameTrack(productResend);
 		logger.info("Product name is entered.");
 		Thread.sleep(3000);
 		
@@ -110,7 +110,7 @@ public class TC26_VerifyAddTrackingAndResend extends BaseClass{
 		cop.clickOnOrdersTab();
 		Thread.sleep(3000);
 		
-		cop.sendPnameinSearch(productTrack);
+		cop.sendPnameinSearch(productResend);
 		Thread.sleep(3000);
 		logger.info("Product name is entered.");
 		
@@ -182,7 +182,7 @@ public class TC26_VerifyAddTrackingAndResend extends BaseClass{
 		asop.clickOnDisputesTab();
 		logger.info("Open disputes page.");
 		
-		asop.searchProductForDsp(productTrack);
+		asop.searchProductForDsp(productResend);
 		Thread.sleep(3000);
 		
 		asop.clickOnFrstDsp();

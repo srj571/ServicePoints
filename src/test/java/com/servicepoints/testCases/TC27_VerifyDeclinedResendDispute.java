@@ -19,7 +19,7 @@ public class TC27_VerifyDeclinedResendDispute extends BaseClass {
 	ReadConfig rd=new ReadConfig();
 	public String agmail=rd.setAgentTrackMail();
 	public String agpass=rd.setAgentTrackPass();
-	public String productTrack=rd.setPnameTracking();
+	public String productDResend=rd.setProductDeclineResend();
 	public String process=rd.setProcessStatus();
 	public String trackingNum=rd.setTrackingNum();
 	public String clmail=rd.setClientTrackMail();
@@ -42,7 +42,7 @@ public class TC27_VerifyDeclinedResendDispute extends BaseClass {
 		aop.clickOnOrdersTab();
 		Thread.sleep(3000);
 		
-		aop.searchPnameTrack(productTrack);
+		aop.searchPnameTrack(productDResend);
 		logger.info("Product name is entered.");
 		Thread.sleep(3000);
 		
@@ -109,7 +109,7 @@ public class TC27_VerifyDeclinedResendDispute extends BaseClass {
 		cop.clickOnOrdersTab();
 		Thread.sleep(3000);
 		
-		cop.sendPnameinSearch(productTrack);
+		cop.sendPnameinSearch(productDResend);
 		Thread.sleep(3000);
 		logger.info("Product name is entered.");
 		
@@ -181,7 +181,7 @@ public class TC27_VerifyDeclinedResendDispute extends BaseClass {
 		asop.clickOnDisputesTab();
 		logger.info("Open disputes page.");
 		
-		asop.searchProductForDsp(productTrack);
+		asop.searchProductForDsp(productDResend);
 		Thread.sleep(3000);
 		
 		asop.clickOnFrstDsp();

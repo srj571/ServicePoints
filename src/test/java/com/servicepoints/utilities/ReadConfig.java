@@ -514,6 +514,30 @@ public class ReadConfig {
 		return answerSr;
 	}
 	
+	public String setProductRefundDD() {
+		String productdd=po.getProperty("productRefundDD");
+		return productdd;
+	}
+	
+	public String setProductRefundConv() {
+		String prorefundConv=po.getProperty("productRefundConv");
+		return prorefundConv;
+	}
+	
+	public String setProductResend() {
+		String productResend=po.getProperty("productResend");
+		return productResend;
+	}
+	
+	public String setProductDeclineResend() {
+		String proDResend=po.getProperty("productDResend");
+		return proDResend;
+	}
+	
+	public String setProductCancelOrder() {
+		String proCancelOrder=po.getProperty("proCancelOrder");
+		return proCancelOrder;
+	}
 }
 
 
