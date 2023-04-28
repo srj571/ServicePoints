@@ -50,6 +50,9 @@ public class TC30_VerifySpecialRequestCloseByAdminSP extends BaseClass{
 		logger.info("Clicked on first div.");
 		Thread.sleep(3000);
 		
+		cop.scrollTillEle(driver);
+		Thread.sleep(1000);
+		
 		cop.clickOnSpecialRequest();
 		Thread.sleep(3000);
 		cop.handleRequestDropdown();

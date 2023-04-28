@@ -25,15 +25,7 @@ public class TC16_VerifyUpdateDeleteQuotation extends BaseClass {
 	
 	@Test
 	public void verifyUpdateQuotation() throws InterruptedException, IOException {
-		driver.get(productFetch);
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		
-		driver.get(ordersFetch);
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		
-		driver.get(baseURL);
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		
+	
 		logger.info("Application Opened.");
 		LoginPage lp = new LoginPage(driver);
 		Thread.sleep(1000);

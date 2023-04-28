@@ -67,6 +67,10 @@ public class TC22_VerifyAddTrackingAndRefundDspFunction extends BaseClass{
 		
 		wait.until(ExpectedConditions.visibilityOf(aop.AddTrackingBtn));
 		logger.info("Tracking number entered.");
+		
+		aop.scrollTillAddTracking(driver);
+		Thread.sleep(1000);
+		
 		aop.clickOnAddTracking();
 		Thread.sleep(3000);
 		logger.info("clicked on add tracking button.");
@@ -124,6 +128,9 @@ public class TC22_VerifyAddTrackingAndRefundDspFunction extends BaseClass{
 		Thread.sleep(3000);
 		logger.info("clicked on first div");
 		
+		cop.scrollTillEle(driver);
+		Thread.sleep(1000);
+		
 		wait.until(ExpectedConditions.visibilityOf(cop.openDspbtn));
 		cop.clickOnOpenDspbtn();
 		Thread.sleep(3000);
@@ -172,6 +179,7 @@ public class TC22_VerifyAddTrackingAndRefundDspFunction extends BaseClass{
 		asop.clickOnFrstDsp();
 		Thread.sleep(3000);
 		
+		
 		asop.clickOnShowDsp();
 		logger.info("Clicked on show disputes.");
 		Thread.sleep(3000);
@@ -186,8 +194,6 @@ public class TC22_VerifyAddTrackingAndRefundDspFunction extends BaseClass{
 		asop.clickOnSendAnswer();
 		logger.info("Dispute send.");
 		Thread.sleep(5000);
-		String a="Information saved successfully";
-		String b="Dispute accepted successfully";
 		
 		if(driver.getPageSource().contains("Dispute accepted successfully")) {
 			Assert.assertTrue(true);

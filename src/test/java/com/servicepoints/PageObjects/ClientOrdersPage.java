@@ -2,6 +2,7 @@ package com.servicepoints.PageObjects;
 
 import java.util.List;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -269,5 +270,10 @@ public class ClientOrdersPage {
 	
 	public void clickOnDispHistory() {
 		disputeHistory.click();
+	}
+	
+	public void scrollTillEle(WebDriver driver) {
+		JavascriptExecutor exe=(JavascriptExecutor) driver;
+		exe.executeScript("arguments[0].scrollIntoView();", cancelOrderBtn);
 	}
 }

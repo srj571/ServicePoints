@@ -68,6 +68,9 @@ public class TC25_VerifyRefundAndConversation extends BaseClass{
 		
 		wait.until(ExpectedConditions.visibilityOf(aop.AddTrackingBtn));
 		logger.info("Tracking number entered.");
+		aop.scrollTillAddTracking(driver);
+		Thread.sleep(1000);
+		
 		aop.clickOnAddTracking();
 		Thread.sleep(3000);
 		logger.info("clicked on add tracking button.");
@@ -136,6 +139,10 @@ public class TC25_VerifyRefundAndConversation extends BaseClass{
 //		}
 		
 		logger.info("clicked on first div");
+		
+		cop.scrollTillEle(driver);
+		Thread.sleep(1000);
+		
 		
 		wait.until(ExpectedConditions.visibilityOf(cop.openDspbtn));
 		cop.clickOnOpenDspbtn();
@@ -238,6 +245,9 @@ public class TC25_VerifyRefundAndConversation extends BaseClass{
 		cop.clickOnProcessingTab();
 		Thread.sleep(3000);
 		cop.clickOnFDiv();
+		
+		cop.scrollTillEle(driver);
+		Thread.sleep(1000);
 		
 		cop.clickOnDispHistory();
 		Thread.sleep(3000);

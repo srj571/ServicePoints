@@ -65,6 +65,9 @@ public class TC23_VerifyRefundDspDeclined extends BaseClass{
 		aop.clickOnfDiv();
 		Thread.sleep(3000);
 		
+		aop.scrollTillAddTracking(driver);
+		Thread.sleep(2000);
+		
 		wait.until(ExpectedConditions.visibilityOf(aop.AddTrackingBtn));
 		logger.info("Tracking number entered.");
 		aop.clickOnAddTracking();
@@ -125,6 +128,9 @@ public class TC23_VerifyRefundDspDeclined extends BaseClass{
 		cop.clickOnFDiv();
 		Thread.sleep(3000);
 		logger.info("clicked on first div");
+		
+		cop.scrollTillEle(driver);
+		Thread.sleep(2000);
 		
 		wait.until(ExpectedConditions.visibilityOf(cop.openDspbtn));
 		cop.clickOnOpenDspbtn();

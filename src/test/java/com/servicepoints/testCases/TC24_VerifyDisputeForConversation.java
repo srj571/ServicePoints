@@ -44,6 +44,9 @@ public class TC24_VerifyDisputeForConversation extends BaseClass{
 		logger.info("Clicked on first div.");
 		Thread.sleep(3000);
 		
+		cop.scrollTillEle(driver);
+		Thread.sleep(2000);
+		
 		cop.clickOnOpenDspbtn();
 		Thread.sleep(2000);
 		
@@ -129,6 +132,7 @@ public class TC24_VerifyDisputeForConversation extends BaseClass{
 		logger.info("Clicked on first div.");
 		Thread.sleep(3000);
 		
+	
 		cop.clickOnShowDispute();
 		Thread.sleep(3000);
 		

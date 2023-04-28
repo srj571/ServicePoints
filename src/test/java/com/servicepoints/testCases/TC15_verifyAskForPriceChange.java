@@ -57,15 +57,7 @@ public class TC15_verifyAskForPriceChange extends BaseClass {
 		Thread.sleep(4000);
 		logger.info("Product name entered.");
 		
-		
-			
-		if(asop.clickOnSecDiv()==2) {
-			asop.clickOnSecondDiv();
-			Thread.sleep(2000);
-		}else {
-			asop.clickOnfdiv();
-		}
-			
+		asop.clickOnfdiv();
 		Thread.sleep(2000);
 
 		String parentWindow=driver.getWindowHandle();

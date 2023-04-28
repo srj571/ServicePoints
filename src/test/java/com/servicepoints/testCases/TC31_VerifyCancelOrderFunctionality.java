@@ -151,7 +151,10 @@ public class TC31_VerifyCancelOrderFunctionality extends BaseClass{
 		Thread.sleep(2000);
 		cop.clickOnFDiv();
 		Thread.sleep(2000);
-		 	
+		
+		cop.scrollTillEle(driver);
+		Thread.sleep(1000);
+		
 		cop.clickOnCancelBtn();
 		logger.info("Clicked on cancel order.");
 		Thread.sleep(2000);

@@ -44,6 +44,9 @@ public class TC20_VerifyOpenAcceptDisputeForOtherIssue extends BaseClass{
 		logger.info("Clicked on first div.");
 		Thread.sleep(3000);
 		
+		cop.scrollTillEle(driver);
+		Thread.sleep(1000);
+		
 		cop.clickOnOpenDspbtn();
 		Thread.sleep(2000);
 		
