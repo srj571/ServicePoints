@@ -2,6 +2,7 @@ package com.servicepoints.testCases;
 
 import java.io.IOException;
 import java.util.Set;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
@@ -21,9 +22,12 @@ public class TC15_verifyAskForPriceChange extends BaseClass {
 	public String c3price = rc.setChangePrice3Pcs();
 	public String c4price = rc.setChangePrice4Pcs();
 	public String prdctForPChange=rc.setProductForPriceChange();
-
+	
+	
 	@Test
 	public void verifyAskForPriceChange() throws InterruptedException, IOException {
+		
+
 		
 		AgentSupProductsPage asop = new AgentSupProductsPage(driver);
 		
@@ -53,7 +57,16 @@ public class TC15_verifyAskForPriceChange extends BaseClass {
 		Thread.sleep(4000);
 		logger.info("Product name entered.");
 		
-		asop.clickOnfdiv();
+		
+			
+		if(asop.clickOnSecDiv()==2) {
+			asop.clickOnSecondDiv();
+			Thread.sleep(2000);
+		}else {
+			asop.clickOnfdiv();
+		}
+			
+		Thread.sleep(2000);
 
 		String parentWindow=driver.getWindowHandle();
 		Set<String> window = driver.getWindowHandles();

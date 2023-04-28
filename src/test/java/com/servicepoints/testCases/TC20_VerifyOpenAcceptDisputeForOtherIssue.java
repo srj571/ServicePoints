@@ -103,7 +103,7 @@ public class TC20_VerifyOpenAcceptDisputeForOtherIssue extends BaseClass{
 		Thread.sleep(3000);
 		
 		
-		if(driver.getPageSource().contains("Information saved successfully")) {
+		if(driver.getPageSource().contains("Dispute accepted successfully")) {
 			Assert.assertTrue(true);
 			logger.info("Verification of Dispute acceptance is successed.");
 		}else {
@@ -111,8 +111,5 @@ public class TC20_VerifyOpenAcceptDisputeForOtherIssue extends BaseClass{
 			Assert.assertTrue(false);
 			logger.info("Verification of Dispute acceptance is failed.");
 		}
-		
-		
-		
 	}
 }

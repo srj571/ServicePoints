@@ -3,6 +3,7 @@ package com.servicepoints.testCases;
 import java.io.IOException;
 import java.util.Iterator;
 import java.util.Set;
+import java.util.concurrent.TimeUnit;
 
 import org.testng.annotations.Test;
 
@@ -19,9 +20,20 @@ public class TC16_VerifyUpdateDeleteQuotation extends BaseClass {
 	public String c3price = rc.setChangePrice3Pcs();
 	public String c4price = rc.setChangePrice4Pcs();
 	public String ProductForUpdate=rc.setProductForVerifyUpdate();
+	public String productFetch=rc.fetchProducts();
+	public String ordersFetch=rc.fetchOrders();
 	
 	@Test
 	public void verifyUpdateQuotation() throws InterruptedException, IOException {
+		driver.get(productFetch);
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		
+		driver.get(ordersFetch);
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		
+		driver.get(baseURL);
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		
 		logger.info("Application Opened.");
 		LoginPage lp = new LoginPage(driver);
 		Thread.sleep(1000);

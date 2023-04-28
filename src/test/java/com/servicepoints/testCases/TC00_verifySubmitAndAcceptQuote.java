@@ -3,18 +3,21 @@ package com.servicepoints.testCases;
 import java.io.IOException;
 import java.util.Iterator;
 import java.util.Set;
+import java.util.concurrent.TimeUnit;
 
 import org.testng.annotations.Test;
 
 import com.servicepoints.PageObjects.AgentSupProductsPage;
+import com.servicepoints.PageObjects.ClientProductPage;
 import com.servicepoints.PageObjects.LoginPage;
 
 import junit.framework.Assert;
 
-public class TC11_VerifySubmitQuoteTest extends BaseClass {
+public class TC00_verifySubmitAndAcceptQuote extends BaseClass{
 
 	@Test
-	public void verifySubmitQuote() throws InterruptedException, IOException {
+	public void verifySubmitAndAcceptQuote() throws InterruptedException, IOException {
+		
 		logger.info("Application Opened.");
 		LoginPage lp = new LoginPage(driver);
 		Thread.sleep(1000);
@@ -40,7 +43,8 @@ public class TC11_VerifySubmitQuoteTest extends BaseClass {
 		Thread.sleep(2000);
 		logger.info("Product name entered.");
 		aspp.clickOnfdiv();
-
+		
+		String parentWindow=driver.getWindowHandle();
 		Set<String> window = driver.getWindowHandles();
 		Iterator<String> it = window.iterator();
 		String parent = it.next();
@@ -71,6 +75,48 @@ public class TC11_VerifySubmitQuoteTest extends BaseClass {
 			Assert.assertTrue(false);
 			Thread.sleep(4000);
 		}
-	}
+		
+		driver.get(baseURL);
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		
+		lp.setAdminMailId(clientemail);
+		logger.info("Email_id is entered.");
 
+		lp.setAdminPassword(cPass);
+		logger.info("Password is entered.");
+
+		lp.clickLoginbtn();
+		Thread.sleep(4000);
+		
+		ClientProductPage cl = new ClientProductPage(driver);
+		cl.getProductsPage();
+
+		cl.searchProduct(proToAcceptQuo);
+		Thread.sleep(4000);
+		cl.selectProductTab();
+		Thread.sleep(3000);
+		
+		window = driver.getWindowHandles();
+		for(String handle : window) {
+			if(!handle.equals(parentWindow) && !handle.equals(driver.getWindowHandle())) {
+				driver.switchTo().window(handle);
+				break;
+			}
+		}
+		
+		cl.selectQuoteTab();
+		cl.selectAcceptQuoteBtn();
+		Thread.sleep(4000);
+
+		if (driver.getPageSource().contains("Quotation accepted successfully.")) {
+			Thread.sleep(4000);
+			Assert.assertTrue(true);
+			logger.info("Verification of accepting quotation is Successed.");
+		
+		} else {
+			captureScreen(driver, "Quotation Accepting");
+			logger.info("Verification of accepting quotation is Failed.");
+			Assert.assertTrue(false);
+		}
+	}
 }

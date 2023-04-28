@@ -1,5 +1,8 @@
 package com.servicepoints.PageObjects;
 
+import java.util.List;
+
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -51,6 +54,11 @@ public class AgentSupProductsPage {
 	
 	public String getStatusRequote() {
 		String val=getStatusRequote.getText();
+		return val;
+	}
+	
+	public String getStatusAwating() {
+		String val=QuoteStatus.getText();
 		return val;
 	}
 	
@@ -190,8 +198,27 @@ public class AgentSupProductsPage {
 		return value;
 	}
 	
+	@FindBy(xpath="(//div[@class='js_table_expand_two table_expand_abso'])[2]")
+	WebElement secondDiv;
+	
+	public void clickOnSecondDiv() {
+		secondDiv.click();
+	}
+	
+	public void scrollTillEle(WebDriver driver) {
+		JavascriptExecutor exe=(JavascriptExecutor) driver;
+		exe.executeScript("arguments[0].scrollIntoView();", submitquote);
+	}
+	
+	@FindBy(xpath="//div[@class='d-xl-flex align-items-stretch justify-content-center table_expand_rel position-relative']")
+	List<WebElement> divTwo;
+	
+	public int clickOnSecDiv() {
+		int a=divTwo.size();
+		return a;
+	}
 	
 	
 	
-
+	
 }

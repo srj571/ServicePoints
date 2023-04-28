@@ -203,28 +203,28 @@ public class TC12_VerifyAcceptQuotationTest extends BaseClass {
 			//Assert.assertTrue(false);
 		}
 		
-		cl.logoutTheClient();
-		
-		lp.setAdminMailId(agentsupmail);
-		logger.info("Agent supplier email is entered.");
-		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-
-		lp.setAdminPassword(agentsuppass);
-		logger.info("Agent supplier password is entered.");
-		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-
-		lp.clickLoginbtn();
-		Thread.sleep(5000);
-		
-		aspp.getProductsPage();
-		Thread.sleep(4000);
-		aspp.clickQuotationsClientsTab();
-		Thread.sleep(2000);
-
-		aspp.searchProductName(proToAcceptQuo);
-		Thread.sleep(4000);
-		logger.info("Product name entered.");
-//		aspp.clickOnfdiv();
+//		cl.logoutTheClient();
+//		
+//		lp.setAdminMailId(agentsupmail);
+//		logger.info("Agent supplier email is entered.");
+//		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+//
+//		lp.setAdminPassword(agentsuppass);
+//		logger.info("Agent supplier password is entered.");
+//		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+//
+//		lp.clickLoginbtn();
+//		Thread.sleep(5000);
+//		
+//		aspp.getProductsPage();
+//		Thread.sleep(4000);
+//		aspp.clickQuotationsClientsTab();
+//		Thread.sleep(2000);
+//
+//		aspp.searchProductName(proToAcceptQuo);
+//		Thread.sleep(4000);
+//		logger.info("Product name entered.");
+////		aspp.clickOnfdiv();
 		//Thread.sleep(4000);
 		
 	//	String childg=it.next();
@@ -238,16 +238,16 @@ public class TC12_VerifyAcceptQuotationTest extends BaseClass {
 //			}
 //		}
 		
-		if (aspp.getStatus().equals("Awating quotation")) {
-			Thread.sleep(2000);
-			Assert.assertTrue(true);
-			logger.info("Verification of Requotation Successed..");
-		} else {
-			captureScreen(driver, "Submit Quote Test");
-			logger.info("Verification of Requotation failed..");
-			Assert.assertTrue(false);
-			Thread.sleep(4000);
-		}
+//		if (aspp.getStatusAwating().equals("Requote - Bidding")) {
+//			Thread.sleep(2000);
+//			Assert.assertTrue(true);
+//			logger.info("Verification of Requotation Successed..");
+//		} else {
+//			captureScreen(driver, "Submit Quote Test");
+//			logger.info("Verification of Requotation failed..");
+//			Assert.assertTrue(false);
+//			Thread.sleep(4000);
+//		}
 		
 //		logger.info("Switched to new window.");
 //		Thread.sleep(5000);

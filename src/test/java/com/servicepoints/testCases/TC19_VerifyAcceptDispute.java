@@ -49,7 +49,7 @@ public class TC19_VerifyAcceptDispute extends BaseClass{
 		Thread.sleep(3000);
 		
 		
-		if(driver.getPageSource().contains("Information saved successfully")) {
+		if(driver.getPageSource().contains("Dispute accepted successfully")) {
 			Assert.assertTrue(true);
 			logger.info("Verification of Dispute acceptance is successed.");
 		}else {

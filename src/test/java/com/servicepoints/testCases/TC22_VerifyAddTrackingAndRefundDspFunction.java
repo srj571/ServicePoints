@@ -189,7 +189,7 @@ public class TC22_VerifyAddTrackingAndRefundDspFunction extends BaseClass{
 		String a="Information saved successfully";
 		String b="Dispute accepted successfully";
 		
-		if(driver.getPageSource().contains("Information saved successfully")) {
+		if(driver.getPageSource().contains("Dispute accepted successfully")) {
 			Assert.assertTrue(true);
 			logger.info("Verification of Dispute acceptance is successfull.");
 		}else {
