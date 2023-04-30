@@ -13,7 +13,7 @@ import com.servicepoints.utilities.ReadConfig;
 
 import junit.framework.Assert;
 
-public class TC16_VerifyUpdateDeleteQuotation extends BaseClass {
+public class TC16_VerifyUpdateDeleteQuotation extends BaseClass{
 	ReadConfig rc = new ReadConfig();
 	public String c1price = rc.setChangePrice1Pcs();
 	public String c2price = rc.setChangePrice2Pcs();
@@ -47,7 +47,7 @@ public class TC16_VerifyUpdateDeleteQuotation extends BaseClass {
 		Thread.sleep(2000);
 
 		aspp.searchProductName(ProductForUpdate);
-		Thread.sleep(2000);
+		Thread.sleep(4000);
 		logger.info("Product name entered.");
 		aspp.clickOnfdiv();
 
@@ -65,6 +65,8 @@ public class TC16_VerifyUpdateDeleteQuotation extends BaseClass {
 		logger.info("Price entered");
 		Thread.sleep(4000);
 
+		aspp.scrollTillEle(driver);
+		Thread.sleep(1000);
 		aspp.clickOnSubmitQuote();
 		Thread.sleep(6000);
 
@@ -85,7 +87,9 @@ public class TC16_VerifyUpdateDeleteQuotation extends BaseClass {
 		aspp.forthPcsPrice(c4price);
 		logger.info("Price entered");
 		Thread.sleep(4000);
-
+		
+		aspp.scrollTillUpdateBtn(driver);
+		Thread.sleep(1000);
 		aspp.updateQuotation();
 		Thread.sleep(4000);
 
@@ -99,10 +103,11 @@ public class TC16_VerifyUpdateDeleteQuotation extends BaseClass {
 			Assert.assertTrue(false);
 			Thread.sleep(4000);
 		}
-
-		Thread.sleep(4000);
+		
+		aspp.scrollTillDeleteBtn(driver);
+		Thread.sleep(1000);
 		aspp.deleteQuote();
-		logger.info("Clicke on delete Quote.");
+		logger.info("Click on delete Quote.");
 		Thread.sleep(4000);
 		aspp.clickOnYesImSure();
 		logger.info("Yes Im sure.");

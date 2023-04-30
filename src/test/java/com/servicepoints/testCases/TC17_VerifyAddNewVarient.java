@@ -113,6 +113,8 @@ public class TC17_VerifyAddNewVarient extends BaseClass{
 		Thread.sleep(3000);
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		try {
+			aspp.scrollTillEle(driver);
+			Thread.sleep(1000);
 			aspp.clickOnSubmitQuote();
 			Thread.sleep(4000);
 			logger.info("Quotation submitted successfully.");
@@ -156,6 +158,8 @@ public class TC17_VerifyAddNewVarient extends BaseClass{
 
 		try {
 			cl.selectQuoteTab();
+			cl.scrollTillAcceptQbtn(driver);
+			Thread.sleep(1000);
 			cl.selectAcceptQuoteBtn();
 			logger.info("Quotation accepted successfully.");
 			Thread.sleep(7000);
@@ -198,8 +202,4 @@ public class TC17_VerifyAddNewVarient extends BaseClass{
 			logger.info("Verification of accept quotation after Adding new varient is failed. ");
 		}
 	}
-	
-	
-	
-	
 }

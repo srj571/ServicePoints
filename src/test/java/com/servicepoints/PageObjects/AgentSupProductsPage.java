@@ -218,7 +218,23 @@ public class AgentSupProductsPage {
 		return a;
 	}
 	
+	public void scrollTillAskForPrChange(WebDriver driver) {
+		JavascriptExecutor exe=(JavascriptExecutor) driver;
+		exe.executeScript("arguments[0].scrollIntoView();", askForPriceCh);
+	}
 	
+	public void scrollTillSubmitNewPrice(WebDriver driver) {
+		JavascriptExecutor exe=(JavascriptExecutor) driver;
+		exe.executeScript("arguments[0].scrollIntoView();", sbmtNewPrice);
+	}
 	
+	public void scrollTillUpdateBtn(WebDriver driver) {
+		JavascriptExecutor exe=(JavascriptExecutor) driver;
+		exe.executeScript("arguments[0].scrollIntoView();", updateQuotation);
+	}
 	
+	public void scrollTillDeleteBtn(WebDriver driver) {
+		JavascriptExecutor exe=(JavascriptExecutor) driver;
+		exe.executeScript("arguments[0].scrollIntoView();", deletequote);
+	}
 }

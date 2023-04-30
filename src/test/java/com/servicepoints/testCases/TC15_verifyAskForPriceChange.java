@@ -70,6 +70,9 @@ public class TC15_verifyAskForPriceChange extends BaseClass {
 			}
 		}
 		
+		asop.scrollTillAskForPrChange(driver);
+		Thread.sleep(1000);
+		
 		asop.clckOnAskForPrceChng();
 		logger.info("Click on Ask for Price changed.");
 		Thread.sleep(2000);
@@ -81,6 +84,8 @@ public class TC15_verifyAskForPriceChange extends BaseClass {
 		asop.thirdPcsPrice(c3price);
 		Thread.sleep(1000);
 		asop.forthPcsPrice(c4price);
+		Thread.sleep(1000);
+		asop.scrollTillSubmitNewPrice(driver);
 		Thread.sleep(1000);
 		asop.clickOnSbmtNewPrice();
 		logger.info("Entered changed price and Clicked on submit.");
@@ -132,16 +137,20 @@ public class TC15_verifyAskForPriceChange extends BaseClass {
 			}
 		}
 		
-		
 		try {
 			Thread.sleep(3000);
 			cl.clsePopUpFrmClntSideAskPr();
+			Thread.sleep(3000);
 			logger.info("Pop up closed.");
 		}catch(Exception e) {
 			logger.info("Now accepting the quotation.");
 		}
 		
+		cl.scrollTillAcceptBtn(driver);
+		Thread.sleep(2000);
+		
 		cl.acceptAskforPriceChange();
+		Thread.sleep(2000);
 		logger.info("Changed price is get accepted by the Client.");
 		cl.clickOnYesImSure();
 		logger.info("Clicked on yes im sure");
@@ -155,9 +164,8 @@ public class TC15_verifyAskForPriceChange extends BaseClass {
 			logger.info("Verification is done from Client side for Ask for Price change test.");
 		}else {
 			captureScreen(driver, "askForPriceChange");
-			Assert.assertTrue(false);
 			logger.info("Verification is for Ask for Price change test is failed.");
+			Assert.assertTrue(false);
 		}
-
 	}
 }

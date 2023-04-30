@@ -1,9 +1,13 @@
 package com.servicepoints.PageObjects;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class ClientProductPage {
 	
@@ -39,7 +43,18 @@ public class ClientProductPage {
 	WebElement requote;
 		
 	@FindBy(xpath="//a[contains(text(),'Special request')]")
-	WebElement specialRequestDrop;
+	public WebElement specialRequestDrop;
+	
+	public void scrollTillSpRequestBtn(WebDriver driver)
+	{
+		JavascriptExecutor exe=(JavascriptExecutor) driver;
+		exe.executeScript("arguments[0].scrollIntoView();", specialRequestDrop);
+	}
+	
+	public void visibilityOfSPDropdown(WebDriver driver) {
+		WebDriverWait wait=new WebDriverWait(driver,5);
+		wait.until(ExpectedConditions.visibilityOf(specialRequestDrop));
+	}
 	
 	@FindBy(xpath="//span[normalize-space()='Quotation accepted']")
 	WebElement statusQuote;
@@ -111,7 +126,20 @@ public class ClientProductPage {
 		fPdiv.click();
 	}
 	
+	public void scrollTillAcceptQbtn(WebDriver driver) {
+		JavascriptExecutor exe=(JavascriptExecutor) driver;
+		exe.executeScript("arguments[0].scrollIntoView();", acceptbtn);
+	}
 	
+	public void scrollTillSpDropdown(WebDriver driver) {
+		JavascriptExecutor exe=(JavascriptExecutor) driver;
+		exe.executeScript("arguments[0].scrollIntoView();", specialRequestDrop);
+	}
+	
+	public void scrollTillAcceptBtn(WebDriver driver) {
+		JavascriptExecutor exe=(JavascriptExecutor) driver;
+		exe.executeScript("arguments[0].scrollIntoView();", acceptBtn);
+	}
 	
 	//....................................
 	public void logoutTheClient() {
@@ -188,5 +216,6 @@ public class ClientProductPage {
 		String status=statusEle.getText();
 		return status;
 	}
+	
 	
 }

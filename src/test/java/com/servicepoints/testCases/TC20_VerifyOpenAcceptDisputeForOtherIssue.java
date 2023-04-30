@@ -101,6 +101,8 @@ public class TC20_VerifyOpenAcceptDisputeForOtherIssue extends BaseClass{
 		
 		asop.sendAnswer(agentAnswer);
 		Thread.sleep(3000);
+		asop.scrollTillSendAns(driver);
+		Thread.sleep(1000);
 		asop.clickOnSendAnswer();
 		logger.info("Dispute send.");
 		Thread.sleep(3000);

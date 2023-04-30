@@ -1,5 +1,6 @@
 package com.servicepoints.testCases;
 
+import java.io.IOException;
 import java.util.Iterator;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
@@ -20,7 +21,7 @@ public class TC14_VerifyExcludeFunctionTest extends BaseClass{
 	public String AgadminName=rd.setAgentsAdminName(); 
 	
 	@Test
-	public void verifyExcludeQuotationFunction() throws InterruptedException {
+	public void verifyExcludeQuotationFunction() throws InterruptedException, IOException {
 		LoginPage lp=new LoginPage(driver);
 		logger.info("Application Opened.");
 		
@@ -118,14 +119,12 @@ public class TC14_VerifyExcludeFunctionTest extends BaseClass{
 				logger.info("Verification of Exclude Button Successed.");
 				Assert.assertTrue(true);				
 			}else {
-				Assert.assertTrue(true);
+				captureScreen(driver, "verify exclude fun");
 				Thread.sleep(4000);
 				logger.info("Verification of Exclude button is failed.");
+				Assert.assertTrue(false);
 			}
 		}
 		
 	}
-	
-	
-	
 }

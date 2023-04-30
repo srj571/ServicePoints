@@ -16,6 +16,7 @@ public class TC24_VerifyDisputeForConversation extends BaseClass{
 	
 	ReadConfig con=new ReadConfig();
 	public String CMail=con.setCEmailFrDispt();
+	public String process=con.setProcessStatus();
 	public String CPass=con.setCpassForDispute();
 	public String proForConversation=con.setProductForConversation();
 	public String queries=con.setQueries();
@@ -37,9 +38,21 @@ public class TC24_VerifyDisputeForConversation extends BaseClass{
 		Thread.sleep(2000);
 		ClientOrdersPage cop=new ClientOrdersPage(driver);
 		cop.clickOnOrdersTab();
+		
 		cop.sendPnameinSearch(proForConversation);
 		logger.info("Product name is entered.");
 		Thread.sleep(2000);
+		
+		cop.clickOnStatusDrop();
+		//Thread.sleep(3000);
+		cop.dropdownSearch(process);
+		//logger.info("fulfilled status is entered.");
+		//cop.clickOnFulfillTab();
+		//cop.clickOnFProcessingTab();
+		//aop.clickOnProcessTab();
+		cop.clickOnProcessingTab();
+		Thread.sleep(3000);
+		
 		cop.clickOnFDiv();		
 		logger.info("Clicked on first div.");
 		Thread.sleep(3000);
@@ -128,10 +141,20 @@ public class TC24_VerifyDisputeForConversation extends BaseClass{
 		cop.sendPnameinSearch(proForConversation);
 		logger.info("Product name is entered.");
 		Thread.sleep(2000);
+		cop.clickOnStatusDrop();
+		//Thread.sleep(3000);
+		cop.dropdownSearch(process);
+		//logger.info("fulfilled status is entered.");
+		//cop.clickOnFulfillTab();
+		//cop.clickOnFProcessingTab();
+		//aop.clickOnProcessTab();
+		cop.clickOnProcessingTab();
+		Thread.sleep(3000);
 		cop.clickOnFDiv();		
 		logger.info("Clicked on first div.");
 		Thread.sleep(3000);
-		
+		cop.scrollTillEle(driver);
+		Thread.sleep(1000);
 	
 		cop.clickOnShowDispute();
 		Thread.sleep(3000);
@@ -144,7 +167,5 @@ public class TC24_VerifyDisputeForConversation extends BaseClass{
 			logger.info("Verification of Dispute conversation is failed.");
 			Assert.assertTrue(false);
 		}
-		
-		
 	}
 }

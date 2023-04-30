@@ -126,7 +126,7 @@ public class TC25_VerifyRefundAndConversation extends BaseClass{
 		cop.clickOnProcessingTab();
 		Thread.sleep(3000);
 		cop.clickOnFDiv();
-//		
+		
 //		if(driver.getPageSource().contains("No orders found ")) {
 //			cop.clickOnStatusDrop();
 //			Thread.sleep(1000);
@@ -140,10 +140,8 @@ public class TC25_VerifyRefundAndConversation extends BaseClass{
 		
 		logger.info("clicked on first div");
 		
-		cop.scrollTillEle(driver);
+		cop.scrollTillDspHistory(driver);
 		Thread.sleep(1000);
-		
-		
 		wait.until(ExpectedConditions.visibilityOf(cop.openDspbtn));
 		cop.clickOnOpenDspbtn();
 		Thread.sleep(3000);
@@ -193,6 +191,7 @@ public class TC25_VerifyRefundAndConversation extends BaseClass{
 		
 		asop.clickOnFrstDsp();
 		Thread.sleep(3000);
+		
 		
 		asop.clickOnShowDsp();
 		logger.info("Clicked on show disputes.");

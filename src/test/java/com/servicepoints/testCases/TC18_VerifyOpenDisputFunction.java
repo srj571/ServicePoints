@@ -54,6 +54,7 @@ public class TC18_VerifyOpenDisputFunction extends BaseClass{
 		Thread.sleep(3000);
 		cop.sendQueries(queries);
 		
+		
 		cop.SaveDispute();
 		Thread.sleep(5000);
 		logger.info("Dispute saved.");

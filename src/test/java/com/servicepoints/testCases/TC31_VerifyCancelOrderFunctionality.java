@@ -81,7 +81,9 @@ public class TC31_VerifyCancelOrderFunctionality extends BaseClass{
 		aspp.forthPcsPrice(ForthPcsprice);
 		logger.info("Price entered");
 		Thread.sleep(4000);
-
+		
+		aspp.scrollTillEle(driver);
+		Thread.sleep(1000);
 		aspp.clickOnSubmitQuote();
 		Thread.sleep(6000);
 
@@ -118,9 +120,8 @@ public class TC31_VerifyCancelOrderFunctionality extends BaseClass{
 			}
 		}
 		
-		System.out.println(window);
-		
 		cl.selectQuoteTab();
+		cl.scrollTillAcceptQbtn(driver);
 		cl.selectAcceptQuoteBtn();
 		Thread.sleep(4000);
 
@@ -165,6 +166,8 @@ public class TC31_VerifyCancelOrderFunctionality extends BaseClass{
 		
 		cop.clickOnSubmitOrder();
 		Thread.sleep(2000);
+		
+		cop.scrollTillDspHistory(driver);
 		
 		cop.clickOnCancelOrderBtn();
 		Thread.sleep(3000);

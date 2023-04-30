@@ -59,7 +59,7 @@ public class TC11_VerifySubmitQuoteTest extends BaseClass {
 		aspp.scrollTillEle(driver);
 		Thread.sleep(1000);
 		aspp.clickOnSubmitQuote();
-		Thread.sleep(6000);
+		Thread.sleep(7000);
 		
 		if (aspp.getStatus().equals("Quotation done")) {
 			Thread.sleep(2000);

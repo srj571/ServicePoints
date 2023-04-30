@@ -40,7 +40,7 @@ public class TC00_verifySubmitAndAcceptQuote extends BaseClass{
 		Thread.sleep(2000);
 
 		aspp.searchProductName(product);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		logger.info("Product name entered.");
 		aspp.clickOnfdiv();
 		
@@ -63,7 +63,7 @@ public class TC00_verifySubmitAndAcceptQuote extends BaseClass{
 		aspp.scrollTillEle(driver);
 		Thread.sleep(1000);
 		aspp.clickOnSubmitQuote();
-		Thread.sleep(6000);
+		Thread.sleep(7000);
 		
 		if (aspp.getStatus().equals("Quotation done")) {
 			Thread.sleep(2000);
@@ -105,6 +105,9 @@ public class TC00_verifySubmitAndAcceptQuote extends BaseClass{
 		}
 		
 		cl.selectQuoteTab();
+		Thread.sleep(1000);
+		cl.scrollTillAcceptQbtn(driver);
+		Thread.sleep(1000);
 		cl.selectAcceptQuoteBtn();
 		Thread.sleep(4000);
 

@@ -1,5 +1,6 @@
 package com.servicepoints.testCases;
 
+import java.io.IOException;
 import java.util.Iterator;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
@@ -14,7 +15,7 @@ import com.servicepoints.PageObjects.LoginPage;
 public class TC13_VerifyAddAgentSupportTest extends BaseClass {
 
 	@Test
-	public void verifyAddAgentSupport() throws InterruptedException {
+	public void verifyAddAgentSupport() throws InterruptedException, Exception {
 		LoginPage lp = new LoginPage(driver);
 		logger.info("Application Opened.");
 
@@ -84,6 +85,7 @@ public class TC13_VerifyAddAgentSupportTest extends BaseClass {
 			Assert.assertTrue(true);
 			Thread.sleep(4000);
 		} else {
+			captureScreen(driver,"Add agent");
 			logger.info("Verification of AgentSupport adding failed.");
 			Assert.assertTrue(false);
 			driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);

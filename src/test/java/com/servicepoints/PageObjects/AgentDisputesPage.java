@@ -1,5 +1,6 @@
 package com.servicepoints.PageObjects;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -119,5 +120,8 @@ public class AgentDisputesPage {
 		sendFile.sendKeys(file);
 	}
 	
-	
+	public void scrollTillSendAns(WebDriver driver) {
+		JavascriptExecutor exe=(JavascriptExecutor) driver;
+		exe.executeScript("arguments[0].scrollIntoView();", btnSendAnswer);
+	}
 }

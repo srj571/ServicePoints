@@ -47,6 +47,9 @@ public class TC12_VerifyAcceptQuotationTest extends BaseClass {
 		}
 
 		cl.selectQuoteTab();
+		Thread.sleep(1000);
+		cl.scrollTillAcceptQbtn(driver);
+		Thread.sleep(1000);
 		cl.selectAcceptQuoteBtn();
 		Thread.sleep(4000);
 
@@ -61,19 +64,22 @@ public class TC12_VerifyAcceptQuotationTest extends BaseClass {
 			Assert.assertTrue(false);
 		}
 		
-		Thread.sleep(4000);
+		cl.visibilityOfSPDropdown(driver);
+		cl.scrollTillSpRequestBtn(driver);
+		Thread.sleep(3000);
+		
 		cl.clickOnSpecialRequestDrop();
 		Thread.sleep(2000);
 		
 		cl.stopFullfilling();
 		Thread.sleep(2000);
+		logger.info("Clicked on Stop fullfillment");
 		
 		cl.clickOnYesImSure();
 		Thread.sleep(2000);
 		
 		cl.clickOnClosebtn();
 		Thread.sleep(2000);
-		logger.info("button is closed.");
 		
 		if(driver.getPageSource().contains("Stop fullfilment")) {
 			logger.info("Verification of Stop fullfilment of Quotation is Successed.");
@@ -121,7 +127,6 @@ public class TC12_VerifyAcceptQuotationTest extends BaseClass {
 			Thread.sleep(2000);
 		}
 		
-		
 		aspp.clickOnProductsTab();
 		Thread.sleep(3000);
 		
@@ -166,6 +171,7 @@ public class TC12_VerifyAcceptQuotationTest extends BaseClass {
 		cl.clickOnSpecialRequestDrop();
 		Thread.sleep(2000);
 		cl.startFulfillingDropbtn();
+		logger.info("Clicked on Start Fullfillment.");
 		Thread.sleep(3000);
 		cl.clickOnPreviousFulfill();
 		Thread.sleep(2000);
@@ -188,6 +194,7 @@ public class TC12_VerifyAcceptQuotationTest extends BaseClass {
 		cl.clickOnSpecialRequestDrop();
 		Thread.sleep(2000);
 		cl.pleaseRequote();
+		logger.info("Requoted the quotation");
 		Thread.sleep(2000);
 		cl.clickOnYesImSure();
 		Thread.sleep(3000);

@@ -103,6 +103,9 @@ public class TC21_VerifyDeclinedDisputeFunction extends BaseClass{
 		logger.info("Dispute Declined Status selected from dropdown.");
 		Thread.sleep(3000);
 		
+		asop.scrollTillSendAns(driver);
+		Thread.sleep(1000);
+		
 		asop.sendAnswer(agentAnswer);
 		Thread.sleep(3000);
 		asop.clickOnSendAnswer();

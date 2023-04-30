@@ -5,29 +5,8 @@
   <listeners>
     <listener class-name="com.servicepoints.utilities.Reporting"/>
   </listeners>
-  <test thread-count="5" name="Testng(failed)">
+  <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.servicepoints.testCases.TC28_VerifySpecialRequestFunction">
-        <methods>
-          <include name="setup"/>
-          <include name="tearDown"/>
-          <include name="verifySpecialRequest"/>
-        </methods>
-      </class> <!-- com.servicepoints.testCases.TC28_VerifySpecialRequestFunction -->
-      <class name="com.servicepoints.testCases.TC25_VerifyRefundAndConversation">
-        <methods>
-          <include name="setup"/>
-          <include name="verifyRefundAndConversation"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.servicepoints.testCases.TC25_VerifyRefundAndConversation -->
-      <class name="com.servicepoints.testCases.TC15_verifyAskForPriceChange">
-        <methods>
-          <include name="setup"/>
-          <include name="verifyAskForPriceChange"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.servicepoints.testCases.TC15_verifyAskForPriceChange -->
       <class name="com.servicepoints.testCases.TC31_VerifyCancelOrderFunctionality">
         <methods>
           <include name="verifyEndToEndFunctionality"/>
@@ -35,55 +14,6 @@
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.servicepoints.testCases.TC31_VerifyCancelOrderFunctionality -->
-      <class name="com.servicepoints.testCases.TC29_VerifyCloseSpecialRequestFunction">
-        <methods>
-          <include name="verifyCloseSpecialRequest"/>
-          <include name="setup"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.servicepoints.testCases.TC29_VerifyCloseSpecialRequestFunction -->
-      <class name="com.servicepoints.testCases.TC27_VerifyDeclinedResendDispute">
-        <methods>
-          <include name="verifyDeclinedResendDispute"/>
-          <include name="setup"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.servicepoints.testCases.TC27_VerifyDeclinedResendDispute -->
-      <class name="com.servicepoints.testCases.TC26_VerifyAddTrackingAndResend">
-        <methods>
-          <include name="verifyAddTrackingAndResendProduct"/>
-          <include name="setup"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.servicepoints.testCases.TC26_VerifyAddTrackingAndResend -->
-      <class name="com.servicepoints.testCases.TC30_VerifySpecialRequestCloseByAdminSP">
-        <methods>
-          <include name="setup"/>
-          <include name="tearDown"/>
-          <include name="verifySpecialRequestClosingByAll"/>
-        </methods>
-      </class> <!-- com.servicepoints.testCases.TC30_VerifySpecialRequestCloseByAdminSP -->
-      <class name="com.servicepoints.testCases.TC24_VerifyDisputeForConversation">
-        <methods>
-          <include name="verifyDisputeForConversation"/>
-          <include name="setup"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.servicepoints.testCases.TC24_VerifyDisputeForConversation -->
-      <class name="com.servicepoints.testCases.TC23_VerifyRefundDspDeclined">
-        <methods>
-          <include name="verifyRefundDspDeclined"/>
-          <include name="setup"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.servicepoints.testCases.TC23_VerifyRefundDspDeclined -->
-      <class name="com.servicepoints.testCases.TC17_VerifyAddNewVarient">
-        <methods>
-          <include name="setup"/>
-          <include name="tearDown"/>
-          <include name="verifyAddNewVarient"/>
-        </methods>
-      </class> <!-- com.servicepoints.testCases.TC17_VerifyAddNewVarient -->
     </classes>
-  </test> <!-- Testng(failed) -->
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

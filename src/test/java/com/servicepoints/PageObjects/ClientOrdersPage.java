@@ -276,4 +276,9 @@ public class ClientOrdersPage {
 		JavascriptExecutor exe=(JavascriptExecutor) driver;
 		exe.executeScript("arguments[0].scrollIntoView();", cancelOrderBtn);
 	}
+	
+	public void scrollTillDspHistory(WebDriver driver) {
+		JavascriptExecutor exe=(JavascriptExecutor) driver;
+		exe.executeScript("arguments[0].scrollIntoView();", disputeHistory);
+	}
 }
