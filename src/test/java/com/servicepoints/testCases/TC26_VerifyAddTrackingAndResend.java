@@ -58,12 +58,10 @@ public class TC26_VerifyAddTrackingAndResend extends BaseClass{
 		
 		wait.until(ExpectedConditions.visibilityOf(aop.fprocessTab));
 		aop.clickOnProcessTab();
-		logger.info("Processing status is searched.");
 		Thread.sleep(2000);
 		
 		
 		wait.until(ExpectedConditions.visibilityOf(aop.fdiv));
-		logger.info("Processing status is searched.");
 		aop.clickOnfDiv();
 		Thread.sleep(3000);
 		
@@ -96,9 +94,9 @@ public class TC26_VerifyAddTrackingAndResend extends BaseClass{
 			Assert.assertTrue(true);
 			Thread.sleep(2000);
 		}else {
-			Assert.assertTrue(false);
 			logger.info("Verification of adding tracking number is failed.");
 			Thread.sleep(2000);
+			Assert.assertTrue(false);
 		}
 		
 		driver.get(baseURL);
@@ -166,11 +164,11 @@ public class TC26_VerifyAddTrackingAndResend extends BaseClass{
 		Thread.sleep(3000);
 		if(driver.getPageSource().contains("Dispute raised successfully")) {
 			Assert.assertTrue(true);
-			logger.info("Verification of Dispute for resend raised Successfully.");
+			logger.info("Verification of Dispute raised for resend Successfully.");
 			Thread.sleep(3000);
 		}else {
-			//captureScreen(driver, "disputeRaised");
-			logger.info("Verification of Dispute for resend raising failed.");
+			captureScreen(driver, "disputeRaised");
+			logger.info("Verification of Dispute raised for resend  failed.");
 			Assert.assertTrue(false);
 		}
 		

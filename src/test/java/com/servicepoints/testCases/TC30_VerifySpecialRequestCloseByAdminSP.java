@@ -99,10 +99,10 @@ public class TC30_VerifySpecialRequestCloseByAdminSP extends BaseClass{
 		logger.info("Logged in to the admin supplier Account.");
 		Thread.sleep(3000);
 		
-		String parentWindow=driver.getWindowHandle();
+		//String parentWindow=driver.getWindowHandle();
 		Set<String> window=driver.getWindowHandles();
 		Iterator<String> it=window.iterator();
-		String parent=it.next();
+		//String parent=it.next();
 		String second=it.next();
 		driver.switchTo().window(second);
 		Thread.sleep(4000);

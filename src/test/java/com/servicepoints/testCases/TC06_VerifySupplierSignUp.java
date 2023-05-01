@@ -118,7 +118,6 @@ public class TC06_VerifySupplierSignUp {
 		}
 		
 		driver.close();
-
 	}
 
 	public static void captureScreen(WebDriver driver, String tname) throws IOException {

@@ -1,7 +1,6 @@
 package com.servicepoints.testCases;
 
 import java.io.IOException;
-import java.util.Iterator;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
@@ -203,11 +202,12 @@ public class TC12_VerifyAcceptQuotationTest extends BaseClass {
 		
 		if(driver.getPageSource().contains("Requote - Bidding")) {
 			logger.info("Verification of Client side Requote is Successed.");
-			//Assert.assertTrue(true);
+			Assert.assertTrue(true);
 		}
 		else {
 			logger.info("Verification of client side Requote is failed.");
-			//Assert.assertTrue(false);
+			Assert.assertTrue(false);
+			Thread.sleep(2000);
 		}
 		
 //		cl.logoutTheClient();

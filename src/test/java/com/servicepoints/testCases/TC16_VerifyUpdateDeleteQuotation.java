@@ -3,7 +3,6 @@ package com.servicepoints.testCases;
 import java.io.IOException;
 import java.util.Iterator;
 import java.util.Set;
-import java.util.concurrent.TimeUnit;
 
 import org.testng.annotations.Test;
 
@@ -53,7 +52,7 @@ public class TC16_VerifyUpdateDeleteQuotation extends BaseClass{
 
 		Set<String> window = driver.getWindowHandles();
 		Iterator<String> it = window.iterator();
-		String parent = it.next();
+		//String parent = it.next();
 		String child = it.next();
 		driver.switchTo().window(child);
 		Thread.sleep(4000);
@@ -119,8 +118,8 @@ public class TC16_VerifyUpdateDeleteQuotation extends BaseClass{
 		} else {
 			captureScreen(driver, "Delete Quote Test");
 			Thread.sleep(2000);
-			Assert.assertTrue(false);
 			logger.info("Verification of Quotation deletion failed..");
+			Assert.assertTrue(false);
 		}
 	}
 }

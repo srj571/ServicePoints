@@ -1,6 +1,5 @@
 package com.servicepoints.testCases;
 
-import java.io.IOException;
 import java.util.Iterator;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
@@ -45,7 +44,7 @@ public class TC13_VerifyAddAgentSupportTest extends BaseClass {
 
 		Set<String> window = driver.getWindowHandles();
 		Iterator<String> it = window.iterator();
-		String parent = it.next();
+		//String parent = it.next();
 		String child = it.next();
 		driver.switchTo().window(child);
 		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
@@ -112,6 +111,7 @@ public class TC13_VerifyAddAgentSupportTest extends BaseClass {
 			Assert.assertTrue(true);
 			driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 		} else {
+			captureScreen(driver, "Agent loginned.");
 			logger.info("Verification of AgentSupport login failed.");
 			Assert.assertTrue(false);
 			driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);

@@ -62,7 +62,6 @@ public class TC25_VerifyRefundAndConversation extends BaseClass{
 		
 		
 		wait.until(ExpectedConditions.visibilityOf(aop.fdiv));
-		logger.info("Processing status is searched.");
 		aop.clickOnfDiv();
 		Thread.sleep(3000);
 		
@@ -93,11 +92,11 @@ public class TC25_VerifyRefundAndConversation extends BaseClass{
 		if(driver.getPageSource().contains("Tracking number successfully added")) {
 			logger.info("Verification of adding tracking number is Successfull.");
 			Assert.assertTrue(true);
-			Thread.sleep(2000);
+			Thread.sleep(3000);
 		}else {
-			Assert.assertTrue(false);
 			logger.info("Verification of adding tracking number is failed.");
 			Thread.sleep(2000);
+			Assert.assertTrue(false);
 		}
 		
 		driver.get(baseURL);
@@ -170,7 +169,7 @@ public class TC25_VerifyRefundAndConversation extends BaseClass{
 			logger.info("Verification of Dispute for refund raised Successfully.");
 			Thread.sleep(3000);
 		}else {
-			//captureScreen(driver, "disputeRaised");
+			captureScreen(driver, "disputeRaised");
 			logger.info("Verification of Dispute for refund raising failed.");
 			Assert.assertTrue(false);
 		}
@@ -218,7 +217,6 @@ public class TC25_VerifyRefundAndConversation extends BaseClass{
 			logger.info("Verification of conversation in dispute is failed.");
 		}
 		
-
 		asop.clickOnShowDsp();
 		Thread.sleep(2000);
 		asop.selectDspStatus();

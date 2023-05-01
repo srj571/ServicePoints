@@ -61,7 +61,7 @@ public class TC31_VerifyCancelOrderFunctionality extends BaseClass{
 		String parentWindow=driver.getWindowHandle();
 		Set<String> window = driver.getWindowHandles();
 		Iterator<String> it = window.iterator();
-		String parent = it.next();
+		//String parent = it.next();
 		String child = it.next();
 		driver.switchTo().window(child);
 		Thread.sleep(4000);
@@ -79,7 +79,7 @@ public class TC31_VerifyCancelOrderFunctionality extends BaseClass{
 		aspp.secPcsPrice(SecPcsPrice);
 		aspp.thirdPcsPrice(ThirdPcsPrice);
 		aspp.forthPcsPrice(ForthPcsprice);
-		logger.info("Price entered");
+		logger.info("Price entered for the order.");
 		Thread.sleep(4000);
 		
 		aspp.scrollTillEle(driver);
@@ -99,6 +99,7 @@ public class TC31_VerifyCancelOrderFunctionality extends BaseClass{
 		}
 		
 		driver.get(baseURL);
+		
 		lp.setAdminMailId(CMail);
 		lp.setAdminPassword(CPass);
 		lp.clickLoginbtn();
@@ -166,17 +167,16 @@ public class TC31_VerifyCancelOrderFunctionality extends BaseClass{
 		
 		cop.clickOnSubmitOrder();
 		Thread.sleep(2000);
-		
+		logger.info("Clicked on Submit order.");
 		
 		cop.clickOnCancelOrderBtn();
 		Thread.sleep(3000);
-		logger.info("Clicked on Submit order.");
-		
 		
 		if(driver.getPageSource().contains("Order cancelled successfully")) {
 			Assert.assertTrue(true);
 			logger.info("Verification of cancel variant is Successed.");
 		}else {
+			captureScreen(driver, "Cancel order");
 			Thread.sleep(4000);
 			logger.info("Verification of cancel variant is failed.");
 			Assert.assertTrue(false);

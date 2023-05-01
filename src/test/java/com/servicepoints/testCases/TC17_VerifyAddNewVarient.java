@@ -198,8 +198,8 @@ public class TC17_VerifyAddNewVarient extends BaseClass{
 			
 		}else{
 			captureScreen(driver, "verify add new varient");
-			Assert.assertTrue(false);
 			logger.info("Verification of accept quotation after Adding new varient is failed. ");
+			Assert.assertTrue(false);
 		}
 	}
 }

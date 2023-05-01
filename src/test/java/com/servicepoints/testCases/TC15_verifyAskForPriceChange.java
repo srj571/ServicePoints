@@ -2,9 +2,7 @@ package com.servicepoints.testCases;
 
 import java.io.IOException;
 import java.util.Set;
-import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 import com.servicepoints.PageObjects.AgentSupProductsPage;
@@ -35,7 +33,7 @@ public class TC15_verifyAskForPriceChange extends BaseClass {
 		
 		ClientProductPage cl = new ClientProductPage(driver);
 		
-		WebDriverWait wait=new WebDriverWait(driver, 5);
+		//WebDriverWait wait=new WebDriverWait(driver, 5);
 		
 		lp.setAdminMailId(agentsupmail);
 		logger.info("Email_id is entered.");

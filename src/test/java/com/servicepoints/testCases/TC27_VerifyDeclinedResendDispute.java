@@ -62,7 +62,6 @@ public class TC27_VerifyDeclinedResendDispute extends BaseClass {
 		
 		
 		wait.until(ExpectedConditions.visibilityOf(aop.fdiv));
-		logger.info("Processing status is searched.");
 		aop.clickOnfDiv();
 		Thread.sleep(3000);
 		
@@ -169,7 +168,7 @@ public class TC27_VerifyDeclinedResendDispute extends BaseClass {
 			logger.info("Verification of Dispute for resend raised Successfully.");
 			Thread.sleep(3000);
 		}else {
-			//captureScreen(driver, "disputeRaised");
+			captureScreen(driver, "disputeRaised");
 			logger.info("Verification of Dispute for resend raising failed.");
 			Assert.assertTrue(false);
 		}

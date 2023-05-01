@@ -9,8 +9,7 @@
 	<parameter name="browser" value="chrome"></parameter>
   <test thread-count="5" name="Test">
     <classes>
-      
-      <!--<class name="com.servicepoints.testCases.TC01_AdminLoginTest"/>
+      <!-- <class name="com.servicepoints.testCases.TC01_AdminLoginTest"/>
       <class name="com.servicepoints.testCases.TC02_VerifyClientLoginTest"/>
       <class name="com.servicepoints.testCases.TC03_UserSignUpTest"/>
       <class name="com.servicepoints.testCases.TC04_VerifyClientApprovalTest"/>
@@ -19,10 +18,10 @@
       <class name="com.servicepoints.testCases.TC07_VerifyAddAgentSupBySupplier"/>
       <class name="com.servicepoints.testCases.TC08_VerifyAddingNewStore"/>
       <class name="com.servicepoints.testCases.TC09_VerifyUpdationOfStoreTest"/>
-      <class name="com.servicepoints.testCases.TC13_VerifyAddAgentSupportTest"/>
       <class name="com.servicepoints.testCases.TC10_VerifyDeletionOfStoreTest"/>
       <class name="com.servicepoints.testCases.TC11_VerifySubmitQuoteTest"/>
       <class name="com.servicepoints.testCases.TC12_VerifyAcceptQuotationTest"/>
+      <class name="com.servicepoints.testCases.TC13_VerifyAddAgentSupportTest"/>-->
       <class name="com.servicepoints.testCases.TC14_VerifyExcludeFunctionTest"/>
       <class name="com.servicepoints.testCases.TC00_verifySubmitAndAcceptQuote"/>
       <class name="com.servicepoints.testCases.TC15_verifyAskForPriceChange"/>
@@ -36,12 +35,12 @@
       <class name="com.servicepoints.testCases.TC23_VerifyRefundDspDeclined"/>
       <class name="com.servicepoints.testCases.TC24_VerifyDisputeForConversation"/>
       <class name="com.servicepoints.testCases.TC25_VerifyRefundAndConversation"/>
-      <class name="com.servicepoints.testCases.TC26_VerifyAddTrackingAndResend"/>-->
+      <class name="com.servicepoints.testCases.TC26_VerifyAddTrackingAndResend"/>
       <class name="com.servicepoints.testCases.TC27_VerifyDeclinedResendDispute"/>
-      <!--<class name="com.servicepoints.testCases.TC28_VerifySpecialRequestFunction"/>
+      <class name="com.servicepoints.testCases.TC28_VerifySpecialRequestFunction"/>
       <class name="com.servicepoints.testCases.TC29_VerifyCloseSpecialRequestFunction"/>
       <class name="com.servicepoints.testCases.TC30_VerifySpecialRequestCloseByAdminSP"/>
-      <class name="com.servicepoints.testCases.TC31_VerifyCancelOrderFunctionality"/>-->
+      <class name="com.servicepoints.testCases.TC31_VerifyCancelOrderFunctionality"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

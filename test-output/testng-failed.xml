@@ -7,20 +7,27 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.servicepoints.testCases.TC26_VerifyAddTrackingAndResend">
+      <class name="com.servicepoints.testCases.TC08_VerifyAddingNewStore">
         <methods>
-          <include name="verifyAddTrackingAndResendProduct"/>
+          <include name="verifyAddStore"/>
           <include name="setup"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.servicepoints.testCases.TC26_VerifyAddTrackingAndResend -->
-      <class name="com.servicepoints.testCases.TC27_VerifyDeclinedResendDispute">
+      </class> <!-- com.servicepoints.testCases.TC08_VerifyAddingNewStore -->
+      <class name="com.servicepoints.testCases.TC10_VerifyDeletionOfStoreTest">
         <methods>
-          <include name="verifyDeclinedResendDispute"/>
           <include name="setup"/>
           <include name="tearDown"/>
+          <include name="verifyDeletingStore"/>
         </methods>
-      </class> <!-- com.servicepoints.testCases.TC27_VerifyDeclinedResendDispute -->
+      </class> <!-- com.servicepoints.testCases.TC10_VerifyDeletionOfStoreTest -->
+      <class name="com.servicepoints.testCases.TC09_VerifyUpdationOfStoreTest">
+        <methods>
+          <include name="setup"/>
+          <include name="verifyUpdatingStore"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.servicepoints.testCases.TC09_VerifyUpdationOfStoreTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

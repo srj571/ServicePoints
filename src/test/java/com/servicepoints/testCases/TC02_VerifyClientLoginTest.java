@@ -45,7 +45,7 @@ public class TC02_VerifyClientLoginTest extends BaseClass{
 		
 		Set<String> window=driver.getWindowHandles();
 		Iterator<String> it=window.iterator();
-		String parent=it.next();
+		//String parent=it.next();
 		String child=it.next();
 		driver.switchTo().window(child);
 		Thread.sleep(3000);

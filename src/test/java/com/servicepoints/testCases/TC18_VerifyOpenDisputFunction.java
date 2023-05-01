@@ -2,7 +2,6 @@ package com.servicepoints.testCases;
 
 import java.io.IOException;
 
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 import com.servicepoints.PageObjects.ClientOrdersPage;

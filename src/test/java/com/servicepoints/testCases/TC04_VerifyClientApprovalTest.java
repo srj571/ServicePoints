@@ -1,5 +1,7 @@
 package com.servicepoints.testCases;
 
+import java.io.IOException;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -15,7 +17,7 @@ public class TC04_VerifyClientApprovalTest extends BaseClass{
 	
 	
 	@Test
-	public void verifyClientApproval() throws InterruptedException {
+	public void verifyClientApproval() throws InterruptedException, IOException {
 		logger.info("Application Opened.");
 		LoginPage lp = new LoginPage(driver);
 
@@ -60,15 +62,15 @@ public class TC04_VerifyClientApprovalTest extends BaseClass{
 		adminAccount.sendAgentSupportName(agentSupportName);
 		adminAccount.selectAgentSPOption();
 		logger.info("Agent support name is selected.");
-		Thread.sleep(4000);
+		Thread.sleep(3000);
 		
 		adminAccount.selectInvoiceTypeDrop();
 		adminAccount.selectInvoice();
 		logger.info("Invoice type is selected.");
-		Thread.sleep(4000);
+		Thread.sleep(2000);
 		
 		adminAccount.selectSwitchOn();
-		Thread.sleep(4000);
+		Thread.sleep(2000);
 		
 		adminAccount.saveInfo();
 		logger.info("User info is saved.");
@@ -79,8 +81,9 @@ public class TC04_VerifyClientApprovalTest extends BaseClass{
 			logger.info("Account updated successfully");
 			Thread.sleep(4000);
 		}else {
-			logger.info("Account updated successfully");
-			Assert.assertTrue(true);
+			captureScreen(driver, "Client approval");
+			logger.info("Account updated failed");
+			Assert.assertTrue(false);
 		}
 		
 //		adminAccount.logoutAdmPanel();
