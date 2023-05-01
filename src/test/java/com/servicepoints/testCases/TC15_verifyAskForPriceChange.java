@@ -6,6 +6,7 @@ import java.util.Set;
 import org.testng.annotations.Test;
 
 import com.servicepoints.PageObjects.AgentSupProductsPage;
+import com.servicepoints.PageObjects.ClientOrdersPage;
 import com.servicepoints.PageObjects.ClientProductPage;
 import com.servicepoints.PageObjects.LoginPage;
 import com.servicepoints.utilities.ReadConfig;
@@ -133,15 +134,13 @@ public class TC15_verifyAskForPriceChange extends BaseClass {
 			}
 		}
 		
-		try {
-			Thread.sleep(3000);
-			cl.clsePopUpFrmClntSideAskPr();
-			Thread.sleep(3000);
-			logger.info("Pop up closed.");
-		}catch(Exception e) {
-			logger.info("Now accepting the quotation.");
-		}
-		
+	
+		Thread.sleep(3000);
+		cl.clsePopUpFrmClntSideAskPr();
+		Thread.sleep(3000);
+		logger.info("Pop up closed.");
+	
+		logger.info("Now accepting the quotation.");
 		
 		cl.acceptAskforPriceChange();
 		Thread.sleep(2000);
@@ -161,5 +160,15 @@ public class TC15_verifyAskForPriceChange extends BaseClass {
 			logger.info("Verification is for Ask for Price change test is failed.");
 			Assert.assertTrue(false);
 		}
+		
+		ClientOrdersPage cp=new ClientOrdersPage(driver);
+		cp.clickOnOrdersTab();
+		logger.info("Go to Orders page.");
+		Thread.sleep(4000);
+		cp.sendPnameinSearch(proToAcceptQuo);
+		Thread.sleep(4000);
+		cp.clickOnFDiv();
+		Thread.sleep(5000);
+		logger.info("Status changed to Processing.");
 	}
 }

@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-01T15:23:18 IST" name="Suite" finished-at="2023-05-01T15:25:08 IST" duration-ms="110215">
+  <suite started-at="2023-05-01T19:13:45 IST" name="Suite" finished-at="2023-05-01T19:14:54 IST" duration-ms="69106">
     <groups>
     </groups>
-    <test started-at="2023-05-01T15:23:18 IST" name="Test" finished-at="2023-05-01T15:25:08 IST" duration-ms="110215">
-      <class name="com.servicepoints.testCases.TC31_VerifyCancelOrderFunctionality">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.servicepoints.testCases.TC31_VerifyCancelOrderFunctionality@3faf2e7d]" started-at="2023-05-01T15:23:18 IST" name="setup" finished-at="2023-05-01T15:23:25 IST" duration-ms="7539" status="PASS">
+    <test started-at="2023-05-01T19:13:45 IST" name="Test" finished-at="2023-05-01T19:14:54 IST" duration-ms="69106">
+      <class name="com.servicepoints.testCases.TC16_VerifyUpdateDeleteQuotation">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.servicepoints.testCases.TC16_VerifyUpdateDeleteQuotation@5ae1c281]" started-at="2023-05-01T19:13:45 IST" name="setup" finished-at="2023-05-01T19:13:54 IST" duration-ms="8454" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyCancelOrderFunctionality()[pri:0, instance:com.servicepoints.testCases.TC31_VerifyCancelOrderFunctionality@3faf2e7d]" started-at="2023-05-01T15:23:25 IST" name="verifyCancelOrderFunctionality" finished-at="2023-05-01T15:25:08 IST" duration-ms="102455" status="PASS">
+        <test-method signature="verifyUpdateDeleteQuotation()[pri:0, instance:com.servicepoints.testCases.TC16_VerifyUpdateDeleteQuotation@5ae1c281]" started-at="2023-05-01T19:13:54 IST" name="verifyUpdateDeleteQuotation" finished-at="2023-05-01T19:14:54 IST" duration-ms="60232" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyCancelOrderFunctionality -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.servicepoints.testCases.TC31_VerifyCancelOrderFunctionality@3faf2e7d]" started-at="2023-05-01T15:25:08 IST" name="tearDown" finished-at="2023-05-01T15:25:08 IST" duration-ms="96" status="PASS">
+        </test-method> <!-- verifyUpdateDeleteQuotation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.servicepoints.testCases.TC16_VerifyUpdateDeleteQuotation@5ae1c281]" started-at="2023-05-01T19:14:54 IST" name="tearDown" finished-at="2023-05-01T19:14:54 IST" duration-ms="105" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.servicepoints.testCases.TC31_VerifyCancelOrderFunctionality -->
+      </class> <!-- com.servicepoints.testCases.TC16_VerifyUpdateDeleteQuotation -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

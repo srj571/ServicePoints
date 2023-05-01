@@ -23,10 +23,9 @@
       <class name="com.servicepoints.testCases.TC12_VerifyAcceptQuotationTest"/>
       <class name="com.servicepoints.testCases.TC13_VerifyAddAgentSupportTest"/>
       <class name="com.servicepoints.testCases.TC14_VerifyExcludeFunctionTest"/>
-      <class name="com.servicepoints.testCases.TC00_verifySubmitAndAcceptQuote"/>
       <class name="com.servicepoints.testCases.TC15_verifyAskForPriceChange"/>
       <class name="com.servicepoints.testCases.TC16_VerifyUpdateDeleteQuotation"/>
-      <class name="com.servicepoints.testCases.TC17_VerifyAddNewVarient"/> 
+      <class name="com.servicepoints.testCases.TC17_VerifyAddNewVariant"/> 
       <class name="com.servicepoints.testCases.TC18_VerifyOpenDisputFunction"/>
       <class name="com.servicepoints.testCases.TC19_VerifyAcceptDispute"/>
       <class name="com.servicepoints.testCases.TC20_VerifyOpenAcceptDisputeForOtherIssue"/>

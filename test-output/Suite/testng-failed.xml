@@ -7,13 +7,13 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.servicepoints.testCases.TC31_VerifyCancelOrderFunctionality">
+      <class name="com.servicepoints.testCases.TC15_verifyAskForPriceChange">
         <methods>
-          <include name="verifyCancelOrderFunctionality"/>
           <include name="setup"/>
+          <include name="verifyAskForPriceChange"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.servicepoints.testCases.TC31_VerifyCancelOrderFunctionality -->
+      </class> <!-- com.servicepoints.testCases.TC15_verifyAskForPriceChange -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
