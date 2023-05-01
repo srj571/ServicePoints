@@ -119,7 +119,7 @@ public class TC24_VerifyDisputeForConversation extends BaseClass{
 		Thread.sleep(3000);
 		asop.clickOnSendAnswer();
 		logger.info("Dispute send.");
-		Thread.sleep(5000);
+		Thread.sleep(6000);
 		
 		if(driver.getPageSource().contains("Message send successfully")) {
 			Assert.assertTrue(true);
@@ -130,36 +130,17 @@ public class TC24_VerifyDisputeForConversation extends BaseClass{
 			Assert.assertTrue(false);
 		}
 		
-		driver.get(baseURL);
-		
-		lp.setAdminMailId(CMail);
-		lp.setAdminPassword(CPass);
-		lp.clickLoginbtn();
-		logger.info("Client logged in Successfully.");
-		
-		cop.clickOnOrdersTab();
-		cop.sendPnameinSearch(proForConversation);
-		logger.info("Product name is entered.");
+		asop.clickOnShowDsp();
 		Thread.sleep(2000);
-		cop.clickOnStatusDrop();
-		//Thread.sleep(3000);
-		cop.dropdownSearch(process);
-		//logger.info("fulfilled status is entered.");
-		//cop.clickOnFulfillTab();
-		//cop.clickOnFProcessingTab();
-		//aop.clickOnProcessTab();
-		cop.clickOnProcessingTab();
-		Thread.sleep(3000);
-		cop.clickOnFDiv();		
-		logger.info("Clicked on first div.");
-		Thread.sleep(3000);
-		cop.scrollTillEle(driver);
-		Thread.sleep(1000);
-	
-		cop.clickOnShowDispute();
-		Thread.sleep(3000);
+		asop.selectDspStatus();
+		Thread.sleep(2000);
+		asop.sendAnswer(agentAnswer);
+		Thread.sleep(2000);
+		asop.clickOnSendAnswer();
+		Thread.sleep(4000);
 		
-		if(driver.getPageSource().contains("Show dispute")) {
+		
+		if(driver.getPageSource().contains("Open dispute")) {
 			Assert.assertTrue(true);
 			logger.info("Verification of Dispute conversation is successed.");
 		}else {

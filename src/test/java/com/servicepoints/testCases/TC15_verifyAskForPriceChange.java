@@ -146,8 +146,6 @@ public class TC15_verifyAskForPriceChange extends BaseClass {
 			logger.info("Now accepting the quotation.");
 		}
 		
-		cl.scrollTillAcceptBtn(driver);
-		Thread.sleep(2000);
 		
 		cl.acceptAskforPriceChange();
 		Thread.sleep(2000);

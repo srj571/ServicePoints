@@ -141,9 +141,6 @@ public class TC26_VerifyAddTrackingAndResend extends BaseClass{
 		
 		logger.info("clicked on first div");
 		
-		cop.scrollTillEle(driver);
-		Thread.sleep(1000);
-		
 		wait.until(ExpectedConditions.visibilityOf(cop.openDspbtn));
 		cop.clickOnOpenDspbtn();
 		Thread.sleep(3000);

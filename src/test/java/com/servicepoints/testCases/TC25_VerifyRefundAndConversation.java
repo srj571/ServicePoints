@@ -218,6 +218,15 @@ public class TC25_VerifyRefundAndConversation extends BaseClass{
 			logger.info("Verification of conversation in dispute is failed.");
 		}
 		
+
+		asop.clickOnShowDsp();
+		Thread.sleep(2000);
+		asop.selectDspStatus();
+		Thread.sleep(2000);
+		asop.sendAnswer(agentAnswer);
+		Thread.sleep(2000);
+		asop.clickOnSendAnswer();
+		Thread.sleep(4000);
 		driver.get(baseURL);
 		
 		lp.setAdminMailId(clmail);

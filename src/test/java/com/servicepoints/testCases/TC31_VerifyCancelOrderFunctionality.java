@@ -167,7 +167,6 @@ public class TC31_VerifyCancelOrderFunctionality extends BaseClass{
 		cop.clickOnSubmitOrder();
 		Thread.sleep(2000);
 		
-		cop.scrollTillDspHistory(driver);
 		
 		cop.clickOnCancelOrderBtn();
 		Thread.sleep(3000);

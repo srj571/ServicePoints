@@ -30,7 +30,7 @@ public class TC30_VerifySpecialRequestCloseByAdminSP extends BaseClass{
 	public String answerSR=con.setAnswerSR();
 	
 	@Test
-	public void verifySpecialRequestClosingByAll() throws InterruptedException, IOException {
+	public void verifySpecialRequestCloseByAdminSp() throws InterruptedException, IOException {
 		
 		LoginPage lp=new LoginPage(driver);
 		lp.setAdminMailId(CMail);

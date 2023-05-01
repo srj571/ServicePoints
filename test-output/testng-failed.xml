@@ -7,13 +7,20 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.servicepoints.testCases.TC31_VerifyCancelOrderFunctionality">
+      <class name="com.servicepoints.testCases.TC26_VerifyAddTrackingAndResend">
         <methods>
-          <include name="verifyEndToEndFunctionality"/>
+          <include name="verifyAddTrackingAndResendProduct"/>
           <include name="setup"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.servicepoints.testCases.TC31_VerifyCancelOrderFunctionality -->
+      </class> <!-- com.servicepoints.testCases.TC26_VerifyAddTrackingAndResend -->
+      <class name="com.servicepoints.testCases.TC27_VerifyDeclinedResendDispute">
+        <methods>
+          <include name="verifyDeclinedResendDispute"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.servicepoints.testCases.TC27_VerifyDeclinedResendDispute -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
