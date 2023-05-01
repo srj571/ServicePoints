@@ -20,7 +20,7 @@ public class TC19_VerifyAcceptDispute extends BaseClass{
 	public String agentAnswer=rd.setAnswer();
 	
 	@Test
-	public void verifyAcceptDispute() throws InterruptedException, IOException {
+	public void verifyAcceptDisputeTest() throws InterruptedException, IOException {
 		LoginPage lp=new LoginPage(driver);
 		lp.setAdminMailId(agentMailDsp);
 		lp.setAdminPassword(agentPassDsp);
@@ -56,8 +56,8 @@ public class TC19_VerifyAcceptDispute extends BaseClass{
 			logger.info("Verification of Dispute acceptance is successed.");
 		}else {
 			captureScreen(driver, "acceptDispute");
-			Assert.assertTrue(false);
 			logger.info("Verification of Dispute acceptance is failed.");
+			Assert.assertTrue(false);
 		}
 		
 	}

@@ -47,7 +47,7 @@ public class TC00_verifySubmitAndAcceptQuote extends BaseClass{
 		String parentWindow=driver.getWindowHandle();
 		Set<String> window = driver.getWindowHandles();
 		Iterator<String> it = window.iterator();
-		//String parent = it.next();
+		String parent = it.next();
 		String child = it.next();
 		driver.switchTo().window(child);
 		Thread.sleep(4000);

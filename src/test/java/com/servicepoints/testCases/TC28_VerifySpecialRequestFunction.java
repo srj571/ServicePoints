@@ -20,7 +20,7 @@ public class TC28_VerifySpecialRequestFunction extends BaseClass{
 	public String queries=con.setQueries();
 	
 	@Test
-	public void verifySpecialRequest() throws InterruptedException, IOException {
+	public void verifySpecialRequestTest() throws InterruptedException, IOException {
 		LoginPage lp=new LoginPage(driver);
 		
 		lp.setAdminMailId(CMail);

@@ -25,8 +25,6 @@ public class TC15_verifyAskForPriceChange extends BaseClass {
 	@Test
 	public void verifyAskForPriceChange() throws InterruptedException, IOException {
 		
-
-		
 		AgentSupProductsPage asop = new AgentSupProductsPage(driver);
 		
 		LoginPage lp = new LoginPage(driver);

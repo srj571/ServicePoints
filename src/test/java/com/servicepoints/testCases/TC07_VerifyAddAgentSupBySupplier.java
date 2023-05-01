@@ -11,7 +11,7 @@ import com.servicepoints.PageObjects.LoginPage;
 public class TC07_VerifyAddAgentSupBySupplier extends BaseClass {
 
 	@Test
-	public void verifyAddAgent() throws InterruptedException, IOException {
+	public void verifyAddAgentSUP() throws InterruptedException, IOException {
 		LoginPage lp = new LoginPage(driver);
 
 		lp.setAdminMailId(adminemail);
@@ -93,7 +93,6 @@ public class TC07_VerifyAddAgentSupBySupplier extends BaseClass {
 			logger.info("Verification of Agent Supplier Login is Failed.");
 			Assert.assertTrue(false);
 		}
-
 	}
 
 }

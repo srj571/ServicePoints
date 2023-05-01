@@ -23,7 +23,7 @@ public class TC16_VerifyUpdateDeleteQuotation extends BaseClass{
 	public String ordersFetch=rc.fetchOrders();
 	
 	@Test
-	public void verifyUpdateQuotation() throws InterruptedException, IOException {
+	public void verifyUpdateDeleteQuotation() throws InterruptedException, IOException {
 	
 		logger.info("Application Opened.");
 		LoginPage lp = new LoginPage(driver);
@@ -52,7 +52,7 @@ public class TC16_VerifyUpdateDeleteQuotation extends BaseClass{
 
 		Set<String> window = driver.getWindowHandles();
 		Iterator<String> it = window.iterator();
-		//String parent = it.next();
+		String parent = it.next();
 		String child = it.next();
 		driver.switchTo().window(child);
 		Thread.sleep(4000);

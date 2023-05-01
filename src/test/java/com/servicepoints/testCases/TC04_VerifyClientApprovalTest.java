@@ -17,7 +17,7 @@ public class TC04_VerifyClientApprovalTest extends BaseClass{
 	
 	
 	@Test
-	public void verifyClientApproval() throws InterruptedException, IOException {
+	public void verifyClientApprovalTest() throws InterruptedException, IOException {
 		logger.info("Application Opened.");
 		LoginPage lp = new LoginPage(driver);
 

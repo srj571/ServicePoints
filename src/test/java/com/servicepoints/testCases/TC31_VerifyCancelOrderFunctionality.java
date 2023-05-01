@@ -30,7 +30,7 @@ public class TC31_VerifyCancelOrderFunctionality extends BaseClass{
 
 	
 	@Test
-	public void verifyEndToEndFunctionality() throws InterruptedException, IOException {
+	public void verifyCancelOrderFunctionality() throws InterruptedException, IOException {
 		
 		driver.get(productFetch);
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
@@ -61,7 +61,7 @@ public class TC31_VerifyCancelOrderFunctionality extends BaseClass{
 		String parentWindow=driver.getWindowHandle();
 		Set<String> window = driver.getWindowHandles();
 		Iterator<String> it = window.iterator();
-		//String parent = it.next();
+		String parent = it.next();
 		String child = it.next();
 		driver.switchTo().window(child);
 		Thread.sleep(4000);

@@ -28,7 +28,7 @@ public class TC22_VerifyAddTrackingAndRefundDspFunction extends BaseClass{
 	public String agentAnswer=rd.setAnswer();
 	
 	@Test
-	public void verifyAddTracking() throws InterruptedException, IOException {
+	public void verifyAddTrackingAndRefundDispute() throws InterruptedException, IOException {
 		
 		LoginPage lp=new LoginPage(driver);
 		WebDriverWait wait=new WebDriverWait(driver,10);
@@ -200,8 +200,8 @@ public class TC22_VerifyAddTrackingAndRefundDspFunction extends BaseClass{
 			logger.info("Verification of Dispute acceptance is successfull.");
 		}else {
 			captureScreen(driver, "acceptDispute");
-			Assert.assertTrue(false);
 			logger.info("Verification of Dispute acceptance is failed.");
+			Assert.assertTrue(false);
 		}
 		
 		

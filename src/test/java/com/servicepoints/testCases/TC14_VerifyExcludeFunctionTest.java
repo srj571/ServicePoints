@@ -20,7 +20,7 @@ public class TC14_VerifyExcludeFunctionTest extends BaseClass{
 	public String AgadminName=rd.setAgentsAdminName(); 
 	
 	@Test
-	public void verifyExcludeQuotationFunction() throws InterruptedException, IOException {
+	public void verifyExcludeQuotationTest() throws InterruptedException, IOException {
 		LoginPage lp=new LoginPage(driver);
 		logger.info("Application Opened.");
 		

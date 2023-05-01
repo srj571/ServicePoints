@@ -11,7 +11,7 @@ import com.servicepoints.PageObjects.LoginPage;
 public class TC01_AdminLoginTest extends BaseClass {
 
 	@Test
-	public void LoginTest() throws IOException, InterruptedException {
+	public void adminLoginTest() throws IOException, InterruptedException {
 		logger.info("Application Opened.");
 		LoginPage lp = new LoginPage(driver);
 

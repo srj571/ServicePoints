@@ -14,7 +14,7 @@ import com.servicepoints.PageObjects.ClientProductPage;
 import com.servicepoints.PageObjects.LoginPage;
 import com.servicepoints.utilities.ReadConfig;
 
-public class TC17_VerifyAddNewVarient extends BaseClass{
+public class TC17_VerifyAddNewVariant extends BaseClass{
 	
 	ReadConfig rd=new ReadConfig();
 	
@@ -26,7 +26,7 @@ public class TC17_VerifyAddNewVarient extends BaseClass{
 	
 
 	@Test
-	public void verifyAddNewVarient() throws InterruptedException, IOException {
+	public void verifyAddNewVariant() throws InterruptedException, IOException {
 		
 		LoginPage lp=new LoginPage(driver);
 		ClientOrdersPage cop=new ClientOrdersPage(driver);

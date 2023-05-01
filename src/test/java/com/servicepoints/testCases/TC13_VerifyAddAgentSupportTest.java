@@ -14,7 +14,7 @@ import com.servicepoints.PageObjects.LoginPage;
 public class TC13_VerifyAddAgentSupportTest extends BaseClass {
 
 	@Test
-	public void verifyAddAgentSupport() throws InterruptedException, Exception {
+	public void verifyAddAgentSupportTest() throws InterruptedException, Exception {
 		LoginPage lp = new LoginPage(driver);
 		logger.info("Application Opened.");
 
@@ -44,7 +44,7 @@ public class TC13_VerifyAddAgentSupportTest extends BaseClass {
 
 		Set<String> window = driver.getWindowHandles();
 		Iterator<String> it = window.iterator();
-		//String parent = it.next();
+		String parent = it.next();
 		String child = it.next();
 		driver.switchTo().window(child);
 		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);

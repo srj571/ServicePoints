@@ -223,8 +223,12 @@ public class TC25_VerifyRefundAndConversation extends BaseClass{
 		Thread.sleep(2000);
 		asop.sendAnswer(agentAnswer);
 		Thread.sleep(2000);
+		logger.info("Verification of close refund dispute.");
 		asop.clickOnSendAnswer();
 		Thread.sleep(4000);
+		logger.info("Agent loggout successfully");
+		
+		
 		driver.get(baseURL);
 		
 		lp.setAdminMailId(clmail);
@@ -263,8 +267,8 @@ public class TC25_VerifyRefundAndConversation extends BaseClass{
 			logger.info("Verification of Dispute history opening is successfull.");
 		}else {
 			captureScreen(driver, "acceptDispute");
-			Assert.assertTrue(false);
 			logger.info("Verification of Dispute history opening is failed.");
+			Assert.assertTrue(false);
 		}
 	}
 }

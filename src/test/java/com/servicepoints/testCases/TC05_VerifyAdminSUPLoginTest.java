@@ -13,7 +13,7 @@ import com.servicepoints.PageObjects.LoginPage;
 public class TC05_VerifyAdminSUPLoginTest  extends BaseClass {
 	
 	@Test
-	public void verifyAdminSUPLogin() throws InterruptedException, IOException{
+	public void verifyAdminSUPLoginTest() throws InterruptedException, IOException{
 		logger.info("Application Opened.");
 		LoginPage lp = new LoginPage(driver);
 
@@ -45,7 +45,7 @@ public class TC05_VerifyAdminSUPLoginTest  extends BaseClass {
 		
 		Set<String> window=driver.getWindowHandles();
 		Iterator<String> it=window.iterator();
-		//String parent=it.next();
+		String parent=it.next();
 		String second=it.next();
 		driver.switchTo().window(second);
 		Thread.sleep(4000);

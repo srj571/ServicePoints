@@ -9,7 +9,7 @@
 	<parameter name="browser" value="chrome"></parameter>
   <test thread-count="5" name="Test">
     <classes>
-      <!-- <class name="com.servicepoints.testCases.TC01_AdminLoginTest"/>
+      <class name="com.servicepoints.testCases.TC01_AdminLoginTest"/>
       <class name="com.servicepoints.testCases.TC02_VerifyClientLoginTest"/>
       <class name="com.servicepoints.testCases.TC03_UserSignUpTest"/>
       <class name="com.servicepoints.testCases.TC04_VerifyClientApprovalTest"/>
@@ -21,7 +21,7 @@
       <class name="com.servicepoints.testCases.TC10_VerifyDeletionOfStoreTest"/>
       <class name="com.servicepoints.testCases.TC11_VerifySubmitQuoteTest"/>
       <class name="com.servicepoints.testCases.TC12_VerifyAcceptQuotationTest"/>
-      <class name="com.servicepoints.testCases.TC13_VerifyAddAgentSupportTest"/>-->
+      <class name="com.servicepoints.testCases.TC13_VerifyAddAgentSupportTest"/>
       <class name="com.servicepoints.testCases.TC14_VerifyExcludeFunctionTest"/>
       <class name="com.servicepoints.testCases.TC00_verifySubmitAndAcceptQuote"/>
       <class name="com.servicepoints.testCases.TC15_verifyAskForPriceChange"/>

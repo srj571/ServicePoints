@@ -13,7 +13,7 @@ public class TC09_VerifyUpdationOfStoreTest extends BaseClass{
 	
 	
 	@Test
-	public void verifyUpdatingStore() throws InterruptedException, IOException {
+	public void verifyUpdationOfStore() throws InterruptedException, IOException {
 		LoginPage lp = new LoginPage(driver);
 		lp.setAdminMailId(clientemail);
 		logger.info("Email_id is entered.");
@@ -51,8 +51,8 @@ public class TC09_VerifyUpdationOfStoreTest extends BaseClass{
 		}
 		else {
 			captureScreen(driver, "VerifyUpdatingStore");
-			Assert.assertTrue(false);
 			logger.info("Varification for Store updation is failed.");
+			Assert.assertTrue(false);
 			Thread.sleep(3000);
 		}	
 	}

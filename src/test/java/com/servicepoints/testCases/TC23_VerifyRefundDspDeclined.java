@@ -94,9 +94,9 @@ public class TC23_VerifyRefundDspDeclined extends BaseClass{
 			Assert.assertTrue(true);
 			Thread.sleep(2000);
 		}else {
-			Assert.assertTrue(false);
 			logger.info("Verification of adding tracking number is failed.");
 			Thread.sleep(2000);
+			Assert.assertTrue(false);
 		}
 		
 		driver.get(baseURL);
@@ -203,8 +203,8 @@ public class TC23_VerifyRefundDspDeclined extends BaseClass{
 			logger.info("Verification of Dispute declined is successfull.");
 		}else {
 			captureScreen(driver, "acceptDispute");
-			Assert.assertTrue(false);
 			logger.info("Verification of Dispute declined is failed.");
+			Assert.assertTrue(false);
 		}
 		
 		

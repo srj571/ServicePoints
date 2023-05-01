@@ -20,7 +20,7 @@ public class TC18_VerifyOpenDisputFunction extends BaseClass{
 	public String queries=con.setQueries();
 	
 	@Test
-	public void verifyOpenDispute() throws InterruptedException, IOException {
+	public void verifyOpenDisputeTest() throws InterruptedException, IOException {
 		LoginPage lp=new LoginPage(driver);
 		//WebDriverWait wait=new WebDriverWait(driver,10);
 		Thread.sleep(3000);

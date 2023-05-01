@@ -26,7 +26,7 @@ public class TC21_VerifyDeclinedDisputeFunction extends BaseClass{
 	public String fileName="A319.pdf";
 
 	@Test
-	public void verifyPaymentPendingOrder() throws InterruptedException, IOException {
+	public void verifyDeclinedDisputeTest() throws InterruptedException, IOException {
 		LoginPage lp=new LoginPage(driver);
 		
 		lp.setAdminMailId(CMail);

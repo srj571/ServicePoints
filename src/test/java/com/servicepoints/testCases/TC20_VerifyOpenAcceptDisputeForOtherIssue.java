@@ -27,7 +27,7 @@ public class TC20_VerifyOpenAcceptDisputeForOtherIssue extends BaseClass{
 	public String agentAnswer=con.setAnswer();
 	
 	@Test
-	public void verifyOpenAcceptDsp() throws InterruptedException, IOException {
+	public void verifyOpenAcceptOtherDsp() throws InterruptedException, IOException {
 		LoginPage lp=new LoginPage(driver);
 		
 		lp.setAdminMailId(CMail);
@@ -113,8 +113,8 @@ public class TC20_VerifyOpenAcceptDisputeForOtherIssue extends BaseClass{
 			logger.info("Verification of Dispute acceptance is successed.");
 		}else {
 			captureScreen(driver, "acceptDispute");
-			Assert.assertTrue(false);
 			logger.info("Verification of Dispute acceptance is failed.");
+			Assert.assertTrue(false);
 		}
 	}
 }

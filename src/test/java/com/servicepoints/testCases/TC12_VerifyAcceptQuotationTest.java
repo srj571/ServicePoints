@@ -17,7 +17,7 @@ public class TC12_VerifyAcceptQuotationTest extends BaseClass {
 	
 	
 	@Test
-	public void verifyAcceptQuote() throws InterruptedException, IOException {
+	public void verifyAcceptQuoteTest() throws InterruptedException, IOException {
 		LoginPage lp = new LoginPage(driver);
 		lp.setAdminMailId(clientemail);
 		logger.info("Email_id is entered.");

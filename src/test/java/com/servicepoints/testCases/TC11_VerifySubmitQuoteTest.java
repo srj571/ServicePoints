@@ -14,7 +14,7 @@ import junit.framework.Assert;
 public class TC11_VerifySubmitQuoteTest extends BaseClass {
 
 	@Test
-	public void verifySubmitQuote() throws InterruptedException, IOException {
+	public void verifySubmitQuoteTest() throws InterruptedException, IOException {
 		logger.info("Application Opened.");
 		LoginPage lp = new LoginPage(driver);
 		Thread.sleep(1000);
@@ -43,7 +43,7 @@ public class TC11_VerifySubmitQuoteTest extends BaseClass {
 
 		Set<String> window = driver.getWindowHandles();
 		Iterator<String> it = window.iterator();
-		//String parent = it.next();
+		String parent = it.next();
 		String child = it.next();
 		driver.switchTo().window(child);
 		Thread.sleep(4000);
