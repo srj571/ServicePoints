@@ -16,7 +16,7 @@ public class TC28_VerifySpecialRequestFunction extends BaseClass{
 	
 	public String CMail=con.setCEmailFrDispt();
 	public String CPass=con.setCpassForDispute();
-	public String proDsp=con.setProductForDsp();
+	public String proDsp=con.setProductDsp();
 	public String queries=con.setQueries();
 	
 	@Test

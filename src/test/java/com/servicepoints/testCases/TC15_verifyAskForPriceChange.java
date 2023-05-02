@@ -133,7 +133,6 @@ public class TC15_verifyAskForPriceChange extends BaseClass {
 				break;
 			}
 		}
-		
 	
 		Thread.sleep(3000);
 		cl.clsePopUpFrmClntSideAskPr();
@@ -165,7 +164,7 @@ public class TC15_verifyAskForPriceChange extends BaseClass {
 		cp.clickOnOrdersTab();
 		logger.info("Go to Orders page.");
 		Thread.sleep(4000);
-		cp.sendPnameinSearch(proToAcceptQuo);
+		cp.sendPnameinSearch(prdctForPChange);
 		Thread.sleep(4000);
 		cp.clickOnFDiv();
 		Thread.sleep(5000);

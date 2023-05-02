@@ -88,7 +88,7 @@ public class TC20_VerifyOpenAcceptDisputeForOtherIssue extends BaseClass{
 		asop.clickOnDisputesTab();
 		logger.info("Open disputes page.");
 		
-		asop.searchProductForDsp(productToAcceptDsp);
+		asop.searchProductForDsp(proDsp);
 		Thread.sleep(3000);
 		asop.clickOnFrstDsp();
 		Thread.sleep(3000);
@@ -116,5 +116,26 @@ public class TC20_VerifyOpenAcceptDisputeForOtherIssue extends BaseClass{
 			logger.info("Verification of Dispute acceptance is failed.");
 			Assert.assertTrue(false);
 		}
+		
+		driver.get(baseURL);
+		
+		lp.setAdminMailId(CMail);
+		lp.setAdminPassword(CPass);
+		lp.clickLoginbtn();
+		logger.info("Client logged in Successfully.");
+		
+		cop.clickOnOrdersTab();
+		cop.sendPnameinSearch(proDsp);
+		logger.info("Product name is entered.");
+		Thread.sleep(2000);
+		cop.clickOnFDiv();		
+		logger.info("Clicked on first div.");
+		Thread.sleep(3000);
+		
+		cop.scrollTillDspHistory(driver);
+		Thread.sleep(2000);
+		cop.clickOnDispHistory();
+		Thread.sleep(5000);
+		logger.info("Verification of open Dispute History successfull.");
 	}
 }

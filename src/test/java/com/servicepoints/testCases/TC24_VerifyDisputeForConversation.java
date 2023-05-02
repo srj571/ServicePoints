@@ -139,14 +139,49 @@ public class TC24_VerifyDisputeForConversation extends BaseClass{
 		asop.clickOnSendAnswer();
 		Thread.sleep(4000);
 		
+		driver.get(baseURL);
 		
-		if(driver.getPageSource().contains("Open dispute")) {
+		lp.setAdminMailId(CMail);
+		lp.setAdminPassword(CPass);
+		lp.clickLoginbtn();
+		logger.info("Client logged in Successfully.");
+		Thread.sleep(3000);
+		
+		
+		cop.clickOnOrdersTab();
+		Thread.sleep(3000);
+		
+		cop.sendPnameinSearch(proForConversation);
+		Thread.sleep(3000);
+		logger.info("Product name is entered.");
+		
+		cop.clickOnStatusDrop();
+		//Thread.sleep(3000);
+		cop.dropdownSearch(process);
+		//logger.info("fulfilled status is entered.");
+		//cop.clickOnFulfillTab();
+		//cop.clickOnFProcessingTab();
+		//aop.clickOnProcessTab();
+		cop.clickOnProcessingTab();
+		Thread.sleep(3000);
+		cop.clickOnFDiv();
+		
+		cop.scrollTillDspHistory(driver);
+		Thread.sleep(3000);
+		cop.clickOnDispHistory();
+		Thread.sleep(2000);
+		cop.clickOnFirstDisputeTab();
+		Thread.sleep(5000);
+		
+		
+		if(driver.getPageSource().contains("Dispute history")) {
 			Assert.assertTrue(true);
-			logger.info("Verification of Dispute conversation is successed.");
+			logger.info("Verification of Dispute history opening is successfull.");
 		}else {
 			captureScreen(driver, "acceptDispute");
-			logger.info("Verification of Dispute conversation is failed.");
+			logger.info("Verification of Dispute history opening is failed.");
 			Assert.assertTrue(false);
 		}
+		
 	}
 }

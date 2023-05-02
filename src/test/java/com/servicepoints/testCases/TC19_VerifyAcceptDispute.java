@@ -5,6 +5,7 @@ import java.io.IOException;
 import org.testng.annotations.Test;
 
 import com.servicepoints.PageObjects.AgentDisputesPage;
+import com.servicepoints.PageObjects.ClientOrdersPage;
 import com.servicepoints.PageObjects.LoginPage;
 import com.servicepoints.utilities.ReadConfig;
 
@@ -13,7 +14,8 @@ import junit.framework.Assert;
 public class TC19_VerifyAcceptDispute extends BaseClass{
 	
 	ReadConfig rd=new ReadConfig();
-	
+	public String CMail=rd.setCEmailFrDispt();
+	public String CPass=rd.setCpassForDispute();
 	public String agentMailDsp=rd.setAMailDsp();
 	public String agentPassDsp=rd.setApassDsp();
 	public String productToAcceptDsp=rd.setProductDsp();
@@ -48,7 +50,7 @@ public class TC19_VerifyAcceptDispute extends BaseClass{
 		Thread.sleep(1000);
 		asop.clickOnSendAnswer();
 		logger.info("Dispute send.");
-		Thread.sleep(3000);
+		Thread.sleep(6000);
 		
 		
 		if(driver.getPageSource().contains("Dispute accepted successfully")) {
@@ -60,5 +62,26 @@ public class TC19_VerifyAcceptDispute extends BaseClass{
 			Assert.assertTrue(false);
 		}
 		
+		driver.get(baseURL);
+		
+		lp.setAdminMailId(CMail);
+		lp.setAdminPassword(CPass);
+		lp.clickLoginbtn();
+		logger.info("Client logged in Successfully.");
+		
+		ClientOrdersPage cop=new ClientOrdersPage(driver);
+		cop.clickOnOrdersTab();
+		cop.sendPnameinSearch(productToAcceptDsp);
+		logger.info("Product name is entered.");
+		Thread.sleep(2000);
+		cop.clickOnFDiv();		
+		logger.info("Clicked on first div.");
+		Thread.sleep(3000);
+		
+		cop.scrollTillDspHistory(driver);
+		Thread.sleep(2000);
+		cop.clickOnDispHistory();
+		Thread.sleep(5000);
+		logger.info("Verification of open Dispute History successfull.");
 	}
 }

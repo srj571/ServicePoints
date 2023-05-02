@@ -110,7 +110,7 @@ public class TC21_VerifyDeclinedDisputeFunction extends BaseClass{
 		Thread.sleep(3000);
 		asop.clickOnSendAnswer();
 		logger.info("Dispute send.");
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 		
 		if(driver.getPageSource().contains("Dispute declined successfully")) {
 			Assert.assertTrue(true);
@@ -120,5 +120,26 @@ public class TC21_VerifyDeclinedDisputeFunction extends BaseClass{
 			logger.info("Verification of Dispute rejection is failed.");
 			Assert.assertTrue(false);
 		}
+		
+		driver.get(baseURL);
+		
+		lp.setAdminMailId(CMail);
+		lp.setAdminPassword(CPass);
+		lp.clickLoginbtn();
+		logger.info("Client logged in Successfully.");
+		
+		cop.clickOnOrdersTab();
+		cop.sendPnameinSearch(proToDeclinedDsp);
+		logger.info("Product name is entered.");
+		Thread.sleep(2000);
+		cop.clickOnFDiv();		
+		logger.info("Clicked on first div.");
+		Thread.sleep(3000);
+		
+		cop.scrollTillDspHistory(driver);
+		Thread.sleep(2000);
+		cop.clickOnDispHistory();
+		Thread.sleep(5000);
+		logger.info("Verification of open Dispute History successfull.");
 	}
 }

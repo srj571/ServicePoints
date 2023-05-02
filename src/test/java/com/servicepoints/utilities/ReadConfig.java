@@ -543,6 +543,16 @@ public class ReadConfig {
 		String proPrice=po.getProperty("ProductAskForPrice");
 		return proPrice;
 	}
+	
+	public String setClientMailForDeleteQuote() {
+		String cemail=po.getProperty("CDeleteQuoteMail");
+		return cemail;
+	}
+	
+	public String setClientPassForDeleteQuote() {
+		String cpass=po.getProperty("CDeleteQuotePass");
+		return cpass;
+	}
 }
 
 

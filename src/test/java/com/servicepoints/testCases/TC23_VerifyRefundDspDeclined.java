@@ -87,7 +87,7 @@ public class TC23_VerifyRefundDspDeclined extends BaseClass{
 		
 		aop.clickOnSbmtTracking();
 		logger.info("Clicked on submit tracking button.");
-		Thread.sleep(6000);
+		Thread.sleep(7000);
 		
 		if(driver.getPageSource().contains("Tracking number successfully added")) {
 			logger.info("Verification of adding tracking number is Successfull.");
@@ -129,7 +129,7 @@ public class TC23_VerifyRefundDspDeclined extends BaseClass{
 		Thread.sleep(3000);
 		logger.info("clicked on first div");
 		
-		cop.scrollTillEle(driver);
+		cop.scrollTillDspHistory(driver);
 		Thread.sleep(2000);
 		
 		wait.until(ExpectedConditions.visibilityOf(cop.openDspbtn));
@@ -219,5 +219,27 @@ public class TC23_VerifyRefundDspDeclined extends BaseClass{
 		Thread.sleep(4000);
 		
 		logger.info("Verification of Refund Dispute acceptance is successfully.");
+		
+		driver.get(baseURL);
+		
+		lp.setAdminMailId(clmail);
+		lp.setAdminPassword(clpass);
+		lp.clickLoginbtn();
+		logger.info("Client logged in Successfully.");
+		
+		cop.clickOnOrdersTab();
+		cop.sendPnameinSearch(productRefundDD);
+		logger.info("Product name is entered.");
+		Thread.sleep(2000);
+		cop.clickOnFDiv();		
+		logger.info("Clicked on first div.");
+		Thread.sleep(3000);
+		
+		
+		cop.scrollTillDspHistory(driver);
+		Thread.sleep(2000);
+		cop.clickOnDispHistory();
+		Thread.sleep(6000);
+		logger.info("Verification of open Dispute History successfull.");
 	}
 }

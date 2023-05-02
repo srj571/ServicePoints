@@ -105,7 +105,7 @@ public class TC22_VerifyAddTrackingAndRefundDspFunction extends BaseClass{
 		lp.setAdminMailId(clmail);
 		lp.setAdminPassword(clpass);
 		lp.clickLoginbtn();
-		logger.info("Agent logged in Successfully.");
+		logger.info("Client logged in Successfully.");
 		Thread.sleep(3000);
 		ClientOrdersPage cop=new ClientOrdersPage(driver);
 		
@@ -116,6 +116,7 @@ public class TC22_VerifyAddTrackingAndRefundDspFunction extends BaseClass{
 		Thread.sleep(3000);
 		logger.info("Product name is entered.");
 		
+		
 		//cop.clickOnStatusDrop();
 		//Thread.sleep(3000);
 		//cop.dropdownSearch(process);
@@ -123,6 +124,15 @@ public class TC22_VerifyAddTrackingAndRefundDspFunction extends BaseClass{
 		//cop.clickOnFulfillTab();
 		//cop.clickOnFProcessingTab();
 		//Thread.sleep(3000);
+		cop.clickOnStatusDrop();
+		//Thread.sleep(3000);
+		cop.dropdownSearch(process);
+		//logger.info("fulfilled status is entered.");
+		//cop.clickOnFulfillTab();
+		//cop.clickOnFProcessingTab();
+		//aop.clickOnProcessTab();
+		cop.clickOnProcessingTab();
+		Thread.sleep(3000);
 		
 		cop.clickOnFDiv();
 		Thread.sleep(3000);
@@ -213,8 +223,30 @@ public class TC22_VerifyAddTrackingAndRefundDspFunction extends BaseClass{
 		aaop.searchPnameTrack(productTrack);
 		Thread.sleep(2000);
 		aaop.clickOnfDiv();
-		Thread.sleep(4000);
+		Thread.sleep(5000);
 		
 		logger.info("Verification of Refund Dispute acceptance is successfully.");
+		
+		driver.get(baseURL);
+		
+		lp.setAdminMailId(clmail);
+		lp.setAdminPassword(clpass);
+		lp.clickLoginbtn();
+		logger.info("Client logged in Successfully.");
+		
+		cop.clickOnOrdersTab();
+		cop.sendPnameinSearch(productTrack);
+		logger.info("Product name is entered.");
+		Thread.sleep(2000);
+		cop.clickOnFDiv();		
+		logger.info("Clicked on first div.");
+		Thread.sleep(3000);
+		
+		
+		cop.scrollTillDspHistory(driver);
+		Thread.sleep(2000);
+		cop.clickOnDispHistory();
+		Thread.sleep(6000);
+		logger.info("Verification of open Dispute History successfull.");
 	}
 }

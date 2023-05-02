@@ -183,6 +183,14 @@ public class AgentSupProductsPage {
 		deletequote.click();
 	}
 	
+	@FindBy(xpath="//a[@class='btn btn-danger btn-sm btn-block deleteQuoteBTN mb-2 mb-sm-0']")
+	WebElement deleteBtn;
+	
+	public void scrollTillDeletebtn2(WebDriver driver) {
+		JavascriptExecutor exe=(JavascriptExecutor) driver;
+		exe.executeScript("arguments[0].scrollIntoView();", deleteBtn);
+	}
+	
 	@FindBy(xpath="//button[@class='btn btn-danger deleteQuotationConfirmedBtn btn-sm']")
 	WebElement yesImSure;
 	

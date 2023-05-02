@@ -3,6 +3,7 @@ package com.servicepoints.testCases;
 import org.testng.annotations.Test;
 
 import com.servicepoints.PageObjects.AgentDisputesPage;
+import com.servicepoints.PageObjects.ClientOrdersPage;
 import com.servicepoints.PageObjects.LoginPage;
 import com.servicepoints.utilities.ReadConfig;
 
@@ -11,8 +12,9 @@ import junit.framework.Assert;
 public class TC29_VerifyCloseSpecialRequestFunction extends BaseClass{
 	
 	ReadConfig rd=new ReadConfig();
-	
-	public String proDsp=rd.setProductForDsp();
+	public String clmail=rd.setClientTrackMail();
+	public String clpass=rd.setClientTrackPass();
+	public String proDsp=rd.setProductDsp();
 	public String agentMailDsp=rd.setAMailDsp();
 	public String agentPassDsp=rd.setApassDsp();
 	public String agentAnswer=rd.setAnswer();
@@ -20,7 +22,7 @@ public class TC29_VerifyCloseSpecialRequestFunction extends BaseClass{
 	@Test
 	public void verifyCloseSpecialRequest() throws InterruptedException {
 		LoginPage lp=new LoginPage(driver);
-		
+		ClientOrdersPage cop=new ClientOrdersPage(driver);
 		lp.setAdminMailId(agentMailDsp);
 		lp.setAdminPassword(agentPassDsp);
 		lp.clickLoginbtn();
@@ -52,15 +54,47 @@ public class TC29_VerifyCloseSpecialRequestFunction extends BaseClass{
 		Thread.sleep(3000);
 		
 		asop.clickOnSendAnsSpRequest();
-		Thread.sleep(3000);
+		Thread.sleep(4000);
 		
 		if(driver.getPageSource().contains("Thanks for the answer.")) {
 			Assert.assertTrue(true);
 			logger.info("Verification of Close Special request is successfull..");
 		}else {
-			Assert.assertTrue(true);
 			logger.info("Verification of Close Special request is failed..");
+			Assert.assertTrue(false);
+		}
+		
+		driver.get(baseURL);
+		Thread.sleep(3000);
+		lp.setAdminMailId(clmail);
+		lp.setAdminPassword(clpass);
+		lp.clickLoginbtn();
+		logger.info("Client logged in Successfully.");
+		Thread.sleep(3000);
+		
+		cop.clickOnOrdersTab();
+		Thread.sleep(3000);
+		
+		
+		cop.clickOnGoToDisputesTab();
+		Thread.sleep(3000);
+		cop.clickOnSpecialRequestTab();
+		Thread.sleep(3000);
+		cop.clickOnAnswerOfDispute();
+		Thread.sleep(2000);
+		cop.sendPnameinSearch(proDsp);
+		Thread.sleep(2000);
+		cop.clickOnFDiv();
+		Thread.sleep(2000);
+		cop.clickOnShowRequestTab();
+		Thread.sleep(2000);
+		
+		if(driver.getPageSource().contains("Special request")) {
+			Assert.assertTrue(true);
+			logger.info("Verification of Close Special request is successfull..");
+		}else {
+			logger.info("Verification of Close Special request is failed..");
+			Assert.assertTrue(false);
 		}
 	}
-	
 }

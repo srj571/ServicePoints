@@ -139,8 +139,7 @@ public class TC25_VerifyRefundAndConversation extends BaseClass{
 		
 		logger.info("clicked on first div");
 		
-		cop.scrollTillDspHistory(driver);
-		Thread.sleep(1000);
+		
 		wait.until(ExpectedConditions.visibilityOf(cop.openDspbtn));
 		cop.clickOnOpenDspbtn();
 		Thread.sleep(3000);
@@ -205,7 +204,7 @@ public class TC25_VerifyRefundAndConversation extends BaseClass{
 		
 		asop.clickOnSendAnswer();
 		logger.info("Dispute send.");
-		Thread.sleep(5000);
+		Thread.sleep(7000);
 		
 		
 		if(driver.getPageSource().contains("Message send successfully")) {
@@ -256,11 +255,12 @@ public class TC25_VerifyRefundAndConversation extends BaseClass{
 		Thread.sleep(3000);
 		cop.clickOnFDiv();
 		
-		cop.scrollTillEle(driver);
-		Thread.sleep(1000);
-		
-		cop.clickOnDispHistory();
+		cop.scrollTillDspHistory(driver);
 		Thread.sleep(3000);
+		cop.clickOnDispHistory();
+		Thread.sleep(2000);
+		cop.clickOnFirstDisputeTab();
+		Thread.sleep(5000);
 		
 		if(driver.getPageSource().contains("Dispute history")) {
 			Assert.assertTrue(true);

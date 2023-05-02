@@ -281,4 +281,48 @@ public class ClientOrdersPage {
 		JavascriptExecutor exe=(JavascriptExecutor) driver;
 		exe.executeScript("arguments[0].scrollIntoView();", disputeHistory);
 	}
+	
+	@FindBy(xpath="(//div[@class='table_list_item'])[1]")
+	WebElement disputeHistoryTab;
+	
+	public void clickOnFirstDisputeTab() {
+		disputeHistoryTab.click();
+	}
+	
+	@FindBy(xpath="//a[@class='btn btn-primary btn-sm float-right']")
+	WebElement goToDisputesTab;
+	
+	public void clickOnGoToDisputesTab() {
+		goToDisputesTab.click();
+	}
+	
+	@FindBy(xpath="//a[@id='special-requests']")
+	WebElement specialRequestTab;
+	
+	public void clickOnSpecialRequestTab() {
+		specialRequestTab.click();
+	}
+	
+	@FindBy(xpath="//a[@class='btn btn-border btn-sm special-requests-answers showSelected mr-0']")
+	WebElement answerOfDsp;
+	
+	public void clickOnAnswerOfDispute() {
+		answerOfDsp.click();
+	}
+	
+	@FindBy(xpath="(//a[contains(text(),'Show request')])[1]")
+	WebElement showRequestTab;
+	
+	public void clickOnShowRequestTab() {
+		showRequestTab.click();
+	}
+	
+	@FindBy(xpath="//button[contains(@class,'btn btn-border btn-sm selected')]")
+	public WebElement closeInShowRequest;
+	
+	public void clickOnCloseShowRequest() {
+		closeInShowRequest.click();
+	}
+	
+	
 }

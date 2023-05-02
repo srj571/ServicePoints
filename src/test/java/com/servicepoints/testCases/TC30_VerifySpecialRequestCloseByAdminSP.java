@@ -132,7 +132,7 @@ public class TC30_VerifySpecialRequestCloseByAdminSP extends BaseClass{
 		Thread.sleep(3000);
 		
 		asop.clickOnSendAnsSpRequest();
-		Thread.sleep(3000);
+		Thread.sleep(4000);
 		
 		if(driver.getPageSource().contains("Thanks for the answer.")) {
 			Assert.assertTrue(true);
@@ -142,6 +142,37 @@ public class TC30_VerifySpecialRequestCloseByAdminSP extends BaseClass{
 			logger.info("Verification of Close Special request by Admin supplier is failed..");
 		}
 		
+		driver.get(baseURL);
+		Thread.sleep(3000);
+		lp.setAdminMailId(CMail);
+		lp.setAdminPassword(CPass);
+		lp.clickLoginbtn();
+		logger.info("Client logged in Successfully.");
+		Thread.sleep(3000);
 		
+		cop.clickOnOrdersTab();
+		Thread.sleep(3000);
+		
+		
+		cop.clickOnGoToDisputesTab();
+		Thread.sleep(3000);
+		cop.clickOnSpecialRequestTab();
+		Thread.sleep(3000);
+		cop.clickOnAnswerOfDispute();
+		Thread.sleep(2000);
+		cop.sendPnameinSearch(productSR);
+		Thread.sleep(2000);
+		cop.clickOnFDiv();
+		Thread.sleep(2000);
+		cop.clickOnShowRequestTab();
+		Thread.sleep(5000);
+		
+		if(driver.getPageSource().contains("Special request")) {
+			Assert.assertTrue(true);
+			logger.info("Verification of Close Special request is successfull..");
+		}else {
+			logger.info("Verification of Close Special request is failed..");
+			Assert.assertTrue(false);
+		}
 	}
 }
