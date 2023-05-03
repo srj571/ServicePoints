@@ -15,7 +15,7 @@ import com.servicepoints.utilities.ReadConfig;
 
 import junit.framework.Assert;
 
-public class TC17_VerifyCancelOrderFunctionality extends BaseClass{
+public class TC18_VerifyCancelOrderFunctionality extends BaseClass{
 	
 	ReadConfig rd=new ReadConfig();
 	

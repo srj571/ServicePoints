@@ -14,7 +14,7 @@ import com.servicepoints.PageObjects.ClientProductPage;
 import com.servicepoints.PageObjects.LoginPage;
 import com.servicepoints.utilities.ReadConfig;
 
-public class TC18_VerifyAddNewVariant extends BaseClass{
+public class TC17_VerifyAddNewVariant extends BaseClass{
 	
 	ReadConfig rd=new ReadConfig();
 	
