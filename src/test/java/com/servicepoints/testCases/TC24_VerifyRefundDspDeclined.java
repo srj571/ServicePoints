@@ -241,5 +241,14 @@ public class TC24_VerifyRefundDspDeclined extends BaseClass{
 		cop.clickOnDispHistory();
 		Thread.sleep(6000);
 		logger.info("Verification of open Dispute History successfull.");
+		
+		if(cop.getDspHistoryStatusD().equals("Declined")) {
+			Assert.assertTrue(true);
+			logger.info("Verification of Dispute declined is successed.");
+		}else {
+			logger.info("Verification of Dispute declined is failed.");
+			Assert.assertTrue(false);
+		}
+		
 	}
 }

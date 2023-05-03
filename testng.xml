@@ -20,14 +20,14 @@
       <class name="com.servicepoints.testCases.TC08_VerifyAddAgentSupportTest"/>
       <class name="com.servicepoints.testCases.TC09_VerifyAddingNewStore"/>
       <class name="com.servicepoints.testCases.TC10_VerifyUpdationOfStoreTest"/>
-      <class name="com.servicepoints.testCases.TC11_VerifyDeletionOfStoreTest"/>-->
+      <class name="com.servicepoints.testCases.TC11_VerifyDeletionOfStoreTest"/>                                                                          
       <class name="com.servicepoints.testCases.TC12_VerifySubmitQuoteTest"/>
       <class name="com.servicepoints.testCases.TC13_VerifyAcceptQuotationTest"/>
       <class name="com.servicepoints.testCases.TC14_VerifyExcludeFunctionTest"/>
       <class name="com.servicepoints.testCases.TC15_verifyAskForPriceChange"/>
       <class name="com.servicepoints.testCases.TC16_VerifyUpdateDeleteQuotation"/>
       <class name="com.servicepoints.testCases.TC17_VerifyAddNewVariant"/>
-      <class name="com.servicepoints.testCases.TC18_VerifyCancelOrderFunctionality"/>
+      <class name="com.servicepoints.testCases.TC18_VerifyCancelOrderFunctionality"/>-->
       <!--<class name="com.servicepoints.testCases.TC19_VerifyOpenDisputFunction"/>
       <class name="com.servicepoints.testCases.TC20_VerifyAcceptDispute"/>
       <class name="com.servicepoints.testCases.TC21_VerifyOpenAcceptDisputeForOtherIssue"/>

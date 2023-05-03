@@ -352,4 +352,20 @@ public class ClientOrdersPage {
 	    robot.keyPress(KeyEvent.VK_ENTER);
 	    robot.keyRelease(KeyEvent.VK_ENTER);
 	}
+	
+	@FindBy(xpath="(//span[contains(text(),'Accepted')])[1]")
+	WebElement acceptStatusDispute;
+	
+	@FindBy(xpath="(//span[contains(text(),'Declined')])[1]")
+	WebElement declinedStatusDispute;
+	
+	public String getDspHistoryStatusD() {
+		String val=declinedStatusDispute.getText();
+		return val;
+	}
+	public String getDspHistoryStatusA() {
+		String val=acceptStatusDispute.getText();
+		return val;
+	}
+	
 }

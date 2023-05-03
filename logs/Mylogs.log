@@ -5748,3 +5748,78 @@
 [INFO ] 2023-05-03 16:52:40.312 [main] BaseClass - Clicked on first checkbox.
 [INFO ] 2023-05-03 16:52:42.423 [main] BaseClass - Clicked on Submit order.
 [INFO ] 2023-05-03 16:52:45.591 [main] BaseClass - Verification of cancel variant is Successed.
+[INFO ] 2023-05-03 17:40:26.917 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-05-03 17:40:31.948 [main] BaseClass - Product name is entered.
+[INFO ] 2023-05-03 17:40:37.272 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-05-03 17:40:43.499 [main] BaseClass - Customer got wrong product option selected.
+[INFO ] 2023-05-03 17:40:43.677 [main] BaseClass - I want the order to be shipped immediately option is selected.
+[INFO ] 2023-05-03 17:40:47.189 [main] BaseClass - Queries entered in text fields.
+[INFO ] 2023-05-03 17:40:52.281 [main] BaseClass - Dispute saved.
+[INFO ] 2023-05-03 17:40:52.394 [main] BaseClass - Verification of Dispute raised Successfully.
+[INFO ] 2023-05-03 17:40:59.621 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-03 17:41:06.100 [main] BaseClass - Open disputes page.
+[INFO ] 2023-05-03 17:41:12.337 [main] BaseClass - Clicked on show disputes.
+[INFO ] 2023-05-03 17:41:15.524 [main] BaseClass - Dispute Accepted.
+[INFO ] 2023-05-03 17:41:22.752 [main] BaseClass - Dispute send.
+[INFO ] 2023-05-03 17:41:29.092 [main] BaseClass - Verification of Dispute acceptance is failed.
+[INFO ] 2023-05-03 17:43:14.575 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-05-03 17:43:20.555 [main] BaseClass - Product name is entered.
+[INFO ] 2023-05-03 17:43:25.899 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-05-03 17:43:32.125 [main] BaseClass - Customer got wrong product option selected.
+[INFO ] 2023-05-03 17:43:32.290 [main] BaseClass - I want the order to be shipped immediately option is selected.
+[INFO ] 2023-05-03 17:43:35.832 [main] BaseClass - Queries entered in text fields.
+[INFO ] 2023-05-03 17:43:40.916 [main] BaseClass - Dispute saved.
+[INFO ] 2023-05-03 17:43:41.026 [main] BaseClass - Verification of Dispute raised Successfully.
+[INFO ] 2023-05-03 17:43:48.241 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-03 17:43:54.430 [main] BaseClass - Open disputes page.
+[INFO ] 2023-05-03 17:44:00.687 [main] BaseClass - Clicked on show disputes.
+[INFO ] 2023-05-03 17:44:03.833 [main] BaseClass - Dispute Accepted.
+[INFO ] 2023-05-03 17:44:11.026 [main] BaseClass - Dispute send.
+[INFO ] 2023-05-03 17:44:17.361 [main] BaseClass - Verification of Dispute acceptance is failed.
+[INFO ] 2023-05-03 17:49:32.804 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-05-03 17:49:36.915 [main] BaseClass - Product name is entered.
+[INFO ] 2023-05-03 17:49:42.197 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-05-03 17:49:48.402 [main] BaseClass - Customer got wrong product option selected.
+[INFO ] 2023-05-03 17:49:48.560 [main] BaseClass - I want the order to be shipped immediately option is selected.
+[INFO ] 2023-05-03 17:49:52.109 [main] BaseClass - Queries entered in text fields.
+[INFO ] 2023-05-03 17:49:57.200 [main] BaseClass - Dispute saved.
+[INFO ] 2023-05-03 17:49:57.285 [main] BaseClass - Verification of Dispute raised Successfully.
+[INFO ] 2023-05-03 17:50:02.168 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-03 17:50:13.335 [main] BaseClass - Open disputes page.
+[INFO ] 2023-05-03 17:50:19.581 [main] BaseClass - Clicked on show disputes.
+[INFO ] 2023-05-03 17:50:22.764 [main] BaseClass - Dispute Accepted.
+[INFO ] 2023-05-03 17:50:29.944 [main] BaseClass - Dispute send.
+[INFO ] 2023-05-03 17:50:36.171 [main] BaseClass - Verification of Dispute acceptance is failed.
+[INFO ] 2023-05-03 17:51:59.545 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-05-03 17:52:05.235 [main] BaseClass - Product name is entered.
+[INFO ] 2023-05-03 17:52:10.521 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-05-03 17:52:16.750 [main] BaseClass - Customer got wrong product option selected.
+[INFO ] 2023-05-03 17:52:16.936 [main] BaseClass - I want the order to be shipped immediately option is selected.
+[INFO ] 2023-05-03 17:52:20.490 [main] BaseClass - Queries entered in text fields.
+[INFO ] 2023-05-03 17:52:25.582 [main] BaseClass - Dispute saved.
+[INFO ] 2023-05-03 17:52:25.698 [main] BaseClass - Verification of Dispute raised Successfully.
+[INFO ] 2023-05-03 17:52:34.089 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-03 17:52:40.703 [main] BaseClass - Open disputes page.
+[INFO ] 2023-05-03 17:52:46.966 [main] BaseClass - Clicked on show disputes.
+[INFO ] 2023-05-03 17:52:50.124 [main] BaseClass - Dispute Accepted.
+[INFO ] 2023-05-03 17:52:57.389 [main] BaseClass - Dispute send.
+[INFO ] 2023-05-03 17:53:02.642 [main] BaseClass - Verification of Dispute acceptance is failed.
+[INFO ] 2023-05-03 17:55:23.366 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-05-03 17:55:28.678 [main] BaseClass - Product name is entered.
+[INFO ] 2023-05-03 17:55:33.956 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-05-03 17:55:40.182 [main] BaseClass - Customer got wrong product option selected.
+[INFO ] 2023-05-03 17:55:40.351 [main] BaseClass - I want the order to be shipped immediately option is selected.
+[INFO ] 2023-05-03 17:55:43.915 [main] BaseClass - Queries entered in text fields.
+[INFO ] 2023-05-03 17:55:49.005 [main] BaseClass - Dispute saved.
+[INFO ] 2023-05-03 17:55:49.124 [main] BaseClass - Verification of Dispute raised Successfully.
+[INFO ] 2023-05-03 17:55:59.646 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-03 17:56:06.369 [main] BaseClass - Open disputes page.
+[INFO ] 2023-05-03 17:56:12.618 [main] BaseClass - Clicked on show disputes.
+[INFO ] 2023-05-03 17:56:15.817 [main] BaseClass - Dispute Accepted.
+[INFO ] 2023-05-03 17:56:23.034 [main] BaseClass - Dispute send.
+[INFO ] 2023-05-03 17:56:31.076 [main] BaseClass - Verification of Dispute acceptance is successed.
+[INFO ] 2023-05-03 17:56:35.965 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-05-03 17:56:42.254 [main] BaseClass - Product name is entered.
+[INFO ] 2023-05-03 17:56:47.590 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-05-03 17:56:59.697 [main] BaseClass - Verification of open Dispute History successfull.
+[INFO ] 2023-05-03 17:56:59.749 [main] BaseClass - Verification of Dispute acceptance is successed.

@@ -248,5 +248,13 @@ public class TC23_VerifyAddTrackingAndRefundDspFunction extends BaseClass{
 		cop.clickOnDispHistory();
 		Thread.sleep(6000);
 		logger.info("Verification of open Dispute History successfull.");
+		
+		if(cop.getDspHistoryStatusA().equals("Accepted")) {
+			Assert.assertTrue(true);
+			logger.info("Verification of Dispute acceptance is successed.");
+		}else {
+			logger.info("Verification of Dispute acceptance is failed.");
+			Assert.assertTrue(false);
+		}
 	}
 }

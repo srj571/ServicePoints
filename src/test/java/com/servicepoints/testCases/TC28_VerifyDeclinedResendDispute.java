@@ -249,13 +249,20 @@ public class TC28_VerifyDeclinedResendDispute extends BaseClass {
 		cop.clickOnFirstDisputeTab();
 		Thread.sleep(5000);
 		
-		
 		if(driver.getPageSource().contains("Dispute history")) {
 			Assert.assertTrue(true);
 			logger.info("Verification of Dispute history opening is successfull.");
 		}else {
 			captureScreen(driver, "acceptDispute");
 			logger.info("Verification of Dispute history opening is failed.");
+			Assert.assertTrue(false);
+		}
+		
+		if(cop.getDspHistoryStatusD().equals("Declined")) {
+			Assert.assertTrue(true);
+			logger.info("Verification of Dispute declined is successed.");
+		}else {
+			logger.info("Verification of Dispute declined is failed.");
 			Assert.assertTrue(false);
 		}
 	}

@@ -257,5 +257,14 @@ public class TC27_VerifyAddTrackingAndResend extends BaseClass{
 			logger.info("Verification of Dispute history opening is failed.");
 			Assert.assertTrue(false);
 		}
+		
+		
+		if(cop.getDspHistoryStatusA().equals("Accepted")) {
+			Assert.assertTrue(true);
+			logger.info("Verification of Dispute acceptance is successed.");
+		}else {
+			logger.info("Verification of Dispute acceptance is failed.");
+			Assert.assertTrue(false);
+		}
 	}
 }

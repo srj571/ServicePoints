@@ -1,6 +1,5 @@
 package com.servicepoints.testCases;
 
-import java.awt.AWTException;
 import java.io.IOException;
 
 import org.testng.annotations.Test;
@@ -53,11 +52,12 @@ public class TC20_VerifyAcceptDispute extends BaseClass{
 		Thread.sleep(1000);
 		asop.clickOnSendAnswer();
 		logger.info("Dispute send.");
-		Thread.sleep(6000);
+		Thread.sleep(5000);
 		
 		
 		if(driver.getPageSource().contains("Dispute accepted successfully")) {
 			Assert.assertTrue(true);
+			Thread.sleep(3000);
 			logger.info("Verification of Dispute acceptance is successed.");
 		}else {
 			captureScreen(driver, "acceptDispute");
@@ -79,14 +79,10 @@ public class TC20_VerifyAcceptDispute extends BaseClass{
 		Thread.sleep(2000);
 		
 		cop.clickOnStatusDrop();
-		//Thread.sleep(3000);
+		Thread.sleep(1000);
 		cop.dropdownSearch(process);
-		//logger.info("fulfilled status is entered.");
-		//cop.clickOnFulfillTab();
-		//cop.clickOnFProcessingTab();
-		//aop.clickOnProcessTab();
 		cop.clickOnProcessingTab();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		
 		cop.clickOnFDiv();		
 		logger.info("Clicked on first div.");
@@ -97,5 +93,15 @@ public class TC20_VerifyAcceptDispute extends BaseClass{
 		cop.clickOnDispHistory();
 		Thread.sleep(5000);
 		logger.info("Verification of open Dispute History successfull.");
+		
+		if(cop.getDspHistoryStatusA().equals("Accepted")) {
+			Assert.assertTrue(true);
+			logger.info("Verification of Dispute acceptance is successed.");
+		}else {
+			logger.info("Verification of Dispute acceptance is failed.");
+			Assert.assertTrue(false);
+		}
+		
+		
 	}
 }

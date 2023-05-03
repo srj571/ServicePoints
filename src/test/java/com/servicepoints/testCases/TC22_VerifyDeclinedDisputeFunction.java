@@ -141,5 +141,15 @@ public class TC22_VerifyDeclinedDisputeFunction extends BaseClass{
 		cop.clickOnDispHistory();
 		Thread.sleep(5000);
 		logger.info("Verification of open Dispute History successfull.");
+		
+		if(cop.getDspHistoryStatusD().equals("Declined")) {
+			Assert.assertTrue(true);
+			logger.info("Verification of Dispute declined is successed.");
+		}else {
+			logger.info("Verification of Dispute declined is failed.");
+			Assert.assertTrue(false);
+		}
+		
+		
 	}
 }

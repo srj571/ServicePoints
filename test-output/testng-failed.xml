@@ -7,13 +7,13 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.servicepoints.testCases.TC17_VerifyAddNewVariant">
+      <class name="com.servicepoints.testCases.TC20_VerifyAcceptDispute">
         <methods>
-          <include name="verifyAddNewVariant"/>
+          <include name="verifyAcceptDisputeTest"/>
           <include name="setup"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.servicepoints.testCases.TC17_VerifyAddNewVariant -->
+      </class> <!-- com.servicepoints.testCases.TC20_VerifyAcceptDispute -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
