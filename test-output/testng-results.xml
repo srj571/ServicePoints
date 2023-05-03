@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-02T19:17:06 IST" name="Suite" finished-at="2023-05-02T19:19:49 IST" duration-ms="163452">
+  <suite started-at="2023-05-03T15:12:38 IST" name="Suite" finished-at="2023-05-03T15:22:28 IST" duration-ms="589625">
     <groups>
     </groups>
-    <test started-at="2023-05-02T19:17:06 IST" name="Test" finished-at="2023-05-02T19:19:49 IST" duration-ms="163452">
-      <class name="com.servicepoints.testCases.TC23_VerifyRefundDspDeclined">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.servicepoints.testCases.TC23_VerifyRefundDspDeclined@3faf2e7d]" started-at="2023-05-02T19:17:06 IST" name="setup" finished-at="2023-05-02T19:17:12 IST" duration-ms="5765" status="PASS">
+    <test started-at="2023-05-03T15:12:38 IST" name="Test" finished-at="2023-05-03T15:22:28 IST" duration-ms="589625">
+      <class name="com.servicepoints.testCases.TC20_VerifyOpenAcceptDisputeForOtherIssue">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.servicepoints.testCases.TC20_VerifyOpenAcceptDisputeForOtherIssue@235f4c10]" started-at="2023-05-03T15:19:48 IST" name="setup" finished-at="2023-05-03T15:19:53 IST" duration-ms="4802" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,183 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyRefundDspDeclined()[pri:0, instance:com.servicepoints.testCases.TC23_VerifyRefundDspDeclined@3faf2e7d]" started-at="2023-05-02T19:17:12 IST" name="verifyRefundDspDeclined" finished-at="2023-05-02T19:19:49 IST" duration-ms="157446" status="PASS">
+        <test-method signature="verifyOpenAcceptOtherDsp()[pri:0, instance:com.servicepoints.testCases.TC20_VerifyOpenAcceptDisputeForOtherIssue@235f4c10]" started-at="2023-05-03T15:19:53 IST" name="verifyOpenAcceptOtherDsp" finished-at="2023-05-03T15:21:07 IST" duration-ms="73850" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyRefundDspDeclined -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.servicepoints.testCases.TC23_VerifyRefundDspDeclined@3faf2e7d]" started-at="2023-05-02T19:19:49 IST" name="tearDown" finished-at="2023-05-02T19:19:49 IST" duration-ms="95" status="PASS">
+        </test-method> <!-- verifyOpenAcceptOtherDsp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.servicepoints.testCases.TC20_VerifyOpenAcceptDisputeForOtherIssue@235f4c10]" started-at="2023-05-03T15:21:07 IST" name="tearDown" finished-at="2023-05-03T15:21:07 IST" duration-ms="98" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.servicepoints.testCases.TC23_VerifyRefundDspDeclined -->
+      </class> <!-- com.servicepoints.testCases.TC20_VerifyOpenAcceptDisputeForOtherIssue -->
+      <class name="com.servicepoints.testCases.TC14_VerifyExcludeFunctionTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.servicepoints.testCases.TC14_VerifyExcludeFunctionTest@4ebea12c]" started-at="2023-05-03T15:13:56 IST" name="setup" finished-at="2023-05-03T15:14:03 IST" duration-ms="7316" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyExcludeQuotationTest()[pri:0, instance:com.servicepoints.testCases.TC14_VerifyExcludeFunctionTest@4ebea12c]" started-at="2023-05-03T15:14:03 IST" name="verifyExcludeQuotationTest" finished-at="2023-05-03T15:14:35 IST" duration-ms="31502" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyExcludeQuotationTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.servicepoints.testCases.TC14_VerifyExcludeFunctionTest@4ebea12c]" started-at="2023-05-03T15:14:35 IST" name="tearDown" finished-at="2023-05-03T15:14:35 IST" duration-ms="74" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.servicepoints.testCases.TC14_VerifyExcludeFunctionTest -->
+      <class name="com.servicepoints.testCases.TC21_VerifyDeclinedDisputeFunction">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.servicepoints.testCases.TC21_VerifyDeclinedDisputeFunction@743cb8e0]" started-at="2023-05-03T15:21:07 IST" name="setup" finished-at="2023-05-03T15:21:11 IST" duration-ms="4773" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyDeclinedDisputeTest()[pri:0, instance:com.servicepoints.testCases.TC21_VerifyDeclinedDisputeFunction@743cb8e0]" started-at="2023-05-03T15:21:11 IST" name="verifyDeclinedDisputeTest" finished-at="2023-05-03T15:22:28 IST" duration-ms="76032" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDeclinedDisputeTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.servicepoints.testCases.TC21_VerifyDeclinedDisputeFunction@743cb8e0]" started-at="2023-05-03T15:22:28 IST" name="tearDown" finished-at="2023-05-03T15:22:28 IST" duration-ms="92" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.servicepoints.testCases.TC21_VerifyDeclinedDisputeFunction -->
+      <class name="com.servicepoints.testCases.TC11_VerifySubmitQuoteTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.servicepoints.testCases.TC11_VerifySubmitQuoteTest@592e843a]" started-at="2023-05-03T15:12:38 IST" name="setup" finished-at="2023-05-03T15:12:43 IST" duration-ms="5377" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifySubmitQuoteTest()[pri:0, instance:com.servicepoints.testCases.TC11_VerifySubmitQuoteTest@592e843a]" started-at="2023-05-03T15:12:43 IST" name="verifySubmitQuoteTest" finished-at="2023-05-03T15:13:18 IST" duration-ms="34643" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySubmitQuoteTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.servicepoints.testCases.TC11_VerifySubmitQuoteTest@592e843a]" started-at="2023-05-03T15:13:18 IST" name="tearDown" finished-at="2023-05-03T15:13:18 IST" duration-ms="74" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.servicepoints.testCases.TC11_VerifySubmitQuoteTest -->
+      <class name="com.servicepoints.testCases.TC15_verifyAskForPriceChange">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.servicepoints.testCases.TC15_verifyAskForPriceChange@2a1edad4]" started-at="2023-05-03T15:14:35 IST" name="setup" finished-at="2023-05-03T15:14:41 IST" duration-ms="5911" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyAskForPriceChange()[pri:0, instance:com.servicepoints.testCases.TC15_verifyAskForPriceChange@2a1edad4]" started-at="2023-05-03T15:14:41 IST" name="verifyAskForPriceChange" finished-at="2023-05-03T15:16:03 IST" duration-ms="81853" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAskForPriceChange -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.servicepoints.testCases.TC15_verifyAskForPriceChange@2a1edad4]" started-at="2023-05-03T15:16:03 IST" name="tearDown" finished-at="2023-05-03T15:16:03 IST" duration-ms="93" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.servicepoints.testCases.TC15_verifyAskForPriceChange -->
+      <class name="com.servicepoints.testCases.TC16_VerifyUpdateDeleteQuotation">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.servicepoints.testCases.TC16_VerifyUpdateDeleteQuotation@6256ac4f]" started-at="2023-05-03T15:16:03 IST" name="setup" finished-at="2023-05-03T15:16:09 IST" duration-ms="5914" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyUpdateDeleteQuotation()[pri:0, instance:com.servicepoints.testCases.TC16_VerifyUpdateDeleteQuotation@6256ac4f]" started-at="2023-05-03T15:16:09 IST" name="verifyUpdateDeleteQuotation" finished-at="2023-05-03T15:18:12 IST" duration-ms="123333" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUpdateDeleteQuotation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.servicepoints.testCases.TC16_VerifyUpdateDeleteQuotation@6256ac4f]" started-at="2023-05-03T15:18:12 IST" name="tearDown" finished-at="2023-05-03T15:18:12 IST" duration-ms="93" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.servicepoints.testCases.TC16_VerifyUpdateDeleteQuotation -->
+      <class name="com.servicepoints.testCases.TC19_VerifyAcceptDispute">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.servicepoints.testCases.TC19_VerifyAcceptDispute@7fcbe147]" started-at="2023-05-03T15:18:49 IST" name="setup" finished-at="2023-05-03T15:18:54 IST" duration-ms="5200" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyAcceptDisputeTest()[pri:0, instance:com.servicepoints.testCases.TC19_VerifyAcceptDispute@7fcbe147]" started-at="2023-05-03T15:18:54 IST" name="verifyAcceptDisputeTest" finished-at="2023-05-03T15:19:48 IST" duration-ms="53752" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAcceptDisputeTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.servicepoints.testCases.TC19_VerifyAcceptDispute@7fcbe147]" started-at="2023-05-03T15:19:48 IST" name="tearDown" finished-at="2023-05-03T15:19:48 IST" duration-ms="76" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.servicepoints.testCases.TC19_VerifyAcceptDispute -->
+      <class name="com.servicepoints.testCases.TC12_VerifyAcceptQuotationTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.servicepoints.testCases.TC12_VerifyAcceptQuotationTest@1536602f]" started-at="2023-05-03T15:13:18 IST" name="setup" finished-at="2023-05-03T15:13:23 IST" duration-ms="4619" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyAcceptQuoteTest()[pri:0, instance:com.servicepoints.testCases.TC12_VerifyAcceptQuotationTest@1536602f]" started-at="2023-05-03T15:13:23 IST" name="verifyAcceptQuoteTest" finished-at="2023-05-03T15:13:56 IST" duration-ms="33039" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAcceptQuoteTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.servicepoints.testCases.TC12_VerifyAcceptQuotationTest@1536602f]" started-at="2023-05-03T15:13:56 IST" name="tearDown" finished-at="2023-05-03T15:13:56 IST" duration-ms="76" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.servicepoints.testCases.TC12_VerifyAcceptQuotationTest -->
+      <class name="com.servicepoints.testCases.TC18_VerifyOpenDisputFunction">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.servicepoints.testCases.TC18_VerifyOpenDisputFunction@44c79f32]" started-at="2023-05-03T15:18:12 IST" name="setup" finished-at="2023-05-03T15:18:17 IST" duration-ms="5019" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyOpenDisputeTest()[pri:0, instance:com.servicepoints.testCases.TC18_VerifyOpenDisputFunction@44c79f32]" started-at="2023-05-03T15:18:17 IST" name="verifyOpenDisputeTest" finished-at="2023-05-03T15:18:49 IST" duration-ms="31779" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyOpenDisputeTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.servicepoints.testCases.TC18_VerifyOpenDisputFunction@44c79f32]" started-at="2023-05-03T15:18:49 IST" name="tearDown" finished-at="2023-05-03T15:18:49 IST" duration-ms="73" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.servicepoints.testCases.TC18_VerifyOpenDisputFunction -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

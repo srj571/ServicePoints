@@ -1,5 +1,10 @@
 package com.servicepoints.PageObjects;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.Toolkit;
+import java.awt.datatransfer.StringSelection;
+import java.awt.event.KeyEvent;
 import java.util.List;
 
 import org.openqa.selenium.JavascriptExecutor;
@@ -324,5 +329,27 @@ public class ClientOrdersPage {
 		closeInShowRequest.click();
 	}
 	
+	@FindBy(xpath="//label[@class='custom-file-label']")
+	WebElement attachments;
 	
+	public void clickOnAttachments() {
+		attachments.click();
+	}
+	public void sendFile() throws AWTException { 	
+		Robot robot = new Robot();
+	    robot.delay(1000);
+
+	    // Set the file path to be uploaded
+	    StringSelection stringSelection = new StringSelection("Home/Downloads/A324.pdf");
+	    Toolkit.getDefaultToolkit().getSystemClipboard().setContents(stringSelection, null);
+
+	    // Paste the file path into the file dialog box and press Enter to upload the file
+	    robot.keyPress(KeyEvent.VK_CONTROL);
+	    robot.keyPress(KeyEvent.VK_V);
+	    robot.keyRelease(KeyEvent.VK_V);
+	    robot.keyRelease(KeyEvent.VK_CONTROL);
+	    robot.delay(1000);
+	    robot.keyPress(KeyEvent.VK_ENTER);
+	    robot.keyRelease(KeyEvent.VK_ENTER);
+	}
 }

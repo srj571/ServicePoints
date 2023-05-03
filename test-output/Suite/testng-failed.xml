@@ -7,13 +7,13 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.servicepoints.testCases.TC23_VerifyRefundDspDeclined">
+      <class name="com.servicepoints.testCases.TC19_VerifyAcceptDispute">
         <methods>
-          <include name="verifyRefundDspDeclined"/>
+          <include name="verifyAcceptDisputeTest"/>
           <include name="setup"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.servicepoints.testCases.TC23_VerifyRefundDspDeclined -->
+      </class> <!-- com.servicepoints.testCases.TC19_VerifyAcceptDispute -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

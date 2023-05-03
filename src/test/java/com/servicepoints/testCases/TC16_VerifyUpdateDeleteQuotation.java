@@ -7,6 +7,7 @@ import java.util.Set;
 import org.testng.annotations.Test;
 
 import com.servicepoints.PageObjects.AgentSupProductsPage;
+import com.servicepoints.PageObjects.ClientOrdersPage;
 import com.servicepoints.PageObjects.ClientProductPage;
 import com.servicepoints.PageObjects.LoginPage;
 import com.servicepoints.utilities.ReadConfig;
@@ -195,9 +196,11 @@ public class TC16_VerifyUpdateDeleteQuotation extends BaseClass{
 		Thread.sleep(3000);
 		logger.info("Client logged in successfully.");
 		
-		cpp.getProductsPage();
+		ClientOrdersPage cop=new ClientOrdersPage(driver);
+		cop.clickOnOrdersTab();
 		Thread.sleep(2000);
-		cpp.searchProduct(ProductForUpdate);
+		
+		cop.sendPnameinSearch(ProductForUpdate);
 		Thread.sleep(5000);
 		
 		logger.info("Verification of Quotation Status after deletion Successed..");

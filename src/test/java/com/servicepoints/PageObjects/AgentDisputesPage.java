@@ -1,5 +1,11 @@
 package com.servicepoints.PageObjects;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.Toolkit;
+import java.awt.datatransfer.StringSelection;
+import java.awt.event.KeyEvent;
+
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -124,4 +130,28 @@ public class AgentDisputesPage {
 		JavascriptExecutor exe=(JavascriptExecutor) driver;
 		exe.executeScript("arguments[0].scrollIntoView();", btnSendAnswer);
 	}
+	
+	@FindBy(xpath="//input[@name='upload']")
+	WebElement attachments;
+	
+	public void clickOnAttachments() {
+		attachments.click();
+	}
+	
+	public void sendFile() throws AWTException {
+		Robot robot = new Robot();
+	    robot.delay(1000);
+
+	    StringSelection stringSelection = new StringSelection("Home/Downloads/A324.pdf");
+	    Toolkit.getDefaultToolkit().getSystemClipboard().setContents(stringSelection, null);
+
+	    robot.keyPress(KeyEvent.VK_CONTROL);
+	    robot.keyPress(KeyEvent.VK_V);
+	    robot.keyRelease(KeyEvent.VK_V);
+	    robot.keyRelease(KeyEvent.VK_CONTROL);
+	    robot.delay(1000);
+	    robot.keyPress(KeyEvent.VK_ENTER);
+	    robot.keyRelease(KeyEvent.VK_ENTER);
+	}
+
 }

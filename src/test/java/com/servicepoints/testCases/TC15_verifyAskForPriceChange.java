@@ -87,15 +87,9 @@ public class TC15_verifyAskForPriceChange extends BaseClass {
 		asop.clickOnSbmtNewPrice();
 		logger.info("Entered changed price and Clicked on submit.");
 		
-		try {
-			asop.closeNotifyPopUp();
-			logger.info("Pop up get closed.");
-			Thread.sleep(3000);
-		}catch(Exception e) {
-			logger.info("Element is not found.");
-			Thread.sleep(4000);
-		}
-		
+		asop.closeNotifyPopUp();
+		logger.info("Pop up get closed.");
+		Thread.sleep(3000);
 		
 		if (driver.getPageSource().contains("New price")) {
 			logger.info("Status changed to New Price.");
@@ -134,8 +128,9 @@ public class TC15_verifyAskForPriceChange extends BaseClass {
 			}
 		}
 	
-		Thread.sleep(3000);
-		cl.clsePopUpFrmClntSideAskPr();
+		cl.waitTillCloseBtnVisible(driver);
+		
+		cl.closePopUpFrmClntSideAskPr();
 		Thread.sleep(3000);
 		logger.info("Pop up closed.");
 	

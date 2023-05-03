@@ -86,7 +86,12 @@ public class ClientProductPage {
 	@FindBy(xpath="(//button[@type='button'][normalize-space()='Close'])[2]")
 	WebElement clsePopUpFrmClntSide;
 	
-	public void clsePopUpFrmClntSideAskPr() {
+	public void waitTillCloseBtnVisible(WebDriver driver) {
+		WebDriverWait wait=new WebDriverWait(driver, 10);
+		wait.until(ExpectedConditions.visibilityOf(clsePopUpFrmClntSide));
+	}
+	
+	public void closePopUpFrmClntSideAskPr() {
 		clsePopUpFrmClntSide.click();
 	}
 	
