@@ -65,15 +65,6 @@ public class TC18_VerifyCancelOrderFunctionality extends BaseClass{
 		String child = it.next();
 		driver.switchTo().window(child);
 		Thread.sleep(4000);
-
-//		String parentWindow=driver.getWindowHandle();
-//		Set<String> windowHandles = driver.getWindowHandles();
-//		for(String handle: windowHandles) {
-//			if(!handle.equals(parentWindow)) {
-//				driver.switchTo().window(handle);
-//				break;
-//			}
-//		}
 		
 		aspp.firstPcsPrice(FirstPcsPrice);
 		aspp.secPcsPrice(SecPcsPrice);

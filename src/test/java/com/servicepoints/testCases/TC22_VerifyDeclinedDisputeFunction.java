@@ -149,7 +149,5 @@ public class TC22_VerifyDeclinedDisputeFunction extends BaseClass{
 			logger.info("Verification of Dispute declined is failed.");
 			Assert.assertTrue(false);
 		}
-		
-		
 	}
 }

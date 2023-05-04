@@ -235,9 +235,21 @@ public class TC23_VerifyAddTrackingAndRefundDspFunction extends BaseClass{
 		logger.info("Client logged in Successfully.");
 		
 		cop.clickOnOrdersTab();
+
+		cop.clickOnStatusDrop();
+		//Thread.sleep(3000);
+		cop.dropdownSearch(process);
+		//logger.info("fulfilled status is entered.");
+		//cop.clickOnFulfillTab();
+		//cop.clickOnFProcessingTab();
+		//aop.clickOnProcessTab();
+		cop.clickOnProcessingTab();
+		Thread.sleep(3000);
+		
 		cop.sendPnameinSearch(productTrack);
 		logger.info("Product name is entered.");
 		Thread.sleep(2000);
+		
 		cop.clickOnFDiv();		
 		logger.info("Clicked on first div.");
 		Thread.sleep(3000);

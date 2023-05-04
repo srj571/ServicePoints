@@ -553,6 +553,21 @@ public class ReadConfig {
 		String cpass=po.getProperty("CDeleteQuotePass");
 		return cpass;
 	}
+	
+	public String setClientNameForPayment() {
+		String cname=po.getProperty("ClientForPayment");
+		return cname;
+	}
+	
+	public String setPriceForPayment() {
+		String price=po.getProperty("AmountForPayment");
+		return price;
+	}
+	
+	public String setRemarkForPayment() {
+		String remark=po.getProperty("Remark");
+		return remark;
+	}
 }
 
 

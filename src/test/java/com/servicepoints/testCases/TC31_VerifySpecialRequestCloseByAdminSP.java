@@ -21,7 +21,7 @@ public class TC31_VerifySpecialRequestCloseByAdminSP extends BaseClass{
 	public String CMail=con.setSRClientMail();
 	public String CPass=con.setSRClientPass();
 	public String productSR=con.setProductSR();
-	
+	public String process=con.setProcessStatus();
 	public String agentMailDsp=con.setAMailDsp();
 	public String agentPassDsp=con.setApassDsp();
 	public String teamleaderSr=con.setTeamleadSR();
@@ -41,7 +41,16 @@ public class TC31_VerifySpecialRequestCloseByAdminSP extends BaseClass{
 		
 		ClientOrdersPage cop=new ClientOrdersPage(driver);
 		cop.clickOnOrdersTab();
-		
+		Thread.sleep(1000);
+		cop.clickOnStatusDrop();
+		//Thread.sleep(3000);
+		cop.dropdownSearch(process);
+		//logger.info("fulfilled status is entered.");
+		//cop.clickOnFulfillTab();
+		//cop.clickOnFProcessingTab();
+		//aop.clickOnProcessTab();
+		cop.clickOnProcessingTab();
+		Thread.sleep(3000);
 		cop.sendPnameinSearch(productSR);
 		logger.info("Product name is entered.");
 		Thread.sleep(2000);

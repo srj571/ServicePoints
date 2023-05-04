@@ -197,10 +197,11 @@ public class TC16_VerifyUpdateDeleteQuotation extends BaseClass{
 		logger.info("Client logged in successfully.");
 		
 		ClientOrdersPage cop=new ClientOrdersPage(driver);
-		cop.clickOnOrdersTab();
+		
+		cpp.getProductsPage();
 		Thread.sleep(2000);
 		
-		cop.sendPnameinSearch(ProductForUpdate);
+		cpp.searchProduct(ProductForUpdate);
 		Thread.sleep(5000);
 		
 		logger.info("Verification of Quotation Status after deletion Successed..");

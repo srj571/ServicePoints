@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.servicepoints.testCases.TC25_VerifyRefundAndConversation">
+      <class name="com.servicepoints.testCases.TC32_VerifyClientPaymentApproveByAdmin">
         <methods>
+          <include name="verifyClientPaymentApprovedByAdmin"/>
           <include name="setup"/>
-          <include name="verifyRefundAndConversation"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.servicepoints.testCases.TC25_VerifyRefundAndConversation -->
+      </class> <!-- com.servicepoints.testCases.TC32_VerifyClientPaymentApproveByAdmin -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -7,13 +7,13 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.servicepoints.testCases.TC20_VerifyAcceptDispute">
+      <class name="com.servicepoints.testCases.TC31_VerifySpecialRequestCloseByAdminSP">
         <methods>
-          <include name="verifyAcceptDisputeTest"/>
           <include name="setup"/>
           <include name="tearDown"/>
+          <include name="verifySpecialRequestCloseByAdminSp"/>
         </methods>
-      </class> <!-- com.servicepoints.testCases.TC20_VerifyAcceptDispute -->
+      </class> <!-- com.servicepoints.testCases.TC31_VerifySpecialRequestCloseByAdminSP -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
