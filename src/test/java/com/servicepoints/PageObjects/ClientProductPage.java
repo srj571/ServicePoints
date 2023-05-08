@@ -83,11 +83,11 @@ public class ClientProductPage {
 	WebElement logoutClient;
 	
 	//Required for- AskForPriceChange
-	@FindBy(xpath="(//button[@type='button'][normalize-space()='Close'])[2]")
+	@FindBy(xpath="//div[@id='high_price_error_modal']//button[@type='button'][normalize-space()='Close']")
 	WebElement clsePopUpFrmClntSide;
 	
 	public void waitTillCloseBtnVisible(WebDriver driver) {
-		WebDriverWait wait=new WebDriverWait(driver, 10);
+		WebDriverWait wait=new WebDriverWait(driver, 15);
 		wait.until(ExpectedConditions.visibilityOf(clsePopUpFrmClntSide));
 	}
 	

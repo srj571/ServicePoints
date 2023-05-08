@@ -6,18 +6,24 @@ import org.testng.annotations.Test;
 
 import com.servicepoints.PageObjects.ClientStoresPage;
 import com.servicepoints.PageObjects.LoginPage;
+import com.servicepoints.utilities.ReadConfig;
 
 import junit.framework.Assert;
 
 public class TC11_VerifyDeletionOfStoreTest extends BaseClass{
+	
+	ReadConfig rc=new ReadConfig();
+	public String CMailStore=rc.setClientMForStore();
+	public String CPassStore=rc.setCPassForStore();
+	
 	@Test
 	public void verifyDeletingStore() throws IOException, InterruptedException {
 		LoginPage lp = new LoginPage(driver);
-		lp.setAdminMailId(clientemail);
+		lp.setAdminMailId(CMailStore);
 		logger.info("Email_id is entered.");
 		Thread.sleep(1000);
 		
-		lp.setAdminPassword(cPass);
+		lp.setAdminPassword(CPassStore);
 		logger.info("Password is entered.");
 		Thread.sleep(1000);
 		
@@ -41,6 +47,5 @@ public class TC11_VerifyDeletionOfStoreTest extends BaseClass{
 			logger.info("Varification for Store deletion is failed.");
 			Thread.sleep(2000);
 		}
-		
 	}
 }

@@ -20,7 +20,7 @@
       <class name="com.servicepoints.testCases.TC08_VerifyAddAgentSupportTest"/>
       <class name="com.servicepoints.testCases.TC09_VerifyAddingNewStore"/>
       <class name="com.servicepoints.testCases.TC10_VerifyUpdationOfStoreTest"/>
-      <class name="com.servicepoints.testCases.TC11_VerifyDeletionOfStoreTest"/>                                                                          
+      <class name="com.servicepoints.testCases.TC11_VerifyDeletionOfStoreTest"/>                                                                   
       <class name="com.servicepoints.testCases.TC12_VerifySubmitQuoteTest"/>
       <class name="com.servicepoints.testCases.TC13_VerifyAcceptQuotationTest"/>
       <class name="com.servicepoints.testCases.TC14_VerifyExcludeFunctionTest"/>
@@ -39,8 +39,9 @@
       <class name="com.servicepoints.testCases.TC27_VerifyAddTrackingAndResend"/>
       <class name="com.servicepoints.testCases.TC28_VerifyDeclinedResendDispute"/>
       <class name="com.servicepoints.testCases.TC29_VerifySpecialRequestFunction"/>
-      <class name="com.servicepoints.testCases.TC30_VerifyCloseSpecialRequestFunction"/>-->
-      <class name="com.servicepoints.testCases.TC31_VerifySpecialRequestCloseByAdminSP"/>
+      <class name="com.servicepoints.testCases.TC30_VerifyCloseSpecialRequestFunction"/>
+      <class name="com.servicepoints.testCases.TC31_VerifySpecialRequestCloseByAdminSP"/>-->
+      <class name="com.servicepoints.testCases.TC33_VerifyPaymentPendingOrderTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

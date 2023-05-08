@@ -91,6 +91,5 @@ public class TC32_VerifyClientPaymentApproveByAdmin extends BaseClass{
 		cpp.sendRemarkWhilePay(remark);
 		Thread.sleep(3000);
 		cpp.clickOnIHavePaid();
-		
 	}
 }

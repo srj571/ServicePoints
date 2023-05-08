@@ -568,6 +568,61 @@ public class ReadConfig {
 		String remark=po.getProperty("Remark");
 		return remark;
 	}
+	
+	public String setClientMForStore() {
+		String cmail=po.getProperty("CMailForStore");
+		return cmail;
+	}
+	
+	public String setCPassForStore() {
+		String cpass=po.getProperty("CPassForStore");
+		return cpass;
+	}
+	
+	public String setCmailForPayment() {
+		String cMailPayment=po.getProperty("CMailForPayment");
+		return cMailPayment;
+	}
+	
+	public String setCPassForPayment() {
+		String cMailPayment=po.getProperty("CPassForPayment");
+		return cMailPayment;
+	}
+	
+	public String setAmailForPayment() {
+		String cMailPayment=po.getProperty("AMailForPayment");
+		return cMailPayment;
+	}
+	
+	public String setAPassForPayment() {
+		String cMailPayment=po.getProperty("APassForPayment");
+		return cMailPayment;
+	}
+	
+	public String setProductForPaymentPO() {
+		String cMailPayment=po.getProperty("ProductForPayment");
+		return cMailPayment;
+	}
+	
+	public String setCNameForPaymentPO() {
+		String cname=po.getProperty("CNameForPayment");
+		return cname;
+	}
+	
+	public String setANameForPaymentPO() {
+		String cname=po.getProperty("ANameForPayment");
+		return cname;
+	}
+	
+	public String setASupportForPayment() {
+		String spmail=po.getProperty("ASupportForPayment");
+		return spmail;
+	}
+	
+	public String setASPPassForPayment(){
+		String sppass=po.getProperty("ASPPassForPayment");
+		return sppass;
+	}
 }
 
 

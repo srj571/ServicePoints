@@ -15,8 +15,6 @@ import junit.framework.Assert;
 
 public class TC13_VerifyAcceptQuotationTest extends BaseClass {
 
-	
-	
 	@Test
 	public void verifyAcceptQuoteTest() throws InterruptedException, IOException {
 		LoginPage lp = new LoginPage(driver);
@@ -90,7 +88,6 @@ public class TC13_VerifyAcceptQuotationTest extends BaseClass {
 //				break;
 //			}
 //		}
-//		
 //		
 //		cl.scrollTillSpRequestBtn(driver);
 //		Thread.sleep(3000);

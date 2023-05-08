@@ -368,4 +368,20 @@ public class ClientOrdersPage {
 		return val;
 	}
 	
+	@FindBy(xpath="//span[normalize-space()='Pending']")
+	WebElement financialStatus;
+	
+	public String getFinancialStatus() {
+		String status=financialStatus.getText();
+		return status;
+	}
+	
+	@FindBy(xpath="//span[contains(text(),'Not quoted')]")
+	WebElement orderStatusPayment;
+	
+	public String getOrderStatusPayment() {
+		String ostatus=orderStatusPayment.getText();
+		return ostatus;
+	}
+	
 }
