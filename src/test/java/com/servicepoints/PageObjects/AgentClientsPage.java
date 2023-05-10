@@ -35,7 +35,7 @@ public class AgentClientsPage {
 		loginBtn.click();
 	}
 	
-	@FindBy(xpath="//a[contains(text(),'Anurag')]")
+	@FindBy(xpath="//a[contains(text(),'Prince')]")
 	WebElement clientDiv;
 	
 	public void clickOnFClientDiv() {

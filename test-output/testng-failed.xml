@@ -7,13 +7,27 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.servicepoints.testCases.TC33_VerifyPaymentPendingOrderTest">
+      <class name="com.servicepoints.testCases.TC19_VerifyOpenDisputFunction">
         <methods>
+          <include name="verifyOpenDisputeTest"/>
           <include name="setup"/>
-          <include name="verifyPaymentPendingOrder"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.servicepoints.testCases.TC33_VerifyPaymentPendingOrderTest -->
+      </class> <!-- com.servicepoints.testCases.TC19_VerifyOpenDisputFunction -->
+      <class name="com.servicepoints.testCases.TC20_VerifyAcceptDispute">
+        <methods>
+          <include name="verifyAcceptDisputeTest"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.servicepoints.testCases.TC20_VerifyAcceptDispute -->
+      <class name="com.servicepoints.testCases.TC18_VerifyCancelOrderFunctionality">
+        <methods>
+          <include name="verifyCancelOrderFunctionality"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.servicepoints.testCases.TC18_VerifyCancelOrderFunctionality -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

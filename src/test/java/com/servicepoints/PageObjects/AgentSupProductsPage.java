@@ -1,5 +1,8 @@
 package com.servicepoints.PageObjects;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
 import java.util.List;
 
 import org.openqa.selenium.JavascriptExecutor;
@@ -244,5 +247,34 @@ public class AgentSupProductsPage {
 	public void scrollTillDeleteBtn(WebDriver driver) {
 		JavascriptExecutor exe=(JavascriptExecutor) driver;
 		exe.executeScript("arguments[0].scrollIntoView();", deletequote);
+	}
+	
+	public void switchOnOtherTab() throws AWTException {
+		Robot robot = new Robot();
+		robot.keyPress(KeyEvent.VK_CONTROL);
+		robot.keyPress(KeyEvent.VK_TAB);
+		robot.keyRelease(KeyEvent.VK_TAB);
+		robot.keyRelease(KeyEvent.VK_CONTROL);
+	}
+	
+	@FindBy(xpath="//span[@title='All clients']")
+	WebElement allClientsFilter;
+	
+	public void clickOnAllClientsFilter() {
+		allClientsFilter.click();
+	}
+	
+	@FindBy(xpath="//input[@role='searchbox']")
+	WebElement allClientsSearchF;
+	
+	public void setClientNameInSearch(String cname) {
+		allClientsSearchF.sendKeys(cname);
+	}
+	
+	@FindBy(xpath="(//li[@role='option'])[1]")
+	WebElement fClientTab;
+	
+	public void clickOnfClientTab() {
+		fClientTab.click();
 	}
 }

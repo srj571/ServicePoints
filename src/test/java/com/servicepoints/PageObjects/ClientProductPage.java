@@ -221,5 +221,17 @@ public class ClientProductPage {
 		return status;
 	}
 	
+	@FindBy(xpath="//button[normalize-space()='Request for quotation']")
+	WebElement requestForQuoteBtn;
 	
+	public void clickOnRequestForQuoteBtn() {
+		requestForQuoteBtn.click();
+	}
+	
+	@FindBy(xpath="(//button[@type='button'][normalize-space()='Close'])[1]")
+	WebElement closeBtnRequestForRequote;
+	
+	public void clickOnCloseBtnForRR() {
+		closeBtnRequestForRequote.click();
+	}
 }

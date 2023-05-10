@@ -10,7 +10,7 @@
 	
    <test thread-count="5" name="Test">
     <classes>
-     <!-- <class name="com.servicepoints.testCases.TC01_AdminLoginTest"/>
+      <!--<class name="com.servicepoints.testCases.TC01_AdminLoginTest"/>
       <class name="com.servicepoints.testCases.TC02_VerifyClientLoginTest"/>
       <class name="com.servicepoints.testCases.TC03_UserSignUpTest"/>
       <class name="com.servicepoints.testCases.TC04_VerifyClientApprovalTest"/>
@@ -20,17 +20,17 @@
       <class name="com.servicepoints.testCases.TC08_VerifyAddAgentSupportTest"/>
       <class name="com.servicepoints.testCases.TC09_VerifyAddingNewStore"/>
       <class name="com.servicepoints.testCases.TC10_VerifyUpdationOfStoreTest"/>
-      <class name="com.servicepoints.testCases.TC11_VerifyDeletionOfStoreTest"/>                                                                   
+      <class name="com.servicepoints.testCases.TC11_VerifyDeletionOfStoreTest"/>--> 
+      <!--<class name="com.servicepoints.testCases.TC14_VerifyExcludeFunctionTest"/>-->  
+      <!--<class name="com.servicepoints.testCases.TC17_VerifyAddNewVariant"/>-->                                                              
       <class name="com.servicepoints.testCases.TC12_VerifySubmitQuoteTest"/>
       <class name="com.servicepoints.testCases.TC13_VerifyAcceptQuotationTest"/>
-      <class name="com.servicepoints.testCases.TC14_VerifyExcludeFunctionTest"/>
       <class name="com.servicepoints.testCases.TC15_verifyAskForPriceChange"/>
-      <class name="com.servicepoints.testCases.TC17_VerifyAddNewVariant"/>
       <class name="com.servicepoints.testCases.TC16_VerifyUpdateDeleteQuotation"/>
       <class name="com.servicepoints.testCases.TC18_VerifyCancelOrderFunctionality"/>
       <class name="com.servicepoints.testCases.TC19_VerifyOpenDisputFunction"/>
       <class name="com.servicepoints.testCases.TC20_VerifyAcceptDispute"/>
-      <class name="com.servicepoints.testCases.TC21_VerifyOpenAcceptDisputeForOtherIssue"/>
+      <!--<class name="com.servicepoints.testCases.TC21_VerifyOpenAcceptDisputeForOtherIssue"/>
       <class name="com.servicepoints.testCases.TC22_VerifyDeclinedDisputeFunction"/>
       <class name="com.servicepoints.testCases.TC23_VerifyAddTrackingAndRefundDspFunction"/>
       <class name="com.servicepoints.testCases.TC24_VerifyRefundDspDeclined"/>
@@ -40,8 +40,10 @@
       <class name="com.servicepoints.testCases.TC28_VerifyDeclinedResendDispute"/>
       <class name="com.servicepoints.testCases.TC29_VerifySpecialRequestFunction"/>
       <class name="com.servicepoints.testCases.TC30_VerifyCloseSpecialRequestFunction"/>
-      <class name="com.servicepoints.testCases.TC31_VerifySpecialRequestCloseByAdminSP"/>-->
-      <class name="com.servicepoints.testCases.TC33_VerifyPaymentPendingOrderTest"/>
+      <class name="com.servicepoints.testCases.TC31_VerifySpecialRequestCloseByAdminSP"/>
+      <class name="com.servicepoints.testCases.TC33_VerifyPaymentPendingOrderOffTest"/>
+      <class name="com.servicepoints.testCases.TC34_VerifyPaymentPendingOrderOnTest"/>
+      <class name="com.servicepoints.testCases.TC35_VerifyPaymentPendingOrderForAddressError"/>-->
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

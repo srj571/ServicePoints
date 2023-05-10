@@ -12,7 +12,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class ClientOrdersPage {
 	
@@ -35,6 +37,10 @@ public class ClientOrdersPage {
 	
 	public void sendPnameinSearch(String nvar) {
 		txtSearch.sendKeys(nvar);
+	}
+	
+	public void clearSearchProductField() {
+		txtSearch.clear();
 	}
 	
 	@FindBy(xpath="(//div)[65]")
@@ -383,5 +389,78 @@ public class ClientOrdersPage {
 		String ostatus=orderStatusPayment.getText();
 		return ostatus;
 	}
+	
+//	public void waitTillText(WebDriver driver) {
+//		WebDriverWait wait =new WebDriverWait(driver,10);
+//		wait.until(ExpectedConditions.)
+//	}
+	
+	@FindBy(xpath="(//span[contains(text(),'Not quoted')])[1]")
+	WebElement orderStatusToNQ;
+	
+	public String getOrderStatusNQ() {
+		String val=orderStatusToNQ.getText();
+		return val;
+	}
+	
+	@FindBy(xpath="(//span[contains(text(),'Processing')])[1]")
+	WebElement processingStatus;
+	
+	public String verifyStatusToProcessing() {
+		String val=processingStatus.getText();
+		return val;
+	}
+	
+	@FindBy(xpath="(//i[contains(@class,'fas fa-edit')])[1]")
+	WebElement editAddress;
+	
+	public void clickOnEditAddress() {
+		editAddress.click();
+	}
+	
+	@FindBy(xpath="//div[@id='update_address_modal']//input[@placeholder='Address line 1']")
+	WebElement address1;
+	
+	public void clearAddress() {
+		address1.clear();
+	}
+	
+	public void setAddress1(String add) {
+		address1.sendKeys(add);
+	}
+	
+	@FindBy(xpath="//div[@id='update_address_modal']//input[@placeholder='Zip']")
+	WebElement zipNum;
+	
+	public void setZipNum(String zip) {
+		zipNum.sendKeys(zip);
+	}
+	
+	@FindBy(xpath="//div[@id='update_address_modal']//input[@name='update']")
+	WebElement saveInfo;
+	
+	public void saveInfo() {
+		saveInfo.click();
+	}
+	
+	@FindBy(xpath="//div[@id='force_update_add_modal']//div[@class='modal-content']")
+	WebElement invalidAddDiv;
+	
+	public void waitTillDivOpen(WebDriver driver) {
+		WebDriverWait wait=new WebDriverWait(driver,10);
+		wait.until(ExpectedConditions.visibilityOf(invalidAddDiv));
+	}
+	
+	@FindBy(xpath="(//button[contains(text(),'Yes')])[2]")
+	WebElement clickOnYesBtn;
+	
+	public void clickOnYesAddress() {
+		clickOnYesBtn.click();
+	}
+	
+	
+	
+	
+	
 	
 }

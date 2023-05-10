@@ -623,6 +623,53 @@ public class ReadConfig {
 		String sppass=po.getProperty("ASPPassForPayment");
 		return sppass;
 	}
+	
+	public String setSecProductName() {
+		String secPro=po.getProperty("SecondProductName");
+		return secPro;
+	}
+	
+	public String setCMailForRequote() {
+		String cmail=po.getProperty("cMailForRequote");
+		return cmail;
+	}
+	
+	public String setCPassForRequote() {
+		String cpass=po.getProperty("cPassForRequote");
+		return cpass;
+	}
+	
+	public String setProductForRequote() {
+		String proRequote=po.getProperty("productForRequote");
+		return proRequote;
+	}
+	
+	public String setAgentMailForRequote() {
+		String agentmForRequote=po.getProperty("AgentMailRequote");
+		return agentmForRequote;
+	}
+	
+	public String setAgentPassForRequote() {
+		String agentpForRequote=po.getProperty("AgentPassRequote");
+		return agentpForRequote;
+	}
+	
+	public String setAdd() {
+		String addError=po.getProperty("AddError");
+		return addError;
+	}
+	
+	public String setZip() {
+		String zip=po.getProperty("zip");
+		return zip;
+	}
+	
+	public String setProForAddError() {
+		String proAdd=po.getProperty("thirdProForAE");
+		return proAdd;
+	}
+	
+	
 }
 
 
