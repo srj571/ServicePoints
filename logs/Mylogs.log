@@ -628,3 +628,198 @@
 [INFO ] 2023-05-10 13:16:16.294 [main] BaseClass - Clicked on first div.
 [INFO ] 2023-05-10 13:16:22.593 [main] BaseClass - Customer got wrong product option selected.
 [INFO ] 2023-05-10 13:16:22.797 [main] BaseClass - I want the order to be shipped immediately option is selected.
+[INFO ] 2023-05-10 13:49:38.870 [main] BaseClass - Application Opened.
+[INFO ] 2023-05-10 13:49:39.964 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-05-10 13:49:41.054 [main] BaseClass - Password is entered.
+[INFO ] 2023-05-10 13:49:53.301 [main] BaseClass - Product name entered.
+[INFO ] 2023-05-10 13:49:57.702 [main] BaseClass - Price entered
+[INFO ] 2023-05-10 13:50:11.931 [main] BaseClass - Verification of Submit quotation Successed..
+[INFO ] 2023-05-10 13:50:17.180 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-05-10 13:50:17.260 [main] BaseClass - Password is entered.
+[INFO ] 2023-05-10 13:50:26.497 [main] BaseClass - Go to Products page.
+[INFO ] 2023-05-10 13:50:31.706 [main] BaseClass - Clicked on accept quotation button.
+[INFO ] 2023-05-10 13:50:39.751 [main] BaseClass - Verification of accepting quotation is Successed.
+[INFO ] 2023-05-10 13:50:40.919 [main] BaseClass - Go to Orders page.
+[INFO ] 2023-05-10 13:50:47.131 [main] BaseClass - Status changed to Processing.
+[INFO ] 2023-05-10 13:50:51.621 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-05-10 13:50:52.697 [main] BaseClass - Password is entered.
+[INFO ] 2023-05-10 13:51:07.246 [main] BaseClass - Product name entered.
+[INFO ] 2023-05-10 13:51:11.750 [main] BaseClass - Click on Ask for Price changed.
+[INFO ] 2023-05-10 13:51:19.275 [main] BaseClass - Entered changed price and Clicked on submit.
+[INFO ] 2023-05-10 13:51:19.474 [main] BaseClass - Pop up get closed.
+[INFO ] 2023-05-10 13:51:22.541 [main] BaseClass - Status changed to New Price.
+[INFO ] 2023-05-10 13:51:28.488 [main] BaseClass - Logged out from Agent account.
+[INFO ] 2023-05-10 13:51:32.637 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-05-10 13:51:32.705 [main] BaseClass - Password is entered.
+[INFO ] 2023-05-10 13:51:35.779 [main] BaseClass - Client loged in successfully.
+[INFO ] 2023-05-10 13:51:40.764 [main] BaseClass - Product selected.
+[INFO ] 2023-05-10 13:51:47.033 [main] BaseClass - Pop up closed.
+[INFO ] 2023-05-10 13:51:47.033 [main] BaseClass - Now accepting the quotation.
+[INFO ] 2023-05-10 13:51:49.091 [main] BaseClass - Changed price is get accepted by the Client.
+[INFO ] 2023-05-10 13:51:49.166 [main] BaseClass - Clicked on yes im sure
+[INFO ] 2023-05-10 13:51:51.219 [main] BaseClass - Now verification is to be done.
+[INFO ] 2023-05-10 13:51:54.279 [main] BaseClass - Verification is done from Client side for Ask for Price change test.
+[INFO ] 2023-05-10 13:51:55.584 [main] BaseClass - Go to Orders page.
+[INFO ] 2023-05-10 13:52:08.808 [main] BaseClass - Status changed to Processing.
+[INFO ] 2023-05-10 13:52:13.568 [main] BaseClass - Application Opened.
+[INFO ] 2023-05-10 13:52:14.644 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-05-10 13:52:15.752 [main] BaseClass - Password is entered.
+[INFO ] 2023-05-10 13:52:29.982 [main] BaseClass - Product name entered.
+[INFO ] 2023-05-10 13:52:34.417 [main] BaseClass - Price entered
+[INFO ] 2023-05-10 13:52:47.655 [main] BaseClass - Verification of Submit quotation Successed..
+[INFO ] 2023-05-10 13:52:47.936 [main] BaseClass - Price entered
+[INFO ] 2023-05-10 13:53:00.109 [main] BaseClass - Verification of Quotation updation Successed..
+[INFO ] 2023-05-10 13:53:03.026 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-05-10 13:53:04.131 [main] BaseClass - Password is entered.
+[INFO ] 2023-05-10 13:53:07.204 [main] BaseClass - Client logged in successfully.
+[INFO ] 2023-05-10 13:53:20.458 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-05-10 13:53:21.571 [main] BaseClass - Password is entered.
+[INFO ] 2023-05-10 13:53:24.631 [main] BaseClass - Agent logged in successfully.
+[INFO ] 2023-05-10 13:53:36.551 [main] BaseClass - Product name entered.
+[INFO ] 2023-05-10 13:53:40.807 [main] BaseClass - Click on delete Quote.
+[INFO ] 2023-05-10 13:53:44.878 [main] BaseClass - Yes Im sure.
+[INFO ] 2023-05-10 13:53:53.818 [main] BaseClass - Verification of Quotation deletion Successed..
+[INFO ] 2023-05-10 13:53:58.057 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-05-10 13:53:59.161 [main] BaseClass - Password is entered.
+[INFO ] 2023-05-10 13:54:02.230 [main] BaseClass - Client logged in successfully.
+[INFO ] 2023-05-10 13:54:10.418 [main] BaseClass - Verification of Quotation Status after deletion Successed..
+[INFO ] 2023-05-10 13:54:26.093 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-10 13:54:37.674 [main] BaseClass - Product name entered.
+[INFO ] 2023-05-10 13:54:42.086 [main] BaseClass - Price entered for the order.
+[INFO ] 2023-05-10 13:54:55.293 [main] BaseClass - Verification of Submit quotation Successed..
+[INFO ] 2023-05-10 13:54:58.434 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-10 13:55:17.578 [main] BaseClass - Verification of accepting quotation is Successed.
+[INFO ] 2023-05-10 13:55:18.957 [main] BaseClass - Clicked on orders tab.
+[INFO ] 2023-05-10 13:55:36.509 [main] BaseClass - Clicked on cancel order.
+[INFO ] 2023-05-10 13:55:40.593 [main] BaseClass - Clicked on first checkbox.
+[INFO ] 2023-05-10 13:55:42.659 [main] BaseClass - Clicked on Submit order.
+[INFO ] 2023-05-10 13:55:45.790 [main] BaseClass - Verification of cancel variant is Successed.
+[INFO ] 2023-05-10 13:55:53.890 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-05-10 13:55:58.080 [main] BaseClass - Product name is entered.
+[INFO ] 2023-05-10 13:56:03.374 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-05-10 13:56:09.607 [main] BaseClass - Customer got wrong product option selected.
+[INFO ] 2023-05-10 13:56:09.758 [main] BaseClass - I want the order to be shipped immediately option is selected.
+[INFO ] 2023-05-10 13:56:13.201 [main] BaseClass - Queries entered in text fields.
+[INFO ] 2023-05-10 13:56:18.293 [main] BaseClass - Dispute saved.
+[INFO ] 2023-05-10 13:56:18.340 [main] BaseClass - Verification of Dispute raised Successfully.
+[INFO ] 2023-05-10 13:56:23.124 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-10 13:56:26.467 [main] BaseClass - Open disputes page.
+[INFO ] 2023-05-10 13:56:32.698 [main] BaseClass - Clicked on show disputes.
+[INFO ] 2023-05-10 13:56:35.926 [main] BaseClass - Dispute Accepted.
+[INFO ] 2023-05-10 13:56:43.148 [main] BaseClass - Dispute send.
+[INFO ] 2023-05-10 13:56:51.206 [main] BaseClass - Verification of Dispute acceptance is successed.
+[INFO ] 2023-05-10 13:56:54.392 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-05-10 13:56:58.864 [main] BaseClass - Product name is entered.
+[INFO ] 2023-05-10 13:57:04.239 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-05-10 13:57:16.344 [main] BaseClass - Verification of open Dispute History successfull.
+[INFO ] 2023-05-10 13:57:16.375 [main] BaseClass - Verification of Dispute acceptance is successed.
+[INFO ] 2023-05-10 15:15:19.112 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-05-10 15:15:24.385 [main] BaseClass - Go to Orders page.
+[INFO ] 2023-05-10 15:15:32.579 [main] BaseClass - Verification of Financial Status to Pending.
+[INFO ] 2023-05-10 15:15:36.612 [main] BaseClass - Verification of Order Status to Not quoted.
+[INFO ] 2023-05-10 15:15:42.273 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-10 15:15:57.983 [main] BaseClass - Product name entered.
+[INFO ] 2023-05-10 15:16:02.411 [main] BaseClass - Price entered for the order.
+[INFO ] 2023-05-10 15:16:15.589 [main] BaseClass - Verification of Submit quotation Successed..
+[INFO ] 2023-05-10 15:16:19.569 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-10 15:16:37.632 [main] BaseClass - Verification of accepting quotation is Successed.
+[INFO ] 2023-05-10 15:16:39.350 [main] BaseClass - Go to Orders page.
+[INFO ] 2023-05-10 15:16:47.513 [main] BaseClass - Status remains 'Not quoted'.
+[INFO ] 2023-05-10 15:16:49.553 [main] BaseClass - Verification of Financial Status to Pending.
+[INFO ] 2023-05-10 15:16:51.618 [main] BaseClass - Verification of Order Status to Not quoted.
+[INFO ] 2023-05-10 15:16:57.037 [main] BaseClass - Agent Support logged in Successfully.
+[INFO ] 2023-05-10 15:35:38.910 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-05-10 15:35:44.522 [main] BaseClass - Go to Orders page.
+[INFO ] 2023-05-10 15:35:53.015 [main] BaseClass - Verification of Financial Status to Pending.
+[INFO ] 2023-05-10 15:35:57.078 [main] BaseClass - Verification of Order Status to Not quoted.
+[INFO ] 2023-05-10 15:36:02.540 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-10 15:36:35.250 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-05-10 15:36:40.640 [main] BaseClass - Go to Orders page.
+[INFO ] 2023-05-10 15:36:48.975 [main] BaseClass - Verification of Financial Status to Pending.
+[INFO ] 2023-05-10 15:36:53.028 [main] BaseClass - Verification of Order Status to Not quoted.
+[INFO ] 2023-05-10 15:36:58.630 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-10 15:37:14.022 [main] BaseClass - Product name entered.
+[INFO ] 2023-05-10 15:37:18.570 [main] BaseClass - Price entered for the order.
+[INFO ] 2023-05-10 15:37:31.814 [main] BaseClass - Verification of Submit quotation Successed..
+[INFO ] 2023-05-10 15:37:36.966 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-10 15:37:55.975 [main] BaseClass - Verification of accepting quotation is Successed.
+[INFO ] 2023-05-10 15:37:57.332 [main] BaseClass - Go to Orders page.
+[INFO ] 2023-05-10 15:38:05.568 [main] BaseClass - Status remains 'Not quoted'.
+[INFO ] 2023-05-10 15:38:07.635 [main] BaseClass - Verification of Financial Status to Pending.
+[INFO ] 2023-05-10 15:38:09.709 [main] BaseClass - Verification of Order Status to Not quoted.
+[INFO ] 2023-05-10 15:38:17.603 [main] BaseClass - Agent Support logged in Successfully.
+[INFO ] 2023-05-10 15:38:32.602 [main] BaseClass - Toggler is Off.
+[INFO ] 2023-05-10 15:38:41.873 [main] BaseClass - Verification of toggle ON is successfull.
+[INFO ] 2023-05-10 15:38:47.667 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-05-10 15:38:52.816 [main] BaseClass - Go to Orders page.
+[INFO ] 2023-05-10 15:38:59.078 [main] BaseClass - Status changed to Processing.
+[INFO ] 2023-05-10 15:39:01.135 [main] BaseClass - Verification of Order Status to Processing.
+[INFO ] 2023-05-10 15:39:09.296 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-05-10 15:39:16.194 [main] BaseClass - Go to Orders page.
+[INFO ] 2023-05-10 15:39:24.520 [main] BaseClass - Verification of Financial Status to Pending.
+[INFO ] 2023-05-10 15:39:30.581 [main] BaseClass - Verification of Order Status to Not quoted.
+[INFO ] 2023-05-10 15:39:36.214 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-10 15:39:50.394 [main] BaseClass - Product name entered.
+[INFO ] 2023-05-10 15:39:54.848 [main] BaseClass - Price entered for the order.
+[INFO ] 2023-05-10 15:40:08.109 [main] BaseClass - Verification of Submit quotation Successed..
+[INFO ] 2023-05-10 15:40:13.307 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-10 15:40:33.852 [main] BaseClass - Verification of accepting quotation is Successed.
+[INFO ] 2023-05-10 15:40:35.171 [main] BaseClass - Go to Orders page.
+[INFO ] 2023-05-10 15:40:43.392 [main] BaseClass - Status changed to Processing.
+[INFO ] 2023-05-10 15:40:45.459 [main] BaseClass - Verification of Financial Status to Pending.
+[INFO ] 2023-05-10 15:40:47.518 [main] BaseClass - Verification of Order Status to Not quoted.
+[INFO ] 2023-05-10 15:40:53.189 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-05-10 15:40:57.108 [main] BaseClass - Go to Orders page.
+[INFO ] 2023-05-10 16:03:44.057 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-05-10 16:03:49.392 [main] BaseClass - Go to Orders page.
+[INFO ] 2023-05-10 16:03:57.677 [main] BaseClass - Verification of Financial Status to Pending.
+[INFO ] 2023-05-10 16:04:01.727 [main] BaseClass - Verification of Order Status to Not quoted.
+[INFO ] 2023-05-10 16:04:10.229 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-10 16:04:24.746 [main] BaseClass - Product name entered.
+[INFO ] 2023-05-10 16:08:52.152 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-05-10 16:08:57.644 [main] BaseClass - Go to Orders page.
+[INFO ] 2023-05-10 16:09:05.996 [main] BaseClass - Verification of Financial Status to Pending.
+[INFO ] 2023-05-10 16:09:10.025 [main] BaseClass - Verification of Order Status to Not quoted.
+[INFO ] 2023-05-10 16:09:15.712 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-10 16:09:29.440 [main] BaseClass - Product name entered.
+[INFO ] 2023-05-10 16:09:34.363 [main] BaseClass - Price entered for the order.
+[INFO ] 2023-05-10 16:09:47.551 [main] BaseClass - Verification of Submit quotation Successed..
+[INFO ] 2023-05-10 16:09:52.349 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-10 16:10:12.456 [main] BaseClass - Verification of accepting quotation is Successed.
+[INFO ] 2023-05-10 16:10:13.966 [main] BaseClass - Go to Orders page.
+[INFO ] 2023-05-10 16:10:22.174 [main] BaseClass - Status remains 'Not quoted'.
+[INFO ] 2023-05-10 16:10:24.224 [main] BaseClass - Verification of Financial Status to Pending.
+[INFO ] 2023-05-10 16:10:37.099 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-05-10 16:10:44.515 [main] BaseClass - Go to Orders page.
+[INFO ] 2023-05-10 16:10:52.817 [main] BaseClass - Verification of Financial Status to Pending.
+[INFO ] 2023-05-10 16:10:58.875 [main] BaseClass - Verification of Order Status to Not quoted.
+[INFO ] 2023-05-10 16:11:04.533 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-10 16:11:20.389 [main] BaseClass - Product name entered.
+[INFO ] 2023-05-10 16:11:25.034 [main] BaseClass - Price entered for the order.
+[INFO ] 2023-05-10 16:11:38.285 [main] BaseClass - Verification of Submit quotation Successed..
+[INFO ] 2023-05-10 16:11:43.253 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-10 16:12:02.056 [main] BaseClass - Verification of accepting quotation is Successed.
+[INFO ] 2023-05-10 16:12:03.557 [main] BaseClass - Go to Orders page.
+[INFO ] 2023-05-10 16:12:11.879 [main] BaseClass - Status changed to Processing.
+[INFO ] 2023-05-10 16:12:13.937 [main] BaseClass - Verification of Financial Status to Pending.
+[INFO ] 2023-05-10 16:12:15.986 [main] BaseClass - Verification of Order Status to Not quoted.
+[INFO ] 2023-05-10 16:16:10.690 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-05-10 16:16:16.521 [main] BaseClass - Go to Orders page.
+[INFO ] 2023-05-10 16:16:24.737 [main] BaseClass - Verification of Financial Status to Pending.
+[INFO ] 2023-05-10 16:16:28.773 [main] BaseClass - Verification of Order Status to Not quoted.
+[INFO ] 2023-05-10 16:16:33.903 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-10 16:16:48.818 [main] BaseClass - Product name entered.
+[INFO ] 2023-05-10 16:17:12.476 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-05-10 16:17:17.379 [main] BaseClass - Go to Orders page.
+[INFO ] 2023-05-10 16:17:25.745 [main] BaseClass - Verification of Financial Status to Pending.
+[INFO ] 2023-05-10 16:17:31.832 [main] BaseClass - Verification of Order Status to Not quoted.
+[INFO ] 2023-05-10 16:17:37.395 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-10 16:17:52.443 [main] BaseClass - Product name entered.
+[INFO ] 2023-05-10 16:17:57.360 [main] BaseClass - Price entered for the order.
+[INFO ] 2023-05-10 16:18:10.583 [main] BaseClass - Verification of Submit quotation Successed..
+[INFO ] 2023-05-10 16:18:16.105 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-10 16:18:37.504 [main] BaseClass - Verification of accepting quotation is Successed.
+[INFO ] 2023-05-10 16:18:39.108 [main] BaseClass - Go to Orders page.
+[INFO ] 2023-05-10 16:18:47.445 [main] BaseClass - Status changed to Processing.
+[INFO ] 2023-05-10 16:18:49.497 [main] BaseClass - Verification of Financial Status to Pending.
+[INFO ] 2023-05-10 16:18:51.561 [main] BaseClass - Verification of Order Status to Not quoted.
