@@ -18,7 +18,7 @@ public class ClientProductPage {
 	
 	@FindBy(xpath="//div[contains(text(),'Products')]")
 	WebElement productTab;
-	
+	 
 	@FindBy(xpath="//input[@id='client_product_search']")
 	WebElement searchField;
 	
@@ -145,6 +145,8 @@ public class ClientProductPage {
 		exe.executeScript("arguments[0].scrollIntoView();", acceptBtn);
 	}
 	
+	
+	
 	//....................................
 	public void logoutTheClient() {
 		logoutClient.click();
@@ -234,4 +236,22 @@ public class ClientProductPage {
 	public void clickOnCloseBtnForRR() {
 		closeBtnRequestForRequote.click();
 	}
+	
+	@FindBy(xpath="(//a[normalize-space()='View product'])[1]")
+	WebElement viewProBtn;
+	
+	public void scrollTillViewPro(WebDriver driver) {
+		JavascriptExecutor exe=(JavascriptExecutor) driver;
+		exe.executeScript("arguments[0].scrollIntoView();", viewProBtn);
+	}
+	
+	@FindBy(xpath="(//button[normalize-space()='Accept selected quotation'])[1]")
+	WebElement acceptSelectedQuote;
+	
+	public void clickOnAcceptSelectedQuote() {
+		acceptSelectedQuote.click();
+	}
+	
+	
+	
 }

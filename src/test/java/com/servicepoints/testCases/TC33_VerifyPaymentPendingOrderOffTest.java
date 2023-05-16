@@ -149,10 +149,15 @@ public class TC33_VerifyPaymentPendingOrderOffTest extends BaseClass{
 				break;
 			}
 		}
-		
+		logger.info("Verification of 1");
 		cl.selectQuoteTab();
-		cl.scrollTillAcceptQbtn(driver);
-		cl.selectAcceptQuoteBtn();
+		logger.info("Verification of 2");
+		cl.scrollTillViewPro(driver);
+		logger.info("Verification of 3");
+		Thread.sleep(2000);
+		//cl.scrollTillAcceptQbtn(driver);
+		cl.clickOnAcceptSelectedQuote();
+		logger.info("Verification of 4");
 		Thread.sleep(4000);
 
 		if (driver.getPageSource().contains("Quotation accepted successfully.")) {

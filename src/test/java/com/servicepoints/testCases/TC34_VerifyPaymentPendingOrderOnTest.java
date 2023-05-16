@@ -32,6 +32,7 @@ public class TC34_VerifyPaymentPendingOrderOnTest extends BaseClass{
 	public String aspPassForPayment=rd.setASPPassForPayment();
 	public String secProduct=rd.setSecProductName();
 	
+	
 	@Test
 	public void verifySecondProductStatus() throws InterruptedException, IOException {
 		ClientOrdersPage cp=new ClientOrdersPage(driver);
@@ -146,6 +147,7 @@ public class TC34_VerifyPaymentPendingOrderOnTest extends BaseClass{
 		
 		cl.selectQuoteTab();
 		cl.scrollTillAcceptQbtn(driver);
+		Thread.sleep(2000);
 		cl.selectAcceptQuoteBtn();
 		Thread.sleep(4000);
 
@@ -189,22 +191,22 @@ public class TC34_VerifyPaymentPendingOrderOnTest extends BaseClass{
 			Assert.assertTrue(false);
 		}
 		
-//		driver.get(baseURL);
-//		lp.setAdminMailId(aspMailForPayment);
-//		lp.setAdminPassword(aspPassForPayment);
-//		lp.clickLoginbtn();
-//		Thread.sleep(2000);
-//		logger.info("Agent Support logged in Successfully.");
-//		
-//		acp.clickOnClientsPage();
-//		Thread.sleep(2000);
-//		acp.searchAccount(cNameForPayment);
-//		Thread.sleep(2000);
-//		acp.clickOnFClientDiv();
-//		Thread.sleep(2000);
-//		acp.clickOnPaymentToggle();
-//		logger.info("Payment Pending order toggle is Disabled.");
-//		Thread.sleep(2000);
+		driver.get(baseURL);
+		lp.setAdminMailId(aspMailForPayment);
+		lp.setAdminPassword(aspPassForPayment);
+		lp.clickLoginbtn();
+		Thread.sleep(2000);
+		logger.info("Agent Support logged in Successfully.");
+		
+		acp.clickOnClientsPage();
+		Thread.sleep(2000);
+		acp.searchAccount(cNameForPayment);
+		Thread.sleep(2000);
+		acp.clickOnFClientDiv();
+		Thread.sleep(2000);
+		//acp.clickOnPaymentToggle();
+		logger.info("Payment Pending order toggle is ON.");
+		Thread.sleep(2000);
 //		acp.clickOnYesImSure();
 //		Thread.sleep(4000);
 	}

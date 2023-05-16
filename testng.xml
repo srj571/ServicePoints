@@ -41,10 +41,9 @@
       <class name="com.servicepoints.testCases.TC29_VerifySpecialRequestFunction"/>
       <class name="com.servicepoints.testCases.TC30_VerifyCloseSpecialRequestFunction"/>
       <class name="com.servicepoints.testCases.TC31_VerifySpecialRequestCloseByAdminSP"/>-->
-      <class name="com.servicepoints.testCases.TC33_VerifyPaymentPendingOrderOffTest"/>
-      <class name="com.servicepoints.testCases.TC34_VerifyPaymentPendingOrderOnTest"/>
-      <!--<class name="com.servicepoints.testCases.TC35_VerifyPaymentPendingOrderForAddressError"/>-->
-      
+      <!--<class name="com.servicepoints.testCases.TC33_VerifyPaymentPendingOrderOffTest"/>-->
+      <!--<class name="com.servicepoints.testCases.TC34_VerifyPaymentPendingOrderOnTest"/>-->
+      <class name="com.servicepoints.testCases.TC35_VerifyPaymentPendingOrderForAddressError"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

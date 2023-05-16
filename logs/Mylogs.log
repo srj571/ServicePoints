@@ -823,3 +823,198 @@
 [INFO ] 2023-05-10 16:18:47.445 [main] BaseClass - Status changed to Processing.
 [INFO ] 2023-05-10 16:18:49.497 [main] BaseClass - Verification of Financial Status to Pending.
 [INFO ] 2023-05-10 16:18:51.561 [main] BaseClass - Verification of Order Status to Not quoted.
+[INFO ] 2023-05-14 12:12:26.643 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-05-14 12:12:31.617 [main] BaseClass - Go to Orders page.
+[INFO ] 2023-05-14 12:12:40.035 [main] BaseClass - Verification of Financial Status to Pending.
+[INFO ] 2023-05-14 12:12:44.077 [main] BaseClass - Verification of Order Status to Not quoted.
+[INFO ] 2023-05-14 12:12:46.594 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-14 12:12:57.833 [main] BaseClass - Product name entered.
+[INFO ] 2023-05-14 12:13:02.291 [main] BaseClass - Price entered for the order.
+[INFO ] 2023-05-14 12:15:51.124 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-05-14 12:15:54.274 [main] BaseClass - Go to Orders page.
+[INFO ] 2023-05-14 12:16:02.469 [main] BaseClass - Verification of Financial Status to Pending.
+[INFO ] 2023-05-14 12:16:06.509 [main] BaseClass - Verification of Order Status to Not quoted.
+[INFO ] 2023-05-14 12:16:07.418 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-14 12:16:20.525 [main] BaseClass - Product name entered.
+[INFO ] 2023-05-14 12:16:24.959 [main] BaseClass - Price entered for the order.
+[INFO ] 2023-05-14 12:22:30.925 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-05-14 12:22:33.798 [main] BaseClass - Go to Orders page.
+[INFO ] 2023-05-14 12:22:41.997 [main] BaseClass - Verification of Financial Status to Pending.
+[INFO ] 2023-05-14 12:22:46.023 [main] BaseClass - Verification of Order Status to Not quoted.
+[INFO ] 2023-05-14 12:22:48.376 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-14 12:23:00.362 [main] BaseClass - Product name entered.
+[INFO ] 2023-05-14 12:23:05.435 [main] BaseClass - Price entered for the order.
+[INFO ] 2023-05-14 12:23:18.594 [main] BaseClass - Verification of Submit quotation Successed..
+[INFO ] 2023-05-14 12:23:25.275 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-15 22:17:21.172 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-05-15 22:17:26.001 [main] BaseClass - Go to Orders page.
+[INFO ] 2023-05-15 22:17:36.487 [main] BaseClass - Verification of Financial Status to Pending.
+[INFO ] 2023-05-15 22:17:40.553 [main] BaseClass - Verification of Order Status to Not quoted.
+[INFO ] 2023-05-15 22:17:46.298 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-15 22:18:00.438 [main] BaseClass - Product name entered.
+[INFO ] 2023-05-15 22:18:05.956 [main] BaseClass - Price entered for the order.
+[INFO ] 2023-05-15 22:18:19.310 [main] BaseClass - Verification of Submit quotation Successed..
+[INFO ] 2023-05-15 22:18:24.387 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-15 22:27:12.715 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-05-15 22:27:16.736 [main] BaseClass - Go to Orders page.
+[INFO ] 2023-05-15 22:27:25.115 [main] BaseClass - Verification of Financial Status to Pending.
+[INFO ] 2023-05-15 22:27:29.177 [main] BaseClass - Verification of Order Status to Not quoted.
+[INFO ] 2023-05-15 22:27:33.563 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-15 22:27:50.100 [main] BaseClass - Product name entered.
+[INFO ] 2023-05-15 22:27:55.405 [main] BaseClass - Price entered for the order.
+[INFO ] 2023-05-15 22:28:08.800 [main] BaseClass - Verification of Submit quotation Successed..
+[INFO ] 2023-05-15 22:28:14.334 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-15 22:34:27.205 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-05-15 22:34:32.967 [main] BaseClass - Go to Orders page.
+[INFO ] 2023-05-15 22:34:42.928 [main] BaseClass - Verification of Financial Status to Pending.
+[INFO ] 2023-05-15 22:34:47.018 [main] BaseClass - Verification of Order Status to Not quoted.
+[INFO ] 2023-05-15 22:34:54.171 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-15 22:35:08.335 [main] BaseClass - Product name entered.
+[INFO ] 2023-05-15 22:35:18.631 [main] BaseClass - Price entered for the order.
+[INFO ] 2023-05-15 22:35:32.177 [main] BaseClass - Verification of Submit quotation Successed..
+[INFO ] 2023-05-15 22:35:37.300 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-15 22:38:46.454 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-05-15 22:38:50.354 [main] BaseClass - Go to Orders page.
+[INFO ] 2023-05-15 22:38:58.764 [main] BaseClass - Verification of Financial Status to Pending.
+[INFO ] 2023-05-15 22:39:02.848 [main] BaseClass - Verification of Order Status to Not quoted.
+[INFO ] 2023-05-15 22:39:08.059 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-15 22:39:18.826 [main] BaseClass - Product name entered.
+[INFO ] 2023-05-15 22:39:24.134 [main] BaseClass - Price entered for the order.
+[INFO ] 2023-05-15 22:39:37.409 [main] BaseClass - Verification of Submit quotation Successed..
+[INFO ] 2023-05-15 22:39:41.964 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-15 22:39:54.607 [main] BaseClass - Verification of 1
+[INFO ] 2023-05-15 22:39:56.641 [main] BaseClass - Verification of 2
+[INFO ] 2023-05-15 22:39:56.680 [main] BaseClass - Verification of 3
+[INFO ] 2023-05-15 22:46:54.066 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-05-15 22:46:58.802 [main] BaseClass - Go to Orders page.
+[INFO ] 2023-05-15 22:47:07.180 [main] BaseClass - Verification of Financial Status to Pending.
+[INFO ] 2023-05-15 22:47:11.257 [main] BaseClass - Verification of Order Status to Not quoted.
+[INFO ] 2023-05-15 22:47:23.723 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-15 22:47:34.580 [main] BaseClass - Product name entered.
+[INFO ] 2023-05-15 22:47:40.955 [main] BaseClass - Price entered for the order.
+[INFO ] 2023-05-15 22:47:54.719 [main] BaseClass - Verification of Submit quotation Successed..
+[INFO ] 2023-05-15 22:47:59.443 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-15 22:48:14.521 [main] BaseClass - Verification of 1
+[INFO ] 2023-05-15 22:48:15.394 [main] BaseClass - Verification of 2
+[INFO ] 2023-05-15 22:48:15.430 [main] BaseClass - Verification of 3
+[INFO ] 2023-05-15 22:51:21.584 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-05-15 22:51:25.347 [main] BaseClass - Go to Orders page.
+[INFO ] 2023-05-15 22:51:34.007 [main] BaseClass - Verification of Financial Status to Pending.
+[INFO ] 2023-05-15 22:51:38.068 [main] BaseClass - Verification of Order Status to Not quoted.
+[INFO ] 2023-05-15 22:51:43.967 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-15 22:51:54.921 [main] BaseClass - Product name entered.
+[INFO ] 2023-05-15 22:52:00.920 [main] BaseClass - Price entered for the order.
+[INFO ] 2023-05-15 22:52:14.184 [main] BaseClass - Verification of Submit quotation Successed..
+[INFO ] 2023-05-15 22:52:19.789 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-15 22:52:32.398 [main] BaseClass - Verification of 1
+[INFO ] 2023-05-15 22:52:32.915 [main] BaseClass - Verification of 2
+[INFO ] 2023-05-15 22:52:32.961 [main] BaseClass - Verification of 3
+[INFO ] 2023-05-15 22:52:35.103 [main] BaseClass - Verification of 4
+[INFO ] 2023-05-15 22:52:43.234 [main] BaseClass - Verification of accepting quotation is Successed.
+[INFO ] 2023-05-15 22:52:44.694 [main] BaseClass - Go to Orders page.
+[INFO ] 2023-05-15 22:52:53.036 [main] BaseClass - Status remains 'Not quoted'.
+[INFO ] 2023-05-15 22:52:55.099 [main] BaseClass - Verification of Financial Status to Pending.
+[INFO ] 2023-05-15 22:52:57.163 [main] BaseClass - Verification of Order Status to Not quoted.
+[INFO ] 2023-05-15 22:53:05.483 [main] BaseClass - Agent Support logged in Successfully.
+[INFO ] 2023-05-15 22:53:19.240 [main] BaseClass - Toggler is Off.
+[INFO ] 2023-05-15 22:53:28.608 [main] BaseClass - Verification of toggle ON is successfull.
+[INFO ] 2023-05-15 22:53:33.711 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-05-15 22:53:37.509 [main] BaseClass - Go to Orders page.
+[INFO ] 2023-05-15 22:53:43.848 [main] BaseClass - Status changed to Processing.
+[INFO ] 2023-05-15 22:53:45.910 [main] BaseClass - Verification of Order Status to Processing.
+[INFO ] 2023-05-15 23:05:09.866 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-05-15 23:05:14.358 [main] BaseClass - Go to Orders page.
+[INFO ] 2023-05-15 23:05:23.338 [main] BaseClass - Verification of Financial Status to Pending.
+[INFO ] 2023-05-15 23:05:27.395 [main] BaseClass - Verification of Order Status to Not quoted.
+[INFO ] 2023-05-15 23:05:32.502 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-15 23:05:44.584 [main] BaseClass - Product name entered.
+[INFO ] 2023-05-15 23:05:50.069 [main] BaseClass - Price entered for the order.
+[INFO ] 2023-05-15 23:06:04.320 [main] BaseClass - Verification of Submit quotation Successed..
+[INFO ] 2023-05-15 23:06:08.936 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-15 23:06:22.368 [main] BaseClass - Verification of 1
+[INFO ] 2023-05-15 23:06:22.741 [main] BaseClass - Verification of 2
+[INFO ] 2023-05-15 23:06:22.782 [main] BaseClass - Verification of 3
+[INFO ] 2023-05-15 23:06:24.909 [main] BaseClass - Verification of 4
+[INFO ] 2023-05-15 23:06:33.055 [main] BaseClass - Verification of accepting quotation is Successed.
+[INFO ] 2023-05-15 23:06:34.511 [main] BaseClass - Go to Orders page.
+[INFO ] 2023-05-15 23:06:42.858 [main] BaseClass - Status remains 'Not quoted'.
+[INFO ] 2023-05-15 23:06:44.920 [main] BaseClass - Verification of Financial Status to Pending.
+[INFO ] 2023-05-15 23:06:46.979 [main] BaseClass - Verification of Order Status to Not quoted.
+[INFO ] 2023-05-15 23:06:54.236 [main] BaseClass - Agent Support logged in Successfully.
+[INFO ] 2023-05-15 23:07:13.028 [main] BaseClass - Toggler is Off.
+[INFO ] 2023-05-15 23:07:22.388 [main] BaseClass - Verification of toggle ON is successfull.
+[INFO ] 2023-05-15 23:07:27.386 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-05-15 23:07:31.929 [main] BaseClass - Go to Orders page.
+[INFO ] 2023-05-15 23:07:38.299 [main] BaseClass - Status changed to Processing.
+[INFO ] 2023-05-15 23:07:40.357 [main] BaseClass - Verification of Order Status to Processing.
+[INFO ] 2023-05-15 23:35:38.214 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-05-15 23:35:42.592 [main] BaseClass - Go to Orders page.
+[INFO ] 2023-05-15 23:35:51.113 [main] BaseClass - Verification of Financial Status to Pending.
+[INFO ] 2023-05-15 23:35:57.163 [main] BaseClass - Verification of Order Status to Not quoted.
+[INFO ] 2023-05-15 23:36:02.473 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-15 23:36:18.231 [main] BaseClass - Product name entered.
+[INFO ] 2023-05-15 23:36:24.176 [main] BaseClass - Price entered for the order.
+[INFO ] 2023-05-15 23:36:37.751 [main] BaseClass - Verification of Submit quotation Successed..
+[INFO ] 2023-05-15 23:43:47.743 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-05-15 23:43:52.445 [main] BaseClass - Go to Orders page.
+[INFO ] 2023-05-15 23:44:01.368 [main] BaseClass - Verification of Financial Status to Pending.
+[INFO ] 2023-05-15 23:44:07.437 [main] BaseClass - Verification of Order Status to Not quoted.
+[INFO ] 2023-05-15 23:44:12.923 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-15 23:44:28.530 [main] BaseClass - Product name entered.
+[INFO ] 2023-05-15 23:44:41.965 [main] BaseClass - Price entered for the order.
+[INFO ] 2023-05-15 23:44:55.362 [main] BaseClass - Verification of Submit quotation Successed..
+[INFO ] 2023-05-15 23:47:41.202 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-05-15 23:47:48.784 [main] BaseClass - Go to Orders page.
+[INFO ] 2023-05-15 23:47:57.215 [main] BaseClass - Verification of Financial Status to Pending.
+[INFO ] 2023-05-15 23:48:03.285 [main] BaseClass - Verification of Order Status to Not quoted.
+[INFO ] 2023-05-15 23:48:07.643 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-15 23:48:19.066 [main] BaseClass - Product name entered.
+[INFO ] 2023-05-15 23:48:26.023 [main] BaseClass - Price entered for the order.
+[INFO ] 2023-05-15 23:50:44.924 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-05-15 23:50:50.000 [main] BaseClass - Go to Orders page.
+[INFO ] 2023-05-15 23:50:58.451 [main] BaseClass - Verification of Financial Status to Pending.
+[INFO ] 2023-05-15 23:51:04.509 [main] BaseClass - Verification of Order Status to Not quoted.
+[INFO ] 2023-05-15 23:51:09.612 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-15 23:51:20.529 [main] BaseClass - Product name entered.
+[INFO ] 2023-05-15 23:51:25.793 [main] BaseClass - Price entered for the order.
+[INFO ] 2023-05-15 23:51:39.113 [main] BaseClass - Verification of Submit quotation Successed..
+[INFO ] 2023-05-15 23:51:42.739 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-15 23:57:57.947 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-05-15 23:58:01.516 [main] BaseClass - Go to Orders page.
+[INFO ] 2023-05-15 23:58:10.115 [main] BaseClass - Verification of Financial Status to Pending.
+[INFO ] 2023-05-15 23:58:16.512 [main] BaseClass - Verification of Order Status to Not quoted.
+[INFO ] 2023-05-15 23:58:20.833 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-15 23:58:33.423 [main] BaseClass - Product name entered.
+[INFO ] 2023-05-15 23:58:38.883 [main] BaseClass - Price entered for the order.
+[INFO ] 2023-05-15 23:58:52.291 [main] BaseClass - Verification of Submit quotation Successed..
+[INFO ] 2023-05-15 23:58:55.600 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-15 23:59:17.323 [main] BaseClass - Verification of accepting quotation is Successed.
+[INFO ] 2023-05-15 23:59:18.540 [main] BaseClass - Go to Orders page.
+[INFO ] 2023-05-15 23:59:26.947 [main] BaseClass - Status changed to Processing.
+[INFO ] 2023-05-15 23:59:28.995 [main] BaseClass - Verification of Financial Status to Pending.
+[INFO ] 2023-05-15 23:59:31.059 [main] BaseClass - Verification of Order Status to Not quoted.
+[INFO ] 2023-05-15 23:59:36.697 [main] BaseClass - Agent Support logged in Successfully.
+[INFO ] 2023-05-15 23:59:44.879 [main] BaseClass - Payment Pending order toggle is ON.
+[INFO ] 2023-05-16 20:06:52.949 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-05-16 20:06:59.739 [main] BaseClass - Go to Orders page.
+[INFO ] 2023-05-16 20:07:23.068 [main] BaseClass - Verification of Status to Not quoted successfull.
+[INFO ] 2023-05-16 20:07:29.375 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-16 20:07:40.998 [main] BaseClass - Product name entered.
+[INFO ] 2023-05-16 20:07:50.350 [main] BaseClass - Price entered for the order.
+[INFO ] 2023-05-16 20:08:04.805 [main] BaseClass - Verification of Submit quotation Successed..
+[INFO ] 2023-05-16 20:08:07.008 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-16 20:11:59.709 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-05-16 20:12:02.681 [main] BaseClass - Go to Orders page.
+[INFO ] 2023-05-16 20:12:26.026 [main] BaseClass - Verification of Status to Not quoted successfull.
+[INFO ] 2023-05-16 20:12:32.312 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-16 20:12:42.932 [main] BaseClass - Product name entered.
+[INFO ] 2023-05-16 20:12:52.183 [main] BaseClass - Price entered for the order.
+[INFO ] 2023-05-16 20:13:06.538 [main] BaseClass - Verification of Submit quotation Successed..
+[INFO ] 2023-05-16 20:13:09.055 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-16 20:13:29.827 [main] BaseClass - Verification of accepting quotation is Successed.
+[INFO ] 2023-05-16 20:13:31.703 [main] BaseClass - Go to Orders page.
+[INFO ] 2023-05-16 20:13:40.074 [main] BaseClass - Status changed to Processing.
+[INFO ] 2023-05-16 20:13:42.144 [main] BaseClass - Verification of Financial Status to Pending.
+[INFO ] 2023-05-16 20:13:44.223 [main] BaseClass - Verification of Order Status to Not quoted.
+[INFO ] 2023-05-16 20:13:48.778 [main] BaseClass - Agent Support logged in Successfully.
+[INFO ] 2023-05-16 20:13:57.370 [main] BaseClass - Payment Pending order toggle is Disabled.

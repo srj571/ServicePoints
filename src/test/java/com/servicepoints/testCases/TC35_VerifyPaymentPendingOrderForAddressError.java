@@ -208,6 +208,7 @@ public class TC35_VerifyPaymentPendingOrderForAddressError extends BaseClass{
 		
 		cl.selectQuoteTab();
 		cl.scrollTillAcceptQbtn(driver);
+		Thread.sleep(3000);
 		cl.selectAcceptQuoteBtn();
 		Thread.sleep(4000);
 
