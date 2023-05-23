@@ -7,13 +7,13 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.servicepoints.testCases.TC35_VerifyPaymentPendingOrderForAddressError">
+      <class name="com.servicepoints.testCases.TC38_VerifyRequoteQuotationTest">
         <methods>
+          <include name="verifyRequoteQuotation"/>
           <include name="setup"/>
-          <include name="verifyPaymentPendingOrderForAddressError"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.servicepoints.testCases.TC35_VerifyPaymentPendingOrderForAddressError -->
+      </class> <!-- com.servicepoints.testCases.TC38_VerifyRequoteQuotationTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -669,7 +669,100 @@ public class ReadConfig {
 		return proAdd;
 	}
 	
+	public String setClntMailForAffiliate() {
+		String clntMail=po.getProperty("clntMailForAffiliate");
+		return clntMail;
+	}
 	
+	public String setClntPassForAffiliate() {
+		String clntPass=po.getProperty("clntPassForAffiliate");
+		return clntPass;
+	}
+	
+	public String setFnameAf() {
+		String fname=po.getProperty("fnameAf");
+		return fname;
+	}
+	
+	public String setLnameAf() {
+		String lname=po.getProperty("lnameAf");
+		return lname;
+	}
+	
+	public String setCodeAf() {
+		String codeAf=po.getProperty("codeAf");
+		return codeAf;
+	}
+	
+	public String setOrdersAf() {
+		String  ordersAf=po.getProperty("ordersAf");
+		return ordersAf;
+	}
+	
+	public String setPasswordAf() {
+		String passwordAf=po.getProperty("passwordAf");
+		return passwordAf;
+	}
+	
+	public String setCpasswordAf() {
+		String cpassAf=po.getProperty("cpasswordAf");
+		return cpassAf;
+	}
+	
+	public String setUserMailAf() {
+		String afmail=po.getProperty("UserEmailAf");
+		return afmail;
+	}
+	
+	public String setUserNameAf() {
+		String unameAf=po.getProperty("userNameAF");
+		return unameAf;
+	}
+	
+	public String setDomainNameAf() {
+		String domainName=po.getProperty("domainNameAf");
+		return domainName;
+	}
+	
+	public String setAliasAf() {
+		String aliasAf=po.getProperty("aliasAf");
+		return aliasAf;
+	}
+	
+	public String setStorePassAf() {
+		String storePass=po.getProperty("storePassAf");
+		return storePass;
+	}
+	
+	public String setDateOrderAf() {
+		String dateOrderAf=po.getProperty("dateOrderAf");
+		return dateOrderAf;
+	}
+	
+	public String setClientMailForFulfilment() {
+		String cmailssf=po.getProperty("cmailSSF");
+		return cmailssf;
+	}
+	
+	public String setClientPassForFulfilment() {
+		String cpassssf=po.getProperty("cPassSSF");
+		return cpassssf;
+	}
+	
+	public String setAgentMailSsf() {
+		String agentssf=po.getProperty("agentMailSSF");
+		return agentssf;
+	}
+	
+	public String setAgentPassSsf() {
+		String agentPassSsf=po.getProperty("agentPassSSF");
+		return agentPassSsf;
+	}
+	
+	public String setProductSSF() {
+		String proSsf=po.getProperty("productSSF");
+		return proSsf;
+	}
 }
 
 

@@ -8,13 +8,23 @@ import java.util.concurrent.TimeUnit;
 import org.testng.annotations.Test;
 
 import com.servicepoints.PageObjects.AgentSupProductsPage;
+import com.servicepoints.PageObjects.ClientOrdersPage;
 import com.servicepoints.PageObjects.ClientProductPage;
 import com.servicepoints.PageObjects.LoginPage;
+import com.servicepoints.utilities.ReadConfig;
 
 import junit.framework.Assert;
 
 public class TC00_verifySubmitAndAcceptQuote extends BaseClass{
-
+	
+	ReadConfig con=new ReadConfig();
+	public String cmailSsf=con.setClientMailForFulfilment();
+	public String cpassSsf=con.setClientPassForFulfilment();
+	public String agentMailSsf=con.setAgentMailSsf();
+	public String agentPassSsf=con.setAgentPassSsf();
+	public String productSsf=con.setProductSSF();
+	
+	
 	@Test
 	public void verifySubmitAndAcceptQuote() throws InterruptedException, IOException {
 		
@@ -22,11 +32,11 @@ public class TC00_verifySubmitAndAcceptQuote extends BaseClass{
 		LoginPage lp = new LoginPage(driver);
 		Thread.sleep(1000);
 		
-		lp.setAdminMailId(agentsupmail);
+		lp.setAdminMailId(agentMailSsf);
 		logger.info("Email_id is entered.");
 		Thread.sleep(1000);
 		
-		lp.setAdminPassword(agentsuppass);
+		lp.setAdminPassword(agentPassSsf);
 		logger.info("Password is entered.");
 
 		
@@ -39,7 +49,7 @@ public class TC00_verifySubmitAndAcceptQuote extends BaseClass{
 		aspp.clickQuotationsClientsTab();
 		Thread.sleep(2000);
 
-		aspp.searchProductName(product);
+		aspp.searchProductName(productSsf);
 		Thread.sleep(3000);
 		logger.info("Product name entered.");
 		aspp.clickOnfdiv();
@@ -79,10 +89,10 @@ public class TC00_verifySubmitAndAcceptQuote extends BaseClass{
 		driver.get(baseURL);
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		
-		lp.setAdminMailId(clientemail);
+		lp.setAdminMailId(cmailSsf);
 		logger.info("Email_id is entered.");
 
-		lp.setAdminPassword(cPass);
+		lp.setAdminPassword(cpassSsf);
 		logger.info("Password is entered.");
 
 		lp.clickLoginbtn();
@@ -91,7 +101,7 @@ public class TC00_verifySubmitAndAcceptQuote extends BaseClass{
 		ClientProductPage cl = new ClientProductPage(driver);
 		cl.getProductsPage();
 
-		cl.searchProduct(proToAcceptQuo);
+		cl.searchProduct(productSsf);
 		Thread.sleep(4000);
 		cl.selectProductTab();
 		Thread.sleep(3000);
@@ -121,5 +131,15 @@ public class TC00_verifySubmitAndAcceptQuote extends BaseClass{
 			logger.info("Verification of accepting quotation is Failed.");
 			Assert.assertTrue(false);
 		}
+		
+		ClientOrdersPage cp=new ClientOrdersPage(driver);
+		cp.clickOnOrdersTab();
+		logger.info("Go to Orders page.");
+		Thread.sleep(2000);
+		cp.sendPnameinSearch(productSsf);
+		Thread.sleep(2000);
+		cp.clickOnFDiv();
+		Thread.sleep(2000);
+		logger.info("Status changed to Processing.");
 	}
 }
