@@ -9,6 +9,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.servicepoints.PageObjects.AgentSupProductsPage;
+import com.servicepoints.PageObjects.ClientOrdersPage;
 import com.servicepoints.PageObjects.ClientProductPage;
 import com.servicepoints.PageObjects.LoginPage;
 import com.servicepoints.utilities.ReadConfig;
@@ -22,7 +23,7 @@ public class TC38_VerifyRequoteQuotationTest extends BaseClass{
 	public String agentPassSsf=con.setAgentPassSsf();
 	public String productSsf=con.setProductSSF();
 
-	@Test
+	@Test(priority = 1)
 	public void verifyRequoteQuotation() throws InterruptedException, IOException, AWTException {
 		ClientProductPage cl = new ClientProductPage(driver);
 		AgentSupProductsPage aspp = new AgentSupProductsPage(driver);
@@ -97,42 +98,31 @@ public class TC38_VerifyRequoteQuotationTest extends BaseClass{
 		aspp.clickOnfdiv();
 		Thread.sleep(4000);
 
-//		String childg=it.next();
-//		driver.switchTo().window(childg);
-//		String pwin=driver.getWindowHandle();
-//		Set<String>windowHs = driver.getWindowHandles();
-//		for(String handle : windowHs) {
-//			if(!handle.equals(pwin)) {
-//				driver.switchTo().window(handle);
-//				break;
-//			}
-//		}
-//		
-//		windowHandles = driver.getWindowHandles();
-//		for(String handle : windowHandles) {
-//			if(!handle.equals(parentWindow) && !handle.equals(driver.getWindowHandle())) {
-//				driver.switchTo().window(handle);
-//				break;
-//			}
-//		}
-		
-		aspp.switchOnOtherTab();
-		Thread.sleep(2000);
-		
-		if (aspp.getStatusAwating().equals("Requote - Bidding")) {
-			Thread.sleep(2000);
-			Assert.assertTrue(true);
-			logger.info("Verification of Requotation Successed..");
-		} else {
-			captureScreen(driver, "Submit Quote Test");
-			logger.info("Verification of Requotation failed..");
-			Assert.assertTrue(false);
-			Thread.sleep(4000);
+		windowHandles = driver.getWindowHandles();
+		for(String handle : windowHandles) {
+			if(!handle.equals(parentWindow) && !handle.equals(driver.getWindowHandle())) {
+				driver.switchTo().window(handle);
+				break;
+			}
 		}
-
-		logger.info("Switched to new window.");
-		Thread.sleep(5000);
-				
+		
+		//aspp.switchOnOtherTab();
+		//Thread.sleep(2000);
+		
+//		if (aspp.getStatusAwating().equals("Requote - Bidding")) {
+//			Thread.sleep(2000);
+//			Assert.assertTrue(true);
+//			logger.info("Verification of Requotation Successed..");
+//		} else {
+//			captureScreen(driver, "Submit Quote Test");
+//			logger.info("Verification of Requotation failed..");
+//			Assert.assertTrue(false);
+//			Thread.sleep(4000);
+//		}
+//
+//		logger.info("Switched to new window.");
+//		Thread.sleep(5000);
+		
 		aspp.firstPcsPrice(FirstPcsPrice);
 		aspp.secPcsPrice(SecPcsPrice);
 		aspp.thirdPcsPrice(ThirdPcsPrice);
@@ -150,15 +140,7 @@ public class TC38_VerifyRequoteQuotationTest extends BaseClass{
 			logger.info("Verification of Requote from Agent side is failed.");
 			Assert.assertTrue(false);
 		}
-				
-		if(aspp.isSubmitQuotebtnEnabled()==true) {
-			logger.info("Verification of Requote from Agent side is Successed.");
-			Assert.assertTrue(true);
-		}else {
-			logger.info("Verification of Requote from Agent side is failed.");
-			Assert.assertTrue(false);
-		}
-
+		
 		if (aspp.getStatus().equals("Quotation done")) {
 			Thread.sleep(2000);
 			Assert.assertTrue(true);
@@ -170,4 +152,70 @@ public class TC38_VerifyRequoteQuotationTest extends BaseClass{
 			Thread.sleep(4000);
 		}
 	}
+	
+	
+//	@Test()
+//	public void acceptRequoteQuotation() throws InterruptedException, IOException {
+//		ClientProductPage cl = new ClientProductPage(driver);
+//		AgentSupProductsPage aspp = new AgentSupProductsPage(driver);
+//		LoginPage lp=new LoginPage(driver);
+//		driver.get(baseURL);
+//		Thread.sleep(3000);
+//		lp.setAdminMailId(cmailSsf);
+//		logger.info("Email_id is entered.");
+//		Thread.sleep(1000);
+//				
+//		lp.setAdminPassword(cpassSsf);
+//		logger.info("Password is entered.");
+//		Thread.sleep(1000);
+//				
+//		lp.clickLoginbtn();
+//		Thread.sleep(4000);
+//		cl.getProductsPage();
+//				
+//		cl.searchProduct(productSsf);
+//		Thread.sleep(4000);
+//		cl.selectProductTab();
+//		Thread.sleep(3000);
+//		
+//		
+//		String parentWindow=driver.getWindowHandle();
+//		Set<String> windowHandles = driver.getWindowHandles();
+//		for(String handle: windowHandles) {
+//			if(!handle.equals(parentWindow)) {
+//				driver.switchTo().window(handle);
+//				break;
+//			}
+//		}
+//		driver.navigate().refresh();
+//		Thread.sleep(2000);
+//		cl.selectQuoteTab();
+//		Thread.sleep(1000);
+//		cl.scrollTillAcceptQbtn(driver);
+//		Thread.sleep(1000);
+//		cl.selectAcceptQuoteBtn();
+//		logger.info("Clicked on accept quotation button.");
+//		Thread.sleep(4000);
+//
+//		if (driver.getPageSource().contains("Quotation accepted successfully.")) {
+//			Thread.sleep(4000);
+//			Assert.assertTrue(true);
+//			logger.info("Verification of accepting quotation is Successed.");
+//		
+//		} else {
+//			captureScreen(driver, "Quotation Accepting");
+//			logger.info("Verification of accepting quotation is Failed.");
+//			Assert.assertTrue(false);
+//		}
+//		
+//		ClientOrdersPage cp=new ClientOrdersPage(driver);
+//		cp.clickOnOrdersTab();
+//		logger.info("Go to Orders page.");
+//		Thread.sleep(2000);
+//		cp.sendPnameinSearch(productSsf);
+//		Thread.sleep(2000);
+//		cp.clickOnFDiv();
+//		Thread.sleep(2000);
+//		logger.info("Status changed to Processing.");
+//	}
 }

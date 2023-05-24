@@ -7,13 +7,13 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.servicepoints.testCases.TC38_VerifyRequoteQuotationTest">
+      <class name="com.servicepoints.testCases.TC40_VerifyMergeBreakOrderForDisputeTest">
         <methods>
-          <include name="verifyRequoteQuotation"/>
+          <include name="verifyDisputeIsStillOpenFromAgentSide"/>
           <include name="setup"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.servicepoints.testCases.TC38_VerifyRequoteQuotationTest -->
+      </class> <!-- com.servicepoints.testCases.TC40_VerifyMergeBreakOrderForDisputeTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

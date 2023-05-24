@@ -763,6 +763,34 @@ public class ReadConfig {
 		String proSsf=po.getProperty("productSSF");
 		return proSsf;
 	}
+	
+	public String setClientMailMergeBreakOrder() {
+		String cmailmbo=po.getProperty("clientMailMBO");
+		return cmailmbo;
+	}
+	
+	public String setClientPassMergeBreakOrder() {
+		String cpassmbo=po.getProperty("clientPassMBO");
+		return cpassmbo;
+	}
+	
+	public String setAgentMailMergeBreakOrder() {
+		String agentmbo=po.getProperty("agentMailMBO");
+		return agentmbo;
+	}
+	
+	public String setAgentPassMergeBreakOrder() {
+		String agentPassmbo=po.getProperty("agentPassMBO");
+		return agentPassmbo;
+	}
+	
+	public String setProductMergeBreakOrder() {
+		String proMbo=po.getProperty("productMBO");
+		return proMbo;
+	}
+	
+	
+	
 }
 
 

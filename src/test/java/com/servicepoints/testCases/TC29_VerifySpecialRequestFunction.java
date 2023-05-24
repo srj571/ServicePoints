@@ -27,6 +27,7 @@ public class TC29_VerifySpecialRequestFunction extends BaseClass{
 		lp.setAdminPassword(CPass);
 		lp.clickLoginbtn();
 		logger.info("Client logged in Successfully.");
+		Thread.sleep(3000);
 		
 		ClientOrdersPage cop=new ClientOrdersPage(driver);
 		cop.clickOnOrdersTab();

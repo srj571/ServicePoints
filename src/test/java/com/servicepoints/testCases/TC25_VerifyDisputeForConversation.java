@@ -36,6 +36,7 @@ public class TC25_VerifyDisputeForConversation extends BaseClass{
 		lp.clickLoginbtn();
 		logger.info("Client logged in Successfully.");
 		Thread.sleep(2000);
+		
 		ClientOrdersPage cop=new ClientOrdersPage(driver);
 		cop.clickOnOrdersTab();
 		
@@ -102,6 +103,7 @@ public class TC25_VerifyDisputeForConversation extends BaseClass{
 		lp.setAdminPassword(agentPassDsp);
 		lp.clickLoginbtn();
 		logger.info("Agent logged in Successfully.");
+		Thread.sleep(3000);
 		
 		AgentDisputesPage asop=new AgentDisputesPage(driver);
 		asop.clickOnDisputesTab();

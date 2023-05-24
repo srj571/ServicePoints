@@ -29,7 +29,9 @@ public class TC19_VerifyOpenDisputFunction extends BaseClass{
 		lp.setAdminMailId(CMail);
 		lp.setAdminPassword(CPass);
 		lp.clickLoginbtn();
-		logger.info("Client logged in Successfully.");
+		Thread.sleep(2000);
+		
+		logger.info("client logged in Successfully.");
 		ClientOrdersPage cop=new ClientOrdersPage(driver);
 		cop.clickOnOrdersTab();
 		cop.sendPnameinSearch(proDsp);

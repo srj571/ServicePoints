@@ -35,6 +35,7 @@ public class TC32_VerifyClientPaymentApproveByAdmin extends BaseClass{
 		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 		
 		lp.clickLoginbtn();
+		Thread.sleep(3000);
 		
 		AdminAccountsPage adminAccount=new AdminAccountsPage(driver);
 		adminAccount.getAdminAccountsPage();

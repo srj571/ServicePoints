@@ -26,6 +26,7 @@ public class TC30_VerifyCloseSpecialRequestFunction extends BaseClass{
 		lp.setAdminMailId(agentMailDsp);
 		lp.setAdminPassword(agentPassDsp);
 		lp.clickLoginbtn();
+		Thread.sleep(3000);
 		logger.info("Client logged in Successfully.");
 		
 		AgentDisputesPage asop=new AgentDisputesPage(driver);

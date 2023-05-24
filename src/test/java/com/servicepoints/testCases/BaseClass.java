@@ -86,10 +86,12 @@ public class BaseClass {
 			option.addArguments("--ignore-certificate-errors");
 			option.addArguments("--allow-running-insecure-content");
 			driver = new ChromeDriver(option);
+			
 		} else if (br.equalsIgnoreCase("firefox")) {
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
 		}
+		
 		driver.get(baseURL);
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
@@ -116,6 +118,19 @@ public class BaseClass {
 	public static String getRandomNum() {
 		String num = RandomStringUtils.randomNumeric(10);
 		return num;
+	}
+	
+	public static void closeAllWinTabsExceptParent() {
+	    String originalHandle = driver.getWindowHandle();
+
+	    for(String handle : driver.getWindowHandles()) {
+	        if (!handle.equals(originalHandle)) {
+	            driver.switchTo().window(handle);
+	            driver.close();
+	        }
+	    }
+
+	    driver.switchTo().window(originalHandle);
 	}
 
 }

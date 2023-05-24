@@ -37,6 +37,7 @@ public class TC23_VerifyAddTrackingAndRefundDspFunction extends BaseClass{
 		lp.setAdminPassword(agpass);
 		lp.clickLoginbtn();
 		logger.info("Agent logged in Successfully.");
+		Thread.sleep(3000);
 		
 		AgentOrdersPage aop = new AgentOrdersPage(driver);
 		aop.clickOnOrdersTab();
@@ -107,6 +108,7 @@ public class TC23_VerifyAddTrackingAndRefundDspFunction extends BaseClass{
 		lp.clickLoginbtn();
 		logger.info("Client logged in Successfully.");
 		Thread.sleep(3000);
+		
 		ClientOrdersPage cop=new ClientOrdersPage(driver);
 		
 		cop.clickOnOrdersTab();
@@ -178,6 +180,7 @@ public class TC23_VerifyAddTrackingAndRefundDspFunction extends BaseClass{
 		lp.setAdminPassword(agpass);
 		lp.clickLoginbtn();
 		logger.info("Agent logged in Successfully.");
+		Thread.sleep(3000);
 		
 		AgentDisputesPage asop=new AgentDisputesPage(driver);
 		asop.clickOnDisputesTab();
@@ -233,6 +236,7 @@ public class TC23_VerifyAddTrackingAndRefundDspFunction extends BaseClass{
 		lp.setAdminPassword(clpass);
 		lp.clickLoginbtn();
 		logger.info("Client logged in Successfully.");
+		Thread.sleep(3000);
 		
 		cop.clickOnOrdersTab();
 

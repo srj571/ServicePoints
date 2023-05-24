@@ -37,6 +37,7 @@ public class TC28_VerifyDeclinedResendDispute extends BaseClass {
 		lp.setAdminPassword(agpass);
 		lp.clickLoginbtn();
 		logger.info("Agent logged in Successfully.");
+		Thread.sleep(3000);
 		
 		AgentOrdersPage aop = new AgentOrdersPage(driver);
 		aop.clickOnOrdersTab();
@@ -179,6 +180,7 @@ public class TC28_VerifyDeclinedResendDispute extends BaseClass {
 		lp.setAdminPassword(agpass);
 		lp.clickLoginbtn();
 		logger.info("Agent logged in Successfully.");
+		Thread.sleep(3000);
 		
 		AgentDisputesPage asop=new AgentDisputesPage(driver);
 		asop.clickOnDisputesTab();

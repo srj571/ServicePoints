@@ -277,4 +277,64 @@ public class AgentSupProductsPage {
 	public void clickOnfClientTab() {
 		fClientTab.click();
 	}
+	
+	@FindBy(xpath="(//input[@placeholder='1 Pcs price'])[2]")
+	WebElement onePcsPrice1;
+
+	@FindBy(xpath="(//input[@placeholder='2 Pcs price'])[2]")
+	WebElement twoPcsPrice2;
+	
+	@FindBy(xpath="(//input[@placeholder='3 Pcs price'])[2]")
+	WebElement threePcsPrice3;
+	
+	@FindBy(xpath="(//input[@placeholder='1 Pcs price'])[3]")
+	WebElement onePcsPrice4;
+	
+	@FindBy(xpath="(//input[@placeholder='2 Pcs price'])[3]")
+	WebElement twoPcsPrice5;
+	
+	@FindBy(xpath="(//input[@placeholder='3 Pcs price'])[3]")
+	WebElement threePcsPrice6;
+	
+	@FindBy(xpath="(//input[@placeholder='1 Pcs price'])[4]")
+	WebElement onePcsPrice7;
+	
+	@FindBy(xpath="(//input[@placeholder='2 Pcs price'])[4]")
+	WebElement twoPcsPrice8;
+	
+	@FindBy(xpath="(//input[@placeholder='3 Pcs price'])[4]")
+	WebElement threePcsPrice9;
+	
+	public void sendValFor1Pcs1(String val1) {
+		onePcsPrice1.sendKeys(val1);
+		
+	}
+	public void sendValFor2Pcs2(String val2) {
+		twoPcsPrice2.sendKeys(val2);
+	}
+	
+	public void sendValFor3Pcs3(String val3) {
+		threePcsPrice3.sendKeys(val3);
+	}
+	public void sendValFor1Pcs4(String val4) {
+		onePcsPrice4.sendKeys(val4);
+	}
+	
+	public void sendValFor2Pcs5(String val5) {
+		twoPcsPrice5.sendKeys(val5);
+	}
+	public void sendValFor3Pcs6(String val6) {
+		threePcsPrice6.sendKeys(val6);
+	}
+	public void sendValFor1Pcs7(String val7) {
+		onePcsPrice7.sendKeys(val7);
+	}
+	public void sendValFor2Pcs8(String val8) {
+		twoPcsPrice8.sendKeys(val8);
+	}
+	
+	public void sendValFor3Pcs9(String val9) {
+		threePcsPrice9.sendKeys(val9);
+	}
+	
 }

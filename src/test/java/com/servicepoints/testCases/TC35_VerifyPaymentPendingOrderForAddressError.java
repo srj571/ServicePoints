@@ -44,6 +44,7 @@ public class TC35_VerifyPaymentPendingOrderForAddressError extends BaseClass{
 		lp.setAdminPassword(cPassForPayment);
 		lp.clickLoginbtn();
 		logger.info("Client logged in Successfully.");
+		Thread.sleep(3000);
 		
 		cp.clickOnOrdersTab();
 		logger.info("Go to Orders page.");
@@ -118,6 +119,7 @@ public class TC35_VerifyPaymentPendingOrderForAddressError extends BaseClass{
 		lp.setAdminPassword(ApassForPayment);
 		lp.clickLoginbtn();
 		logger.info("Agent logged in Successfully.");
+		Thread.sleep(3000);
 		
 		AgentSupProductsPage aspp = new AgentSupProductsPage(driver);
 		aspp.getProductsPage();
@@ -181,6 +183,7 @@ public class TC35_VerifyPaymentPendingOrderForAddressError extends BaseClass{
 		lp.setAdminPassword(cPassForPayment);
 		lp.clickLoginbtn();
 		logger.info("Agent logged in Successfully.");
+		Thread.sleep(3000);
 		
 		ClientProductPage cl = new ClientProductPage(driver);
 		cl.getProductsPage();

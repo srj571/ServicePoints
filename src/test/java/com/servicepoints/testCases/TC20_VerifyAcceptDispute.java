@@ -72,6 +72,7 @@ public class TC20_VerifyAcceptDispute extends BaseClass{
 		lp.clickLoginbtn();
 		logger.info("Client logged in Successfully.");
 		
+		Thread.sleep(3000);
 		ClientOrdersPage cop=new ClientOrdersPage(driver);
 		cop.clickOnOrdersTab();
 		cop.sendPnameinSearch(productToAcceptDsp);

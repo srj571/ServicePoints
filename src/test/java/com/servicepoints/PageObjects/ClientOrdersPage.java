@@ -225,6 +225,10 @@ public class ClientOrdersPage {
 		cancelOrderBtn.click();
 	}
 	
+	@FindBy(xpath="//div[@id='client_orders_body']/div")
+	List<WebElement> noOfOrdersTab;
+	//No of orders tab
+	
 	@FindBy(xpath="(//div[@class='mb-2 multi_data'])[1]//input[@name='cancel_items[]' and @type='checkbox']")
 	List<WebElement> cancelOrderCheckBoxes;
 	

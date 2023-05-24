@@ -34,7 +34,7 @@ public class TC21_VerifyOpenAcceptDisputeForOtherIssue extends BaseClass{
 		lp.setAdminPassword(CPass);
 		lp.clickLoginbtn();
 		logger.info("Client logged in Successfully.");
-		
+		Thread.sleep(3000);
 		ClientOrdersPage cop=new ClientOrdersPage(driver);
 		cop.clickOnOrdersTab();
 		cop.sendPnameinSearch(proDsp);
@@ -83,6 +83,7 @@ public class TC21_VerifyOpenAcceptDisputeForOtherIssue extends BaseClass{
 		lp.setAdminPassword(agentPassDsp);
 		lp.clickLoginbtn();
 		logger.info("Agent logged in Successfully.");
+		Thread.sleep(5000);
 		
 		AgentDisputesPage asop=new AgentDisputesPage(driver);
 		asop.clickOnDisputesTab();
@@ -123,8 +124,10 @@ public class TC21_VerifyOpenAcceptDisputeForOtherIssue extends BaseClass{
 		lp.setAdminPassword(CPass);
 		lp.clickLoginbtn();
 		logger.info("Client logged in Successfully.");
+		Thread.sleep(3000);
 		
 		cop.clickOnOrdersTab();
+		Thread.sleep(2000);
 		cop.sendPnameinSearch(proDsp);
 		logger.info("Product name is entered.");
 		Thread.sleep(2000);
