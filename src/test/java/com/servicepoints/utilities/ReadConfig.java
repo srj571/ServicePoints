@@ -789,8 +789,60 @@ public class ReadConfig {
 		return proMbo;
 	}
 	
+	public String getVal1() {
+		String val1=po.getProperty("val1");
+		return val1;
+	}
 	
+	public String getVal2() {
+		String val2=po.getProperty("val2");
+		return val2;
+	}
 	
+	public String getVal3() {
+		String val3=po.getProperty("val3");
+		return val3;
+	}
+	
+	public String getVal4() {
+		String val4=po.getProperty("val4");
+		return val4;
+	}
+	
+	public String getVal5() {
+		String val5=po.getProperty("val5");
+		return val5;
+	}
+	
+	public String getVal6() {
+		String val6=po.getProperty("val6");
+		return val6;
+	}
+	
+	public String getVal7() {
+		String val7=po.getProperty("val7");
+		return val7;
+	}
+	
+	public String getVal8() {
+		String val8=po.getProperty("val8");
+		return val8;
+	}
+	
+	public String getVal9() {
+		String val9=po.getProperty("val9");
+		return val9;
+	}
+	
+	public String newVarientForMboDisputes() {
+		String proMbo=po.getProperty("proMboNewVar");
+		return proMbo;
+	}
+	
+	public String proForAcceptedDspMbo() {
+		String proMboADsp=po.getProperty("proMboForAcceptedDsp");
+		return proMboADsp;
+	}
 }
 
 

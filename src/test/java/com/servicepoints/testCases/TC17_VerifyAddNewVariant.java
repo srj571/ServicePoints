@@ -44,7 +44,7 @@ public class TC17_VerifyAddNewVariant extends BaseClass{
 		lp.setAdminPassword(rd.setClientpass());
 		
 		lp.clickLoginbtn();
-		
+		Thread.sleep(3000);
 		logger.info("Client logged in Sucessfully.");
 		
 		cop.clickOnOrdersTab();

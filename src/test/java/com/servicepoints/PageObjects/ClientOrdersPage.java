@@ -229,6 +229,22 @@ public class ClientOrdersPage {
 	List<WebElement> noOfOrdersTab;
 	//No of orders tab
 	
+	@FindBy(xpath="//h5[@id='orderDisputeId']//button[@aria-label='Close']")
+	WebElement closeDispute;
+	
+	public void clickOnEachDivForDisputeVerification(WebDriver driver) throws InterruptedException {
+		for(WebElement eachDiv:noOfOrdersTab) {
+			eachDiv.click();
+			Thread.sleep(1000);
+			scrollTillEle(driver);
+			Thread.sleep(2000);
+			showDispute.click();
+			Thread.sleep(4000);
+			closeDispute.click();
+			Thread.sleep(2000);
+		}
+	}
+	
 	@FindBy(xpath="(//div[@class='mb-2 multi_data'])[1]//input[@name='cancel_items[]' and @type='checkbox']")
 	List<WebElement> cancelOrderCheckBoxes;
 	
@@ -267,7 +283,7 @@ public class ClientOrdersPage {
 	}
 	
 	@FindBy(xpath="//a[normalize-space()='Show dispute']")
-	WebElement showDispute;
+	public WebElement showDispute;
 	
 	public void clickOnShowDispute() {
 		showDispute.click();

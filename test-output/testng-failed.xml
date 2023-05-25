@@ -7,13 +7,14 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.servicepoints.testCases.TC40_VerifyMergeBreakOrderForDisputeTest">
+      <class name="com.servicepoints.testCases.TC42_VerifyMergeBreakOrderForAcceptedDisputeTest">
         <methods>
           <include name="verifyDisputeIsStillOpenFromAgentSide"/>
+          <include name="verifyDisputeIsStillOpenFromClientSide"/>
           <include name="setup"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.servicepoints.testCases.TC40_VerifyMergeBreakOrderForDisputeTest -->
+      </class> <!-- com.servicepoints.testCases.TC42_VerifyMergeBreakOrderForAcceptedDisputeTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

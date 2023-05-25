@@ -5,13 +5,16 @@ import java.awt.Robot;
 import java.awt.Toolkit;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
+import java.util.List;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class AgentDisputesPage {
 	
@@ -20,7 +23,6 @@ public class AgentDisputesPage {
 		rdriver=ldriver;
 		PageFactory.initElements(ldriver, this);
 	}
-	
 	
 	@FindBy(xpath="//div[normalize-space()='Disputes']")
 	WebElement diputesTab;
@@ -153,5 +155,61 @@ public class AgentDisputesPage {
 	    robot.keyPress(KeyEvent.VK_ENTER);
 	    robot.keyRelease(KeyEvent.VK_ENTER);
 	}
+	
+	public void scrollTillShowDispute(WebDriver driver) {
+		JavascriptExecutor exe=(JavascriptExecutor) driver;
+		exe.executeScript("arguments[0].scrollIntoView();", showDsp);
+	}
+	
+	public void waitTillElementToBeClickable(WebDriver driver) {
+		WebDriverWait wait=new WebDriverWait(driver,10);
+	    wait.until(ExpectedConditions.elementToBeClickable(showDsp)).click();
+	    // Perform any actions you need to on the clicked element
+	    // ...
+	    scrollTillShowDispute(driver);
+	}
+	
+	
+	
+	@FindBy(xpath="//div[@id='client_orders_body']/div")
+	List<WebElement> eachDspDivFromAgentSide;
+	
+	@FindBy(xpath="//a[@class='btn btn-border btn-block mt-2 showDisputes linkactive']")
+	List<WebElement> allShowBtn;
+	
+	@FindBy(xpath="//h5[@id='orderDisputeId']//button[@aria-label='Close']")
+	WebElement closeDisputeAgent;
+	
+	public void clickOnEachDisputeAgentSide(WebDriver driver) throws InterruptedException {
+		for(int j=0;j<eachDspDivFromAgentSide.size();j++) {
+			for(int i=0;i<allShowBtn.size();i++) {
+				eachDspDivFromAgentSide.get(j).click();
+				Thread.sleep(2000);
+				scrollTillShowDispute(driver);
+				Thread.sleep(2000);
+				allShowBtn.get(i).click();
+				Thread.sleep(3000);
+				closeDisputeAgent.click();
+			}
+		}
+	}
+	
+//	public void clickOnEachDisputeAgentSide(WebDriver driver) throws InterruptedException {
+//		for(WebElement eachDiv : eachDspDivFromAgentSide) {
+//			eachDiv.click();
+//			Thread.sleep(2000);
+//			scrollTillShowDispute(driver);
+//			Thread.sleep(2000);
+//		
+//			for(int i=0;i<allShowBtn.size();i++) {
+//				allShowBtn.get(i).click();
+//				break;
+//			}
+//			
+//			Thread.sleep(3000);
+//			closeDisputeAgent.click();
+//			Thread.sleep(3000);
+//		}
+//	}
 
 }

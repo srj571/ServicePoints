@@ -2,13 +2,13 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
 
-	<listeners>
+	<!--<listeners>
 		<listener class-name="com.servicepoints.utilities.Reporting"></listener>
-	</listeners> 
+	</listeners> -->
 		
 	<parameter name="browser" value="chrome"></parameter>
 	
-   <test thread-count="5" name="Test">
+    <test thread-count="5" name="Test">
     <classes>
       <!--<class name="com.servicepoints.testCases.TC01_AdminLoginTest"/>
       <class name="com.servicepoints.testCases.TC02_VerifyClientLoginTest"/>
@@ -38,7 +38,7 @@
       <class name="com.servicepoints.testCases.TC26_VerifyRefundAndConversation"/>
       <class name="com.servicepoints.testCases.TC27_VerifyAddTrackingAndResend"/>       
       <class name="com.servicepoints.testCases.TC28_VerifyDeclinedResendDispute"/>-->
-     <!-- <class name="com.servicepoints.testCases.TC29_VerifySpecialRequestFunction"/>
+      <!--<class name="com.servicepoints.testCases.TC29_VerifySpecialRequestFunction"/>
       <class name="com.servicepoints.testCases.TC30_VerifyCloseSpecialRequestFunction"/>
       <class name="com.servicepoints.testCases.TC31_VerifySpecialRequestCloseByAdminSP"/>
       <class name="com.servicepoints.testCases.TC33_VerifyPaymentPendingOrderOffTest"/>
@@ -49,20 +49,42 @@
       <class name="com.servicepoints.testCases.TC37_VerifyStopFulfillmentAndStartFulfillmentTest"/>
       <class name="com.servicepoints.testCases.TC38_VerifyRequoteQuotationTest"/>
       <class name="com.servicepoints.testCases.TC39_VerifyAcceptingRequoteQuotationTest"/>-->
-      <class name="com.servicepoints.testCases.TC40_VerifyMergeBreakOrderForDisputeTest">
+      <!--<class name="com.servicepoints.testCases.TC40_VerifyMergeBreakOrderForDisputeTest">
 		  <methods>
 			  <include name="setup"></include>
-			  <include name="submitAndAcceptQuotation"></include>
-			  <include name="verifyOpenDispute"></include>
+			  <exclude name="submitAndAcceptQuotation"></exclude> 
+			  <exclude name="verifyOpenDispute"></exclude> 
 			  <exclude name="verifyAcceptDispute"></exclude>
-			  <include name="verifyRequotation"></include>
-			  <include name="acceptRequoteQuotation"></include>
+			  <exclude name="verifyRequotation"></exclude> 
+			  <exclude name="acceptRequoteQuotation"></exclude> 
+			  <exclude name="verifyDisputeIsStillOpenFromAgentSide"></exclude> 
 			  <include name="verifyDisputeIsStillOpenFromClientSide"></include>
-			  <include name="verifyDisputeIsStillOpenFromAgentSide"></include>
+			  <include name="tearDown"></include>
+		  </methods>
+      </class>-->
+      <!--<class name="com.servicepoints.testCases.TC41_VerifyMergeBreakOrderForNewVariantInDispute">
+		  <methods>
+			  <include name="setup"></include>
+			  <include name="verifySubmitAndAcceptQuotation"></include>
+			  <include name="verifyOpenDispute"></include>
+			  <include name="verifyDisputeIsOpenAfterAddingNewVariant"></include>
+			  <include name="verifyDisputeFromClientSide"></include>
+			  <include name="tearDown"></include>
+		  </methods>
+      </class>-->
+      <class name="com.servicepoints.testCases.TC42_VerifyMergeBreakOrderForAcceptedDisputeTest">
+		  <methods>
+			  <include name="setup"></include>
+			  <include name="submitAndAcceptQuotation"></include> 
+			  <include name="verifyOpenDispute"></include> 
+			  <include name="verifyAcceptDispute"></include> 
+			  <include name="verifyRequotation"></include> 
+			  <include name="acceptRequoteQuotation"></include>
+			  <include name="verifyDisputeIsStillOpenFromAgentSide"></include> 
+			  <include name="verifyDisputeIsStillOpenFromClientSide"></include>
 			  <include name="tearDown"></include>
 		  </methods>
       </class>
-      
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

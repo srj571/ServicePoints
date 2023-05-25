@@ -16,14 +16,16 @@ import com.servicepoints.utilities.ReadConfig;
 
 import junit.framework.Assert;
 
-public class TC40_VerifyMergeBreakOrderForDisputeTest extends BaseClass{
-	
+public class TC42_VerifyMergeBreakOrderForAcceptedDisputeTest extends BaseClass{
+
 	ReadConfig rd=new ReadConfig();
 	public String agentMailMBO=rd.setAgentMailMergeBreakOrder();
 	public String agentPassMBO=rd.setAgentPassMergeBreakOrder();
     public String clientMailMBO=rd.setClientMailMergeBreakOrder();
     public String clientPassMBO=rd.setClientPassMergeBreakOrder();
-    public String productMBO=rd.setProductMergeBreakOrder();
+    
+    public String proMBOForADsp=rd.proForAcceptedDspMbo();
+    
     public String queries=rd.setQueries();
 	public String process=rd.setProcessStatus();
 	public String agentAnswer=rd.setAnswer();
@@ -61,7 +63,7 @@ public class TC40_VerifyMergeBreakOrderForDisputeTest extends BaseClass{
 		aspp.clickQuotationsClientsTab();
 		Thread.sleep(2000);
 
-		aspp.searchProductName(productMBO);
+		aspp.searchProductName(proMBOForADsp);
 		Thread.sleep(3000);
 		logger.info("Product name entered.");
 		aspp.clickOnfdiv();
@@ -113,7 +115,7 @@ public class TC40_VerifyMergeBreakOrderForDisputeTest extends BaseClass{
 		ClientProductPage cl = new ClientProductPage(driver);
 		cl.getProductsPage();
 
-		cl.searchProduct(productMBO);
+		cl.searchProduct(proMBOForADsp);
 		Thread.sleep(4000);
 		cl.selectProductTab();
 		Thread.sleep(3000);
@@ -143,16 +145,6 @@ public class TC40_VerifyMergeBreakOrderForDisputeTest extends BaseClass{
 			logger.info("Verification of accepting quotation is Failed.");
 			Assert.assertTrue(false);
 		}
-		
-		ClientOrdersPage cp=new ClientOrdersPage(driver);
-		cp.clickOnOrdersTab();
-		logger.info("Go to Orders page.");
-		Thread.sleep(2000);
-		cp.sendPnameinSearch(productMBO);
-		Thread.sleep(2000);
-		cp.clickOnFDiv();
-		Thread.sleep(2000);
-		logger.info("Status changed to Processing.");
 		BaseClass.closeAllWinTabsExceptParent();
 	}
 	
@@ -170,7 +162,7 @@ public class TC40_VerifyMergeBreakOrderForDisputeTest extends BaseClass{
 		logger.info("client logged in Successfully.");
 		ClientOrdersPage cop=new ClientOrdersPage(driver);
 		cop.clickOnOrdersTab();
-		cop.sendPnameinSearch(productMBO);
+		cop.sendPnameinSearch(proMBOForADsp);
 		logger.info("Product name is entered.");
 		Thread.sleep(2000);
 		
@@ -223,7 +215,7 @@ public class TC40_VerifyMergeBreakOrderForDisputeTest extends BaseClass{
  	}
  	
  	
- 	@Test(enabled = false)
+ 	@Test(priority = 3)
  	public void verifyAcceptDispute() throws InterruptedException, IOException {
  		driver.get(baseURL);
  		LoginPage lp=new LoginPage(driver);
@@ -236,7 +228,7 @@ public class TC40_VerifyMergeBreakOrderForDisputeTest extends BaseClass{
 		asop.clickOnDisputesTab();
 		logger.info("Open disputes page.");
 		
-		asop.searchProductForDsp(productMBO);
+		asop.searchProductForDsp(proMBOForADsp);
 		Thread.sleep(3000);
 		asop.clickOnFrstDsp();
 		Thread.sleep(3000);
@@ -277,7 +269,7 @@ public class TC40_VerifyMergeBreakOrderForDisputeTest extends BaseClass{
 		Thread.sleep(3000);
 		ClientOrdersPage cop=new ClientOrdersPage(driver);
 		cop.clickOnOrdersTab();
-		cop.sendPnameinSearch(productMBO);
+		cop.sendPnameinSearch(proMBOForADsp);
 		logger.info("Product name is entered.");
 		Thread.sleep(2000);
 		
@@ -306,8 +298,7 @@ public class TC40_VerifyMergeBreakOrderForDisputeTest extends BaseClass{
 		}
  	}
  	
- 	
- 	@Test(priority = 3)
+ 	@Test(priority = 4)
  	public void verifyRequotation() throws InterruptedException, IOException {
  		driver.get(baseURL);
  		
@@ -326,7 +317,7 @@ public class TC40_VerifyMergeBreakOrderForDisputeTest extends BaseClass{
 		Thread.sleep(4000);
 		cl.getProductsPage();
 				
-		cl.searchProduct(productMBO);
+		cl.searchProduct(proMBOForADsp);
 		Thread.sleep(4000);
 		cl.selectProductTab();
 		Thread.sleep(3000);
@@ -378,7 +369,7 @@ public class TC40_VerifyMergeBreakOrderForDisputeTest extends BaseClass{
 		aspp.clickQuotationsClientsTab();
 		Thread.sleep(2000);
 		
-		aspp.searchProductName(productMBO);
+		aspp.searchProductName(proMBOForADsp);
 		Thread.sleep(4000);
 		logger.info("Product name entered.");
 		aspp.clickOnfdiv();
@@ -427,7 +418,7 @@ public class TC40_VerifyMergeBreakOrderForDisputeTest extends BaseClass{
 		 BaseClass.closeAllWinTabsExceptParent();
  	}
  	
- 	@Test(priority = 4)
+ 	@Test(priority = 5)
  	public void acceptRequoteQuotation() throws InterruptedException, IOException {
  		driver.get(baseURL);
  		
@@ -446,7 +437,7 @@ public class TC40_VerifyMergeBreakOrderForDisputeTest extends BaseClass{
 		Thread.sleep(4000);
 		cl.getProductsPage();
 				
-		cl.searchProduct(productMBO);
+		cl.searchProduct(proMBOForADsp);
 		Thread.sleep(4000);
 		cl.selectProductTab();
 		Thread.sleep(3000);
@@ -485,7 +476,7 @@ public class TC40_VerifyMergeBreakOrderForDisputeTest extends BaseClass{
 		cp.clickOnOrdersTab();
 		logger.info("Go to Orders page.");
 		Thread.sleep(2000);
-		cp.sendPnameinSearch(productMBO);
+		cp.sendPnameinSearch(proMBOForADsp);
 		Thread.sleep(2000);
 		cp.clickOnFDiv();
 		Thread.sleep(2000);
@@ -493,7 +484,7 @@ public class TC40_VerifyMergeBreakOrderForDisputeTest extends BaseClass{
 		BaseClass.closeAllWinTabsExceptParent();
  	}
  	
- 	@Test(priority = 5)
+ 	@Test(priority = 6)
  	public void verifyDisputeIsStillOpenFromAgentSide() throws InterruptedException {
  		driver.get(baseURL);
  		LoginPage lp=new LoginPage(driver);
@@ -506,7 +497,7 @@ public class TC40_VerifyMergeBreakOrderForDisputeTest extends BaseClass{
 		asop.clickOnDisputesTab();
 		logger.info("Open disputes page.");
 		
-		asop.searchProductForDsp(productMBO);
+		asop.searchProductForDsp(proMBOForADsp);
 		Thread.sleep(3000);
 //		asop.clickOnFrstDsp();
 //		Thread.sleep(3000);
@@ -516,10 +507,9 @@ public class TC40_VerifyMergeBreakOrderForDisputeTest extends BaseClass{
 		
 		asop.clickOnEachDisputeAgentSide(driver);
 		logger.info("Verification of show dispute from Agent side.");
-		
  	}
  	
- 	@Test(priority = 6)
+ 	@Test(priority = 7)
  	public void verifyDisputeIsStillOpenFromClientSide() throws InterruptedException {
  		driver.get(baseURL);
  		LoginPage lp=new LoginPage(driver);
@@ -531,7 +521,7 @@ public class TC40_VerifyMergeBreakOrderForDisputeTest extends BaseClass{
 		
 		ClientOrdersPage cop=new ClientOrdersPage(driver);
 		cop.clickOnOrdersTab();
-		cop.sendPnameinSearch(productMBO);
+		cop.sendPnameinSearch(proMBOForADsp);
 		logger.info("Product name is entered.");
 		Thread.sleep(2000);
 		
@@ -557,4 +547,5 @@ public class TC40_VerifyMergeBreakOrderForDisputeTest extends BaseClass{
 		
 		logger.info("Verification of show disputes successfull from client side.");
  	}
+	
 }
