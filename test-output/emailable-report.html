@@ -9,36 +9,17 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">326,217</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">29,676</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.servicepoints.testCases.TC42_VerifyMergeBreakOrderForAcceptedDisputeTest</td><td><a href="#m0">verifyDisputeIsStillOpenFromAgentSide</a></td><td rowspan="1">1685018596930</td><td rowspan="1">41310</td></tr><tr class="failedeven"><td><a href="#m1">verifyDisputeIsStillOpenFromClientSide</a></td><td rowspan="1">1685018638247</td><td rowspan="1">19790</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">com.servicepoints.testCases.TC42_VerifyMergeBreakOrderForAcceptedDisputeTest</td><td><a href="#m2">acceptRequoteQuotation</a></td><td rowspan="1">1685018558127</td><td rowspan="1">38798</td></tr><tr class="passedeven"><td><a href="#m3">submitAndAcceptQuotation</a></td><td rowspan="1">1685018337584</td><td rowspan="1">67787</td></tr><tr class="passedeven"><td><a href="#m4">verifyAcceptDispute</a></td><td rowspan="1">1685018437242</td><td rowspan="1">57154</td></tr><tr class="passedeven"><td><a href="#m5">verifyOpenDispute</a></td><td rowspan="1">1685018405384</td><td rowspan="1">31856</td></tr><tr class="passedeven"><td><a href="#m6">verifyRequotation</a></td><td rowspan="1">1685018494398</td><td rowspan="1">63728</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.servicepoints.testCases.TC40_VerifyMergeBreakOrderForDisputeTest</td><td><a href="#m0">verifyDisputeIsStillOpenFromClientSide</a></td><td rowspan="1">1685021775504</td><td rowspan="1">24393</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">com.servicepoints.testCases.TC42_VerifyMergeBreakOrderForAcceptedDisputeTest#verifyDisputeIsStillOpenFromAgentSide</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;javascript:void(0)&quot; id=&quot;dis494&quot; class=&quot;btn btn-border btn-block mt-2 showDisputes linkactive&quot; data-target=&quot;#disbute_modal&quot; data-id=&quot;494&quot;&gt;...&lt;/a&gt; is not clickable at point (1699, 12). Other element would receive the click: &lt;div class=&quot;dropdown-toggle user_image_dropdown&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;...&lt;/div&gt;
+<h2>Test</h2><h3 id="m0">com.servicepoints.testCases.TC40_VerifyMergeBreakOrderForDisputeTest#verifyDisputeIsStillOpenFromClientSide</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (1699, -20)
   (Session info: chrome=111.0.5563.64)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;sarasvati-Precision-Tower-3420&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-72-generic&apos;, java.version: &apos;17.0.5&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.64, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: /tmp/.com.google.Chrome.TbPkIb}, goog:chromeOptions: {debuggerAddress: localhost:37297}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fd56b09149ec8f1bf4f1c94f13223ca8
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at com.servicepoints.PageObjects.AgentDisputesPage.clickOnEachDisputeAgentSide(AgentDisputesPage.java:190)
-	at com.servicepoints.testCases.TC42_VerifyMergeBreakOrderForAcceptedDisputeTest.verifyDisputeIsStillOpenFromAgentSide(TC42_VerifyMergeBreakOrderForAcceptedDisputeTest.java:519)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.servicepoints.testCases.TC42_VerifyMergeBreakOrderForAcceptedDisputeTest#verifyDisputeIsStillOpenFromClientSide</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=111.0.5563.64)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;sarasvati-Precision-Tower-3420&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-72-generic&apos;, java.version: &apos;17.0.5&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.64, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: /tmp/.com.google.Chrome.TbPkIb}, goog:chromeOptions: {debuggerAddress: localhost:37297}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fd56b09149ec8f1bf4f1c94f13223ca8
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.64, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: /tmp/.com.google.Chrome.b1kSq0}, goog:chromeOptions: {debuggerAddress: localhost:42541}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: da1cede363c1052fe4a98d0e54ebf5a4
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -50,13 +31,8 @@ Session ID: fd56b09149ec8f1bf4f1c94f13223ca8
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 	at jdk.proxy2/jdk.proxy2.$Proxy28.click(Unknown Source)
 	at com.servicepoints.PageObjects.ClientOrdersPage.clickOnEachDivForDisputeVerification(ClientOrdersPage.java:241)
-	at com.servicepoints.testCases.TC42_VerifyMergeBreakOrderForAcceptedDisputeTest.verifyDisputeIsStillOpenFromClientSide(TC42_VerifyMergeBreakOrderForAcceptedDisputeTest.java:557)
+	at com.servicepoints.testCases.TC40_VerifyMergeBreakOrderForDisputeTest.verifyDisputeIsStillOpenFromClientSide(TC40_VerifyMergeBreakOrderForDisputeTest.java:555)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.servicepoints.testCases.TC42_VerifyMergeBreakOrderForAcceptedDisputeTest#acceptRequoteQuotation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.servicepoints.testCases.TC42_VerifyMergeBreakOrderForAcceptedDisputeTest#submitAndAcceptQuotation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.servicepoints.testCases.TC42_VerifyMergeBreakOrderForAcceptedDisputeTest#verifyAcceptDispute</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">com.servicepoints.testCases.TC42_VerifyMergeBreakOrderForAcceptedDisputeTest#verifyOpenDispute</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">com.servicepoints.testCases.TC42_VerifyMergeBreakOrderForAcceptedDisputeTest#verifyRequotation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

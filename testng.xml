@@ -49,7 +49,7 @@
       <class name="com.servicepoints.testCases.TC37_VerifyStopFulfillmentAndStartFulfillmentTest"/>
       <class name="com.servicepoints.testCases.TC38_VerifyRequoteQuotationTest"/>
       <class name="com.servicepoints.testCases.TC39_VerifyAcceptingRequoteQuotationTest"/>-->
-      <!--<class name="com.servicepoints.testCases.TC40_VerifyMergeBreakOrderForDisputeTest">
+      <class name="com.servicepoints.testCases.TC40_VerifyMergeBreakOrderForDisputeTest">
 		  <methods>
 			  <include name="setup"></include>
 			  <exclude name="submitAndAcceptQuotation"></exclude> 
@@ -61,7 +61,7 @@
 			  <include name="verifyDisputeIsStillOpenFromClientSide"></include>
 			  <include name="tearDown"></include>
 		  </methods>
-      </class>-->
+      </class>
       <!--<class name="com.servicepoints.testCases.TC41_VerifyMergeBreakOrderForNewVariantInDispute">
 		  <methods>
 			  <include name="setup"></include>
@@ -72,7 +72,7 @@
 			  <include name="tearDown"></include>
 		  </methods>
       </class>-->
-      <class name="com.servicepoints.testCases.TC42_VerifyMergeBreakOrderForAcceptedDisputeTest">
+       <!--<class name="com.servicepoints.testCases.TC42_VerifyMergeBreakOrderForAcceptedDisputeTest">
 		  <methods>
 			  <include name="setup"></include>
 			  <include name="submitAndAcceptQuotation"></include> 
@@ -84,7 +84,7 @@
 			  <include name="verifyDisputeIsStillOpenFromClientSide"></include>
 			  <include name="tearDown"></include>
 		  </methods>
-      </class>
+      </class>-->
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

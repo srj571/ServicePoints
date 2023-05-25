@@ -161,6 +161,12 @@ public class AgentDisputesPage {
 		exe.executeScript("arguments[0].scrollIntoView();", showDsp);
 	}
 	
+	public void scrollTillEndOfThePage(WebDriver driver) {
+		JavascriptExecutor exe=(JavascriptExecutor) driver;
+		exe.executeScript("window.scrollTo(0, document.body.scrollHeight)");
+	}
+	
+	
 	public void waitTillElementToBeClickable(WebDriver driver) {
 		WebDriverWait wait=new WebDriverWait(driver,10);
 	    wait.until(ExpectedConditions.elementToBeClickable(showDsp)).click();
@@ -185,12 +191,14 @@ public class AgentDisputesPage {
 			for(int i=0;i<allShowBtn.size();i++) {
 				eachDspDivFromAgentSide.get(j).click();
 				Thread.sleep(2000);
-				scrollTillShowDispute(driver);
+				//scrollTillShowDispute(driver);
+				scrollTillEndOfThePage(driver); 
 				Thread.sleep(2000);
 				allShowBtn.get(i).click();
 				Thread.sleep(3000);
 				closeDisputeAgent.click();
 			}
+			eachDspDivFromAgentSide.get(j).click();
 		}
 	}
 	

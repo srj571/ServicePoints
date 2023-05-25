@@ -526,7 +526,7 @@ public class TC40_VerifyMergeBreakOrderForDisputeTest extends BaseClass{
 		lp.setAdminMailId(clientMailMBO);
 		lp.setAdminPassword(clientPassMBO);
 		lp.clickLoginbtn();
-		logger.info("Client logged in Successfully.");
+		logger.info("Client logged in Successfully.");                                       
 		Thread.sleep(3000);
 		
 		ClientOrdersPage cop=new ClientOrdersPage(driver);
