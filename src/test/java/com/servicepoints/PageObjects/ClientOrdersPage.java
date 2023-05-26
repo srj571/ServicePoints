@@ -313,6 +313,11 @@ public class ClientOrdersPage {
 		exe.executeScript("arguments[0].scrollIntoView();", disputeHistory);
 	}
 	
+	public void scrollTillShowDisputeBtn(WebDriver driver) {
+		JavascriptExecutor exe=(JavascriptExecutor) driver;
+		exe.executeScript("arguments[0].scrollIntoView();", showDispute);
+	}
+	
 	@FindBy(xpath="(//div[@class='table_list_item'])[1]")
 	WebElement disputeHistoryTab;
 	
@@ -478,9 +483,19 @@ public class ClientOrdersPage {
 		clickOnYesBtn.click();
 	}
 	
-
+	@FindBy(xpath="//a[@id='closeDispute']")
+	WebElement closedDisputes;
 	
+	public void clickOnClosedDisputestab() {
+		closedDisputes.click();
+	}
 	
+	@FindBy(xpath="//button[@id='notifySupport']")
+	WebElement notifySupportBtn;
+	
+	public void clickOnNotifySupportBtn() {
+		notifySupportBtn.click();
+	}
 	
 	
 	

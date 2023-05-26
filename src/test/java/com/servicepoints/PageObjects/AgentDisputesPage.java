@@ -38,6 +38,10 @@ public class AgentDisputesPage {
 		searchDspPro.sendKeys(pdsp);
 	}
 	
+	public void clearSearchFieldForDisputePro() {
+		searchDspPro.clear();
+	}
+	
 	@FindBy(xpath="(//div[@class='js_table_expand_two table_expand_abso full_expand'])[1]")
 	WebElement fdivShowDsp;
 	
@@ -177,7 +181,7 @@ public class AgentDisputesPage {
 	
 	
 	
-	@FindBy(xpath="//div[@id='client_orders_body']/div")
+	@FindBy(xpath="//div[@id='client_orders_body']/div/div[1]")
 	List<WebElement> eachDspDivFromAgentSide;
 	
 	@FindBy(xpath="//a[@class='btn btn-border btn-block mt-2 showDisputes linkactive']")
@@ -191,14 +195,15 @@ public class AgentDisputesPage {
 			for(int i=0;i<allShowBtn.size();i++) {
 				eachDspDivFromAgentSide.get(j).click();
 				Thread.sleep(2000);
-				//scrollTillShowDispute(driver);
-				scrollTillEndOfThePage(driver); 
+				scrollTillShowDispute(driver);
+				//scrollTillEndOfThePage(driver); 
 				Thread.sleep(2000);
 				allShowBtn.get(i).click();
 				Thread.sleep(3000);
 				closeDisputeAgent.click();
+				Thread.sleep(2000);
+				//eachDspDivFromAgentSide.get(j).click();
 			}
-			eachDspDivFromAgentSide.get(j).click();
 		}
 	}
 	
@@ -219,5 +224,24 @@ public class AgentDisputesPage {
 //			Thread.sleep(3000);
 //		}
 //	}
+	
+	@FindBy(xpath="//a[normalize-space()='Closed disputes']")
+	WebElement closedDisputesTab;
+	
+	public void clickOnClosedDisputesTab() {
+		closedDisputesTab.click();
+	}
+	
+	public boolean visibilityOfShowBtn() {
+		boolean flag=showDsp.isDisplayed();
+		return flag;
+	}
+	
+	
+	
+	
+	
+	
+	
 
 }

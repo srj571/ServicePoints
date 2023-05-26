@@ -263,14 +263,14 @@ public class TC26_VerifyRefundAndConversation extends BaseClass{
 		Thread.sleep(2000);
 		cop.clickOnFirstDisputeTab();
 		Thread.sleep(5000);
-		
+		                                     
 		if(driver.getPageSource().contains("Dispute history")) {
 			Assert.assertTrue(true);
 			logger.info("Verification of Dispute history opening is successfull.");
-		}else {
+		}else {                                                                                                     
 			captureScreen(driver, "acceptDispute");
 			logger.info("Verification of Dispute history opening is failed.");
 			Assert.assertTrue(false);
 		}
 	}
-}
+}                                                                                                                                              

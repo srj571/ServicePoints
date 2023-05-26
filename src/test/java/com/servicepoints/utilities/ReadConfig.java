@@ -843,6 +843,11 @@ public class ReadConfig {
 		String proMboADsp=po.getProperty("proMboForAcceptedDsp");
 		return proMboADsp;
 	}
+	
+	public String productForTC43() {
+		String pro43=po.getProperty("product43");
+		return pro43;
+	}
 }
 
 

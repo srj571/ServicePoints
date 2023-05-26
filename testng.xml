@@ -48,7 +48,7 @@
       <class name="com.servicepoints.testCases.TC00_verifySubmitAndAcceptQuote"/>
       <class name="com.servicepoints.testCases.TC37_VerifyStopFulfillmentAndStartFulfillmentTest"/>
       <class name="com.servicepoints.testCases.TC38_VerifyRequoteQuotationTest"/>
-      <class name="com.servicepoints.testCases.TC39_VerifyAcceptingRequoteQuotationTest"/>-->
+      <class name="com.servicepoints.testCases.TC39_VerifyAcceptingRequoteQuotationTest"/>
       <class name="com.servicepoints.testCases.TC40_VerifyMergeBreakOrderForDisputeTest">
 		  <methods>
 			  <include name="setup"></include>
@@ -57,11 +57,11 @@
 			  <exclude name="verifyAcceptDispute"></exclude>
 			  <exclude name="verifyRequotation"></exclude> 
 			  <exclude name="acceptRequoteQuotation"></exclude> 
-			  <exclude name="verifyDisputeIsStillOpenFromAgentSide"></exclude> 
+			  <include name="verifyDisputeIsStillOpenFromAgentSide"></include> 
 			  <include name="verifyDisputeIsStillOpenFromClientSide"></include>
 			  <include name="tearDown"></include>
 		  </methods>
-      </class>
+      </class>-->
       <!--<class name="com.servicepoints.testCases.TC41_VerifyMergeBreakOrderForNewVariantInDispute">
 		  <methods>
 			  <include name="setup"></include>
@@ -85,6 +85,16 @@
 			  <include name="tearDown"></include>
 		  </methods>
       </class>-->
+      <class name="com.servicepoints.testCases.TC43_VerifyAfterCloseDisputeNoConversationBetweenClientAndSupplier">
+		  <methods>
+			  <include name="setup"></include>
+			  <include name="submitAndAcceptQuotation"></include> 
+			  <include name="verifyOpenDispute"></include>
+			  <include name="verifyAcceptDispute"></include> 
+			  <include name="verifyNotificationFromClient"></include>
+			  <include name="tearDown"></include>
+		  </methods>
+      </class>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -2397,3 +2397,55 @@
 [INFO ] 2023-05-25 19:04:03.915 [main] BaseClass - Product name is entered.
 [INFO ] 2023-05-25 19:06:16.451 [main] BaseClass - Client logged in Successfully.
 [INFO ] 2023-05-25 19:06:21.136 [main] BaseClass - Product name is entered.
+[INFO ] 2023-05-26 09:11:58.473 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-05-26 09:12:03.286 [main] BaseClass - Product name is entered.
+[INFO ] 2023-05-26 09:14:12.086 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-26 09:14:15.662 [main] BaseClass - Open disputes page.
+[INFO ] 2023-05-26 09:14:38.020 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-05-26 09:15:37.370 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-26 09:15:40.914 [main] BaseClass - Open disputes page.
+[INFO ] 2023-05-26 09:19:18.957 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-26 09:19:22.720 [main] BaseClass - Open disputes page.
+[INFO ] 2023-05-26 09:19:32.814 [main] BaseClass - Verification of show dispute from Agent side.
+[INFO ] 2023-05-26 09:19:35.884 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-05-26 09:24:55.254 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-26 09:24:58.538 [main] BaseClass - Open disputes page.
+[INFO ] 2023-05-26 09:29:04.871 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-26 09:29:08.447 [main] BaseClass - Open disputes page.
+[INFO ] 2023-05-26 09:33:24.014 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-26 09:33:27.626 [main] BaseClass - Open disputes page.
+[INFO ] 2023-05-26 11:50:36.274 [main] BaseClass - Application Opened.
+[INFO ] 2023-05-26 11:50:37.370 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-05-26 11:50:38.485 [main] BaseClass - Password is entered.
+[INFO ] 2023-05-26 11:50:51.992 [main] BaseClass - Product name entered.
+[INFO ] 2023-05-26 11:52:42.421 [main] BaseClass - Application Opened.
+[INFO ] 2023-05-26 11:52:43.516 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-05-26 11:52:44.593 [main] BaseClass - Password is entered.
+[INFO ] 2023-05-26 11:52:58.051 [main] BaseClass - Product name entered.
+[INFO ] 2023-05-26 11:53:02.424 [main] BaseClass - Price entered
+[INFO ] 2023-05-26 11:53:16.604 [main] BaseClass - Verification of Submit quotation Successed..
+[INFO ] 2023-05-26 11:53:19.339 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-05-26 11:53:19.427 [main] BaseClass - Password is entered.
+[INFO ] 2023-05-26 11:53:42.659 [main] BaseClass - Verification of accepting quotation is Successed.
+[INFO ] 2023-05-26 11:53:50.659 [main] BaseClass - client logged in Successfully.
+[INFO ] 2023-05-26 11:53:52.682 [main] BaseClass - Product name is entered.
+[INFO ] 2023-05-26 11:53:58.051 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-05-26 11:54:04.334 [main] BaseClass - Customer got wrong product option selected.
+[INFO ] 2023-05-26 11:54:04.528 [main] BaseClass - I want the order to be shipped immediately option is selected.
+[INFO ] 2023-05-26 11:54:07.761 [main] BaseClass - Queries entered in text fields.
+[INFO ] 2023-05-26 11:54:12.861 [main] BaseClass - Dispute saved.
+[INFO ] 2023-05-26 11:54:13.209 [main] BaseClass - Verification of Dispute raised Successfully.
+[INFO ] 2023-05-26 11:54:16.625 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-26 11:54:20.356 [main] BaseClass - Open disputes page.
+[INFO ] 2023-05-26 11:54:26.589 [main] BaseClass - Clicked on show disputes.
+[INFO ] 2023-05-26 11:54:29.766 [main] BaseClass - Dispute Accepted.
+[INFO ] 2023-05-26 11:54:36.993 [main] BaseClass - Dispute send.
+[INFO ] 2023-05-26 11:54:45.185 [main] BaseClass - Verification of Dispute acceptance is successed.
+[INFO ] 2023-05-26 11:54:55.487 [main] BaseClass - Clicked on show disputes.
+[INFO ] 2023-05-26 11:55:02.624 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-05-26 11:55:10.872 [main] BaseClass - Product name is entered.
+[INFO ] 2023-05-26 11:55:13.453 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-05-26 11:55:24.562 [main] BaseClass - Verification of Show dispute successfull.
+[INFO ] 2023-05-26 11:55:28.841 [main] BaseClass - Verification of Notify Support is successfull.
+[INFO ] 2023-05-26 11:55:32.214 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-26 11:55:44.784 [main] BaseClass - Verification of Show dispute in Notification is successfull.
