@@ -2571,3 +2571,27 @@
 [INFO ] 2023-05-26 16:02:42.216 [main] BaseClass - Dispute saved.
 [INFO ] 2023-05-26 16:02:55.628 [main] BaseClass - Queries entered in text fields.
 [INFO ] 2023-05-26 16:02:59.703 [main] BaseClass - Dispute saved.
+[INFO ] 2023-05-26 16:32:08.756 [main] BaseClass - Application Opened.
+[INFO ] 2023-05-26 16:32:09.900 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-05-26 16:32:11.096 [main] BaseClass - Password is entered.
+[INFO ] 2023-05-26 16:32:24.947 [main] BaseClass - Product name entered.
+[INFO ] 2023-05-26 16:32:29.586 [main] BaseClass - Price entered
+[INFO ] 2023-05-26 16:32:43.851 [main] BaseClass - Verification of Submit quotation Successed..
+[INFO ] 2023-05-26 16:32:46.860 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-05-26 16:32:46.963 [main] BaseClass - Password is entered.
+[INFO ] 2023-05-26 16:33:10.248 [main] BaseClass - Verification of accepting quotation is Successed.
+[INFO ] 2023-05-26 16:33:11.859 [main] BaseClass - Go to Orders page.
+[INFO ] 2023-05-26 16:33:18.186 [main] BaseClass - Status changed to Processing.
+[INFO ] 2023-05-26 16:33:26.416 [main] BaseClass - client logged in Successfully.
+[INFO ] 2023-05-26 16:33:29.351 [main] BaseClass - Product name is entered.
+[INFO ] 2023-05-26 16:33:34.968 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-05-26 16:33:41.303 [main] BaseClass - Customer got wrong product option selected.
+[INFO ] 2023-05-26 16:33:41.549 [main] BaseClass - I want the order to be shipped immediately option is selected.
+[INFO ] 2023-05-26 16:33:44.798 [main] BaseClass - Queries entered in text fields.
+[INFO ] 2023-05-26 16:33:49.963 [main] BaseClass - Dispute saved.
+[INFO ] 2023-05-26 16:33:50.428 [main] BaseClass - Verification of Dispute raised Successfully.
+[INFO ] 2023-05-26 16:34:05.925 [main] BaseClass - Queries entered in text fields.
+[INFO ] 2023-05-26 16:34:10.071 [main] BaseClass - Dispute saved.
+[INFO ] 2023-05-26 16:34:23.789 [main] BaseClass - Queries entered in text fields.
+[INFO ] 2023-05-26 16:34:27.900 [main] BaseClass - Dispute saved.
+[INFO ] 2023-05-26 16:34:35.020 [main] BaseClass - verification of Alert after submitting dispute for resend and refund is successfull.

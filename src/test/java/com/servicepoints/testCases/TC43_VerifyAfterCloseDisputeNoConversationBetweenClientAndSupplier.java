@@ -19,7 +19,6 @@ import junit.framework.Assert;
 
 public class TC43_VerifyAfterCloseDisputeNoConversationBetweenClientAndSupplier extends BaseClass{
 
-	
 	ReadConfig rd=new ReadConfig();
 	public String agentMailMBO=rd.setAgentMailMergeBreakOrder();
 	public String agentPassMBO=rd.setAgentPassMergeBreakOrder();

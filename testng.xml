@@ -98,11 +98,11 @@
       <class name="com.servicepoints.testCases.TC44_VerifyClientAbleToChangeDisputeSolutionAfterRaisingDispute">
 		  <methods>
 			  <include name="setup"></include>
-			  <exclude name="submitAndAcceptQuotation"></exclude>
+			  <include name="submitAndAcceptQuotation"></include>
 			  <include name="verifyOpenDispute"></include>
 			  <include name="tearDown"></include>
 		  </methods>
-      </class>
+      </class>                                             
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
