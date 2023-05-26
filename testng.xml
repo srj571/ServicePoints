@@ -71,8 +71,8 @@
 			  <include name="verifyDisputeFromClientSide"></include>
 			  <include name="tearDown"></include>
 		  </methods>
-      </class>-->
-       <!--<class name="com.servicepoints.testCases.TC42_VerifyMergeBreakOrderForAcceptedDisputeTest">
+      </class>
+      <class name="com.servicepoints.testCases.TC42_VerifyMergeBreakOrderForAcceptedDisputeTest">
 		  <methods>
 			  <include name="setup"></include>
 			  <include name="submitAndAcceptQuotation"></include> 
@@ -84,7 +84,7 @@
 			  <include name="verifyDisputeIsStillOpenFromClientSide"></include>
 			  <include name="tearDown"></include>
 		  </methods>
-      </class>-->
+      </class>
       <class name="com.servicepoints.testCases.TC43_VerifyAfterCloseDisputeNoConversationBetweenClientAndSupplier">
 		  <methods>
 			  <include name="setup"></include>
@@ -92,6 +92,14 @@
 			  <include name="verifyOpenDispute"></include>
 			  <include name="verifyAcceptDispute"></include> 
 			  <include name="verifyNotificationFromClient"></include>
+			  <include name="tearDown"></include>
+		  </methods>
+      </class>-->
+      <class name="com.servicepoints.testCases.TC44_VerifyClientAbleToChangeDisputeSolutionAfterRaisingDispute">
+		  <methods>
+			  <include name="setup"></include>
+			  <exclude name="submitAndAcceptQuotation"></exclude>
+			  <include name="verifyOpenDispute"></include>
 			  <include name="tearDown"></include>
 		  </methods>
       </class>

@@ -116,6 +116,18 @@ public class ClientOrdersPage {
 	@FindBy(xpath="//select[@id='dispute_type_list']")
 	WebElement dspSolutions;
 	
+	@FindBy(xpath="//select[@name='disputeSol']")
+	WebElement disputeSolutionsNew;
+	
+	public void clickOnRefundSolution() {
+		Select sl=new Select(disputeSolutionsNew);
+		sl.selectByIndex(1);
+	}
+	
+	public void clickOnResendSolution() {
+		Select sl=new Select(disputeSolutionsNew);
+		sl.selectByIndex(2);
+	}
 	
 	public void handleDspSolution() {
 		Select sl=new Select(dspSolutions);
@@ -498,6 +510,30 @@ public class ClientOrdersPage {
 	}
 	
 	
+	@FindBy(xpath="//a[@class='btn btn-primary btn-sm float-right']")
+	WebElement goToDisputes;
 	
+	public void scrollTillGoToDisputesBtn(WebDriver driver) {
+		JavascriptExecutor exe=(JavascriptExecutor) driver;
+		exe.executeScript("arguments[0].scrollIntoView();", goToDisputes);
+	}
+	
+	@FindBy(xpath="(//span[@aria-hidden='true'][normalize-space()='×'])[4]")
+	WebElement closeAlert;
+	
+	@FindBy(xpath="//div[@id='error_modal']//div[@class='modal-content']")
+	WebElement alertMsg;
+	
+	public void verifyAlert(WebDriver driver) throws InterruptedException {
+		WebDriverWait wait=new WebDriverWait(driver,10);
+		wait.until(ExpectedConditions.textToBePresentInElement(alertMsg, "You are allowed to raise refund and resend disputes only for those orders status that are delivered, waiting for tracking updates & in transit. Also on orders in processing-resend status, refund disputes can be opened."));
+		Thread.sleep(3000);
+		closeAlert.click();
+	}
+	
+	public void scrollUpToTop(WebDriver driver) {
+		JavascriptExecutor exe=(JavascriptExecutor) driver;
+		exe.executeScript("window.scrollTo(0, 0);");
+	}
 	
 }

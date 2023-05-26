@@ -8,7 +8,6 @@ import java.util.concurrent.TimeUnit;
 import org.testng.annotations.Test;
 
 import com.servicepoints.PageObjects.AgentDisputesPage;
-import com.servicepoints.PageObjects.AgentHomePage;
 import com.servicepoints.PageObjects.AgentSupProductsPage;
 import com.servicepoints.PageObjects.ClientOrdersPage;
 import com.servicepoints.PageObjects.ClientProductPage;
@@ -17,21 +16,21 @@ import com.servicepoints.utilities.ReadConfig;
 
 import junit.framework.Assert;
 
-public class TC43_VerifyAfterCloseDisputeNoConversationBetweenClientAndSupplier extends BaseClass{
+public class TC44_VerifyClientAbleToChangeDisputeSolutionAfterRaisingDispute extends BaseClass{
 
-	
 	ReadConfig rd=new ReadConfig();
 	public String agentMailMBO=rd.setAgentMailMergeBreakOrder();
 	public String agentPassMBO=rd.setAgentPassMergeBreakOrder();
     public String clientMailMBO=rd.setClientMailMergeBreakOrder();
     public String clientPassMBO=rd.setClientPassMergeBreakOrder();
     
-    public String product43=rd.productForTC43();
+    public String productForTC44=rd.productForTC44();
     
     public String queries=rd.setQueries();
 	public String process=rd.setProcessStatus();
 	public String agentAnswer=rd.setAnswer();
-    
+	public String otherTxt=rd.setOtherTxt();
+	
  	@Test(priority = 1)
 	public void submitAndAcceptQuotation() throws InterruptedException, IOException {
 		logger.info("Application Opened.");
@@ -54,7 +53,7 @@ public class TC43_VerifyAfterCloseDisputeNoConversationBetweenClientAndSupplier 
 		aspp.clickQuotationsClientsTab();
 		Thread.sleep(2000);
 
-		aspp.searchProductName(product43);
+		aspp.searchProductName(productForTC44);
 		Thread.sleep(3000);
 		logger.info("Product name entered.");
 		aspp.clickOnfdiv();
@@ -106,7 +105,7 @@ public class TC43_VerifyAfterCloseDisputeNoConversationBetweenClientAndSupplier 
 		ClientProductPage cl = new ClientProductPage(driver);
 		cl.getProductsPage();
 
-		cl.searchProduct(product43);
+		cl.searchProduct(productForTC44);
 		Thread.sleep(4000);
 		cl.selectProductTab();
 		Thread.sleep(3000);
@@ -136,6 +135,16 @@ public class TC43_VerifyAfterCloseDisputeNoConversationBetweenClientAndSupplier 
 			logger.info("Verification of accepting quotation is Failed.");
 			Assert.assertTrue(false);
 		}
+		
+		ClientOrdersPage cp=new ClientOrdersPage(driver);
+		cp.clickOnOrdersTab();
+		logger.info("Go to Orders page.");
+		Thread.sleep(2000);
+		cp.sendPnameinSearch(productForTC44);
+		Thread.sleep(2000);
+		cp.clickOnFDiv();
+		Thread.sleep(2000);
+		logger.info("Status changed to Processing.");
 		BaseClass.closeAllWinTabsExceptParent();
 	}
 	
@@ -153,9 +162,10 @@ public class TC43_VerifyAfterCloseDisputeNoConversationBetweenClientAndSupplier 
 		logger.info("client logged in Successfully.");
 		ClientOrdersPage cop=new ClientOrdersPage(driver);
 		cop.clickOnOrdersTab();
-		cop.sendPnameinSearch(product43);
+		cop.sendPnameinSearch(productForTC44);
 		logger.info("Product name is entered.");
 		Thread.sleep(2000);
+		
 		
 		cop.clickOnStatusDrop();
 		//Thread.sleep(3000);
@@ -201,142 +211,54 @@ public class TC43_VerifyAfterCloseDisputeNoConversationBetweenClientAndSupplier 
 			logger.info("Verification of Dispute raised failed.");
 			Assert.assertTrue(false);
 		}
-		BaseClass.closeAllWinTabsExceptParent();
- 	}
- 	
- 	
- 	@Test(priority = 3)
- 	public void verifyAcceptDispute() throws InterruptedException, IOException {
- 		driver.get(baseURL);
- 		LoginPage lp=new LoginPage(driver);
-		lp.setAdminMailId(agentMailMBO);
-		lp.setAdminPassword(agentPassMBO);
-		lp.clickLoginbtn();
-		logger.info("Agent logged in Successfully.");
 		
-		AgentDisputesPage asop=new AgentDisputesPage(driver);
-		asop.clickOnDisputesTab();
-		logger.info("Open disputes page.");
-		
-		asop.searchProductForDsp(product43);
-		Thread.sleep(3000);
-		asop.clickOnFrstDsp();
-		Thread.sleep(3000);
-		asop.clickOnShowDsp();
-		logger.info("Clicked on show disputes.");
-		Thread.sleep(3000);
-		
-		asop.selectDspStatus();
-		logger.info("Dispute Accepted.");
-		Thread.sleep(3000);
-		
-		asop.sendAnswer(agentAnswer);
-		Thread.sleep(3000);
-		asop.scrollTillSendAns(driver);
-		Thread.sleep(1000);
-		asop.clickOnSendAnswer();
-		logger.info("Dispute send.");
-		Thread.sleep(5000);
-		
-		if(driver.getPageSource().contains("Dispute accepted successfully")) {
-			Assert.assertTrue(true);
-			Thread.sleep(3000);
-			logger.info("Verification of Dispute acceptance is successfull.");
-		}else {
-			captureScreen(driver, "acceptDispute");
-			logger.info("Verification of Dispute acceptance is failed.");
-			Assert.assertTrue(false);
-		}
-		
-		asop.clickOnClosedDisputesTab();
+		cop.scrollUpToTop(driver);
+		//cop.scrollTillGoToDisputesBtn(driver);
 		Thread.sleep(2000);
 		
-		asop.clearSearchFieldForDisputePro();
-		Thread.sleep(1000);
-		
-		asop.searchProductForDsp(product43);
-		Thread.sleep(3000);
-		asop.clickOnFrstDsp();
-		Thread.sleep(3000);
-		asop.clickOnShowDsp();
-		logger.info("Clicked on show disputes.");
-		Thread.sleep(4000);
-		
-		
-		driver.get(baseURL);
-		
-		lp.setAdminMailId(clientMailMBO);
-		lp.setAdminPassword(clientPassMBO);
-		lp.clickLoginbtn();
-		logger.info("Client logged in Successfully.");
-		
-		Thread.sleep(3000);
-		ClientOrdersPage cop=new ClientOrdersPage(driver);
-		cop.clickOnOrdersTab();
-		Thread.sleep(1000);
 		cop.clickOnGoToDisputesTab();
-		Thread.sleep(1000);
-		cop.sendPnameinSearch(product43);
-		logger.info("Product name is entered.");
 		Thread.sleep(2000);
-		cop.clickOnClosedDisputestab();
 		
-		cop.clickOnFDiv();		
-		logger.info("Clicked on first div.");
-		Thread.sleep(4000);
-		cop.scrollTillShowDisputeBtn(driver);
-		Thread.sleep(3000);
+		cop.sendPnameinSearch(productForTC44);
+		Thread.sleep(2000);
+		
+		cop.clickOnFDiv();
+		Thread.sleep(2000);
 		
 		cop.clickOnShowDispute();
-		Thread.sleep(4000);
-		logger.info("Verification of Show dispute successfull.");
-		
-		cop.clickOnNotifySupportBtn();
-		Thread.sleep(1000);
-		
-		if(driver.getPageSource().contains("Notification sent successfully")) {
-			Assert.assertTrue(true);
-			Thread.sleep(3000);
-			logger.info("Verification of Notify Support is successfull.");
-		}
-		else {
-			captureScreen(driver, "Notify Support");
-			logger.info("Verification of Notify Support is failed.");
-			Assert.assertTrue(false);
-		}
- 	}
- 	
- 	@Test(priority = 4)
- 	public void verifyNotificationFromClient() throws InterruptedException, IOException {
- 		driver.get(baseURL);
- 		LoginPage lp=new LoginPage(driver);
-		lp.setAdminMailId(agentMailMBO);
-		lp.setAdminPassword(agentPassMBO);
-		lp.clickLoginbtn();
-		logger.info("Agent logged in Successfully.");
-		
-		AgentHomePage ap=new AgentHomePage(driver);
-		ap.clickOnNotification();
 		Thread.sleep(2000);
 		
-		ap.clickOnViewBtnNotification();
+		cop.clickOnResendSolution();
+		Thread.sleep(3000);
+		
+		cop.sendQueries(queries);
+		logger.info("Queries entered in text fields.");
+		
+		cop.SaveDispute();
+		Thread.sleep(4000);
+		logger.info("Dispute saved.");	
+		
+		cop.verifyAlert(driver);
+		Thread.sleep(5000);
+		
+		cop.clickOnShowDispute();
 		Thread.sleep(2000);
 		
-		AgentDisputesPage adp=new AgentDisputesPage(driver);
-		adp.clickOnFrstDsp();
-		Thread.sleep(1000);
+		cop.clickOnRefundSolution();
+		Thread.sleep(3000);
 		
-		if(adp.visibilityOfShowBtn()==true) {
-			Assert.assertTrue(true);
-			Thread.sleep(3000);
-			logger.info("Verification of Show dispute in Notification is successfull.");
-		}else {
-			captureScreen(driver, "Show dispute in notification");
-			logger.info("Verification of Show dispute in Notification is failed.");
-			Assert.assertTrue(false);
-		}
+		cop.sendQueries(queries);
+		logger.info("Queries entered in text fields.");
 		
-		adp.clickOnShowDsp();
+		cop.SaveDispute();
 		Thread.sleep(4000);
+		logger.info("Dispute saved.");	
+		
+		cop.verifyAlert(driver);
+		Thread.sleep(4000);
+		logger.info("verification of Alert after submitting dispute for resend and refund is successfull.");
+		
+		//BaseClass.closeAllWinTabsExceptParent();
  	}
+ 	                 
 }
