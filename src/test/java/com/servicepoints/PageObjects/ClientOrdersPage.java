@@ -536,4 +536,11 @@ public class ClientOrdersPage {
 		exe.executeScript("window.scrollTo(0, 0);");
 	}
 	
+	@FindBy(xpath="//a[normalize-space()='Declined disputes']")
+	WebElement declinedDisputeTab;
+	
+	public void clickOnDeclinedDisputesTab() {
+		declinedDisputeTab.click();
+	}
+	
 }

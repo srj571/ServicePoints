@@ -30,6 +30,7 @@ public class TC43_VerifyAfterCloseDisputeNoConversationBetweenClientAndSupplier 
     public String queries=rd.setQueries();
 	public String process=rd.setProcessStatus();
 	public String agentAnswer=rd.setAnswer();
+	
     
  	@Test(priority = 1)
 	public void submitAndAcceptQuotation() throws InterruptedException, IOException {

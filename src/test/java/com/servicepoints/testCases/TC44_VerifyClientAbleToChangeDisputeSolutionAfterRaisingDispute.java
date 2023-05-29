@@ -258,7 +258,6 @@ public class TC44_VerifyClientAbleToChangeDisputeSolutionAfterRaisingDispute ext
 		Thread.sleep(4000);
 		logger.info("verification of Alert after submitting dispute for resend and refund is successfull.");
 		
-		//BaseClass.closeAllWinTabsExceptParent();
  	}
  	                 
 }

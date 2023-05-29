@@ -853,6 +853,46 @@ public class ReadConfig {
 		String pro44=po.getProperty("product44");
 		return pro44;
 	}
+	
+	public String productForTC45() {
+		String pro45=po.getProperty("product45");
+		return pro45;
+	}
+	
+	public String getQuery2() {
+		String query2=po.getProperty("query2");
+		return query2;
+	}
+	
+	public String getQuery3() {
+		String query3=po.getProperty("query3");
+		return query3;
+	}
+	
+	public String getQuery4() {
+		String query4=po.getProperty("query4");
+		return query4;
+	}
+	
+	public String getQuery5() {
+		String query5=po.getProperty("query5");
+		return query5;
+	}
+	
+	public String getQuery6() {
+		String query6=po.getProperty("query6");
+		return query6;
+	}
+	
+	public String getAgentAns2() {
+		String agentans=po.getProperty("agentAnswer2");
+		return agentans;
+	}
+	
+	public String productForTC46() {
+		String pro46=po.getProperty("product46");
+		return pro46;
+	}
 }
 
 

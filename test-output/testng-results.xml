@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-26T16:32:02 IST" name="Suite" finished-at="2023-05-26T16:34:35 IST" duration-ms="152316">
+  <suite started-at="2023-05-29T13:20:23 IST" name="Suite" finished-at="2023-05-29T13:28:04 IST" duration-ms="461246">
     <groups>
     </groups>
-    <test started-at="2023-05-26T16:32:02 IST" name="Test" finished-at="2023-05-26T16:34:35 IST" duration-ms="152316">
-      <class name="com.servicepoints.testCases.TC44_VerifyClientAbleToChangeDisputeSolutionAfterRaisingDispute">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.servicepoints.testCases.TC44_VerifyClientAbleToChangeDisputeSolutionAfterRaisingDispute@32f0fba8]" started-at="2023-05-26T16:32:02 IST" name="setup" finished-at="2023-05-26T16:32:08 IST" duration-ms="5863" status="PASS">
+    <test started-at="2023-05-29T13:20:23 IST" name="Test" finished-at="2023-05-29T13:28:04 IST" duration-ms="461246">
+      <class name="com.servicepoints.testCases.TC45_VerifyDisputeIsInOpenStateWhenClientSendsMsgOnDeclinedDispute">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.servicepoints.testCases.TC45_VerifyDisputeIsInOpenStateWhenClientSendsMsgOnDeclinedDispute@21005f6c]" started-at="2023-05-29T13:20:23 IST" name="setup" finished-at="2023-05-29T13:20:29 IST" duration-ms="5529" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,19 +18,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="submitAndAcceptQuotation()[pri:1, instance:com.servicepoints.testCases.TC44_VerifyClientAbleToChangeDisputeSolutionAfterRaisingDispute@32f0fba8]" started-at="2023-05-26T16:32:08 IST" name="submitAndAcceptQuotation" finished-at="2023-05-26T16:33:18 IST" duration-ms="69629" status="PASS">
+        <test-method signature="submitAndAcceptQuotation()[pri:1, instance:com.servicepoints.testCases.TC45_VerifyDisputeIsInOpenStateWhenClientSendsMsgOnDeclinedDispute@21005f6c]" started-at="2023-05-29T13:20:29 IST" name="submitAndAcceptQuotation" finished-at="2023-05-29T13:21:33 IST" duration-ms="64065" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitAndAcceptQuotation -->
-        <test-method signature="verifyOpenDispute()[pri:2, instance:com.servicepoints.testCases.TC44_VerifyClientAbleToChangeDisputeSolutionAfterRaisingDispute@32f0fba8]" started-at="2023-05-26T16:33:18 IST" name="verifyOpenDispute" finished-at="2023-05-26T16:34:35 IST" duration-ms="76640" status="PASS">
+        <test-method signature="verifyOpenDispute()[pri:2, instance:com.servicepoints.testCases.TC45_VerifyDisputeIsInOpenStateWhenClientSendsMsgOnDeclinedDispute@21005f6c]" started-at="2023-05-29T13:21:33 IST" name="verifyOpenDispute" finished-at="2023-05-29T13:28:04 IST" duration-ms="391414" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyOpenDispute -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.servicepoints.testCases.TC44_VerifyClientAbleToChangeDisputeSolutionAfterRaisingDispute@32f0fba8]" started-at="2023-05-26T16:34:35 IST" name="tearDown" finished-at="2023-05-26T16:34:35 IST" duration-ms="106" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.servicepoints.testCases.TC45_VerifyDisputeIsInOpenStateWhenClientSendsMsgOnDeclinedDispute@21005f6c]" started-at="2023-05-29T13:28:04 IST" name="tearDown" finished-at="2023-05-29T13:28:04 IST" duration-ms="170" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.servicepoints.testCases.TC44_VerifyClientAbleToChangeDisputeSolutionAfterRaisingDispute -->
+      </class> <!-- com.servicepoints.testCases.TC45_VerifyDisputeIsInOpenStateWhenClientSendsMsgOnDeclinedDispute -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
