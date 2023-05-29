@@ -15,7 +15,6 @@ public class TC04_VerifyClientApprovalTest extends BaseClass{
 	public String suplname = rc.getSupLastName();
 	public String supsupfull=fname+" "+lname;
 	
-	
 	@Test
 	public void verifyClientApprovalTest() throws InterruptedException, IOException {
 		logger.info("Application Opened.");

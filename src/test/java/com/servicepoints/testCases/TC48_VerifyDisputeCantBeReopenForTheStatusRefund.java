@@ -215,10 +215,8 @@ public class TC48_VerifyDisputeCantBeReopenForTheStatusRefund extends BaseClass{
 			Assert.assertTrue(true);
 			Thread.sleep(2000);
 		} else {
-			Assert.assertTrue(false);
 			logger.info("Verification of adding tracking number is failed.");
+			Assert.assertTrue(false);
 		}
 	}
-	
-	
 }

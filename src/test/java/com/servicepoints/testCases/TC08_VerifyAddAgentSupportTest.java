@@ -77,7 +77,7 @@ public class TC08_VerifyAddAgentSupportTest extends BaseClass {
 		
 		adminAccount.clickOnAddAgetSP();
 		logger.info("Click on Add Agent Button.");
-		Thread.sleep(4000);
+		Thread.sleep(6000);
 
 		if (driver.getPageSource().contains("Agents are successfully registered.")) {
 			logger.info("Verification of AgentSupport adding Successfull.");
@@ -104,7 +104,7 @@ public class TC08_VerifyAddAgentSupportTest extends BaseClass {
 		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 
 		lp.clickLoginbtn();
-		Thread.sleep(5000);
+		Thread.sleep(6000);
 
 		if (driver.getPageSource().contains(TAfname)) {
 			logger.info("Verification of AgentSupport login Successfull.");

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-29T15:47:50 IST" name="Suite" finished-at="2023-05-29T15:54:58 IST" duration-ms="427479">
+  <suite started-at="2023-05-29T18:31:00 IST" name="Suite" finished-at="2023-05-29T18:31:42 IST" duration-ms="41748">
     <groups>
     </groups>
-    <test started-at="2023-05-29T15:47:50 IST" name="Test" finished-at="2023-05-29T15:54:58 IST" duration-ms="427479">
-      <class name="com.servicepoints.testCases.TC46_VerifyDisputeIsInOpenStateForTheOderHasTrackingNum">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.servicepoints.testCases.TC46_VerifyDisputeIsInOpenStateForTheOderHasTrackingNum@32f0fba8]" started-at="2023-05-29T15:47:50 IST" name="setup" finished-at="2023-05-29T15:47:56 IST" duration-ms="5456" status="PASS">
+    <test started-at="2023-05-29T18:31:00 IST" name="Test" finished-at="2023-05-29T18:31:42 IST" duration-ms="41748">
+      <class name="com.servicepoints.testCases.TC04_VerifyClientApprovalTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.servicepoints.testCases.TC04_VerifyClientApprovalTest@4648ce9]" started-at="2023-05-29T18:31:00 IST" name="setup" finished-at="2023-05-29T18:31:03 IST" duration-ms="2979" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,19 +18,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyAddTrackingNumberAndReopenDeclinedDispute()[pri:1, instance:com.servicepoints.testCases.TC46_VerifyDisputeIsInOpenStateForTheOderHasTrackingNum@32f0fba8]" started-at="2023-05-29T15:47:56 IST" name="verifyAddTrackingNumberAndReopenDeclinedDispute" finished-at="2023-05-29T15:48:39 IST" duration-ms="42893" status="PASS">
+        <test-method signature="verifyClientApprovalTest()[pri:0, instance:com.servicepoints.testCases.TC04_VerifyClientApprovalTest@4648ce9]" started-at="2023-05-29T18:31:03 IST" name="verifyClientApprovalTest" finished-at="2023-05-29T18:31:42 IST" duration-ms="38575" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyAddTrackingNumberAndReopenDeclinedDispute -->
-        <test-method signature="verifySubmitAndDeclinedDisputeAndReopenIt()[pri:2, instance:com.servicepoints.testCases.TC46_VerifyDisputeIsInOpenStateForTheOderHasTrackingNum@32f0fba8]" started-at="2023-05-29T15:48:39 IST" name="verifySubmitAndDeclinedDisputeAndReopenIt" finished-at="2023-05-29T15:54:58 IST" duration-ms="378925" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySubmitAndDeclinedDisputeAndReopenIt -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.servicepoints.testCases.TC46_VerifyDisputeIsInOpenStateForTheOderHasTrackingNum@32f0fba8]" started-at="2023-05-29T15:54:58 IST" name="tearDown" finished-at="2023-05-29T15:54:58 IST" duration-ms="160" status="PASS">
+        </test-method> <!-- verifyClientApprovalTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.servicepoints.testCases.TC04_VerifyClientApprovalTest@4648ce9]" started-at="2023-05-29T18:31:42 IST" name="tearDown" finished-at="2023-05-29T18:31:42 IST" duration-ms="76" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.servicepoints.testCases.TC46_VerifyDisputeIsInOpenStateForTheOderHasTrackingNum -->
+      </class> <!-- com.servicepoints.testCases.TC04_VerifyClientApprovalTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

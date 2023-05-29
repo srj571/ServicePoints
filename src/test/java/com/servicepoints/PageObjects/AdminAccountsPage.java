@@ -58,8 +58,7 @@ public class AdminAccountsPage {
 	@FindBy(xpath = "(//*[name()='svg'])[8]")
 	WebElement logOutbtn;
 
-	@FindBy(xpath = "//label[contains(text(),' Agent Test')]")
-	WebElement agentTest;
+	
 
 	@FindBy(xpath = "//input[@id='agent_fee']")
 	WebElement agentfee;
@@ -190,6 +189,9 @@ public class AdminAccountsPage {
 		sel.selectByIndex(5);
 	}
 
+	@FindBy(xpath = "//label[contains(text(),'Maxwell')]")
+	WebElement agentTest;
+	
 	public void selectAgentSUP() {
 		agentTest.click();
 	}
