@@ -6,7 +6,7 @@
     <classes>
       <class name="com.servicepoints.testCases.TC46_VerifyDisputeIsInOpenStateForTheOderHasTrackingNum">
         <methods>
-          <include name="verifySubmitAndDeclinedDisputeAndReopenIt"/>
+          <include name="verifyAddTrackingNumberAndReopenDeclinedDispute"/>
           <include name="setup"/>
           <include name="tearDown"/>
         </methods>

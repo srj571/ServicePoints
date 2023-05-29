@@ -893,6 +893,18 @@ public class ReadConfig {
 		String pro46=po.getProperty("product46");
 		return pro46;
 	}
+	
+	public String productForTC47() {
+		String pro47=po.getProperty("product47");
+		return pro47;
+	}
+	
+	public String productForTC48() {
+		String pro48=po.getProperty("product48");
+		return pro48;
+	}
+	
+	
 }
 
 

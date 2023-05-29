@@ -2,6 +2,7 @@ package com.servicepoints.testCases;
 
 import java.io.IOException;
 
+import org.apache.commons.io.filefilter.FalseFileFilter;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
@@ -99,7 +100,7 @@ public class TC46_VerifyDisputeIsInOpenStateForTheOderHasTrackingNum extends Bas
 		aop.clickOnSbmtTracking();
 		logger.info("Clicked on submit tracking button.");
 		// wait.until(ExpectedConditions.visibi);
-		Thread.sleep(6000);
+		Thread.sleep(7000);
 
 		if (driver.getPageSource().contains("Tracking number successfully added")) {
 			logger.info("Verification of adding tracking number is Successfull.");
@@ -144,7 +145,7 @@ public class TC46_VerifyDisputeIsInOpenStateForTheOderHasTrackingNum extends Bas
 		logger.info("Clicked on first div.");
 		Thread.sleep(3000);
 
-		cop.scrollTillEle(driver);
+		cop.scrollTillOpenDisputesBtn(driver);
 		Thread.sleep(1000);
 
 		cop.clickOnOpenDspbtn();

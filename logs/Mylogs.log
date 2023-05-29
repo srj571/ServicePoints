@@ -2730,3 +2730,263 @@
 [INFO ] 2023-05-29 13:27:33.266 [main] BaseClass - Dispute send.
 [INFO ] 2023-05-29 13:27:38.480 [main] BaseClass - Verification of Dispute rejection is successed.
 [INFO ] 2023-05-29 13:28:04.685 [main] BaseClass - Verification of message that you have reached the limits of reopen dispute is successfull.
+[INFO ] 2023-05-29 14:32:19.035 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-29 14:32:27.749 [main] BaseClass - Product name is entered.
+[INFO ] 2023-05-29 14:32:31.012 [main] BaseClass - Clicked on status dropdown.
+[INFO ] 2023-05-29 14:32:34.238 [main] BaseClass - Processing status is searched.
+[INFO ] 2023-05-29 14:32:37.520 [main] BaseClass - Processing status is searched.
+[INFO ] 2023-05-29 14:32:39.657 [main] BaseClass - Processing status is searched.
+[INFO ] 2023-05-29 14:32:43.002 [main] BaseClass - Tracking number entered.
+[INFO ] 2023-05-29 14:32:47.303 [main] BaseClass - clicked on add tracking button.
+[INFO ] 2023-05-29 14:32:53.027 [main] BaseClass - Clicked on submit tracking button.
+[INFO ] 2023-05-29 14:32:59.463 [main] BaseClass - Verification of adding tracking number is Successfull.
+[INFO ] 2023-05-29 14:33:09.800 [main] BaseClass - client logged in Successfully.
+[INFO ] 2023-05-29 14:33:13.246 [main] BaseClass - Product name is entered.
+[INFO ] 2023-05-29 14:33:15.376 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-05-29 14:48:24.591 [main] BaseClass - client logged in Successfully.
+[INFO ] 2023-05-29 14:48:28.254 [main] BaseClass - Product name is entered.
+[INFO ] 2023-05-29 14:48:30.385 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-05-29 14:48:36.723 [main] BaseClass - Customer got wrong product option selected.
+[INFO ] 2023-05-29 14:48:36.922 [main] BaseClass - I want the order to be shipped immediately option is selected.
+[INFO ] 2023-05-29 14:48:40.203 [main] BaseClass - Queries entered in text fields.
+[INFO ] 2023-05-29 14:48:45.337 [main] BaseClass - Dispute saved.
+[INFO ] 2023-05-29 14:48:45.768 [main] BaseClass - Verification of Dispute raised Successfully.
+[INFO ] 2023-05-29 14:48:49.003 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-29 14:48:55.707 [main] BaseClass - Open disputes page.
+[INFO ] 2023-05-29 14:49:02.005 [main] BaseClass - Clicked on show disputes.
+[INFO ] 2023-05-29 14:49:05.169 [main] BaseClass - Dispute Declined Status selected from dropdown.
+[INFO ] 2023-05-29 14:49:12.454 [main] BaseClass - Dispute send.
+[INFO ] 2023-05-29 14:49:17.683 [main] BaseClass - Verification of Dispute rejection is successed.
+[INFO ] 2023-05-29 14:49:43.650 [main] BaseClass - Verification of message send on closed dispute is successfull.
+[INFO ] 2023-05-29 14:49:47.736 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-29 14:53:48.023 [main] BaseClass - client logged in Successfully.
+[INFO ] 2023-05-29 14:53:50.716 [main] BaseClass - Product name is entered.
+[INFO ] 2023-05-29 14:53:52.794 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-05-29 14:56:20.249 [main] BaseClass - client logged in Successfully.
+[INFO ] 2023-05-29 14:56:23.066 [main] BaseClass - Product name is entered.
+[INFO ] 2023-05-29 14:56:53.096 [main] BaseClass - client logged in Successfully.
+[INFO ] 2023-05-29 14:56:55.978 [main] BaseClass - Product name is entered.
+[INFO ] 2023-05-29 14:56:58.077 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-05-29 14:57:04.378 [main] BaseClass - Customer got wrong product option selected.
+[INFO ] 2023-05-29 14:57:04.550 [main] BaseClass - I want the order to be shipped immediately option is selected.
+[INFO ] 2023-05-29 14:57:07.816 [main] BaseClass - Queries entered in text fields.
+[INFO ] 2023-05-29 14:57:12.920 [main] BaseClass - Dispute saved.
+[INFO ] 2023-05-29 14:57:13.311 [main] BaseClass - Verification of Dispute raised Successfully.
+[INFO ] 2023-05-29 14:57:16.312 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-29 14:57:22.624 [main] BaseClass - Open disputes page.
+[INFO ] 2023-05-29 14:57:28.845 [main] BaseClass - Clicked on show disputes.
+[INFO ] 2023-05-29 14:57:31.990 [main] BaseClass - Dispute Declined Status selected from dropdown.
+[INFO ] 2023-05-29 14:57:39.198 [main] BaseClass - Dispute send.
+[INFO ] 2023-05-29 14:57:44.395 [main] BaseClass - Verification of Dispute rejection is successed.
+[INFO ] 2023-05-29 14:58:10.470 [main] BaseClass - Verification of message send on closed dispute is successfull.
+[INFO ] 2023-05-29 14:58:14.156 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-29 14:58:20.690 [main] BaseClass - Open disputes page.
+[INFO ] 2023-05-29 14:58:26.979 [main] BaseClass - Clicked on show disputes.
+[INFO ] 2023-05-29 14:58:30.131 [main] BaseClass - Dispute Declined Status selected from dropdown.
+[INFO ] 2023-05-29 14:58:37.374 [main] BaseClass - Dispute send.
+[INFO ] 2023-05-29 14:58:42.584 [main] BaseClass - Verification of Dispute rejection is successed.
+[INFO ] 2023-05-29 14:59:08.196 [main] BaseClass - Verification of message send on closed dispute is successfull.
+[INFO ] 2023-05-29 14:59:11.773 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-29 14:59:18.386 [main] BaseClass - Open disputes page.
+[INFO ] 2023-05-29 14:59:24.670 [main] BaseClass - Clicked on show disputes.
+[INFO ] 2023-05-29 14:59:27.822 [main] BaseClass - Dispute Declined Status selected from dropdown.
+[INFO ] 2023-05-29 14:59:35.036 [main] BaseClass - Dispute send.
+[INFO ] 2023-05-29 14:59:40.223 [main] BaseClass - Verification of Dispute rejection is successed.
+[INFO ] 2023-05-29 15:00:05.706 [main] BaseClass - Verification of message send on closed dispute is successfull.
+[INFO ] 2023-05-29 15:00:09.199 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-29 15:00:15.778 [main] BaseClass - Open disputes page.
+[INFO ] 2023-05-29 15:00:22.019 [main] BaseClass - Clicked on show disputes.
+[INFO ] 2023-05-29 15:00:25.175 [main] BaseClass - Dispute Declined Status selected from dropdown.
+[INFO ] 2023-05-29 15:00:32.373 [main] BaseClass - Dispute send.
+[INFO ] 2023-05-29 15:00:37.582 [main] BaseClass - Verification of Dispute rejection is successed.
+[INFO ] 2023-05-29 15:01:02.774 [main] BaseClass - Verification of message send on closed dispute is successfull.
+[INFO ] 2023-05-29 15:01:06.075 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-29 15:01:12.391 [main] BaseClass - Open disputes page.
+[INFO ] 2023-05-29 15:01:18.632 [main] BaseClass - Clicked on show disputes.
+[INFO ] 2023-05-29 15:01:21.759 [main] BaseClass - Dispute Declined Status selected from dropdown.
+[INFO ] 2023-05-29 15:01:28.976 [main] BaseClass - Dispute send.
+[INFO ] 2023-05-29 15:01:34.183 [main] BaseClass - Verification of Dispute rejection is successed.
+[INFO ] 2023-05-29 15:01:59.420 [main] BaseClass - Verification of message send on closed dispute is successfull.
+[INFO ] 2023-05-29 15:02:02.841 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-29 15:02:09.379 [main] BaseClass - Open disputes page.
+[INFO ] 2023-05-29 15:02:15.656 [main] BaseClass - Clicked on show disputes.
+[INFO ] 2023-05-29 15:02:18.800 [main] BaseClass - Dispute Declined Status selected from dropdown.
+[INFO ] 2023-05-29 15:02:26.075 [main] BaseClass - Dispute send.
+[INFO ] 2023-05-29 15:02:31.259 [main] BaseClass - Verification of Dispute rejection is successed.
+[INFO ] 2023-05-29 15:02:57.481 [main] BaseClass - Verification of message that you have reached the limits of reopen dispute is successfull.
+[INFO ] 2023-05-29 15:07:50.795 [main] BaseClass - client logged in Successfully.
+[INFO ] 2023-05-29 15:07:52.773 [main] BaseClass - Product name is entered.
+[INFO ] 2023-05-29 15:07:55.042 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-05-29 15:08:01.672 [main] BaseClass - Customer got wrong product option selected.
+[INFO ] 2023-05-29 15:08:01.988 [main] BaseClass - I want the order to be shipped immediately option is selected.
+[INFO ] 2023-05-29 15:08:05.541 [main] BaseClass - Queries entered in text fields.
+[INFO ] 2023-05-29 15:08:10.860 [main] BaseClass - Dispute saved.
+[INFO ] 2023-05-29 15:08:10.973 [main] BaseClass - Verification of Dispute raised Successfully.
+[INFO ] 2023-05-29 15:08:12.171 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-29 15:08:18.684 [main] BaseClass - Open disputes page.
+[INFO ] 2023-05-29 15:08:25.223 [main] BaseClass - Clicked on show disputes.
+[INFO ] 2023-05-29 15:08:28.543 [main] BaseClass - Dispute Declined Status selected from dropdown.
+[INFO ] 2023-05-29 15:08:35.891 [main] BaseClass - Dispute send.
+[INFO ] 2023-05-29 15:08:41.081 [main] BaseClass - Verification of Dispute rejection is successed.
+[INFO ] 2023-05-29 15:09:05.700 [main] BaseClass - Verification of message send on closed dispute is successfull.
+[INFO ] 2023-05-29 15:09:07.502 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-29 15:09:13.592 [main] BaseClass - Open disputes page.
+[INFO ] 2023-05-29 15:09:20.188 [main] BaseClass - Clicked on show disputes.
+[INFO ] 2023-05-29 15:09:23.533 [main] BaseClass - Dispute Declined Status selected from dropdown.
+[INFO ] 2023-05-29 15:09:30.896 [main] BaseClass - Dispute send.
+[INFO ] 2023-05-29 15:09:36.052 [main] BaseClass - Verification of Dispute rejection is successed.
+[INFO ] 2023-05-29 15:10:00.539 [main] BaseClass - Verification of message send on closed dispute is successfull.
+[INFO ] 2023-05-29 15:10:02.414 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-29 15:10:08.568 [main] BaseClass - Open disputes page.
+[INFO ] 2023-05-29 15:10:15.138 [main] BaseClass - Clicked on show disputes.
+[INFO ] 2023-05-29 15:10:18.457 [main] BaseClass - Dispute Declined Status selected from dropdown.
+[INFO ] 2023-05-29 15:10:25.825 [main] BaseClass - Dispute send.
+[INFO ] 2023-05-29 15:10:30.981 [main] BaseClass - Verification of Dispute rejection is successed.
+[INFO ] 2023-05-29 15:10:55.396 [main] BaseClass - Verification of message send on closed dispute is successfull.
+[INFO ] 2023-05-29 15:10:57.226 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-29 15:11:03.375 [main] BaseClass - Open disputes page.
+[INFO ] 2023-05-29 15:11:09.956 [main] BaseClass - Clicked on show disputes.
+[INFO ] 2023-05-29 15:11:13.317 [main] BaseClass - Dispute Declined Status selected from dropdown.
+[INFO ] 2023-05-29 15:11:20.639 [main] BaseClass - Dispute send.
+[INFO ] 2023-05-29 15:11:25.821 [main] BaseClass - Verification of Dispute rejection is successed.
+[INFO ] 2023-05-29 15:11:50.259 [main] BaseClass - Verification of message send on closed dispute is successfull.
+[INFO ] 2023-05-29 15:11:52.057 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-29 15:11:58.157 [main] BaseClass - Open disputes page.
+[INFO ] 2023-05-29 15:12:04.740 [main] BaseClass - Clicked on show disputes.
+[INFO ] 2023-05-29 15:12:08.061 [main] BaseClass - Dispute Declined Status selected from dropdown.
+[INFO ] 2023-05-29 15:12:15.420 [main] BaseClass - Dispute send.
+[INFO ] 2023-05-29 15:12:20.573 [main] BaseClass - Verification of Dispute rejection is successed.
+[INFO ] 2023-05-29 15:12:44.843 [main] BaseClass - Verification of message send on closed dispute is successfull.
+[INFO ] 2023-05-29 15:12:46.669 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-29 15:12:52.773 [main] BaseClass - Open disputes page.
+[INFO ] 2023-05-29 15:12:59.359 [main] BaseClass - Clicked on show disputes.
+[INFO ] 2023-05-29 15:13:02.672 [main] BaseClass - Dispute Declined Status selected from dropdown.
+[INFO ] 2023-05-29 15:13:10.051 [main] BaseClass - Dispute send.
+[INFO ] 2023-05-29 15:13:15.207 [main] BaseClass - Verification of Dispute rejection is successed.
+[INFO ] 2023-05-29 15:13:39.645 [main] BaseClass - Verification of message that you have reached the limits of reopen dispute is successfull.
+[INFO ] 2023-05-29 15:26:19.762 [main] BaseClass - client logged in Successfully.
+[INFO ] 2023-05-29 15:26:22.926 [main] BaseClass - Product name is entered.
+[INFO ] 2023-05-29 15:26:25.143 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-05-29 15:26:31.496 [main] BaseClass - Customer got wrong product option selected.
+[INFO ] 2023-05-29 15:26:31.723 [main] BaseClass - I want the order to be shipped immediately option is selected.
+[INFO ] 2023-05-29 15:26:34.959 [main] BaseClass - Queries entered in text fields.
+[INFO ] 2023-05-29 15:26:40.125 [main] BaseClass - Dispute saved.
+[INFO ] 2023-05-29 15:27:41.590 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-29 15:27:50.070 [main] BaseClass - Product name is entered.
+[INFO ] 2023-05-29 15:27:53.265 [main] BaseClass - Clicked on status dropdown.
+[INFO ] 2023-05-29 15:27:56.419 [main] BaseClass - Processing status is searched.
+[INFO ] 2023-05-29 15:27:59.581 [main] BaseClass - Processing status is searched.
+[INFO ] 2023-05-29 15:28:01.654 [main] BaseClass - Processing status is searched.
+[INFO ] 2023-05-29 15:28:04.864 [main] BaseClass - Tracking number entered.
+[INFO ] 2023-05-29 15:28:09.010 [main] BaseClass - clicked on add tracking button.
+[INFO ] 2023-05-29 15:28:14.523 [main] BaseClass - Clicked on submit tracking button.
+[INFO ] 2023-05-29 15:28:29.467 [main] BaseClass - client logged in Successfully.
+[INFO ] 2023-05-29 15:28:32.778 [main] BaseClass - Product name is entered.
+[INFO ] 2023-05-29 15:28:34.914 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-05-29 15:28:41.324 [main] BaseClass - Customer got wrong product option selected.
+[INFO ] 2023-05-29 15:28:41.590 [main] BaseClass - I want the order to be shipped immediately option is selected.
+[INFO ] 2023-05-29 15:28:44.898 [main] BaseClass - Queries entered in text fields.
+[INFO ] 2023-05-29 15:28:50.030 [main] BaseClass - Dispute saved.
+[INFO ] 2023-05-29 15:28:50.373 [main] BaseClass - Verification of Dispute raised Successfully.
+[INFO ] 2023-05-29 15:28:53.839 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-29 15:29:00.184 [main] BaseClass - Open disputes page.
+[INFO ] 2023-05-29 15:29:06.499 [main] BaseClass - Clicked on show disputes.
+[INFO ] 2023-05-29 15:29:09.662 [main] BaseClass - Dispute Declined Status selected from dropdown.
+[INFO ] 2023-05-29 15:29:16.929 [main] BaseClass - Dispute send.
+[INFO ] 2023-05-29 15:29:22.197 [main] BaseClass - Verification of Dispute rejection is successed.
+[INFO ] 2023-05-29 15:29:49.156 [main] BaseClass - Verification of message send on closed dispute is successfull.
+[INFO ] 2023-05-29 15:29:52.868 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-29 15:29:59.249 [main] BaseClass - Open disputes page.
+[INFO ] 2023-05-29 15:30:05.528 [main] BaseClass - Clicked on show disputes.
+[INFO ] 2023-05-29 15:30:08.691 [main] BaseClass - Dispute Declined Status selected from dropdown.
+[INFO ] 2023-05-29 15:30:16.051 [main] BaseClass - Dispute send.
+[INFO ] 2023-05-29 15:30:21.304 [main] BaseClass - Verification of Dispute rejection is successed.
+[INFO ] 2023-05-29 15:30:48.162 [main] BaseClass - Verification of message send on closed dispute is successfull.
+[INFO ] 2023-05-29 15:30:51.420 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-29 15:30:58.083 [main] BaseClass - Open disputes page.
+[INFO ] 2023-05-29 15:31:04.433 [main] BaseClass - Clicked on show disputes.
+[INFO ] 2023-05-29 15:31:07.608 [main] BaseClass - Dispute Declined Status selected from dropdown.
+[INFO ] 2023-05-29 15:31:14.845 [main] BaseClass - Dispute send.
+[INFO ] 2023-05-29 15:31:20.058 [main] BaseClass - Verification of Dispute rejection is successed.
+[INFO ] 2023-05-29 15:31:46.069 [main] BaseClass - Verification of message send on closed dispute is successfull.
+[INFO ] 2023-05-29 15:31:49.895 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-29 15:31:56.649 [main] BaseClass - Open disputes page.
+[INFO ] 2023-05-29 15:32:03.051 [main] BaseClass - Clicked on show disputes.
+[INFO ] 2023-05-29 15:32:06.349 [main] BaseClass - Dispute Declined Status selected from dropdown.
+[INFO ] 2023-05-29 15:32:13.648 [main] BaseClass - Dispute send.
+[INFO ] 2023-05-29 15:32:18.861 [main] BaseClass - Verification of Dispute rejection is successed.
+[INFO ] 2023-05-29 15:32:46.068 [main] BaseClass - Verification of message send on closed dispute is successfull.
+[INFO ] 2023-05-29 15:32:49.728 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-29 15:32:56.306 [main] BaseClass - Open disputes page.
+[INFO ] 2023-05-29 15:33:02.725 [main] BaseClass - Clicked on show disputes.
+[INFO ] 2023-05-29 15:33:05.992 [main] BaseClass - Dispute Declined Status selected from dropdown.
+[INFO ] 2023-05-29 15:33:13.247 [main] BaseClass - Dispute send.
+[INFO ] 2023-05-29 15:33:18.453 [main] BaseClass - Verification of Dispute rejection is successed.
+[INFO ] 2023-05-29 15:33:44.356 [main] BaseClass - Verification of message send on closed dispute is successfull.
+[INFO ] 2023-05-29 15:33:47.872 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-29 15:33:54.562 [main] BaseClass - Open disputes page.
+[INFO ] 2023-05-29 15:34:00.888 [main] BaseClass - Clicked on show disputes.
+[INFO ] 2023-05-29 15:34:04.037 [main] BaseClass - Dispute Declined Status selected from dropdown.
+[INFO ] 2023-05-29 15:34:11.357 [main] BaseClass - Dispute send.
+[INFO ] 2023-05-29 15:34:16.577 [main] BaseClass - Verification of Dispute rejection is successed.
+[INFO ] 2023-05-29 15:34:43.567 [main] BaseClass - Verification of message that you have reached the limits of reopen dispute is successfull.
+[INFO ] 2023-05-29 15:47:56.606 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-29 15:48:05.120 [main] BaseClass - Product name is entered.
+[INFO ] 2023-05-29 15:48:08.271 [main] BaseClass - Clicked on status dropdown.
+[INFO ] 2023-05-29 15:48:11.401 [main] BaseClass - Processing status is searched.
+[INFO ] 2023-05-29 15:48:14.735 [main] BaseClass - Processing status is searched.
+[INFO ] 2023-05-29 15:48:16.847 [main] BaseClass - Processing status is searched.
+[INFO ] 2023-05-29 15:48:19.987 [main] BaseClass - Tracking number entered.
+[INFO ] 2023-05-29 15:48:24.093 [main] BaseClass - clicked on add tracking button.
+[INFO ] 2023-05-29 15:48:29.641 [main] BaseClass - Clicked on submit tracking button.
+[INFO ] 2023-05-29 15:48:37.079 [main] BaseClass - Verification of adding tracking number is Successfull.
+[INFO ] 2023-05-29 15:48:47.070 [main] BaseClass - client logged in Successfully.
+[INFO ] 2023-05-29 15:48:50.350 [main] BaseClass - Product name is entered.
+[INFO ] 2023-05-29 15:48:52.451 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-05-29 15:48:58.787 [main] BaseClass - Customer got wrong product option selected.
+[INFO ] 2023-05-29 15:48:59.020 [main] BaseClass - I want the order to be shipped immediately option is selected.
+[INFO ] 2023-05-29 15:49:02.326 [main] BaseClass - Queries entered in text fields.
+[INFO ] 2023-05-29 15:49:07.469 [main] BaseClass - Dispute saved.
+[INFO ] 2023-05-29 15:49:07.794 [main] BaseClass - Verification of Dispute raised Successfully.
+[INFO ] 2023-05-29 15:49:10.199 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-29 15:49:16.519 [main] BaseClass - Open disputes page.
+[INFO ] 2023-05-29 15:49:22.821 [main] BaseClass - Clicked on show disputes.
+[INFO ] 2023-05-29 15:49:25.989 [main] BaseClass - Dispute Declined Status selected from dropdown.
+[INFO ] 2023-05-29 15:49:33.261 [main] BaseClass - Dispute send.
+[INFO ] 2023-05-29 15:49:38.481 [main] BaseClass - Verification of Dispute rejection is successed.
+[INFO ] 2023-05-29 15:50:05.968 [main] BaseClass - Verification of message send on closed dispute is successfull.
+[INFO ] 2023-05-29 15:50:09.980 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-29 15:50:16.515 [main] BaseClass - Open disputes page.
+[INFO ] 2023-05-29 15:50:22.821 [main] BaseClass - Clicked on show disputes.
+[INFO ] 2023-05-29 15:50:25.999 [main] BaseClass - Dispute Declined Status selected from dropdown.
+[INFO ] 2023-05-29 15:50:33.495 [main] BaseClass - Dispute send.
+[INFO ] 2023-05-29 15:50:38.766 [main] BaseClass - Verification of Dispute rejection is successed.
+[INFO ] 2023-05-29 15:51:04.516 [main] BaseClass - Verification of message send on closed dispute is successfull.
+[INFO ] 2023-05-29 15:51:08.052 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-29 15:51:14.766 [main] BaseClass - Open disputes page.
+[INFO ] 2023-05-29 15:51:21.088 [main] BaseClass - Clicked on show disputes.
+[INFO ] 2023-05-29 15:51:24.211 [main] BaseClass - Dispute Declined Status selected from dropdown.
+[INFO ] 2023-05-29 15:51:31.523 [main] BaseClass - Dispute send.
+[INFO ] 2023-05-29 15:51:36.714 [main] BaseClass - Verification of Dispute rejection is successed.
+[INFO ] 2023-05-29 15:52:02.280 [main] BaseClass - Verification of message send on closed dispute is successfull.
+[INFO ] 2023-05-29 15:52:05.740 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-29 15:52:12.205 [main] BaseClass - Open disputes page.
+[INFO ] 2023-05-29 15:52:18.582 [main] BaseClass - Clicked on show disputes.
+[INFO ] 2023-05-29 15:52:21.767 [main] BaseClass - Dispute Declined Status selected from dropdown.
+[INFO ] 2023-05-29 15:52:29.031 [main] BaseClass - Dispute send.
+[INFO ] 2023-05-29 15:52:34.236 [main] BaseClass - Verification of Dispute rejection is successed.
+[INFO ] 2023-05-29 15:53:00.306 [main] BaseClass - Verification of message send on closed dispute is successfull.
+[INFO ] 2023-05-29 15:53:03.835 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-29 15:53:10.523 [main] BaseClass - Open disputes page.
+[INFO ] 2023-05-29 15:53:16.878 [main] BaseClass - Clicked on show disputes.
+[INFO ] 2023-05-29 15:53:20.206 [main] BaseClass - Dispute Declined Status selected from dropdown.
+[INFO ] 2023-05-29 15:53:27.498 [main] BaseClass - Dispute send.
+[INFO ] 2023-05-29 15:53:32.721 [main] BaseClass - Verification of Dispute rejection is successed.
+[INFO ] 2023-05-29 15:53:59.268 [main] BaseClass - Verification of message send on closed dispute is successfull.
+[INFO ] 2023-05-29 15:54:02.774 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-05-29 15:54:09.389 [main] BaseClass - Open disputes page.
+[INFO ] 2023-05-29 15:54:15.820 [main] BaseClass - Clicked on show disputes.
+[INFO ] 2023-05-29 15:54:19.014 [main] BaseClass - Dispute Declined Status selected from dropdown.
+[INFO ] 2023-05-29 15:54:26.317 [main] BaseClass - Dispute send.
+[INFO ] 2023-05-29 15:54:31.522 [main] BaseClass - Verification of Dispute rejection is successed.
+[INFO ] 2023-05-29 15:54:58.015 [main] BaseClass - Verification of message that you have reached the limits of reopen dispute is successfull.

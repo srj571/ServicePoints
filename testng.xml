@@ -102,7 +102,7 @@
 			  <include name="verifyOpenDispute"></include>
 			  <include name="tearDown"></include>
 		  </methods>
-      </class>-->
+      </class>
       <class name="com.servicepoints.testCases.TC45_VerifyDisputeIsInOpenStateWhenClientSendsMsgOnDeclinedDispute">
 		  <methods>
 			  <include name="setup"></include>
@@ -110,15 +110,23 @@
 			  <include name="verifyOpenDispute"></include>
 			  <include name="tearDown"></include>
 		  </methods>
-      </class>
-      <!--<class name="com.servicepoints.testCases.TC46_VerifyDisputeIsInOpenStateForTheOderHasTrackingNum">
+      </class>-->
+      <class name="com.servicepoints.testCases.TC46_VerifyDisputeIsInOpenStateForTheOderHasTrackingNum">
 		  <methods>
 			  <include name="setup"></include>
 			  <include name="verifyAddTrackingNumberAndReopenDeclinedDispute"></include>
 			  <include name="verifySubmitAndDeclinedDisputeAndReopenIt"></include>
 			  <include name="tearDown"></include>
 		  </methods>
-	  </class>-->
+	  </class>
+	  <class name="com.servicepoints.testCases.TC47_VerifyDisputeCantBeInReopenStateForTheOderStatusResend">
+		  <methods>
+			  <include name="setup"></include>
+			  <include name="verifyAddTrackingNumberAndReopenDeclinedDispute"></include>
+			  <include name="verifySubmitAndDeclinedDisputeAndReopenIt"></include>
+			  <include name="tearDown"></include>
+		  </methods>
+	  </class>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
