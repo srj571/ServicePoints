@@ -35,5 +35,4 @@ public class TC01_AdminLoginTest extends BaseClass {
 			Assert.assertTrue(false);
 		}
 	}
-
 }

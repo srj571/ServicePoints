@@ -904,6 +904,30 @@ public class ReadConfig {
 		return pro48;
 	}
 	
+	public String productForTC49() {
+		String pro49=po.getProperty("product49");
+		return pro49;
+	}
+	
+	public String storeForDisputeFilter() {
+		String storeFilter=po.getProperty("Store49");
+		return storeFilter;
+	}
+	
+	public String getTeamleaderName() {
+		String teamleader=po.getProperty("teamleaderName");
+		return teamleader;
+	}
+	
+	public String getAgentSpMailDsp() {
+		String aspmail=po.getProperty("agentSpMail");
+		return aspmail;
+	}
+	
+	public String getAgentSpPassDsp() {
+		String aspPass=po.getProperty("agentSpPass");
+		return aspPass;
+	}
 	
 }
 

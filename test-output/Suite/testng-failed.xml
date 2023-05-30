@@ -2,18 +2,15 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <parameter name="browser" value="chrome"/>
-  <listeners>
-    <listener class-name="com.servicepoints.utilities.Reporting"/>
-  </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.servicepoints.testCases.TC04_VerifyClientApprovalTest">
+      <class name="com.servicepoints.testCases.TC40_VerifyMergeBreakOrderForDisputeTest">
         <methods>
-          <include name="verifyClientApprovalTest"/>
+          <include name="verifyDisputeIsStillOpenFromClientSide"/>
           <include name="setup"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.servicepoints.testCases.TC04_VerifyClientApprovalTest -->
+      </class> <!-- com.servicepoints.testCases.TC40_VerifyMergeBreakOrderForDisputeTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -244,16 +244,23 @@ public class ClientOrdersPage {
 	@FindBy(xpath="//h5[@id='orderDisputeId']//button[@aria-label='Close']")
 	WebElement closeDispute;
 	
+	
+	@FindBy(xpath="//a[contains(text(),'Show dispute')]")
+	List<WebElement> showDisputeList;
+	
 	public void clickOnEachDivForDisputeVerification(WebDriver driver) throws InterruptedException {
 		for(WebElement eachDiv:noOfOrdersTab) {
-			eachDiv.click();
-			Thread.sleep(1000);
-			scrollTillEle(driver);
-			Thread.sleep(2000);
-			showDispute.click();
-			Thread.sleep(4000);
-			closeDispute.click();
-			Thread.sleep(2000);
+			for(WebElement eachShowBtn : showDisputeList) {
+				eachDiv.click();
+				Thread.sleep(1000);
+				scrollTillEle(driver);
+				Thread.sleep(3000);
+				eachShowBtn.click();
+				Thread.sleep(4000);
+				closeDispute.click();
+				Thread.sleep(2000);
+				break;
+			}
 		}
 	}
 	
@@ -550,4 +557,7 @@ public class ClientOrdersPage {
 		declinedDisputeTab.click();
 	}
 	
+	public void checkVisibilityOfShowDisputeBtn() {
+		showDispute.isDisplayed();
+	}
 }

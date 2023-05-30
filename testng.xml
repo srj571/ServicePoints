@@ -11,20 +11,20 @@
     <test thread-count="5" name="Test">
     <classes>
       <!--<class name="com.servicepoints.testCases.TC01_AdminLoginTest"/>
-      <class name="com.servicepoints.testCases.TC02_VerifyClientLoginTest"/>
-      <class name="com.servicepoints.testCases.TC03_UserSignUpTest"/>-->
-      <class name="com.servicepoints.testCases.TC04_VerifyClientApprovalTest"/>
-      <!--<class name="com.servicepoints.testCases.TC05_VerifyAdminSUPLoginTest"/>-->
+      <class name="com.servicepoints.testCases.TC02_VerifyClientLoginTest"/>-->
+      <!--<class name="com.servicepoints.testCases.TC03_UserSignUpTest"/>-->
+      <!--<class name="com.servicepoints.testCases.TC04_VerifyClientApprovalTest"/>
+      <class name="com.servicepoints.testCases.TC05_VerifyAdminSUPLoginTest"/>-->
       <!--<class name="com.servicepoints.testCases.TC06_VerifySupplierSignUp"/>
       <class name="com.servicepoints.testCases.TC07_VerifyAddAgentSupBySupplier"/>
-      <class name="com.servicepoints.testCases.TC08_VerifyAddAgentSupportTest"/>-->
-      <!--<class name="com.servicepoints.testCases.TC09_VerifyAddingNewStore"/>
+      <class name="com.servicepoints.testCases.TC08_VerifyAddAgentSupportTest"/>
+      <class name="com.servicepoints.testCases.TC09_VerifyAddingNewStore"/>
       <class name="com.servicepoints.testCases.TC10_VerifyUpdationOfStoreTest"/>
-      <class name="com.servicepoints.testCases.TC11_VerifyDeletionOfStoreTest"/>--> 
-      <!--<class name="com.servicepoints.testCases.TC14_VerifyExcludeFunctionTest"/>-->  
+      <class name="com.servicepoints.testCases.TC11_VerifyDeletionOfStoreTest"/> -->
       <!--<class name="com.servicepoints.testCases.TC17_VerifyAddNewVariant"/>-->                                                              
       <!--<class name="com.servicepoints.testCases.TC12_VerifySubmitQuoteTest"/>
       <class name="com.servicepoints.testCases.TC13_VerifyAcceptQuotationTest"/>
+      <class name="com.servicepoints.testCases.TC14_VerifyExcludeFunctionTest"/> 
       <class name="com.servicepoints.testCases.TC15_verifyAskForPriceChange"/>
       <class name="com.servicepoints.testCases.TC16_VerifyUpdateDeleteQuotation"/>
       <class name="com.servicepoints.testCases.TC18_VerifyCancelOrderFunctionality"/>
@@ -48,7 +48,7 @@
       <class name="com.servicepoints.testCases.TC00_verifySubmitAndAcceptQuote"/>
       <class name="com.servicepoints.testCases.TC37_VerifyStopFulfillmentAndStartFulfillmentTest"/>
       <class name="com.servicepoints.testCases.TC38_VerifyRequoteQuotationTest"/>
-      <class name="com.servicepoints.testCases.TC39_VerifyAcceptingRequoteQuotationTest"/>
+      <class name="com.servicepoints.testCases.TC39_VerifyAcceptingRequoteQuotationTest"/>-->
       <class name="com.servicepoints.testCases.TC40_VerifyMergeBreakOrderForDisputeTest">
 		  <methods>
 			  <include name="setup"></include>
@@ -61,7 +61,7 @@
 			  <include name="verifyDisputeIsStillOpenFromClientSide"></include>
 			  <include name="tearDown"></include>
 		  </methods>
-      </class>-->
+      </class>
       <!--<class name="com.servicepoints.testCases.TC41_VerifyMergeBreakOrderForNewVariantInDispute">
 		  <methods>
 			  <include name="setup"></include>
@@ -98,7 +98,7 @@
       <class name="com.servicepoints.testCases.TC44_VerifyClientAbleToChangeDisputeSolutionAfterRaisingDispute">
 		  <methods>
 			  <include name="setup"></include>
-			  <include name="submitAndAcceptQuotation"></include>
+			  <include name="submitAndAcceptQuotation"></include>         
 			  <include name="verifyOpenDispute"></include>
 			  <include name="tearDown"></include>
 		  </methods>
@@ -124,6 +124,18 @@
 			  <include name="setup"></include>
 			  <include name="verifyAddTrackingNumberAndReopenDeclinedDispute"></include>
 			  <include name="verifySubmitAndDeclinedDisputeAndReopenIt"></include>
+			  <include name="tearDown"></include>
+		  </methods>
+	  </class>
+	   <class name="com.servicepoints.testCases.TC49_VerifyCloseDisputeAfterCancelOrderAndDeclinedTheDispute">
+		  <methods>
+			  <include name="setup"></include>
+			  <include name="submitAndAcceptQuotation"></include>
+			  <include name="verifyOpenDispute"></include>
+			  <include name="verifyCancelOrder"></include>
+			  <include name="verifyCloseDisputeFromSupplierSide"></include>
+			  <include name="verifyShowDisputeFromTeamleaderAndSupport"></include>
+			  <include name="verifyShowDisputeFromSupportSide"></include>
 			  <include name="tearDown"></include>
 		  </methods>
 	  </class>-->

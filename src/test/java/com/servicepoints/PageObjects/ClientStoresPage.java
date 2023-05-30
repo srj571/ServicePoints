@@ -59,7 +59,7 @@ public class ClientStoresPage {
 	@FindBy(xpath="//button[@id='del_store']")
 	WebElement deletebtn;
 	
-	@FindBy(xpath="(//span[contains(text(),'Ecomaprils2')])[1]")
+	@FindBy(xpath="(//div[@class='col'])[6]//div//div[@class='col']/span")
 	WebElement eleCheck;
 	
 	public String checkElementText() {

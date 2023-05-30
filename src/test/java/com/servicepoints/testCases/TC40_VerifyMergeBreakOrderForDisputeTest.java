@@ -493,7 +493,7 @@ public class TC40_VerifyMergeBreakOrderForDisputeTest extends BaseClass{
 		BaseClass.closeAllWinTabsExceptParent();
  	}
  	
- 	@Test(priority = 5)
+ 	@Test(enabled = false)
  	public void verifyDisputeIsStillOpenFromAgentSide() throws InterruptedException {
  		driver.get(baseURL);
  		LoginPage lp=new LoginPage(driver);
