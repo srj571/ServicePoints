@@ -1,3 +1,4 @@
+
 package com.servicepoints.PageObjects;
 
 import java.util.List;
@@ -108,6 +109,13 @@ public class AgentOrdersPage {
 		}
 	}
 	
+	public void clickOnThirdOrder() {
+		for(int i=0;i<addTrackingCheck.size();i++) {
+			addTrackingCheck.get(2).click();
+			break;
+		}
+	}
+
 	
 	public void scrollTillAddTracking(WebDriver driver) {
 		JavascriptExecutor exe=(JavascriptExecutor) driver;

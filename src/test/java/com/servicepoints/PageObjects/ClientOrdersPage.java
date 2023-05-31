@@ -15,6 +15,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.Test;
 
 public class ClientOrdersPage {
 	
@@ -253,12 +254,16 @@ public class ClientOrdersPage {
 			for(WebElement eachShowBtn : showDisputeList) {
 				eachDiv.click();
 				Thread.sleep(1000);
+				
 				scrollTillEle(driver);
 				Thread.sleep(3000);
+				
 				eachShowBtn.click();
 				Thread.sleep(4000);
+				
 				closeDispute.click();
 				Thread.sleep(2000);
+				
 				break;
 			}
 		}
@@ -284,9 +289,13 @@ public class ClientOrdersPage {
 	WebElement cancelBtn;
 	
 	public void clickOnCancelOrderBtn() {
-		cancelBtn.click();
+		cancelOrderBtn.click();
 	}
 
+	public void clickOnCancelOrderSuccessBtn() {
+		cancelBtn.click();
+	}
+	
 	@FindBy(xpath="(//li[@id='select2--result-xd2z-2'])[1]")
 	WebElement fullfillTabInSearch;
 	
@@ -560,4 +569,22 @@ public class ClientOrdersPage {
 	public void checkVisibilityOfShowDisputeBtn() {
 		showDispute.isDisplayed();
 	}
+	
+	@FindBy(xpath="//div[@class='mb-2 multi_data']//input")
+	List<WebElement> allCheckBoxes;
+	
+	
+	public void clickOnSecondCheckBox() {
+		if(allCheckBoxes.size() > 0) {
+			allCheckBoxes.get(1).click();
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
 }

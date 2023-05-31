@@ -185,7 +185,7 @@ public class AgentDisputesPage {
 
 	@FindBy(xpath = "//h5[@id='orderDisputeId']//button[@aria-label='Close']")
 	WebElement closeDisputeAgent;
-
+	
 	public void clickOnEachDisputeAgentSide(WebDriver driver) throws InterruptedException {
 
 		for (int j = 0; j < eachDspDivFromAgentSide.size(); j++) {
@@ -229,6 +229,35 @@ public class AgentDisputesPage {
 //		}
 //	}
 
+	@FindBy(xpath="//div[@class='d-xl-flex align-items-stretch justify-content-center table_expand_rel full_expand']")
+	List<WebElement> allDisps;
+	
+	@FindBy(xpath="//a[@class='btn btn-border btn-block mt-3 supportDispute linkactive']")
+	List<WebElement> allShowDspBtn;
+	
+	public void handleEachDispute(WebDriver driver) throws InterruptedException {
+		for(int i=0; i<allDisps.size();i++) {
+			for(int j=0; j<allShowDspBtn.size();j++) {
+				allDisps.get(i).click();
+				Thread.sleep(2000);
+				
+				scrollTillShowDispute(driver);
+				Thread.sleep(3000);
+				
+				allShowDspBtn.get(i).click();
+				Thread.sleep(4000);
+				
+				closeDisputeAgent.click();
+				Thread.sleep(2000);
+				break;
+			}
+		}
+	}
+	
+	
+	
+	
+	
 	@FindBy(xpath = "//a[normalize-space()='Closed disputes']")
 	WebElement closedDisputesTab;
 
@@ -275,5 +304,7 @@ public class AgentDisputesPage {
 	public void clickOnFStoreEle() {
 		clickOnFStoreEle.click();
 	}
+	
+	
 
 }

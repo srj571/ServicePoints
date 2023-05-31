@@ -4,13 +4,13 @@
   <parameter name="browser" value="chrome"/>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.servicepoints.testCases.TC40_VerifyMergeBreakOrderForDisputeTest">
+      <class name="com.servicepoints.testCases.TC51_VerifyShowDisputeAfterAddingTrackingNumAndCancelOrder">
         <methods>
-          <include name="verifyDisputeIsStillOpenFromClientSide"/>
           <include name="setup"/>
           <include name="tearDown"/>
+          <include name="varifyCanceleSecondVariant"/>
         </methods>
-      </class> <!-- com.servicepoints.testCases.TC40_VerifyMergeBreakOrderForDisputeTest -->
+      </class> <!-- com.servicepoints.testCases.TC51_VerifyShowDisputeAfterAddingTrackingNumAndCancelOrder -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

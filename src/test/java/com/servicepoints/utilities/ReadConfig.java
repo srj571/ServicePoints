@@ -929,6 +929,15 @@ public class ReadConfig {
 		return aspPass;
 	}
 	
+	public String getProductForTC50() {
+		String pro50=po.getProperty("product50");
+		return pro50;
+	}
+	
+	public String getProductForTC51() {
+		String pro51=po.getProperty("product51");
+		return pro51;
+	}
 }
 
 
