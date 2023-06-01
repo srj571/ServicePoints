@@ -146,7 +146,6 @@ public class TC48_VerifyDisputeCantBeReopenForTheStatusRefund extends BaseClass{
 		BaseClass.closeAllWinTabsExceptParent();
 	}
 	
-	
 	@Test(priority = 2)
 	public void verifyAddTrackingNumberAndReopenDeclinedDispute() throws InterruptedException {
 		LoginPage lp = new LoginPage(driver);

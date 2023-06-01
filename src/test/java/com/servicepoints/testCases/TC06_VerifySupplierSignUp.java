@@ -11,6 +11,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -40,14 +41,18 @@ public class TC06_VerifySupplierSignUp {
 
 	@BeforeTest
 	public void setUp() {
+		
 		WebDriverManager.chromedriver().setup();
-		driver = new ChromeDriver();
+		ChromeOptions option=new ChromeOptions();
+		option.addArguments("--ignore-certificate-errors");
+		option.addArguments("--allow-running-insecure-content");
+		driver = new ChromeDriver(option);
+		driver.get(supurl);
 	}
 
 	@Test
 	public void verifySupplierSignUp() throws InterruptedException, IOException {
 
-		driver.get(supurl);
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 

@@ -7,6 +7,7 @@ import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
 import java.util.List;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -71,6 +72,8 @@ public class ClientOrdersPage {
 	public void clickOnFDiv() {
 		firstDiv.click();
 	}
+	
+	
 	
 	@FindBy(xpath="//input[@role='searchbox']")
 	WebElement dropdownSearch;
@@ -249,25 +252,55 @@ public class ClientOrdersPage {
 	@FindBy(xpath="//a[contains(text(),'Show dispute')]")
 	List<WebElement> showDisputeList;
 	
+//	public void clickOnEachDivForDisputeVerification(WebDriver driver) throws InterruptedException {
+//		for(WebElement eachDiv:noOfOrdersTab) {
+//			for(WebElement eachShowBtn : showDisputeList) {
+//				eachDiv.click();
+//				Thread.sleep(1000);
+//				
+//				scrollTillEle(driver);
+//				Thread.sleep(3000);
+//				
+//				eachShowBtn.click();
+//				Thread.sleep(4000);
+//				
+//				closeDispute.click();
+//				Thread.sleep(2000);
+//				
+//				break;
+//			}
+//		}
+//	}
+	
+	@FindBy(xpath="(//a[contains(text(),'Show dispute')])[1]")
+	WebElement eachD;
+	
+	@FindBy(xpath="//a[contains(text(),'Show dispute')]")
+	List<WebElement> leachD;
+	
 	public void clickOnEachDivForDisputeVerification(WebDriver driver) throws InterruptedException {
-		for(WebElement eachDiv:noOfOrdersTab) {
-			for(WebElement eachShowBtn : showDisputeList) {
-				eachDiv.click();
-				Thread.sleep(1000);
+		
+		for(int i=0;i<noOfOrdersTab.size();i++) {
+			for(int j=1; j<=3 ;j++) {
 				
+				noOfOrdersTab.get(i).click();
+				Thread.sleep(1000);
+					
 				scrollTillEle(driver);
 				Thread.sleep(3000);
 				
-				eachShowBtn.click();
+				String xpath="(//a[contains(text(),'Show dispute')])["+  j + "]";
+				List<WebElement> one=driver.findElements(By.xpath(xpath));
+				one.get(j - 1).click();
 				Thread.sleep(4000);
-				
+					
 				closeDispute.click();
 				Thread.sleep(2000);
-				
 				break;
 			}
 		}
 	}
+	
 	
 	@FindBy(xpath="(//div[@class='mb-2 multi_data'])[1]//input[@name='cancel_items[]' and @type='checkbox']")
 	List<WebElement> cancelOrderCheckBoxes;

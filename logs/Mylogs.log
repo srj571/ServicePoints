@@ -3902,3 +3902,199 @@
 [INFO ] 2023-06-01 13:20:32.903 [main] BaseClass - Product name is entered.
 [INFO ] 2023-06-01 13:20:35.004 [main] BaseClass - Clicked on first div.
 [INFO ] 2023-06-01 13:20:41.127 [main] BaseClass - Verification of not reopening of Dispute for refund is successed.
+[INFO ] 2023-06-01 15:12:31.661 [main] BaseClass - client logged in Successfully.
+[INFO ] 2023-06-01 15:12:34.280 [main] BaseClass - Product name is entered.
+[INFO ] 2023-06-01 15:13:09.551 [main] BaseClass - client logged in Successfully.
+[INFO ] 2023-06-01 15:13:11.872 [main] BaseClass - Product name is entered.
+[INFO ] 2023-06-01 15:13:17.230 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-06-01 15:13:23.508 [main] BaseClass - Customer got wrong product option selected.
+[INFO ] 2023-06-01 15:13:23.708 [main] BaseClass - I want the order to be shipped immediately option is selected.
+[INFO ] 2023-06-01 15:13:26.958 [main] BaseClass - Queries entered in text fields.
+[INFO ] 2023-06-01 15:13:32.064 [main] BaseClass - Dispute saved.
+[INFO ] 2023-06-01 15:13:32.467 [main] BaseClass - Verification of Dispute raised Successfully.
+[INFO ] 2023-06-01 15:13:34.787 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-06-01 15:13:39.716 [main] BaseClass - Product name is entered.
+[INFO ] 2023-06-01 15:13:45.048 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-06-01 15:13:52.204 [main] BaseClass - Clicked on show disputes.
+[INFO ] 2023-06-01 15:16:32.614 [main] BaseClass - client logged in Successfully.
+[INFO ] 2023-06-01 15:16:35.473 [main] BaseClass - Product name is entered.
+[INFO ] 2023-06-01 15:16:40.809 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-06-01 15:17:42.448 [main] BaseClass - client logged in Successfully.
+[INFO ] 2023-06-01 15:17:44.709 [main] BaseClass - Product name is entered.
+[INFO ] 2023-06-01 15:17:50.072 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-06-01 15:17:56.337 [main] BaseClass - Customer got wrong product option selected.
+[INFO ] 2023-06-01 15:17:56.526 [main] BaseClass - I want the order to be shipped immediately option is selected.
+[INFO ] 2023-06-01 15:17:59.804 [main] BaseClass - Queries entered in text fields.
+[INFO ] 2023-06-01 15:18:04.905 [main] BaseClass - Dispute saved.
+[INFO ] 2023-06-01 15:18:05.317 [main] BaseClass - Verification of Dispute raised Successfully.
+[INFO ] 2023-06-01 15:18:07.587 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-06-01 15:18:13.206 [main] BaseClass - Product name is entered.
+[INFO ] 2023-06-01 15:18:18.533 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-06-01 15:18:25.642 [main] BaseClass - Clicked on show disputes.
+[INFO ] 2023-06-01 15:22:01.121 [main] BaseClass - client logged in Successfully.
+[INFO ] 2023-06-01 15:22:03.442 [main] BaseClass - Product name is entered.
+[INFO ] 2023-06-01 15:22:08.807 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-06-01 15:22:15.089 [main] BaseClass - Customer got wrong product option selected.
+[INFO ] 2023-06-01 15:22:15.288 [main] BaseClass - I want the order to be shipped immediately option is selected.
+[INFO ] 2023-06-01 15:22:18.527 [main] BaseClass - Queries entered in text fields.
+[INFO ] 2023-06-01 15:22:23.633 [main] BaseClass - Dispute saved.
+[INFO ] 2023-06-01 15:22:24.023 [main] BaseClass - Verification of Dispute raised Successfully.
+[INFO ] 2023-06-01 15:22:27.511 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-06-01 15:22:32.363 [main] BaseClass - Product name is entered.
+[INFO ] 2023-06-01 15:22:37.713 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-06-01 15:22:44.857 [main] BaseClass - Clicked on show disputes.
+[INFO ] 2023-06-01 15:25:19.415 [main] BaseClass - client logged in Successfully.
+[INFO ] 2023-06-01 15:25:22.580 [main] BaseClass - Product name is entered.
+[INFO ] 2023-06-01 15:25:27.940 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-06-01 15:25:34.236 [main] BaseClass - Customer got wrong product option selected.
+[INFO ] 2023-06-01 15:25:34.432 [main] BaseClass - I want the order to be shipped immediately option is selected.
+[INFO ] 2023-06-01 15:25:37.687 [main] BaseClass - Queries entered in text fields.
+[INFO ] 2023-06-01 15:25:42.786 [main] BaseClass - Dispute saved.
+[INFO ] 2023-06-01 15:25:43.179 [main] BaseClass - Verification of Dispute raised Successfully.
+[INFO ] 2023-06-01 15:25:46.356 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-06-01 15:25:51.103 [main] BaseClass - Product name is entered.
+[INFO ] 2023-06-01 15:25:56.492 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-06-01 15:26:03.617 [main] BaseClass - Clicked on show disputes.
+[INFO ] 2023-06-01 15:29:59.769 [main] BaseClass - client logged in Successfully.
+[INFO ] 2023-06-01 15:30:02.701 [main] BaseClass - Product name is entered.
+[INFO ] 2023-06-01 15:30:08.078 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-06-01 15:30:14.384 [main] BaseClass - Customer got wrong product option selected.
+[INFO ] 2023-06-01 15:30:14.573 [main] BaseClass - I want the order to be shipped immediately option is selected.
+[INFO ] 2023-06-01 15:30:17.848 [main] BaseClass - Queries entered in text fields.
+[INFO ] 2023-06-01 15:30:22.970 [main] BaseClass - Dispute saved.
+[INFO ] 2023-06-01 15:30:23.355 [main] BaseClass - Verification of Dispute raised Successfully.
+[INFO ] 2023-06-01 15:30:40.565 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-06-01 15:30:45.120 [main] BaseClass - Open disputes page.
+[INFO ] 2023-06-01 15:30:58.569 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-06-01 15:31:03.450 [main] BaseClass - Product name is entered.
+[INFO ] 2023-06-01 15:31:08.808 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-06-01 15:36:15.987 [main] BaseClass - client logged in Successfully.
+[INFO ] 2023-06-01 15:36:18.605 [main] BaseClass - Product name is entered.
+[INFO ] 2023-06-01 15:36:23.983 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-06-01 15:36:30.269 [main] BaseClass - Customer got wrong product option selected.
+[INFO ] 2023-06-01 15:36:30.467 [main] BaseClass - I want the order to be shipped immediately option is selected.
+[INFO ] 2023-06-01 15:36:33.675 [main] BaseClass - Queries entered in text fields.
+[INFO ] 2023-06-01 15:36:38.801 [main] BaseClass - Dispute saved.
+[INFO ] 2023-06-01 15:36:39.223 [main] BaseClass - Verification of Dispute raised Successfully.
+[INFO ] 2023-06-01 15:36:56.829 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-06-01 15:37:01.154 [main] BaseClass - Open disputes page.
+[INFO ] 2023-06-01 15:37:14.422 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-06-01 15:37:19.207 [main] BaseClass - Product name is entered.
+[INFO ] 2023-06-01 15:37:24.590 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-06-01 15:44:27.419 [main] BaseClass - client logged in Successfully.
+[INFO ] 2023-06-01 15:44:30.081 [main] BaseClass - Product name is entered.
+[INFO ] 2023-06-01 15:44:35.397 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-06-01 15:44:41.685 [main] BaseClass - Customer got wrong product option selected.
+[INFO ] 2023-06-01 15:44:41.886 [main] BaseClass - I want the order to be shipped immediately option is selected.
+[INFO ] 2023-06-01 15:45:14.663 [main] BaseClass - client logged in Successfully.
+[INFO ] 2023-06-01 15:45:17.371 [main] BaseClass - Product name is entered.
+[INFO ] 2023-06-01 15:45:57.367 [main] BaseClass - Supplier name is entered.
+[INFO ] 2023-06-01 15:45:58.444 [main] BaseClass - Supplier last name is entered.
+[INFO ] 2023-06-01 15:45:59.547 [main] BaseClass - Country code is entered.
+[INFO ] 2023-06-01 15:46:00.659 [main] BaseClass - Mobile number is entered.
+[INFO ] 2023-06-01 15:46:01.826 [main] BaseClass - Supplier mail is entered.
+[INFO ] 2023-06-01 15:46:02.945 [main] BaseClass - Password is entered.
+[INFO ] 2023-06-01 15:46:11.323 [main] BaseClass - Supplier is Successfully Signed up.
+[INFO ] 2023-06-01 15:47:28.684 [main] BaseClass - Supplier name is entered.
+[INFO ] 2023-06-01 15:47:29.761 [main] BaseClass - Supplier last name is entered.
+[INFO ] 2023-06-01 15:49:10.242 [main] BaseClass - Supplier name is entered.
+[INFO ] 2023-06-01 15:49:11.345 [main] BaseClass - Supplier last name is entered.
+[INFO ] 2023-06-01 18:22:27.566 [main] BaseClass - Application Opened.
+[INFO ] 2023-06-01 18:22:28.662 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-06-01 18:22:29.756 [main] BaseClass - Password is entered.
+[INFO ] 2023-06-01 18:22:32.849 [main] BaseClass - Logged in to the Agent supplier account.
+[INFO ] 2023-06-01 18:22:43.249 [main] BaseClass - Product name entered.
+[INFO ] 2023-06-01 18:22:47.621 [main] BaseClass - Price entered for all pieces.
+[INFO ] 2023-06-01 18:22:52.733 [main] BaseClass - Clicked on submit quotation button.
+[INFO ] 2023-06-01 18:28:44.312 [main] BaseClass - Application Opened.
+[INFO ] 2023-06-01 18:28:45.403 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-06-01 18:28:46.486 [main] BaseClass - Password is entered.
+[INFO ] 2023-06-01 18:28:49.555 [main] BaseClass - Logged in to the Agent supplier account.
+[INFO ] 2023-06-01 18:28:59.996 [main] BaseClass - Product name entered.
+[INFO ] 2023-06-01 18:29:04.437 [main] BaseClass - Price entered for all pieces.
+[INFO ] 2023-06-01 18:29:09.560 [main] BaseClass - Clicked on submit quotation button.
+[INFO ] 2023-06-01 18:29:18.596 [main] BaseClass - Verification of Submit quotation Successed..
+[INFO ] 2023-06-01 18:29:20.797 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-06-01 18:29:20.879 [main] BaseClass - Password is entered.
+[INFO ] 2023-06-01 18:29:24.961 [main] BaseClass - Client logged in successfully.
+[INFO ] 2023-06-01 18:29:30.354 [main] BaseClass - Product name searched.
+[INFO ] 2023-06-01 18:29:39.757 [main] BaseClass - Clicked on Accept Quotation button.
+[INFO ] 2023-06-01 18:29:43.925 [main] BaseClass - Verification of accepting quotation is Successed.
+[INFO ] 2023-06-01 18:29:51.750 [main] BaseClass - client logged in Successfully.
+[INFO ] 2023-06-01 18:29:54.446 [main] BaseClass - Product name is entered.
+[INFO ] 2023-06-01 18:29:59.718 [main] BaseClass - Processing filter selected.
+[INFO ] 2023-06-01 18:29:59.794 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-06-01 18:30:05.908 [main] BaseClass - Clicked on Open dispute button.
+[INFO ] 2023-06-01 18:30:06.056 [main] BaseClass - Customer got wrong product option selected.
+[INFO ] 2023-06-01 18:30:06.238 [main] BaseClass - I want the order to be shipped immediately option is selected.
+[INFO ] 2023-06-01 18:30:09.526 [main] BaseClass - Queries entered in text fields.
+[INFO ] 2023-06-01 18:30:14.619 [main] BaseClass - Clicked on Saved dispute.
+[INFO ] 2023-06-01 18:30:14.926 [main] BaseClass - Verification of Dispute raised Successfully.
+[INFO ] 2023-06-01 18:31:42.287 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-06-01 18:31:43.374 [main] BaseClass - Password is entered.
+[INFO ] 2023-06-01 18:31:57.876 [main] BaseClass - Product name entered.
+[INFO ] 2023-06-01 18:32:02.617 [main] BaseClass - Click on Ask for Price changed.
+[INFO ] 2023-06-01 18:32:08.428 [main] BaseClass - Entered changed price and Clicked on submit.
+[INFO ] 2023-06-01 18:32:08.636 [main] BaseClass - Pop up get closed.
+[INFO ] 2023-06-01 18:32:11.799 [main] BaseClass - Status changed to New Price.
+[INFO ] 2023-06-01 18:32:18.558 [main] BaseClass - Logged out from Agent account.
+[INFO ] 2023-06-01 18:32:22.638 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-06-01 18:32:22.714 [main] BaseClass - Password is entered.
+[INFO ] 2023-06-01 18:32:25.787 [main] BaseClass - Client loged in successfully.
+[INFO ] 2023-06-01 18:32:31.551 [main] BaseClass - Product selected.
+[INFO ] 2023-06-01 18:32:37.992 [main] BaseClass - Pop up closed.
+[INFO ] 2023-06-01 18:32:37.992 [main] BaseClass - Now accepting the quotation.
+[INFO ] 2023-06-01 18:32:40.048 [main] BaseClass - Changed price is get accepted by the Client.
+[INFO ] 2023-06-01 18:32:40.116 [main] BaseClass - Clicked on yes im sure
+[INFO ] 2023-06-01 18:32:42.201 [main] BaseClass - Now verification is to be done.
+[INFO ] 2023-06-01 18:32:45.290 [main] BaseClass - Verification is done from Client side for Ask for Price change test.
+[INFO ] 2023-06-01 18:32:46.951 [main] BaseClass - Go to Orders page.
+[INFO ] 2023-06-01 18:41:16.762 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-06-01 18:41:17.914 [main] BaseClass - Password is entered.
+[INFO ] 2023-06-01 18:41:32.572 [main] BaseClass - Product name entered.
+[INFO ] 2023-06-01 18:41:37.321 [main] BaseClass - Click on Ask for Price changed.
+[INFO ] 2023-06-01 18:41:43.181 [main] BaseClass - Entered changed price and Clicked on submit.
+[INFO ] 2023-06-01 18:41:43.374 [main] BaseClass - Pop up get closed.
+[INFO ] 2023-06-01 18:41:46.583 [main] BaseClass - Status changed to New Price.
+[INFO ] 2023-06-01 18:41:53.539 [main] BaseClass - Logged out from Agent account.
+[INFO ] 2023-06-01 18:41:57.706 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-06-01 18:41:57.788 [main] BaseClass - Password is entered.
+[INFO ] 2023-06-01 18:42:00.866 [main] BaseClass - Client loged in successfully.
+[INFO ] 2023-06-01 18:42:06.887 [main] BaseClass - Product selected.
+[INFO ] 2023-06-01 18:42:13.388 [main] BaseClass - Pop up closed.
+[INFO ] 2023-06-01 18:42:13.389 [main] BaseClass - Now accepting the quotation.
+[INFO ] 2023-06-01 18:42:15.472 [main] BaseClass - Changed price is get accepted by the Client.
+[INFO ] 2023-06-01 18:42:15.571 [main] BaseClass - Clicked on yes im sure
+[INFO ] 2023-06-01 18:42:17.653 [main] BaseClass - Now verification is to be done.
+[INFO ] 2023-06-01 18:42:20.764 [main] BaseClass - Verification is done from Client side for Ask for Price change test.
+[INFO ] 2023-06-01 18:42:22.435 [main] BaseClass - Go to Orders page.
+[INFO ] 2023-06-01 18:48:15.750 [main] BaseClass - Logged out from Agent account.
+[INFO ] 2023-06-01 18:48:19.885 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-06-01 18:48:19.962 [main] BaseClass - Password is entered.
+[INFO ] 2023-06-01 18:48:23.053 [main] BaseClass - Client loged in successfully.
+[INFO ] 2023-06-01 18:48:25.373 [main] BaseClass - Go to Orders page.
+[INFO ] 2023-06-01 18:51:26.003 [main] BaseClass - Logged out from Agent account.
+[INFO ] 2023-06-01 18:51:30.133 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-06-01 18:51:30.216 [main] BaseClass - Password is entered.
+[INFO ] 2023-06-01 18:51:33.306 [main] BaseClass - Client loged in successfully.
+[INFO ] 2023-06-01 18:51:35.478 [main] BaseClass - Go to Orders page.
+[INFO ] 2023-06-01 18:55:29.356 [main] BaseClass - Logged out from Agent account.
+[INFO ] 2023-06-01 18:55:33.498 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-06-01 18:55:33.595 [main] BaseClass - Password is entered.
+[INFO ] 2023-06-01 18:55:36.688 [main] BaseClass - Client loged in successfully.
+[INFO ] 2023-06-01 18:55:38.931 [main] BaseClass - Go to Orders page.
+[INFO ] 2023-06-01 18:56:46.351 [main] BaseClass - Logged out from Agent account.
+[INFO ] 2023-06-01 18:56:50.480 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-06-01 18:56:50.563 [main] BaseClass - Password is entered.
+[INFO ] 2023-06-01 18:56:53.648 [main] BaseClass - Client loged in successfully.
+[INFO ] 2023-06-01 18:56:55.833 [main] BaseClass - Go to Orders page.
+[INFO ] 2023-06-01 18:59:33.362 [main] BaseClass - Logged out from Agent account.
+[INFO ] 2023-06-01 18:59:37.480 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-06-01 18:59:37.565 [main] BaseClass - Password is entered.
+[INFO ] 2023-06-01 18:59:40.651 [main] BaseClass - Client loged in successfully.
+[INFO ] 2023-06-01 18:59:42.577 [main] BaseClass - Go to Orders page.
+[INFO ] 2023-06-01 19:09:12.796 [main] BaseClass - Logged out from Agent account.
+[INFO ] 2023-06-01 19:09:16.894 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-06-01 19:09:16.962 [main] BaseClass - Password is entered.
+[INFO ] 2023-06-01 19:09:20.033 [main] BaseClass - Client loged in successfully.
+[INFO ] 2023-06-01 19:09:22.434 [main] BaseClass - Go to Orders page.

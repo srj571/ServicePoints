@@ -14,9 +14,9 @@
       <class name="com.servicepoints.testCases.TC02_VerifyClientLoginTest"/>-->
       <!--<class name="com.servicepoints.testCases.TC03_UserSignUpTest"/>-->
       <!--<class name="com.servicepoints.testCases.TC04_VerifyClientApprovalTest"/>
-      <class name="com.servicepoints.testCases.TC05_VerifyAdminSUPLoginTest"/>-->
-      <!--<class name="com.servicepoints.testCases.TC06_VerifySupplierSignUp"/>
-      <class name="com.servicepoints.testCases.TC07_VerifyAddAgentSupBySupplier"/>
+      <class name="com.servicepoints.testCases.TC05_VerifyAdminSUPLoginTest"/>
+      <class name="com.servicepoints.testCases.TC06_VerifySupplierSignUp"/>-->
+      <!--<class name="com.servicepoints.testCases.TC07_VerifyAddAgentSupBySupplier"/>
       <class name="com.servicepoints.testCases.TC08_VerifyAddAgentSupportTest"/>
       <class name="com.servicepoints.testCases.TC09_VerifyAddingNewStore"/>
       <class name="com.servicepoints.testCases.TC10_VerifyUpdationOfStoreTest"/>
@@ -61,8 +61,8 @@
 			  <include name="verifyDisputeIsStillOpenFromClientSide"></include>
 			  <include name="tearDown"></include>
 		  </methods>
-      </class>-->
-      <!--<class name="com.servicepoints.testCases.TC41_VerifyMergeBreakOrderForNewVariantInDispute">
+      </class>
+      <class name="com.servicepoints.testCases.TC41_VerifyMergeBreakOrderForNewVariantInDispute">
 		  <methods>
 			  <include name="setup"></include>
 			  <include name="verifySubmitAndAcceptQuotation"></include>
@@ -71,8 +71,8 @@
 			  <include name="verifyDisputeFromClientSide"></include>
 			  <include name="tearDown"></include>
 		  </methods>
-      </class>
-      <class name="com.servicepoints.testCases.TC42_VerifyMergeBreakOrderForAcceptedDisputeTest">
+      </class>-->
+      <!--<class name="com.servicepoints.testCases.TC42_VerifyMergeBreakOrderForAcceptedDisputeTest">
 		  <methods>
 			  <include name="setup"></include>
 			  <include name="submitAndAcceptQuotation"></include> 
@@ -118,7 +118,7 @@
 			  <include name="verifySubmitAndDeclinedDisputeAndReopenIt"></include>
 			  <include name="tearDown"></include>
 		  </methods>
-	  </class>-->
+	  </class>
 	  <class name="com.servicepoints.testCases.TC47_VerifyDisputeCantBeInReopenStateForTheOderStatusResend">
 		  <methods>
 			  <include name="setup"></include>
@@ -130,7 +130,7 @@
 			  <include name="verifyRaiseDisputeForrRefund"></include>
 			  <include name="tearDown"></include>
 		  </methods>
-	  </class>
+	  </class>-->
 	   <!--<class name="com.servicepoints.testCases.TC49_VerifyCloseDisputeAfterCancelOrderAndDeclinedTheDispute">
 		  <methods>
 			  <include name="setup"></include>
@@ -166,6 +166,16 @@
 			  <include name="tearDown"></include>
 		  </methods>
 	  </class>-->
+	  <class name="com.servicepoints.testCases.TC52_VerifyOpenDisputeAfterSupplierAskForPriceChange">
+		  <methods>
+			  <include name="setup"></include>
+			  <include name="submitAndAcceptQuotation"></include>
+			  <include name="verifyOpenDispute"></include>
+			  <include name="verifyAskForPriceChange"></include>
+			  <include name="verifyByClient"></include>
+			  <include name="tearDown"></include>
+		  </methods>
+	  </class>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

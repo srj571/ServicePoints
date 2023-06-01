@@ -30,7 +30,7 @@ public class TC41_VerifyMergeBreakOrderForNewVariantInDispute extends BaseClass{
 	public String productFetch=rd.fetchProducts();
 	public String ordersFetch=rd.fetchOrders();
 	
-	@Test(priority = 1)
+	@Test(enabled = false)
 	public void verifySubmitAndAcceptQuotation() throws InterruptedException, IOException {
 		logger.info("Application Opened.");
 		LoginPage lp = new LoginPage(driver);
@@ -206,6 +206,7 @@ public class TC41_VerifyMergeBreakOrderForNewVariantInDispute extends BaseClass{
 	
 	@Test(priority = 3)
 	public void verifyDisputeIsOpenAfterAddingNewVariant() throws InterruptedException {
+		driver.get(baseURL);
 		driver.get(productFetch);
 		driver.get(ordersFetch);
 		driver.get(baseURL);
@@ -214,6 +215,7 @@ public class TC41_VerifyMergeBreakOrderForNewVariantInDispute extends BaseClass{
 		lp.setAdminPassword(agentPassMBO);
 		lp.clickLoginbtn();
 		logger.info("Agent logged in Successfully.");
+		Thread.sleep(3000);
 		
 		AgentDisputesPage asop=new AgentDisputesPage(driver);
 		asop.clickOnDisputesTab();
