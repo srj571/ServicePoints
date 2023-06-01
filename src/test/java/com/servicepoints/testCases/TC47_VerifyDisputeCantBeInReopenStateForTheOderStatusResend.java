@@ -150,6 +150,7 @@ public class TC47_VerifyDisputeCantBeInReopenStateForTheOderStatusResend extends
 	
 	@Test(priority = 2)
 	public void verifyOpenDispute() throws InterruptedException, IOException {
+		driver.get(baseURL);
 		LoginPage lp = new LoginPage(driver);
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 
@@ -174,7 +175,7 @@ public class TC47_VerifyDisputeCantBeInReopenStateForTheOderStatusResend extends
 
 		aop.setStatusSearchDrop(process);
 		logger.info("Processing status is searched.");
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 
 		wait.until(ExpectedConditions.visibilityOf(aop.fprocessTab));
 		aop.clickOnProcessTab();
@@ -219,10 +220,12 @@ public class TC47_VerifyDisputeCantBeInReopenStateForTheOderStatusResend extends
 			Assert.assertTrue(false);
 			logger.info("Verification of adding tracking number is failed.");
 		}
-		
-		
+	}
+	
+	@Test(priority = 3)
+	public void verifyRaisingAndAcceptingDisputeAgain() throws InterruptedException, IOException {
 		driver.get(baseURL);
-
+		LoginPage lp=new LoginPage(driver);
 		Thread.sleep(3000);
 		lp.setAdminMailId(clientMailMBO);
 		lp.setAdminPassword(clientPassMBO);
@@ -236,15 +239,15 @@ public class TC47_VerifyDisputeCantBeInReopenStateForTheOderStatusResend extends
 		logger.info("Product name is entered.");
 		Thread.sleep(2000);
 
-		cop.clickOnStatusDrop();
-		// Thread.sleep(3000);
-		cop.dropdownSearch(process);
-		// logger.info("fulfilled status is entered.");
-		// cop.clickOnFulfillTab();
-		// cop.clickOnFProcessingTab();
-		// aop.clickOnProcessTab();
-		cop.clickOnProcessingTab();
-		Thread.sleep(3000);
+//		cop.clickOnStatusDrop();
+//		Thread.sleep(3000);
+//		cop.dropdownSearch(process);
+//		logger.info("fulfilled status is entered.");
+//		cop.clickOnFulfillTab();
+//		cop.clickOnFProcessingTab();
+//		aop.clickOnProcessTab();
+//		cop.clickOnProcessingTab();
+//		Thread.sleep(3000);
 
 		cop.clickOnFDiv();
 		logger.info("Clicked on first div.");
@@ -260,7 +263,7 @@ public class TC47_VerifyDisputeCantBeInReopenStateForTheOderStatusResend extends
 		logger.info("Customer got wrong product option selected.");
 
 		cop.resendSolutionDsp();
-		logger.info("I want the order to be shipped immediately option is selected.");
+		logger.info("Resend dispute option is selected.");
 
 		cop.clickOnCheckBox();
 		Thread.sleep(3000);
@@ -276,7 +279,7 @@ public class TC47_VerifyDisputeCantBeInReopenStateForTheOderStatusResend extends
 			Assert.assertTrue(true);
 			logger.info("Verification of Dispute raised Successfully.");
 		} else {
-			captureScreen(driver, "disputeRaised");
+			captureScreen(driver, "dispute Raised again");
 			logger.info("Verification of Dispute raised failed.");
 			Assert.assertTrue(false);
 		}
@@ -302,7 +305,7 @@ public class TC47_VerifyDisputeCantBeInReopenStateForTheOderStatusResend extends
 		Thread.sleep(3000);
 		asop.selectDspStatusToDeclined();
 		logger.info("Dispute Declined Status selected from dropdown.");
-		Thread.sleep(3000);
+		Thread.sleep(1000);
 
 		asop.scrollTillSendAns(driver);
 		Thread.sleep(1000);
@@ -323,7 +326,7 @@ public class TC47_VerifyDisputeCantBeInReopenStateForTheOderStatusResend extends
 		}
 	}
 	
-	@Test(priority = 3)
+	@Test(priority = 4)
 	public void verifyRaiseDisputeAndAccept() throws InterruptedException, IOException {
 		driver.get(baseURL);
 
@@ -341,21 +344,21 @@ public class TC47_VerifyDisputeCantBeInReopenStateForTheOderStatusResend extends
 		logger.info("Product name is entered.");
 		Thread.sleep(2000);
 
-		cop.clickOnStatusDrop();
-		// Thread.sleep(3000);
-		cop.dropdownSearch(process);
-		// logger.info("fulfilled status is entered.");
-		// cop.clickOnFulfillTab();
-		// cop.clickOnFProcessingTab();
-		// aop.clickOnProcessTab();
-		cop.clickOnProcessingTab();
-		Thread.sleep(3000);
+//		cop.clickOnStatusDrop();
+//		Thread.sleep(3000);
+//		cop.dropdownSearch(process);
+//		logger.info("fulfilled status is entered.");
+//		cop.clickOnFulfillTab();
+//		cop.clickOnFProcessingTab();
+//		aop.clickOnProcessTab();
+//		cop.clickOnProcessingTab();
+//		Thread.sleep(3000);
 
 		cop.clickOnFDiv();
 		logger.info("Clicked on first div.");
 		Thread.sleep(3000);
 
-		cop.scrollTillEle(driver);
+		cop.scrollTillOpenDisputesBtn(driver);
 		Thread.sleep(1000);
 
 		cop.clickOnOpenDspbtn();
@@ -364,8 +367,8 @@ public class TC47_VerifyDisputeCantBeInReopenStateForTheOderStatusResend extends
 		cop.handleDspIssues();
 		logger.info("Customer got wrong product option selected.");
 
-		cop.handleDspSolution();
-		logger.info("I want the order to be shipped immediately option is selected.");
+		cop.resendSolutionDsp();
+		logger.info("Resend dispute option is selected.");
 
 		cop.clickOnCheckBox();
 		Thread.sleep(3000);
@@ -423,6 +426,143 @@ public class TC47_VerifyDisputeCantBeInReopenStateForTheOderStatusResend extends
 		}else {
 			captureScreen(driver, "Dispute for resend");
 			logger.info("Verification of Dispute acceptance is failed.");
+			Assert.assertTrue(false);
+		}
+	}
+	
+	
+	@Test(priority = 5)
+	public void verifyTryToReopenResendDispute() throws InterruptedException, IOException {
+		driver.get(baseURL);
+
+		LoginPage lp = new LoginPage(driver);
+		Thread.sleep(3000);
+		lp.setAdminMailId(clientMailMBO);
+		lp.setAdminPassword(clientPassMBO);
+		lp.clickLoginbtn();
+		Thread.sleep(2000);
+
+		logger.info("client logged in Successfully.");
+		ClientOrdersPage cop = new ClientOrdersPage(driver);
+		cop.clickOnOrdersTab();
+		cop.sendPnameinSearch(product47);
+		logger.info("Product name is entered.");
+		Thread.sleep(2000);
+		
+		cop.clickOnFDiv();
+		logger.info("Clicked on first div.");
+		Thread.sleep(3000);
+		
+		if(cop.verifyOpenDisputeButtonIsVisible()==true) {
+			Assert.assertTrue(true);
+			Thread.sleep(3000);
+			logger.info("Verification of Dispute for Resend is not able to reopen once accepted is successed.");
+		}
+		else {
+			captureScreen(driver, "Dispute for resend reopen.");
+			logger.info("Verification of Dispute acceptance is failed.");
+			Assert.assertTrue(false);
+		}
+		
+		cop.clickOnOpenDspbtn();
+		Thread.sleep(2000);
+
+		cop.handleDspIssues();
+		logger.info("Customer got wrong product option selected.");
+
+		cop.refundSolutionDsp();
+		logger.info("Resend dispute option is selected.");
+
+		cop.clickOnCheckBox();
+		Thread.sleep(3000);
+
+		cop.sendQueries(queries);
+		logger.info("Queries entered in text fields.");
+
+		cop.SaveDispute();
+		Thread.sleep(5000);
+		logger.info("Dispute saved.");
+
+		if (driver.getPageSource().contains("Dispute raised successfully")) {
+			Assert.assertTrue(true);
+			logger.info("Verification of Refund Dispute raised Successfully.");
+		} else {
+			captureScreen(driver, "disputeRaised");
+			logger.info("Verification of Refund Dispute raised failed.");
+			Assert.assertTrue(false);
+		}
+		
+		driver.get(baseURL);
+		lp.setAdminMailId(agentMailMBO);
+		lp.setAdminPassword(agentPassMBO);
+		lp.clickLoginbtn();
+		logger.info("Agent logged in Successfully.");
+		
+		AgentDisputesPage asop=new AgentDisputesPage(driver);
+		asop.clickOnDisputesTab();
+		logger.info("Open disputes page.");
+		
+		asop.searchProductForDsp(product47);
+		Thread.sleep(3000);
+		asop.clickOnFrstDsp();
+		Thread.sleep(3000);
+		asop.clickOnShowDsp();
+		logger.info("Clicked on show disputes.");
+		Thread.sleep(3000);
+		
+		asop.selectDspStatus();
+		logger.info("Dispute Accepted.");
+		Thread.sleep(3000);
+		
+		asop.sendAnswer(agentAnswer);
+		Thread.sleep(3000);
+		asop.scrollTillSendAns(driver);
+		Thread.sleep(1000);
+		asop.clickOnSendAnswer();
+		logger.info("Dispute send.");
+		Thread.sleep(5000);
+		
+		if(driver.getPageSource().contains("Dispute accepted successfully")) {
+			Assert.assertTrue(true);
+			Thread.sleep(3000);
+			logger.info("Verification of Refund Dispute acceptance is successed.");
+		}else {
+			captureScreen(driver, "Dispute for resend");
+			logger.info("Verification of Refund Dispute acceptance is failed.");
+			Assert.assertTrue(false);
+		}
+	}
+	
+	@Test(priority = 6)
+	public void verifyRaiseDisputeForrRefund() throws InterruptedException, IOException {
+		driver.get(baseURL);
+
+		LoginPage lp = new LoginPage(driver);
+		Thread.sleep(3000);
+		lp.setAdminMailId(clientMailMBO);
+		lp.setAdminPassword(clientPassMBO);
+		lp.clickLoginbtn();
+		Thread.sleep(2000);
+
+		logger.info("client logged in Successfully.");
+		ClientOrdersPage cop = new ClientOrdersPage(driver);
+		cop.clickOnOrdersTab();
+		cop.sendPnameinSearch(product47);
+		logger.info("Product name is entered.");
+		Thread.sleep(2000);
+		
+		cop.clickOnFDiv();
+		logger.info("Clicked on first div.");
+		Thread.sleep(3000);
+		
+		if(cop.verifyOpenDisputeButtonIsVisible()==false) {
+			Assert.assertTrue(true);
+			Thread.sleep(3000);
+			logger.info("Verification of not reopening of Dispute for refund is successed.");
+		}
+		else {
+			captureScreen(driver, "Dispute for refund reopen.");
+			logger.info("Verification of not reopening of Dispute for refund is failed.");
 			Assert.assertTrue(false);
 		}
 	}

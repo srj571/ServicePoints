@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-31T18:04:15 IST" name="Suite" finished-at="2023-05-31T18:08:58 IST" duration-ms="282647">
+  <suite started-at="2023-06-01T13:15:24 IST" name="Suite" finished-at="2023-06-01T13:20:41 IST" duration-ms="317171">
     <groups>
     </groups>
-    <test started-at="2023-05-31T18:04:15 IST" name="Test" finished-at="2023-05-31T18:08:58 IST" duration-ms="282647">
-      <class name="com.servicepoints.testCases.TC51_VerifyShowDisputeAfterAddingTrackingNumAndCancelOrder">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.servicepoints.testCases.TC51_VerifyShowDisputeAfterAddingTrackingNumAndCancelOrder@3faf2e7d]" started-at="2023-05-31T18:04:15 IST" name="setup" finished-at="2023-05-31T18:04:23 IST" duration-ms="7182" status="PASS">
+    <test started-at="2023-06-01T13:15:24 IST" name="Test" finished-at="2023-06-01T13:20:41 IST" duration-ms="317171">
+      <class name="com.servicepoints.testCases.TC47_VerifyDisputeCantBeInReopenStateForTheOderStatusResend">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.servicepoints.testCases.TC47_VerifyDisputeCantBeInReopenStateForTheOderStatusResend@4648ce9]" started-at="2023-06-01T13:15:24 IST" name="setup" finished-at="2023-06-01T13:15:30 IST" duration-ms="6071" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,31 +18,35 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="submitAndAcceptQuotation()[pri:1, instance:com.servicepoints.testCases.TC51_VerifyShowDisputeAfterAddingTrackingNumAndCancelOrder@3faf2e7d]" started-at="2023-05-31T18:04:23 IST" name="submitAndAcceptQuotation" finished-at="2023-05-31T18:05:35 IST" duration-ms="72673" status="PASS">
+        <test-method signature="submitAndAcceptQuotation()[pri:1, instance:com.servicepoints.testCases.TC47_VerifyDisputeCantBeInReopenStateForTheOderStatusResend@4648ce9]" started-at="2023-06-01T13:15:30 IST" name="submitAndAcceptQuotation" finished-at="2023-06-01T13:16:31 IST" duration-ms="61534" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitAndAcceptQuotation -->
-        <test-method signature="verifyOpenDispute()[pri:2, instance:com.servicepoints.testCases.TC51_VerifyShowDisputeAfterAddingTrackingNumAndCancelOrder@3faf2e7d]" started-at="2023-05-31T18:05:35 IST" name="verifyOpenDispute" finished-at="2023-05-31T18:06:10 IST" duration-ms="34923" status="PASS">
+        <test-method signature="verifyOpenDispute()[pri:2, instance:com.servicepoints.testCases.TC47_VerifyDisputeCantBeInReopenStateForTheOderStatusResend@4648ce9]" started-at="2023-06-01T13:16:31 IST" name="verifyOpenDispute" finished-at="2023-06-01T13:17:16 IST" duration-ms="44323" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyOpenDispute -->
-        <test-method signature="verifyAddingTrackingNumOn3rdVariant()[pri:3, instance:com.servicepoints.testCases.TC51_VerifyShowDisputeAfterAddingTrackingNumAndCancelOrder@3faf2e7d]" started-at="2023-05-31T18:06:10 IST" name="verifyAddingTrackingNumOn3rdVariant" finished-at="2023-05-31T18:07:05 IST" duration-ms="54877" status="PASS">
+        <test-method signature="verifyRaisingAndAcceptingDisputeAgain()[pri:3, instance:com.servicepoints.testCases.TC47_VerifyDisputeCantBeInReopenStateForTheOderStatusResend@4648ce9]" started-at="2023-06-01T13:17:16 IST" name="verifyRaisingAndAcceptingDisputeAgain" finished-at="2023-06-01T13:18:15 IST" duration-ms="59200" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyAddingTrackingNumOn3rdVariant -->
-        <test-method signature="verifyDisputeStatusFromClientSide()[pri:4, instance:com.servicepoints.testCases.TC51_VerifyShowDisputeAfterAddingTrackingNumAndCancelOrder@3faf2e7d]" started-at="2023-05-31T18:07:05 IST" name="verifyDisputeStatusFromClientSide" finished-at="2023-05-31T18:07:34 IST" duration-ms="28632" status="PASS">
+        </test-method> <!-- verifyRaisingAndAcceptingDisputeAgain -->
+        <test-method signature="verifyRaiseDisputeAndAccept()[pri:4, instance:com.servicepoints.testCases.TC47_VerifyDisputeCantBeInReopenStateForTheOderStatusResend@4648ce9]" started-at="2023-06-01T13:18:15 IST" name="verifyRaiseDisputeAndAccept" finished-at="2023-06-01T13:19:17 IST" duration-ms="62037" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyDisputeStatusFromClientSide -->
-        <test-method signature="varifyCanceleSecondVariant()[pri:5, instance:com.servicepoints.testCases.TC51_VerifyShowDisputeAfterAddingTrackingNumAndCancelOrder@3faf2e7d]" started-at="2023-05-31T18:07:34 IST" name="varifyCanceleSecondVariant" finished-at="2023-05-31T18:08:58 IST" duration-ms="84028" status="PASS">
+        </test-method> <!-- verifyRaiseDisputeAndAccept -->
+        <test-method signature="verifyTryToReopenResendDispute()[pri:5, instance:com.servicepoints.testCases.TC47_VerifyDisputeCantBeInReopenStateForTheOderStatusResend@4648ce9]" started-at="2023-06-01T13:19:17 IST" name="verifyTryToReopenResendDispute" finished-at="2023-06-01T13:20:22 IST" duration-ms="64989" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- varifyCanceleSecondVariant -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.servicepoints.testCases.TC51_VerifyShowDisputeAfterAddingTrackingNumAndCancelOrder@3faf2e7d]" started-at="2023-05-31T18:08:58 IST" name="tearDown" finished-at="2023-05-31T18:08:58 IST" duration-ms="233" status="PASS">
+        </test-method> <!-- verifyTryToReopenResendDispute -->
+        <test-method signature="verifyRaiseDisputeForrRefund()[pri:6, instance:com.servicepoints.testCases.TC47_VerifyDisputeCantBeInReopenStateForTheOderStatusResend@4648ce9]" started-at="2023-06-01T13:20:22 IST" name="verifyRaiseDisputeForrRefund" finished-at="2023-06-01T13:20:41 IST" duration-ms="18803" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRaiseDisputeForrRefund -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.servicepoints.testCases.TC47_VerifyDisputeCantBeInReopenStateForTheOderStatusResend@4648ce9]" started-at="2023-06-01T13:20:41 IST" name="tearDown" finished-at="2023-06-01T13:20:41 IST" duration-ms="159" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.servicepoints.testCases.TC51_VerifyShowDisputeAfterAddingTrackingNumAndCancelOrder -->
+      </class> <!-- com.servicepoints.testCases.TC47_VerifyDisputeCantBeInReopenStateForTheOderStatusResend -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

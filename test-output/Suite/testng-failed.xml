@@ -4,13 +4,15 @@
   <parameter name="browser" value="chrome"/>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.servicepoints.testCases.TC51_VerifyShowDisputeAfterAddingTrackingNumAndCancelOrder">
+      <class name="com.servicepoints.testCases.TC47_VerifyDisputeCantBeInReopenStateForTheOderStatusResend">
         <methods>
+          <include name="verifyRaiseDisputeForrRefund"/>
+          <include name="verifyTryToReopenResendDispute"/>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="varifyCanceleSecondVariant"/>
+          <include name="verifyRaiseDisputeAndAccept"/>
         </methods>
-      </class> <!-- com.servicepoints.testCases.TC51_VerifyShowDisputeAfterAddingTrackingNumAndCancelOrder -->
+      </class> <!-- com.servicepoints.testCases.TC47_VerifyDisputeCantBeInReopenStateForTheOderStatusResend -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

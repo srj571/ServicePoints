@@ -528,6 +528,11 @@ public class ClientOrdersPage {
 	@FindBy(xpath="//a[normalize-space()='Open dispute']")
 	WebElement openDisputeBtn;
 	
+	public boolean verifyOpenDisputeButtonIsVisible() {
+		boolean val=openDisputeBtn.isDisplayed();
+		return val;
+	}
+	
 	public void scrollTillOpenDisputesBtn(WebDriver driver) {
 		JavascriptExecutor exe=(JavascriptExecutor) driver;
 		exe.executeScript("arguments[0].scrollIntoView();", openDisputeBtn);

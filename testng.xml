@@ -118,16 +118,20 @@
 			  <include name="verifySubmitAndDeclinedDisputeAndReopenIt"></include>
 			  <include name="tearDown"></include>
 		  </methods>
-	  </class>
+	  </class>-->
 	  <class name="com.servicepoints.testCases.TC47_VerifyDisputeCantBeInReopenStateForTheOderStatusResend">
 		  <methods>
 			  <include name="setup"></include>
-			  <include name="verifyAddTrackingNumberAndReopenDeclinedDispute"></include>
-			  <include name="verifySubmitAndDeclinedDisputeAndReopenIt"></include>
+			  <include name="submitAndAcceptQuotation"></include>
+			  <include name="verifyOpenDispute"></include>
+			  <include name="verifyRaisingAndAcceptingDisputeAgain"></include>
+			  <include name="verifyRaiseDisputeAndAccept"></include>
+			  <include name="verifyTryToReopenResendDispute"></include>
+			  <include name="verifyRaiseDisputeForrRefund"></include>
 			  <include name="tearDown"></include>
 		  </methods>
 	  </class>
-	   <class name="com.servicepoints.testCases.TC49_VerifyCloseDisputeAfterCancelOrderAndDeclinedTheDispute">
+	   <!--<class name="com.servicepoints.testCases.TC49_VerifyCloseDisputeAfterCancelOrderAndDeclinedTheDispute">
 		  <methods>
 			  <include name="setup"></include>
 			  <include name="submitAndAcceptQuotation"></include>
@@ -150,7 +154,7 @@
 			  <include name="verifyDeletedDisputefromSupportSide"></include>
 			  <include name="tearDown"></include>
 		  </methods>
-	  </class>-->
+	  </class>
 	   <class name="com.servicepoints.testCases.TC51_VerifyShowDisputeAfterAddingTrackingNumAndCancelOrder">
 		  <methods>
 			  <include name="setup"></include>
@@ -161,7 +165,7 @@
 			  <include name="varifyCanceleSecondVariant"></include>
 			  <include name="tearDown"></include>
 		  </methods>
-	  </class>
+	  </class>-->
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

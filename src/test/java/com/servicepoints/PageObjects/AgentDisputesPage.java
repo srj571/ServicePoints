@@ -180,9 +180,11 @@ public class AgentDisputesPage {
 	@FindBy(xpath = "//div[@id='client_orders_body']/div/div[1]")
 	List<WebElement> eachDspDivFromAgentSide;
 
-	@FindBy(xpath = "//div[@class='d-xl-flex ']//a[@class='btn btn-border btn-block mt-2 showDisputes linkactive']")
+	@FindBy(xpath = "//a[@class='btn btn-border btn-block mt-3 supportDispute linkactive']")
 	List<WebElement> allShowBtn;
-
+	//div[@class='d-xl-flex ']//a[@class='btn btn-border btn-block mt-2 showDisputes linkactive']
+	//a[@class='btn btn-border btn-block mt-3 supportDispute linkactive']
+	
 	@FindBy(xpath = "//h5[@id='orderDisputeId']//button[@aria-label='Close']")
 	WebElement closeDisputeAgent;
 	
@@ -304,7 +306,5 @@ public class AgentDisputesPage {
 	public void clickOnFStoreEle() {
 		clickOnFStoreEle.click();
 	}
-	
-	
 
 }
