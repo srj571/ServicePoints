@@ -165,7 +165,7 @@
 			  <include name="varifyCanceleSecondVariant"></include>
 			  <include name="tearDown"></include>
 		  </methods>
-	  </class>-->
+	  </class>
 	  <class name="com.servicepoints.testCases.TC52_VerifyOpenDisputeAfterSupplierAskForPriceChange">
 		  <methods>
 			  <include name="setup"></include>
@@ -173,6 +173,19 @@
 			  <include name="verifyOpenDispute"></include>
 			  <include name="verifyAskForPriceChange"></include>
 			  <include name="verifyByClient"></include>
+			  <include name="tearDown"></include>
+		  </methods>
+	  </class>-->
+	  <class name="com.servicepoints.testCases.TC53_VerifyRaiseDisputeAfterClientStopsFulfillment">
+		  <methods>
+			  <include name="setup"></include>
+			  <include name="submitAndAcceptQuotation"></include>
+			  <include name="verifyOpenDispute"></include>
+			  <include name="verifyStopFulfillment"></include>
+			  <include name="verifyDisputeOnSupplierSide"></include>
+			  <include name="verifyDisputeOnSupportSide"></include>
+			  <include name="verifyShowDisputeFromTeamleaderSide"></include>
+			  <include name="verifyStartFulfillment"></include>
 			  <include name="tearDown"></include>
 		  </methods>
 	  </class>

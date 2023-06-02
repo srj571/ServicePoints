@@ -243,25 +243,64 @@ public class ClientOrdersPage {
 	
 	@FindBy(xpath="//div[@id='client_orders_body']/div")
 	List<WebElement> noOfOrdersTab;
-	//No of orders tab
 	
 	@FindBy(xpath="//h5[@id='orderDisputeId']//button[@aria-label='Close']")
 	WebElement closeDispute;
 	
-	
 	@FindBy(xpath="//a[contains(text(),'Show dispute')]")
 	List<WebElement> showDisputeList;
 	
+	public void clickOnEachDivForDisputeVerification(WebDriver driver) throws InterruptedException {
+		for(WebElement eachDiv:noOfOrdersTab) {
+			
+			for(WebElement eachShowBtn : showDisputeList) {
+				
+				eachDiv.click();
+				Thread.sleep(1000);
+				
+				scrollTillEle(driver);
+				Thread.sleep(3000);
+				
+				eachShowBtn.click();
+				Thread.sleep(4000);
+				
+				closeDispute.click();
+				Thread.sleep(2000);
+				
+				break;
+			}
+		}
+	}
+	
+	@FindBy(xpath="(//a[contains(text(),'Show dispute')])[1]")
+	WebElement eachD;
+	
+	@FindBy(xpath="//div[@class='js_table_expand_two table_expand_abso']")
+	List<WebElement> eachDivOnDspPage;
+	
+	@FindBy(xpath="//div[contains(text(),'See more')]")
+	List<WebElement> allSeeMoreBtn;
+	
+	@FindBy(xpath="//div[contains(text(),'See less')]")
+	List<WebElement> allSeeLessBtn;
+	
+	@FindBy(xpath="//a[contains(text(),'Show dispute')]")
+	List<WebElement> leachD;
+	
 //	public void clickOnEachDivForDisputeVerification(WebDriver driver) throws InterruptedException {
-//		for(WebElement eachDiv:noOfOrdersTab) {
-//			for(WebElement eachShowBtn : showDisputeList) {
-//				eachDiv.click();
+//		
+//		for(int i=0;i<noOfOrdersTab.size();i++) {
+//			for(int j=1; j<=3 ;j++) {
+//				
+//				noOfOrdersTab.get(i).click();
 //				Thread.sleep(1000);
-//				
+//					
 //				scrollTillEle(driver);
-//				Thread.sleep(3000);
+//				Thread.sleep(2000);
 //				
-//				eachShowBtn.click();
+//				String xpath="//a[contains(text(),'Show dispute')]";
+//				WebElement one=driver.findElement(By.xpath(xpath));
+//				one.click();
 //				Thread.sleep(4000);
 //				
 //				closeDispute.click();
@@ -272,34 +311,31 @@ public class ClientOrdersPage {
 //		}
 //	}
 	
-	@FindBy(xpath="(//a[contains(text(),'Show dispute')])[1]")
-	WebElement eachD;
 	
-	@FindBy(xpath="//a[contains(text(),'Show dispute')]")
-	List<WebElement> leachD;
-	
-	public void clickOnEachDivForDisputeVerification(WebDriver driver) throws InterruptedException {
-		
-		for(int i=0;i<noOfOrdersTab.size();i++) {
-			for(int j=1; j<=3 ;j++) {
-				
-				noOfOrdersTab.get(i).click();
-				Thread.sleep(1000);
-					
-				scrollTillEle(driver);
-				Thread.sleep(3000);
-				
-				String xpath="(//a[contains(text(),'Show dispute')])["+  j + "]";
-				List<WebElement> one=driver.findElements(By.xpath(xpath));
-				one.get(j - 1).click();
-				Thread.sleep(4000);
-					
-				closeDispute.click();
-				Thread.sleep(2000);
-				break;
-			}
-		}
-	}
+//	public void clickOnEachDivForDisputeVerification(WebDriver driver) throws InterruptedException{
+//		for(int i=0;i<allSeeMoreBtn.size();i++) {
+//			for(int j=0; j<leachD.size(); j++) {
+//				for(int e=0; e<allSeeLessBtn.size(); e++) {
+//					
+//					allSeeMoreBtn.get(i).click();
+//					Thread.sleep(1000);
+//					
+//					leachD.get(j).click();
+//					Thread.sleep(4000);
+//					
+//					closeDispute.click();
+//					Thread.sleep(2000);
+//					
+//					allSeeLessBtn.get(e).click();
+//					Thread.sleep(1000);
+//					
+//					break;
+//				}
+//				
+//				break;
+//			}
+//		}
+//	}
 	
 	
 	@FindBy(xpath="(//div[@class='mb-2 multi_data'])[1]//input[@name='cancel_items[]' and @type='checkbox']")

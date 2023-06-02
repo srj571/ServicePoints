@@ -262,7 +262,7 @@ public class TC50_VerifyDeletedDisputeFromClientSupplierAndSupportSide extends B
 		tdp.searchStoreFilter(storeFilter);
 		Thread.sleep(2000);
 		
-		tdp.clickOnFStoreTab();
+		tdp.clickOnFStoreTab();    
 		logger.info("Store filter handled.");
 		Thread.sleep(1000);
 		
@@ -391,6 +391,5 @@ public class TC50_VerifyDeletedDisputeFromClientSupplierAndSupportSide extends B
 			logger.info("Verification of deleted dispute from support side failed.");
 			Assert.assertTrue(false);
 		}
-		
 	}
 }

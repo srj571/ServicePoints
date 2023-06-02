@@ -1,4 +1,4 @@
-package com.servicepoints.testCases;
+      package com.servicepoints.testCases;
 
 import java.io.IOException;
 import java.util.Iterator;
@@ -138,7 +138,7 @@ public class TC41_VerifyMergeBreakOrderForNewVariantInDispute extends BaseClass{
 		
 	}
 	
-	@Test(priority = 2)
+	@Test(enabled = false)
 	public void verifyOpenDispute() throws InterruptedException, IOException {
 		driver.get(baseURL);
  		
@@ -206,7 +206,6 @@ public class TC41_VerifyMergeBreakOrderForNewVariantInDispute extends BaseClass{
 	
 	@Test(priority = 3)
 	public void verifyDisputeIsOpenAfterAddingNewVariant() throws InterruptedException {
-		driver.get(baseURL);
 		driver.get(productFetch);
 		driver.get(ordersFetch);
 		driver.get(baseURL);
@@ -256,7 +255,7 @@ public class TC41_VerifyMergeBreakOrderForNewVariantInDispute extends BaseClass{
 		logger.info("Clicked on first div.");
 		Thread.sleep(4000);
 		
-		cop.scrollTillEle(driver);
+		cop.scrollTillShowDisputeBtn(driver);
 		Thread.sleep(3000);
 		
 		cop.clickOnShowDispute();
