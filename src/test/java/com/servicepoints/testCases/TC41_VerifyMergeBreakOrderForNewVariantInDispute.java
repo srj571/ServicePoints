@@ -30,7 +30,7 @@ public class TC41_VerifyMergeBreakOrderForNewVariantInDispute extends BaseClass{
 	public String productFetch=rd.fetchProducts();
 	public String ordersFetch=rd.fetchOrders();
 	
-	@Test(enabled = false)
+	@Test(priority = 1)
 	public void verifySubmitAndAcceptQuotation() throws InterruptedException, IOException {
 		logger.info("Application Opened.");
 		LoginPage lp = new LoginPage(driver);
@@ -138,7 +138,7 @@ public class TC41_VerifyMergeBreakOrderForNewVariantInDispute extends BaseClass{
 		
 	}
 	
-	@Test(enabled = false)
+	@Test(priority = 2)
 	public void verifyOpenDispute() throws InterruptedException, IOException {
 		driver.get(baseURL);
  		

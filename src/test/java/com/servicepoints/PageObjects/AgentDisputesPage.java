@@ -16,6 +16,10 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.servicepoints.testCases.BaseClass;
+
+import junit.framework.Assert;
+
 public class AgentDisputesPage {
 
 	WebDriver rdriver;
@@ -231,19 +235,18 @@ public class AgentDisputesPage {
 //		}
 //	}
 
-	@FindBy(xpath="//div[@class='d-xl-flex align-items-stretch justify-content-center table_expand_rel full_expand']")
+	@FindBy(xpath="//div[@id='client_orders_body']/div")
 	List<WebElement> allDisps;
 	
-	@FindBy(xpath="//a[@class='btn btn-border btn-block mt-3 supportDispute linkactive']")
+	@FindBy(xpath="//a[@class='btn btn-border btn-block mt-2 showDisputes linkactive']")
 	List<WebElement> allShowDspBtn;
 	
 	public void handleEachDispute(WebDriver driver) throws InterruptedException {
 		for(int i=0; i<allDisps.size();i++) {
-			for(int j=0; j<allShowDspBtn.size();j++) {
 				allDisps.get(i).click();
 				Thread.sleep(2000);
 				
-				scrollTillShowDispute(driver);
+				scrollTillTheLast(driver);
 				Thread.sleep(3000);
 				
 				allShowDspBtn.get(i).click();
@@ -251,12 +254,53 @@ public class AgentDisputesPage {
 				
 				closeDisputeAgent.click();
 				Thread.sleep(2000);
-				break;
-			}
 		}
 	}
 	
+	public void scrollTillTheLast(WebDriver driver) {
+		JavascriptExecutor exe=(JavascriptExecutor) driver;
+		exe.executeScript("window.scrollTo(0, document.body.scrollHeight)");
+	}
 	
+	
+	public void acceptEachDispute(WebDriver driver, String agentAnswer) throws InterruptedException {
+		
+		for(int i=0; i<allDisps.size();i++) {
+			
+				allDisps.get(i).click();
+				Thread.sleep(2000);
+				
+				scrollTillTheLast(driver);
+				Thread.sleep(3000);
+				
+				allShowDspBtn.get(i).click();
+				Thread.sleep(4000);
+				
+				selectDspStatus();
+				BaseClass.logger.info("Dispute Accepted.");
+				Thread.sleep(3000);
+				
+				sendAnswer(agentAnswer);
+				Thread.sleep(3000);
+				
+				scrollTillSendAns(driver);
+				Thread.sleep(1000);
+				
+				clickOnSendAnswer();
+				BaseClass.logger.info("Dispute send.");
+				Thread.sleep(5000);
+				
+				
+				if(driver.getPageSource().contains("Dispute accepted successfully")) {
+					Assert.assertTrue(true);
+					Thread.sleep(3000);
+					BaseClass.logger.info("Verification of Dispute acceptance is successed.");
+				}else {
+					BaseClass.logger.info("Verification of Dispute acceptance is failed.");
+					Assert.assertTrue(false);
+				}
+		}
+	}
 	
 	
 	

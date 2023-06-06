@@ -4,14 +4,18 @@
   <parameter name="browser" value="chrome"/>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.servicepoints.testCases.TC53_VerifyRaiseDisputeAfterClientStopsFulfillment">
+      <class name="com.servicepoints.testCases.TC54_VerifyReopeningOfHoldOrderStatusDispute">
         <methods>
-          <include name="verifyStartFulfillment"/>
+          <include name="verifyReopenHoldDeclinedDisputes"/>
+          <include name="verifyReopenDeclinedDisputes"/>
+          <include name="verifyAcceptDispute"/>
           <include name="setup"/>
+          <include name="againRaiseDisputes"/>
+          <include name="submitReQuotation"/>
           <include name="tearDown"/>
-          <include name="verifyShowDisputeFromTeamleaderSide"/>
+          <include name="verifyAcceptingRequoteQuote"/>
         </methods>
-      </class> <!-- com.servicepoints.testCases.TC53_VerifyRaiseDisputeAfterClientStopsFulfillment -->
+      </class> <!-- com.servicepoints.testCases.TC54_VerifyReopeningOfHoldOrderStatusDispute -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

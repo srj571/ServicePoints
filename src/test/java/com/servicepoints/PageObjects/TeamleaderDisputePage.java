@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 
 public class TeamleaderDisputePage {
 WebDriver rdriver;
@@ -124,6 +125,32 @@ WebDriver rdriver;
 	
 	public void clickOnSubmitBtnOnDispute() {
 		submitBtnOnDsp.click();
+	}
+	
+	@FindBy(xpath="//select[@id='disputeIssueAccept']")
+	WebElement disputeDropdown;
+	
+	public void acceptTheDispute() {
+		Select sel=new Select(disputeDropdown);
+		sel.selectByIndex(1);
+	}
+	public void declinedTheDispute() {
+		Select sel=new Select(disputeDropdown);
+		sel.selectByIndex(2);
+	}
+	
+	@FindBy(xpath = "//textarea[@id='textarea']")
+	WebElement txtanswer;
+
+	public void sendAnswer(String answer) {
+		txtanswer.sendKeys(answer);
+	}
+
+	@FindBy(xpath = "//input[@value='   Send answer   ']")
+	WebElement btnSendAnswer;
+
+	public void clickOnSendAnswer() {
+		btnSendAnswer.click();
 	}
 	
 }

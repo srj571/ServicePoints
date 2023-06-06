@@ -84,6 +84,4 @@ public class TC39_VerifyAcceptingRequoteQuotationTest extends BaseClass{
 		Thread.sleep(2000);
 		logger.info("Status changed to Processing.");
 	}
-	
-
 }

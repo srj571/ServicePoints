@@ -130,8 +130,19 @@
 			  <include name="verifyRaiseDisputeForrRefund"></include>
 			  <include name="tearDown"></include>
 		  </methods>
+	  </class>
+	  <class name="com.servicepoints.testCases.TC48_VerifyDisputeCantBeReopenForTheStatusCancelled">
+		  <methods>
+			  <include name="setup"></include>
+			  <include name="submitAndAcceptQuotation"></include>
+			  <include name="verifyOpenDisputeAndDeclined"></include>
+			  <include name="verifyCancelOrder"></include>
+			  <include name="verifyOpenDisputeAgainAndAccept"></include>
+			  <include name="verifyReopeningOfDeclinedDispute"></include>
+			  <include name="tearDown"></include>
+		  </methods>
 	  </class>-->
-	   <!--<class name="com.servicepoints.testCases.TC49_VerifyCloseDisputeAfterCancelOrderAndDeclinedTheDispute">
+	  <!-- <class name="com.servicepoints.testCases.TC49_VerifyCloseDisputeAfterCancelOrderAndDeclinedTheDispute">
 		  <methods>
 			  <include name="setup"></include>
 			  <include name="submitAndAcceptQuotation"></include>
@@ -175,7 +186,7 @@
 			  <include name="verifyByClient"></include>
 			  <include name="tearDown"></include>
 		  </methods>
-	  </class>-->
+	  </class>
 	  <class name="com.servicepoints.testCases.TC53_VerifyRaiseDisputeAfterClientStopsFulfillment">
 		  <methods>
 			  <include name="setup"></include>
@@ -186,6 +197,22 @@
 			  <include name="verifyDisputeOnSupportSide"></include>
 			  <include name="verifyShowDisputeFromTeamleaderSide"></include>
 			  <include name="verifyStartFulfillment"></include>
+			  <include name="tearDown"></include>
+		  </methods>
+	  </class>-->
+	   <class name="com.servicepoints.testCases.TC54_VerifyReopeningOfHoldOrderStatusDispute">
+		  <methods>
+			  <include name="setup"></include>
+			  <include name="submitAndAcceptQuotation"></include>
+			  <include name="verifyOpenDispute"></include>
+			  <include name="verifyRequotation"></include>
+			  <include name="verifyShowDisputeFromTeamleaderSide"></include>
+			  <include name="verifyReopenHoldDeclinedDisputes"></include>
+			  <include name="submitReQuotation"></include> 
+			  <include name="verifyAcceptingRequoteQuote"></include>
+			  <include name="againRaiseDisputes"></include>
+			  <include name="verifyAcceptDispute"></include>
+			  <include name="verifyReopenDeclinedDisputes"></include>
 			  <include name="tearDown"></include>
 		  </methods>
 	  </class>
