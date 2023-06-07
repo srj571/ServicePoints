@@ -130,7 +130,7 @@
 			  <include name="verifyRaiseDisputeForrRefund"></include>
 			  <include name="tearDown"></include>
 		  </methods>
-	  </class>
+	  </class>-->
 	  <class name="com.servicepoints.testCases.TC48_VerifyDisputeCantBeReopenForTheStatusCancelled">
 		  <methods>
 			  <include name="setup"></include>
@@ -141,8 +141,8 @@
 			  <include name="verifyReopeningOfDeclinedDispute"></include>
 			  <include name="tearDown"></include>
 		  </methods>
-	  </class>-->
-	  <!-- <class name="com.servicepoints.testCases.TC49_VerifyCloseDisputeAfterCancelOrderAndDeclinedTheDispute">
+	  </class>
+	   <!--<class name="com.servicepoints.testCases.TC49_VerifyCloseDisputeAfterCancelOrderAndDeclinedTheDispute">
 		  <methods>
 			  <include name="setup"></include>
 			  <include name="submitAndAcceptQuotation"></include>
@@ -199,7 +199,7 @@
 			  <include name="verifyStartFulfillment"></include>
 			  <include name="tearDown"></include>
 		  </methods>
-	  </class>-->
+	  </class>
 	   <class name="com.servicepoints.testCases.TC54_VerifyReopeningOfHoldOrderStatusDispute">
 		  <methods>
 			  <include name="setup"></include>
@@ -215,7 +215,7 @@
 			  <include name="verifyReopenDeclinedDisputes"></include>
 			  <include name="tearDown"></include>
 		  </methods>
-	  </class>
+	  </class>-->
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

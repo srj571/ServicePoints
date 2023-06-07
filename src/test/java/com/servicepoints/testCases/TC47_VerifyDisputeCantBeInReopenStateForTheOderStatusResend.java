@@ -561,9 +561,25 @@ public class TC47_VerifyDisputeCantBeInReopenStateForTheOderStatusResend extends
 			logger.info("Verification of not reopening of Dispute for refund is successed.");
 		}
 		else {
-			captureScreen(driver, "Dispute for refund reopen.");
-			logger.info("Verification of not reopening of Dispute for refund is failed.");
-			Assert.assertTrue(false);
+			
+			cop.clickOnOpenDspbtn();
+			Thread.sleep(2000);
+			
+			cop.handleDspIssues();
+			logger.info("Customer got wrong product option selected.");
+
+			cop.refundSolutionDsp();
+			logger.info("Resend dispute option is selected.");
+
+			if(cop.verifyCheckBoxesDisabled()== true) {
+				Assert.assertTrue(true);
+				Thread.sleep(3000);
+				logger.info("Verification of not reopening of Dispute for refund is successed.");
+			}else {
+				captureScreen(driver, "Dispute for refund reopen.");
+				logger.info("Verification of not reopening of Dispute for refund is failed.");
+				Assert.assertTrue(false);
+			}
 		}
 	}
 }

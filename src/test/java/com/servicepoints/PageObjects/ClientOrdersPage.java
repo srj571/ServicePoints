@@ -235,7 +235,7 @@ public class ClientOrdersPage {
 			specialRequestCheckBoxses.get(i).click();
 		}
 	}
-
+	
 	@FindBy(xpath = "//input[@id='disputeButton']")
 	WebElement sendRequestbtn;
 
@@ -309,6 +309,48 @@ public class ClientOrdersPage {
 			}
 		}
 	}
+	
+	public void reopenDeclinedDisputesForCancelOrder(WebDriver driver, String queries) throws InterruptedException {
+		for (int i = 0; i < noOfDisputesDiv.size(); i++) {
+
+			noOfDisputesDiv.get(i).click();
+			Thread.sleep(2000);
+
+			scrollTillTheLast(driver);
+			Thread.sleep(2000);
+
+			showDisputeList.get(i).click();
+			Thread.sleep(2000);
+
+			sendQueries(queries);
+			Thread.sleep(2000);
+
+			SaveDispute();
+			Thread.sleep(5000);
+			BaseClass.logger.info("Clicked on Saved dispute.");
+
+			if (driver.getPageSource().contains("Message send successfully")) {
+				Assert.assertTrue(true);
+				BaseClass.logger.info("Verification of Declined Dispute reopen Successfully.");
+			} 
+			else if(verifyAlertOfAlreadyOpenDsp()==true) {
+				Assert.assertTrue(true);
+				Thread.sleep(2000);
+				closeAlert.click();
+				BaseClass.logger.info("Verification of message after Declined Dispute reopen Successfully.");
+			}
+			else if(verifyAlertOfCancelOrder()==true) {
+				Assert.assertTrue(true);
+				Thread.sleep(2000);
+				closeAlert.click();
+				BaseClass.logger.info("Verification of message after Declined Dispute reopening of cancel order Successfully.");
+			}
+			else {
+				BaseClass.logger.info("Verification of messages failed.");
+				Assert.assertTrue(false);
+			}
+		}
+	}
 
 	public void reopenHoldDeclinedDisputes(WebDriver driver, String queries) throws InterruptedException {
 		for (int i = 0; i < noOfDisputesDiv.size(); i++) {
@@ -329,8 +371,9 @@ public class ClientOrdersPage {
 			Thread.sleep(4000);
 			BaseClass.logger.info("Clicked on Saved dispute.");
 
+			closeAlert.click();
+			
 			if (driver.getPageSource().contains("You can not generate or reopen the dispute request for this order.")) {
-				closeAlert.click();
 				Thread.sleep(2000);
 				Assert.assertTrue(true);
 				BaseClass.logger.info("Verification of not reopening of Declined Dispute of Hold status Successfull.");
@@ -765,6 +808,34 @@ public class ClientOrdersPage {
 		closeAlert.click();
 	}
 
+	@FindBy(xpath="//h6[normalize-space()='There is already an open dispute for this order']")
+	WebElement alertText;
+	
+	public boolean verifyAlertOfAlreadyOpenDsp() {
+		String actVal=alertText.getText();
+		String expVal= "There is already an open dispute for this order";
+		if(expVal.equals(actVal)) {
+			return true;
+		}
+		closeAlert.click();
+		return false;
+	}
+	
+	
+	@FindBy(xpath="//h6[contains(text(),'You can not generate or reopen the dispute request')]")
+	public WebElement alertTextForCancelOrder;
+	
+	public boolean verifyAlertOfCancelOrder() {
+		String actVal=alertTextForCancelOrder.getText();
+		String expVal= "You can not generate or reopen the dispute request for this order.";
+		if(expVal.equals(actVal)) {
+			//closeAlert.click();
+			return true;
+		}
+		closeAlert.click();
+		return false;
+	}
+	
 	@FindBy(xpath = "(//span[@aria-hidden='true'][normalize-space()='×'])[2]")
 	WebElement closeShowDisputeWin;
 
@@ -803,4 +874,19 @@ public class ClientOrdersPage {
 	@FindBy(xpath = "(//span[@class='badge-mod badge-warning'])[2]")
 	public WebElement statusText;
 
+	@FindBy(xpath="(//div[@class='float-left btn-block order_mapping_list'])[2]//input")
+	List<WebElement> checkBoxes;
+	
+	public boolean verifyCheckBoxesDisabled() {
+	    for (int i = 0; i < checkBoxes.size(); i++) {
+	        boolean isEnabled = checkBoxes.get(i).isEnabled();
+	        if (isEnabled) {
+	            return false; // Return false if any checkbox is enabled
+	        }
+	    }
+	    return true; // Return true if all checkboxes are disabled
+	}
+	
+	
+	
 }

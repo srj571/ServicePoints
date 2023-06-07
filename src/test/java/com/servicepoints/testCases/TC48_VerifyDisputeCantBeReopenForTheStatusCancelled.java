@@ -44,7 +44,7 @@ public class TC48_VerifyDisputeCantBeReopenForTheStatusCancelled extends BaseCla
 	public String status2=rd.setOrderStatus2();
 	public String trackingNum = rd.setTrackingNum();
 	
-	@Test(enabled = false)
+	@Test(priority = 1)
 	public void submitAndAcceptQuotation() throws InterruptedException, IOException {
 		logger.info("Application Opened.");
 		LoginPage lp = new LoginPage(driver);
@@ -151,7 +151,7 @@ public class TC48_VerifyDisputeCantBeReopenForTheStatusCancelled extends BaseCla
 	}
 	
 	
-	@Test(enabled = false)
+	@Test(priority = 2)
 	public void verifyOpenDisputeAndDeclined() throws InterruptedException, IOException {
 		driver.get(baseURL);
 
@@ -255,7 +255,7 @@ public class TC48_VerifyDisputeCantBeReopenForTheStatusCancelled extends BaseCla
 		BaseClass.closeAllWinTabsExceptParent();
 	}
 	
-	@Test(enabled = false)
+	@Test(priority = 3)
 	public void verifyCancelOrder() throws InterruptedException, IOException {
 		
 		driver.get(baseURL);
@@ -301,7 +301,7 @@ public class TC48_VerifyDisputeCantBeReopenForTheStatusCancelled extends BaseCla
 		Thread.sleep(3000);
 		logger.info("Clicked on Submit order.");
 		
-		cop.clickOnCancelOrderBtn();
+		cop.clickOnCancelOrderSuccessBtn();
 		Thread.sleep(3000);
 		
 		if(driver.getPageSource().contains("Order cancelled successfully")) {
@@ -315,7 +315,7 @@ public class TC48_VerifyDisputeCantBeReopenForTheStatusCancelled extends BaseCla
 		}
 	}
 	
-	@Test(enabled = false)
+	@Test(priority = 4)
 	public void verifyOpenDisputeAgainAndAccept() throws InterruptedException, IOException {
 		driver.get(baseURL);
 
@@ -440,6 +440,7 @@ public class TC48_VerifyDisputeCantBeReopenForTheStatusCancelled extends BaseCla
 		cop.sendPnameinSearch(product48);
 		Thread.sleep(2000);
 		
+		//cop.reopenDeclinedDisputesForCancelOrder(driver, queries);
 		cop.clickOn3rdDiv();
 		Thread.sleep(2000);
 		//cop.clickOnFDiv();
@@ -454,5 +455,17 @@ public class TC48_VerifyDisputeCantBeReopenForTheStatusCancelled extends BaseCla
 		cop.SaveDispute();
 		Thread.sleep(3000);
 		
+		String actVal=cop.alertTextForCancelOrder.getText();
+		String expVal= "You can not generate or reopen the dispute request for this order.";
+		if(expVal.equals(actVal)) {
+			Assert.assertTrue(true);
+			Thread.sleep(3000);
+			logger.info("Verification of Dispute acceptance is successfull.");
+		}else {
+			logger.info("Verification of Dispute acceptance is failed.");
+			Assert.assertTrue(false);
+		}
+		
+		cop.closeAlert.click();
 	}
 }
