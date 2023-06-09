@@ -11,20 +11,20 @@
     <test thread-count="5" name="Test">
     <classes>
       <!--<class name="com.servicepoints.testCases.TC01_AdminLoginTest"/>
-      <class name="com.servicepoints.testCases.TC02_VerifyClientLoginTest"/>-->
-      <!--<class name="com.servicepoints.testCases.TC03_UserSignUpTest"/>-->
-      <!--<class name="com.servicepoints.testCases.TC04_VerifyClientApprovalTest"/>
-      <class name="com.servicepoints.testCases.TC05_VerifyAdminSUPLoginTest"/>
-      <class name="com.servicepoints.testCases.TC06_VerifySupplierSignUp"/>-->
-      <!--<class name="com.servicepoints.testCases.TC07_VerifyAddAgentSupBySupplier"/>
+      <class name="com.servicepoints.testCases.TC02_VerifyClientLoginTest"/>
+      <class name="com.servicepoints.testCases.TC03_UserSignUpTest"/>
+      <class name="com.servicepoints.testCases.TC04_VerifyClientApprovalTest"/>
+      <class name="com.servicepoints.testCases.TC05_VerifyAdminSUPLoginTest"/> 
+      <class name="com.servicepoints.testCases.TC06_VerifySupplierSignUp"/>
+      <class name="com.servicepoints.testCases.TC07_VerifyAddAgentSupBySupplier"/>
       <class name="com.servicepoints.testCases.TC08_VerifyAddAgentSupportTest"/>
       <class name="com.servicepoints.testCases.TC09_VerifyAddingNewStore"/>
       <class name="com.servicepoints.testCases.TC10_VerifyUpdationOfStoreTest"/>
-      <class name="com.servicepoints.testCases.TC11_VerifyDeletionOfStoreTest"/> -->
-      <!--<class name="com.servicepoints.testCases.TC17_VerifyAddNewVariant"/>-->                                                              
-      <!--<class name="com.servicepoints.testCases.TC12_VerifySubmitQuoteTest"/>
-      <class name="com.servicepoints.testCases.TC13_VerifyAcceptQuotationTest"/>
-      <class name="com.servicepoints.testCases.TC14_VerifyExcludeFunctionTest"/> 
+      <class name="com.servicepoints.testCases.TC11_VerifyDeletionOfStoreTest"/>
+      <class name="com.servicepoints.testCases.TC17_VerifyAddNewVariant"/>                                                        
+      <class name="com.servicepoints.testCases.TC12_VerifySubmitQuoteTest"/>
+      <class name="com.servicepoints.testCases.TC13_VerifyAcceptQuotationTest"/>--> 
+      <!--<class name="com.servicepoints.testCases.TC14_VerifyExcludeFunctionTest"/> 
       <class name="com.servicepoints.testCases.TC15_verifyAskForPriceChange"/>
       <class name="com.servicepoints.testCases.TC16_VerifyUpdateDeleteQuotation"/>
       <class name="com.servicepoints.testCases.TC18_VerifyCancelOrderFunctionality"/>
@@ -37,19 +37,19 @@
       <class name="com.servicepoints.testCases.TC25_VerifyDisputeForConversation"/>
       <class name="com.servicepoints.testCases.TC26_VerifyRefundAndConversation"/>
       <class name="com.servicepoints.testCases.TC27_VerifyAddTrackingAndResend"/>       
-      <class name="com.servicepoints.testCases.TC28_VerifyDeclinedResendDispute"/>-->
-      <!--<class name="com.servicepoints.testCases.TC29_VerifySpecialRequestFunction"/>
-      <class name="com.servicepoints.testCases.TC30_VerifyCloseSpecialRequestFunction"/>
+      <class name="com.servicepoints.testCases.TC28_VerifyDeclinedResendDispute"/>
+      <class name="com.servicepoints.testCases.TC29_VerifySpecialRequestFunction"/>-->
+      <!--<class name="com.servicepoints.testCases.TC30_VerifyCloseSpecialRequestFunction"/>
       <class name="com.servicepoints.testCases.TC31_VerifySpecialRequestCloseByAdminSP"/>
       <class name="com.servicepoints.testCases.TC33_VerifyPaymentPendingOrderOffTest"/>
-      <class name="com.servicepoints.testCases.TC34_VerifyPaymentPendingOrderOnTest"/>-->
-      <!--<class name="com.servicepoints.testCases.TC35_VerifyPaymentPendingOrderForAddressError"/>
+      <class name="com.servicepoints.testCases.TC34_VerifyPaymentPendingOrderOnTest"/>
+      <class name="com.servicepoints.testCases.TC35_VerifyPaymentPendingOrderForAddressError"/>
       <class name="com.servicepoints.testCases.TC36_VerifyAddAffiliateTest"/>
       <class name="com.servicepoints.testCases.TC00_verifySubmitAndAcceptQuote"/>
       <class name="com.servicepoints.testCases.TC37_VerifyStopFulfillmentAndStartFulfillmentTest"/>
       <class name="com.servicepoints.testCases.TC38_VerifyRequoteQuotationTest"/>
-      <class name="com.servicepoints.testCases.TC39_VerifyAcceptingRequoteQuotationTest"/>
-      <class name="com.servicepoints.testCases.TC40_VerifyMergeBreakOrderForDisputeTest">
+      <class name="com.servicepoints.testCases.TC39_VerifyAcceptingRequoteQuotationTest"/>-->
+      <!--<class name="com.servicepoints.testCases.TC40_VerifyMergeBreakOrderForDisputeTest">
 		  <methods>
 			  <include name="setup"></include>
 			  <exclude name="submitAndAcceptQuotation"></exclude> 
@@ -130,7 +130,7 @@
 			  <include name="verifyRaiseDisputeForrRefund"></include>
 			  <include name="tearDown"></include>
 		  </methods>
-	  </class>-->
+	  </class>
 	  <class name="com.servicepoints.testCases.TC48_VerifyDisputeCantBeReopenForTheStatusCancelled">
 		  <methods>
 			  <include name="setup"></include>
@@ -142,7 +142,7 @@
 			  <include name="tearDown"></include>
 		  </methods>
 	  </class>
-	   <!--<class name="com.servicepoints.testCases.TC49_VerifyCloseDisputeAfterCancelOrderAndDeclinedTheDispute">
+	   <class name="com.servicepoints.testCases.TC49_VerifyCloseDisputeAfterCancelOrderAndDeclinedTheDispute">
 		  <methods>
 			  <include name="setup"></include>
 			  <include name="submitAndAcceptQuotation"></include>
@@ -153,8 +153,8 @@
 			  <include name="verifyShowDisputeFromTeamleaderSide"></include>
 			  <include name="tearDown"></include>
 		  </methods>
-	  </class>
-	  <class name="com.servicepoints.testCases.TC50_VerifyDeletedDisputeFromClientSupplierAndSupportSide">
+	  </class>-->
+	  <!--<class name="com.servicepoints.testCases.TC50_VerifyDeletedDisputeFromClientSupplierAndSupportSide">
 		  <methods>
 			  <include name="setup"></include>
 			  <include name="submitAndAcceptQuotation"></include>
@@ -215,7 +215,31 @@
 			  <include name="verifyReopenDeclinedDisputes"></include>
 			  <include name="tearDown"></include>
 		  </methods>
+	  </class>
+	  <class name="com.servicepoints.testCases.TC55_VerifyReopeningOfHoldOrderStatusDispute">
+		  <methods>
+			  <include name="setup"></include>
+			  <include name="submitAndAcceptQuotation"></include>
+			  <include name="verifyOpenDispute"></include>
+			  <include name="verifyRequotation"></include>
+			  <include name="verifyShowDisputeFromTeamleaderSide"></include>
+			  <include name="verifyReopenHoldDeclinedDisputes"></include>
+			  <include name="submitReQuotation"></include> 
+			  <include name="verifyAcceptingRequoteQuote"></include>
+			  <include name="againRaiseDisputes"></include>
+			  <include name="verifyAcceptDispute"></include>
+			  <include name="verifyReopenDeclinedDisputes"></include>
+			  <include name="tearDown"></include>
+		  </methods>
 	  </class>-->
+	   <class name="com.servicepoints.testCases.TC56_VerifyAddDiscountFunctionality">
+		  <methods>
+			  <include name="setup"></include>
+			  <include name="submitAndAcceptQuotation"></include>
+			  <include name="verifyAddTrackingAndResendProduct"></include>
+			  <include name="tearDown"></include>
+		  </methods>
+	  </class>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

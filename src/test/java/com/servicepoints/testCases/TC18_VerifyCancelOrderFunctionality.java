@@ -160,7 +160,7 @@ public class TC18_VerifyCancelOrderFunctionality extends BaseClass{
 		Thread.sleep(2000);
 		logger.info("Clicked on Submit order.");
 		
-		cop.clickOnCancelOrderBtn();
+		cop.clickOnCancelOrderSuccessBtn();
 		Thread.sleep(3000);
 		
 		if(driver.getPageSource().contains("Order cancelled successfully")) {

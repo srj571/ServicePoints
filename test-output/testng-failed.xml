@@ -4,13 +4,14 @@
   <parameter name="browser" value="chrome"/>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.servicepoints.testCases.TC48_VerifyDisputeCantBeReopenForTheStatusCancelled">
+      <class name="com.servicepoints.testCases.TC56_VerifyAddDiscountFunctionality">
         <methods>
-          <include name="verifyReopeningOfDeclinedDispute"/>
           <include name="setup"/>
+          <include name="submitAndAcceptQuotation"/>
+          <include name="verifyAddTrackingAndResendProduct"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.servicepoints.testCases.TC48_VerifyDisputeCantBeReopenForTheStatusCancelled -->
+      </class> <!-- com.servicepoints.testCases.TC56_VerifyAddDiscountFunctionality -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

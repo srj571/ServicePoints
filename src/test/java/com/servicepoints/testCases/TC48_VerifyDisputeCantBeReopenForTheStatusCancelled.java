@@ -20,7 +20,7 @@ import com.servicepoints.utilities.ReadConfig;
 
 import junit.framework.Assert;
 
-public class TC48_VerifyDisputeCantBeReopenForTheStatusCancelled extends BaseClass{
+public class TC48_VerifyDisputeCantBeReopenForTheStatusCancelled extends BaseClass {
 	ReadConfig rd = new ReadConfig();
 	public String agentMailMBO = rd.setAgentMailMergeBreakOrder();
 	public String agentPassMBO = rd.setAgentPassMergeBreakOrder();
@@ -40,10 +40,10 @@ public class TC48_VerifyDisputeCantBeReopenForTheStatusCancelled extends BaseCla
 	public String query4 = rd.getQuery4();
 	public String query5 = rd.getQuery5();
 	public String query6 = rd.getQuery6();
-	
-	public String status2=rd.setOrderStatus2();
+
+	public String status2 = rd.setOrderStatus2();
 	public String trackingNum = rd.setTrackingNum();
-	
+
 	@Test(priority = 1)
 	public void submitAndAcceptQuotation() throws InterruptedException, IOException {
 		logger.info("Application Opened.");
@@ -149,21 +149,20 @@ public class TC48_VerifyDisputeCantBeReopenForTheStatusCancelled extends BaseCla
 		}
 		BaseClass.closeAllWinTabsExceptParent();
 	}
-	
-	
+
 	@Test(priority = 2)
 	public void verifyOpenDisputeAndDeclined() throws InterruptedException, IOException {
 		driver.get(baseURL);
 
 		LoginPage lp = new LoginPage(driver);
 		Thread.sleep(3000);
-		
+
 		lp.setAdminMailId(clientMailMBO);
 		lp.setAdminPassword(clientPassMBO);
 		lp.clickLoginbtn();
 		Thread.sleep(2000);
 		logger.info("client logged in Successfully.");
-		
+
 		ClientOrdersPage cop = new ClientOrdersPage(driver);
 		cop.clickOnOrdersTab();
 		cop.sendPnameinSearch(product48);
@@ -175,7 +174,7 @@ public class TC48_VerifyDisputeCantBeReopenForTheStatusCancelled extends BaseCla
 		cop.clickOnProcessingTab();
 		Thread.sleep(3000);
 		logger.info("Processing filter selected.");
-		
+
 		cop.clickOnFDiv();
 		logger.info("Clicked on first div.");
 		Thread.sleep(3000);
@@ -254,80 +253,80 @@ public class TC48_VerifyDisputeCantBeReopenForTheStatusCancelled extends BaseCla
 		}
 		BaseClass.closeAllWinTabsExceptParent();
 	}
-	
+
 	@Test(priority = 3)
 	public void verifyCancelOrder() throws InterruptedException, IOException {
-		
+
 		driver.get(baseURL);
-		LoginPage lp=new LoginPage(driver);
-		
+		LoginPage lp = new LoginPage(driver);
+
 		lp.setAdminMailId(clientMailMBO);
 		lp.setAdminPassword(clientPassMBO);
 		lp.clickLoginbtn();
 		logger.info("Agent logged in Successfully.");
 		Thread.sleep(2000);
-		
-		ClientOrdersPage cop=new ClientOrdersPage(driver);
+
+		ClientOrdersPage cop = new ClientOrdersPage(driver);
 		cop.clickOnOrdersTab();
 		logger.info("Clicked on orders tab.");
 		Thread.sleep(2000);
 		cop.sendPnameinSearch(product48);
 		Thread.sleep(4000);
-	
+
 		cop.clickOnDropdown();
 		Thread.sleep(2000);
-		
+
 		cop.dropdownSearch(status2);
 		Thread.sleep(4000);
 		cop.clickOnProcessingSel();
 		Thread.sleep(2000);
 		logger.info("Processing filter selected.");
-		
+
 		cop.clickOnFDiv();
 		Thread.sleep(2000);
-		
+
 		cop.scrollTillEle(driver);
 		Thread.sleep(1000);
-		
+
 		cop.clickOnCancelBtn();
 		logger.info("Clicked on cancel order.");
 		Thread.sleep(2000);
-		
+
 		cop.clickOnFirstCheckbox();
 		Thread.sleep(2000);
 		logger.info("Clicked on first checkbox.");
-		
+
 		cop.clickOnSubmitOrder();
 		Thread.sleep(3000);
 		logger.info("Clicked on Submit order.");
-		
+
 		cop.clickOnCancelOrderSuccessBtn();
 		Thread.sleep(3000);
-		
-		if(driver.getPageSource().contains("Order cancelled successfully")) {
+
+		if (driver.getPageSource().contains("Order cancelled successfully")) {
 			Assert.assertTrue(true);
 			logger.info("Verification of cancel one variant is Successed.");
-		}else {
+		} else {
 			captureScreen(driver, "Cancel order in dispute");
 			Thread.sleep(4000);
 			logger.info("Verification of cancel one variant is failed.");
 			Assert.assertTrue(false);
 		}
 	}
-	
+
 	@Test(priority = 4)
 	public void verifyOpenDisputeAgainAndAccept() throws InterruptedException, IOException {
 		driver.get(baseURL);
 
 		LoginPage lp = new LoginPage(driver);
 		Thread.sleep(3000);
-		
+
 		lp.setAdminMailId(clientMailMBO);
 		lp.setAdminPassword(clientPassMBO);
 		lp.clickLoginbtn();
 		Thread.sleep(2000);
 		logger.info("client logged in Successfully.");
-		
+
 		ClientOrdersPage cop = new ClientOrdersPage(driver);
 		cop.clickOnOrdersTab();
 		cop.sendPnameinSearch(product48);
@@ -339,7 +338,7 @@ public class TC48_VerifyDisputeCantBeReopenForTheStatusCancelled extends BaseCla
 		cop.clickOnProcessingTab();
 		Thread.sleep(3000);
 		logger.info("Processing filter selected.");
-		
+
 		cop.clickOnFDiv();
 		logger.info("Clicked on first div.");
 		Thread.sleep(3000);
@@ -375,18 +374,17 @@ public class TC48_VerifyDisputeCantBeReopenForTheStatusCancelled extends BaseCla
 			logger.info("Verification of Dispute raised failed.");
 			Assert.assertTrue(false);
 		}
-		
-		
+
 		driver.get(baseURL);
 		lp.setAdminMailId(agentMailMBO);
 		lp.setAdminPassword(agentPassMBO);
 		lp.clickLoginbtn();
 		logger.info("Agent logged in Successfully.");
-		
-		AgentDisputesPage asop=new AgentDisputesPage(driver);
+
+		AgentDisputesPage asop = new AgentDisputesPage(driver);
 		asop.clickOnDisputesTab();
 		logger.info("Open disputes page.");
-		
+
 		asop.searchProductForDsp(product48);
 		Thread.sleep(3000);
 		asop.clickOnFrstDsp();
@@ -394,36 +392,38 @@ public class TC48_VerifyDisputeCantBeReopenForTheStatusCancelled extends BaseCla
 		asop.clickOnShowDsp();
 		logger.info("Clicked on show disputes.");
 		Thread.sleep(3000);
-		
+
 		asop.selectDspStatus();
 		logger.info("Dispute Accepted.");
 		Thread.sleep(3000);
-		
+
 		asop.sendAnswer(agentAnswer);
 		Thread.sleep(3000);
+
 		asop.scrollTillSendAns(driver);
 		Thread.sleep(1000);
+
 		asop.clickOnSendAnswer();
 		logger.info("Dispute send.");
 		Thread.sleep(5000);
-		
-		if(driver.getPageSource().contains("Dispute accepted successfully")) {
+
+		if (driver.getPageSource().contains("Dispute accepted successfully")) {
 			Assert.assertTrue(true);
 			Thread.sleep(3000);
 			logger.info("Verification of Dispute acceptance is successfull.");
-		}else {
+		} else {
 			captureScreen(driver, "acceptDispute");
 			logger.info("Verification of Dispute acceptance is failed.");
 			Assert.assertTrue(false);
 		}
 	}
-	
+
 	@Test(priority = 5)
 	public void verifyReopeningOfDeclinedDispute() throws InterruptedException {
 		driver.get(baseURL);
-		LoginPage lp=new LoginPage(driver);
+		LoginPage lp = new LoginPage(driver);
 		ClientOrdersPage cop = new ClientOrdersPage(driver);
-		
+
 		lp.setAdminMailId(clientMailMBO);
 		lp.setAdminPassword(clientPassMBO);
 		lp.clickLoginbtn();
@@ -439,33 +439,33 @@ public class TC48_VerifyDisputeCantBeReopenForTheStatusCancelled extends BaseCla
 		Thread.sleep(1000);
 		cop.sendPnameinSearch(product48);
 		Thread.sleep(2000);
-		
-		//cop.reopenDeclinedDisputesForCancelOrder(driver, queries);
+
+		// cop.reopenDeclinedDisputesForCancelOrder(driver, queries);
 		cop.clickOn3rdDiv();
 		Thread.sleep(2000);
-		//cop.clickOnFDiv();
+		// cop.clickOnFDiv();
 		cop.scrollTillThirdShowDisputeBtn(driver);
 		Thread.sleep(1000);
-		       
+
 		cop.clickOnThirdShowDisputeBtn();
 		Thread.sleep(2000);
 		cop.sendQueries(query2);
 		Thread.sleep(1000);
-		
+
 		cop.SaveDispute();
 		Thread.sleep(3000);
-		
-		String actVal=cop.alertTextForCancelOrder.getText();
-		String expVal= "You can not generate or reopen the dispute request for this order.";
-		if(expVal.equals(actVal)) {
+
+		String actVal = cop.alertTextForCancelOrder.getText();
+		String expVal = "You can not generate or reopen the dispute request for this order.";
+		if (expVal.equals(actVal)) {
 			Assert.assertTrue(true);
 			Thread.sleep(3000);
 			logger.info("Verification of Dispute acceptance is successfull.");
-		}else {
+		} else {
 			logger.info("Verification of Dispute acceptance is failed.");
 			Assert.assertTrue(false);
 		}
-		
+
 		cop.closeAlert.click();
 	}
 }

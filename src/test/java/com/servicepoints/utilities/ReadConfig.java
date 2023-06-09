@@ -954,6 +954,39 @@ public class ReadConfig {
 		return pro54;
 	}
 	
+	public String getProductForTC55() {
+		String pro55=po.getProperty("product55");
+		return pro55;
+	}
+	
+	public String getProductForTC56() {
+		String pro56=po.getProperty("product56");
+		return pro56;
+	}
+	
+	public String getClientMailforDiscount()
+	{
+		String cname=po.getProperty("clientMailD");
+		return cname;
+	}
+	
+	public String getClientPassforDiscount()
+	{
+		String cpass=po.getProperty("clientPassD");
+		return cpass;
+	}
+	
+	public String getAgentMailforDiscount()
+	{
+		String cname=po.getProperty("agentmailspd");
+		return cname;
+	}
+	
+	public String getAgentPassforDiscount()
+	{
+		String cpass=po.getProperty("agentpassspd");
+		return cpass;
+	}
 }
 
 
