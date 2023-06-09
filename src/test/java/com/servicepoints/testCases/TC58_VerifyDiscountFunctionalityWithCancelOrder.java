@@ -5,7 +5,6 @@ import java.util.Iterator;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
-import org.apache.commons.io.filefilter.FalseFileFilter;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
@@ -19,29 +18,29 @@ import com.servicepoints.utilities.ReadConfig;
 
 import junit.framework.Assert;
 
-public class TC56_VerifyAddDiscountFunctionality extends BaseClass{
-	
+public class TC58_VerifyDiscountFunctionalityWithCancelOrder extends BaseClass {
+
 	ReadConfig rd = new ReadConfig();
-	public String product56 = rd.getProductForTC56();
+	public String product57 = rd.getProductForTC57();
 
 	public String queries = rd.setQueries();
 	public String process = rd.setProcessStatus();
 	public String agentAnswer = rd.setAnswer();
 	public String otherTxt = rd.setOtherTxt();
 	public String query2 = rd.getQuery2();
-	public String status2=rd.setOrderStatus2();
-	
-	public String clientMailD=rd.getClientMailforDiscount();
-	public String clientPassD=rd.getClientPassforDiscount();
-	public String agentMailD=rd.getAgentMailforDiscount();
+	public String status2 = rd.setOrderStatus2();
+
+	public String clientMailD = rd.getClientMailforDiscount();
+	public String clientPassD = rd.getClientPassforDiscount();
+	public String agentMailD = rd.getAgentMailforDiscount();
 	public String agentPassD = rd.getAgentPassforDiscount();
-	
+
 	public String trackingNum = rd.setTrackingNum();
 
-	public String storeFilter=rd.storeForDisputeFilter();
+	public String storeFilter = rd.storeForDisputeFilter();
 	private String amountAsString;
-	
-	@Test(enabled = false,priority = 1)
+
+	@Test(enabled = true, priority = 1)
 	public void submitAndAcceptQuotation() throws InterruptedException, IOException {
 		logger.info("Application Opened.");
 		LoginPage lp = new LoginPage(driver);
@@ -64,7 +63,7 @@ public class TC56_VerifyAddDiscountFunctionality extends BaseClass{
 		aspp.clickQuotationsClientsTab();
 		Thread.sleep(2000);
 
-		aspp.searchProductName(product56);
+		aspp.searchProductName(product57);
 		Thread.sleep(3000);
 		logger.info("Product name entered.");
 		aspp.clickOnfdiv();
@@ -117,10 +116,10 @@ public class TC56_VerifyAddDiscountFunctionality extends BaseClass{
 		ClientProductPage cl = new ClientProductPage(driver);
 		cl.getProductsPage();
 
-		cl.searchProduct(product56);
+		cl.searchProduct(product57);
 		Thread.sleep(4000);
 		logger.info("Product name searched.");
-		
+
 		cl.selectProductTab();
 		Thread.sleep(3000);
 
@@ -136,7 +135,7 @@ public class TC56_VerifyAddDiscountFunctionality extends BaseClass{
 		Thread.sleep(1000);
 		cl.scrollTillAcceptQbtn(driver);
 		Thread.sleep(1000);
-		
+
 		cl.selectAcceptQuoteBtn();
 		Thread.sleep(4000);
 		logger.info("Clicked on Accept Quotation button.");
@@ -154,161 +153,172 @@ public class TC56_VerifyAddDiscountFunctionality extends BaseClass{
 		BaseClass.closeAllWinTabsExceptParent();
 	}
 
-	@Test(enabled = false,priority = 2)
+	@Test(enabled = true, priority = 2)
 	public void verifyAddTrackingAndResendProduct() throws InterruptedException, IOException {
 		driver.get(baseURL);
-		LoginPage lp=new LoginPage(driver);
-		
-		WebDriverWait wait=new WebDriverWait(driver,10);
-		ClientOrdersPage cop=new ClientOrdersPage(driver);
-		
+		LoginPage lp = new LoginPage(driver);
+
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		ClientOrdersPage cop = new ClientOrdersPage(driver);
+
 		lp.setAdminMailId(agentMailD);
 		lp.setAdminPassword(agentPassD);
 		lp.clickLoginbtn();
 		logger.info("Agent logged in Successfully.");
 		Thread.sleep(3000);
-		
+
 		AgentOrdersPage aop = new AgentOrdersPage(driver);
 		aop.clickOnOrdersTab();
 		Thread.sleep(3000);
-		
-		aop.searchPnameTrack(product56);
+
+		aop.searchPnameTrack(product57);
 		logger.info("Product name is entered.");
 		Thread.sleep(3000);
-		
+
 		wait.until(ExpectedConditions.visibilityOf(aop.orderStatusDrop));
 		aop.clickOnStatusDrop();
 		logger.info("Clicked on status dropdown.");
 		Thread.sleep(3000);
-		
+
 		aop.setStatusSearchDrop(process);
 		logger.info("Processing status is searched.");
 		Thread.sleep(3000);
-		
+
 		wait.until(ExpectedConditions.visibilityOf(aop.fprocessTab));
 		aop.clickOnProcessTab();
 		Thread.sleep(2000);
-		
-		
+
 		wait.until(ExpectedConditions.visibilityOf(aop.fdiv));
 		aop.clickOnfDiv();
 		Thread.sleep(3000);
-		
+
 		aop.scrollTillAddTracking(driver);
 		Thread.sleep(1000);
-		
+
 		wait.until(ExpectedConditions.visibilityOf(aop.AddTrackingBtn));
 		logger.info("Tracking number entered.");
 		aop.clickOnAddTracking();
-		Thread.sleep(3000);
+		Thread.sleep(4000);
 		logger.info("clicked on add tracking button.");
-		
+
 		aop.clickOnAllCheckBoxes();
 		Thread.sleep(1000);
-		aop.clickOnFirstCheckBox();
+
+		aop.clickOnTwoCheckBoxes();
 		Thread.sleep(1000);
-		
-		
+
 		aop.setTrackingNum(trackingNum);
-		//aop.clickOnCloseTrackingPopup();
+		// aop.clickOnCloseTrackingPopup();
 		Thread.sleep(3000);
-		//wait.until(ExpectedConditions.visibilityOf(aop.sbmtTracking));
-		
+		// wait.until(ExpectedConditions.visibilityOf(aop.sbmtTracking));
+
 		aop.clickOnSbmtTracking();
+		Thread.sleep(3000);
 		logger.info("Clicked on submit tracking button.");
-		
+
 		aop.waitTillSuccessBoxOfTrackingNum(driver);
-		
-		if(driver.getPageSource().contains("Tracking number successfully added")) {
+
+		if (driver.getPageSource().contains("Tracking number successfully added")) {
 			logger.info("Verification of adding tracking number is Successfull.");
 			Assert.assertTrue(true);
 			Thread.sleep(2000);
-		}else {
+		} else {
 			logger.info("Verification of adding tracking number is failed.");
 			Thread.sleep(2000);
 			Assert.assertTrue(false);
 		}
-		
+
 		Thread.sleep(2000);
 		aop.clickOnDiscountBtn();
-		
+
 		Thread.sleep(2000);
-		
-		double val=aop.generateTheDiscountedPrice();
+
+		double val = aop.generateTheDiscountedPrice();
 		Thread.sleep(2000);
-		
-		amountAsString =String.valueOf(val);
+
+		amountAsString = String.valueOf(val);
 		Thread.sleep(1000);
-		
+
 		aop.enterDiscountAmountField(amountAsString);
 		Thread.sleep(2000);
-		
+
 		aop.clickOnSubmitDiscountBtn();
 		Thread.sleep(3000);
-		
+
 		aop.clickOnSuccessDb();
 		Thread.sleep(2000);
-		
-		if(driver.getPageSource().contains("Discount successfully submitted")) {
+
+		if (driver.getPageSource().contains("Discount successfully submitted")) {
 			logger.info("Verification of adding discount number is Successfull.");
 			Assert.assertTrue(true);
 			Thread.sleep(2000);
-		}
-		else {
+		} else {
 			logger.info("Verification of adding discount number is failed.");
 			Thread.sleep(2000);
 			Assert.assertTrue(false);
 		}
-	}	
-	
-	@Test(enabled = true,priority =3)
-	public void verifyDiscountOnClientSide() throws InterruptedException, IOException {
+	}
+
+	@Test(priority = 5)
+	public void varifyCanceleSecondVariant() throws InterruptedException, IOException {
 		driver.get(baseURL);
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-
 		LoginPage lp=new LoginPage(driver);
-		lp.setAdminMailId(clientMailD);
-		logger.info("Email_id is entered.");
-
-		lp.setAdminPassword(clientPassD);
-		logger.info("Password is entered.");
-
-		lp.clickLoginbtn();
-		Thread.sleep(4000);
-
-		ClientOrdersPage cl = new ClientOrdersPage(driver);
-		cl.clickOnOrdersTab();
-		Thread.sleep(1000);
 		
-		cl.sendPnameinSearch(product56);
+		lp.setAdminMailId(clientMailMBO);
+		lp.setAdminPassword(clientPassMBO);
+		lp.clickLoginbtn();
+		logger.info("Agent logged in Successfully.");
 		Thread.sleep(2000);
 		
-		cl.clickOnFDiv(); 
+		ClientOrdersPage cop=new ClientOrdersPage(driver);
+		cop.clickOnOrdersTab();
+		logger.info("Clicked on orders tab.");
+		Thread.sleep(2000);
+		cop.sendPnameinSearch(product51);
+		Thread.sleep(4000);
+	
+		cop.clickOnDropdown();
+		Thread.sleep(2000);
+		
+		cop.dropdownSearch(status2);
+		Thread.sleep(4000);
+		
+		cop.clickOnProcessingSel();
+		Thread.sleep(2000);
+		logger.info("Processing filter selected.");
+		
+		cop.clickOnFDiv();
+		Thread.sleep(2000);
+		logger.info("Clicked on first div.");
+		
+		cop.scrollTillEle(driver);
+		Thread.sleep(2000);
+		logger.info("Processing filter selected.");
+		
+		cop.clickOnCancelOrderBtn();
+		Thread.sleep(2000);
+		logger.info("Processing filter selected.");
+		
+		cop.clickOnSecondCheckBox();
+		Thread.sleep(2000);
+		logger.info("Processing filter selected.");
+		
+		cop.clickOnSubmitOrder();
 		Thread.sleep(1000);
+		logger.info("Processing filter selected.");
 		
-		String val=cl.getDiscountOfClient();
+		cop.clickOnCancelOrderSuccessBtn();
+		Thread.sleep(3000);
+		logger.info("Processing filter selected.");
 		
-		String amountWithoutSymbol = val.replace("€", "").replace(",", ".");
-
-		double amount = Double.parseDouble(amountWithoutSymbol);
-		
-		String actualDiscount=String.valueOf(amount);
-		
-		TC56_VerifyAddDiscountFunctionality newVal=new TC56_VerifyAddDiscountFunctionality();
-		
-		String actualVal=newVal.amountAsString;
-		
-		if(actualVal.equals(actualDiscount)) {
-			logger.info("Both discount price is equal to discount price entered by supplier is successfully verified.");
+		if(driver.getPageSource().contains("Order cancelled successfully")) {
 			Assert.assertTrue(true);
+			logger.info("Verification of cancel variant is Successed.");
 		}else {
-			logger.info("Both discount price is equal to discount price entered by supplier is successfully verified..");
-			Assert.assertTrue(true);
+			captureScreen(driver, "Cancel order for dispute");
+			Thread.sleep(4000);
+			logger.info("Verification of cancel variant is failed.");
+			Assert.assertTrue(false);
 		}
-		
-//		else {
-//			logger.info("Both discount price is equal to discount price entered by supplier is failed to verified..");
-//			Assert.assertTrue(false);
-//		}
-	}
+	}	
 }

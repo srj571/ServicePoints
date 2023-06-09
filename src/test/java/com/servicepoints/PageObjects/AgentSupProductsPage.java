@@ -46,7 +46,7 @@ public class AgentSupProductsPage {
 	@FindBy(xpath="//button[normalize-space()='Submit quotation']")
 	WebElement submitquote;
 	
-	@FindBy(xpath="//span[@class='badge-mod badge-info']")
+	@FindBy(xpath="//span[@class='badge-mod badge-success']")
 	WebElement QuoteStatus;
 	
 	@FindBy(xpath="(//div[@class='d-flex justify-content-center align-items-center mh100p'])[2]")

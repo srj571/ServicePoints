@@ -887,6 +887,12 @@ public class ClientOrdersPage {
 	    return true; // Return true if all checkboxes are disabled
 	}
 	
+	@FindBy(xpath="(//div[@class='col table_item_block_md'])[1]//div[@class='col-7'][2]")
+	WebElement getDiscountOnClient;
 	
+	public String getDiscountOfClient() {
+		String discount=getDiscountOnClient.getText();
+		return discount;
+	}
 	
 }

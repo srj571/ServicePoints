@@ -111,6 +111,12 @@ public class AgentOrdersPage {
 			addTrackingCheck.get(0).click();
 		}
 	}
+	
+	public void clickOnTwoCheckBoxes() {
+		if (addTrackingCheck.size() > 0) {
+			addTrackingCheck.get(0).click();
+		}
+	}
 
 	public void clickOnThirdOrder() {
 		for (int i = 0; i < addTrackingCheck.size(); i++) {
@@ -159,7 +165,7 @@ public class AgentOrdersPage {
 	WebElement addTrackingSuccessBox;
 	
 	public void waitTillSuccessBoxOfTrackingNum(WebDriver driver) {
-		WebDriverWait wait=new WebDriverWait(driver,20);
+		WebDriverWait wait=new WebDriverWait(driver,30);
 		wait.until(ExpectedConditions.visibilityOf(addTrackingSuccessBox));
 	}
 	
@@ -174,5 +180,7 @@ public class AgentOrdersPage {
 
 		return result;
 	}
+	
+	
 
 }

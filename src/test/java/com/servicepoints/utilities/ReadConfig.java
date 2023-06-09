@@ -987,6 +987,12 @@ public class ReadConfig {
 		String cpass=po.getProperty("agentpassspd");
 		return cpass;
 	}
+	
+	public String getProductForTC57() {
+		String pro57=po.getProperty("product57");
+		return pro57;
+	}
+	
 }
 
 

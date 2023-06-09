@@ -5,11 +5,11 @@ import java.util.Iterator;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
-import org.apache.commons.io.filefilter.FalseFileFilter;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
+import com.servicepoints.PageObjects.AgentDisputesPage;
 import com.servicepoints.PageObjects.AgentOrdersPage;
 import com.servicepoints.PageObjects.AgentSupProductsPage;
 import com.servicepoints.PageObjects.ClientOrdersPage;
@@ -19,10 +19,10 @@ import com.servicepoints.utilities.ReadConfig;
 
 import junit.framework.Assert;
 
-public class TC56_VerifyAddDiscountFunctionality extends BaseClass{
+public class TC57_VerifyDiscountFunctionalityWithRefund extends BaseClass{
 	
 	ReadConfig rd = new ReadConfig();
-	public String product56 = rd.getProductForTC56();
+	public String product57 = rd.getProductForTC57();
 
 	public String queries = rd.setQueries();
 	public String process = rd.setProcessStatus();
@@ -41,7 +41,7 @@ public class TC56_VerifyAddDiscountFunctionality extends BaseClass{
 	public String storeFilter=rd.storeForDisputeFilter();
 	private String amountAsString;
 	
-	@Test(enabled = false,priority = 1)
+	@Test(enabled = true,priority = 1)
 	public void submitAndAcceptQuotation() throws InterruptedException, IOException {
 		logger.info("Application Opened.");
 		LoginPage lp = new LoginPage(driver);
@@ -64,7 +64,7 @@ public class TC56_VerifyAddDiscountFunctionality extends BaseClass{
 		aspp.clickQuotationsClientsTab();
 		Thread.sleep(2000);
 
-		aspp.searchProductName(product56);
+		aspp.searchProductName(product57);
 		Thread.sleep(3000);
 		logger.info("Product name entered.");
 		aspp.clickOnfdiv();
@@ -117,7 +117,7 @@ public class TC56_VerifyAddDiscountFunctionality extends BaseClass{
 		ClientProductPage cl = new ClientProductPage(driver);
 		cl.getProductsPage();
 
-		cl.searchProduct(product56);
+		cl.searchProduct(product57);
 		Thread.sleep(4000);
 		logger.info("Product name searched.");
 		
@@ -154,7 +154,7 @@ public class TC56_VerifyAddDiscountFunctionality extends BaseClass{
 		BaseClass.closeAllWinTabsExceptParent();
 	}
 
-	@Test(enabled = false,priority = 2)
+	@Test(enabled = true,priority = 2)
 	public void verifyAddTrackingAndResendProduct() throws InterruptedException, IOException {
 		driver.get(baseURL);
 		LoginPage lp=new LoginPage(driver);
@@ -172,7 +172,7 @@ public class TC56_VerifyAddDiscountFunctionality extends BaseClass{
 		aop.clickOnOrdersTab();
 		Thread.sleep(3000);
 		
-		aop.searchPnameTrack(product56);
+		aop.searchPnameTrack(product57);
 		logger.info("Product name is entered.");
 		Thread.sleep(3000);
 		
@@ -200,14 +200,14 @@ public class TC56_VerifyAddDiscountFunctionality extends BaseClass{
 		wait.until(ExpectedConditions.visibilityOf(aop.AddTrackingBtn));
 		logger.info("Tracking number entered.");
 		aop.clickOnAddTracking();
-		Thread.sleep(3000);
+		Thread.sleep(4000);
 		logger.info("clicked on add tracking button.");
 		
-		aop.clickOnAllCheckBoxes();
-		Thread.sleep(1000);
-		aop.clickOnFirstCheckBox();
-		Thread.sleep(1000);
-		
+//		aop.clickOnAllCheckBoxes();
+//		Thread.sleep(1000);
+//		aop.clickOnFirstCheckBox();
+//		Thread.sleep(1000);
+//		
 		
 		aop.setTrackingNum(trackingNum);
 		//aop.clickOnCloseTrackingPopup();
@@ -215,6 +215,7 @@ public class TC56_VerifyAddDiscountFunctionality extends BaseClass{
 		//wait.until(ExpectedConditions.visibilityOf(aop.sbmtTracking));
 		
 		aop.clickOnSbmtTracking();
+		Thread.sleep(3000);
 		logger.info("Clicked on submit tracking button.");
 		
 		aop.waitTillSuccessBoxOfTrackingNum(driver);
@@ -261,54 +262,105 @@ public class TC56_VerifyAddDiscountFunctionality extends BaseClass{
 		}
 	}	
 	
-	@Test(enabled = true,priority =3)
-	public void verifyDiscountOnClientSide() throws InterruptedException, IOException {
+	@Test(enabled = true, priority = 3, invocationCount = 3)
+	public void raiseRefundDispute() throws InterruptedException, IOException {
 		driver.get(baseURL);
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
-		LoginPage lp=new LoginPage(driver);
+		LoginPage lp = new LoginPage(driver);
+		Thread.sleep(3000);
 		lp.setAdminMailId(clientMailD);
-		logger.info("Email_id is entered.");
-
 		lp.setAdminPassword(clientPassD);
-		logger.info("Password is entered.");
-
 		lp.clickLoginbtn();
-		Thread.sleep(4000);
+		Thread.sleep(2000);
 
-		ClientOrdersPage cl = new ClientOrdersPage(driver);
-		cl.clickOnOrdersTab();
-		Thread.sleep(1000);
-		
-		cl.sendPnameinSearch(product56);
+		logger.info("client logged in Successfully.");
+		ClientOrdersPage cop = new ClientOrdersPage(driver);
+		cop.clickOnOrdersTab();
+		cop.sendPnameinSearch(product57);
+		logger.info("Product name is entered.");
 		Thread.sleep(2000);
 		
-		cl.clickOnFDiv(); 
-		Thread.sleep(1000);
+		cop.clickOnFDiv();
+		logger.info("Clicked on first div.");
+		Thread.sleep(3000);
 		
-		String val=cl.getDiscountOfClient();
-		
-		String amountWithoutSymbol = val.replace("€", "").replace(",", ".");
-
-		double amount = Double.parseDouble(amountWithoutSymbol);
-		
-		String actualDiscount=String.valueOf(amount);
-		
-		TC56_VerifyAddDiscountFunctionality newVal=new TC56_VerifyAddDiscountFunctionality();
-		
-		String actualVal=newVal.amountAsString;
-		
-		if(actualVal.equals(actualDiscount)) {
-			logger.info("Both discount price is equal to discount price entered by supplier is successfully verified.");
+		if(cop.verifyOpenDisputeButtonIsVisible()==true) {
 			Assert.assertTrue(true);
-		}else {
-			logger.info("Both discount price is equal to discount price entered by supplier is successfully verified..");
-			Assert.assertTrue(true);
+			Thread.sleep(3000);
+			logger.info("Verification of Dispute for Resend is not able to reopen once accepted is successed.");
+		}
+		else {
+			captureScreen(driver, "Dispute for resend reopen.");
+			logger.info("Verification of Dispute acceptance is failed.");
+			Assert.assertTrue(false);
 		}
 		
-//		else {
-//			logger.info("Both discount price is equal to discount price entered by supplier is failed to verified..");
-//			Assert.assertTrue(false);
-//		}
+		cop.clickOnOpenDspbtn();
+		Thread.sleep(2000);
+
+		cop.handleDspIssues();
+		logger.info("Customer got wrong product option selected.");
+
+		cop.refundSolutionDsp();
+		logger.info("Resend dispute option is selected.");
+
+		cop.clickOnFirstCheckBoxForDsp();
+		Thread.sleep(3000);
+
+		cop.sendQueries(queries);
+		logger.info("Queries entered in text fields.");
+
+		cop.SaveDispute();
+		Thread.sleep(5000);
+		logger.info("Dispute saved.");
+
+		if (driver.getPageSource().contains("Dispute raised successfully")) {
+			Assert.assertTrue(true);
+			logger.info("Verification of Refund Dispute raised Successfully.");
+		} else {
+			captureScreen(driver, "disputeRaised");
+			logger.info("Verification of Refund Dispute raised failed.");
+			Assert.assertTrue(false);
+		}
+		
+		driver.get(baseURL);
+		lp.setAdminMailId(agentMailD);
+		lp.setAdminPassword(agentPassD);
+		lp.clickLoginbtn();
+		logger.info("Agent logged in Successfully.");
+		
+		AgentDisputesPage asop=new AgentDisputesPage(driver);
+		asop.clickOnDisputesTab();
+		logger.info("Open disputes page.");
+		
+		asop.searchProductForDsp(product57);
+		Thread.sleep(3000);
+		asop.clickOnFrstDsp();
+		Thread.sleep(3000);
+		asop.clickOnShowDsp();
+		logger.info("Clicked on show disputes.");
+		Thread.sleep(3000);
+		
+		asop.selectDspStatus();
+		logger.info("Dispute Accepted.");
+		Thread.sleep(3000);
+		
+		asop.sendAnswer(agentAnswer);
+		Thread.sleep(3000);
+		asop.scrollTillSendAns(driver);
+		Thread.sleep(1000);
+		asop.clickOnSendAnswer();
+		logger.info("Dispute send.");
+		Thread.sleep(5000);
+		
+		if(driver.getPageSource().contains("Dispute accepted successfully")) {
+			Assert.assertTrue(true);
+			Thread.sleep(3000);
+			logger.info("Verification of Refund Dispute acceptance is successed.");
+		}else {
+			captureScreen(driver, "Dispute for resend");
+			logger.info("Verification of Refund Dispute acceptance is failed.");
+			Assert.assertTrue(false);
+		}
 	}
 }
