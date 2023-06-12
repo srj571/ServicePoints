@@ -1,5 +1,6 @@
 package com.servicepoints.PageObjects;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -192,10 +193,16 @@ public class AdminAccountsPage {
 	@FindBy(xpath = "//label[contains(text(),'Maxwell')]")
 	WebElement agentTest;
 	
+	public void selectAgentSUPForClientApp(WebDriver driver,String AgentSupplierName) {
+		String path="//label[contains(text(),'"+AgentSupplierName+"')]";
+		WebElement agentSup=driver.findElement(By.xpath(path));
+		agentSup.click();
+	}
+
 	public void selectAgentSUP() {
 		agentTest.click();
 	}
-
+	
 	public void selectInvoice() {
 		Select sel = new Select(invoiceDropdown);
 		sel.selectByIndex(2);

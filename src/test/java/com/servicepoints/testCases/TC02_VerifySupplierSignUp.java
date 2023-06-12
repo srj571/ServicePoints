@@ -1,34 +1,21 @@
 package com.servicepoints.testCases;
 
-import java.io.File;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import com.servicepoints.PageObjects.LoginPage;
 import com.servicepoints.PageObjects.SignUpPage;
 import com.servicepoints.utilities.ReadConfig;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class TC06_VerifySupplierSignUp {
-	WebDriver driver;
+public class TC02_VerifySupplierSignUp extends BaseClass{
 	
 	ReadConfig rc = new ReadConfig();
-	
-	public static Logger logger = LogManager.getLogger(BaseClass.class.getName());
 	
 	public String baseURL = rc.getApplicationUrl();
 	public String supurl = rc.getSuppllierURL();
@@ -39,20 +26,9 @@ public class TC06_VerifySupplierSignUp {
 	public String suppass = rc.getSupPass();
 	public String supcpass = rc.getSupCpass();
 
-	@BeforeTest
-	public void setUp() {
-		
-		WebDriverManager.chromedriver().setup();
-		ChromeOptions option=new ChromeOptions();
-		option.addArguments("--ignore-certificate-errors");
-		option.addArguments("--allow-running-insecure-content");
-		driver = new ChromeDriver(option);
-		driver.get(supurl);
-	}
-
 	@Test
 	public void verifySupplierSignUp() throws InterruptedException, IOException {
-
+		driver.get(supurl);
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
@@ -121,20 +97,5 @@ public class TC06_VerifySupplierSignUp {
 			logger.info("Verification of Supplier Sign in is failed.");
 			Assert.assertTrue(false);
 		}
-		
-		driver.close();
-	}
-
-	public static void captureScreen(WebDriver driver, String tname) throws IOException {
-		TakesScreenshot ts = (TakesScreenshot) driver;
-		File src = ts.getScreenshotAs(OutputType.FILE);
-		File trg = new File(System.getProperty("user.dir") + "/Screenshots/" + tname + ".png");
-		FileUtils.copyFile(src, trg);
-		System.out.println("Screenshot taken");
-	}
-
-	@AfterTest
-	public void tearDown() {
-		driver.quit();
 	}
 }

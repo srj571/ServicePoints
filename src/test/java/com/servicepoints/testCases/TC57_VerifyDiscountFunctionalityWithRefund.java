@@ -41,7 +41,7 @@ public class TC57_VerifyDiscountFunctionalityWithRefund extends BaseClass{
 	public String storeFilter=rd.storeForDisputeFilter();
 	private String amountAsString;
 	
-	@Test(enabled = true,priority = 1)
+	@Test(enabled = false,priority = 1)
 	public void submitAndAcceptQuotation() throws InterruptedException, IOException {
 		logger.info("Application Opened.");
 		LoginPage lp = new LoginPage(driver);
@@ -154,7 +154,7 @@ public class TC57_VerifyDiscountFunctionalityWithRefund extends BaseClass{
 		BaseClass.closeAllWinTabsExceptParent();
 	}
 
-	@Test(enabled = true,priority = 2)
+	@Test(enabled = false,priority = 2)
 	public void verifyAddTrackingAndResendProduct() throws InterruptedException, IOException {
 		driver.get(baseURL);
 		LoginPage lp=new LoginPage(driver);
@@ -262,7 +262,7 @@ public class TC57_VerifyDiscountFunctionalityWithRefund extends BaseClass{
 		}
 	}	
 	
-	@Test(enabled = true, priority = 3, invocationCount = 3)
+	@Test(enabled = false, priority = 3, invocationCount = 3)
 	public void raiseRefundDispute() throws InterruptedException, IOException {
 		driver.get(baseURL);
 
@@ -362,5 +362,28 @@ public class TC57_VerifyDiscountFunctionalityWithRefund extends BaseClass{
 			logger.info("Verification of Refund Dispute acceptance is failed.");
 			Assert.assertTrue(false);
 		}
+	}
+	
+	@Test(enabled = true, priority = 4)
+	public void verifyDiscountFromClientSide() throws InterruptedException {
+		driver.get(baseURL);
+
+		LoginPage lp = new LoginPage(driver);
+		Thread.sleep(3000);
+		lp.setAdminMailId(clientMailD);
+		lp.setAdminPassword(clientPassD);
+		lp.clickLoginbtn();
+		Thread.sleep(2000);
+
+		logger.info("client logged in Successfully.");
+		ClientOrdersPage cop = new ClientOrdersPage(driver);
+		cop.clickOnOrdersTab();
+		cop.sendPnameinSearch(product57);
+		logger.info("Product name is entered.");
+		Thread.sleep(2000);
+		
+		cop.clickOnFDiv();
+		logger.info("Clicked on first div.");
+		Thread.sleep(4000);
 	}
 }

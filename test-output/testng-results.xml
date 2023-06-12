@@ -1,48 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-09T14:34:47 IST" name="Suite" finished-at="2023-06-09T14:40:12 IST" duration-ms="324912">
+  <suite started-at="2023-06-12T13:11:57 IST" name="Suite" finished-at="2023-06-12T13:13:45 IST" duration-ms="107274">
     <groups>
     </groups>
-    <test started-at="2023-06-09T14:34:47 IST" name="Test" finished-at="2023-06-09T14:40:12 IST" duration-ms="324912">
-      <class name="com.servicepoints.testCases.TC57_VerifyDiscountFunctionalityWithRefund">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.servicepoints.testCases.TC57_VerifyDiscountFunctionalityWithRefund@32f0fba8]" started-at="2023-06-09T14:34:47 IST" name="setup" finished-at="2023-06-09T14:34:53 IST" duration-ms="6144" status="PASS">
+    <test started-at="2023-06-12T13:11:57 IST" name="Test" finished-at="2023-06-12T13:13:45 IST" duration-ms="107274">
+      <class name="com.servicepoints.testCases.TC03_VerifyAdminSUPLoginTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.servicepoints.testCases.TC03_VerifyAdminSUPLoginTest@4648ce9]" started-at="2023-06-12T13:12:38 IST" name="setup" finished-at="2023-06-12T13:12:43 IST" duration-ms="5038" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[firefox]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="submitAndAcceptQuotation()[pri:1, instance:com.servicepoints.testCases.TC57_VerifyDiscountFunctionalityWithRefund@32f0fba8]" started-at="2023-06-09T14:34:53 IST" name="submitAndAcceptQuotation" finished-at="2023-06-09T14:35:54 IST" duration-ms="61409" status="PASS">
+        <test-method signature="verifyAdminSUPLoginTest()[pri:0, instance:com.servicepoints.testCases.TC03_VerifyAdminSUPLoginTest@4648ce9]" started-at="2023-06-12T13:12:43 IST" name="verifyAdminSUPLoginTest" finished-at="2023-06-12T13:13:05 IST" duration-ms="21787" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- submitAndAcceptQuotation -->
-        <test-method signature="verifyAddTrackingAndResendProduct()[pri:2, instance:com.servicepoints.testCases.TC57_VerifyDiscountFunctionalityWithRefund@32f0fba8]" started-at="2023-06-09T14:35:54 IST" name="verifyAddTrackingAndResendProduct" finished-at="2023-06-09T14:37:08 IST" duration-ms="73254" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAddTrackingAndResendProduct -->
-        <test-method signature="raiseRefundDispute()[pri:3, instance:com.servicepoints.testCases.TC57_VerifyDiscountFunctionalityWithRefund@32f0fba8]" started-at="2023-06-09T14:37:08 IST" name="raiseRefundDispute" finished-at="2023-06-09T14:38:08 IST" duration-ms="60320" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- raiseRefundDispute -->
-        <test-method signature="raiseRefundDispute()[pri:3, instance:com.servicepoints.testCases.TC57_VerifyDiscountFunctionalityWithRefund@32f0fba8]" started-at="2023-06-09T14:38:08 IST" name="raiseRefundDispute" finished-at="2023-06-09T14:39:10 IST" duration-ms="61726" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- raiseRefundDispute -->
-        <test-method signature="raiseRefundDispute()[pri:3, instance:com.servicepoints.testCases.TC57_VerifyDiscountFunctionalityWithRefund@32f0fba8]" started-at="2023-06-09T14:39:10 IST" name="raiseRefundDispute" finished-at="2023-06-09T14:40:12 IST" duration-ms="61912" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- raiseRefundDispute -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.servicepoints.testCases.TC57_VerifyDiscountFunctionalityWithRefund@32f0fba8]" started-at="2023-06-09T14:40:12 IST" name="tearDown" finished-at="2023-06-09T14:40:12 IST" duration-ms="95" status="PASS">
+        </test-method> <!-- verifyAdminSUPLoginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.servicepoints.testCases.TC03_VerifyAdminSUPLoginTest@4648ce9]" started-at="2023-06-12T13:13:05 IST" name="tearDown" finished-at="2023-06-12T13:13:06 IST" duration-ms="962" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.servicepoints.testCases.TC57_VerifyDiscountFunctionalityWithRefund -->
+      </class> <!-- com.servicepoints.testCases.TC03_VerifyAdminSUPLoginTest -->
+      <class name="com.servicepoints.testCases.TC04_VerifyAddAgentSupBySupplier">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.servicepoints.testCases.TC04_VerifyAddAgentSupBySupplier@569bf9eb]" started-at="2023-06-12T13:13:06 IST" name="setup" finished-at="2023-06-12T13:13:11 IST" duration-ms="5115" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyAddAgentSUP()[pri:0, instance:com.servicepoints.testCases.TC04_VerifyAddAgentSupBySupplier@569bf9eb]" started-at="2023-06-12T13:13:11 IST" name="verifyAddAgentSUP" finished-at="2023-06-12T13:13:43 IST" duration-ms="32869" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddAgentSUP -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.servicepoints.testCases.TC04_VerifyAddAgentSupBySupplier@569bf9eb]" started-at="2023-06-12T13:13:43 IST" name="tearDown" finished-at="2023-06-12T13:13:45 IST" duration-ms="1159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.servicepoints.testCases.TC04_VerifyAddAgentSupBySupplier -->
+      <class name="com.servicepoints.testCases.TC02_VerifySupplierSignUp">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.servicepoints.testCases.TC02_VerifySupplierSignUp@21005f6c]" started-at="2023-06-12T13:11:57 IST" name="setup" finished-at="2023-06-12T13:12:03 IST" duration-ms="5452" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifySupplierSignUp()[pri:0, instance:com.servicepoints.testCases.TC02_VerifySupplierSignUp@21005f6c]" started-at="2023-06-12T13:12:03 IST" name="verifySupplierSignUp" finished-at="2023-06-12T13:12:36 IST" duration-ms="33390" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySupplierSignUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.servicepoints.testCases.TC02_VerifySupplierSignUp@21005f6c]" started-at="2023-06-12T13:12:36 IST" name="tearDown" finished-at="2023-06-12T13:12:38 IST" duration-ms="1448" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.servicepoints.testCases.TC02_VerifySupplierSignUp -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

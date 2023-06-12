@@ -8,12 +8,13 @@ import org.testng.annotations.Test;
 import com.servicepoints.PageObjects.AdminAccountsPage;
 import com.servicepoints.PageObjects.LoginPage;
 
-public class TC04_VerifyClientApprovalTest extends BaseClass{
+public class TC07_VerifyClientApprovalTest extends BaseClass{
 	public String supemail = rc.getSupEmail();
 	public String suppass = rc.getSupPass();
 	public String supfname = rc.getSupFirstName();
 	public String suplname = rc.getSupLastName();
 	public String supsupfull=fname+" "+lname;
+	public String asupname=rc.getAgentSupplierName();
 	
 	@Test
 	public void verifyClientApprovalTest() throws InterruptedException, IOException {
@@ -52,7 +53,8 @@ public class TC04_VerifyClientApprovalTest extends BaseClass{
 		Thread.sleep(4000);
 		
 		adminAccount.selectAgentSupplierDrop();
-		adminAccount.selectAgentSUP();
+		Thread.sleep(1000);
+		adminAccount.selectAgentSUPForClientApp(driver,asupname);
 		Thread.sleep(3000);
 		logger.info("Agent Supplier name is selected.");
 		adminAccount.clickOnAgentFee();

@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 import com.servicepoints.PageObjects.AdminSupplierPage;
 import com.servicepoints.PageObjects.LoginPage;
 
-public class TC07_VerifyAddAgentSupBySupplier extends BaseClass {
+public class TC04_VerifyAddAgentSupBySupplier extends BaseClass {
 
 	@Test
 	public void verifyAddAgentSUP() throws InterruptedException, IOException {
@@ -70,8 +70,7 @@ public class TC07_VerifyAddAgentSupBySupplier extends BaseClass {
 			
 		asp.closePopup();
 
-		asp.logOut();
-		Thread.sleep(4000);
+		driver.get(baseURL);
 
 		lp.setAdminMailId(amail);
 		logger.info("Agent email is entered.");

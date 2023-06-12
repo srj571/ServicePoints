@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <parameter name="browser" value="chrome"/>
+  <parameter name="browser" value="firefox"/>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.servicepoints.testCases.TC57_VerifyDiscountFunctionalityWithRefund">
+      <class name="com.servicepoints.testCases.TC05_VerifyAddAgentSupportTest">
         <methods>
-          <include name="raiseRefundDispute"/>
           <include name="setup"/>
-          <include name="verifyAddTrackingAndResendProduct"/>
+          <include name="verifyAddAgentSupportTest"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.servicepoints.testCases.TC57_VerifyDiscountFunctionalityWithRefund -->
+      </class> <!-- com.servicepoints.testCases.TC05_VerifyAddAgentSupportTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

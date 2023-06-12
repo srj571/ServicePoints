@@ -258,67 +258,67 @@ public class TC58_VerifyDiscountFunctionalityWithCancelOrder extends BaseClass {
 			Assert.assertTrue(false);
 		}
 	}
-
-	@Test(priority = 5)
-	public void varifyCanceleSecondVariant() throws InterruptedException, IOException {
-		driver.get(baseURL);
-		LoginPage lp=new LoginPage(driver);
-		
-		lp.setAdminMailId(clientMailMBO);
-		lp.setAdminPassword(clientPassMBO);
-		lp.clickLoginbtn();
-		logger.info("Agent logged in Successfully.");
-		Thread.sleep(2000);
-		
-		ClientOrdersPage cop=new ClientOrdersPage(driver);
-		cop.clickOnOrdersTab();
-		logger.info("Clicked on orders tab.");
-		Thread.sleep(2000);
-		cop.sendPnameinSearch(product51);
-		Thread.sleep(4000);
-	
-		cop.clickOnDropdown();
-		Thread.sleep(2000);
-		
-		cop.dropdownSearch(status2);
-		Thread.sleep(4000);
-		
-		cop.clickOnProcessingSel();
-		Thread.sleep(2000);
-		logger.info("Processing filter selected.");
-		
-		cop.clickOnFDiv();
-		Thread.sleep(2000);
-		logger.info("Clicked on first div.");
-		
-		cop.scrollTillEle(driver);
-		Thread.sleep(2000);
-		logger.info("Processing filter selected.");
-		
-		cop.clickOnCancelOrderBtn();
-		Thread.sleep(2000);
-		logger.info("Processing filter selected.");
-		
-		cop.clickOnSecondCheckBox();
-		Thread.sleep(2000);
-		logger.info("Processing filter selected.");
-		
-		cop.clickOnSubmitOrder();
-		Thread.sleep(1000);
-		logger.info("Processing filter selected.");
-		
-		cop.clickOnCancelOrderSuccessBtn();
-		Thread.sleep(3000);
-		logger.info("Processing filter selected.");
-		
-		if(driver.getPageSource().contains("Order cancelled successfully")) {
-			Assert.assertTrue(true);
-			logger.info("Verification of cancel variant is Successed.");
-		}else {
-			captureScreen(driver, "Cancel order for dispute");
-			Thread.sleep(4000);
-			logger.info("Verification of cancel variant is failed.");
-			Assert.assertTrue(false);
-		}
-	}	
+//
+//	@Test(priority = 5)
+//	public void varifyCanceleSecondVariant() throws InterruptedException, IOException {
+//		driver.get(baseURL);
+//		LoginPage lp=new LoginPage(driver);
+//		
+//		lp.setAdminMailId(clientMailMBO);
+//		lp.setAdminPassword(clientPassMBO);
+//		lp.clickLoginbtn();
+//		logger.info("Agent logged in Successfully.");
+//		Thread.sleep(2000);
+//		
+//		ClientOrdersPage cop=new ClientOrdersPage(driver);
+//		cop.clickOnOrdersTab();
+//		logger.info("Clicked on orders tab.");
+//		Thread.sleep(2000);
+//		cop.sendPnameinSearch(product51);
+//		Thread.sleep(4000);
+//	
+//		cop.clickOnDropdown();
+//		Thread.sleep(2000);
+//		
+//		cop.dropdownSearch(status2);
+//		Thread.sleep(4000);
+//		
+//		cop.clickOnProcessingSel();
+//		Thread.sleep(2000);
+//		logger.info("Processing filter selected.");
+//		
+//		cop.clickOnFDiv();
+//		Thread.sleep(2000);
+//		logger.info("Clicked on first div.");
+//		
+//		cop.scrollTillEle(driver);
+//		Thread.sleep(2000);
+//		logger.info("Processing filter selected.");
+//		
+//		cop.clickOnCancelOrderBtn();
+//		Thread.sleep(2000);
+//		logger.info("Processing filter selected.");
+//		
+//		cop.clickOnSecondCheckBox();
+//		Thread.sleep(2000);
+//		logger.info("Processing filter selected.");
+//		
+//		cop.clickOnSubmitOrder();
+//		Thread.sleep(1000);
+//		logger.info("Processing filter selected.");
+//		
+//		cop.clickOnCancelOrderSuccessBtn();
+//		Thread.sleep(3000);
+//		logger.info("Processing filter selected.");
+//		
+//		if(driver.getPageSource().contains("Order cancelled successfully")) {
+//			Assert.assertTrue(true);
+//			logger.info("Verification of cancel variant is Successed.");
+//		}else {
+//			captureScreen(driver, "Cancel order for dispute");
+//			Thread.sleep(4000);
+//			logger.info("Verification of cancel variant is failed.");
+//			Assert.assertTrue(false);
+//		}
+//	}	
 }

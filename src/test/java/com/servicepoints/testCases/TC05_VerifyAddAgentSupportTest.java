@@ -11,7 +11,7 @@ import com.servicepoints.PageObjects.AdminAccountsPage;
 import com.servicepoints.PageObjects.AdminSupplierPage;
 import com.servicepoints.PageObjects.LoginPage;
 
-public class TC08_VerifyAddAgentSupportTest extends BaseClass {
+public class TC05_VerifyAddAgentSupportTest extends BaseClass {
 
 	@Test
 	public void verifyAddAgentSupportTest() throws InterruptedException, Exception {
@@ -31,13 +31,12 @@ public class TC08_VerifyAddAgentSupportTest extends BaseClass {
 		AdminAccountsPage adminAccount = new AdminAccountsPage(driver);
 		adminAccount.getAdminAccountsPage();
 		logger.info("Accounts page opened.");
-		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-
+		Thread.sleep(2000);
 		adminAccount.enterUserName(TeamLName);
 		logger.info("Entered Teamleader name in search field.");
 		Thread.sleep(4000);
 		adminAccount.clickOnTeamleaderTab();
-
+		Thread.sleep(2000);
 		adminAccount.clickOnLoginBtn();
 		logger.info("Logged in to the Teamleader Account.");
 		Thread.sleep(5000);

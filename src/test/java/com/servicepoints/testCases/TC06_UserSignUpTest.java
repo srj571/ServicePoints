@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 import com.servicepoints.PageObjects.SignUpPage;
 
-public class TC03_UserSignUpTest extends BaseClass{
+public class TC06_UserSignUpTest extends BaseClass{
 	
 	@Test
 	public void testUserSignUp() throws IOException, InterruptedException {

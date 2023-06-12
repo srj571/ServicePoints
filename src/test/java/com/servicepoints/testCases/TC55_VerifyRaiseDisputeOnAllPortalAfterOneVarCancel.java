@@ -202,7 +202,7 @@ public class TC55_VerifyRaiseDisputeOnAllPortalAfterOneVarCancel extends BaseCla
 	}
 
 	@Test(priority = 3)
-	public void varifyCanceleSecondVariant() throws InterruptedException, IOException {
+	public void varifyCancelSecondVariant() throws InterruptedException, IOException {
 		driver.get(baseURL);
 		LoginPage lp = new LoginPage(driver);
 
