@@ -101,7 +101,8 @@ public class AdminAccountsPage {
 	@FindBy(xpath="//div[@id='accounts-content']//div//div//div//div//div")
 	WebElement excludebtnForClick;
 	
-	@FindBy(xpath="//input[contains(@class, 'custom-control-input')]")
+	//@FindBy(xpath="//input[contains(@class, 'custom-control-input')]")
+	@FindBy(xpath="//div[@class='custom-control custom-switch right-switch switch-mod float-left']//label")
 	WebElement switchToggle;
 	
 	@FindBy(xpath="//a[normalize-space()='Agent (SUP)']")

@@ -41,7 +41,7 @@ public class TC57_VerifyDiscountFunctionalityWithRefund extends BaseClass{
 	public String storeFilter=rd.storeForDisputeFilter();
 	private String amountAsString;
 	
-	@Test(enabled = false,priority = 1)
+	@Test(enabled = true,priority = 1)
 	public void submitAndAcceptQuotation() throws InterruptedException, IOException {
 		logger.info("Application Opened.");
 		LoginPage lp = new LoginPage(driver);
@@ -154,7 +154,7 @@ public class TC57_VerifyDiscountFunctionalityWithRefund extends BaseClass{
 		BaseClass.closeAllWinTabsExceptParent();
 	}
 
-	@Test(enabled = false,priority = 2)
+	@Test(enabled = true,priority = 2)
 	public void verifyAddTrackingAndResendProduct() throws InterruptedException, IOException {
 		driver.get(baseURL);
 		LoginPage lp=new LoginPage(driver);
@@ -262,7 +262,7 @@ public class TC57_VerifyDiscountFunctionalityWithRefund extends BaseClass{
 		}
 	}	
 	
-	@Test(enabled = false, priority = 3, invocationCount = 3)
+	@Test(enabled = true, priority = 3, invocationCount = 3)
 	public void raiseRefundDispute() throws InterruptedException, IOException {
 		driver.get(baseURL);
 
@@ -287,7 +287,7 @@ public class TC57_VerifyDiscountFunctionalityWithRefund extends BaseClass{
 		if(cop.verifyOpenDisputeButtonIsVisible()==true) {
 			Assert.assertTrue(true);
 			Thread.sleep(3000);
-			logger.info("Verification of Dispute for Resend is not able to reopen once accepted is successed.");
+			logger.info("Verification of Dispute for Refund is not able to reopen once accepted is successed.");
 		}
 		else {
 			captureScreen(driver, "Dispute for resend reopen.");
@@ -302,7 +302,7 @@ public class TC57_VerifyDiscountFunctionalityWithRefund extends BaseClass{
 		logger.info("Customer got wrong product option selected.");
 
 		cop.refundSolutionDsp();
-		logger.info("Resend dispute option is selected.");
+		logger.info("Refund dispute option is selected.");
 
 		cop.clickOnFirstCheckBoxForDsp();
 		Thread.sleep(3000);

@@ -4,13 +4,17 @@
   <parameter name="browser" value="chrome"/>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.servicepoints.testCases.TC14_VerifyExcludeFunctionTest">
+      <class name="com.servicepoints.testCases.TC58_VerifyDiscountFunctionalityWithRefundDispute2">
         <methods>
           <include name="setup"/>
+          <include name="verifyDiscountFromClientSide"/>
+          <include name="submitAndAcceptQuotation"/>
+          <include name="verifyAddingDiscount"/>
+          <include name="verifyAddTrackingAndResendProduct"/>
           <include name="tearDown"/>
-          <include name="verifyExcludeQuotationTest"/>
+          <include name="raiseRefundDispute"/>
         </methods>
-      </class> <!-- com.servicepoints.testCases.TC14_VerifyExcludeFunctionTest -->
+      </class> <!-- com.servicepoints.testCases.TC58_VerifyDiscountFunctionalityWithRefundDispute2 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

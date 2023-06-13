@@ -39,9 +39,9 @@ public class TC56_VerifyAddDiscountFunctionality extends BaseClass{
 	public String trackingNum = rd.setTrackingNum();
 
 	public String storeFilter=rd.storeForDisputeFilter();
-	private String amountAsString;
+	//private String amountAsString;
 	
-	@Test(enabled = false,priority = 1)
+	@Test(enabled = true,priority = 1)
 	public void submitAndAcceptQuotation() throws InterruptedException, IOException {
 		logger.info("Application Opened.");
 		LoginPage lp = new LoginPage(driver);
@@ -154,7 +154,7 @@ public class TC56_VerifyAddDiscountFunctionality extends BaseClass{
 		BaseClass.closeAllWinTabsExceptParent();
 	}
 
-	@Test(enabled = false,priority = 2)
+	@Test(enabled = true,priority = 2)
 	public void verifyAddTrackingAndResendProduct() throws InterruptedException, IOException {
 		driver.get(baseURL);
 		LoginPage lp=new LoginPage(driver);
@@ -189,7 +189,6 @@ public class TC56_VerifyAddDiscountFunctionality extends BaseClass{
 		aop.clickOnProcessTab();
 		Thread.sleep(2000);
 		
-		
 		wait.until(ExpectedConditions.visibilityOf(aop.fdiv));
 		aop.clickOnfDiv();
 		Thread.sleep(3000);
@@ -203,16 +202,8 @@ public class TC56_VerifyAddDiscountFunctionality extends BaseClass{
 		Thread.sleep(3000);
 		logger.info("clicked on add tracking button.");
 		
-		aop.clickOnAllCheckBoxes();
-		Thread.sleep(1000);
-		aop.clickOnFirstCheckBox();
-		Thread.sleep(1000);
-		
-		
 		aop.setTrackingNum(trackingNum);
-		//aop.clickOnCloseTrackingPopup();
 		Thread.sleep(3000);
-		//wait.until(ExpectedConditions.visibilityOf(aop.sbmtTracking));
 		
 		aop.clickOnSbmtTracking();
 		logger.info("Clicked on submit tracking button.");
@@ -237,7 +228,7 @@ public class TC56_VerifyAddDiscountFunctionality extends BaseClass{
 		double val=aop.generateTheDiscountedPrice();
 		Thread.sleep(2000);
 		
-		amountAsString =String.valueOf(val);
+		String amountAsString =String.valueOf(val);
 		Thread.sleep(1000);
 		
 		aop.enterDiscountAmountField(amountAsString);
@@ -259,14 +250,10 @@ public class TC56_VerifyAddDiscountFunctionality extends BaseClass{
 			Thread.sleep(2000);
 			Assert.assertTrue(false);
 		}
-	}	
-	
-	@Test(enabled = true,priority =3)
-	public void verifyDiscountOnClientSide() throws InterruptedException, IOException {
+		
 		driver.get(baseURL);
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
-		LoginPage lp=new LoginPage(driver);
 		lp.setAdminMailId(clientMailD);
 		logger.info("Email_id is entered.");
 
@@ -286,9 +273,9 @@ public class TC56_VerifyAddDiscountFunctionality extends BaseClass{
 		cl.clickOnFDiv(); 
 		Thread.sleep(1000);
 		
-		String val=cl.getDiscountOfClient();
+		String val2=cl.getDiscountOfClient();
 		
-		String amountWithoutSymbol = val.replace("€", "").replace(",", ".");
+		String amountWithoutSymbol = val2.replace("€", "").replace(",", ".");
 
 		double amount = Double.parseDouble(amountWithoutSymbol);
 		
@@ -296,19 +283,15 @@ public class TC56_VerifyAddDiscountFunctionality extends BaseClass{
 		
 		TC56_VerifyAddDiscountFunctionality newVal=new TC56_VerifyAddDiscountFunctionality();
 		
-		String actualVal=newVal.amountAsString;
+		//String actualVal=newVal.amountAsString;
 		
-		if(actualVal.equals(actualDiscount)) {
+		if(amountAsString.equals(actualDiscount)) {
 			logger.info("Both discount price is equal to discount price entered by supplier is successfully verified.");
 			Assert.assertTrue(true);
+			Thread.sleep(3000);
 		}else {
-			logger.info("Both discount price is equal to discount price entered by supplier is successfully verified..");
-			Assert.assertTrue(true);
+			logger.info("Both discount price is equal to discount price entered by supplier is failed to verified..");
+			Assert.assertTrue(false);
 		}
-		
-//		else {
-//			logger.info("Both discount price is equal to discount price entered by supplier is failed to verified..");
-//			Assert.assertTrue(false);
-//		}
-	}
+	}	
 }
