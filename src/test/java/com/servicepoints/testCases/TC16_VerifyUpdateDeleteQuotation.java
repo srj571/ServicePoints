@@ -73,9 +73,9 @@ public class TC16_VerifyUpdateDeleteQuotation extends BaseClass{
 		aspp.scrollTillEle(driver);
 		Thread.sleep(1000);
 		aspp.clickOnSubmitQuote();
-		Thread.sleep(6000);
+		Thread.sleep(5000);
 
-		if (aspp.getStatus().equals("Quotation done")) {
+		if (aspp.verifyTextOnAlert()==true) {
 			Thread.sleep(2000);
 			Assert.assertTrue(true);
 			logger.info("Verification of Submit quotation Successed..");
@@ -98,7 +98,7 @@ public class TC16_VerifyUpdateDeleteQuotation extends BaseClass{
 		aspp.updateQuotation();
 		Thread.sleep(5000);
 
-		if (driver.getPageSource().contains("Quotation updated successfully.")) {
+		if (aspp.verifyTextOnAlert()==true) {
 			Thread.sleep(2000);
 			Assert.assertTrue(true);
 			logger.info("Verification of Quotation updation Successed..");

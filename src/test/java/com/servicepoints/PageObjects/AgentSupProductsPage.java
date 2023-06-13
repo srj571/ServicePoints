@@ -305,6 +305,14 @@ public class AgentSupProductsPage {
 	@FindBy(xpath="(//input[@placeholder='3 Pcs price'])[4]")
 	WebElement threePcsPrice9;
 	
+	@FindBy(xpath="(//h6[@class='content'])[1]")
+	WebElement alertUpdateQuote;
+	
+	public boolean verifyTextOnAlert() {
+		boolean val=alertUpdateQuote.getText().equals("Quotation accepted successfully.");
+		return true;
+	}
+	
 	public void sendValFor1Pcs1(String val1) {
 		onePcsPrice1.sendKeys(val1);
 		

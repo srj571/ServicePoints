@@ -338,7 +338,7 @@ public class TC52_VerifyOpenDisputeAfterSupplierAskForPriceChange extends BaseCl
 		
 		cl.selectProductTab();
 		logger.info("Product selected.");
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		
 		window = driver.getWindowHandles();
 		for(String handle: window) {
@@ -358,6 +358,7 @@ public class TC52_VerifyOpenDisputeAfterSupplierAskForPriceChange extends BaseCl
 		
 		cl.acceptAskforPriceChange();
 		Thread.sleep(2000);
+		
 		logger.info("Changed price is get accepted by the Client.");
 		cl.clickOnYesImSure();
 		logger.info("Clicked on yes im sure");

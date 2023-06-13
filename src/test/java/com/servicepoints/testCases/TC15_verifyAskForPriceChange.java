@@ -82,8 +82,10 @@ public class TC15_verifyAskForPriceChange extends BaseClass {
 		Thread.sleep(1000);
 		asop.forthPcsPrice(c4price);
 		Thread.sleep(1000);
+		
 		asop.scrollTillSubmitNewPrice(driver);
 		Thread.sleep(1000);
+		
 		asop.clickOnSbmtNewPrice();
 		logger.info("Entered changed price and Clicked on submit.");
 		
@@ -138,6 +140,7 @@ public class TC15_verifyAskForPriceChange extends BaseClass {
 		
 		cl.acceptAskforPriceChange();
 		Thread.sleep(2000);
+		
 		logger.info("Changed price is get accepted by the Client.");
 		cl.clickOnYesImSure();
 		logger.info("Clicked on yes im sure");

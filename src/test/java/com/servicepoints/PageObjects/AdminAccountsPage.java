@@ -95,11 +95,14 @@ public class AdminAccountsPage {
 	@FindBy(xpath="(//span[@class='name_overflow'][contains(text(),'John')])[1]")
 	WebElement verifyName;
 	
-	@FindBy(xpath="(//input[@id='customSwitches_238'])[1]")
+	@FindBy(xpath="//div[@class='custom-control custom-switch right-switch switch-mod float-left']")
 	WebElement excludebtn;
 	
 	@FindBy(xpath="//div[@id='accounts-content']//div//div//div//div//div")
 	WebElement excludebtnForClick;
+	
+	@FindBy(xpath="//input[contains(@class, 'custom-control-input')]")
+	WebElement switchToggle;
 	
 	@FindBy(xpath="//a[normalize-space()='Agent (SUP)']")
 	WebElement agentSUPtab;
@@ -109,7 +112,7 @@ public class AdminAccountsPage {
 	}
 	
 	public boolean verifyExcludeBtn() {
-		boolean tr=excludebtn.isSelected();
+		boolean tr=switchToggle.isSelected();
 		return tr;
 	}
 	
@@ -118,7 +121,7 @@ public class AdminAccountsPage {
 	}
 	
 	public void clickOnExcludeQuotebtn() {
-		excludebtnForClick.click();
+		switchToggle.click();
 	}
 	
 	public String verifyName() {

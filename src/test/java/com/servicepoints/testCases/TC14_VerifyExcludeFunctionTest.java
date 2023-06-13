@@ -33,17 +33,20 @@ public class TC14_VerifyExcludeFunctionTest extends BaseClass{
 		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 		
 		lp.clickLoginbtn();
+		Thread.sleep(3000);
 		
 		AdminAccountsPage adminAccount=new AdminAccountsPage(driver);
 		adminAccount.getAdminAccountsPage();
 		logger.info("Accounts page opened.");
-		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+		Thread.sleep(3000);	
 		
 		adminAccount.enterUserName(Agname);
 		logger.info("Entered Agent name in search field.");
+		Thread.sleep(2000);
 		
 		adminAccount.goToTheAgentSUPTab();
 		Thread.sleep(4000);
+		
 		adminAccount.clickOnLoginBtn();
 		logger.info("Logged in to the Agents Account.");
 		Thread.sleep(4000);
@@ -71,45 +74,49 @@ public class TC14_VerifyExcludeFunctionTest extends BaseClass{
 			Thread.sleep(2000);
 			adminAccount.goToAdminSUPTab();
 			Thread.sleep(3000);
+			logger.info("Clicked on admin supplier tab.");	
+			adminAccount.clickOnExcludeQuotebtn();
+			Thread.sleep(3000);
+			}	
+		
+		if(adminAccount.verifyExcludeBtn()== true) {
+			Thread.sleep(3000);
+			logger.info("Exclude open quotation button is ON.");
 			
-			if(adminAccount.verifyExcludeBtn()== true) {
-				Thread.sleep(3000);
-				logger.info("Exclude open quotation button is ON.");
-				adminAccount.clickOnExcludeQuotebtn();
+			adminAccount.clickOnExcludeQuotebtn();
+			Thread.sleep(4000);
+			logger.info("Now... Exclude open quotation button is turned Off.");
+			
+			adminAccount.goToTheAgentSUPTab();
+			
+			adminAccount.clearSearchField();
+			adminAccount.enterUserName(Agname);
+			Thread.sleep(4000);
+			
+			driver.switchTo().window(child);
+			driver.navigate().refresh();
+			Thread.sleep(2000);
+			
+			aspp.getProductsPage();
+			Thread.sleep(3000);
+			
+			if(driver.getPageSource().contains("No more product quotations.")) {
+				logger.info("Verification of Exclude Button failed.");
 				Thread.sleep(4000);
-				logger.info("Now... Exclude open quotation button is turned Off.");
-				
-				adminAccount.goToTheAgentSUPTab();
-				
-				adminAccount.clearSearchField();
-				adminAccount.enterUserName(Agname);
+				Assert.assertTrue(false);
+			}else {
+				Assert.assertTrue(true);
 				Thread.sleep(4000);
-				
-				driver.switchTo().window(child);
-				driver.navigate().refresh();
-				Thread.sleep(2000);
-				
-				aspp.getProductsPage();
-				Thread.sleep(3000);
-				
-				if(driver.getPageSource().contains("No more product quotations.")) {
-					logger.info("Verification of Exclude Button failed.");
-					Thread.sleep(4000);
-					Assert.assertTrue(false);
-				}else {
-					Assert.assertTrue(true);
-					Thread.sleep(4000);
-					logger.info("Verification of exclude button is Successed.");
-				}
-			}		
+				logger.info("Verification of exclude button is Successed.");
+			}
 		}
 		else {
 			driver.switchTo().window(parent);
 			Thread.sleep(3000);
 			adminAccount.goToAdminSUPTab();
-			
 			Thread.sleep(4000);
 			adminAccount.clearSearchField();
+			
 			adminAccount.enterUserName(AgadminName);
 			logger.info("Entered Admin Supplier name.");
 			Thread.sleep(4000);
