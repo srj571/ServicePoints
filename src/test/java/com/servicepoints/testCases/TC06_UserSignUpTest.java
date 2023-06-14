@@ -38,7 +38,7 @@ public class TC06_UserSignUpTest extends BaseClass{
 		logger.info("Email is entered.");
 		Thread.sleep(1000);
 		
-		sp.setDailyOrder(orders);
+		sp.setDailyOrder();
 		logger.info("Order is set.");
 		Thread.sleep(1000);
 		

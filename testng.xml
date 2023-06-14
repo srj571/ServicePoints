@@ -44,12 +44,12 @@
       <class name="com.servicepoints.testCases.TC33_VerifyPaymentPendingOrderOffTest"/>
       <class name="com.servicepoints.testCases.TC34_VerifyPaymentPendingOrderOnTest"/>
       <class name="com.servicepoints.testCases.TC35_VerifyPaymentPendingOrderForAddressError"/>
-      <class name="com.servicepoints.testCases.TC36_VerifyAddAffiliateTest"/>
-      <class name="com.servicepoints.testCases.TC00_verifySubmitAndAcceptQuote"/>
+      <class name="com.servicepoints.testCases.TC36_VerifyAddAffiliateTest"/>-->
+      <!--<class name="com.servicepoints.testCases.TC00_verifySubmitAndAcceptQuote"/>
       <class name="com.servicepoints.testCases.TC37_VerifyStopFulfillmentAndStartFulfillmentTest"/>
       <class name="com.servicepoints.testCases.TC38_VerifyRequoteQuotationTest"/>
-      <class name="com.servicepoints.testCases.TC39_VerifyAcceptingRequoteQuotationTest"/>-->
-      <!--<class name="com.servicepoints.testCases.TC40_VerifyMergeBreakOrderForDisputeTest">
+      <class name="com.servicepoints.testCases.TC39_VerifyAcceptingRequoteQuotationTest"/>
+      <class name="com.servicepoints.testCases.TC40_VerifyMergeBreakOrderForDisputeTest">
 		  <methods>
 			  <include name="setup"></include>
 			  <exclude name="submitAndAcceptQuotation"></exclude> 

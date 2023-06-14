@@ -28,7 +28,8 @@ public class TC36_VerifyAddAffiliateTest extends BaseClass{
 	public String aliasAf=con.setAliasAf();
 	public String storePassAf=con.setStorePassAf();
 	public String dateOrderAf=con.setStorePassAf();
-	
+	public String asupname=rc.getAgentSupplierName();
+	public String agentSupportName = rc.getAgentSupportName();
 	
 	@Test
 	public void verifyAddAffiliate() throws InterruptedException, IOException {
@@ -48,6 +49,7 @@ public class TC36_VerifyAddAffiliateTest extends BaseClass{
 		ClientAffiliatePage cap=new ClientAffiliatePage(driver);
 		SignUpPage sp=new SignUpPage(driver);
 		cap.clickOnAffiliateTab();
+		Thread.sleep(2000);
 		
 		driver.get(cap.getAffiliateLink());
 		Thread.sleep(2000);
@@ -75,8 +77,11 @@ public class TC36_VerifyAddAffiliateTest extends BaseClass{
 		logger.info("Email is entered.");
 		Thread.sleep(1000);
 		
-		sp.setDailyOrder(ordersAf);
+		sp.setDailyOrder();
 		logger.info("Order is set.");
+		Thread.sleep(1000);
+		
+		sp.selectReferenceByDropDown();
 		Thread.sleep(1000);
 		
 		sp.setPassword(passwordAf);
@@ -91,7 +96,7 @@ public class TC36_VerifyAddAffiliateTest extends BaseClass{
 		sp.clickOrderCheckBox();
 		Thread.sleep(2000);
 		sp.clickBtnSignUp();
-		Thread.sleep(5000);
+		Thread.sleep(7000);
 		
 		if(driver.getPageSource().contains("Congratulations! You have successfully signed up for Service Points.")) {
 			logger.info("User is Successfully Signed up.");
@@ -138,7 +143,8 @@ public class TC36_VerifyAddAffiliateTest extends BaseClass{
 		Thread.sleep(4000);
 		
 		adminAccount.selectAgentSupplierDrop();
-		adminAccount.selectAgentSUP();
+		Thread.sleep(2000);
+		adminAccount.selectAgentSUPForClientApp(driver,asupname);
 		Thread.sleep(3000);
 		logger.info("Agent Supplier name is selected.");
 		adminAccount.clickOnAgentFee();

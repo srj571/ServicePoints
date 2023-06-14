@@ -5,6 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 
 public class SignUpPage {
 	
@@ -24,8 +25,8 @@ public class SignUpPage {
 	@FindBy(xpath="//input[@name='lastname']")
 	WebElement txtLastName;
 	
-	@FindBy(xpath="//input[@name='country_code']")
-	WebElement countryCode;
+	@FindBy(xpath="(//span[@role='combobox'])[1]")
+	WebElement countryCodeDrop;
 	
 	@FindBy(xpath="//input[@name='phoneNumber']")
 	WebElement txtMobileNum;
@@ -52,6 +53,24 @@ public class SignUpPage {
 	@CacheLookup
 	WebElement btnSignUp;
 	
+	@FindBy(xpath="//input[@role='searchbox']")
+	WebElement searchBoxCountryCode;
+	
+	@FindBy(xpath="(//li[@role='option'])[1]")
+	WebElement firstDivCountry;
+	
+	@FindBy(xpath="//select[@name='daily_orders']")
+	WebElement dailyOrdersSelect;
+	
+	@FindBy(xpath="(//select[@name='reference_by'])[1]")
+	WebElement referenceBy;
+	
+	public void selectReferenceByDropDown() {
+		Select sel=new Select(referenceBy);
+		sel.selectByIndex(1);
+	}
+	
+	
 	public void signUpUser() {
 		signUpLink.click();
 	}
@@ -64,8 +83,12 @@ public class SignUpPage {
 		txtLastName.sendKeys(lname);
 	}
 	
-	public void setCountryCode(String code) {
-		countryCode.sendKeys(code);
+	public void setCountryCode(String code) throws InterruptedException {
+		countryCodeDrop.click();
+		Thread.sleep(1000);
+		searchBoxCountryCode.sendKeys(code);
+		Thread.sleep(1000);
+		firstDivCountry.click();
 	}
 	
 	public void setMobileNum(String mnum) {
@@ -76,8 +99,9 @@ public class SignUpPage {
 		txtEmail.sendKeys(email);
 	}
 	
-	public void setDailyOrder(String order) {
-		txtDailyOrders.sendKeys(order);
+	public void setDailyOrder() {
+		Select sel=new Select(dailyOrdersSelect);
+		sel.selectByIndex(2);
 	}
 	
 	public void setPassword(String pass) {

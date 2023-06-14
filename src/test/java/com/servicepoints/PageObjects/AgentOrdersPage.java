@@ -11,6 +11,8 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import junit.framework.Assert;
+
 public class AgentOrdersPage {
 
 	WebDriver rdriver;
@@ -181,6 +183,49 @@ public class AgentOrdersPage {
 		return result;
 	}
 	
+	@FindBy(xpath="//span[@id='discountOrderPriceModalContentError']")
+	WebElement errorMsg2;
 	
+	
+	@FindBy(xpath="//li[@class='parsley-required']")
+	WebElement errorMsg;
+	
+	public void verifyErrorMessages(WebDriver driver) throws InterruptedException {
+		submitDiscount.click();
+		Thread.sleep(2000);
+		
+		String expError=errorMsg.getText();
+		String actError="Amount is required";
+		Assert.assertEquals(actError, expError);
+		
+		Thread.sleep(2000);
+		String amountWithSymbol=quotePrice.getText();
+		String amountWithoutSymbol = amountWithSymbol.replace("€", "").replace(",", ".");
+
+		double amount = Double.parseDouble(amountWithoutSymbol);
+		
+		String amountAsString =String.valueOf(amount);
+		Thread.sleep(1000);
+		amountField.sendKeys(amountAsString);
+		Thread.sleep(2000);
+		submitDiscount.click();
+		Thread.sleep(2000);
+		
+		String actError2=errorMsg2.getText();
+		Thread.sleep(2000);
+		AgentOrdersPage apo=new AgentOrdersPage(driver);
+		
+		double discountedPrice = apo.generateTheDiscountedPrice();
+		String formattedPrice = String.format("%.2f", discountedPrice);
+		
+		String expError2="Enter amount should not be greater than €."+formattedPrice;
+		
+		//Assert.assertEquals(expError2, actError2);
+		Assert.assertEquals(expError2, actError2);
+		Thread.sleep(2000);
+		
+		amountField.clear();
+		Thread.sleep(3000);
+	}
 
 }

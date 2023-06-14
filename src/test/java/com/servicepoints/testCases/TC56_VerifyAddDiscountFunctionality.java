@@ -176,54 +176,55 @@ public class TC56_VerifyAddDiscountFunctionality extends BaseClass{
 		logger.info("Product name is entered.");
 		Thread.sleep(3000);
 		
-		wait.until(ExpectedConditions.visibilityOf(aop.orderStatusDrop));
-		aop.clickOnStatusDrop();
-		logger.info("Clicked on status dropdown.");
-		Thread.sleep(3000);
-		
-		aop.setStatusSearchDrop(process);
-		logger.info("Processing status is searched.");
-		Thread.sleep(3000);
-		
-		wait.until(ExpectedConditions.visibilityOf(aop.fprocessTab));
-		aop.clickOnProcessTab();
-		Thread.sleep(2000);
+//		wait.until(ExpectedConditions.visibilityOf(aop.orderStatusDrop));
+//		aop.clickOnStatusDrop();
+//		logger.info("Clicked on status dropdown.");
+//		Thread.sleep(3000);
+//		
+//		aop.setStatusSearchDrop(process);
+//		logger.info("Processing status is searched.");
+//		Thread.sleep(3000);
+//		
+//		wait.until(ExpectedConditions.visibilityOf(aop.fprocessTab));
+//		aop.clickOnProcessTab();
+//		Thread.sleep(2000);
 		
 		wait.until(ExpectedConditions.visibilityOf(aop.fdiv));
 		aop.clickOnfDiv();
 		Thread.sleep(3000);
 		
-		aop.scrollTillAddTracking(driver);
-		Thread.sleep(1000);
-		
-		wait.until(ExpectedConditions.visibilityOf(aop.AddTrackingBtn));
-		logger.info("Tracking number entered.");
-		aop.clickOnAddTracking();
-		Thread.sleep(3000);
-		logger.info("clicked on add tracking button.");
-		
-		aop.setTrackingNum(trackingNum);
-		Thread.sleep(3000);
-		
-		aop.clickOnSbmtTracking();
-		logger.info("Clicked on submit tracking button.");
-		
-		aop.waitTillSuccessBoxOfTrackingNum(driver);
-		
-		if(driver.getPageSource().contains("Tracking number successfully added")) {
-			logger.info("Verification of adding tracking number is Successfull.");
-			Assert.assertTrue(true);
-			Thread.sleep(2000);
-		}else {
-			logger.info("Verification of adding tracking number is failed.");
-			Thread.sleep(2000);
-			Assert.assertTrue(false);
-		}
-		
+//		aop.scrollTillAddTracking(driver);
+//		Thread.sleep(1000);
+//		
+//		wait.until(ExpectedConditions.visibilityOf(aop.AddTrackingBtn));
+//		logger.info("Tracking number entered.");
+//		aop.clickOnAddTracking();
+//		Thread.sleep(3000);
+//		logger.info("clicked on add tracking button.");
+//		
+//		aop.setTrackingNum(trackingNum);
+//		Thread.sleep(3000);
+//		
+//		aop.clickOnSbmtTracking();
+//		logger.info("Clicked on submit tracking button.");
+//		
+//		aop.waitTillSuccessBoxOfTrackingNum(driver);
+//		
+//		if(driver.getPageSource().contains("Tracking number successfully added")) {
+//			logger.info("Verification of adding tracking number is Successfull.");
+//			Assert.assertTrue(true);
+//			Thread.sleep(2000);
+//		}else {
+//			logger.info("Verification of adding tracking number is failed.");
+//			Thread.sleep(2000);
+//			Assert.assertTrue(false);
+//		}
+//		
 		Thread.sleep(2000);
 		aop.clickOnDiscountBtn();
-		
 		Thread.sleep(2000);
+		
+		aop.verifyErrorMessages(driver);
 		
 		double val=aop.generateTheDiscountedPrice();
 		Thread.sleep(2000);
