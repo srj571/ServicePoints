@@ -91,11 +91,12 @@ public class TC15_verifyAskForPriceChange extends BaseClass {
 		
 		asop.closeNotifyPopUp();
 		logger.info("Pop up get closed.");
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		
 		if (driver.getPageSource().contains("New price")) {
 			logger.info("Status changed to New Price.");
 		}
+		
 		Thread.sleep(3000);
 		
 		driver.get(baseURL);

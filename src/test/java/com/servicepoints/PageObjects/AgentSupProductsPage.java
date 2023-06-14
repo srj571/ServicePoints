@@ -55,6 +55,14 @@ public class AgentSupProductsPage {
 	@FindBy(xpath="//span[@class='badge-mod badge-warning']")
 	WebElement getStatusRequote;
 	
+	@FindBy(xpath="//div[@id='error_modal' and @class='modal fade bd-example-modal-sm']//h6")
+	WebElement askForPriceCMsgf;
+	
+	public String verifyMessageAfterAFPC() {
+		String val=askForPriceCMsgf.getTagName();
+		return val;
+	}
+	
 	public String getStatusRequote() {
 		String val=getStatusRequote.getText();
 		return val;
@@ -84,8 +92,6 @@ public class AgentSupProductsPage {
 	public void clickOnSeeMore() {
 		seeMoreBtn.click();
 	}
-	
-	
 	
 	public void firstPcsPrice(String fpcs) {
 		txt1Pcs.sendKeys(fpcs);
@@ -121,7 +127,6 @@ public class AgentSupProductsPage {
 		String text=QuoteStatus.getText();
 		return text;
 	}
-	
 	
 	//AskForPriceChangeFunctionality
 	@FindBy(xpath="//button[normalize-space()='Ask for price change']")

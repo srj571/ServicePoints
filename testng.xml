@@ -23,9 +23,9 @@
       <class name="com.servicepoints.testCases.TC11_VerifyDeletionOfStoreTest"/>
       <class name="com.servicepoints.testCases.TC12_VerifySubmitQuoteTest"/>
       <class name="com.servicepoints.testCases.TC13_VerifyAcceptQuotationTest"/>
-      <class name="com.servicepoints.testCases.TC14_VerifyExcludeFunctionTest"/> 
-      <class name="com.servicepoints.testCases.TC15_verifyAskForPriceChange"/>-->
-      <!--<class name="com.servicepoints.testCases.TC16_VerifyUpdateDeleteQuotation"/>
+      <class name="com.servicepoints.testCases.TC14_VerifyExcludeFunctionTest"/> -->
+      <class name="com.servicepoints.testCases.TC15_verifyAskForPriceChange"/>
+       <!--<class name="com.servicepoints.testCases.TC16_VerifyUpdateDeleteQuotation"/>
       <class name="com.servicepoints.testCases.TC17_VerifyAddNewVariant"/>
       <class name="com.servicepoints.testCases.TC18_VerifyCancelOrderFunctionality"/>
       <class name="com.servicepoints.testCases.TC19_VerifyOpenDisputFunction"/>
@@ -40,10 +40,10 @@
       <class name="com.servicepoints.testCases.TC28_VerifyDeclinedResendDispute"/>
       <class name="com.servicepoints.testCases.TC29_VerifySpecialRequestFunction"/>
       <class name="com.servicepoints.testCases.TC30_VerifyCloseSpecialRequestFunction"/>
-      <class name="com.servicepoints.testCases.TC31_VerifySpecialRequestCloseByAdminSP"/>-->
+      <class name="com.servicepoints.testCases.TC31_VerifySpecialRequestCloseByAdminSP"/>
       <class name="com.servicepoints.testCases.TC33_VerifyPaymentPendingOrderOffTest"/>
       <class name="com.servicepoints.testCases.TC34_VerifyPaymentPendingOrderOnTest"/>
-      <class name="com.servicepoints.testCases.TC35_VerifyPaymentPendingOrderForAddressError"/>
+      <class name="com.servicepoints.testCases.TC35_VerifyPaymentPendingOrderForAddressError"/>-->
      <!-- <class name="com.servicepoints.testCases.TC36_VerifyAddAffiliateTest"/>-->
       <!--<class name="com.servicepoints.testCases.TC00_verifySubmitAndAcceptQuote"/>
       <class name="com.servicepoints.testCases.TC37_VerifyStopFulfillmentAndStartFulfillmentTest"/>

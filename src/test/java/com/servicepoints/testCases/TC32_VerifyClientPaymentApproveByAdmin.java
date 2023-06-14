@@ -5,13 +5,14 @@ import java.util.Iterator;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import com.servicepoints.PageObjects.AdminAccountsPage;
-import com.servicepoints.PageObjects.ClientsPaymentsPage;
+import com.servicepoints.PageObjects.AgentSupProductsPage;
+import com.servicepoints.PageObjects.ClientProductPage;
 import com.servicepoints.PageObjects.LoginPage;
 import com.servicepoints.utilities.ReadConfig;
+
+import junit.framework.Assert;
 
 public class TC32_VerifyClientPaymentApproveByAdmin extends BaseClass{
 	
@@ -21,76 +22,117 @@ public class TC32_VerifyClientPaymentApproveByAdmin extends BaseClass{
 	public String remark=con.setRemarkForPayment();
 	
 	
-	@Test
-	public void verifyClientPaymentApprovedByAdmin() throws InterruptedException, IOException {
-		LoginPage lp=new LoginPage(driver);
+	@Test(enabled = true, priority = 1)
+	public void submitAndAcceptQuotation() throws InterruptedException, IOException {
 		logger.info("Application Opened.");
-		
-		lp.setAdminMailId(AdminMailID);
-		logger.info("Admin Email_id is entered.");
-		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-		
-		lp.setAdminPassword(AdminPassword);
-		logger.info("Admin password is entered.");
-		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-		
+		LoginPage lp = new LoginPage(driver);
+		Thread.sleep(1000);
+
+		lp.setAdminMailId(remark);
+		logger.info("Email_id is entered.");
+		Thread.sleep(1000);
+
+		lp.setAdminPassword(remark);
+		logger.info("Password is entered.");
+
 		lp.clickLoginbtn();
 		Thread.sleep(3000);
-		
-		AdminAccountsPage adminAccount=new AdminAccountsPage(driver);
-		adminAccount.getAdminAccountsPage();
-		logger.info("Accounts page opened.");
+		logger.info("Logged in to the Agent supplier account.");
+
+		AgentSupProductsPage aspp = new AgentSupProductsPage(driver);
+		aspp.getProductsPage();
+		Thread.sleep(4000);
+
+		aspp.clickQuotationsClientsTab();
+		Thread.sleep(2000);
+
+		aspp.searchProductName(remark);
 		Thread.sleep(3000);
-		
-		adminAccount.enterUserName(ClientForPayment);
-		logger.info("Entered Client name in search field.");
-		
-		adminAccount.getClientsTab();
-		Thread.sleep(3000);
-		adminAccount.clickOnLoginBtn();
-		logger.info("Logged in to the clients Account.");
-		Thread.sleep(3000);
-		
-		Set<String> window=driver.getWindowHandles();
-		Iterator<String> it=window.iterator();
-		String parent=it.next();
-		String child=it.next();
+		logger.info("Product name entered.");
+		aspp.clickOnfdiv();
+
+		String parentWindow = driver.getWindowHandle();
+		Set<String> window = driver.getWindowHandles();
+		Iterator<String> it = window.iterator();
+		String parent = it.next();
+		String child = it.next();
 		driver.switchTo().window(child);
-		Thread.sleep(3000);
-			
-		if(driver.getPageSource().contains(ClientForPayment)) {
-			logger.info("Verification of client login Successfull.");
-			Assert.assertTrue(true);	
-			driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-		}else {
-			captureScreen(driver, "Client Login Verification");
-			logger.info("Verification of client login Failed.");
-			Assert.assertTrue(false);	
+		Thread.sleep(4000);
+
+		aspp.firstPcsPrice(FirstPcsPrice);
+		aspp.secPcsPrice(SecPcsPrice);
+		aspp.thirdPcsPrice(ThirdPcsPrice);
+		aspp.forthPcsPrice(ForthPcsprice);
+		logger.info("Price entered for all pieces.");
+		Thread.sleep(4000);
+
+		aspp.scrollTillEle(driver);
+		Thread.sleep(1000);
+		aspp.clickOnSubmitQuote();
+		logger.info("Clicked on submit quotation button.");
+		Thread.sleep(7000);
+
+		if (aspp.getStatus().equals("Quotation done")) {
+			Thread.sleep(2000);
+			Assert.assertTrue(true);
+			logger.info("Verification of Submit quotation Successed..");
+		} else {
+			captureScreen(driver, "Submit Quote Test");
+			logger.info("Verification of Submit quotation failed..");
+			Assert.assertTrue(false);
+			Thread.sleep(4000);
 		}
-		
-		ClientsPaymentsPage cpp=new ClientsPaymentsPage(driver);
-		cpp.goToPaymentsPage();
-		logger.info("Client go to the payment page.");	
-		Thread.sleep(1000);
-		cpp.sendAmount(priceForPayment);
-		logger.info("Price entered.");
-		Thread.sleep(1000);
-		cpp.clickOnPayNowBtn();
-		Thread.sleep(5000);
-//		cpp.waitTillBankDiv(driver);
-//		logger.info("Try to click on Browse element.");
-//		cpp.clickOnBrowseEle();
-//		Thread.sleep(3000);
-//		cpp.sendFile();
-		//cpp.sendFileInText();
-		
-		String filePath="/Home/Downloads/A324.pdf";
-		
-		cpp.sendFileAsPath(driver, filePath);
-		
+
+		driver.get(baseURL);
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+
+		lp.setAdminMailId(remark);
+		logger.info("Email_id is entered.");
+
+		lp.setAdminPassword(remark);
+		logger.info("Password is entered.");
+
+		lp.clickLoginbtn();
+		Thread.sleep(4000);
+		logger.info("Client logged in successfully.");
+
+		ClientProductPage cl = new ClientProductPage(driver);
+		cl.getProductsPage();
+
+		cl.searchProduct(remark);
+		Thread.sleep(4000);
+		logger.info("Product name searched.");
+
+		cl.selectProductTab();
 		Thread.sleep(3000);
-		cpp.sendRemarkWhilePay(remark);
-		Thread.sleep(3000);
-		cpp.clickOnIHavePaid();
+
+		window = driver.getWindowHandles();
+		for (String handle : window) {
+			if (!handle.equals(parentWindow) && !handle.equals(driver.getWindowHandle())) {
+				driver.switchTo().window(handle);
+				break;
+			}
+		}
+
+		cl.selectQuoteTab();
+		Thread.sleep(1000);
+		cl.scrollTillAcceptQbtn(driver);
+		Thread.sleep(1000);
+
+		cl.selectAcceptQuoteBtn();
+		Thread.sleep(4000);
+		logger.info("Clicked on Accept Quotation button.");
+
+		if (driver.getPageSource().contains("Quotation accepted successfully.")) {
+			Thread.sleep(4000);
+			Assert.assertTrue(true);
+			logger.info("Verification of accepting quotation is Successed.");
+
+		} else {
+			captureScreen(driver, "Quotation Accepting");
+			logger.info("Verification of accepting quotation is Failed.");
+			Assert.assertTrue(false);
+		}
+		BaseClass.closeAllWinTabsExceptParent();
 	}
 }

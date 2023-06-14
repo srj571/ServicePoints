@@ -4,13 +4,13 @@
   <parameter name="browser" value="chrome"/>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.servicepoints.testCases.TC34_VerifyPaymentPendingOrderOnTest">
+      <class name="com.servicepoints.testCases.TC15_verifyAskForPriceChange">
         <methods>
           <include name="setup"/>
-          <include name="verifySecondProductStatus"/>
+          <include name="verifyAskForPriceChange"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.servicepoints.testCases.TC34_VerifyPaymentPendingOrderOnTest -->
+      </class> <!-- com.servicepoints.testCases.TC15_verifyAskForPriceChange -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
