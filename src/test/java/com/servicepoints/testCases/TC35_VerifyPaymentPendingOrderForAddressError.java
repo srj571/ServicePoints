@@ -123,6 +123,7 @@ public class TC35_VerifyPaymentPendingOrderForAddressError extends BaseClass{
 		
 		AgentSupProductsPage aspp = new AgentSupProductsPage(driver);
 		aspp.getProductsPage();
+		
 		Thread.sleep(4000);
 		aspp.clickQuotationsClientsTab();
 		Thread.sleep(2000);
@@ -266,13 +267,23 @@ public class TC35_VerifyPaymentPendingOrderForAddressError extends BaseClass{
 		Thread.sleep(2000);
 		acp.searchAccount(cNameForPayment);
 		Thread.sleep(2000);
-		acp.clickOnFClientDiv();
+		acp.clickOnFClientDiv(driver,cNameForPayment);
 		Thread.sleep(2000);
 		acp.clickOnPaymentToggle();
 		logger.info("Payment Pending order toggle is Disabled.");
 		Thread.sleep(2000);
 		acp.clickOnYesImSure();
 		Thread.sleep(4000);
+		
+		if(acp.toggleStatusAbtPayment()==false) {
+			Thread.sleep(4000);
+			Assert.assertTrue(true);
+			logger.info("Toggler is Off.");
+		}else {
+			captureScreen(driver, "Quotation Accepting");
+			logger.info("Verification of Toggle is failed.");
+			Assert.assertTrue(false);
+		}
 		
 	}
 }

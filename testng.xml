@@ -39,12 +39,12 @@
       <class name="com.servicepoints.testCases.TC27_VerifyAddTrackingAndResend"/>       
       <class name="com.servicepoints.testCases.TC28_VerifyDeclinedResendDispute"/>
       <class name="com.servicepoints.testCases.TC29_VerifySpecialRequestFunction"/>
-      <class name="com.servicepoints.testCases.TC30_VerifyCloseSpecialRequestFunction"/>-->
-      <!-- <class name="com.servicepoints.testCases.TC31_VerifySpecialRequestCloseByAdminSP"/>
+      <class name="com.servicepoints.testCases.TC30_VerifyCloseSpecialRequestFunction"/>
+      <class name="com.servicepoints.testCases.TC31_VerifySpecialRequestCloseByAdminSP"/>-->
       <class name="com.servicepoints.testCases.TC33_VerifyPaymentPendingOrderOffTest"/>
       <class name="com.servicepoints.testCases.TC34_VerifyPaymentPendingOrderOnTest"/>
       <class name="com.servicepoints.testCases.TC35_VerifyPaymentPendingOrderForAddressError"/>
-      <class name="com.servicepoints.testCases.TC36_VerifyAddAffiliateTest"/>-->
+     <!-- <class name="com.servicepoints.testCases.TC36_VerifyAddAffiliateTest"/>-->
       <!--<class name="com.servicepoints.testCases.TC00_verifySubmitAndAcceptQuote"/>
       <class name="com.servicepoints.testCases.TC37_VerifyStopFulfillmentAndStartFulfillmentTest"/>
       <class name="com.servicepoints.testCases.TC38_VerifyRequoteQuotationTest"/>
@@ -231,7 +231,7 @@
 			  <include name="verifyReopenDeclinedDisputes"></include>
 			  <include name="tearDown"></include>
 		  </methods>
-	  </class>-->
+	  </class>
 	   <class name="com.servicepoints.testCases.TC56_VerifyAddDiscountFunctionality">
 		  <methods>
 			  <include name="setup"></include>
@@ -240,7 +240,7 @@
 			  <include name="verifyDiscountOnClientSide"></include>
 			  <include name="tearDown"></include>
 		  </methods>
-	  </class>
+	  </class>-->
 	  <!--<class name="com.servicepoints.testCases.TC57_VerifyDiscountFunctionalityWithRefund">
 		  <methods>
 			  <include name="setup"></include>
@@ -258,6 +258,19 @@
 			  <include name="verifyAddTrackingAndResendProduct"></include>
 			  <include name="raiseRefundDispute"></include>
 			  <include name="verifyAddingDiscount"></include>
+			  <include name="verifyDiscountFromClientSide"></include>
+			  <include name="tearDown"></include>
+		  </methods>
+	  </class>
+	  <class name="com.servicepoints.testCases.TC59_VerifyDiscountWithResendFunctionality">
+		  <methods>
+			  <include name="setup"></include>
+			  <include name="submitAndAcceptQuotation"></include>
+			  <include name="verifyAddTrackingOnProduct"></include>
+			  <include name="raiseResendDispute"></include>
+			  <include name="verifyAddTrackingOnProductAgain"></include>
+			  <include name="verifyAddingDiscount"></include>
+			  <include name="raiseRefundDispute"></include>
 			  <include name="verifyDiscountFromClientSide"></include>
 			  <include name="tearDown"></include>
 		  </methods>

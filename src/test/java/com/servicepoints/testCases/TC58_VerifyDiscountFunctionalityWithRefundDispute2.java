@@ -223,7 +223,7 @@ public class TC58_VerifyDiscountFunctionalityWithRefundDispute2 extends BaseClas
 			Assert.assertTrue(false);
 		}
 	}
-	
+
 	@Test(enabled = true, priority = 3)
 	public void raiseRefundDispute() throws InterruptedException, IOException {
 		driver.get(baseURL);
@@ -238,25 +238,25 @@ public class TC58_VerifyDiscountFunctionalityWithRefundDispute2 extends BaseClas
 		logger.info("client logged in Successfully.");
 		ClientOrdersPage cop = new ClientOrdersPage(driver);
 		cop.clickOnOrdersTab();
+		
 		cop.sendPnameinSearch(product58);
 		logger.info("Product name is entered.");
 		Thread.sleep(2000);
-		
+
 		cop.clickOnFDiv();
 		logger.info("Clicked on first div.");
 		Thread.sleep(3000);
-		
-		if(cop.verifyOpenDisputeButtonIsVisible()==true) {
+
+		if (cop.verifyOpenDisputeButtonIsVisible() == true) {
 			Assert.assertTrue(true);
 			Thread.sleep(3000);
 			logger.info("Verification of Dispute for Refund is not able to reopen once accepted is successed.");
-		}
-		else {
+		} else {
 			captureScreen(driver, "Dispute for resend reopen.");
 			logger.info("Verification of Dispute acceptance is failed.");
 			Assert.assertTrue(false);
 		}
-		
+
 		cop.clickOnOpenDspbtn();
 		Thread.sleep(2000);
 
@@ -284,17 +284,17 @@ public class TC58_VerifyDiscountFunctionalityWithRefundDispute2 extends BaseClas
 			logger.info("Verification of Refund Dispute raised failed.");
 			Assert.assertTrue(false);
 		}
-		
+
 		driver.get(baseURL);
 		lp.setAdminMailId(agentMailD);
 		lp.setAdminPassword(agentPassD);
 		lp.clickLoginbtn();
 		logger.info("Agent logged in Successfully.");
-		
-		AgentDisputesPage asop=new AgentDisputesPage(driver);
+
+		AgentDisputesPage asop = new AgentDisputesPage(driver);
 		asop.clickOnDisputesTab();
 		logger.info("Open disputes page.");
-		
+
 		asop.searchProductForDsp(product58);
 		Thread.sleep(3000);
 		asop.clickOnFrstDsp();
@@ -302,11 +302,11 @@ public class TC58_VerifyDiscountFunctionalityWithRefundDispute2 extends BaseClas
 		asop.clickOnShowDsp();
 		logger.info("Clicked on show disputes.");
 		Thread.sleep(3000);
-		
+
 		asop.selectDspStatus();
 		logger.info("Dispute Accepted.");
 		Thread.sleep(3000);
-		
+
 		asop.sendAnswer(agentAnswer);
 		Thread.sleep(3000);
 		asop.scrollTillSendAns(driver);
@@ -314,72 +314,75 @@ public class TC58_VerifyDiscountFunctionalityWithRefundDispute2 extends BaseClas
 		asop.clickOnSendAnswer();
 		logger.info("Dispute send.");
 		Thread.sleep(5000);
-		
-		if(driver.getPageSource().contains("Dispute accepted successfully")) {
+
+		if (driver.getPageSource().contains("Dispute accepted successfully")) {
 			Assert.assertTrue(true);
 			Thread.sleep(3000);
 			logger.info("Verification of Refund Dispute acceptance is successed.");
-		}else {
+		} else {
 			captureScreen(driver, "Dispute for resend");
 			logger.info("Verification of Refund Dispute acceptance is failed.");
 			Assert.assertTrue(false);
 		}
 	}
-	
+
 	@Test(enabled = true, priority = 4)
 	public void verifyAddingDiscount() throws InterruptedException {
 		driver.get(baseURL);
-		LoginPage lp=new LoginPage(driver);
-		
-		WebDriverWait wait=new WebDriverWait(driver,10);
-		ClientOrdersPage cop=new ClientOrdersPage(driver);
-		
+		LoginPage lp = new LoginPage(driver);
+
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		ClientOrdersPage cop = new ClientOrdersPage(driver);
+
 		lp.setAdminMailId(agentMailD);
 		lp.setAdminPassword(agentPassD);
 		lp.clickLoginbtn();
 		logger.info("Agent logged in Successfully.");
 		Thread.sleep(3000);
-		
+
 		AgentOrdersPage aop = new AgentOrdersPage(driver);
 		aop.clickOnOrdersTab();
 		Thread.sleep(3000);
+		
+		aop.searchPnameTrack(product58);
+		logger.info("Product name is entered.");
+		Thread.sleep(2000);
 
 		wait.until(ExpectedConditions.visibilityOf(aop.fdiv));
 		aop.clickOnfDiv();
 		Thread.sleep(3000);
-		
+
 		Thread.sleep(2000);
 		aop.clickOnDiscountBtn();
-		
+
 		Thread.sleep(2000);
-		
-		double val=aop.generateTheDiscountedPrice();
+
+		double val = aop.generateTheDiscountedPrice();
 		Thread.sleep(2000);
-		
-		amountAsString =String.valueOf(val);
+
+		amountAsString = String.valueOf(val);
 		Thread.sleep(1000);
-		
+
 		aop.enterDiscountAmountField(amountAsString);
 		Thread.sleep(2000);
-		
+
 		aop.clickOnSubmitDiscountBtn();
 		Thread.sleep(3000);
-		
+
 		aop.clickOnSuccessDb();
 		Thread.sleep(2000);
-		
-		if(driver.getPageSource().contains("Discount successfully submitted")) {
+
+		if (driver.getPageSource().contains("Discount successfully submitted")) {
 			logger.info("Verification of adding discount number is Successfull.");
 			Assert.assertTrue(true);
 			Thread.sleep(2000);
-		}
-		else {
+		} else {
 			logger.info("Verification of adding discount number is failed.");
 			Thread.sleep(2000);
 			Assert.assertTrue(false);
 		}
 	}
-	
+
 	@Test(enabled = true, priority = 5)
 	public void verifyDiscountFromClientSide() throws InterruptedException {
 		driver.get(baseURL);
@@ -397,10 +400,10 @@ public class TC58_VerifyDiscountFunctionalityWithRefundDispute2 extends BaseClas
 		cop.sendPnameinSearch(product58);
 		logger.info("Product name is entered.");
 		Thread.sleep(2000);
-		
+
 		cop.clickOnFDiv();
 		logger.info("Clicked on first div.");
 		Thread.sleep(4000);
-		
+
 	}
 }

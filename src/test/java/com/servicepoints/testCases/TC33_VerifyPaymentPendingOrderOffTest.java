@@ -35,14 +35,6 @@ public class TC33_VerifyPaymentPendingOrderOffTest extends BaseClass{
 	
 	@Test
 	public void verifyPaymentPendingOrder() throws InterruptedException, IOException {
-		
-		driver.get(productFetch);
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		
-		driver.get(ordersFetch);
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		
-		driver.get(baseURL);
 		LoginPage lp=new LoginPage(driver);
 		lp.setAdminMailId(cmailForPayment);
 		lp.setAdminPassword(cPassForPayment);
@@ -89,6 +81,7 @@ public class TC33_VerifyPaymentPendingOrderOffTest extends BaseClass{
 		
 		AgentSupProductsPage aspp = new AgentSupProductsPage(driver);
 		aspp.getProductsPage();
+		logger.info("Navigated to Products page.");
 		Thread.sleep(4000);
 		aspp.clickQuotationsClientsTab();
 		Thread.sleep(2000);
@@ -139,7 +132,8 @@ public class TC33_VerifyPaymentPendingOrderOffTest extends BaseClass{
 		
 		ClientProductPage cl = new ClientProductPage(driver);
 		cl.getProductsPage();
-
+		Thread.sleep(2000);
+		logger.info("Navigated to products page.");
 		cl.searchProduct(productPayment);
 		Thread.sleep(4000);
 		cl.selectProductTab();
@@ -152,15 +146,11 @@ public class TC33_VerifyPaymentPendingOrderOffTest extends BaseClass{
 				break;
 			}
 		}
-		logger.info("Verification of 1");
+		
 		cl.selectQuoteTab();
-		logger.info("Verification of 2");
 		cl.scrollTillViewPro(driver);
-		logger.info("Verification of 3");
 		Thread.sleep(2000);
-		//cl.scrollTillAcceptQbtn(driver);
 		cl.clickOnAcceptSelectedQuote();
-		logger.info("Verification of 4");
 		Thread.sleep(4000);
 
 		if (driver.getPageSource().contains("Quotation accepted successfully.")) {
@@ -175,7 +165,7 @@ public class TC33_VerifyPaymentPendingOrderOffTest extends BaseClass{
 		}
 		
 		cp.clickOnOrdersTab();
-		logger.info("Go to Orders page.");
+		logger.info("navigated to Orders page.");
 		Thread.sleep(2000);
 		cp.sendPnameinSearch(productPayment);
 		Thread.sleep(2000);
@@ -214,10 +204,14 @@ public class TC33_VerifyPaymentPendingOrderOffTest extends BaseClass{
 		
 		acp.clickOnClientsPage();
 		Thread.sleep(2000);
+		logger.info("Navigated to Clients page.");
+		
 		acp.searchAccount(cNameForPayment);
 		Thread.sleep(2000);
-		acp.clickOnFClientDiv();
+		
+		acp.clickOnFClientDiv(driver,cNameForPayment);
 		Thread.sleep(2000);
+		logger.info("Clicked on client tab.");
 		
 		if(acp.toggleStatusAbtPayment()==false) {
 			Thread.sleep(4000);
@@ -270,7 +264,7 @@ public class TC33_VerifyPaymentPendingOrderOffTest extends BaseClass{
 			logger.info("Verification of order Status to Processing failed.");
 			Assert.assertTrue(false);
 		}
-//		
+		
 //		driver.get(baseURL);
 //		lp.setAdminMailId(aspMailForPayment);
 //		lp.setAdminPassword(aspPassForPayment);

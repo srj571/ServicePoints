@@ -276,6 +276,7 @@ public class TC57_VerifyDiscountFunctionalityWithRefund extends BaseClass{
 		logger.info("client logged in Successfully.");
 		ClientOrdersPage cop = new ClientOrdersPage(driver);
 		cop.clickOnOrdersTab();
+		
 		cop.sendPnameinSearch(product57);
 		logger.info("Product name is entered.");
 		Thread.sleep(2000);
@@ -294,6 +295,10 @@ public class TC57_VerifyDiscountFunctionalityWithRefund extends BaseClass{
 			logger.info("Verification of Dispute acceptance is failed.");
 			Assert.assertTrue(false);
 		}
+		
+		
+		cop.scrollTillOpenDisputesBtn(driver);
+		Thread.sleep(2000);
 		
 		cop.clickOnOpenDspbtn();
 		Thread.sleep(2000);
@@ -335,8 +340,13 @@ public class TC57_VerifyDiscountFunctionalityWithRefund extends BaseClass{
 		
 		asop.searchProductForDsp(product57);
 		Thread.sleep(3000);
+		
 		asop.clickOnFrstDsp();
 		Thread.sleep(3000);
+		
+		asop.scrollTillShowDispute(driver);
+		Thread.sleep(2000);
+		
 		asop.clickOnShowDsp();
 		logger.info("Clicked on show disputes.");
 		Thread.sleep(3000);

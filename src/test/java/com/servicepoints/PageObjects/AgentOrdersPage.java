@@ -139,6 +139,12 @@ public class AgentOrdersPage {
 		discountBtn.click();
 	}
 	
+	public void scrollTillDiscountbtn(WebDriver driver) {
+		JavascriptExecutor exe = (JavascriptExecutor) driver;
+		exe.executeScript("arguments[0].scrollIntoView();", discountBtn);
+	}
+	
+	
 	@FindBy(xpath="//span[@id='quotePrice']")
 	public WebElement quotePrice;
 	
@@ -167,7 +173,7 @@ public class AgentOrdersPage {
 	WebElement addTrackingSuccessBox;
 	
 	public void waitTillSuccessBoxOfTrackingNum(WebDriver driver) {
-		WebDriverWait wait=new WebDriverWait(driver,30);
+		WebDriverWait wait=new WebDriverWait(driver,60);
 		wait.until(ExpectedConditions.visibilityOf(addTrackingSuccessBox));
 	}
 	
@@ -198,7 +204,6 @@ public class AgentOrdersPage {
 		String actError="Amount is required";
 		Assert.assertEquals(actError, expError);
 		
-		Thread.sleep(2000);
 		String amountWithSymbol=quotePrice.getText();
 		String amountWithoutSymbol = amountWithSymbol.replace("€", "").replace(",", ".");
 
@@ -206,26 +211,33 @@ public class AgentOrdersPage {
 		
 		String amountAsString =String.valueOf(amount);
 		Thread.sleep(1000);
+		
 		amountField.sendKeys(amountAsString);
-		Thread.sleep(2000);
+		Thread.sleep(1000);
+		
 		submitDiscount.click();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		
 		String actError2=errorMsg2.getText();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
+		
 		AgentOrdersPage apo=new AgentOrdersPage(driver);
 		
 		double discountedPrice = apo.generateTheDiscountedPrice();
+		
 		String formattedPrice = String.format("%.2f", discountedPrice);
 		
-		String expError2="Enter amount should not be greater than €."+formattedPrice;
+		String expError2="Enter amount should not be greater than €"+formattedPrice;
+		
+		System.out.println(expError2);
+		System.out.println(actError2);
 		
 		//Assert.assertEquals(expError2, actError2);
 		Assert.assertEquals(expError2, actError2);
 		Thread.sleep(2000);
 		
 		amountField.clear();
-		Thread.sleep(3000);
+		Thread.sleep(1000);
 	}
 
 }

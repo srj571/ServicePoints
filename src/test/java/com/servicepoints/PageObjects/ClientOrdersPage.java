@@ -235,7 +235,7 @@ public class ClientOrdersPage {
 			specialRequestCheckBoxses.get(i).click();
 		}
 	}
-	
+
 	@FindBy(xpath = "//input[@id='disputeButton']")
 	WebElement sendRequestbtn;
 
@@ -309,7 +309,7 @@ public class ClientOrdersPage {
 			}
 		}
 	}
-	
+
 	public void reopenDeclinedDisputesForCancelOrder(WebDriver driver, String queries) throws InterruptedException {
 		for (int i = 0; i < noOfDisputesDiv.size(); i++) {
 
@@ -332,20 +332,18 @@ public class ClientOrdersPage {
 			if (driver.getPageSource().contains("Message send successfully")) {
 				Assert.assertTrue(true);
 				BaseClass.logger.info("Verification of Declined Dispute reopen Successfully.");
-			} 
-			else if(verifyAlertOfAlreadyOpenDsp()==true) {
+			} else if (verifyAlertOfAlreadyOpenDsp() == true) {
 				Assert.assertTrue(true);
 				Thread.sleep(2000);
 				closeAlert.click();
 				BaseClass.logger.info("Verification of message after Declined Dispute reopen Successfully.");
-			}
-			else if(verifyAlertOfCancelOrder()==true) {
+			} else if (verifyAlertOfCancelOrder() == true) {
 				Assert.assertTrue(true);
 				Thread.sleep(2000);
 				closeAlert.click();
-				BaseClass.logger.info("Verification of message after Declined Dispute reopening of cancel order Successfully.");
-			}
-			else {
+				BaseClass.logger
+						.info("Verification of message after Declined Dispute reopening of cancel order Successfully.");
+			} else {
 				BaseClass.logger.info("Verification of messages failed.");
 				Assert.assertTrue(false);
 			}
@@ -372,7 +370,7 @@ public class ClientOrdersPage {
 			BaseClass.logger.info("Clicked on Saved dispute.");
 
 			closeAlert.click();
-			
+
 			if (driver.getPageSource().contains("You can not generate or reopen the dispute request for this order.")) {
 				Thread.sleep(2000);
 				Assert.assertTrue(true);
@@ -808,34 +806,33 @@ public class ClientOrdersPage {
 		closeAlert.click();
 	}
 
-	@FindBy(xpath="//h6[normalize-space()='There is already an open dispute for this order']")
+	@FindBy(xpath = "//h6[normalize-space()='There is already an open dispute for this order']")
 	WebElement alertText;
-	
+
 	public boolean verifyAlertOfAlreadyOpenDsp() {
-		String actVal=alertText.getText();
-		String expVal= "There is already an open dispute for this order";
-		if(expVal.equals(actVal)) {
+		String actVal = alertText.getText();
+		String expVal = "There is already an open dispute for this order";
+		if (expVal.equals(actVal)) {
 			return true;
 		}
 		closeAlert.click();
 		return false;
 	}
-	
-	
-	@FindBy(xpath="//h6[contains(text(),'You can not generate or reopen the dispute request')]")
+
+	@FindBy(xpath = "//h6[contains(text(),'You can not generate or reopen the dispute request')]")
 	public WebElement alertTextForCancelOrder;
-	
+
 	public boolean verifyAlertOfCancelOrder() {
-		String actVal=alertTextForCancelOrder.getText();
-		String expVal= "You can not generate or reopen the dispute request for this order.";
-		if(expVal.equals(actVal)) {
-			//closeAlert.click();
+		String actVal = alertTextForCancelOrder.getText();
+		String expVal = "You can not generate or reopen the dispute request for this order.";
+		if (expVal.equals(actVal)) {
+			// closeAlert.click();
 			return true;
 		}
 		closeAlert.click();
 		return false;
 	}
-	
+
 	@FindBy(xpath = "(//span[@aria-hidden='true'][normalize-space()='×'])[2]")
 	WebElement closeShowDisputeWin;
 
@@ -874,25 +871,25 @@ public class ClientOrdersPage {
 	@FindBy(xpath = "(//span[@class='badge-mod badge-warning'])[2]")
 	public WebElement statusText;
 
-	@FindBy(xpath="(//div[@class='float-left btn-block order_mapping_list'])[2]//input")
+	@FindBy(xpath = "(//div[@class='float-left btn-block order_mapping_list'])[2]//input")
 	List<WebElement> checkBoxes;
-	
+
 	public boolean verifyCheckBoxesDisabled() {
-	    for (int i = 0; i < checkBoxes.size(); i++) {
-	        boolean isEnabled = checkBoxes.get(i).isEnabled();
-	        if (isEnabled) {
-	            return false; // Return false if any checkbox is enabled
-	        }
-	    }
-	    return true; // Return true if all checkboxes are disabled
+		for (int i = 0; i < checkBoxes.size(); i++) {
+			boolean isEnabled = checkBoxes.get(i).isEnabled();
+			if (isEnabled) {
+				return false; // Return false if any checkbox is enabled
+			}
+		}
+		return true; // Return true if all checkboxes are disabled
 	}
-	
-	@FindBy(xpath="(//div[@class='col table_item_block_md'])[1]//div[@class='col-7'][2]")
+
+	@FindBy(xpath = "(//div[@class='col table_item_block_md'])[1]//div[@class='col-7'][2]")
 	WebElement getDiscountOnClient;
-	
+
 	public String getDiscountOfClient() {
-		String discount=getDiscountOnClient.getText();
+		String discount = getDiscountOnClient.getText();
 		return discount;
 	}
-	
+
 }

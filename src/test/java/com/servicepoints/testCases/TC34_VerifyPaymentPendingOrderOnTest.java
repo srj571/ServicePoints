@@ -32,13 +32,11 @@ public class TC34_VerifyPaymentPendingOrderOnTest extends BaseClass{
 	public String aspPassForPayment=rd.setASPPassForPayment();
 	public String secProduct=rd.setSecProductName();
 	
-	
 	@Test
 	public void verifySecondProductStatus() throws InterruptedException, IOException {
 		ClientOrdersPage cp=new ClientOrdersPage(driver);
 		AgentClientsPage acp=new AgentClientsPage(driver);
 		LoginPage lp=new LoginPage(driver);
-		driver.get(baseURL);
 		
 		lp.setAdminMailId(cmailForPayment);
 		lp.setAdminPassword(cPassForPayment);
@@ -73,7 +71,6 @@ public class TC34_VerifyPaymentPendingOrderOnTest extends BaseClass{
 			logger.info("Verification of Financial Status to Not quoted failed.");
 			Assert.assertTrue(false);
 		}
-		
 		
 		driver.get(baseURL);
 		lp.setAdminMailId(AmailForPayment);
@@ -177,7 +174,7 @@ public class TC34_VerifyPaymentPendingOrderOnTest extends BaseClass{
 		if(cp.getFinancialStatus().equals("Pending")) {
 			Thread.sleep(2000);
 			Assert.assertTrue(true);
-			logger.info("Verification of Financial Status to Pending.");
+			logger.info("Verification of Financial Status to Pending successfully.");
 		}else {
 			captureScreen(driver, "Quotation Accepting");
 			logger.info("Verification of Financial Status to Pending failed.");
@@ -187,10 +184,10 @@ public class TC34_VerifyPaymentPendingOrderOnTest extends BaseClass{
 		if(cp.verifyStatusToProcessing().equals("Processing")) {
 			Thread.sleep(2000);
 			Assert.assertTrue(true);
-			logger.info("Verification of Order Status to Not quoted.");
+			logger.info("Verification of Order Status to Processing.");
 		}else {
 			captureScreen(driver, "Quotation Accepting");
-			logger.info("Verification of Financial Status to Not quoted failed.");
+			logger.info("Verification of Financial Status to Processing failed.");
 			Assert.assertTrue(false);
 		}
 		
@@ -205,12 +202,16 @@ public class TC34_VerifyPaymentPendingOrderOnTest extends BaseClass{
 		Thread.sleep(2000);
 		acp.searchAccount(cNameForPayment);
 		Thread.sleep(2000);
-		acp.clickOnFClientDiv();
-		Thread.sleep(2000);
-		//acp.clickOnPaymentToggle();
-		logger.info("Payment Pending order toggle is ON.");
-		Thread.sleep(2000);
-//		acp.clickOnYesImSure();
-//		Thread.sleep(4000);
+		acp.clickOnFClientDiv(driver,cNameForPayment);
+		Thread.sleep(3000);
+		
+		if(acp.toggleStatusPayment()==true) {
+			Thread.sleep(4000);
+			Assert.assertTrue(true);
+			logger.info("Payment Pending order toggle is ON.");
+		} else {
+			logger.info("Verification of Toggle is failed.");
+			Assert.assertTrue(false);
+		}
 	}
 }

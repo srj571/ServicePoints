@@ -1,5 +1,6 @@
 package com.servicepoints.PageObjects;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -35,11 +36,10 @@ public class AgentClientsPage {
 		loginBtn.click();
 	}
 	
-	@FindBy(xpath="//a[contains(text(),'Jenies')]")
-	WebElement clientDiv;
-	
-	public void clickOnFClientDiv() {
-		clientDiv.click();
+	public void clickOnFClientDiv(WebDriver driver,String cNameForPayment) {
+		String path="//a[contains(text(),'"+cNameForPayment+"')]";
+		WebElement client=driver.findElement(By.xpath(path));
+		client.click();
 	}
 	
 	@FindBy(xpath="(//div[@class='custom-control toggle-btn custom-switch right-switch switch-mod float-left'])[3]")
@@ -47,6 +47,14 @@ public class AgentClientsPage {
 	
 	public boolean toggleStatusAbtPayment() {
 		boolean val=paymentPendingOrder.isSelected();
+		return val;
+	}
+	
+	@FindBy(xpath="(//input[@value='1'])[3]")
+	WebElement pPendingOrderON;
+	
+	public boolean toggleStatusPayment() {
+		boolean val=pPendingOrderON.isSelected();
 		return val;
 	}
 	

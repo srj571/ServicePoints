@@ -4,14 +4,13 @@
   <parameter name="browser" value="chrome"/>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.servicepoints.testCases.TC56_VerifyAddDiscountFunctionality">
+      <class name="com.servicepoints.testCases.TC34_VerifyPaymentPendingOrderOnTest">
         <methods>
           <include name="setup"/>
-          <include name="submitAndAcceptQuotation"/>
-          <include name="verifyAddTrackingAndResendProduct"/>
+          <include name="verifySecondProductStatus"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.servicepoints.testCases.TC56_VerifyAddDiscountFunctionality -->
+      </class> <!-- com.servicepoints.testCases.TC34_VerifyPaymentPendingOrderOnTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
