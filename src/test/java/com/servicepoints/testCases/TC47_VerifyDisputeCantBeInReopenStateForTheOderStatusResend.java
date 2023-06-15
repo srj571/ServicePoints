@@ -19,7 +19,7 @@ import com.servicepoints.utilities.ReadConfig;
 
 import junit.framework.Assert;
 
-public class TC47_VerifyDisputeCantBeInReopenStateForTheOderStatusResend extends BaseClass{
+public class TC47_VerifyDisputeCantBeInReopenStateForTheOderStatusResend extends BaseClass {
 	ReadConfig rd = new ReadConfig();
 	public String agentMailMBO = rd.setAgentMailMergeBreakOrder();
 	public String agentPassMBO = rd.setAgentPassMergeBreakOrder();
@@ -42,7 +42,7 @@ public class TC47_VerifyDisputeCantBeInReopenStateForTheOderStatusResend extends
 
 	public String trackingNum = rd.setTrackingNum();
 
-	@Test(priority = 1)
+	@Test(enabled = true, priority = 1)
 	public void submitAndAcceptQuotation() throws InterruptedException, IOException {
 		logger.info("Application Opened.");
 		LoginPage lp = new LoginPage(driver);
@@ -147,8 +147,8 @@ public class TC47_VerifyDisputeCantBeInReopenStateForTheOderStatusResend extends
 		}
 		BaseClass.closeAllWinTabsExceptParent();
 	}
-	
-	@Test(priority = 2)
+
+	@Test(enabled = true, priority = 2)
 	public void verifyOpenDispute() throws InterruptedException, IOException {
 		driver.get(baseURL);
 		LoginPage lp = new LoginPage(driver);
@@ -212,6 +212,8 @@ public class TC47_VerifyDisputeCantBeInReopenStateForTheOderStatusResend extends
 		// wait.until(ExpectedConditions.visibi);
 		Thread.sleep(7000);
 
+		aop.waitTillSuccessBoxOfTrackingNum(driver);
+
 		if (driver.getPageSource().contains("Tracking number successfully added")) {
 			logger.info("Verification of adding tracking number is Successfull.");
 			Assert.assertTrue(true);
@@ -221,11 +223,11 @@ public class TC47_VerifyDisputeCantBeInReopenStateForTheOderStatusResend extends
 			logger.info("Verification of adding tracking number is failed.");
 		}
 	}
-	
-	@Test(priority = 3)
+
+	@Test(enabled = true, priority = 3)
 	public void verifyRaisingAndAcceptingDisputeAgain() throws InterruptedException, IOException {
 		driver.get(baseURL);
-		LoginPage lp=new LoginPage(driver);
+		LoginPage lp = new LoginPage(driver);
 		Thread.sleep(3000);
 		lp.setAdminMailId(clientMailMBO);
 		lp.setAdminPassword(clientPassMBO);
@@ -325,8 +327,8 @@ public class TC47_VerifyDisputeCantBeInReopenStateForTheOderStatusResend extends
 			Assert.assertTrue(false);
 		}
 	}
-	
-	@Test(priority = 4)
+
+	@Test(enabled = true, priority = 4)
 	public void verifyRaiseDisputeAndAccept() throws InterruptedException, IOException {
 		driver.get(baseURL);
 
@@ -388,29 +390,31 @@ public class TC47_VerifyDisputeCantBeInReopenStateForTheOderStatusResend extends
 			logger.info("Verification of Dispute raised failed.");
 			Assert.assertTrue(false);
 		}
-		
+
 		driver.get(baseURL);
 		lp.setAdminMailId(agentMailMBO);
 		lp.setAdminPassword(agentPassMBO);
 		lp.clickLoginbtn();
 		logger.info("Agent logged in Successfully.");
-		
-		AgentDisputesPage asop=new AgentDisputesPage(driver);
+
+		AgentDisputesPage asop = new AgentDisputesPage(driver);
 		asop.clickOnDisputesTab();
 		logger.info("Open disputes page.");
-		
+
 		asop.searchProductForDsp(product47);
 		Thread.sleep(3000);
 		asop.clickOnFrstDsp();
 		Thread.sleep(3000);
+		asop.scrollTillShowDispute(driver);
+		Thread.sleep(2000);
 		asop.clickOnShowDsp();
 		logger.info("Clicked on show disputes.");
 		Thread.sleep(3000);
-		
+
 		asop.selectDspStatus();
 		logger.info("Dispute Accepted.");
 		Thread.sleep(3000);
-		
+
 		asop.sendAnswer(agentAnswer);
 		Thread.sleep(3000);
 		asop.scrollTillSendAns(driver);
@@ -418,20 +422,19 @@ public class TC47_VerifyDisputeCantBeInReopenStateForTheOderStatusResend extends
 		asop.clickOnSendAnswer();
 		logger.info("Dispute send.");
 		Thread.sleep(5000);
-		
-		if(driver.getPageSource().contains("Dispute accepted successfully")) {
+
+		if (driver.getPageSource().contains("Dispute accepted successfully")) {
 			Assert.assertTrue(true);
 			Thread.sleep(3000);
 			logger.info("Verification of Dispute acceptance is successed.");
-		}else {
+		} else {
 			captureScreen(driver, "Dispute for resend");
 			logger.info("Verification of Dispute acceptance is failed.");
 			Assert.assertTrue(false);
 		}
 	}
-	
-	
-	@Test(priority = 5)
+
+	@Test(enabled = true, priority = 5)
 	public void verifyTryToReopenResendDispute() throws InterruptedException, IOException {
 		driver.get(baseURL);
 
@@ -448,22 +451,21 @@ public class TC47_VerifyDisputeCantBeInReopenStateForTheOderStatusResend extends
 		cop.sendPnameinSearch(product47);
 		logger.info("Product name is entered.");
 		Thread.sleep(2000);
-		
+
 		cop.clickOnFDiv();
 		logger.info("Clicked on first div.");
 		Thread.sleep(3000);
-		
-		if(cop.verifyOpenDisputeButtonIsVisible()==true) {
+
+		if (cop.verifyOpenDisputeButtonIsVisible() == true) {
 			Assert.assertTrue(true);
 			Thread.sleep(3000);
 			logger.info("Verification of Dispute for Resend is not able to reopen once accepted is successed.");
-		}
-		else {
+		} else {
 			captureScreen(driver, "Dispute for resend reopen.");
 			logger.info("Verification of Dispute acceptance is failed.");
 			Assert.assertTrue(false);
 		}
-		
+
 		cop.clickOnOpenDspbtn();
 		Thread.sleep(2000);
 
@@ -491,29 +493,31 @@ public class TC47_VerifyDisputeCantBeInReopenStateForTheOderStatusResend extends
 			logger.info("Verification of Refund Dispute raised failed.");
 			Assert.assertTrue(false);
 		}
-		
+
 		driver.get(baseURL);
 		lp.setAdminMailId(agentMailMBO);
 		lp.setAdminPassword(agentPassMBO);
 		lp.clickLoginbtn();
 		logger.info("Agent logged in Successfully.");
-		
-		AgentDisputesPage asop=new AgentDisputesPage(driver);
+
+		AgentDisputesPage asop = new AgentDisputesPage(driver);
 		asop.clickOnDisputesTab();
 		logger.info("Open disputes page.");
-		
+
 		asop.searchProductForDsp(product47);
 		Thread.sleep(3000);
 		asop.clickOnFrstDsp();
 		Thread.sleep(3000);
+		asop.scrollTillShowDispute(driver);
+		Thread.sleep(2000);
 		asop.clickOnShowDsp();
 		logger.info("Clicked on show disputes.");
 		Thread.sleep(3000);
-		
+
 		asop.selectDspStatus();
 		logger.info("Dispute Accepted.");
 		Thread.sleep(3000);
-		
+
 		asop.sendAnswer(agentAnswer);
 		Thread.sleep(3000);
 		asop.scrollTillSendAns(driver);
@@ -521,19 +525,19 @@ public class TC47_VerifyDisputeCantBeInReopenStateForTheOderStatusResend extends
 		asop.clickOnSendAnswer();
 		logger.info("Dispute send.");
 		Thread.sleep(5000);
-		
-		if(driver.getPageSource().contains("Dispute accepted successfully")) {
+
+		if (driver.getPageSource().contains("Dispute accepted successfully")) {
 			Assert.assertTrue(true);
 			Thread.sleep(3000);
 			logger.info("Verification of Refund Dispute acceptance is successed.");
-		}else {
+		} else {
 			captureScreen(driver, "Dispute for resend");
 			logger.info("Verification of Refund Dispute acceptance is failed.");
 			Assert.assertTrue(false);
 		}
 	}
-	
-	@Test(priority = 6)
+
+	@Test(enabled = true, priority = 6)
 	public void verifyRaiseDisputeForrRefund() throws InterruptedException, IOException {
 		driver.get(baseURL);
 
@@ -550,32 +554,31 @@ public class TC47_VerifyDisputeCantBeInReopenStateForTheOderStatusResend extends
 		cop.sendPnameinSearch(product47);
 		logger.info("Product name is entered.");
 		Thread.sleep(2000);
-		
+
 		cop.clickOnFDiv();
 		logger.info("Clicked on first div.");
 		Thread.sleep(3000);
-		
-		if(cop.verifyOpenDisputeButtonIsVisible()==false) {
+
+		if (cop.verifyOpenDisputeButtonIsVisible() == false) {
 			Assert.assertTrue(true);
 			Thread.sleep(3000);
 			logger.info("Verification of not reopening of Dispute for refund is successed.");
-		}
-		else {
-			
+		} else {
+
 			cop.clickOnOpenDspbtn();
 			Thread.sleep(2000);
-			
+
 			cop.handleDspIssues();
 			logger.info("Customer got wrong product option selected.");
 
 			cop.refundSolutionDsp();
 			logger.info("Resend dispute option is selected.");
 
-			if(cop.verifyCheckBoxesDisabled()== true) {
+			if (cop.verifyCheckBoxesDisabled() == true) {
 				Assert.assertTrue(true);
 				Thread.sleep(3000);
 				logger.info("Verification of not reopening of Dispute for refund is successed.");
-			}else {
+			} else {
 				captureScreen(driver, "Dispute for refund reopen.");
 				logger.info("Verification of not reopening of Dispute for refund is failed.");
 				Assert.assertTrue(false);

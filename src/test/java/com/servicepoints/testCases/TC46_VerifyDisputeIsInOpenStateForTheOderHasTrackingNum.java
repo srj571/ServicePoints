@@ -39,7 +39,7 @@ public class TC46_VerifyDisputeIsInOpenStateForTheOderHasTrackingNum extends Bas
 
 	public String trackingNum = rd.setTrackingNum();
 
-	@Test(priority = 1)
+	@Test(enabled = true, priority = 1)
 	public void verifyAddTrackingNumberAndReopenDeclinedDispute() throws InterruptedException {
 		LoginPage lp = new LoginPage(driver);
 		WebDriverWait wait = new WebDriverWait(driver, 10);
@@ -100,7 +100,7 @@ public class TC46_VerifyDisputeIsInOpenStateForTheOderHasTrackingNum extends Bas
 		aop.clickOnSbmtTracking();
 		logger.info("Clicked on submit tracking button.");
 		// wait.until(ExpectedConditions.visibi);
-		Thread.sleep(7000);
+		aop.waitTillSuccessBoxOfTrackingNum(driver);
 
 		if (driver.getPageSource().contains("Tracking number successfully added")) {
 			logger.info("Verification of adding tracking number is Successfull.");
@@ -111,10 +111,9 @@ public class TC46_VerifyDisputeIsInOpenStateForTheOderHasTrackingNum extends Bas
 			logger.info("Verification of adding tracking number is failed.");
 		}
 	}
-	
-	@Test(priority = 2)
-	public void verifySubmitAndDeclinedDisputeAndReopenIt() throws InterruptedException, IOException
-	{
+
+	@Test(enabled = true, priority = 2)
+	public void verifySubmitAndDeclinedDisputeAndReopenIt() throws InterruptedException, IOException {
 		driver.get(baseURL);
 
 		LoginPage lp = new LoginPage(driver);
@@ -131,15 +130,15 @@ public class TC46_VerifyDisputeIsInOpenStateForTheOderHasTrackingNum extends Bas
 		logger.info("Product name is entered.");
 		Thread.sleep(2000);
 
-		//cop.clickOnStatusDrop();
+		// cop.clickOnStatusDrop();
 		// Thread.sleep(3000);
-		//cop.dropdownSearch(process);
+		// cop.dropdownSearch(process);
 		// logger.info("fulfilled status is entered.");
 		// cop.clickOnFulfillTab();
 		// cop.clickOnFProcessingTab();
 		// aop.clickOnProcessTab();
-		//cop.clickOnProcessingTab();
-		//Thread.sleep(3000);
+		// cop.clickOnProcessingTab();
+		// Thread.sleep(3000);
 
 		cop.clickOnFDiv();
 		logger.info("Clicked on first div.");
@@ -192,6 +191,9 @@ public class TC46_VerifyDisputeIsInOpenStateForTheOderHasTrackingNum extends Bas
 		Thread.sleep(3000);
 		asop.clickOnFrstDsp();
 		Thread.sleep(3000);
+
+		asop.scrollTillShowDispute(driver);
+		Thread.sleep(2000);
 		asop.clickOnShowDsp();
 		logger.info("Clicked on show disputes.");
 		Thread.sleep(3000);
@@ -228,13 +230,15 @@ public class TC46_VerifyDisputeIsInOpenStateForTheOderHasTrackingNum extends Bas
 		Thread.sleep(2000);
 		cop.clickOnGoToDisputesTab();
 		Thread.sleep(2000);
-		cop.clickOnClosedDisputestab();
-		Thread.sleep(1000);
+
 		cop.clickOnDeclinedDisputesTab();
 		Thread.sleep(1000);
 		cop.sendPnameinSearch(productForTC46);
 		Thread.sleep(2000);
 		cop.clickOnFDiv();
+		Thread.sleep(2000);
+
+		cop.scrollTillShowDisputeBtn(driver);
 		Thread.sleep(2000);
 		cop.clickOnShowDispute();
 		Thread.sleep(1000);
@@ -267,6 +271,8 @@ public class TC46_VerifyDisputeIsInOpenStateForTheOderHasTrackingNum extends Bas
 		Thread.sleep(3000);
 		asop.clickOnFrstDsp();
 		Thread.sleep(3000);
+		asop.scrollTillShowDispute(driver);
+		Thread.sleep(2000);
 		asop.clickOnShowDsp();
 		logger.info("Clicked on show disputes.");
 		Thread.sleep(3000);
@@ -303,13 +309,16 @@ public class TC46_VerifyDisputeIsInOpenStateForTheOderHasTrackingNum extends Bas
 		Thread.sleep(2000);
 		cop.clickOnGoToDisputesTab();
 		Thread.sleep(2000);
-		cop.clickOnClosedDisputestab();
-		Thread.sleep(1000);
+		cop.scrollTillShowDisputeBtn(driver);
+		Thread.sleep(2000);
+
 		cop.clickOnDeclinedDisputesTab();
 		Thread.sleep(1000);
 		cop.sendPnameinSearch(productForTC46);
 		Thread.sleep(2000);
 		cop.clickOnFDiv();
+		Thread.sleep(2000);
+		cop.scrollTillShowDisputeBtn(driver);
 		Thread.sleep(2000);
 		cop.clickOnShowDispute();
 		Thread.sleep(1000);
@@ -342,6 +351,8 @@ public class TC46_VerifyDisputeIsInOpenStateForTheOderHasTrackingNum extends Bas
 		Thread.sleep(3000);
 		asop.clickOnFrstDsp();
 		Thread.sleep(3000);
+		asop.scrollTillShowDispute(driver);
+		Thread.sleep(2000);
 		asop.clickOnShowDsp();
 		logger.info("Clicked on show disputes.");
 		Thread.sleep(3000);
@@ -378,13 +389,14 @@ public class TC46_VerifyDisputeIsInOpenStateForTheOderHasTrackingNum extends Bas
 		Thread.sleep(2000);
 		cop.clickOnGoToDisputesTab();
 		Thread.sleep(2000);
-		cop.clickOnClosedDisputestab();
-		Thread.sleep(1000);
+
 		cop.clickOnDeclinedDisputesTab();
 		Thread.sleep(1000);
 		cop.sendPnameinSearch(productForTC46);
 		Thread.sleep(2000);
 		cop.clickOnFDiv();
+		Thread.sleep(2000);
+		cop.scrollTillShowDisputeBtn(driver);
 		Thread.sleep(2000);
 		cop.clickOnShowDispute();
 		Thread.sleep(1000);
@@ -417,6 +429,8 @@ public class TC46_VerifyDisputeIsInOpenStateForTheOderHasTrackingNum extends Bas
 		Thread.sleep(3000);
 		asop.clickOnFrstDsp();
 		Thread.sleep(3000);
+		asop.scrollTillShowDispute(driver);
+		Thread.sleep(2000);
 		asop.clickOnShowDsp();
 		logger.info("Clicked on show disputes.");
 		Thread.sleep(3000);
@@ -453,13 +467,13 @@ public class TC46_VerifyDisputeIsInOpenStateForTheOderHasTrackingNum extends Bas
 		Thread.sleep(2000);
 		cop.clickOnGoToDisputesTab();
 		Thread.sleep(2000);
-		cop.clickOnClosedDisputestab();
-		Thread.sleep(1000);
 		cop.clickOnDeclinedDisputesTab();
 		Thread.sleep(1000);
 		cop.sendPnameinSearch(productForTC46);
 		Thread.sleep(2000);
 		cop.clickOnFDiv();
+		Thread.sleep(2000);
+		cop.scrollTillShowDisputeBtn(driver);
 		Thread.sleep(2000);
 		cop.clickOnShowDispute();
 		Thread.sleep(1000);
@@ -492,6 +506,8 @@ public class TC46_VerifyDisputeIsInOpenStateForTheOderHasTrackingNum extends Bas
 		Thread.sleep(3000);
 		asop.clickOnFrstDsp();
 		Thread.sleep(3000);
+		asop.scrollTillShowDispute(driver);
+		Thread.sleep(2000);
 		asop.clickOnShowDsp();
 		logger.info("Clicked on show disputes.");
 		Thread.sleep(3000);
@@ -528,13 +544,13 @@ public class TC46_VerifyDisputeIsInOpenStateForTheOderHasTrackingNum extends Bas
 		Thread.sleep(2000);
 		cop.clickOnGoToDisputesTab();
 		Thread.sleep(2000);
-		cop.clickOnClosedDisputestab();
-		Thread.sleep(1000);
 		cop.clickOnDeclinedDisputesTab();
 		Thread.sleep(1000);
 		cop.sendPnameinSearch(productForTC46);
 		Thread.sleep(2000);
 		cop.clickOnFDiv();
+		Thread.sleep(2000);
+		cop.scrollTillShowDisputeBtn(driver);
 		Thread.sleep(2000);
 		cop.clickOnShowDispute();
 		Thread.sleep(1000);
@@ -567,6 +583,8 @@ public class TC46_VerifyDisputeIsInOpenStateForTheOderHasTrackingNum extends Bas
 		Thread.sleep(3000);
 		asop.clickOnFrstDsp();
 		Thread.sleep(3000);
+		asop.scrollTillShowDispute(driver);
+		Thread.sleep(2000);
 		asop.clickOnShowDsp();
 		logger.info("Clicked on show disputes.");
 		Thread.sleep(3000);
@@ -603,13 +621,13 @@ public class TC46_VerifyDisputeIsInOpenStateForTheOderHasTrackingNum extends Bas
 		Thread.sleep(2000);
 		cop.clickOnGoToDisputesTab();
 		Thread.sleep(2000);
-		cop.clickOnClosedDisputestab();
-		Thread.sleep(1000);
 		cop.clickOnDeclinedDisputesTab();
 		Thread.sleep(1000);
 		cop.sendPnameinSearch(productForTC46);
 		Thread.sleep(2000);
 		cop.clickOnFDiv();
+		Thread.sleep(2000);
+		cop.scrollTillShowDisputeBtn(driver);
 		Thread.sleep(2000);
 		cop.clickOnShowDispute();
 		Thread.sleep(1000);

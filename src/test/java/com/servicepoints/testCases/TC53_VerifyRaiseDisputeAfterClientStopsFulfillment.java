@@ -41,7 +41,7 @@ public class TC53_VerifyRaiseDisputeAfterClientStopsFulfillment extends BaseClas
 	public String teamleaderName=rd.getTeamleaderName();
 	public String storeFilter=rd.storeForDisputeFilter();
 
-	@Test(priority = 1)
+	@Test(enabled = true,priority = 1)
 	public void submitAndAcceptQuotation() throws InterruptedException, IOException {
 		logger.info("Application Opened.");
 		LoginPage lp = new LoginPage(driver);
@@ -155,7 +155,7 @@ public class TC53_VerifyRaiseDisputeAfterClientStopsFulfillment extends BaseClas
 		BaseClass.closeAllWinTabsExceptParent();
 	}
 
-	@Test(priority = 2)
+	@Test(enabled = true,priority = 2)
 	public void verifyOpenDispute() throws InterruptedException, IOException {
 		driver.get(baseURL);
 
@@ -217,7 +217,7 @@ public class TC53_VerifyRaiseDisputeAfterClientStopsFulfillment extends BaseClas
 		}
 	}
 	
-	@Test(priority = 3)
+	@Test(enabled = true,priority = 3)
 	public void verifyStopFulfillment() throws InterruptedException, IOException, AWTException {
 		driver.get(baseURL);
 		
@@ -288,6 +288,8 @@ public class TC53_VerifyRaiseDisputeAfterClientStopsFulfillment extends BaseClas
 		cp.clickOnFDiv();
 		Thread.sleep(1000);
 		
+		cp.scrollTillShowDisputeBtn(driver);
+		Thread.sleep(2000);
 		cp.clickOnShowDispute();
 		Thread.sleep(4000);
 		
@@ -295,7 +297,7 @@ public class TC53_VerifyRaiseDisputeAfterClientStopsFulfillment extends BaseClas
 		BaseClass.closeAllWinTabsExceptParent();
 	}
 	
-	@Test(priority = 4)
+	@Test(enabled = true,priority = 4)
 	public void verifyDisputeOnSupplierSide() throws InterruptedException, IOException {
 		
 		driver.get(baseURL);
@@ -331,7 +333,7 @@ public class TC53_VerifyRaiseDisputeAfterClientStopsFulfillment extends BaseClas
 		}
 	}
 	
-	@Test(priority = 5)
+	@Test(enabled = true,priority = 5)
 	public void verifyDisputeOnSupportSide() throws InterruptedException {
 		driver.get(baseURL);
 		LoginPage lp=new LoginPage(driver);
@@ -375,12 +377,15 @@ public class TC53_VerifyRaiseDisputeAfterClientStopsFulfillment extends BaseClas
 			Assert.assertTrue(false);
 		}
 		
+		asop.scrollTillShowDispute(driver);
+		Thread.sleep(2000);
+		
 		asop.clickOnShowDsp();
 		Thread.sleep(5000);
 		logger.info("Product name searched.");
 	}
 	
-	@Test(priority = 6)
+	@Test(enabled = true,priority = 6)
 	public void verifyShowDisputeFromTeamleaderSide() throws InterruptedException {
 		driver.get(baseURL);
 		LoginPage lp=new LoginPage(driver);
@@ -423,12 +428,15 @@ public class TC53_VerifyRaiseDisputeAfterClientStopsFulfillment extends BaseClas
 		tdp.clickOnFDiv();
 		Thread.sleep(2000);
 		
+		tdp.scrollTillShowDispute(driver);
+		Thread.sleep(2000);
+		
 		tdp.clickOnShowDsp();
 		Thread.sleep(5000);
 		BaseClass.closeAllWinTabsExceptParent();
 	}
 	
-	@Test(priority = 7)
+	@Test(enabled = true,priority = 7)
 	public void verifyStartFulfillment() throws InterruptedException, IOException {
 		driver.get(baseURL);
 		Thread.sleep(3000);
@@ -493,6 +501,9 @@ public class TC53_VerifyRaiseDisputeAfterClientStopsFulfillment extends BaseClas
 		cp.clickOnFDiv();
 		Thread.sleep(2000);
 		logger.info("Status changed to Hold.");
+		
+		cp.scrollTillShowDisputeBtn(driver);
+		Thread.sleep(2000);
 		
 		cp.clickOnShowDispute();
 		Thread.sleep(4000);

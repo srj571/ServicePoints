@@ -45,7 +45,7 @@ WebDriver rdriver;
 		declinedDisputeTab.click();
 	}
 	
-	@FindBy(xpath="(//span[@title='All store'])[1]")
+	@FindBy(xpath="(//span[@role='presentation'])[5]")
 	WebElement allStoreFilter;
 	
 	public void clickOnAllStoreFilter() {
@@ -59,7 +59,7 @@ WebDriver rdriver;
 		searchStoreFilter.sendKeys(storeName);
 	}
 	
-	@FindBy(xpath="//li[@role='option']")
+	@FindBy(xpath="(//li[@role='option'])[1]")
 	WebElement fStoreTab;
 	
 	public void clickOnFStoreTab() {
@@ -96,20 +96,18 @@ WebDriver rdriver;
 	
 	public void handleEachDispute(WebDriver driver) throws InterruptedException {
 		for(int i=0; i<allDisps.size();i++) {
-			for(int j=0; j<allShowDspBtn.size();j++) {
-				allDisps.get(i).click();
-				Thread.sleep(2000);
+			
+			allDisps.get(i).click();
+			Thread.sleep(2000);
 				
-				scrollTillShowDispute(driver);
-				Thread.sleep(3000);
-				
-				allShowDspBtn.get(i).click();
-				Thread.sleep(4000);
-				
-				closeDisputeAgent.click();
-				Thread.sleep(2000);
-				break;
-			}
+			scrollTillShowDispute(driver);
+			Thread.sleep(3000);
+			
+			allShowDspBtn.get(i).click();
+			Thread.sleep(4000);
+			
+			closeDisputeAgent.click();
+			Thread.sleep(2000);
 		}
 	}
 	

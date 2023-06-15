@@ -18,8 +18,8 @@ import com.servicepoints.utilities.ReadConfig;
 
 import junit.framework.Assert;
 
-public class TC50_VerifyDeletedDisputeFromClientSupplierAndSupportSide extends BaseClass{
-	
+public class TC50_VerifyDeletedDisputeFromClientSupplierAndSupportSide extends BaseClass {
+
 	ReadConfig rd = new ReadConfig();
 	public String agentMailMBO = rd.setAgentMailMergeBreakOrder();
 	public String agentPassMBO = rd.setAgentPassMergeBreakOrder();
@@ -33,15 +33,15 @@ public class TC50_VerifyDeletedDisputeFromClientSupplierAndSupportSide extends B
 	public String agentAnswer = rd.setAnswer();
 	public String otherTxt = rd.setOtherTxt();
 	public String query2 = rd.getQuery2();
-	public String status2=rd.setOrderStatus2();
-	
-	public String agentSpMail=rd.getAgentSpMailDsp();
-	public String agentSpPass=rd.getAgentSpPassDsp();
-	public String teamleaderName=rd.getTeamleaderName();
+	public String status2 = rd.setOrderStatus2();
 
-	public String storeFilter=rd.storeForDisputeFilter();
+	public String agentSpMail = rd.getAgentSpMailDsp();
+	public String agentSpPass = rd.getAgentSpPassDsp();
+	public String teamleaderName = rd.getTeamleaderName();
 
-	@Test(enabled = false)
+	public String storeFilter = rd.storeForDisputeFilter();
+
+	@Test(enabled = true, priority = 1)
 	public void submitAndAcceptQuotation() throws InterruptedException, IOException {
 		logger.info("Application Opened.");
 		LoginPage lp = new LoginPage(driver);
@@ -120,7 +120,7 @@ public class TC50_VerifyDeletedDisputeFromClientSupplierAndSupportSide extends B
 		cl.searchProduct(product50);
 		Thread.sleep(4000);
 		logger.info("Product name searched.");
-		
+
 		cl.selectProductTab();
 		Thread.sleep(3000);
 
@@ -136,7 +136,7 @@ public class TC50_VerifyDeletedDisputeFromClientSupplierAndSupportSide extends B
 		Thread.sleep(1000);
 		cl.scrollTillAcceptQbtn(driver);
 		Thread.sleep(1000);
-		
+
 		cl.selectAcceptQuoteBtn();
 		Thread.sleep(4000);
 		logger.info("Clicked on Accept Quotation button.");
@@ -154,19 +154,19 @@ public class TC50_VerifyDeletedDisputeFromClientSupplierAndSupportSide extends B
 		BaseClass.closeAllWinTabsExceptParent();
 	}
 
-	@Test(priority = 2)
+	@Test(enabled = true, priority = 2)
 	public void verifyOpenDispute() throws InterruptedException, IOException {
 		driver.get(baseURL);
 
 		LoginPage lp = new LoginPage(driver);
 		Thread.sleep(3000);
-		
+
 		lp.setAdminMailId(clientMailMBO);
 		lp.setAdminPassword(clientPassMBO);
 		lp.clickLoginbtn();
 		Thread.sleep(2000);
 		logger.info("client logged in Successfully.");
-		
+
 		ClientOrdersPage cop = new ClientOrdersPage(driver);
 		cop.clickOnOrdersTab();
 		cop.sendPnameinSearch(product50);
@@ -178,7 +178,7 @@ public class TC50_VerifyDeletedDisputeFromClientSupplierAndSupportSide extends B
 		cop.clickOnProcessingTab();
 		Thread.sleep(3000);
 		logger.info("Processing filter selected.");
-		
+
 		cop.clickOnFDiv();
 		logger.info("Clicked on first div.");
 		Thread.sleep(3000);
@@ -215,120 +215,118 @@ public class TC50_VerifyDeletedDisputeFromClientSupplierAndSupportSide extends B
 			Assert.assertTrue(false);
 		}
 	}
-	
-	@Test(priority = 3)
+
+	@Test(enabled = true, priority = 3)
 	public void verifyDeleteDisputeFromTeamleader() throws InterruptedException, IOException {
 		driver.get(baseURL);
-		LoginPage lp=new LoginPage(driver);
+		LoginPage lp = new LoginPage(driver);
 		lp.setAdminMailId(AdminMailID);
 		lp.setAdminPassword(AdminPassword);
 		lp.clickLoginbtn();
 		Thread.sleep(2000);
 		logger.info("Admin logged in successfully.");
-		
-		AdminAccountsPage adminAccount=new AdminAccountsPage(driver);
+
+		AdminAccountsPage adminAccount = new AdminAccountsPage(driver);
 		adminAccount.getAdminAccountsPage();
 		logger.info("Accounts page opened.");
 		Thread.sleep(3000);
-		
+
 		adminAccount.enterUserName(teamleaderName);
 		logger.info("Entered Client name in search field.");
-		
+
 		adminAccount.getTeamleaderTab();
 		Thread.sleep(2000);
-		
+
 		adminAccount.clickOnLoginBtn();
 		Thread.sleep(3000);
 		logger.info("Teamleader logged in successfully.");
-		
-		Set<String> window=driver.getWindowHandles();
-		Iterator<String> it=window.iterator();
-		String parent=it.next();
-		String child=it.next();
+
+		Set<String> window = driver.getWindowHandles();
+		Iterator<String> it = window.iterator();
+		String parent = it.next();
+		String child = it.next();
 		driver.switchTo().window(child);
 		Thread.sleep(3000);
-		
-		TeamleaderDisputePage tdp=new TeamleaderDisputePage(driver);
+
+		TeamleaderDisputePage tdp = new TeamleaderDisputePage(driver);
 		tdp.clickOnDisputeTab();
 		Thread.sleep(1000);
-		
+
 		tdp.searchProduct(product50);
 		logger.info("Product name searched.");
 		Thread.sleep(1000);
-		
+
 		tdp.clickOnAllStoreFilter();
 		Thread.sleep(2000);
-		
+
 		tdp.searchStoreFilter(storeFilter);
 		Thread.sleep(2000);
-		
-		tdp.clickOnFStoreTab();    
+
+		tdp.clickOnFStoreTab();
 		logger.info("Store filter handled.");
 		Thread.sleep(1000);
-		
+
 		tdp.clickOnFDiv();
 		logger.info("Clicked on first dispute.");
 		Thread.sleep(2000);
+
+		tdp.scrollTillShowDispute(driver);
+		Thread.sleep(2000);
 		
 		tdp.clickOnDeleteDisputeBtn();
-		Thread.sleep(1000);
-		
+		Thread.sleep(3000);
+
 		tdp.clickOnSubmitBtnOnDispute();
-		Thread.sleep(1000);
-		
-		
-		if(driver.getPageSource().contains("Dispute request deleted successfully")) {
+		Thread.sleep(3000);
+
+		if (driver.getPageSource().contains("Dispute request deleted successfully")) {
 			Assert.assertTrue(true);
 			logger.info("Verification of Dispute deleted Successfully.");
-		}else {
+		} else {
 			captureScreen(driver, "delete dispute");
 			logger.info("Verification of Dispute deletion failed.");
 			Assert.assertTrue(false);
 		}
 	}
-	
-	@Test(priority = 4)
+
+	@Test(enabled = true, priority = 4)
 	public void verifyDeletedDisputeFromClientSide() throws InterruptedException, IOException {
 		driver.get(baseURL);
 
 		LoginPage lp = new LoginPage(driver);
 		Thread.sleep(3000);
-		
+
 		lp.setAdminMailId(clientMailMBO);
 		lp.setAdminPassword(clientPassMBO);
 		lp.clickLoginbtn();
 		Thread.sleep(2000);
 		logger.info("client logged in Successfully.");
-		
+
 		ClientOrdersPage cop = new ClientOrdersPage(driver);
 		cop.clickOnOrdersTab();
-		
+
 		cop.clickOnGoToDisputesTab();
 		Thread.sleep(2000);
-		
-		cop.clickOnClosedDisputestab();
-		Thread.sleep(1000);
-		
+
 		cop.clickOnDeclinedDisputesTab();
 		logger.info("Clicked on Declined dispute tab.");
 		Thread.sleep(1000);
-		
+
 		cop.sendPnameinSearch(product50);
 		logger.info("Product name searched.");
 		Thread.sleep(2000);
-		
-		if(driver.getPageSource().contains("No disputes found")) {
+
+		if (driver.getPageSource().contains("No disputes found")) {
 			Assert.assertTrue(true);
 			logger.info("Verification of deleted dispute from client side Successfully.");
-		}
-		else {
+		} else {
 			captureScreen(driver, "delete dispute client");
 			logger.info("Verification of deleted dispute from client side failed.");
 			Assert.assertTrue(false);
 		}
 	}
-	
-	@Test(priority = 5)
+
+	@Test(enabled = true,priority = 5)
 	public void verifyDeletedDisputeFromSupplierSide() throws InterruptedException, IOException {
 		driver.get(baseURL);
 		LoginPage lp = new LoginPage(driver);
@@ -344,49 +342,47 @@ public class TC50_VerifyDeletedDisputeFromClientSupplierAndSupportSide extends B
 
 		asop.searchProductForDsp(product50);
 		Thread.sleep(3000);
-		
-		if(driver.getPageSource().contains("No disputes found")) {
+
+		if (driver.getPageSource().contains("No disputes found")) {
 			Assert.assertTrue(true);
 			logger.info("Verification of deleted dispute from supplier side Successfully.");
-		}
-		else {
+		} else {
 			captureScreen(driver, "delete dispute supplier");
 			logger.info("Verification of deleted dispute from supplier side failed.");
 			Assert.assertTrue(false);
 		}
 	}
-	
-	@Test(priority = 6)
-	public void verifyDeletedDisputefromSupportSide() throws InterruptedException, IOException{
+
+	@Test(enabled = true,priority = 6)
+	public void verifyDeletedDisputefromSupportSide() throws InterruptedException, IOException {
 		driver.get(baseURL);
-		LoginPage lp=new LoginPage(driver);
+		LoginPage lp = new LoginPage(driver);
 		lp.setAdminMailId(agentSpMail);
 		lp.setAdminPassword(agentSpPass);
 		lp.clickLoginbtn();
 		Thread.sleep(2000);
-		
+
 		AgentDisputesPage asop = new AgentDisputesPage(driver);
 		asop.clickOnDisputesTab();
 		logger.info("Open disputes page.");
 
 		asop.searchProductForDsp(product50);
 		Thread.sleep(2000);
-		
+
 		asop.clickOnAllStoreBtn();
 		asop.sendStoreNameInStoreFilter(storeFilter);
 		Thread.sleep(1000);
 		logger.info("Store name entered.");
-		
+
 		asop.clickOnFStoreEle();
 		Thread.sleep(3000);
-		
+
 		logger.info("Product name searched.");
-		
-		if(driver.getPageSource().contains("No disputes found")) {
+
+		if (driver.getPageSource().contains("No disputes found")) {
 			Assert.assertTrue(true);
 			logger.info("Verification of deleted dispute from support side Successfully.");
-		}
-		else {
+		} else {
 			captureScreen(driver, "delete dispute support");
 			logger.info("Verification of deleted dispute from support side failed.");
 			Assert.assertTrue(false);

@@ -260,24 +260,20 @@ public class ClientOrdersPage {
 	List<WebElement> showDisputeList;
 
 	public void clickOnEachDivForDisputeVerification(WebDriver driver) throws InterruptedException {
-		for (WebElement eachDiv : noOfOrdersTab) {
+		for ( int i=0; i<noOfOrdersTab.size();i++) {
+			
+			noOfOrdersTab.get(i).click();
+			Thread.sleep(1000);
 
-			for (WebElement eachShowBtn : showDisputeList) {
+			scrollTillTheLast(driver);
+			Thread.sleep(3000);
 
-				eachDiv.click();
-				Thread.sleep(1000);
+			showDisputeList.get(i).click();
+			Thread.sleep(4000);
 
-				scrollTillEle(driver);
-				Thread.sleep(3000);
+			closeDispute.click();
+			Thread.sleep(2000);
 
-				eachShowBtn.click();
-				Thread.sleep(4000);
-
-				closeDispute.click();
-				Thread.sleep(2000);
-
-				break;
-			}
 		}
 	}
 
@@ -892,4 +888,10 @@ public class ClientOrdersPage {
 		return discount;
 	}
 
+	@FindBy(xpath="//a[normalize-space()='Approved disputes']")
+	WebElement approvedDispute;
+	
+	public void clickOnApprovedDispute() {
+		approvedDispute.click();
+	}
 }

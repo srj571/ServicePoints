@@ -33,7 +33,7 @@ public class TC55_VerifyRaiseDisputeOnAllPortalAfterOneVarCancel extends BaseCla
 	public String query2 = rd.getQuery2();
 	public String status2 = rd.setOrderStatus2();
 
-	@Test(priority = 1)
+	@Test(enabled = true, priority = 1)
 	public void submitAndAcceptQuotation() throws InterruptedException, IOException {
 		logger.info("Application Opened.");
 		LoginPage lp = new LoginPage(driver);
@@ -139,7 +139,7 @@ public class TC55_VerifyRaiseDisputeOnAllPortalAfterOneVarCancel extends BaseCla
 		BaseClass.closeAllWinTabsExceptParent();
 	}
 
-	@Test(priority = 2)
+	@Test(enabled = true, priority = 2)
 	public void verifyOpenDispute() throws InterruptedException, IOException {
 		driver.get(baseURL);
 
@@ -201,7 +201,7 @@ public class TC55_VerifyRaiseDisputeOnAllPortalAfterOneVarCancel extends BaseCla
 		}
 	}
 
-	@Test(priority = 3)
+	@Test(enabled = true, priority = 3)
 	public void varifyCancelSecondVariant() throws InterruptedException, IOException {
 		driver.get(baseURL);
 		LoginPage lp = new LoginPage(driver);

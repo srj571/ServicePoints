@@ -45,7 +45,7 @@ public class TC54_VerifyReopeningOfHoldOrderStatusDispute extends BaseClass {
 	public String agentSpPass = rd.getAgentSpPassDsp();
 	public String teamleaderName = rd.getTeamleaderName();
 
-	@Test(priority = 1)
+	@Test(enabled = true, priority = 1)
 	public void submitAndAcceptQuotation() throws InterruptedException, IOException {
 		logger.info("Application Opened.");
 		LoginPage lp = new LoginPage(driver);
@@ -151,7 +151,7 @@ public class TC54_VerifyReopeningOfHoldOrderStatusDispute extends BaseClass {
 		BaseClass.closeAllWinTabsExceptParent();
 	}
 
-	@Test(priority = 2)
+	@Test(enabled = true, priority = 2)
 	public void verifyOpenDispute() throws InterruptedException, IOException {
 		driver.get(baseURL);
 
@@ -213,7 +213,7 @@ public class TC54_VerifyReopeningOfHoldOrderStatusDispute extends BaseClass {
 		}
 	}
 
-	@Test(priority = 3)
+	@Test(enabled = true, priority = 3)
 	public void verifyRequotation() throws InterruptedException, IOException {
 		driver.get(baseURL);
 
@@ -271,6 +271,8 @@ public class TC54_VerifyReopeningOfHoldOrderStatusDispute extends BaseClass {
 		Thread.sleep(2000);
 		cop.clickOnFDiv();
 		Thread.sleep(2000);
+		cop.scrollTillShowDisputeBtn(driver);
+		Thread.sleep(2000);
 		cop.clickOnShowDispute();
 		Thread.sleep(5000);
 		cop.closeShowDisputeWin();
@@ -278,7 +280,7 @@ public class TC54_VerifyReopeningOfHoldOrderStatusDispute extends BaseClass {
 		BaseClass.closeAllWinTabsExceptParent();
 	}
 
-	@Test(priority = 4)
+	@Test(enabled = true, priority = 4)
 	public void verifyShowDisputeFromTeamleaderSide() throws InterruptedException, IOException {
 		driver.get(baseURL);
 		LoginPage lp = new LoginPage(driver);
@@ -318,6 +320,8 @@ public class TC54_VerifyReopeningOfHoldOrderStatusDispute extends BaseClass {
 		Thread.sleep(2000);
 		tdp.clickOnFDiv();
 		Thread.sleep(2000);
+		tdp.scrollTillShowDispute(driver);
+		Thread.sleep(2000);
 		tdp.clickOnShowDsp();
 		Thread.sleep(2000);
 
@@ -339,8 +343,8 @@ public class TC54_VerifyReopeningOfHoldOrderStatusDispute extends BaseClass {
 		}
 		BaseClass.closeAllWinTabsExceptParent();
 	}
-	
-	@Test(priority = 5)
+
+	@Test(enabled = true, priority = 5)
 	public void verifyReopenHoldDeclinedDisputes() throws InterruptedException {
 		driver.get(baseURL);
 		LoginPage lp = new LoginPage(driver);
@@ -363,22 +367,19 @@ public class TC54_VerifyReopeningOfHoldOrderStatusDispute extends BaseClass {
 		cop.clickOnGoToDisputesTab();
 		Thread.sleep(2000);
 
-		cop.clickOnClosedDisputestab();
-		Thread.sleep(2000);
-		
 		cop.clickOnDeclinedDisputesTab();
 		Thread.sleep(2000);
-		
+
 		cop.sendPnameinSearch(product54);
 		Thread.sleep(2000);
 
 		cop.reopenHoldDeclinedDisputes(driver, queries);
 		Thread.sleep(2000);
 		logger.info("Verification of not reopening of Hold status declined dispute.");
-		
+
 	}
 
-	@Test(priority = 6)
+	@Test(enabled = true, priority = 6)
 	public void submitReQuotation() throws InterruptedException, IOException {
 		driver.get(baseURL);
 		LoginPage lp = new LoginPage(driver);
@@ -447,7 +448,7 @@ public class TC54_VerifyReopeningOfHoldOrderStatusDispute extends BaseClass {
 		BaseClass.closeAllWinTabsExceptParent();
 	}
 
-	@Test(priority = 7)
+	@Test(enabled = true, priority = 7)
 	public void verifyAcceptingRequoteQuote() throws InterruptedException, IOException {
 		ClientProductPage cl = new ClientProductPage(driver);
 		AgentSupProductsPage aspp = new AgentSupProductsPage(driver);
@@ -500,7 +501,7 @@ public class TC54_VerifyReopeningOfHoldOrderStatusDispute extends BaseClass {
 		}
 	}
 
-	@Test(priority = 8)
+	@Test(enabled = true, priority = 8)
 	public void againRaiseDisputes() throws InterruptedException {
 		driver.get(baseURL);
 		LoginPage lp = new LoginPage(driver);
@@ -526,7 +527,7 @@ public class TC54_VerifyReopeningOfHoldOrderStatusDispute extends BaseClass {
 		cop.raisedDispute(driver, queries);
 	}
 
-	@Test(priority = 9)
+	@Test(enabled = true, priority = 9)
 	public void verifyAcceptDispute() throws InterruptedException, IOException {
 		driver.get(baseURL);
 		LoginPage lp = new LoginPage(driver);
@@ -546,7 +547,7 @@ public class TC54_VerifyReopeningOfHoldOrderStatusDispute extends BaseClass {
 
 	}
 
-	@Test(priority = 10)
+	@Test(enabled = true, priority = 10)
 	public void verifyReopenDeclinedDisputes() throws InterruptedException {
 		driver.get(baseURL);
 		LoginPage lp = new LoginPage(driver);
@@ -571,8 +572,6 @@ public class TC54_VerifyReopeningOfHoldOrderStatusDispute extends BaseClass {
 		cop.sendPnameinSearch(product54);
 		Thread.sleep(2000);
 
-		cop.clickOnClosedDisputestab();
-		Thread.sleep(2000);
 		cop.clickOnDeclinedDisputesTab();
 		Thread.sleep(2000);
 

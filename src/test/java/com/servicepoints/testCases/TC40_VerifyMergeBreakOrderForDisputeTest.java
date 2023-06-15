@@ -39,7 +39,7 @@ public class TC40_VerifyMergeBreakOrderForDisputeTest extends BaseClass{
 	public String val9=rd.getVal9();
 	
     
- 	@Test(priority = 1)
+ 	@Test(enabled = true,priority = 1)
 	public void submitAndAcceptQuotation() throws InterruptedException, IOException {
 		logger.info("Application Opened.");
 		LoginPage lp = new LoginPage(driver);
@@ -156,7 +156,7 @@ public class TC40_VerifyMergeBreakOrderForDisputeTest extends BaseClass{
 		BaseClass.closeAllWinTabsExceptParent();
 	}
 	
- 	@Test(priority = 2)
+ 	@Test(enabled = true, priority = 2)
  	public void verifyOpenDispute() throws InterruptedException, IOException {
  		driver.get(baseURL);
  		
@@ -222,8 +222,8 @@ public class TC40_VerifyMergeBreakOrderForDisputeTest extends BaseClass{
 		BaseClass.closeAllWinTabsExceptParent();
  	}
  	
- 	
- 	@Test(enabled = false)
+ 	//keep it false- Not needed
+ 	@Test(enabled = false,priority = 3)
  	public void verifyAcceptDispute() throws InterruptedException, IOException {
  		driver.get(baseURL);
  		LoginPage lp=new LoginPage(driver);
@@ -307,7 +307,7 @@ public class TC40_VerifyMergeBreakOrderForDisputeTest extends BaseClass{
  	}
  	
  	
- 	@Test(priority = 3)
+ 	@Test(enabled = true, priority = 3)
  	public void verifyRequotation() throws InterruptedException, IOException {
  		driver.get(baseURL);
  		
@@ -427,7 +427,7 @@ public class TC40_VerifyMergeBreakOrderForDisputeTest extends BaseClass{
 		 BaseClass.closeAllWinTabsExceptParent();
  	}
  	
- 	@Test(priority = 4)
+ 	@Test(enabled = true, priority = 4)
  	public void acceptRequoteQuotation() throws InterruptedException, IOException {
  		driver.get(baseURL);
  		
@@ -493,7 +493,7 @@ public class TC40_VerifyMergeBreakOrderForDisputeTest extends BaseClass{
 		BaseClass.closeAllWinTabsExceptParent();
  	}
  	
- 	@Test(enabled = false)
+ 	@Test(enabled = true, priority = 5)
  	public void verifyDisputeIsStillOpenFromAgentSide() throws InterruptedException {
  		driver.get(baseURL);
  		LoginPage lp=new LoginPage(driver);
@@ -514,12 +514,12 @@ public class TC40_VerifyMergeBreakOrderForDisputeTest extends BaseClass{
 //		logger.info("Clicked on show disputes.");
 //		Thread.sleep(3000);
 		
-		asop.clickOnEachDisputeAgentSide(driver);
+		asop.handleEachDispute(driver);
 		logger.info("Verification of show dispute from Agent side.");
 		
  	}
  	
- 	@Test(priority = 6)
+ 	@Test(enabled = true, priority = 6)
  	public void verifyDisputeIsStillOpenFromClientSide() throws InterruptedException {
  		driver.get(baseURL);
  		LoginPage lp=new LoginPage(driver);
@@ -553,8 +553,6 @@ public class TC40_VerifyMergeBreakOrderForDisputeTest extends BaseClass{
 //		Thread.sleep(3000);
 		
 		cop.clickOnEachDivForDisputeVerification(driver);
-		Thread.sleep(2000);
-		
 		logger.info("Verification of show disputes successfull from client side.");
  	}
 }

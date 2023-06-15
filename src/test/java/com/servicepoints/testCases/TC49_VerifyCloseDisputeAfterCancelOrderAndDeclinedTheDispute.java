@@ -18,7 +18,7 @@ import com.servicepoints.utilities.ReadConfig;
 
 import junit.framework.Assert;
 
-public class TC49_VerifyCloseDisputeAfterCancelOrderAndDeclinedTheDispute extends BaseClass{
+public class TC49_VerifyCloseDisputeAfterCancelOrderAndDeclinedTheDispute extends BaseClass {
 
 	ReadConfig rd = new ReadConfig();
 	public String agentMailMBO = rd.setAgentMailMergeBreakOrder();
@@ -33,15 +33,15 @@ public class TC49_VerifyCloseDisputeAfterCancelOrderAndDeclinedTheDispute extend
 	public String agentAnswer = rd.setAnswer();
 	public String otherTxt = rd.setOtherTxt();
 	public String query2 = rd.getQuery2();
-	public String status2=rd.setOrderStatus2();
-	
-	public String agentSpMail=rd.getAgentSpMailDsp();
-	public String agentSpPass=rd.getAgentSpPassDsp();
-	public String teamleaderName=rd.getTeamleaderName();
+	public String status2 = rd.setOrderStatus2();
 
-	public String storeFilter=rd.storeForDisputeFilter();
-	
-	@Test(priority = 1)
+	public String agentSpMail = rd.getAgentSpMailDsp();
+	public String agentSpPass = rd.getAgentSpPassDsp();
+	public String teamleaderName = rd.getTeamleaderName();
+
+	public String storeFilter = rd.storeForDisputeFilter();
+
+	@Test(enabled = true, priority = 1)
 	public void submitAndAcceptQuotation() throws InterruptedException, IOException {
 		logger.info("Application Opened.");
 		LoginPage lp = new LoginPage(driver);
@@ -120,7 +120,7 @@ public class TC49_VerifyCloseDisputeAfterCancelOrderAndDeclinedTheDispute extend
 		cl.searchProduct(product49);
 		Thread.sleep(4000);
 		logger.info("Product name searched.");
-		
+
 		cl.selectProductTab();
 		Thread.sleep(3000);
 
@@ -136,7 +136,7 @@ public class TC49_VerifyCloseDisputeAfterCancelOrderAndDeclinedTheDispute extend
 		Thread.sleep(1000);
 		cl.scrollTillAcceptQbtn(driver);
 		Thread.sleep(1000);
-		
+
 		cl.selectAcceptQuoteBtn();
 		Thread.sleep(4000);
 		logger.info("Clicked on Accept Quotation button.");
@@ -154,19 +154,19 @@ public class TC49_VerifyCloseDisputeAfterCancelOrderAndDeclinedTheDispute extend
 		BaseClass.closeAllWinTabsExceptParent();
 	}
 
-	@Test(priority = 2)
+	@Test(enabled = true, priority = 2)
 	public void verifyOpenDispute() throws InterruptedException, IOException {
 		driver.get(baseURL);
 
 		LoginPage lp = new LoginPage(driver);
 		Thread.sleep(3000);
-		
+
 		lp.setAdminMailId(clientMailMBO);
 		lp.setAdminPassword(clientPassMBO);
 		lp.clickLoginbtn();
 		Thread.sleep(2000);
 		logger.info("client logged in Successfully.");
-		
+
 		ClientOrdersPage cop = new ClientOrdersPage(driver);
 		cop.clickOnOrdersTab();
 		cop.sendPnameinSearch(product49);
@@ -178,7 +178,7 @@ public class TC49_VerifyCloseDisputeAfterCancelOrderAndDeclinedTheDispute extend
 		cop.clickOnProcessingTab();
 		Thread.sleep(3000);
 		logger.info("Processing filter selected.");
-		
+
 		cop.clickOnFDiv();
 		logger.info("Clicked on first div.");
 		Thread.sleep(3000);
@@ -231,6 +231,8 @@ public class TC49_VerifyCloseDisputeAfterCancelOrderAndDeclinedTheDispute extend
 		Thread.sleep(3000);
 		asop.clickOnFrstDsp();
 		Thread.sleep(3000);
+		asop.scrollTillShowDispute(driver);
+		Thread.sleep(2000);
 		asop.clickOnShowDsp();
 		logger.info("Clicked on show disputes.");
 		Thread.sleep(3000);
@@ -257,113 +259,113 @@ public class TC49_VerifyCloseDisputeAfterCancelOrderAndDeclinedTheDispute extend
 		}
 		BaseClass.closeAllWinTabsExceptParent();
 	}
-	
-	@Test(priority = 3)
+
+	@Test(enabled = true, priority = 3)
 	public void verifyCancelOrder() throws InterruptedException, IOException {
-		
+
 		driver.get(baseURL);
-		LoginPage lp=new LoginPage(driver);
-		
+		LoginPage lp = new LoginPage(driver);
+
 		lp.setAdminMailId(clientMailMBO);
 		lp.setAdminPassword(clientPassMBO);
 		lp.clickLoginbtn();
 		logger.info("Agent logged in Successfully.");
 		Thread.sleep(2000);
-		
-		ClientOrdersPage cop=new ClientOrdersPage(driver);
+
+		ClientOrdersPage cop = new ClientOrdersPage(driver);
 		cop.clickOnOrdersTab();
 		logger.info("Clicked on orders tab.");
 		Thread.sleep(2000);
 		cop.sendPnameinSearch(product49);
 		Thread.sleep(4000);
-	
+
 		cop.clickOnDropdown();
 		Thread.sleep(2000);
-		
+
 		cop.dropdownSearch(status2);
 		Thread.sleep(4000);
 		cop.clickOnProcessingSel();
 		Thread.sleep(2000);
 		logger.info("Processing filter selected.");
-		
+
 		cop.clickOnFDiv();
 		Thread.sleep(2000);
-		
+
 		cop.scrollTillEle(driver);
 		Thread.sleep(1000);
-		
+
 		cop.clickOnCancelBtn();
 		logger.info("Clicked on cancel order.");
 		Thread.sleep(2000);
-		
+
 		cop.clickOnFirstCheckbox();
 		Thread.sleep(2000);
 		logger.info("Clicked on first checkbox.");
-		
+
 		cop.clickOnSubmitOrder();
 		Thread.sleep(2000);
 		logger.info("Clicked on Submit order.");
-		
+
 		cop.clickOnCancelOrderSuccessBtn();
 		Thread.sleep(3000);
-		
-		if(driver.getPageSource().contains("Order cancelled successfully")) {
+
+		if (driver.getPageSource().contains("Order cancelled successfully")) {
 			Assert.assertTrue(true);
 			logger.info("Verification of cancel one variant is Successed.");
-		}else {
+		} else {
 			captureScreen(driver, "Cancel order in dispute");
 			Thread.sleep(4000);
 			logger.info("Verification of cancel one variant is failed.");
 			Assert.assertTrue(false);
 		}
 	}
-	
-	@Test(priority = 4)
+
+	@Test(enabled = true, priority = 4)
 	public void verifyCloseDisputeFromSupplierSide() throws InterruptedException {
 		driver.get(baseURL);
-		LoginPage lp=new LoginPage(driver);
+		LoginPage lp = new LoginPage(driver);
 		lp.setAdminMailId(clientMailMBO);
 		lp.setAdminPassword(clientPassMBO);
 		lp.clickLoginbtn();
 		Thread.sleep(2000);
-		
+
 		ClientOrdersPage cop = new ClientOrdersPage(driver);
 		cop.clickOnOrdersTab();
 		Thread.sleep(2000);
-		
+
 		cop.clickOnGoToDisputesTab();
 		Thread.sleep(2000);
-		
-		cop.clickOnClosedDisputestab();
-		Thread.sleep(1000);
-		
+
 		cop.clickOnDeclinedDisputesTab();
 		logger.info("Clicked on Declined dispute tab.");
 		Thread.sleep(1000);
-		
+
 		cop.sendPnameinSearch(product49);
 		logger.info("Product name searched.");
 		Thread.sleep(2000);
-		
+
 		cop.clickOnFDiv();
 		Thread.sleep(2000);
-		
+
+		cop.scrollTillShowDisputeBtn(driver);
+		Thread.sleep(2000);
+
 		cop.clickOnShowDispute();
 		Thread.sleep(5000);
-		
+
 		logger.info("Clicked on Show Dispute.");
 		logger.info("Verify from client side");
 	}
-	
-	@Test(priority = 5)
+
+	@Test(enabled = true, priority = 5)
 	public void verifyShowDisputeFromSupportSide() throws InterruptedException {
 		driver.get(baseURL);
-		LoginPage lp=new LoginPage(driver);
+		LoginPage lp = new LoginPage(driver);
 		lp.setAdminMailId(agentSpMail);
 		lp.setAdminPassword(agentSpPass);
 		lp.clickLoginbtn();
 		Thread.sleep(2000);
-		
+
 		AgentDisputesPage asop = new AgentDisputesPage(driver);
 		asop.clickOnDisputesTab();
 		logger.info("Open disputes page.");
@@ -371,101 +373,78 @@ public class TC49_VerifyCloseDisputeAfterCancelOrderAndDeclinedTheDispute extend
 		asop.searchProductForDsp(product49);
 		Thread.sleep(2000);
 		logger.info("Product name searched.");
-		
-		asop.clickOnClosedDisputesTab();
-		Thread.sleep(1000);
-		
+
 		asop.clickOnDeclinedDispute();
 		Thread.sleep(1000);
 		logger.info("Clicked on declined dispute.");
-		
+
 		asop.clickOnAllStoreBtn();
 		asop.sendStoreNameInStoreFilter(storeFilter);
 		Thread.sleep(1000);
 		logger.info("Store name entered.");
-		
+
 		asop.clickOnFStoreEle();
 		Thread.sleep(3000);
-		
-		//asop.clickOnEachDisputeAgentSide(driver);
-		
-		asop.handleEachDispute(driver);
-		
-//		asop.clickOnFStoreEle();
-//		Thread.sleep(2000);
-//		
-//		asop.clickOnFrstDsp();
-		Thread.sleep(3000);
-//		
-//		asop.clickOnShowDsp();
-//		logger.info("Clicked on show disputes.");
-//		Thread.sleep(5000);
-//		logger.info("Verify from Teamleader side");
-		
+
+		asop.clickOnEachDisputeAgentSide(driver);
+		Thread.sleep(5000);
 	}
-	
-	
-	@Test(priority = 6)
+
+	@Test(enabled = true, priority = 6)
 	public void verifyShowDisputeFromTeamleaderSide() throws InterruptedException {
 		driver.get(baseURL);
-		LoginPage lp=new LoginPage(driver);
+		LoginPage lp = new LoginPage(driver);
 		lp.setAdminMailId(AdminMailID);
 		lp.setAdminPassword(AdminPassword);
 		lp.clickLoginbtn();
 		Thread.sleep(2000);
 		logger.info("Admin logged in successfully.");
-		
-		AdminAccountsPage adminAccount=new AdminAccountsPage(driver);
+
+		AdminAccountsPage adminAccount = new AdminAccountsPage(driver);
 		adminAccount.getAdminAccountsPage();
 		logger.info("Accounts page opened.");
 		Thread.sleep(3000);
-		
+
 		adminAccount.enterUserName(teamleaderName);
 		logger.info("Entered Client name in search field.");
-		
+
 		adminAccount.getTeamleaderTab();
 		Thread.sleep(2000);
-		
+
 		adminAccount.clickOnLoginBtn();
 		Thread.sleep(3000);
 		logger.info("Teamleader logged in successfully.");
-		
-		Set<String> window=driver.getWindowHandles();
-		Iterator<String> it=window.iterator();
-		String parent=it.next();
-		String child=it.next();
+
+		Set<String> window = driver.getWindowHandles();
+		Iterator<String> it = window.iterator();
+		String parent = it.next();
+		String child = it.next();
 		driver.switchTo().window(child);
 		Thread.sleep(3000);
-		
-		TeamleaderDisputePage tdp=new TeamleaderDisputePage(driver);
+
+		TeamleaderDisputePage tdp = new TeamleaderDisputePage(driver);
 		tdp.clickOnDisputeTab();
 		Thread.sleep(1000);
-		
-		tdp.clickOnCloseDisputeTab();
-		Thread.sleep(1000);
-		logger.info("Clicked on close dispute tab.");
+
 		tdp.clickOnDeclinedDispute();
 		Thread.sleep(1000);
 		logger.info("Clicked on decline dispute tab.");
-		
+
 		tdp.searchProduct(product49);
 		logger.info("Product name searched.");
 		Thread.sleep(1000);
-		
+
 		tdp.clickOnAllStoreFilter();
 		Thread.sleep(2000);
-		
+
 		tdp.searchStoreFilter(storeFilter);
 		Thread.sleep(1000);
-		
+
 		tdp.clickOnFStoreTab();
 		logger.info("Store filter handled.");
 		Thread.sleep(1000);
-		
+
 		tdp.handleEachDispute(driver);
-		Thread.sleep(3000);
-//		tdp.clickOnShowDsp();
-//		Thread.sleep(5000);
-//		logger.info("Clicked on Show dispute button.");
+		Thread.sleep(5000);
 	}
 }

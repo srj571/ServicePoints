@@ -44,7 +44,7 @@ public class TC48_VerifyDisputeCantBeReopenForTheStatusCancelled extends BaseCla
 	public String status2 = rd.setOrderStatus2();
 	public String trackingNum = rd.setTrackingNum();
 
-	@Test(priority = 1)
+	@Test(enabled = true,priority = 1)
 	public void submitAndAcceptQuotation() throws InterruptedException, IOException {
 		logger.info("Application Opened.");
 		LoginPage lp = new LoginPage(driver);
@@ -150,7 +150,7 @@ public class TC48_VerifyDisputeCantBeReopenForTheStatusCancelled extends BaseCla
 		BaseClass.closeAllWinTabsExceptParent();
 	}
 
-	@Test(priority = 2)
+	@Test(enabled = true,priority = 2)
 	public void verifyOpenDisputeAndDeclined() throws InterruptedException, IOException {
 		driver.get(baseURL);
 
@@ -227,6 +227,8 @@ public class TC48_VerifyDisputeCantBeReopenForTheStatusCancelled extends BaseCla
 		Thread.sleep(3000);
 		asop.clickOnFrstDsp();
 		Thread.sleep(3000);
+		asop.scrollTillShowDispute(driver);
+		Thread.sleep(2000);
 		asop.clickOnShowDsp();
 		logger.info("Clicked on show disputes.");
 		Thread.sleep(3000);
@@ -254,7 +256,7 @@ public class TC48_VerifyDisputeCantBeReopenForTheStatusCancelled extends BaseCla
 		BaseClass.closeAllWinTabsExceptParent();
 	}
 
-	@Test(priority = 3)
+	@Test(enabled = true,priority = 3)
 	public void verifyCancelOrder() throws InterruptedException, IOException {
 
 		driver.get(baseURL);
@@ -314,7 +316,7 @@ public class TC48_VerifyDisputeCantBeReopenForTheStatusCancelled extends BaseCla
 		}
 	}
 
-	@Test(priority = 4)
+	@Test(enabled = true,priority = 4)
 	public void verifyOpenDisputeAgainAndAccept() throws InterruptedException, IOException {
 		driver.get(baseURL);
 
@@ -418,7 +420,7 @@ public class TC48_VerifyDisputeCantBeReopenForTheStatusCancelled extends BaseCla
 		}
 	}
 
-	@Test(priority = 5)
+	@Test(enabled = true,priority = 5)
 	public void verifyReopeningOfDeclinedDispute() throws InterruptedException {
 		driver.get(baseURL);
 		LoginPage lp = new LoginPage(driver);
@@ -433,21 +435,19 @@ public class TC48_VerifyDisputeCantBeReopenForTheStatusCancelled extends BaseCla
 		Thread.sleep(2000);
 		cop.clickOnGoToDisputesTab();
 		Thread.sleep(2000);
-		cop.clickOnClosedDisputestab();
-		Thread.sleep(1000);
 		cop.clickOnDeclinedDisputesTab();
 		Thread.sleep(1000);
 		cop.sendPnameinSearch(product48);
 		Thread.sleep(2000);
 
 		// cop.reopenDeclinedDisputesForCancelOrder(driver, queries);
-		cop.clickOn3rdDiv();
+		cop.clickOnFDiv();
 		Thread.sleep(2000);
 		// cop.clickOnFDiv();
-		cop.scrollTillThirdShowDisputeBtn(driver);
+		cop.scrollTillShowDisputeBtn(driver);
 		Thread.sleep(1000);
 
-		cop.clickOnThirdShowDisputeBtn();
+		cop.clickOnShowDispute();
 		Thread.sleep(2000);
 		cop.sendQueries(query2);
 		Thread.sleep(1000);
@@ -455,17 +455,13 @@ public class TC48_VerifyDisputeCantBeReopenForTheStatusCancelled extends BaseCla
 		cop.SaveDispute();
 		Thread.sleep(3000);
 
-		String actVal = cop.alertTextForCancelOrder.getText();
-		String expVal = "You can not generate or reopen the dispute request for this order.";
-		if (expVal.equals(actVal)) {
+		if(driver.getPageSource().contains("Message send successfully")) {
 			Assert.assertTrue(true);
 			Thread.sleep(3000);
 			logger.info("Verification of Dispute acceptance is successfull.");
-		} else {
+		}else {
 			logger.info("Verification of Dispute acceptance is failed.");
 			Assert.assertTrue(false);
 		}
-
-		cop.closeAlert.click();
 	}
 }

@@ -19,9 +19,8 @@ import com.servicepoints.utilities.ReadConfig;
 
 import junit.framework.Assert;
 
-public class TC51_VerifyShowDisputeAfterAddingTrackingNumAndCancelOrder extends BaseClass{
+public class TC51_VerifyShowDisputeAfterAddingTrackingNumAndCancelOrder extends BaseClass {
 
-	
 	ReadConfig rd = new ReadConfig();
 	public String agentMailMBO = rd.setAgentMailMergeBreakOrder();
 	public String agentPassMBO = rd.setAgentPassMergeBreakOrder();
@@ -35,17 +34,17 @@ public class TC51_VerifyShowDisputeAfterAddingTrackingNumAndCancelOrder extends 
 	public String agentAnswer = rd.setAnswer();
 	public String otherTxt = rd.setOtherTxt();
 	public String query2 = rd.getQuery2();
-	public String status2=rd.setOrderStatus2();
-	
-	public String agentSpMail=rd.getAgentSpMailDsp();
-	public String agentSpPass=rd.getAgentSpPassDsp();
-	public String teamleaderName=rd.getTeamleaderName();
-	
+	public String status2 = rd.setOrderStatus2();
+
+	public String agentSpMail = rd.getAgentSpMailDsp();
+	public String agentSpPass = rd.getAgentSpPassDsp();
+	public String teamleaderName = rd.getTeamleaderName();
+
 	public String trackingNum = rd.setTrackingNum();
 
-	public String storeFilter=rd.storeForDisputeFilter();
+	public String storeFilter = rd.storeForDisputeFilter();
 
-	@Test(priority = 1)
+	@Test(enabled = false, priority = 1)
 	public void submitAndAcceptQuotation() throws InterruptedException, IOException {
 		logger.info("Application Opened.");
 		LoginPage lp = new LoginPage(driver);
@@ -124,7 +123,7 @@ public class TC51_VerifyShowDisputeAfterAddingTrackingNumAndCancelOrder extends 
 		cl.searchProduct(product51);
 		Thread.sleep(4000);
 		logger.info("Product name searched.");
-		
+
 		cl.selectProductTab();
 		Thread.sleep(3000);
 
@@ -140,7 +139,7 @@ public class TC51_VerifyShowDisputeAfterAddingTrackingNumAndCancelOrder extends 
 		Thread.sleep(1000);
 		cl.scrollTillAcceptQbtn(driver);
 		Thread.sleep(1000);
-		
+
 		cl.selectAcceptQuoteBtn();
 		Thread.sleep(4000);
 		logger.info("Clicked on Accept Quotation button.");
@@ -158,19 +157,19 @@ public class TC51_VerifyShowDisputeAfterAddingTrackingNumAndCancelOrder extends 
 		BaseClass.closeAllWinTabsExceptParent();
 	}
 
-	@Test(priority = 2)
+	@Test(enabled = false, priority = 2)
 	public void verifyOpenDispute() throws InterruptedException, IOException {
 		driver.get(baseURL);
 
 		LoginPage lp = new LoginPage(driver);
 		Thread.sleep(3000);
-		
+
 		lp.setAdminMailId(clientMailMBO);
 		lp.setAdminPassword(clientPassMBO);
 		lp.clickLoginbtn();
 		Thread.sleep(2000);
 		logger.info("client logged in Successfully.");
-		
+
 		ClientOrdersPage cop = new ClientOrdersPage(driver);
 		cop.clickOnOrdersTab();
 		cop.sendPnameinSearch(product51);
@@ -182,7 +181,7 @@ public class TC51_VerifyShowDisputeAfterAddingTrackingNumAndCancelOrder extends 
 		cop.clickOnProcessingTab();
 		Thread.sleep(3000);
 		logger.info("Processing filter selected.");
-		
+
 		cop.clickOnFDiv();
 		logger.info("Clicked on first div.");
 		Thread.sleep(3000);
@@ -219,9 +218,9 @@ public class TC51_VerifyShowDisputeAfterAddingTrackingNumAndCancelOrder extends 
 			Assert.assertTrue(false);
 		}
 	}
-	
-	@Test(priority = 3)
-	public void verifyAddingTrackingNumOn3rdVariant() throws InterruptedException{
+
+	@Test(enabled = false, priority = 3)
+	public void verifyAddingTrackingNumOn3rdVariant() throws InterruptedException {
 		driver.get(baseURL);
 		LoginPage lp = new LoginPage(driver);
 		WebDriverWait wait = new WebDriverWait(driver, 10);
@@ -271,19 +270,17 @@ public class TC51_VerifyShowDisputeAfterAddingTrackingNumAndCancelOrder extends 
 
 		aop.clickOnAllCheckBoxes();
 		Thread.sleep(1000);
-		
+
 		aop.clickOnThirdOrder();
 		Thread.sleep(1000);
-		
+
 		aop.setTrackingNum(trackingNum);
-		// aop.clickOnCloseTrackingPopup();
 		Thread.sleep(3000);
-		// wait.until(ExpectedConditions.visibilityOf(aop.sbmtTracking));
 
 		aop.clickOnSbmtTracking();
 		logger.info("Clicked on submit tracking button.");
-		// wait.until(ExpectedConditions.visibi);
-		Thread.sleep(7000);
+
+		aop.waitTillSuccessBoxOfTrackingNum(driver);
 
 		if (driver.getPageSource().contains("Tracking number successfully added")) {
 			logger.info("Verification of adding tracking number is Successfull.");
@@ -294,134 +291,138 @@ public class TC51_VerifyShowDisputeAfterAddingTrackingNumAndCancelOrder extends 
 			logger.info("Verification of adding tracking number is failed.");
 		}
 	}
-	
-	@Test(priority = 4)
+
+	@Test(enabled = true, priority = 4)
 	public void verifyDisputeStatusFromClientSide() throws InterruptedException {
 		driver.get(baseURL);
 
 		LoginPage lp = new LoginPage(driver);
 		Thread.sleep(3000);
-		
+
 		lp.setAdminMailId(clientMailMBO);
 		lp.setAdminPassword(clientPassMBO);
 		lp.clickLoginbtn();
 		Thread.sleep(2000);
 		logger.info("client logged in Successfully.");
-		
+
 		ClientOrdersPage cop = new ClientOrdersPage(driver);
 		cop.clickOnOrdersTab();
-		
+
 		cop.clickOnGoToDisputesTab();
 		Thread.sleep(2000);
-		
+
 		cop.sendPnameinSearch(product51);
 		logger.info("Product name searched.");
 		Thread.sleep(2000);
-		
+
 		cop.clickOnFDiv();
 		Thread.sleep(2000);
-		
+
+		cop.scrollTillShowDisputeBtn(driver);
+		Thread.sleep(2000);
+
 		cop.clickOnShowDispute();
 		Thread.sleep(5000);
 		logger.info("Clicked on Show Dispute.");
-		
-//		cop.clickOnEachDivForDisputeVerification(driver);
-//		Thread.sleep(2000);
-//		logger.info("Verify from client side");
-		
+
+		cop.clickOnEachDivForDisputeVerification(driver);
+		logger.info("Verified from client side.");
+
 	}
-	
-	@Test(priority = 5)
-	public void varifyCanceleSecondVariant() throws InterruptedException, IOException {
+
+	@Test(enabled = true, priority = 5)
+	public void varifyCancelSecondVariant() throws InterruptedException, IOException {
 		driver.get(baseURL);
-		LoginPage lp=new LoginPage(driver);
-		
+		LoginPage lp = new LoginPage(driver);
+
 		lp.setAdminMailId(clientMailMBO);
 		lp.setAdminPassword(clientPassMBO);
 		lp.clickLoginbtn();
 		logger.info("Agent logged in Successfully.");
 		Thread.sleep(2000);
-		
-		ClientOrdersPage cop=new ClientOrdersPage(driver);
+
+		ClientOrdersPage cop = new ClientOrdersPage(driver);
 		cop.clickOnOrdersTab();
 		logger.info("Clicked on orders tab.");
 		Thread.sleep(2000);
 		cop.sendPnameinSearch(product51);
 		Thread.sleep(4000);
-	
+
 		cop.clickOnDropdown();
 		Thread.sleep(2000);
-		
+
 		cop.dropdownSearch(status2);
 		Thread.sleep(4000);
-		
+
 		cop.clickOnProcessingSel();
 		Thread.sleep(2000);
 		logger.info("Processing filter selected.");
-		
+
 		cop.clickOnFDiv();
 		Thread.sleep(2000);
 		logger.info("Processing filter selected.");
-		
+
 		cop.scrollTillEle(driver);
 		Thread.sleep(2000);
 		logger.info("Processing filter selected.");
-		
+
 		cop.clickOnCancelOrderBtn();
 		Thread.sleep(2000);
 		logger.info("Processing filter selected.");
-		
+
 		cop.clickOnSecondCheckBox();
 		Thread.sleep(2000);
 		logger.info("Processing filter selected.");
-		
+
 		cop.clickOnSubmitOrder();
 		Thread.sleep(1000);
 		logger.info("Processing filter selected.");
-		
+
 		cop.clickOnCancelOrderSuccessBtn();
 		Thread.sleep(3000);
 		logger.info("Processing filter selected.");
-		
-		if(driver.getPageSource().contains("Order cancelled successfully")) {
+
+		if (driver.getPageSource().contains("Order cancelled successfully")) {
 			Assert.assertTrue(true);
 			logger.info("Verification of cancel variant is Successed.");
-		}else {
+		} else {
 			captureScreen(driver, "Cancel order for dispute");
 			Thread.sleep(4000);
 			logger.info("Verification of cancel variant is failed.");
 			Assert.assertTrue(false);
 		}
-		
+
 		driver.get(baseURL);
 
 		Thread.sleep(3000);
-		
+
 		lp.setAdminMailId(clientMailMBO);
 		lp.setAdminPassword(clientPassMBO);
 		lp.clickLoginbtn();
 		Thread.sleep(2000);
 		logger.info("client logged in Successfully.");
-		
+
 		cop.clickOnOrdersTab();
-		
-		cop.clickOnGoToDisputesTab();      
+
+		cop.clickOnGoToDisputesTab();
 		Thread.sleep(2000);
-		
+
 		cop.sendPnameinSearch(product51);
 		logger.info("Product name searched.");
 		Thread.sleep(2000);
-		
+
 		cop.clickOnFDiv();
+		Thread.sleep(2000);
+
+		cop.scrollTillShowDisputeBtn(driver);
 		Thread.sleep(2000);
 		
 		cop.clickOnShowDispute();
 		Thread.sleep(5000);
 		logger.info("Clicked on Show Dispute.");
-		
-//		cop.clickOnEachDivForDisputeVerification(driver);
-//		Thread.sleep(2000);
-//		logger.info("Verify from client side");
-		
+
+		cop.clickOnEachDivForDisputeVerification(driver);
+		logger.info("Verified from client side.");
+
 	}
 }

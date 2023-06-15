@@ -23,8 +23,8 @@
       <class name="com.servicepoints.testCases.TC11_VerifyDeletionOfStoreTest"/>
       <class name="com.servicepoints.testCases.TC12_VerifySubmitQuoteTest"/>
       <class name="com.servicepoints.testCases.TC13_VerifyAcceptQuotationTest"/>
-      <class name="com.servicepoints.testCases.TC14_VerifyExcludeFunctionTest"/> -->
-      <class name="com.servicepoints.testCases.TC15_verifyAskForPriceChange"/>
+      <class name="com.servicepoints.testCases.TC14_VerifyExcludeFunctionTest"/>
+      <class name="com.servicepoints.testCases.TC15_verifyAskForPriceChange"/> -->
        <!--<class name="com.servicepoints.testCases.TC16_VerifyUpdateDeleteQuotation"/>
       <class name="com.servicepoints.testCases.TC17_VerifyAddNewVariant"/>
       <class name="com.servicepoints.testCases.TC18_VerifyCancelOrderFunctionality"/>
@@ -52,17 +52,17 @@
       <class name="com.servicepoints.testCases.TC40_VerifyMergeBreakOrderForDisputeTest">
 		  <methods>
 			  <include name="setup"></include>
-			  <exclude name="submitAndAcceptQuotation"></exclude> 
-			  <exclude name="verifyOpenDispute"></exclude> 
-			  <exclude name="verifyAcceptDispute"></exclude>
-			  <exclude name="verifyRequotation"></exclude> 
-			  <exclude name="acceptRequoteQuotation"></exclude> 
+			  <include name="submitAndAcceptQuotation"></include> 
+			  <include name="verifyOpenDispute"></include> 
+			  <include name="verifyAcceptDispute"></include>
+			  <include name="verifyRequotation"></include> 
+			  <include name="acceptRequoteQuotation"></include> 
 			  <include name="verifyDisputeIsStillOpenFromAgentSide"></include> 
 			  <include name="verifyDisputeIsStillOpenFromClientSide"></include>
 			  <include name="tearDown"></include>
 		  </methods>
       </class>
-      <class name="com.servicepoints.testCases.TC41_VerifyMergeBreakOrderForNewVariantInDispute">
+       <class name="com.servicepoints.testCases.TC41_VerifyMergeBreakOrderForNewVariantInDispute">
 		  <methods>
 			  <include name="setup"></include>
 			  <include name="verifySubmitAndAcceptQuotation"></include>
@@ -71,8 +71,8 @@
 			  <include name="verifyDisputeFromClientSide"></include>
 			  <include name="tearDown"></include>
 		  </methods>
-      </class>-->
-      <!--<class name="com.servicepoints.testCases.TC42_VerifyMergeBreakOrderForAcceptedDisputeTest">
+      </class>
+     <class name="com.servicepoints.testCases.TC42_VerifyMergeBreakOrderForAcceptedDisputeTest">
 		  <methods>
 			  <include name="setup"></include>
 			  <include name="submitAndAcceptQuotation"></include> 
@@ -111,7 +111,7 @@
 			  <include name="tearDown"></include>
 		  </methods>
       </class>
-      <class name="com.servicepoints.testCases.TC46_VerifyDisputeIsInOpenStateForTheOderHasTrackingNum">
+     <class name="com.servicepoints.testCases.TC46_VerifyDisputeIsInOpenStateForTheOderHasTrackingNum">
 		  <methods>
 			  <include name="setup"></include>
 			  <include name="verifyAddTrackingNumberAndReopenDeclinedDispute"></include>
@@ -131,7 +131,7 @@
 			  <include name="tearDown"></include>
 		  </methods>
 	  </class>
-	  <class name="com.servicepoints.testCases.TC48_VerifyDisputeCantBeReopenForTheStatusCancelled">
+	 <class name="com.servicepoints.testCases.TC48_VerifyDisputeCantBeReopenForTheStatusCancelled">
 		  <methods>
 			  <include name="setup"></include>
 			  <include name="submitAndAcceptQuotation"></include>
@@ -142,7 +142,7 @@
 			  <include name="tearDown"></include>
 		  </methods>
 	  </class>
-	   <class name="com.servicepoints.testCases.TC49_VerifyCloseDisputeAfterCancelOrderAndDeclinedTheDispute">
+	  <class name="com.servicepoints.testCases.TC49_VerifyCloseDisputeAfterCancelOrderAndDeclinedTheDispute">
 		  <methods>
 			  <include name="setup"></include>
 			  <include name="submitAndAcceptQuotation"></include>
@@ -153,8 +153,8 @@
 			  <include name="verifyShowDisputeFromTeamleaderSide"></include>
 			  <include name="tearDown"></include>
 		  </methods>
-	  </class>-->
-	  <!--<class name="com.servicepoints.testCases.TC50_VerifyDeletedDisputeFromClientSupplierAndSupportSide">
+	  </class>
+	 <class name="com.servicepoints.testCases.TC50_VerifyDeletedDisputeFromClientSupplierAndSupportSide">
 		  <methods>
 			  <include name="setup"></include>
 			  <include name="submitAndAcceptQuotation"></include>
@@ -165,7 +165,7 @@
 			  <include name="verifyDeletedDisputefromSupportSide"></include>
 			  <include name="tearDown"></include>
 		  </methods>
-	  </class>
+	  </class>-->
 	   <class name="com.servicepoints.testCases.TC51_VerifyShowDisputeAfterAddingTrackingNumAndCancelOrder">
 		  <methods>
 			  <include name="setup"></include>
@@ -173,11 +173,11 @@
 			  <include name="verifyOpenDispute"></include>
 			  <include name="verifyAddingTrackingNumOn3rdVariant"></include>
 			  <include name="verifyDisputeStatusFromClientSide"></include>
-			  <include name="varifyCanceleSecondVariant"></include>
+			  <include name="varifyCancelSecondVariant"></include>
 			  <include name="tearDown"></include>
 		  </methods>
 	  </class>
-	  <class name="com.servicepoints.testCases.TC52_VerifyOpenDisputeAfterSupplierAskForPriceChange">
+	  <!-- <class name="com.servicepoints.testCases.TC52_VerifyOpenDisputeAfterSupplierAskForPriceChange">
 		  <methods>
 			  <include name="setup"></include>
 			  <include name="submitAndAcceptQuotation"></include>

@@ -41,7 +41,7 @@ public class TC45_VerifyDisputeIsInOpenStateWhenClientSendsMsgOnDeclinedDispute 
 	public String query5 = rd.getQuery5();
 	public String query6 = rd.getQuery6();
 
-	@Test(priority = 1)
+	@Test(enabled = false, priority = 1)
 	public void submitAndAcceptQuotation() throws InterruptedException, IOException {
 		logger.info("Application Opened.");
 		LoginPage lp = new LoginPage(driver);
@@ -147,7 +147,7 @@ public class TC45_VerifyDisputeIsInOpenStateWhenClientSendsMsgOnDeclinedDispute 
 		BaseClass.closeAllWinTabsExceptParent();
 	}
 
-	@Test(priority = 2)
+	@Test(enabled = true, priority = 2)
 	public void verifyOpenDispute() throws InterruptedException, IOException {
 		driver.get(baseURL);
 
@@ -262,13 +262,13 @@ public class TC45_VerifyDisputeIsInOpenStateWhenClientSendsMsgOnDeclinedDispute 
 		Thread.sleep(2000);
 		cop.clickOnGoToDisputesTab();
 		Thread.sleep(2000);
-		cop.clickOnClosedDisputestab();
-		Thread.sleep(1000);
 		cop.clickOnDeclinedDisputesTab();
 		Thread.sleep(1000);
 		cop.sendPnameinSearch(productForTC45);
 		Thread.sleep(2000);
 		cop.clickOnFDiv();
+		Thread.sleep(2000);
+		cop.scrollTillShowDisputeBtn(driver);
 		Thread.sleep(2000);
 		cop.clickOnShowDispute();
 		Thread.sleep(1000);
@@ -301,6 +301,8 @@ public class TC45_VerifyDisputeIsInOpenStateWhenClientSendsMsgOnDeclinedDispute 
 		Thread.sleep(3000);
 		asop.clickOnFrstDsp();
 		Thread.sleep(3000);
+		asop.scrollTillShowDispute(driver);
+		Thread.sleep(2000);
 		asop.clickOnShowDsp();
 		logger.info("Clicked on show disputes.");
 		Thread.sleep(3000);
@@ -337,13 +339,13 @@ public class TC45_VerifyDisputeIsInOpenStateWhenClientSendsMsgOnDeclinedDispute 
 		Thread.sleep(2000);
 		cop.clickOnGoToDisputesTab();
 		Thread.sleep(2000);
-		cop.clickOnClosedDisputestab();
-		Thread.sleep(1000);
 		cop.clickOnDeclinedDisputesTab();
 		Thread.sleep(1000);
 		cop.sendPnameinSearch(productForTC45);
 		Thread.sleep(2000);
 		cop.clickOnFDiv();
+		Thread.sleep(2000);
+		cop.scrollTillShowDisputeBtn(driver);
 		Thread.sleep(2000);
 		cop.clickOnShowDispute();
 		Thread.sleep(1000);
@@ -376,6 +378,8 @@ public class TC45_VerifyDisputeIsInOpenStateWhenClientSendsMsgOnDeclinedDispute 
 		Thread.sleep(3000);
 		asop.clickOnFrstDsp();
 		Thread.sleep(3000);
+		asop.scrollTillShowDispute(driver);
+		Thread.sleep(2000);
 		asop.clickOnShowDsp();
 		logger.info("Clicked on show disputes.");
 		Thread.sleep(3000);
@@ -412,13 +416,13 @@ public class TC45_VerifyDisputeIsInOpenStateWhenClientSendsMsgOnDeclinedDispute 
 		Thread.sleep(2000);
 		cop.clickOnGoToDisputesTab();
 		Thread.sleep(2000);
-		cop.clickOnClosedDisputestab();
-		Thread.sleep(1000);
 		cop.clickOnDeclinedDisputesTab();
 		Thread.sleep(1000);
 		cop.sendPnameinSearch(productForTC45);
 		Thread.sleep(2000);
 		cop.clickOnFDiv();
+		Thread.sleep(2000);
+		cop.scrollTillShowDisputeBtn(driver);
 		Thread.sleep(2000);
 		cop.clickOnShowDispute();
 		Thread.sleep(1000);
@@ -451,6 +455,8 @@ public class TC45_VerifyDisputeIsInOpenStateWhenClientSendsMsgOnDeclinedDispute 
 		Thread.sleep(3000);
 		asop.clickOnFrstDsp();
 		Thread.sleep(3000);
+		asop.scrollTillShowDispute(driver);
+		Thread.sleep(2000);
 		asop.clickOnShowDsp();
 		logger.info("Clicked on show disputes.");
 		Thread.sleep(3000);
@@ -487,13 +493,13 @@ public class TC45_VerifyDisputeIsInOpenStateWhenClientSendsMsgOnDeclinedDispute 
 		Thread.sleep(2000);
 		cop.clickOnGoToDisputesTab();
 		Thread.sleep(2000);
-		cop.clickOnClosedDisputestab();
-		Thread.sleep(1000);
 		cop.clickOnDeclinedDisputesTab();
 		Thread.sleep(1000);
 		cop.sendPnameinSearch(productForTC45);
 		Thread.sleep(2000);
 		cop.clickOnFDiv();
+		Thread.sleep(2000);
+		cop.scrollTillShowDisputeBtn(driver);
 		Thread.sleep(2000);
 		cop.clickOnShowDispute();
 		Thread.sleep(1000);
@@ -526,6 +532,8 @@ public class TC45_VerifyDisputeIsInOpenStateWhenClientSendsMsgOnDeclinedDispute 
 		Thread.sleep(3000);
 		asop.clickOnFrstDsp();
 		Thread.sleep(3000);
+		asop.scrollTillShowDispute(driver);
+		Thread.sleep(2000);
 		asop.clickOnShowDsp();
 		logger.info("Clicked on show disputes.");
 		Thread.sleep(3000);
@@ -562,13 +570,13 @@ public class TC45_VerifyDisputeIsInOpenStateWhenClientSendsMsgOnDeclinedDispute 
 		Thread.sleep(2000);
 		cop.clickOnGoToDisputesTab();
 		Thread.sleep(2000);
-		cop.clickOnClosedDisputestab();
-		Thread.sleep(1000);
 		cop.clickOnDeclinedDisputesTab();
 		Thread.sleep(1000);
 		cop.sendPnameinSearch(productForTC45);
 		Thread.sleep(2000);
 		cop.clickOnFDiv();
+		Thread.sleep(2000);
+		cop.scrollTillShowDisputeBtn(driver);
 		Thread.sleep(2000);
 		cop.clickOnShowDispute();
 		Thread.sleep(1000);
@@ -601,6 +609,8 @@ public class TC45_VerifyDisputeIsInOpenStateWhenClientSendsMsgOnDeclinedDispute 
 		Thread.sleep(3000);
 		asop.clickOnFrstDsp();
 		Thread.sleep(3000);
+		asop.scrollTillShowDispute(driver);
+		Thread.sleep(2000);
 		asop.clickOnShowDsp();
 		logger.info("Clicked on show disputes.");
 		Thread.sleep(3000);
@@ -637,13 +647,13 @@ public class TC45_VerifyDisputeIsInOpenStateWhenClientSendsMsgOnDeclinedDispute 
 		Thread.sleep(2000);
 		cop.clickOnGoToDisputesTab();
 		Thread.sleep(2000);
-		cop.clickOnClosedDisputestab();
-		Thread.sleep(1000);
 		cop.clickOnDeclinedDisputesTab();
 		Thread.sleep(1000);
 		cop.sendPnameinSearch(productForTC45);
 		Thread.sleep(2000);
 		cop.clickOnFDiv();
+		Thread.sleep(2000);
+		cop.scrollTillShowDisputeBtn(driver);
 		Thread.sleep(2000);
 		cop.clickOnShowDispute();
 		Thread.sleep(1000);

@@ -186,124 +186,93 @@ public class AgentDisputesPage {
 
 	@FindBy(xpath = "//a[@class='btn btn-border btn-block mt-3 supportDispute linkactive']")
 	List<WebElement> allShowBtn;
-	//div[@class='d-xl-flex ']//a[@class='btn btn-border btn-block mt-2 showDisputes linkactive']
-	//a[@class='btn btn-border btn-block mt-3 supportDispute linkactive']
-	
+
 	@FindBy(xpath = "//h5[@id='orderDisputeId']//button[@aria-label='Close']")
 	WebElement closeDisputeAgent;
-	
+
 	public void clickOnEachDisputeAgentSide(WebDriver driver) throws InterruptedException {
 
 		for (int j = 0; j < eachDspDivFromAgentSide.size(); j++) {
 
-			for (int i = 0; i < allShowBtn.size(); i++) {
+			eachDspDivFromAgentSide.get(j).click();
+			Thread.sleep(2000);
 
-				eachDspDivFromAgentSide.get(j).click();
-				Thread.sleep(2000);
+			scrollTillShowDispute(driver);
+			Thread.sleep(3000);
 
-				scrollTillShowDispute(driver);
-				//scrollTillEndOfThePage(driver);
+			allShowBtn.get(j).click();
+			Thread.sleep(3000);
+
+			closeDisputeAgent.click();
+			Thread.sleep(2000);
+		}
+	}
+
+	@FindBy(xpath = "//div[@id='client_orders_body']/div")
+	List<WebElement> allDisps;
+
+	@FindBy(xpath = "//a[@class='btn btn-border btn-block mt-2 showDisputes linkactive']")
+	List<WebElement> allShowDspBtn;
+
+	public void handleEachDispute(WebDriver driver) throws InterruptedException {
+		for (int i = 0; i < allDisps.size(); i++) {
+			allDisps.get(i).click();
+			Thread.sleep(2000);
+
+			scrollTillTheLast(driver);
+			Thread.sleep(3000);
+
+			allShowDspBtn.get(i).click();
+			Thread.sleep(4000);
+
+			closeDisputeAgent.click();
+			Thread.sleep(2000);
+		}
+	}
+
+	public void scrollTillTheLast(WebDriver driver) {
+		JavascriptExecutor exe = (JavascriptExecutor) driver;
+		exe.executeScript("window.scrollTo(0, document.body.scrollHeight)");
+	}
+
+	public void acceptEachDispute(WebDriver driver, String agentAnswer) throws InterruptedException {
+
+		for (int i = 0; i < allDisps.size(); i++) {
+
+			allDisps.get(i).click();
+			Thread.sleep(2000);
+
+			scrollTillTheLast(driver);
+			Thread.sleep(3000);
+
+			allShowDspBtn.get(i).click();
+			Thread.sleep(4000);
+
+			selectDspStatus();
+			BaseClass.logger.info("Dispute Accepted.");
+			Thread.sleep(3000);
+
+			sendAnswer(agentAnswer);
+			Thread.sleep(3000);
+
+			scrollTillSendAns(driver);
+			Thread.sleep(1000);
+
+			clickOnSendAnswer();
+			BaseClass.logger.info("Dispute send.");
+			Thread.sleep(5000);
+
+			if (driver.getPageSource().contains("Dispute accepted successfully")) {
+				Assert.assertTrue(true);
 				Thread.sleep(3000);
-
-				allShowBtn.get(i).click();
-				Thread.sleep(3000);
-
-				closeDisputeAgent.click();
-				Thread.sleep(2000);
-
-				break;
-				// eachDspDivFromAgentSide.get(j).click();
+				BaseClass.logger.info("Verification of Dispute acceptance is successed.");
+			} else {
+				BaseClass.logger.info("Verification of Dispute acceptance is failed.");
+				Assert.assertTrue(false);
 			}
 		}
 	}
 
-//	public void clickOnEachDisputeAgentSide(WebDriver driver) throws InterruptedException {
-//		for(WebElement eachDiv : eachDspDivFromAgentSide) {
-//			for(WebElement showBtn : allShowBtn) {
-//				eachDiv.click();
-//				Thread.sleep(2000);
-//				
-//				scrollTillShowDispute(driver);
-//				Thread.sleep(2000);
-//			
-//				showBtn.click();
-//				Thread.sleep(3000);
-//				
-//				closeDisputeAgent.click();
-//				Thread.sleep(3000);
-//			}
-//		}
-//	}
-
-	@FindBy(xpath="//div[@id='client_orders_body']/div")
-	List<WebElement> allDisps;
-	
-	@FindBy(xpath="//a[@class='btn btn-border btn-block mt-2 showDisputes linkactive']")
-	List<WebElement> allShowDspBtn;
-	
-	public void handleEachDispute(WebDriver driver) throws InterruptedException {
-		for(int i=0; i<allDisps.size();i++) {
-				allDisps.get(i).click();
-				Thread.sleep(2000);
-				
-				scrollTillTheLast(driver);
-				Thread.sleep(3000);
-				
-				allShowDspBtn.get(i).click();
-				Thread.sleep(4000);
-				
-				closeDisputeAgent.click();
-				Thread.sleep(2000);
-		}
-	}
-	
-	public void scrollTillTheLast(WebDriver driver) {
-		JavascriptExecutor exe=(JavascriptExecutor) driver;
-		exe.executeScript("window.scrollTo(0, document.body.scrollHeight)");
-	}
-	
-	
-	public void acceptEachDispute(WebDriver driver, String agentAnswer) throws InterruptedException {
-		
-		for(int i=0; i<allDisps.size();i++) {
-			
-				allDisps.get(i).click();
-				Thread.sleep(2000);
-				
-				scrollTillTheLast(driver);
-				Thread.sleep(3000);
-				
-				allShowDspBtn.get(i).click();
-				Thread.sleep(4000);
-				
-				selectDspStatus();
-				BaseClass.logger.info("Dispute Accepted.");
-				Thread.sleep(3000);
-				
-				sendAnswer(agentAnswer);
-				Thread.sleep(3000);
-				
-				scrollTillSendAns(driver);
-				Thread.sleep(1000);
-				
-				clickOnSendAnswer();
-				BaseClass.logger.info("Dispute send.");
-				Thread.sleep(5000);
-				
-				
-				if(driver.getPageSource().contains("Dispute accepted successfully")) {
-					Assert.assertTrue(true);
-					Thread.sleep(3000);
-					BaseClass.logger.info("Verification of Dispute acceptance is successed.");
-				}else {
-					BaseClass.logger.info("Verification of Dispute acceptance is failed.");
-					Assert.assertTrue(false);
-				}
-		}
-	}
-	
-	
-	
 	@FindBy(xpath = "//a[normalize-space()='Closed disputes']")
 	WebElement closedDisputesTab;
 
@@ -351,4 +320,15 @@ public class AgentDisputesPage {
 		clickOnFStoreEle.click();
 	}
 
+	@FindBy(xpath = "//a[normalize-space()='Approved disputes']")
+	WebElement approvedDispute;
+
+	public void clickOnApprovedDispute() {
+		approvedDispute.click();
+	}
+
+	public void scrollTillApprovedDispute(WebDriver driver) {
+		JavascriptExecutor exe = (JavascriptExecutor) driver;
+		exe.executeScript("arguments[0].scrollIntoView();", approvedDispute);
+	}
 }
