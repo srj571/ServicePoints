@@ -7,6 +7,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.testng.annotations.Test;
 
+import com.servicepoints.PageObjects.AgentDisputesPage;
 import com.servicepoints.PageObjects.AgentSupProductsPage;
 import com.servicepoints.PageObjects.ClientOrdersPage;
 import com.servicepoints.PageObjects.ClientProductPage;
@@ -53,7 +54,7 @@ public class TC52_VerifyOpenDisputeAfterSupplierAskForPriceChange extends BaseCl
 	public String val8 = rd.getVal8();
 	public String val9 = rd.getVal9();
 
-	@Test(enabled = true, priority = 1)
+	@Test(enabled = false, priority = 1)
 	public void submitAndAcceptQuotation() throws InterruptedException, IOException {
 		logger.info("Application Opened.");
 		LoginPage lp = new LoginPage(driver);
@@ -166,7 +167,7 @@ public class TC52_VerifyOpenDisputeAfterSupplierAskForPriceChange extends BaseCl
 		BaseClass.closeAllWinTabsExceptParent();
 	}
 
-	@Test(enabled = true, priority = 2)
+	@Test(enabled = false, priority = 2)
 	public void verifyOpenDispute() throws InterruptedException, IOException {
 		driver.get(baseURL);
 
@@ -228,7 +229,7 @@ public class TC52_VerifyOpenDisputeAfterSupplierAskForPriceChange extends BaseCl
 		}
 	}
 
-	@Test(enabled = true, priority = 3)
+	@Test(enabled = false, priority = 3)
 	public void verifyAskForPriceChange() throws InterruptedException, IOException {
 		driver.get(baseURL);
 		AgentSupProductsPage asop = new AgentSupProductsPage(driver);
@@ -289,15 +290,6 @@ public class TC52_VerifyOpenDisputeAfterSupplierAskForPriceChange extends BaseCl
 		asop.sendValFor2Pcs8(val8);
 		asop.sendValFor3Pcs9(val9);
 		Thread.sleep(2000);
-
-//		asop.firstPcsPrice(c1price);
-//		Thread.sleep(1000);
-//		asop.secPcsPrice(c2price);
-//		Thread.sleep(1000);
-//		asop.thirdPcsPrice(c3price);
-//		Thread.sleep(1000);
-//		asop.forthPcsPrice(c4price);
-//		Thread.sleep(1000);
 
 		asop.scrollTillSubmitNewPrice(driver);
 		Thread.sleep(1000);
@@ -382,9 +374,11 @@ public class TC52_VerifyOpenDisputeAfterSupplierAskForPriceChange extends BaseCl
 		cp.clickOnEachDivForDisputeVerification(driver);
 		Thread.sleep(5000);
 		logger.info("Status changed to Processing.");
+		
+		BaseClass.closeAllWinTabsExceptParent();
 	}
 
-	@Test(enabled = true, priority = 4)
+	@Test(enabled = false, priority = 4)
 	public void verifyByClient() throws InterruptedException {
 		driver.get(baseURL);
 		logger.info("Logged out from Agent account.");
@@ -410,5 +404,25 @@ public class TC52_VerifyOpenDisputeAfterSupplierAskForPriceChange extends BaseCl
 		cp.clickOnEachDivForDisputeVerification(driver);
 		Thread.sleep(5000);
 		logger.info("Status changed to Processing.");
+	}
+	
+	@Test(enabled = true,priority = 5)
+	public void verifyDisputesFromSupplierSide() throws InterruptedException, IOException {
+		driver.get(baseURL);
+		LoginPage lp = new LoginPage(driver);
+		lp.setAdminMailId(agentMailMBO);
+		lp.setAdminPassword(agentPassMBO);
+		lp.clickLoginbtn();
+		logger.info("Agent logged in Successfully.");
+		Thread.sleep(5000);
+
+		AgentDisputesPage asop = new AgentDisputesPage(driver);
+		asop.clickOnDisputesTab();
+		logger.info("Open disputes page.");
+
+		asop.searchProductForDsp(product52);
+		Thread.sleep(3000);
+
+		asop.handleEachDispute(driver);
 	}
 }

@@ -500,7 +500,7 @@ public class TC53_VerifyRaiseDisputeAfterClientStopsFulfillment extends BaseClas
 		Thread.sleep(2000);
 		cp.clickOnFDiv();
 		Thread.sleep(2000);
-		logger.info("Status changed to Hold.");
+		logger.info("Status changed to Processing.");
 		
 		cp.scrollTillShowDisputeBtn(driver);
 		Thread.sleep(2000);

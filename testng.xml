@@ -165,7 +165,7 @@
 			  <include name="verifyDeletedDisputefromSupportSide"></include>
 			  <include name="tearDown"></include>
 		  </methods>
-	  </class>-->
+	  </class>
 	   <class name="com.servicepoints.testCases.TC51_VerifyShowDisputeAfterAddingTrackingNumAndCancelOrder">
 		  <methods>
 			  <include name="setup"></include>
@@ -177,13 +177,14 @@
 			  <include name="tearDown"></include>
 		  </methods>
 	  </class>
-	  <!-- <class name="com.servicepoints.testCases.TC52_VerifyOpenDisputeAfterSupplierAskForPriceChange">
+	   <class name="com.servicepoints.testCases.TC52_VerifyOpenDisputeAfterSupplierAskForPriceChange">
 		  <methods>
 			  <include name="setup"></include>
 			  <include name="submitAndAcceptQuotation"></include>
 			  <include name="verifyOpenDispute"></include>
 			  <include name="verifyAskForPriceChange"></include>
 			  <include name="verifyByClient"></include>
+			  <include name="verifyDisputesFromSupplierSide"></include>
 			  <include name="tearDown"></include>
 		  </methods>
 	  </class>
@@ -215,24 +216,8 @@
 			  <include name="verifyReopenDeclinedDisputes"></include>
 			  <include name="tearDown"></include>
 		  </methods>
-	  </class>
-	  <class name="com.servicepoints.testCases.TC55_VerifyRaiseDisputeOnAllPortalAfterOneVarCancel">
-		  <methods>
-			  <include name="setup"></include>
-			  <include name="submitAndAcceptQuotation"></include>
-			  <include name="verifyOpenDispute"></include>
-			  <include name="verifyRequotation"></include>
-			  <include name="verifyShowDisputeFromTeamleaderSide"></include>
-			  <include name="verifyReopenHoldDeclinedDisputes"></include>
-			  <include name="submitReQuotation"></include> 
-			  <include name="verifyAcceptingRequoteQuote"></include>
-			  <include name="againRaiseDisputes"></include>
-			  <include name="verifyAcceptDispute"></include>
-			  <include name="verifyReopenDeclinedDisputes"></include>
-			  <include name="tearDown"></include>
-		  </methods>
-	  </class>
-	   <class name="com.servicepoints.testCases.TC56_VerifyAddDiscountFunctionality">
+	  </class>-->
+	   <!--<class name="com.servicepoints.testCases.TC55_VerifyAddDiscountFunctionality">
 		  <methods>
 			  <include name="setup"></include>
 			  <include name="submitAndAcceptQuotation"></include>
@@ -241,7 +226,7 @@
 			  <include name="tearDown"></include>
 		  </methods>
 	  </class>-->
-	  <!--<class name="com.servicepoints.testCases.TC57_VerifyDiscountFunctionalityWithRefund">
+	  <!--<class name="com.servicepoints.testCases.TC56_VerifyDiscountFunctionalityWithRefund">
 		  <methods>
 			  <include name="setup"></include>
 			  <include name="submitAndAcceptQuotation"></include>
@@ -251,7 +236,7 @@
 			  <include name="tearDown"></include>
 		  </methods>
 	  </class>
-	  <class name="com.servicepoints.testCases.TC58_VerifyDiscountFunctionalityWithRefundDispute2">
+	  <class name="com.servicepoints.testCases.TC57_VerifyDiscountFunctionalityWithRefundDispute2">
 		  <methods>
 			  <include name="setup"></include>
 			  <include name="submitAndAcceptQuotation"></include>
@@ -262,7 +247,7 @@
 			  <include name="tearDown"></include>
 		  </methods>
 	  </class>
-	  <class name="com.servicepoints.testCases.TC59_VerifyDiscountWithResendFunctionality">
+	  <class name="com.servicepoints.testCases.TC58_VerifyDiscountWithResendFunctionality">
 		  <methods>
 			  <include name="setup"></include>
 			  <include name="submitAndAcceptQuotation"></include>
@@ -272,6 +257,14 @@
 			  <include name="verifyAddingDiscount"></include>
 			  <include name="raiseRefundDispute"></include>
 			  <include name="verifyDiscountFromClientSide"></include>
+			  <include name="tearDown"></include>
+		  </methods>
+	  </class>-->
+	  <class name="com.servicepoints.testCases.TC59_VerifySupplierShouldAbleToChangeTheDiscount">
+		  <methods>
+			  <include name="setup"></include>
+			  <include name="submitAndAcceptQuotation"></include>
+			  <include name="verifyAddTrackingOnProduct"></include>
 			  <include name="tearDown"></include>
 		  </methods>
 	  </class>-->
