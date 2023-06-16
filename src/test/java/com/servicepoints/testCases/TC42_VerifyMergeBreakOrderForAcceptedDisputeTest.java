@@ -208,7 +208,7 @@ public class TC42_VerifyMergeBreakOrderForAcceptedDisputeTest extends BaseClass 
 		BaseClass.closeAllWinTabsExceptParent();
 	}
 
-	@Test(enabled = true, priority = 3)
+	@Test(enabled = true, priority = 5)
 	public void verifyAcceptDispute() throws InterruptedException, IOException {
 		driver.get(baseURL);
 		LoginPage lp = new LoginPage(driver);
@@ -292,7 +292,7 @@ public class TC42_VerifyMergeBreakOrderForAcceptedDisputeTest extends BaseClass 
 		}
 	}
 
-	@Test(enabled = true, priority = 4)
+	@Test(enabled = true, priority = 3)
 	public void verifyRequotation() throws InterruptedException, IOException {
 		driver.get(baseURL);
 
@@ -411,7 +411,7 @@ public class TC42_VerifyMergeBreakOrderForAcceptedDisputeTest extends BaseClass 
 		BaseClass.closeAllWinTabsExceptParent();
 	}
 
-	@Test(enabled = true, priority = 5)
+	@Test(enabled = true, priority = 4)
 	public void acceptRequoteQuotation() throws InterruptedException, IOException {
 		driver.get(baseURL);
 

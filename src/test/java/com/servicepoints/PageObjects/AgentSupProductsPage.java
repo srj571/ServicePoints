@@ -315,7 +315,7 @@ public class AgentSupProductsPage {
 	
 	public boolean verifyTextOnAlert() {
 		boolean val=alertUpdateQuote.getText().equals("Quotation accepted successfully.");
-		return true;
+		return val;
 	}
 	
 	public void sendValFor1Pcs1(String val1) {

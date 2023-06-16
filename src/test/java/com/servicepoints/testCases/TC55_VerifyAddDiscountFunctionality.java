@@ -21,7 +21,7 @@ import junit.framework.Assert;
 public class TC55_VerifyAddDiscountFunctionality extends BaseClass{
 	
 	ReadConfig rd = new ReadConfig();
-	public String product56 = rd.getProductForTC56();
+	public String product55 = rd.getProductForTC55();
 
 	public String queries = rd.setQueries();
 	public String process = rd.setProcessStatus();
@@ -63,7 +63,7 @@ public class TC55_VerifyAddDiscountFunctionality extends BaseClass{
 		aspp.clickQuotationsClientsTab();
 		Thread.sleep(2000);
 
-		aspp.searchProductName(product56);
+		aspp.searchProductName(product55);
 		Thread.sleep(3000);
 		logger.info("Product name entered.");
 		aspp.clickOnfdiv();
@@ -116,7 +116,7 @@ public class TC55_VerifyAddDiscountFunctionality extends BaseClass{
 		ClientProductPage cl = new ClientProductPage(driver);
 		cl.getProductsPage();
 
-		cl.searchProduct(product56);
+		cl.searchProduct(product55);
 		Thread.sleep(4000);
 		logger.info("Product name searched.");
 		
@@ -171,7 +171,7 @@ public class TC55_VerifyAddDiscountFunctionality extends BaseClass{
 		aop.clickOnOrdersTab();
 		Thread.sleep(3000);
 		
-		aop.searchPnameTrack(product56);
+		aop.searchPnameTrack(product55);
 		logger.info("Product name is entered.");
 		Thread.sleep(3000);
 		
@@ -271,7 +271,7 @@ public class TC55_VerifyAddDiscountFunctionality extends BaseClass{
 		cl.clickOnOrdersTab();
 		Thread.sleep(1000);
 		
-		cl.sendPnameinSearch(product56);
+		cl.sendPnameinSearch(product55);
 		Thread.sleep(2000);
 		
 		cl.clickOnFDiv(); 

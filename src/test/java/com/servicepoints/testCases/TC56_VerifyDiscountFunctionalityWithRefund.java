@@ -22,7 +22,7 @@ import junit.framework.Assert;
 public class TC56_VerifyDiscountFunctionalityWithRefund extends BaseClass{
 	
 	ReadConfig rd = new ReadConfig();
-	public String product57 = rd.getProductForTC57();
+	public String product56 = rd.getProductForTC56();
 
 	public String queries = rd.setQueries();
 	public String process = rd.setProcessStatus();
@@ -64,7 +64,7 @@ public class TC56_VerifyDiscountFunctionalityWithRefund extends BaseClass{
 		aspp.clickQuotationsClientsTab();
 		Thread.sleep(2000);
 
-		aspp.searchProductName(product57);
+		aspp.searchProductName(product56);
 		Thread.sleep(3000);
 		logger.info("Product name entered.");
 		aspp.clickOnfdiv();
@@ -117,7 +117,7 @@ public class TC56_VerifyDiscountFunctionalityWithRefund extends BaseClass{
 		ClientProductPage cl = new ClientProductPage(driver);
 		cl.getProductsPage();
 
-		cl.searchProduct(product57);
+		cl.searchProduct(product56);
 		Thread.sleep(4000);
 		logger.info("Product name searched.");
 		
@@ -172,7 +172,7 @@ public class TC56_VerifyDiscountFunctionalityWithRefund extends BaseClass{
 		aop.clickOnOrdersTab();
 		Thread.sleep(3000);
 		
-		aop.searchPnameTrack(product57);
+		aop.searchPnameTrack(product56);
 		logger.info("Product name is entered.");
 		Thread.sleep(3000);
 		
@@ -277,7 +277,7 @@ public class TC56_VerifyDiscountFunctionalityWithRefund extends BaseClass{
 		ClientOrdersPage cop = new ClientOrdersPage(driver);
 		cop.clickOnOrdersTab();
 		
-		cop.sendPnameinSearch(product57);
+		cop.sendPnameinSearch(product56);
 		logger.info("Product name is entered.");
 		Thread.sleep(2000);
 		
@@ -338,7 +338,7 @@ public class TC56_VerifyDiscountFunctionalityWithRefund extends BaseClass{
 		asop.clickOnDisputesTab();
 		logger.info("Open disputes page.");
 		
-		asop.searchProductForDsp(product57);
+		asop.searchProductForDsp(product56);
 		Thread.sleep(3000);
 		
 		asop.clickOnFrstDsp();
@@ -388,7 +388,7 @@ public class TC56_VerifyDiscountFunctionalityWithRefund extends BaseClass{
 		logger.info("client logged in Successfully.");
 		ClientOrdersPage cop = new ClientOrdersPage(driver);
 		cop.clickOnOrdersTab();
-		cop.sendPnameinSearch(product57);
+		cop.sendPnameinSearch(product56);
 		logger.info("Product name is entered.");
 		Thread.sleep(2000);
 		

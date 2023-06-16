@@ -77,15 +77,15 @@
 			  <include name="setup"></include>
 			  <include name="submitAndAcceptQuotation"></include> 
 			  <include name="verifyOpenDispute"></include> 
-			  <include name="verifyAcceptDispute"></include> 
 			  <include name="verifyRequotation"></include> 
 			  <include name="acceptRequoteQuotation"></include>
+			  <include name="verifyAcceptDispute"></include> 
 			  <include name="verifyDisputeIsStillOpenFromAgentSide"></include> 
 			  <include name="verifyDisputeIsStillOpenFromClientSide"></include>
 			  <include name="tearDown"></include>
 		  </methods>
-      </class>
-      <class name="com.servicepoints.testCases.TC43_VerifyAfterCloseDisputeNoConversationBetweenClientAndSupplier">
+      </class>-->
+     <!-- <class name="com.servicepoints.testCases.TC43_VerifyAfterCloseDisputeNoConversationBetweenClientAndSupplier">
 		  <methods>
 			  <include name="setup"></include>
 			  <include name="submitAndAcceptQuotation"></include> 
@@ -265,9 +265,12 @@
 			  <include name="setup"></include>
 			  <include name="submitAndAcceptQuotation"></include>
 			  <include name="verifyAddTrackingOnProduct"></include>
+			  <include name="verifyAddingDiscount"></include>
+			  <include name="raiseRefundDispute"></include>
+			  <include name="verifyDiscountFromClientSide"></include>
 			  <include name="tearDown"></include>
 		  </methods>
-	  </class>-->
+	  </class>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

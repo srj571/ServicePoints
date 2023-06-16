@@ -22,7 +22,7 @@ import junit.framework.Assert;
 public class TC58_VerifyDiscountWithResendFunctionality extends BaseClass {
 
 	ReadConfig rd = new ReadConfig();
-	public String product59 = rd.getProductForTC59();
+	public String product58 = rd.getProductForTC58();
 
 	public String queries = rd.setQueries();
 	public String process = rd.setProcessStatus();
@@ -64,7 +64,7 @@ public class TC58_VerifyDiscountWithResendFunctionality extends BaseClass {
 		aspp.clickQuotationsClientsTab();
 		Thread.sleep(2000);
 
-		aspp.searchProductName(product59);
+		aspp.searchProductName(product58);
 		Thread.sleep(3000);
 		logger.info("Product name entered.");
 		aspp.clickOnfdiv();
@@ -117,7 +117,7 @@ public class TC58_VerifyDiscountWithResendFunctionality extends BaseClass {
 		ClientProductPage cl = new ClientProductPage(driver);
 		cl.getProductsPage();
 
-		cl.searchProduct(product59);
+		cl.searchProduct(product58);
 		Thread.sleep(4000);
 		logger.info("Product name searched.");
 
@@ -172,7 +172,7 @@ public class TC58_VerifyDiscountWithResendFunctionality extends BaseClass {
 		aop.clickOnOrdersTab();
 		Thread.sleep(3000);
 
-		aop.searchPnameTrack(product59);
+		aop.searchPnameTrack(product58);
 		logger.info("Product name is entered.");
 		Thread.sleep(3000);
 
@@ -238,7 +238,7 @@ public class TC58_VerifyDiscountWithResendFunctionality extends BaseClass {
 		logger.info("client logged in Successfully.");
 		ClientOrdersPage cop = new ClientOrdersPage(driver);
 		cop.clickOnOrdersTab();
-		cop.sendPnameinSearch(product59);
+		cop.sendPnameinSearch(product58);
 		logger.info("Product name is entered.");
 		Thread.sleep(2000);
 
@@ -294,7 +294,7 @@ public class TC58_VerifyDiscountWithResendFunctionality extends BaseClass {
 		asop.clickOnDisputesTab();
 		logger.info("Open disputes page.");
 
-		asop.searchProductForDsp(product59);
+		asop.searchProductForDsp(product58);
 		Thread.sleep(3000);
 		asop.clickOnFrstDsp();
 		Thread.sleep(3000);
@@ -349,7 +349,7 @@ public class TC58_VerifyDiscountWithResendFunctionality extends BaseClass {
 		aop.clickOnOrdersTab();
 		Thread.sleep(3000);
 
-		aop.searchPnameTrack(product59);
+		aop.searchPnameTrack(product58);
 		logger.info("Product name is entered.");
 		Thread.sleep(3000);
 
@@ -419,7 +419,7 @@ public class TC58_VerifyDiscountWithResendFunctionality extends BaseClass {
 		aop.clickOnOrdersTab();
 		Thread.sleep(3000);
 
-		aop.searchPnameTrack(product59);
+		aop.searchPnameTrack(product58);
 		logger.info("Product name is entered.");
 		Thread.sleep(2000);
 
@@ -475,7 +475,7 @@ public class TC58_VerifyDiscountWithResendFunctionality extends BaseClass {
 		logger.info("client logged in Successfully.");
 		ClientOrdersPage cop = new ClientOrdersPage(driver);
 		cop.clickOnOrdersTab();
-		cop.sendPnameinSearch(product59);
+		cop.sendPnameinSearch(product58);
 		logger.info("Product name is entered.");
 		Thread.sleep(2000);
 
@@ -534,7 +534,7 @@ public class TC58_VerifyDiscountWithResendFunctionality extends BaseClass {
 		asop.clickOnDisputesTab();
 		logger.info("Open disputes page.");
 
-		asop.searchProductForDsp(product59);
+		asop.searchProductForDsp(product58);
 		Thread.sleep(3000);
 		
 		asop.clickOnFrstDsp();
@@ -586,7 +586,7 @@ public class TC58_VerifyDiscountWithResendFunctionality extends BaseClass {
 		logger.info("client logged in Successfully.");
 		ClientOrdersPage cop = new ClientOrdersPage(driver);
 		cop.clickOnOrdersTab();
-		cop.sendPnameinSearch(product59);
+		cop.sendPnameinSearch(product58);
 		logger.info("Product name is entered.");
 		Thread.sleep(2000);
 

@@ -145,6 +145,7 @@ public class AgentOrdersPage {
 	}
 	
 	
+	
 	@FindBy(xpath="//span[@id='quotePrice']")
 	public WebElement quotePrice;
 	
@@ -189,9 +190,19 @@ public class AgentOrdersPage {
 		return result;
 	}
 	
+	public double generateSeventyPercentDiscountPrice() {
+		String amountWithSymbol=quotePrice.getText();
+		String amountWithoutSymbol = amountWithSymbol.replace("€", "").replace(",", ".");
+
+		double amount = Double.parseDouble(amountWithoutSymbol);
+		double percentage = 0.7;
+		double result = amount * percentage;
+
+		return result;
+	}
+	
 	@FindBy(xpath="//span[@id='discountOrderPriceModalContentError']")
 	WebElement errorMsg2;
-	
 	
 	@FindBy(xpath="//li[@class='parsley-required']")
 	WebElement errorMsg;
@@ -239,5 +250,91 @@ public class AgentOrdersPage {
 		amountField.clear();
 		Thread.sleep(1000);
 	}
+	
+	@FindBy(xpath="//a[contains(text(),'Change discount')]")
+	WebElement changeDiscountBtn;
+	
+	public void clickOnChangeDiscountBtn() {
+		changeDiscountBtn.click();
+	}
 
+	public void verifyErrorMessagesOnChangeDiscountWin(WebDriver driver, double val3) throws InterruptedException {
+		submitDiscount.click();
+		Thread.sleep(2000);
+		
+		String expError=errorMsg.getText();
+		String actError="Amount is required";
+		Assert.assertEquals(actError, expError);
+		
+		String amountWithSymbol=quotePrice.getText();
+		String amountWithoutSymbol = amountWithSymbol.replace("€", "").replace(",", ".");
+
+		double amount = Double.parseDouble(amountWithoutSymbol);
+		
+		String amountAsString =String.valueOf(amount);
+		Thread.sleep(1000);
+		
+		amountField.sendKeys(amountAsString);
+		Thread.sleep(1000);
+		
+		submitDiscount.click();
+		Thread.sleep(1000);
+		
+		String actError2=errorMsg2.getText();
+		Thread.sleep(1000);
+		
+		AgentOrdersPage apo=new AgentOrdersPage(driver);
+		
+		//double discountedPrice = apo.generateTheDiscountedPrice();
+		
+		String formattedPrice = String.format("%.2f", val3);
+		
+		String expError2="Enter amount should not be greater than €"+formattedPrice;
+		
+		System.out.println(expError2);
+		System.out.println(actError2);
+		
+		//Assert.assertEquals(expError2, actError2);
+		Assert.assertEquals(expError2, actError2);
+		Thread.sleep(2000);
+		
+		amountField.clear();
+		Thread.sleep(1000);
+	}
+	
+	@FindBy(xpath="//input[@placeholder='Enter amount']")
+	WebElement enterPrice2;
+	
+	public void enterChangedDiscountedPrice(String changedDis) {
+		enterPrice2.sendKeys(changedDis);
+	}
+	
+	public void scrollTillChangeDiscountbtn(WebDriver driver) {
+		JavascriptExecutor exe = (JavascriptExecutor) driver;
+		exe.executeScript("arguments[0].scrollIntoView();", changeDiscountBtn);
+	}
+	
+	@FindBy(xpath="//span[@id='discountOrderPriceModalContentError']")
+	WebElement errorMessage2;
+	
+	public String getErrorMessage() {
+		String error=errorMessage2.getText();
+		return error;
+	}
+	
+	@FindBy(xpath="div[id='discountModelContent'] span[aria-hidden='true']")
+	WebElement closeChangedDiscountWin;
+	
+	public void closeChangedDiscountWin() {
+		closeChangedDiscountWin.click();
+	}
+	
+	@FindBy(xpath="//i[@class='fas fa-angle-down order-discounts']")
+	WebElement showDiscountHistory;
+	
+	public void clickOnShowDiscountHistory() {
+		showDiscountHistory.click();
+	}
+	
+	
 }
