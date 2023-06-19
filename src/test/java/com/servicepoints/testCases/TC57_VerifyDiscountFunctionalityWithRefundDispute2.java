@@ -238,7 +238,7 @@ public class TC57_VerifyDiscountFunctionalityWithRefundDispute2 extends BaseClas
 		logger.info("client logged in Successfully.");
 		ClientOrdersPage cop = new ClientOrdersPage(driver);
 		cop.clickOnOrdersTab();
-		
+
 		cop.sendPnameinSearch(product57);
 		logger.info("Product name is entered.");
 		Thread.sleep(2000);
@@ -343,7 +343,7 @@ public class TC57_VerifyDiscountFunctionalityWithRefundDispute2 extends BaseClas
 		AgentOrdersPage aop = new AgentOrdersPage(driver);
 		aop.clickOnOrdersTab();
 		Thread.sleep(3000);
-		
+
 		aop.searchPnameTrack(product57);
 		logger.info("Product name is entered.");
 		Thread.sleep(2000);

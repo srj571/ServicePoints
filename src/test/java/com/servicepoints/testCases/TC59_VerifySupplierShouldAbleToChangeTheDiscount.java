@@ -305,52 +305,51 @@ public class TC59_VerifySupplierShouldAbleToChangeTheDiscount extends BaseClass 
 
 		aop.clickOnChangeDiscountBtn();
 		Thread.sleep(2000);
-		
+
 		double val3 = val1 - val;
-		
+
 		aop.verifyErrorMessagesOnChangeDiscountWin(driver, val3);
 
-		//String diffDiscount = String.valueOf(val3);
+		// String diffDiscount = String.valueOf(val3);
 		String diffDiscount = String.format("%.2f", val3);
-		
+
 		aop.enterChangedDiscountedPrice(diffDiscount);
 		Thread.sleep(2000);
 
 		aop.clickOnSubmitDiscountBtn();
 		Thread.sleep(3000);
 
-		if(driver.getPageSource().contains("Discount updated successfully")) {
+		if (driver.getPageSource().contains("Discount updated successfully")) {
 			logger.info("Verification of adding discount number is Successfull.");
 			Assert.assertTrue(true);
 			Thread.sleep(3000);
-		}else {
+		} else {
 			logger.info("Verification of adding discount number is failed.");
 			Thread.sleep(2000);
 			Assert.assertTrue(false);
 		}
-		
+
 		aop.clickOnChangeDiscountBtn();
 		Thread.sleep(2000);
-		
+
 		aop.enterChangedDiscountedPrice("4");
 		Thread.sleep(1000);
 
 		aop.clickOnSubmitDiscountBtn();
 		Thread.sleep(3000);
-		
-		String actErrorMsg=aop.getErrorMessage();
-		String expErrorMsg="You can not give more discount.";
-		
+
+		String actErrorMsg = aop.getErrorMessage();
+		String expErrorMsg = "You can not give more discount.";
+
 		Assert.assertEquals(expErrorMsg, actErrorMsg);
 		Thread.sleep(2000);
-		
+
 		logger.info("Verification done successfully.");
-		
+
 		aop.clickOnShowDiscountHistory();
 		Thread.sleep(3000);
 	}
-	
-	
+
 	// invocation count will be equal to variant numbers
 	@Test(enabled = true, priority = 4, invocationCount = 3)
 	public void raiseRefundDispute() throws InterruptedException, IOException {
@@ -366,30 +365,28 @@ public class TC59_VerifySupplierShouldAbleToChangeTheDiscount extends BaseClass 
 		logger.info("client logged in Successfully.");
 		ClientOrdersPage cop = new ClientOrdersPage(driver);
 		cop.clickOnOrdersTab();
-		
+
 		cop.sendPnameinSearch(product59);
 		logger.info("Product name is entered.");
 		Thread.sleep(2000);
-		
+
 		cop.clickOnFDiv();
 		logger.info("Clicked on first div.");
 		Thread.sleep(3000);
-		
-		if(cop.verifyOpenDisputeButtonIsVisible()==true) {
+
+		if (cop.verifyOpenDisputeButtonIsVisible() == true) {
 			Assert.assertTrue(true);
 			Thread.sleep(3000);
 			logger.info("Verification of Dispute for Refund is not able to reopen once accepted is successed.");
-		}
-		else {
+		} else {
 			captureScreen(driver, "Dispute for resend reopen.");
 			logger.info("Verification of Dispute acceptance is failed.");
 			Assert.assertTrue(false);
 		}
-		
-		
+
 		cop.scrollTillOpenDisputesBtn(driver);
 		Thread.sleep(2000);
-		
+
 		cop.clickOnOpenDspbtn();
 		Thread.sleep(2000);
 
@@ -417,34 +414,34 @@ public class TC59_VerifySupplierShouldAbleToChangeTheDiscount extends BaseClass 
 			logger.info("Verification of Refund Dispute raised failed.");
 			Assert.assertTrue(false);
 		}
-		
+
 		driver.get(baseURL);
 		lp.setAdminMailId(agentMailD);
 		lp.setAdminPassword(agentPassD);
 		lp.clickLoginbtn();
 		logger.info("Agent logged in Successfully.");
-		
-		AgentDisputesPage asop=new AgentDisputesPage(driver);
+
+		AgentDisputesPage asop = new AgentDisputesPage(driver);
 		asop.clickOnDisputesTab();
 		logger.info("Open disputes page.");
-		
+
 		asop.searchProductForDsp(product59);
 		Thread.sleep(3000);
-		
+
 		asop.clickOnFrstDsp();
 		Thread.sleep(3000);
-		
+
 		asop.scrollTillShowDispute(driver);
 		Thread.sleep(2000);
-		
+
 		asop.clickOnShowDsp();
 		logger.info("Clicked on show disputes.");
 		Thread.sleep(3000);
-		
+
 		asop.selectDspStatus();
 		logger.info("Dispute Accepted.");
 		Thread.sleep(3000);
-		
+
 		asop.sendAnswer(agentAnswer);
 		Thread.sleep(3000);
 		asop.scrollTillSendAns(driver);
@@ -452,18 +449,18 @@ public class TC59_VerifySupplierShouldAbleToChangeTheDiscount extends BaseClass 
 		asop.clickOnSendAnswer();
 		logger.info("Dispute send.");
 		Thread.sleep(5000);
-		
-		if(driver.getPageSource().contains("Dispute accepted successfully")) {
+
+		if (driver.getPageSource().contains("Dispute accepted successfully")) {
 			Assert.assertTrue(true);
 			Thread.sleep(3000);
 			logger.info("Verification of Refund Dispute acceptance is successed.");
-		}else {
+		} else {
 			captureScreen(driver, "Dispute for resend");
 			logger.info("Verification of Refund Dispute acceptance is failed.");
 			Assert.assertTrue(false);
 		}
 	}
-	
+
 	@Test(enabled = true, priority = 5)
 	public void verifyDiscountFromClientSide() throws InterruptedException {
 		driver.get(baseURL);
@@ -481,10 +478,10 @@ public class TC59_VerifySupplierShouldAbleToChangeTheDiscount extends BaseClass 
 		cop.sendPnameinSearch(product59);
 		logger.info("Product name is entered.");
 		Thread.sleep(2000);
-		
+
 		cop.clickOnFDiv();
 		logger.info("Clicked on first div.");
 		Thread.sleep(4000);
 	}
-	
+
 }

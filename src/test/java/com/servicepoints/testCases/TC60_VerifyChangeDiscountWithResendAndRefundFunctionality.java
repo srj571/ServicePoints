@@ -19,8 +19,8 @@ import com.servicepoints.utilities.ReadConfig;
 
 import junit.framework.Assert;
 
-public class TC60_VerifyChangeDiscountWithResendAndRefundFunctionality extends BaseClass{
-	
+public class TC60_VerifyChangeDiscountWithResendAndRefundFunctionality extends BaseClass {
+
 	ReadConfig rd = new ReadConfig();
 	public String product60 = rd.getProductForTC60();
 
@@ -223,7 +223,6 @@ public class TC60_VerifyChangeDiscountWithResendAndRefundFunctionality extends B
 			Assert.assertTrue(false);
 		}
 	}
-	
 
 	@Test(enabled = true, priority = 3)
 	public void raiseResendDispute() throws InterruptedException, IOException {
@@ -249,7 +248,7 @@ public class TC60_VerifyChangeDiscountWithResendAndRefundFunctionality extends B
 
 		cop.scrollTillOpenDisputesBtn(driver);
 		Thread.sleep(2000);
-		
+
 		if (cop.verifyOpenDisputeButtonIsVisible() == true) {
 			Assert.assertTrue(true);
 			Thread.sleep(3000);
@@ -404,7 +403,7 @@ public class TC60_VerifyChangeDiscountWithResendAndRefundFunctionality extends B
 			Assert.assertTrue(false);
 		}
 	}
-	
+
 	@Test(enabled = true, priority = 5)
 	public void verifyAddingDiscount() throws InterruptedException {
 		driver.get(baseURL);
@@ -438,7 +437,7 @@ public class TC60_VerifyChangeDiscountWithResendAndRefundFunctionality extends B
 		Thread.sleep(2000);
 
 		aop.verifyErrorMessages(driver);
-		
+
 		double val = aop.generateSeventyPercentDiscountPrice();
 		Thread.sleep(2000);
 
@@ -486,53 +485,51 @@ public class TC60_VerifyChangeDiscountWithResendAndRefundFunctionality extends B
 
 		aop.clickOnChangeDiscountBtn();
 		Thread.sleep(2000);
-		
+
 		double val3 = val1 - val;
-		
+
 		aop.verifyErrorMessagesOnChangeDiscountWin(driver, val3);
 
-		//String diffDiscount = String.valueOf(val3);
+		// String diffDiscount = String.valueOf(val3);
 		String diffDiscount = String.format("%.2f", val3);
-		
+
 		aop.enterChangedDiscountedPrice(diffDiscount);
 		Thread.sleep(2000);
 
 		aop.clickOnSubmitDiscountBtn();
 		Thread.sleep(3000);
 
-		if(driver.getPageSource().contains("Discount updated successfully")) {
+		if (driver.getPageSource().contains("Discount updated successfully")) {
 			logger.info("Verification of adding discount number is Successfull.");
 			Assert.assertTrue(true);
 			Thread.sleep(3000);
-		}else {
+		} else {
 			logger.info("Verification of adding discount number is failed.");
 			Thread.sleep(2000);
 			Assert.assertTrue(false);
 		}
-		
+
 		aop.clickOnChangeDiscountBtn();
 		Thread.sleep(2000);
-		
+
 		aop.enterChangedDiscountedPrice("4");
 		Thread.sleep(1000);
 
 		aop.clickOnSubmitDiscountBtn();
 		Thread.sleep(3000);
-		
-		String actErrorMsg=aop.getErrorMessage();
-		String expErrorMsg="You can not give more discount.";
-		
+
+		String actErrorMsg = aop.getErrorMessage();
+		String expErrorMsg = "You can not give more discount.";
+
 		Assert.assertEquals(expErrorMsg, actErrorMsg);
 		Thread.sleep(2000);
-		
+
 		logger.info("Verification done successfully.");
-		
+
 		aop.clickOnShowDiscountHistory();
 		Thread.sleep(3000);
-		
+
 	}
-	
-	
 
 	@Test(enabled = true, priority = 6, invocationCount = 3)
 	public void raiseRefundDispute() throws InterruptedException, IOException {
@@ -565,10 +562,10 @@ public class TC60_VerifyChangeDiscountWithResendAndRefundFunctionality extends B
 			logger.info("Verification of Dispute acceptance is failed.");
 			Assert.assertTrue(false);
 		}
-		
+
 		cop.scrollTillOpenDisputesBtn(driver);
 		Thread.sleep(2000);
-		
+
 		cop.clickOnOpenDspbtn();
 		Thread.sleep(2000);
 
@@ -609,13 +606,13 @@ public class TC60_VerifyChangeDiscountWithResendAndRefundFunctionality extends B
 
 		asop.searchProductForDsp(product60);
 		Thread.sleep(3000);
-		
+
 		asop.clickOnFrstDsp();
 		Thread.sleep(3000);
-		
+
 		asop.scrollTillShowDispute(driver);
 		Thread.sleep(2000);
-		
+
 		asop.clickOnShowDsp();
 		logger.info("Clicked on show disputes.");
 		Thread.sleep(3000);
@@ -626,10 +623,10 @@ public class TC60_VerifyChangeDiscountWithResendAndRefundFunctionality extends B
 
 		asop.sendAnswer(agentAnswer);
 		Thread.sleep(3000);
-		
+
 		asop.scrollTillSendAns(driver);
 		Thread.sleep(1000);
-		
+
 		asop.clickOnSendAnswer();
 		logger.info("Dispute send.");
 		Thread.sleep(5000);
@@ -643,13 +640,58 @@ public class TC60_VerifyChangeDiscountWithResendAndRefundFunctionality extends B
 			logger.info("Verification of Refund Dispute acceptance is failed.");
 			Assert.assertTrue(false);
 		}
+
+		AgentOrdersPage aop = new AgentOrdersPage(driver);
+		aop.clickOnOrdersTab();
+
+		aop.searchPnameTrack(product60);
+		logger.info("Product name is entered.");
+		Thread.sleep(2000);
+
+		aop.clickOnfDiv();
+		Thread.sleep(3000);
+
+		aop.scrollTillChangeDiscountbtn(driver);
+		Thread.sleep(3000);
+
+		aop.clickOnChangeDiscountBtn();
+		Thread.sleep(2000);
+
+		aop.clickOnShowDiscountHistory();
+		Thread.sleep(3000);
 	}
 
 	@Test(enabled = true, priority = 7)
 	public void verifyDiscountFromClientSide() throws InterruptedException {
 		driver.get(baseURL);
-
 		LoginPage lp = new LoginPage(driver);
+
+		lp.setAdminMailId(agentMailD);
+		lp.setAdminPassword(agentPassD);
+		lp.clickLoginbtn();
+		logger.info("Agent logged in Successfully.");
+
+		AgentOrdersPage aop = new AgentOrdersPage(driver);
+		aop.clickOnOrdersTab();
+
+		aop.searchPnameTrack(product60);
+		logger.info("Product name is entered.");
+		Thread.sleep(2000);
+
+		aop.clickOnfDiv();
+		Thread.sleep(3000);
+
+		aop.scrollTillChangeDiscountbtn(driver);
+		Thread.sleep(3000);
+
+		aop.clickOnChangeDiscountBtn();
+		Thread.sleep(2000);
+
+		aop.clickOnShowDiscountHistory();
+		Thread.sleep(3000);
+
+		driver.get(baseURL);
+
 		Thread.sleep(3000);
 		lp.setAdminMailId(clientMailD);
 		lp.setAdminPassword(clientPassD);
@@ -701,7 +743,7 @@ public class TC60_VerifyChangeDiscountWithResendAndRefundFunctionality extends B
 		Thread.sleep(2000);
 
 		aop.verifyErrorMessages(driver);
-		
+
 		double val = aop.generateTheDiscountedPrice();
 		Thread.sleep(2000);
 
@@ -726,24 +768,24 @@ public class TC60_VerifyChangeDiscountWithResendAndRefundFunctionality extends B
 			Thread.sleep(2000);
 			Assert.assertTrue(false);
 		}
-		
+
 		aop.clickOnChangeDiscountBtn();
 		Thread.sleep(2000);
-		
+
 		aop.enterChangedDiscountedPrice("4");
 		Thread.sleep(1000);
 
 		aop.clickOnSubmitDiscountBtn();
 		Thread.sleep(3000);
-		
-		String actErrorMsg=aop.getErrorMessage();
-		String expErrorMsg="You can not give more discount.";
-		
+
+		String actErrorMsg = aop.getErrorMessage();
+		String expErrorMsg = "You can not give more discount.";
+
 		Assert.assertEquals(expErrorMsg, actErrorMsg);
 		Thread.sleep(2000);
-		
+
 		logger.info("Verification done successfully.");
-		
+
 		aop.clickOnShowDiscountHistory();
 		Thread.sleep(3000);
 	}

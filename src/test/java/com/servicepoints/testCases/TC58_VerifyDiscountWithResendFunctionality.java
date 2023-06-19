@@ -434,7 +434,7 @@ public class TC58_VerifyDiscountWithResendFunctionality extends BaseClass {
 		Thread.sleep(2000);
 
 		aop.verifyErrorMessages(driver);
-		
+
 		double val = aop.generateTheDiscountedPrice();
 		Thread.sleep(2000);
 
@@ -492,10 +492,10 @@ public class TC58_VerifyDiscountWithResendFunctionality extends BaseClass {
 			logger.info("Verification of Dispute acceptance is failed.");
 			Assert.assertTrue(false);
 		}
-		
+
 		cop.scrollTillOpenDisputesBtn(driver);
 		Thread.sleep(2000);
-		
+
 		cop.clickOnOpenDspbtn();
 		Thread.sleep(2000);
 
@@ -536,13 +536,13 @@ public class TC58_VerifyDiscountWithResendFunctionality extends BaseClass {
 
 		asop.searchProductForDsp(product58);
 		Thread.sleep(3000);
-		
+
 		asop.clickOnFrstDsp();
 		Thread.sleep(3000);
-		
+
 		asop.scrollTillShowDispute(driver);
 		Thread.sleep(2000);
-		
+
 		asop.clickOnShowDsp();
 		logger.info("Clicked on show disputes.");
 		Thread.sleep(3000);
@@ -553,10 +553,10 @@ public class TC58_VerifyDiscountWithResendFunctionality extends BaseClass {
 
 		asop.sendAnswer(agentAnswer);
 		Thread.sleep(3000);
-		
+
 		asop.scrollTillSendAns(driver);
 		Thread.sleep(1000);
-		
+
 		asop.clickOnSendAnswer();
 		logger.info("Dispute send.");
 		Thread.sleep(5000);
