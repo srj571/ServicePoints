@@ -354,7 +354,9 @@ public class TC57_VerifyDiscountFunctionalityWithRefundDispute2 extends BaseClas
 
 		Thread.sleep(2000);
 		aop.clickOnDiscountBtn();
-
+		Thread.sleep(2000);
+		
+		aop.verifyErrorMessages(driver);
 		Thread.sleep(2000);
 
 		double val = aop.generateTheDiscountedPrice();

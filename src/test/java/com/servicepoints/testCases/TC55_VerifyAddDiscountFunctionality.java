@@ -285,10 +285,6 @@ public class TC55_VerifyAddDiscountFunctionality extends BaseClass{
 		
 		String actualDiscount=String.valueOf(amount);
 		
-		TC55_VerifyAddDiscountFunctionality newVal=new TC55_VerifyAddDiscountFunctionality();
-		
-		//String actualVal=newVal.amountAsString;
-		
 		if(amountAsString.equals(actualDiscount)) {
 			logger.info("Both discount price is equal to discount price entered by supplier is successfully verified.");
 			Assert.assertTrue(true);

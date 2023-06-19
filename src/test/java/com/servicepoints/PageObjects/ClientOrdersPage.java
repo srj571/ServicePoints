@@ -185,6 +185,12 @@ public class ClientOrdersPage {
 			checkBoxTable.get(0).click();
 		}
 	}
+	
+	public void clickOnFirstTwoCheckBoxesForOpenDispute() {
+		for (int i = 0; i <= 1; i++) {
+			checkBoxTable.get(i).click();
+		}
+	}
 
 	@FindBy(xpath = "//input[@id='saveDispute']")
 	WebElement SaveDsp;

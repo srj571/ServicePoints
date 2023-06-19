@@ -1974,3 +1974,383 @@
 [INFO ] 2023-06-19 12:56:50.742 [main] BaseClass - Product name is entered.
 [INFO ] 2023-06-19 12:57:20.032 [main] BaseClass - Verification of adding discount number is Successfull.
 [INFO ] 2023-06-19 12:57:30.394 [main] BaseClass - Verification done successfully.
+[INFO ] 2023-06-19 14:36:05.428 [main] BaseClass - Application Opened.
+[INFO ] 2023-06-19 14:36:06.536 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-06-19 14:36:07.701 [main] BaseClass - Password is entered.
+[INFO ] 2023-06-19 14:36:10.772 [main] BaseClass - Logged in to the Agent supplier account.
+[INFO ] 2023-06-19 14:36:22.592 [main] BaseClass - Product name entered.
+[INFO ] 2023-06-19 14:36:27.048 [main] BaseClass - Price entered for all pieces.
+[INFO ] 2023-06-19 14:36:32.232 [main] BaseClass - Clicked on submit quotation button.
+[INFO ] 2023-06-19 14:36:41.309 [main] BaseClass - Verification of Submit quotation Successed..
+[INFO ] 2023-06-19 14:36:44.910 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-06-19 14:36:45.003 [main] BaseClass - Password is entered.
+[INFO ] 2023-06-19 14:36:49.076 [main] BaseClass - Client logged in successfully.
+[INFO ] 2023-06-19 14:36:54.542 [main] BaseClass - Product name searched.
+[INFO ] 2023-06-19 14:37:04.002 [main] BaseClass - Clicked on Accept Quotation button.
+[INFO ] 2023-06-19 14:37:08.036 [main] BaseClass - Verification of accepting quotation is Successed.
+[INFO ] 2023-06-19 14:37:12.396 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-06-19 14:37:20.886 [main] BaseClass - Product name is entered.
+[INFO ] 2023-06-19 14:37:24.028 [main] BaseClass - Clicked on status dropdown.
+[INFO ] 2023-06-19 14:37:27.197 [main] BaseClass - Processing status is searched.
+[INFO ] 2023-06-19 14:37:36.616 [main] BaseClass - Tracking number entered.
+[INFO ] 2023-06-19 14:37:39.685 [main] BaseClass - clicked on add tracking button.
+[INFO ] 2023-06-19 14:37:42.919 [main] BaseClass - Clicked on submit tracking button.
+[INFO ] 2023-06-19 14:38:20.317 [main] BaseClass - Verification of adding tracking number is Successfull.
+[INFO ] 2023-06-19 14:38:48.497 [main] BaseClass - Verification of adding discount number is Successfull.
+[INFO ] 2023-06-19 14:38:54.330 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-06-19 14:38:54.418 [main] BaseClass - Password is entered.
+[INFO ] 2023-06-19 14:39:04.658 [main] BaseClass - Both discount price is equal to discount price entered by supplier is successfully verified.
+[INFO ] 2023-06-19 14:42:15.195 [main] BaseClass - Application Opened.
+[INFO ] 2023-06-19 14:42:16.296 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-06-19 14:42:17.453 [main] BaseClass - Password is entered.
+[INFO ] 2023-06-19 14:42:20.533 [main] BaseClass - Logged in to the Agent supplier account.
+[INFO ] 2023-06-19 14:42:30.807 [main] BaseClass - Product name entered.
+[INFO ] 2023-06-19 14:42:35.210 [main] BaseClass - Price entered for all pieces.
+[INFO ] 2023-06-19 14:42:40.394 [main] BaseClass - Clicked on submit quotation button.
+[INFO ] 2023-06-19 14:42:49.470 [main] BaseClass - Verification of Submit quotation Successed..
+[INFO ] 2023-06-19 14:42:52.878 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-06-19 14:42:52.964 [main] BaseClass - Password is entered.
+[INFO ] 2023-06-19 14:42:57.050 [main] BaseClass - Client logged in successfully.
+[INFO ] 2023-06-19 14:43:02.538 [main] BaseClass - Product name searched.
+[INFO ] 2023-06-19 14:43:11.952 [main] BaseClass - Clicked on Accept Quotation button.
+[INFO ] 2023-06-19 14:43:16.004 [main] BaseClass - Verification of accepting quotation is Successed.
+[INFO ] 2023-06-19 14:43:19.915 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-06-19 14:43:28.137 [main] BaseClass - Product name is entered.
+[INFO ] 2023-06-19 14:43:31.284 [main] BaseClass - Clicked on status dropdown.
+[INFO ] 2023-06-19 14:43:34.406 [main] BaseClass - Processing status is searched.
+[INFO ] 2023-06-19 14:43:43.824 [main] BaseClass - Tracking number entered.
+[INFO ] 2023-06-19 14:43:47.899 [main] BaseClass - clicked on add tracking button.
+[INFO ] 2023-06-19 14:43:54.125 [main] BaseClass - Clicked on submit tracking button.
+[INFO ] 2023-06-19 14:44:32.478 [main] BaseClass - Verification of adding tracking number is Successfull.
+[INFO ] 2023-06-19 14:44:49.224 [main] BaseClass - Verification of adding discount number is Successfull.
+[INFO ] 2023-06-19 14:45:00.643 [main] BaseClass - client logged in Successfully.
+[INFO ] 2023-06-19 14:45:03.554 [main] BaseClass - Product name is entered.
+[INFO ] 2023-06-19 14:45:05.694 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-06-19 14:45:11.766 [main] BaseClass - Verification of Dispute for Refund is not able to reopen once accepted is successed.
+[INFO ] 2023-06-19 14:45:16.229 [main] BaseClass - Customer got wrong product option selected.
+[INFO ] 2023-06-19 14:45:16.390 [main] BaseClass - Refund dispute option is selected.
+[INFO ] 2023-06-19 14:45:19.707 [main] BaseClass - Queries entered in text fields.
+[INFO ] 2023-06-19 14:45:24.797 [main] BaseClass - Dispute saved.
+[INFO ] 2023-06-19 14:45:24.845 [main] BaseClass - Verification of Refund Dispute raised Successfully.
+[INFO ] 2023-06-19 14:45:28.710 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-06-19 14:45:31.806 [main] BaseClass - Open disputes page.
+[INFO ] 2023-06-19 14:45:40.131 [main] BaseClass - Clicked on show disputes.
+[INFO ] 2023-06-19 14:45:43.244 [main] BaseClass - Dispute Accepted.
+[INFO ] 2023-06-19 14:45:50.560 [main] BaseClass - Dispute send.
+[INFO ] 2023-06-19 14:45:58.633 [main] BaseClass - Verification of Refund Dispute acceptance is successed.
+[INFO ] 2023-06-19 14:46:07.473 [main] BaseClass - client logged in Successfully.
+[INFO ] 2023-06-19 14:46:08.952 [main] BaseClass - Product name is entered.
+[INFO ] 2023-06-19 14:46:11.082 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-06-19 14:46:17.158 [main] BaseClass - Verification of Dispute for Refund is not able to reopen once accepted is successed.
+[INFO ] 2023-06-19 14:46:21.388 [main] BaseClass - Customer got wrong product option selected.
+[INFO ] 2023-06-19 14:46:21.538 [main] BaseClass - Refund dispute option is selected.
+[INFO ] 2023-06-19 14:46:24.814 [main] BaseClass - Queries entered in text fields.
+[INFO ] 2023-06-19 14:46:29.915 [main] BaseClass - Dispute saved.
+[INFO ] 2023-06-19 14:46:29.958 [main] BaseClass - Verification of Refund Dispute raised Successfully.
+[INFO ] 2023-06-19 14:46:33.781 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-06-19 14:46:37.487 [main] BaseClass - Open disputes page.
+[INFO ] 2023-06-19 14:46:45.800 [main] BaseClass - Clicked on show disputes.
+[INFO ] 2023-06-19 14:46:48.982 [main] BaseClass - Dispute Accepted.
+[INFO ] 2023-06-19 14:46:56.313 [main] BaseClass - Dispute send.
+[INFO ] 2023-06-19 14:47:04.349 [main] BaseClass - Verification of Refund Dispute acceptance is successed.
+[INFO ] 2023-06-19 14:47:12.963 [main] BaseClass - client logged in Successfully.
+[INFO ] 2023-06-19 14:47:15.605 [main] BaseClass - Product name is entered.
+[INFO ] 2023-06-19 14:47:17.727 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-06-19 14:47:23.805 [main] BaseClass - Verification of Dispute for Refund is not able to reopen once accepted is successed.
+[INFO ] 2023-06-19 14:47:28.074 [main] BaseClass - Customer got wrong product option selected.
+[INFO ] 2023-06-19 14:47:28.215 [main] BaseClass - Refund dispute option is selected.
+[INFO ] 2023-06-19 14:47:31.494 [main] BaseClass - Queries entered in text fields.
+[INFO ] 2023-06-19 14:47:36.597 [main] BaseClass - Dispute saved.
+[INFO ] 2023-06-19 14:47:36.646 [main] BaseClass - Verification of Refund Dispute raised Successfully.
+[INFO ] 2023-06-19 14:47:40.603 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-06-19 14:47:45.831 [main] BaseClass - Open disputes page.
+[INFO ] 2023-06-19 14:47:54.140 [main] BaseClass - Clicked on show disputes.
+[INFO ] 2023-06-19 14:47:57.321 [main] BaseClass - Dispute Accepted.
+[INFO ] 2023-06-19 14:48:04.637 [main] BaseClass - Dispute send.
+[INFO ] 2023-06-19 14:48:12.675 [main] BaseClass - Verification of Refund Dispute acceptance is successed.
+[INFO ] 2023-06-19 14:48:21.484 [main] BaseClass - client logged in Successfully.
+[INFO ] 2023-06-19 14:48:23.817 [main] BaseClass - Product name is entered.
+[INFO ] 2023-06-19 14:48:25.945 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-06-19 14:55:39.096 [main] BaseClass - Application Opened.
+[INFO ] 2023-06-19 14:55:40.196 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-06-19 14:55:41.363 [main] BaseClass - Password is entered.
+[INFO ] 2023-06-19 14:55:44.433 [main] BaseClass - Logged in to the Agent supplier account.
+[INFO ] 2023-06-19 14:55:55.054 [main] BaseClass - Product name entered.
+[INFO ] 2023-06-19 14:55:59.554 [main] BaseClass - Price entered for all pieces.
+[INFO ] 2023-06-19 14:56:04.765 [main] BaseClass - Clicked on submit quotation button.
+[INFO ] 2023-06-19 14:56:13.844 [main] BaseClass - Verification of Submit quotation Successed..
+[INFO ] 2023-06-19 14:56:17.300 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-06-19 14:56:17.521 [main] BaseClass - Password is entered.
+[INFO ] 2023-06-19 14:56:21.693 [main] BaseClass - Client logged in successfully.
+[INFO ] 2023-06-19 14:56:27.149 [main] BaseClass - Product name searched.
+[INFO ] 2023-06-19 14:56:36.637 [main] BaseClass - Clicked on Accept Quotation button.
+[INFO ] 2023-06-19 14:56:40.689 [main] BaseClass - Verification of accepting quotation is Successed.
+[INFO ] 2023-06-19 14:56:44.201 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-06-19 14:56:51.797 [main] BaseClass - Product name is entered.
+[INFO ] 2023-06-19 14:56:54.920 [main] BaseClass - Clicked on status dropdown.
+[INFO ] 2023-06-19 14:56:58.092 [main] BaseClass - Processing status is searched.
+[INFO ] 2023-06-19 14:57:07.540 [main] BaseClass - Tracking number entered.
+[INFO ] 2023-06-19 14:57:11.622 [main] BaseClass - clicked on add tracking button.
+[INFO ] 2023-06-19 14:57:17.870 [main] BaseClass - Clicked on submit tracking button.
+[INFO ] 2023-06-19 14:57:53.158 [main] BaseClass - Verification of adding tracking number is Successfull.
+[INFO ] 2023-06-19 14:58:21.299 [main] BaseClass - Verification of adding discount number is Successfull.
+[INFO ] 2023-06-19 14:58:32.074 [main] BaseClass - client logged in Successfully.
+[INFO ] 2023-06-19 14:58:34.711 [main] BaseClass - Product name is entered.
+[INFO ] 2023-06-19 14:58:36.847 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-06-19 14:58:42.961 [main] BaseClass - Verification of Dispute for Refund is not able to reopen once accepted is successed.
+[INFO ] 2023-06-19 14:58:47.339 [main] BaseClass - Customer got wrong product option selected.
+[INFO ] 2023-06-19 14:58:47.474 [main] BaseClass - Refund dispute option is selected.
+[INFO ] 2023-06-19 14:58:50.748 [main] BaseClass - Queries entered in text fields.
+[INFO ] 2023-06-19 14:58:55.850 [main] BaseClass - Dispute saved.
+[INFO ] 2023-06-19 14:58:55.917 [main] BaseClass - Verification of Refund Dispute raised Successfully.
+[INFO ] 2023-06-19 14:58:59.832 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-06-19 14:59:03.414 [main] BaseClass - Open disputes page.
+[INFO ] 2023-06-19 14:59:11.831 [main] BaseClass - Clicked on show disputes.
+[INFO ] 2023-06-19 14:59:15.062 [main] BaseClass - Dispute Accepted.
+[INFO ] 2023-06-19 14:59:22.442 [main] BaseClass - Dispute send.
+[INFO ] 2023-06-19 14:59:30.513 [main] BaseClass - Verification of Refund Dispute acceptance is successed.
+[INFO ] 2023-06-19 14:59:39.462 [main] BaseClass - client logged in Successfully.
+[INFO ] 2023-06-19 14:59:42.296 [main] BaseClass - Product name is entered.
+[INFO ] 2023-06-19 14:59:44.387 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-06-19 14:59:50.453 [main] BaseClass - Verification of Dispute for Refund is not able to reopen once accepted is successed.
+[INFO ] 2023-06-19 14:59:54.796 [main] BaseClass - Customer got wrong product option selected.
+[INFO ] 2023-06-19 14:59:54.969 [main] BaseClass - Refund dispute option is selected.
+[INFO ] 2023-06-19 14:59:58.278 [main] BaseClass - Queries entered in text fields.
+[INFO ] 2023-06-19 15:00:03.420 [main] BaseClass - Dispute saved.
+[INFO ] 2023-06-19 15:00:03.499 [main] BaseClass - Verification of Refund Dispute raised Successfully.
+[INFO ] 2023-06-19 15:00:07.388 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-06-19 15:00:16.570 [main] BaseClass - Open disputes page.
+[INFO ] 2023-06-19 15:00:24.972 [main] BaseClass - Clicked on show disputes.
+[INFO ] 2023-06-19 15:00:28.164 [main] BaseClass - Dispute Accepted.
+[INFO ] 2023-06-19 15:00:35.449 [main] BaseClass - Dispute send.
+[INFO ] 2023-06-19 15:00:43.484 [main] BaseClass - Verification of Refund Dispute acceptance is successed.
+[INFO ] 2023-06-19 15:00:52.457 [main] BaseClass - client logged in Successfully.
+[INFO ] 2023-06-19 15:00:55.710 [main] BaseClass - Product name is entered.
+[INFO ] 2023-06-19 15:00:57.864 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-06-19 15:01:03.933 [main] BaseClass - Verification of Dispute for Refund is not able to reopen once accepted is successed.
+[INFO ] 2023-06-19 15:01:08.227 [main] BaseClass - Customer got wrong product option selected.
+[INFO ] 2023-06-19 15:01:08.362 [main] BaseClass - Refund dispute option is selected.
+[INFO ] 2023-06-19 15:01:11.646 [main] BaseClass - Queries entered in text fields.
+[INFO ] 2023-06-19 15:01:16.749 [main] BaseClass - Dispute saved.
+[INFO ] 2023-06-19 15:01:16.800 [main] BaseClass - Verification of Refund Dispute raised Successfully.
+[INFO ] 2023-06-19 15:01:20.537 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-06-19 15:01:25.458 [main] BaseClass - Open disputes page.
+[INFO ] 2023-06-19 15:01:33.799 [main] BaseClass - Clicked on show disputes.
+[INFO ] 2023-06-19 15:01:37.038 [main] BaseClass - Dispute Accepted.
+[INFO ] 2023-06-19 15:01:44.376 [main] BaseClass - Dispute send.
+[INFO ] 2023-06-19 15:01:52.428 [main] BaseClass - Verification of Refund Dispute acceptance is successed.
+[INFO ] 2023-06-19 15:02:01.250 [main] BaseClass - client logged in Successfully.
+[INFO ] 2023-06-19 15:02:03.235 [main] BaseClass - Product name is entered.
+[INFO ] 2023-06-19 15:02:05.316 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-06-19 15:08:23.825 [main] BaseClass - Application Opened.
+[INFO ] 2023-06-19 15:08:24.922 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-06-19 15:08:26.014 [main] BaseClass - Password is entered.
+[INFO ] 2023-06-19 15:08:29.085 [main] BaseClass - Logged in to the Agent supplier account.
+[INFO ] 2023-06-19 15:08:39.551 [main] BaseClass - Product name entered.
+[INFO ] 2023-06-19 15:08:44.121 [main] BaseClass - Price entered for all pieces.
+[INFO ] 2023-06-19 15:08:49.288 [main] BaseClass - Clicked on submit quotation button.
+[INFO ] 2023-06-19 15:08:58.371 [main] BaseClass - Verification of Submit quotation Successed..
+[INFO ] 2023-06-19 15:09:01.968 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-06-19 15:09:02.050 [main] BaseClass - Password is entered.
+[INFO ] 2023-06-19 15:09:06.130 [main] BaseClass - Client logged in successfully.
+[INFO ] 2023-06-19 15:09:11.260 [main] BaseClass - Product name searched.
+[INFO ] 2023-06-19 15:09:20.670 [main] BaseClass - Clicked on Accept Quotation button.
+[INFO ] 2023-06-19 15:09:24.719 [main] BaseClass - Verification of accepting quotation is Successed.
+[INFO ] 2023-06-19 15:09:28.392 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-06-19 15:09:36.397 [main] BaseClass - Product name is entered.
+[INFO ] 2023-06-19 15:09:39.497 [main] BaseClass - Clicked on status dropdown.
+[INFO ] 2023-06-19 15:09:42.660 [main] BaseClass - Processing status is searched.
+[INFO ] 2023-06-19 15:09:52.113 [main] BaseClass - Tracking number entered.
+[INFO ] 2023-06-19 15:09:56.163 [main] BaseClass - clicked on add tracking button.
+[INFO ] 2023-06-19 15:10:02.396 [main] BaseClass - Clicked on submit tracking button.
+[INFO ] 2023-06-19 15:10:41.980 [main] BaseClass - Verification of adding tracking number is Successfull.
+[INFO ] 2023-06-19 15:10:52.855 [main] BaseClass - client logged in Successfully.
+[INFO ] 2023-06-19 15:10:55.138 [main] BaseClass - Product name is entered.
+[INFO ] 2023-06-19 15:10:57.203 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-06-19 15:11:03.264 [main] BaseClass - Verification of Dispute for Refund is not able to reopen once accepted is successed.
+[INFO ] 2023-06-19 15:11:05.577 [main] BaseClass - Customer got wrong product option selected.
+[INFO ] 2023-06-19 15:11:05.717 [main] BaseClass - Refund dispute option is selected.
+[INFO ] 2023-06-19 15:11:08.916 [main] BaseClass - Queries entered in text fields.
+[INFO ] 2023-06-19 15:11:14.011 [main] BaseClass - Dispute saved.
+[INFO ] 2023-06-19 15:11:14.093 [main] BaseClass - Verification of Refund Dispute raised Successfully.
+[INFO ] 2023-06-19 15:11:18.091 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-06-19 15:11:22.023 [main] BaseClass - Open disputes page.
+[INFO ] 2023-06-19 15:11:28.348 [main] BaseClass - Clicked on show disputes.
+[INFO ] 2023-06-19 15:11:31.511 [main] BaseClass - Dispute Accepted.
+[INFO ] 2023-06-19 15:11:38.860 [main] BaseClass - Dispute send.
+[INFO ] 2023-06-19 15:11:46.932 [main] BaseClass - Verification of Refund Dispute acceptance is successed.
+[INFO ] 2023-06-19 15:11:50.419 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-06-19 15:11:57.880 [main] BaseClass - Product name is entered.
+[INFO ] 2023-06-19 15:12:17.419 [main] BaseClass - Verification of adding discount number is Successfull.
+[INFO ] 2023-06-19 15:12:28.328 [main] BaseClass - client logged in Successfully.
+[INFO ] 2023-06-19 15:12:30.818 [main] BaseClass - Product name is entered.
+[INFO ] 2023-06-19 15:12:32.947 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-06-19 16:22:59.534 [main] BaseClass - Application Opened.
+[INFO ] 2023-06-19 16:23:00.634 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-06-19 16:23:01.787 [main] BaseClass - Password is entered.
+[INFO ] 2023-06-19 16:23:04.856 [main] BaseClass - Logged in to the Agent supplier account.
+[INFO ] 2023-06-19 16:23:15.414 [main] BaseClass - Product name entered.
+[INFO ] 2023-06-19 16:24:28.488 [main] BaseClass - Application Opened.
+[INFO ] 2023-06-19 16:24:29.588 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-06-19 16:24:30.685 [main] BaseClass - Password is entered.
+[INFO ] 2023-06-19 16:24:33.757 [main] BaseClass - Logged in to the Agent supplier account.
+[INFO ] 2023-06-19 16:24:44.324 [main] BaseClass - Product name entered.
+[INFO ] 2023-06-19 16:24:48.953 [main] BaseClass - Price entered for all pieces.
+[INFO ] 2023-06-19 16:24:54.144 [main] BaseClass - Clicked on submit quotation button.
+[INFO ] 2023-06-19 16:25:03.219 [main] BaseClass - Verification of Submit quotation Successed..
+[INFO ] 2023-06-19 16:25:06.517 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-06-19 16:25:06.596 [main] BaseClass - Password is entered.
+[INFO ] 2023-06-19 16:25:10.676 [main] BaseClass - Client logged in successfully.
+[INFO ] 2023-06-19 16:25:15.836 [main] BaseClass - Product name searched.
+[INFO ] 2023-06-19 16:25:25.236 [main] BaseClass - Clicked on Accept Quotation button.
+[INFO ] 2023-06-19 16:25:29.315 [main] BaseClass - Verification of accepting quotation is Successed.
+[INFO ] 2023-06-19 16:25:33.054 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-06-19 16:25:40.585 [main] BaseClass - Product name is entered.
+[INFO ] 2023-06-19 16:25:43.680 [main] BaseClass - Clicked on status dropdown.
+[INFO ] 2023-06-19 16:25:46.848 [main] BaseClass - Processing status is searched.
+[INFO ] 2023-06-19 16:25:56.335 [main] BaseClass - Tracking number entered.
+[INFO ] 2023-06-19 16:26:00.408 [main] BaseClass - clicked on add tracking button.
+[INFO ] 2023-06-19 16:26:06.648 [main] BaseClass - Clicked on submit tracking button.
+[INFO ] 2023-06-19 16:27:06.043 [main] BaseClass - Verification of adding tracking number is Successfull.
+[INFO ] 2023-06-19 16:27:17.123 [main] BaseClass - client logged in Successfully.
+[INFO ] 2023-06-19 16:27:19.066 [main] BaseClass - Product name is entered.
+[INFO ] 2023-06-19 16:27:21.200 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-06-19 16:27:27.242 [main] BaseClass - Verification of Dispute for Refund is not able to reopen once accepted is successed.
+[INFO ] 2023-06-19 16:27:31.482 [main] BaseClass - Customer got wrong product option selected.
+[INFO ] 2023-06-19 16:27:31.612 [main] BaseClass - Refund dispute option is selected.
+[INFO ] 2023-06-19 16:37:04.052 [main] BaseClass - client logged in Successfully.
+[INFO ] 2023-06-19 16:37:06.762 [main] BaseClass - Product name is entered.
+[INFO ] 2023-06-19 16:37:08.835 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-06-19 16:37:14.964 [main] BaseClass - Verification of Dispute for Refund is not able to reopen once accepted is successed.
+[INFO ] 2023-06-19 16:37:19.209 [main] BaseClass - Customer got wrong product option selected.
+[INFO ] 2023-06-19 16:37:19.364 [main] BaseClass - Refund dispute option is selected.
+[INFO ] 2023-06-19 16:37:22.621 [main] BaseClass - Queries entered in text fields.
+[INFO ] 2023-06-19 16:37:27.717 [main] BaseClass - Dispute saved.
+[INFO ] 2023-06-19 16:37:27.838 [main] BaseClass - Verification of Refund Dispute raised Successfully.
+[INFO ] 2023-06-19 16:37:31.412 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-06-19 16:37:33.414 [main] BaseClass - Open disputes page.
+[INFO ] 2023-06-19 16:37:41.784 [main] BaseClass - Clicked on show disputes.
+[INFO ] 2023-06-19 16:37:44.891 [main] BaseClass - Dispute Accepted.
+[INFO ] 2023-06-19 16:37:52.212 [main] BaseClass - Dispute send.
+[INFO ] 2023-06-19 16:38:00.249 [main] BaseClass - Verification of Refund Dispute acceptance is successed.
+[INFO ] 2023-06-19 16:38:09.021 [main] BaseClass - client logged in Successfully.
+[INFO ] 2023-06-19 16:38:11.770 [main] BaseClass - Product name is entered.
+[INFO ] 2023-06-19 16:38:13.842 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-06-19 16:38:19.968 [main] BaseClass - Verification of Dispute for Refund is not able to reopen once accepted is successed.
+[INFO ] 2023-06-19 16:38:24.218 [main] BaseClass - Customer got wrong product option selected.
+[INFO ] 2023-06-19 16:38:24.364 [main] BaseClass - Refund dispute option is selected.
+[INFO ] 2023-06-19 16:38:27.634 [main] BaseClass - Queries entered in text fields.
+[INFO ] 2023-06-19 16:38:32.722 [main] BaseClass - Dispute saved.
+[INFO ] 2023-06-19 16:38:32.811 [main] BaseClass - Verification of Refund Dispute raised Successfully.
+[INFO ] 2023-06-19 16:38:36.531 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-06-19 16:38:38.539 [main] BaseClass - Open disputes page.
+[INFO ] 2023-06-19 16:38:46.849 [main] BaseClass - Clicked on show disputes.
+[INFO ] 2023-06-19 16:38:49.959 [main] BaseClass - Dispute Accepted.
+[INFO ] 2023-06-19 16:38:57.177 [main] BaseClass - Dispute send.
+[INFO ] 2023-06-19 16:39:05.245 [main] BaseClass - Verification of Refund Dispute acceptance is successed.
+[INFO ] 2023-06-19 16:39:14.041 [main] BaseClass - client logged in Successfully.
+[INFO ] 2023-06-19 16:39:15.272 [main] BaseClass - Product name is entered.
+[INFO ] 2023-06-19 16:39:17.398 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-06-19 16:39:23.523 [main] BaseClass - Verification of Dispute for Refund is not able to reopen once accepted is successed.
+[INFO ] 2023-06-19 16:39:27.883 [main] BaseClass - Customer got wrong product option selected.
+[INFO ] 2023-06-19 16:39:28.024 [main] BaseClass - Refund dispute option is selected.
+[INFO ] 2023-06-19 16:39:31.714 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-06-19 16:39:39.035 [main] BaseClass - Product name is entered.
+[INFO ] 2023-06-19 16:40:10.405 [main] BaseClass - Verification of adding discount number is Successfull.
+[INFO ] 2023-06-19 16:40:30.318 [main] BaseClass - Verification of adding discount number is Successfull.
+[INFO ] 2023-06-19 16:40:41.671 [main] BaseClass - Verification done successfully.
+[INFO ] 2023-06-19 16:40:53.453 [main] BaseClass - client logged in Successfully.
+[INFO ] 2023-06-19 16:40:55.508 [main] BaseClass - Product name is entered.
+[INFO ] 2023-06-19 16:40:57.569 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-06-19 16:41:03.684 [main] BaseClass - Verification of Dispute for Refund is not able to reopen once accepted is successed.
+[INFO ] 2023-06-19 16:41:08.069 [main] BaseClass - Customer got wrong product option selected.
+[INFO ] 2023-06-19 16:41:08.221 [main] BaseClass - Refund dispute option is selected.
+[INFO ] 2023-06-19 16:41:18.377 [main] BaseClass - Queries entered in text fields.
+[INFO ] 2023-06-19 16:41:23.450 [main] BaseClass - Dispute saved.
+[INFO ] 2023-06-19 16:41:23.718 [main] BaseClass - Verification of Refund Dispute raised failed.
+[INFO ] 2023-06-19 16:41:27.527 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-06-19 16:41:34.407 [main] BaseClass - Product name is entered.
+[INFO ] 2023-06-19 16:41:56.321 [main] BaseClass - client logged in Successfully.
+[INFO ] 2023-06-19 16:41:58.865 [main] BaseClass - Product name is entered.
+[INFO ] 2023-06-19 16:42:00.963 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-06-19 16:46:45.680 [main] BaseClass - client logged in Successfully.
+[INFO ] 2023-06-19 16:46:47.999 [main] BaseClass - Product name is entered.
+[INFO ] 2023-06-19 16:46:50.084 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-06-19 16:46:53.437 [main] BaseClass - Verification of Dispute acceptance is failed.
+[INFO ] 2023-06-19 16:46:57.125 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-06-19 16:47:57.719 [main] BaseClass - Application Opened.
+[INFO ] 2023-06-19 16:47:58.819 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-06-19 16:47:59.980 [main] BaseClass - Password is entered.
+[INFO ] 2023-06-19 16:48:03.057 [main] BaseClass - Logged in to the Agent supplier account.
+[INFO ] 2023-06-19 16:48:13.126 [main] BaseClass - Product name entered.
+[INFO ] 2023-06-19 16:48:17.477 [main] BaseClass - Price entered for all pieces.
+[INFO ] 2023-06-19 16:48:22.686 [main] BaseClass - Clicked on submit quotation button.
+[INFO ] 2023-06-19 16:48:31.758 [main] BaseClass - Verification of Submit quotation Successed..
+[INFO ] 2023-06-19 16:48:35.204 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-06-19 16:48:35.289 [main] BaseClass - Password is entered.
+[INFO ] 2023-06-19 16:48:39.367 [main] BaseClass - Client logged in successfully.
+[INFO ] 2023-06-19 16:48:44.489 [main] BaseClass - Product name searched.
+[INFO ] 2023-06-19 16:48:53.872 [main] BaseClass - Clicked on Accept Quotation button.
+[INFO ] 2023-06-19 16:48:57.930 [main] BaseClass - Verification of accepting quotation is Successed.
+[INFO ] 2023-06-19 16:49:01.740 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-06-19 16:49:09.552 [main] BaseClass - Product name is entered.
+[INFO ] 2023-06-19 16:49:12.729 [main] BaseClass - Clicked on status dropdown.
+[INFO ] 2023-06-19 16:49:15.893 [main] BaseClass - Processing status is searched.
+[INFO ] 2023-06-19 16:49:25.454 [main] BaseClass - Tracking number entered.
+[INFO ] 2023-06-19 16:49:29.563 [main] BaseClass - clicked on add tracking button.
+[INFO ] 2023-06-19 16:49:35.792 [main] BaseClass - Clicked on submit tracking button.
+[INFO ] 2023-06-19 16:50:24.791 [main] BaseClass - Verification of adding tracking number is Successfull.
+[INFO ] 2023-06-19 16:50:36.340 [main] BaseClass - client logged in Successfully.
+[INFO ] 2023-06-19 16:50:38.092 [main] BaseClass - Product name is entered.
+[INFO ] 2023-06-19 16:50:40.164 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-06-19 16:50:46.205 [main] BaseClass - Verification of Dispute for Refund is not able to reopen once accepted is successed.
+[INFO ] 2023-06-19 16:50:50.543 [main] BaseClass - Customer got wrong product option selected.
+[INFO ] 2023-06-19 16:50:50.714 [main] BaseClass - Refund dispute option is selected.
+[INFO ] 2023-06-19 16:50:54.158 [main] BaseClass - Queries entered in text fields.
+[INFO ] 2023-06-19 16:50:59.234 [main] BaseClass - Dispute saved.
+[INFO ] 2023-06-19 16:50:59.307 [main] BaseClass - Verification of Refund Dispute raised Successfully.
+[INFO ] 2023-06-19 16:51:02.942 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-06-19 16:51:04.893 [main] BaseClass - Open disputes page.
+[INFO ] 2023-06-19 16:51:13.163 [main] BaseClass - Clicked on show disputes.
+[INFO ] 2023-06-19 16:51:16.291 [main] BaseClass - Dispute Accepted.
+[INFO ] 2023-06-19 16:51:23.599 [main] BaseClass - Dispute send.
+[INFO ] 2023-06-19 16:51:31.637 [main] BaseClass - Verification of Refund Dispute acceptance is successed.
+[INFO ] 2023-06-19 16:51:35.412 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-06-19 16:51:42.687 [main] BaseClass - Product name is entered.
+[INFO ] 2023-06-19 16:52:13.876 [main] BaseClass - Verification of adding discount number is Successfull.
+[INFO ] 2023-06-19 16:52:33.759 [main] BaseClass - Verification of adding discount number is Successfull.
+[INFO ] 2023-06-19 16:52:45.129 [main] BaseClass - Verification done successfully.
+[INFO ] 2023-06-19 16:52:57.116 [main] BaseClass - client logged in Successfully.
+[INFO ] 2023-06-19 16:52:59.333 [main] BaseClass - Product name is entered.
+[INFO ] 2023-06-19 16:53:01.396 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-06-19 16:53:07.469 [main] BaseClass - Verification of Dispute for Refund is not able to reopen once accepted is successed.
+[INFO ] 2023-06-19 16:53:11.851 [main] BaseClass - Customer got wrong product option selected.
+[INFO ] 2023-06-19 16:53:11.994 [main] BaseClass - Refund dispute option is selected.
+[INFO ] 2023-06-19 16:53:20.204 [main] BaseClass - Queries entered in text fields.
+[INFO ] 2023-06-19 16:53:25.282 [main] BaseClass - Dispute saved.
+[INFO ] 2023-06-19 16:53:25.550 [main] BaseClass - Verification of Refund Dispute raised failed.
+[INFO ] 2023-06-19 16:53:29.479 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-06-19 16:53:33.309 [main] BaseClass - Product name is entered.
+[INFO ] 2023-06-19 16:53:54.867 [main] BaseClass - client logged in Successfully.
+[INFO ] 2023-06-19 16:53:56.195 [main] BaseClass - Product name is entered.
+[INFO ] 2023-06-19 16:53:58.315 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-06-19 16:57:14.863 [main] BaseClass - client logged in Successfully.
+[INFO ] 2023-06-19 16:57:17.078 [main] BaseClass - Product name is entered.
+[INFO ] 2023-06-19 16:57:19.138 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-06-19 16:57:25.219 [main] BaseClass - Verification of Dispute for Refund is not able to reopen once accepted is successed.
+[INFO ] 2023-06-19 16:57:29.463 [main] BaseClass - Customer got wrong product option selected.
+[INFO ] 2023-06-19 16:57:29.609 [main] BaseClass - Refund dispute option is selected.
+[INFO ] 2023-06-19 16:57:32.880 [main] BaseClass - Queries entered in text fields.
+[INFO ] 2023-06-19 16:57:37.968 [main] BaseClass - Dispute saved.
+[INFO ] 2023-06-19 16:57:38.083 [main] BaseClass - Verification of Refund Dispute raised Successfully.
+[INFO ] 2023-06-19 16:57:41.559 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-06-19 16:57:43.855 [main] BaseClass - Open disputes page.
+[INFO ] 2023-06-19 16:57:52.199 [main] BaseClass - Clicked on show disputes.
+[INFO ] 2023-06-19 16:57:55.341 [main] BaseClass - Dispute Accepted.
+[INFO ] 2023-06-19 16:58:02.617 [main] BaseClass - Dispute send.
+[INFO ] 2023-06-19 16:58:10.674 [main] BaseClass - Verification of Refund Dispute acceptance is successed.
+[INFO ] 2023-06-19 16:58:14.708 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-06-19 16:58:16.742 [main] BaseClass - Product name is entered.
+[INFO ] 2023-06-19 16:58:39.128 [main] BaseClass - client logged in Successfully.
+[INFO ] 2023-06-19 16:58:40.144 [main] BaseClass - Product name is entered.
+[INFO ] 2023-06-19 16:58:42.263 [main] BaseClass - Clicked on first div.

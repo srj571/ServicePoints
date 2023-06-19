@@ -464,9 +464,35 @@ public class TC59_VerifySupplierShouldAbleToChangeTheDiscount extends BaseClass 
 	@Test(enabled = true, priority = 5)
 	public void verifyDiscountFromClientSide() throws InterruptedException {
 		driver.get(baseURL);
-
 		LoginPage lp = new LoginPage(driver);
+
+		lp.setAdminMailId(agentMailD);
+		lp.setAdminPassword(agentPassD);
+		lp.clickLoginbtn();
+		logger.info("Agent logged in Successfully.");
+
+		AgentOrdersPage aop = new AgentOrdersPage(driver);
+		aop.clickOnOrdersTab();
+
+		aop.searchPnameTrack(product59);
+		logger.info("Product name is entered.");
+		Thread.sleep(2000);
+
+		aop.clickOnfDiv();
 		Thread.sleep(3000);
+
+		aop.scrollTillChangeDiscountbtn(driver);
+		Thread.sleep(3000);
+
+		aop.clickOnChangeDiscountBtn();
+		Thread.sleep(2000);
+
+		aop.clickOnShowDiscountHistory();
+		Thread.sleep(3000);
+
+		
+		driver.get(baseURL);
+		
 		lp.setAdminMailId(clientMailD);
 		lp.setAdminPassword(clientPassD);
 		lp.clickLoginbtn();
@@ -483,5 +509,4 @@ public class TC59_VerifySupplierShouldAbleToChangeTheDiscount extends BaseClass 
 		logger.info("Clicked on first div.");
 		Thread.sleep(4000);
 	}
-
 }

@@ -216,8 +216,8 @@
 			  <include name="verifyReopenDeclinedDisputes"></include>
 			  <include name="tearDown"></include>
 		  </methods>
-	  </class>-->
-	   <!--<class name="com.servicepoints.testCases.TC55_VerifyAddDiscountFunctionality">
+	  </class>
+	   <class name="com.servicepoints.testCases.TC55_VerifyAddDiscountFunctionality">
 		  <methods>
 			  <include name="setup"></include>
 			  <include name="submitAndAcceptQuotation"></include>
@@ -225,8 +225,8 @@
 			  <include name="verifyDiscountOnClientSide"></include>
 			  <include name="tearDown"></include>
 		  </methods>
-	  </class>-->
-	  <!--<class name="com.servicepoints.testCases.TC56_VerifyDiscountFunctionalityWithRefund">
+	  </class>
+	  <class name="com.servicepoints.testCases.TC56_VerifyDiscountFunctionalityWithRefund">
 		  <methods>
 			  <include name="setup"></include>
 			  <include name="submitAndAcceptQuotation"></include>
@@ -246,8 +246,8 @@
 			  <include name="verifyDiscountFromClientSide"></include>
 			  <include name="tearDown"></include>
 		  </methods>
-	  </class>
-	  <class name="com.servicepoints.testCases.TC58_VerifyDiscountWithResendFunctionality">
+	  </class>-->
+	  <!--<class name="com.servicepoints.testCases.TC58_VerifyDiscountWithResendFunctionality">
 		  <methods>
 			  <include name="setup"></include>
 			  <include name="submitAndAcceptQuotation"></include>
@@ -270,7 +270,7 @@
 			  <include name="verifyDiscountFromClientSide"></include>
 			  <include name="tearDown"></include>
 		  </methods>
-	  </class>-->
+	  </class>
 	  <class name="com.servicepoints.testCases.TC60_VerifyChangeDiscountWithResendAndRefundFunctionality">
 		  <methods>
 			  <include name="setup"></include>
@@ -282,6 +282,18 @@
 			  <include name="raiseRefundDispute"></include>
 			  <include name="verifyDiscountFromClientSide"></include>
 			  <include name="verifyAddingDiscountOnRemainingVariants"></include>
+			  <include name="tearDown"></include>
+		  </methods>
+	  </class>-->
+	  <class name="com.servicepoints.testCases.TC61_VerifyChangeDiscountWithRefundFunctionality">
+		  <methods>
+			  <include name="setup"></include>
+			  <include name="submitAndAcceptQuotation"></include>
+			  <include name="verifyAddTrackingOnProduct"></include>
+			  <include name="raiseRefundDispute"></include>
+			  <include name="verifyAddingDiscount"></include>
+			  <include name="raiseRefundDisputeAgain"></include>
+			  <include name="verifyDiscountFromClientSide"></include>
 			  <include name="tearDown"></include>
 		  </methods>
 	  </class>
