@@ -260,7 +260,7 @@
 			  <include name="tearDown"></include>
 		  </methods>
 	  </class>-->
-	  <class name="com.servicepoints.testCases.TC59_VerifySupplierShouldAbleToChangeTheDiscount">
+	  <!--<class name="com.servicepoints.testCases.TC59_VerifySupplierShouldAbleToChangeTheDiscount">
 		  <methods>
 			  <include name="setup"></include>
 			  <include name="submitAndAcceptQuotation"></include>
@@ -268,6 +268,20 @@
 			  <include name="verifyAddingDiscount"></include>
 			  <include name="raiseRefundDispute"></include>
 			  <include name="verifyDiscountFromClientSide"></include>
+			  <include name="tearDown"></include>
+		  </methods>
+	  </class>-->
+	  <class name="com.servicepoints.testCases.TC60_VerifyChangeDiscountWithResendAndRefundFunctionality">
+		  <methods>
+			  <include name="setup"></include>
+			  <include name="submitAndAcceptQuotation"></include>
+			  <include name="verifyAddTrackingOnProduct"></include>
+			  <include name="raiseResendDispute"></include>
+			  <include name="verifyAddTrackingOnProductAgain"></include>
+			  <include name="verifyAddingDiscount"></include>
+			  <include name="raiseRefundDispute"></include>
+			  <include name="verifyDiscountFromClientSide"></include>
+			  <include name="verifyAddingDiscountOnRemainingVariants"></include>
 			  <include name="tearDown"></include>
 		  </methods>
 	  </class>

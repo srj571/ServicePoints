@@ -4,14 +4,13 @@
   <parameter name="browser" value="chrome"/>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.servicepoints.testCases.TC59_VerifySupplierShouldAbleToChangeTheDiscount">
+      <class name="com.servicepoints.testCases.TC60_VerifyChangeDiscountWithResendAndRefundFunctionality">
         <methods>
-          <include name="verifyAddingDiscount"/>
+          <include name="verifyAddTrackingOnProductAgain"/>
           <include name="setup"/>
-          <include name="raiseRefundDispute"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.servicepoints.testCases.TC59_VerifySupplierShouldAbleToChangeTheDiscount -->
+      </class> <!-- com.servicepoints.testCases.TC60_VerifyChangeDiscountWithResendAndRefundFunctionality -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

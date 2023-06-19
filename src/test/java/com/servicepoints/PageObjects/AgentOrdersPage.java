@@ -174,7 +174,7 @@ public class AgentOrdersPage {
 	WebElement addTrackingSuccessBox;
 	
 	public void waitTillSuccessBoxOfTrackingNum(WebDriver driver) {
-		WebDriverWait wait=new WebDriverWait(driver,60);
+		WebDriverWait wait=new WebDriverWait(driver,65);
 		wait.until(ExpectedConditions.visibilityOf(addTrackingSuccessBox));
 	}
 	
