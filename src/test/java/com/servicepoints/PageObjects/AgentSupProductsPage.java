@@ -43,6 +43,12 @@ public class AgentSupProductsPage {
 	@FindBy(xpath="(//input[@placeholder='4 Pcs price'])[1]")
 	WebElement txt4Pcs;
 	
+	@FindBy(xpath="(//input[contains(@placeholder,'1 Pcs price')])[7]")
+	WebElement txt1Pcs1;
+	
+	@FindBy(xpath="(//input[contains(@placeholder,'2 Pcs price')])[7]")
+	WebElement txt2Pcs2;
+	
 	@FindBy(xpath="//button[normalize-space()='Submit quotation']")
 	WebElement submitquote;
 	
@@ -109,8 +115,22 @@ public class AgentSupProductsPage {
 		txt4Pcs.sendKeys(ffpcs);
 	}
 	
+	public void firstPcsPrice1(String ffpcs) {
+		txt4Pcs.sendKeys(ffpcs);
+	}
+	
+	public void secPcsPrice2(String ffpcs) {
+		txt4Pcs.sendKeys(ffpcs);
+	}
+	
 	public void clickOnSubmitQuote() {
 		submitquote.click();
+	}
+	
+	
+	public void scrollTillSubmitQuotationBtn(WebDriver driver) {
+		JavascriptExecutor exe=(JavascriptExecutor) driver;
+		exe.executeScript("arguments[0].scrollIntoView();", submitquote);
 	}
 	
 	public boolean checkSubmitQuotebtn() {
@@ -126,6 +146,34 @@ public class AgentSupProductsPage {
 	public String getStatus() {
 		String text=QuoteStatus.getText();
 		return text;
+	}
+	
+	@FindBy(xpath="(//input[@placeholder='1 Pcs price'])[6]")
+	WebElement txt2Var1;
+	
+	@FindBy(xpath="(//input[@placeholder='2 Pcs price'])[6]")
+	WebElement txt2var2;
+	
+	public void fPcsPrice2country(String spcs) {
+		txt2Var1.sendKeys(spcs);
+	}
+	
+	public void secPcsPrice2country(String spcs) {
+		txt2var2.sendKeys(spcs);
+	}
+	
+	@FindBy(xpath="(//input[@placeholder='1 Pcs price'])[5]")
+	WebElement txt2Var1Pcs1;
+	
+	@FindBy(xpath="(//input[@placeholder='2 Pcs price'])[5]")
+	WebElement txt2Var1Pcs2;
+	
+	public void fPcsPrice2country2(String spcs) {
+		txt2Var1Pcs1.sendKeys(spcs);
+	}
+	
+	public void secPcsPrice2country2(String spcs) {
+		txt2Var1Pcs2.sendKeys(spcs);
 	}
 	
 	//AskForPriceChangeFunctionality
@@ -312,6 +360,26 @@ public class AgentSupProductsPage {
 	
 	@FindBy(xpath="(//h6[@class='content'])[1]")
 	WebElement alertUpdateQuote;
+	
+	@FindBy(xpath="(//span[@title='Group by'])[1]")
+	WebElement groupByBtn;
+	
+	@FindBy(xpath="//input[@role='searchbox']")
+	WebElement searchField;
+	
+	@FindBy(xpath="(//li[@role='option'])[1]")
+	WebElement groupByFDiv;
+	
+	
+	public void verifyGroupByFunction(String variantType) throws InterruptedException {
+		groupByBtn.click();
+		Thread.sleep(2000);
+		
+		searchField.sendKeys(variantType);
+		Thread.sleep(1000);
+		
+		groupByFDiv.click();
+	}
 	
 	public boolean verifyTextOnAlert() {
 		boolean val=alertUpdateQuote.getText().equals("Quotation accepted successfully.");

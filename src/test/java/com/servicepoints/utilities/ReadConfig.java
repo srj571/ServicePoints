@@ -1012,6 +1012,42 @@ public class ReadConfig {
 		String pro61=po.getProperty("product61");
 		return pro61;
 	}
+	
+	public String getProductForTC62() {
+		String pro62=po.getProperty("product62");
+		return pro62;
+	}
+	
+	public String getClientMailForMaxRequotaion() {
+		String cmail=po.getProperty("clientMailRQ");
+		return cmail;
+	}
+	
+	public String getClientPassForMaxRequotaion() {
+		String cpass=po.getProperty("clientPassRQ");
+		return cpass;
+	}
+	
+	public String getSupplierMailForMaxRequotaion() {
+		String amail=po.getProperty("agentMailRQ");
+		return amail;
+	}
+	
+	public String getSupplierPassForMaxRequotaion() {
+		String apass=po.getProperty("agentPassRQ");
+		return apass;
+	}
+	
+	public String getGroupByVariantType() {
+		String variantType=po.getProperty("variantType");
+		return variantType;
+	}
+	
+	public String getProductForTC63() {
+		String pro63=po.getProperty("product63");
+		return pro63;
+	}
+	
 }
 
 

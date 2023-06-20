@@ -6,7 +6,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import junit.framework.Assert;
 
 public class ClientProductPage {
 	
@@ -252,6 +255,79 @@ public class ClientProductPage {
 		acceptSelectedQuote.click();
 	}
 	
+	@FindBy(xpath="(//div[@class='modal-content special_request_modal_content'])[1]//div[2]/p")
+	WebElement erroeAfterRequotation;
 	
+	public String getErrorTextAfterReqouteTwoTimes() {
+		String error=erroeAfterRequotation.getText();
+		return error;
+	}
+	
+	@FindBy(xpath="(//div[@class='modal-content special_request_modal_content'])[1]//div[3]/button")
+	WebElement closeBtnOnErrorMsg;
+	
+	public void clickOnCloseBtnOnErrorMsg() {
+		closeBtnOnErrorMsg.click();
+	}
+	
+	@FindBy(xpath="//div[@class='dropdown-menu show']/a[@data-value='4']")
+	WebElement addCountryBtn;
+	
+	@FindBy(xpath="(//div[@class='modal-content special_request_modal_content'])[1]//select")
+	WebElement countryDropDown;
+	
+	@FindBy(xpath="(//div[@class='modal-content special_request_modal_content'])[1]/div[@class='modal-footer']/button[2]")
+	WebElement saveCountry;
+	
+	@FindBy(xpath="(//div[@class='modal-content special_request_modal_content'])[1]/div[@class='modal-footer']/button[1]")
+	WebElement cancelBtnOnCountry;
+	
+	@FindBy(xpath="(//div[contains(text(),'Please select country')])[1]")
+	WebElement actError;
+	
+	@FindBy(xpath="(//div[normalize-space()='Country already added in the quotation'])[1]")
+	WebElement actCountryAddedErr;
+	
+	@FindBy(xpath="(//div[normalize-space()='Country added to the quotation successfully'])[1]")
+	WebElement successMsg;
+	
+	public void clickOnAddCountry() throws InterruptedException {
+		addCountryBtn.click();
+		Thread.sleep(2000);
+		
+		Select sel=new Select(countryDropDown);
+		sel.selectByValue("13");
+		Thread.sleep(2000);
+		
+		saveCountry.click();
+		Thread.sleep(1000);
+		
+		String success=successMsg.getText();
+		String expMsg="Country added to the quotation successfully";
+		
+		Assert.assertEquals(expMsg, success);
+		Thread.sleep(2000);
+		
+		saveCountry.click();
+		String actErr=actError.getText();
+		String expErr="Please select country";
+		
+		Assert.assertEquals(expErr, actErr);
+		Thread.sleep(2000);
+		
+		sel.selectByValue("13");
+		Thread.sleep(2000);
+		
+		saveCountry.click();
+		
+		String actErr2=actCountryAddedErr.getText();
+		String expErr2="Country already added in the quotation";
+		
+		Assert.assertEquals(expErr2, actErr2);
+		Thread.sleep(2000);
+		
+		cancelBtnOnCountry.click();
+		Thread.sleep(2000);
+	}
 	
 }

@@ -106,23 +106,6 @@ public class TC38_VerifyRequoteQuotationTest extends BaseClass{
 			}
 		}
 		
-		//aspp.switchOnOtherTab();
-		//Thread.sleep(2000);
-		
-//		if (aspp.getStatusAwating().equals("Requote - Bidding")) {
-//			Thread.sleep(2000);
-//			Assert.assertTrue(true);
-//			logger.info("Verification of Requotation Successed..");
-//		} else {
-//			captureScreen(driver, "Submit Quote Test");
-//			logger.info("Verification of Requotation failed..");
-//			Assert.assertTrue(false);
-//			Thread.sleep(4000);
-//		}
-//
-//		logger.info("Switched to new window.");
-//		Thread.sleep(5000);
-		
 		aspp.firstPcsPrice(FirstPcsPrice);
 		aspp.secPcsPrice(SecPcsPrice);
 		aspp.thirdPcsPrice(ThirdPcsPrice);
