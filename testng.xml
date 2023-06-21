@@ -13,19 +13,19 @@
       <!-- <class name="com.servicepoints.testCases.TC01_AdminLoginTest"/>
       <class name="com.servicepoints.testCases.TC02_VerifySupplierSignUp"/>
       <class name="com.servicepoints.testCases.TC03_VerifyAdminSUPLoginTest"/>
-      <class name="com.servicepoints.testCases.TC04_VerifyAddAgentSupBySupplier"/>
+       <class name="com.servicepoints.testCases.TC04_VerifyAddAgentSupBySupplier"/>
       <class name="com.servicepoints.testCases.TC05_VerifyAddAgentSupportTest"/>
       <class name="com.servicepoints.testCases.TC06_UserSignUpTest"/>
       <class name="com.servicepoints.testCases.TC07_VerifyClientApprovalTest"/>
       <class name="com.servicepoints.testCases.TC08_VerifyClientLoginTest"/>
       <class name="com.servicepoints.testCases.TC09_VerifyAddingNewStore"/>
       <class name="com.servicepoints.testCases.TC10_VerifyUpdationOfStoreTest"/>
-      <class name="com.servicepoints.testCases.TC11_VerifyDeletionOfStoreTest"/>
+      <class name="com.servicepoints.testCases.TC11_VerifyDeletionOfStoreTest"/>-->
       <class name="com.servicepoints.testCases.TC12_VerifySubmitQuoteTest"/>
       <class name="com.servicepoints.testCases.TC13_VerifyAcceptQuotationTest"/>
-      <class name="com.servicepoints.testCases.TC14_VerifyExcludeFunctionTest"/>
-      <class name="com.servicepoints.testCases.TC15_verifyAskForPriceChange"/> -->
-       <!--<class name="com.servicepoints.testCases.TC16_VerifyUpdateDeleteQuotation"/>
+      <!--<class name="com.servicepoints.testCases.TC14_VerifyExcludeFunctionTest"/>
+      <class name="com.servicepoints.testCases.TC15_verifyAskForPriceChange"/>
+       <class name="com.servicepoints.testCases.TC16_VerifyUpdateDeleteQuotation"/>
       <class name="com.servicepoints.testCases.TC17_VerifyAddNewVariant"/>
       <class name="com.servicepoints.testCases.TC18_VerifyCancelOrderFunctionality"/>
       <class name="com.servicepoints.testCases.TC19_VerifyOpenDisputFunction"/>
@@ -306,16 +306,29 @@
 			  <include name="verifyRequotationLimitAfterAddingVariant"></include>
 			  <include name="tearDown"></include>
 		  </methods>
-	  </class>-->
+	  </class>
 	  <class name="com.servicepoints.testCases.TC63_VerifyGroupByFunctionality">
 		  <methods>
 			  <include name="setup"></include>
 			  <include name="submitAndAcceptQuotation"></include>
+			  <include name="verifyAcceptingRequoteQuotation"></include>
 			  <include name="verifyRequoteQuotation"></include>
 			  <include name="verifyAcceptingRequoteQuote"></include>
+			  <include name="verifyMessageWhenClientTryToRequoteTwoTimes"></include>
 			  <include name="tearDown"></include>
 		  </methods>
-	  </class>
+	  </class>-->
+	 <!-- <class name="com.servicepoints.testCases.TC64_VerifyCancelQuotationRequestFunctionality">
+		  <methods>
+			  <include name="setup"></include>
+			  <include name="submitAndAcceptQuotation"></include>
+			  <include name="verifyAcceptingRequoteQuotation"></include>
+			  <include name="verifyRequoteQuotation"></include>
+			  <include name="verifyAcceptingRequoteQuote"></include>
+			  <include name="verifyMessageWhenClientTryToRequoteTwoTimes"></include>
+			  <include name="tearDown"></include>
+		  </methods>
+	  </class>-->
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

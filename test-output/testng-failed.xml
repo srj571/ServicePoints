@@ -4,14 +4,20 @@
   <parameter name="browser" value="chrome"/>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.servicepoints.testCases.TC63_VerifyGroupByFunctionality">
+      <class name="com.servicepoints.testCases.TC12_VerifySubmitQuoteTest">
         <methods>
-          <include name="verifyRequoteQuotation"/>
+          <include name="verifySubmitQuoteTest"/>
           <include name="setup"/>
-          <include name="verifyAcceptingRequoteQuote"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.servicepoints.testCases.TC63_VerifyGroupByFunctionality -->
+      </class> <!-- com.servicepoints.testCases.TC12_VerifySubmitQuoteTest -->
+      <class name="com.servicepoints.testCases.TC13_VerifyAcceptQuotationTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="verifyAcceptQuoteTest"/>
+        </methods>
+      </class> <!-- com.servicepoints.testCases.TC13_VerifyAcceptQuotationTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -263,7 +263,7 @@ public class ClientProductPage {
 		return error;
 	}
 	
-	@FindBy(xpath="(//div[@class='modal-content special_request_modal_content'])[1]//div[3]/button")
+	@FindBy(xpath="(//button[@type='button'][normalize-space()='Close'])[1]")
 	WebElement closeBtnOnErrorMsg;
 	
 	public void clickOnCloseBtnOnErrorMsg() {

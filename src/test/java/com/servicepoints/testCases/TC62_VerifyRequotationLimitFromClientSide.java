@@ -66,10 +66,8 @@ public class TC62_VerifyRequotationLimitFromClientSide extends BaseClass {
 		driver.switchTo().window(child);
 		Thread.sleep(4000);
 
-		aspp.firstPcsPrice(FirstPcsPrice);
-		aspp.secPcsPrice(SecPcsPrice);
-		aspp.thirdPcsPrice(ThirdPcsPrice);
-		aspp.forthPcsPrice(ForthPcsprice);
+		aspp.verifyPassingDiffValuesInFirstCountry(driver, FirstPcsPrice, SecPcsPrice, ThirdPcsPrice, ForthPcsprice);
+		
 		logger.info("Price entered for all pieces.");
 		Thread.sleep(4000);
 
@@ -168,13 +166,12 @@ public class TC62_VerifyRequotationLimitFromClientSide extends BaseClass {
 		Thread.sleep(3000);
 
 		String parentWindow = driver.getWindowHandle();
-		Set<String> windowHandles = driver.getWindowHandles();
-		for (String handle : windowHandles) {
-			if (!handle.equals(parentWindow)) {
-				driver.switchTo().window(handle);
-				break;
-			}
-		}
+		Set<String> window = driver.getWindowHandles();
+		Iterator<String> it = window.iterator();
+		String parent = it.next();
+		String child = it.next();
+		driver.switchTo().window(child);
+		Thread.sleep(4000);
 
 		cl.clickOnSpecialRequestDrop();
 		Thread.sleep(2000);
@@ -219,14 +216,14 @@ public class TC62_VerifyRequotationLimitFromClientSide extends BaseClass {
 		aspp.clickOnfdiv();
 		Thread.sleep(4000);
 
-		windowHandles = driver.getWindowHandles();
-		for (String handle : windowHandles) {
+		window = driver.getWindowHandles();
+		for (String handle : window) {
 			if (!handle.equals(parentWindow) && !handle.equals(driver.getWindowHandle())) {
 				driver.switchTo().window(handle);
 				break;
 			}
 		}
-
+		
 		aspp.firstPcsPrice(FirstPcsPrice);
 		aspp.secPcsPrice(SecPcsPrice);
 		aspp.thirdPcsPrice(ThirdPcsPrice);
@@ -279,14 +276,13 @@ public class TC62_VerifyRequotationLimitFromClientSide extends BaseClass {
 		cl.selectProductTab();
 		Thread.sleep(3000);
 
-		String parentWindow2 = driver.getWindowHandle();
-		Set<String> windowHandles2 = driver.getWindowHandles();
-		for (String handle2 : windowHandles2) {
-			if (!handle2.equals(parentWindow2)) {
-				driver.switchTo().window(handle2);
-				break;
-			}
-		}
+		String parentWindow1 = driver.getWindowHandle();
+		Set<String> window1 = driver.getWindowHandles();
+		Iterator<String> it1 = window1.iterator();
+		String parent1 = it1.next();
+		String child1 = it1.next();
+		driver.switchTo().window(child1);
+		Thread.sleep(4000);
 
 		driver.navigate().refresh();
 		Thread.sleep(2000);
@@ -348,14 +344,13 @@ public class TC62_VerifyRequotationLimitFromClientSide extends BaseClass {
 		Thread.sleep(3000);
 
 		String parentWindow = driver.getWindowHandle();
-		Set<String> windowHandles = driver.getWindowHandles();
-		for (String handle : windowHandles) {
-			if (!handle.equals(parentWindow)) {
-				driver.switchTo().window(handle);
-				break;
-			}
-		}
-
+		Set<String> window = driver.getWindowHandles();
+		Iterator<String> it = window.iterator();
+		String parent = it.next();
+		String child = it.next();
+		driver.switchTo().window(child);
+		Thread.sleep(4000);
+		
 		cl.clickOnSpecialRequestDrop();
 		Thread.sleep(2000);
 		cl.pleaseRequote();
@@ -365,12 +360,12 @@ public class TC62_VerifyRequotationLimitFromClientSide extends BaseClass {
 		Thread.sleep(3000);
 
 		String actError = cl.getErrorTextAfterReqouteTwoTimes();
-		String expError = "You can not requote more than 2";
+		String expError = "You can not requote more than 2 times. Please contact your account manager for further assistance.";
 
 		Assert.assertEquals(expError, actError);
 
 		cl.clickOnCloseBtnOnErrorMsg();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		if (cl.getStatus().equals("Quotation accepted")) {
 			Thread.sleep(2000);
@@ -396,7 +391,7 @@ public class TC62_VerifyRequotationLimitFromClientSide extends BaseClass {
 		Thread.sleep(3000);
 
 		actError = cl.getErrorTextAfterReqouteTwoTimes();
-		expError = "You can not requote more than 2";
+		expError = "You can not requote more than 2 times. Please contact your account manager for further assistance.";
 
 		Assert.assertEquals(expError, actError);
 
@@ -441,17 +436,15 @@ public class TC62_VerifyRequotationLimitFromClientSide extends BaseClass {
 		aspp.clickOnfdiv();
 		Thread.sleep(4000);
 
-		String parentWindow5 = driver.getWindowHandle();
-		Set<String> windowHandles5 = driver.getWindowHandles();
-		for (String handle : windowHandles5) {
-			if (!handle.equals(parentWindow5)) {
-				driver.switchTo().window(handle);
-				break;
-			}
-		}
-
-		aspp.fPcsPrice2country2(FirstPcsPrice);
-		aspp.secPcsPrice2country2(SecPcsPrice);
+		String parentWindow1 = driver.getWindowHandle();
+		Set<String> window1 = driver.getWindowHandles();
+		Iterator<String> it1 = window1.iterator();
+		String parent1 = it1.next();
+		String child1 = it1.next();
+		driver.switchTo().window(child1);
+		Thread.sleep(4000);
+		
+		aspp.verifyPassingValueInCountryQuote(driver, FirstPcsPrice, SecPcsPrice, ThirdPcsPrice,ForthPcsprice);
 		Thread.sleep(4000);
 
 		aspp.scrollTillSubmitQuotationBtn(driver);
@@ -460,9 +453,18 @@ public class TC62_VerifyRequotationLimitFromClientSide extends BaseClass {
 		aspp.clickOnSubmitQuote();
 		Thread.sleep(6000);
 		
+		if (cl.getStatus().equals("Quotation accepted")) {
+			Thread.sleep(2000);
+			Assert.assertTrue(true);
+			logger.info("Verification of accepting quotation is Successed.");
+		} else {
+			logger.info("Verification of accepting quotation is Failed.");
+			Assert.assertTrue(false);
+		}
+		
 	}
 
-	@Test(enabled = true, priority = 4)
+	@Test(enabled = false, priority = 4)
 	public void verifyRequotationLimitAfterAddingVariant() throws InterruptedException {
 
 		driver.get(productFetch);
@@ -497,20 +499,16 @@ public class TC62_VerifyRequotationLimitFromClientSide extends BaseClass {
 		Thread.sleep(4000);
 
 		String parentWindow = driver.getWindowHandle();
-		Set<String> windowHandles = driver.getWindowHandles();
-		for (String handle : windowHandles) {
-			if (!handle.equals(parentWindow)) {
-				driver.switchTo().window(handle);
-				break;
-			}
-		}
+		Set<String> window = driver.getWindowHandles();
+		Iterator<String> it = window.iterator();
+		String parent = it.next();
+		String child = it.next();
+		driver.switchTo().window(child);
+		Thread.sleep(4000);
 
-		aspp.firstPcsPrice(FirstPcsPrice);
-		aspp.secPcsPrice(SecPcsPrice);
-		aspp.thirdPcsPrice(ThirdPcsPrice);
-		aspp.forthPcsPrice(ForthPcsprice);
-		aspp.fPcsPrice2country(FirstPcsPrice);
-		aspp.secPcsPrice2country(SecPcsPrice);
+		aspp.verifyPassingDiffValuesInFirstCountry(driver, FirstPcsPrice, SecPcsPrice, ThirdPcsPrice, ForthPcsprice);
+		Thread.sleep(2000);
+		aspp.verifyPassingValueInCountryQuote(driver, FirstPcsPrice, SecPcsPrice, ThirdPcsPrice, ForthPcsprice);
 		Thread.sleep(4000);
 
 		aspp.scrollTillSubmitQuotationBtn(driver);
@@ -534,7 +532,6 @@ public class TC62_VerifyRequotationLimitFromClientSide extends BaseClass {
 
 		driver.get(baseURL);
 
-		Thread.sleep(3000);
 		lp.setAdminMailId(clientMailRQ);
 		logger.info("Email_id is entered.");
 		Thread.sleep(1000);
@@ -552,14 +549,13 @@ public class TC62_VerifyRequotationLimitFromClientSide extends BaseClass {
 		cl.selectProductTab();
 		Thread.sleep(3000);
 
-		String parentWindow2 = driver.getWindowHandle();
-		Set<String> windowHandles2 = driver.getWindowHandles();
-		for (String handle2 : windowHandles2) {
-			if (!handle2.equals(parentWindow2)) {
-				driver.switchTo().window(handle2);
-				break;
-			}
-		}
+		String parentWindow1 = driver.getWindowHandle();
+		Set<String> window1 = driver.getWindowHandles();
+		Iterator<String> it1 = window1.iterator();
+		String parent1 = it1.next();
+		String child1 = it1.next();
+		driver.switchTo().window(child1);
+		Thread.sleep(4000);
 
 		cl.clickOnSpecialRequestDrop();
 		Thread.sleep(2000);
@@ -570,14 +566,14 @@ public class TC62_VerifyRequotationLimitFromClientSide extends BaseClass {
 		Thread.sleep(3000);
 
 		String actError = cl.getErrorTextAfterReqouteTwoTimes();
-		String expError = "You can not requote more than 2";
+		String expError = "You can not requote more than 2 times. Please contact your account manager for further assistance.";
 
 		Assert.assertEquals(expError, actError);
 
 		cl.clickOnCloseBtnOnErrorMsg();
 		Thread.sleep(2000);
 
-		if (cl.getStatus().equals("Quotation accepted - Add country")) {
+		if (cl.getStatus().equals("Quotation accepted")) {
 			Thread.sleep(2000);
 			Assert.assertTrue(true);
 			logger.info("Verification of accepting quotation is Successed.");

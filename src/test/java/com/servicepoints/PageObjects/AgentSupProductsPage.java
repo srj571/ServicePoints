@@ -10,6 +10,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class AgentSupProductsPage {
 	
@@ -418,4 +420,40 @@ public class AgentSupProductsPage {
 		threePcsPrice9.sendKeys(val9);
 	}
 	
+	@FindBy(xpath="(//div[@class='d-md-flex  justify-conetnt-center align-items-center mb-2 ?>'])[2]//div[@class='col disabled_label text-center']//input")
+	List <WebElement> secCountryQuote;
+	
+	public void verifyPassingValueInCountryQuote(WebDriver driver,String val1, String val2, String val3, String val4) throws InterruptedException {
+	    String[] values = {val1, val2, val3, val4};
+	    
+	    for (int i = 0; i < secCountryQuote.size(); i++) {
+	    	
+	        WebElement singleField = secCountryQuote.get(i);
+	        String value = values[i];
+
+	        WebDriverWait wait = new WebDriverWait(driver, 10);
+	        wait.until(ExpectedConditions.visibilityOf(singleField));
+
+	        singleField.sendKeys(value);
+	        Thread.sleep(1000);
+	    }
+	}
+	
+	@FindBy(xpath="(//div[@class='d-md-flex  justify-conetnt-center align-items-center mb-2 ?>'])[1]//div[@class='col disabled_label text-center']//input")
+	List <WebElement> firstCountryQuote;
+	
+	public void verifyPassingDiffValuesInFirstCountry(WebDriver driver,String val1, String val2, String val3, String val4) throws InterruptedException {
+		String[] values = {val1 , val2, val3, val4};
+
+	    for (int i = 0; i < firstCountryQuote.size(); i++) {
+	        WebElement singleField = firstCountryQuote.get(i);
+	        String value = values[i];
+	        
+	        WebDriverWait wait = new WebDriverWait(driver, 10);
+	        wait.until(ExpectedConditions.visibilityOf(singleField));
+	        
+	        singleField.sendKeys(value);
+	        Thread.sleep(1000);
+	    }
+	}
 }
