@@ -1048,6 +1048,10 @@ public class ReadConfig {
 		return pro63;
 	}
 	
+	public String getProductForTC64() {
+		String pro64=po.getProperty("product64");
+		return pro64;
+	}
 }
 
 

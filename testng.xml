@@ -20,9 +20,9 @@
       <class name="com.servicepoints.testCases.TC08_VerifyClientLoginTest"/>
       <class name="com.servicepoints.testCases.TC09_VerifyAddingNewStore"/>
       <class name="com.servicepoints.testCases.TC10_VerifyUpdationOfStoreTest"/>
-      <class name="com.servicepoints.testCases.TC11_VerifyDeletionOfStoreTest"/>-->
+      <class name="com.servicepoints.testCases.TC11_VerifyDeletionOfStoreTest"/>
       <class name="com.servicepoints.testCases.TC12_VerifySubmitQuoteTest"/>
-      <class name="com.servicepoints.testCases.TC13_VerifyAcceptQuotationTest"/>
+      <class name="com.servicepoints.testCases.TC13_VerifyAcceptQuotationTest"/>-->
       <!--<class name="com.servicepoints.testCases.TC14_VerifyExcludeFunctionTest"/>
       <class name="com.servicepoints.testCases.TC15_verifyAskForPriceChange"/>
        <class name="com.servicepoints.testCases.TC16_VerifyUpdateDeleteQuotation"/>
@@ -216,7 +216,7 @@
 			  <include name="verifyReopenDeclinedDisputes"></include>
 			  <include name="tearDown"></include>
 		  </methods>
-	  </class>
+	  </class>  -->
 	   <class name="com.servicepoints.testCases.TC55_VerifyAddDiscountFunctionality">
 		  <methods>
 			  <include name="setup"></include>
@@ -226,7 +226,7 @@
 			  <include name="tearDown"></include>
 		  </methods>
 	  </class>
-	  <class name="com.servicepoints.testCases.TC56_VerifyDiscountFunctionalityWithRefund">
+	  <!--<class name="com.servicepoints.testCases.TC56_VerifyDiscountFunctionalityWithRefund">
 		  <methods>
 			  <include name="setup"></include>
 			  <include name="submitAndAcceptQuotation"></include>
@@ -306,8 +306,8 @@
 			  <include name="verifyRequotationLimitAfterAddingVariant"></include>
 			  <include name="tearDown"></include>
 		  </methods>
-	  </class>
-	  <class name="com.servicepoints.testCases.TC63_VerifyGroupByFunctionality">
+	  </class>-->
+	  <!--<class name="com.servicepoints.testCases.TC63_VerifyGroupByFunctionality">
 		  <methods>
 			  <include name="setup"></include>
 			  <include name="submitAndAcceptQuotation"></include>
@@ -317,15 +317,11 @@
 			  <include name="verifyMessageWhenClientTryToRequoteTwoTimes"></include>
 			  <include name="tearDown"></include>
 		  </methods>
-	  </class>-->
-	 <!-- <class name="com.servicepoints.testCases.TC64_VerifyCancelQuotationRequestFunctionality">
+	  </class>
+	 <class name="com.servicepoints.testCases.TC64_VerifyCancelQuotationRequestFunctionality">
 		  <methods>
 			  <include name="setup"></include>
 			  <include name="submitAndAcceptQuotation"></include>
-			  <include name="verifyAcceptingRequoteQuotation"></include>
-			  <include name="verifyRequoteQuotation"></include>
-			  <include name="verifyAcceptingRequoteQuote"></include>
-			  <include name="verifyMessageWhenClientTryToRequoteTwoTimes"></include>
 			  <include name="tearDown"></include>
 		  </methods>
 	  </class>-->

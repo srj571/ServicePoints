@@ -380,7 +380,9 @@ public class TC61_VerifyChangeDiscountWithRefundFunctionality extends BaseClass{
 		String amountAsString = String.valueOf(val);
 		Thread.sleep(1000);
 
-		aop.enterDiscountAmountField(amountAsString);
+		String formattedPrice = String.format("%.2f", val);
+		
+		aop.enterDiscountAmountField(formattedPrice);
 		Thread.sleep(2000);
 
 		aop.clickOnSubmitDiscountBtn();

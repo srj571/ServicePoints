@@ -3628,3 +3628,354 @@
 [INFO ] 2023-06-21 18:02:33.503 [main] BaseClass - Email_id is entered.
 [INFO ] 2023-06-21 18:02:33.584 [main] BaseClass - Password is entered.
 [INFO ] 2023-06-21 18:02:43.006 [main] BaseClass - Go to Products page.
+[INFO ] 2023-06-22 16:23:02.241 [main] BaseClass - Application Opened.
+[INFO ] 2023-06-22 16:23:03.368 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-06-22 16:23:04.450 [main] BaseClass - Password is entered.
+[INFO ] 2023-06-22 16:23:16.600 [main] BaseClass - Product name entered.
+[INFO ] 2023-06-22 16:28:35.264 [main] BaseClass - Application Opened.
+[INFO ] 2023-06-22 16:28:36.380 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-06-22 16:28:37.504 [main] BaseClass - Password is entered.
+[INFO ] 2023-06-22 16:28:40.576 [main] BaseClass - Logged in to the Agent supplier account.
+[INFO ] 2023-06-22 16:28:50.750 [main] BaseClass - Product name entered.
+[INFO ] 2023-06-22 16:31:10.188 [main] BaseClass - Application Opened.
+[INFO ] 2023-06-22 16:31:11.293 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-06-22 16:31:12.380 [main] BaseClass - Password is entered.
+[INFO ] 2023-06-22 16:31:15.452 [main] BaseClass - Logged in to the Agent supplier account.
+[INFO ] 2023-06-22 16:31:25.693 [main] BaseClass - Product name entered.
+[INFO ] 2023-06-22 16:32:14.476 [main] BaseClass - Application Opened.
+[INFO ] 2023-06-22 16:32:15.629 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-06-22 16:32:16.717 [main] BaseClass - Password is entered.
+[INFO ] 2023-06-22 16:32:19.791 [main] BaseClass - Logged in to the Agent supplier account.
+[INFO ] 2023-06-22 16:32:30.747 [main] BaseClass - Product name entered.
+[INFO ] 2023-06-22 16:33:55.442 [main] BaseClass - Application Opened.
+[INFO ] 2023-06-22 16:33:56.542 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-06-22 16:33:57.696 [main] BaseClass - Password is entered.
+[INFO ] 2023-06-22 16:34:00.775 [main] BaseClass - Logged in to the Agent supplier account.
+[INFO ] 2023-06-22 16:34:11.451 [main] BaseClass - Product name entered.
+[INFO ] 2023-06-22 16:34:16.023 [main] BaseClass - Price entered for all pieces.
+[INFO ] 2023-06-22 16:34:21.143 [main] BaseClass - Clicked on submit quotation button.
+[INFO ] 2023-06-22 16:34:30.216 [main] BaseClass - Verification of Submit quotation Successed..
+[INFO ] 2023-06-22 16:34:32.525 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-06-22 16:34:32.604 [main] BaseClass - Password is entered.
+[INFO ] 2023-06-22 16:34:36.692 [main] BaseClass - Client logged in successfully.
+[INFO ] 2023-06-22 16:34:42.059 [main] BaseClass - Product name searched.
+[INFO ] 2023-06-22 16:43:36.815 [main] BaseClass - Application Opened.
+[INFO ] 2023-06-22 16:43:37.914 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-06-22 16:43:39.060 [main] BaseClass - Password is entered.
+[INFO ] 2023-06-22 16:43:42.134 [main] BaseClass - Logged in to the Agent supplier account.
+[INFO ] 2023-06-22 16:43:52.340 [main] BaseClass - Product name entered.
+[INFO ] 2023-06-22 16:43:56.699 [main] BaseClass - Price entered for all pieces.
+[INFO ] 2023-06-22 16:44:01.835 [main] BaseClass - Clicked on submit quotation button.
+[INFO ] 2023-06-22 16:44:10.910 [main] BaseClass - Verification of Submit quotation Successed..
+[INFO ] 2023-06-22 16:44:13.052 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-06-22 16:44:13.128 [main] BaseClass - Password is entered.
+[INFO ] 2023-06-22 16:44:17.210 [main] BaseClass - Client logged in successfully.
+[INFO ] 2023-06-22 16:44:22.674 [main] BaseClass - Product name searched.
+[INFO ] 2023-06-22 16:44:38.320 [main] BaseClass - Verification of accepting quotation is Successed.
+[INFO ] 2023-06-22 16:49:21.034 [main] BaseClass - Application Opened.
+[INFO ] 2023-06-22 16:49:22.183 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-06-22 16:49:23.338 [main] BaseClass - Password is entered.
+[INFO ] 2023-06-22 16:49:26.419 [main] BaseClass - Logged in to the Agent supplier account.
+[INFO ] 2023-06-22 16:49:36.985 [main] BaseClass - Product name entered.
+[INFO ] 2023-06-22 16:49:41.518 [main] BaseClass - Price entered for all pieces.
+[INFO ] 2023-06-22 16:49:46.745 [main] BaseClass - Clicked on submit quotation button.
+[INFO ] 2023-06-22 16:49:55.827 [main] BaseClass - Verification of Submit quotation Successed..
+[INFO ] 2023-06-22 16:49:58.280 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-06-22 16:49:58.357 [main] BaseClass - Password is entered.
+[INFO ] 2023-06-22 16:50:02.436 [main] BaseClass - Client logged in successfully.
+[INFO ] 2023-06-22 16:50:07.868 [main] BaseClass - Product name searched.
+[INFO ] 2023-06-22 16:50:23.429 [main] BaseClass - Verification of accepting quotation is Successed.
+[INFO ] 2023-06-22 17:06:44.113 [main] BaseClass - Application Opened.
+[INFO ] 2023-06-22 17:06:45.215 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-06-22 17:06:46.368 [main] BaseClass - Password is entered.
+[INFO ] 2023-06-22 17:06:49.442 [main] BaseClass - Logged in to the Agent supplier account.
+[INFO ] 2023-06-22 17:06:59.649 [main] BaseClass - Product name entered.
+[INFO ] 2023-06-22 17:07:03.997 [main] BaseClass - Price entered for all pieces.
+[INFO ] 2023-06-22 17:07:09.207 [main] BaseClass - Clicked on submit quotation button.
+[INFO ] 2023-06-22 17:07:18.282 [main] BaseClass - Verification of Submit quotation Successed..
+[INFO ] 2023-06-22 17:07:20.733 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-06-22 17:07:20.924 [main] BaseClass - Password is entered.
+[INFO ] 2023-06-22 17:07:25.086 [main] BaseClass - Client logged in successfully.
+[INFO ] 2023-06-22 17:07:30.187 [main] BaseClass - Product name searched.
+[INFO ] 2023-06-22 17:07:45.803 [main] BaseClass - Verification of accepting quotation is Successed.
+[INFO ] 2023-06-22 17:07:50.013 [main] BaseClass - Verification of accepting quotation is Successed.
+[INFO ] 2023-06-22 17:09:57.780 [main] BaseClass - Application Opened.
+[INFO ] 2023-06-22 17:09:58.877 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-06-22 17:10:00.033 [main] BaseClass - Password is entered.
+[INFO ] 2023-06-22 17:10:03.104 [main] BaseClass - Logged in to the Agent supplier account.
+[INFO ] 2023-06-22 17:10:13.327 [main] BaseClass - Product name entered.
+[INFO ] 2023-06-22 17:10:17.868 [main] BaseClass - Price entered for all pieces.
+[INFO ] 2023-06-22 17:10:22.982 [main] BaseClass - Clicked on submit quotation button.
+[INFO ] 2023-06-22 17:10:32.059 [main] BaseClass - Verification of Submit quotation Successed..
+[INFO ] 2023-06-22 17:10:34.491 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-06-22 17:10:34.576 [main] BaseClass - Password is entered.
+[INFO ] 2023-06-22 17:10:38.664 [main] BaseClass - Client logged in successfully.
+[INFO ] 2023-06-22 17:10:44.128 [main] BaseClass - Product name searched.
+[INFO ] 2023-06-22 17:10:59.678 [main] BaseClass - Verification of accepting quotation is Successed.
+[INFO ] 2023-06-22 17:11:03.835 [main] BaseClass - Verification of accepting quotation is Successed.
+[INFO ] 2023-06-22 17:11:06.213 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-06-22 17:11:07.296 [main] BaseClass - Password is entered.
+[INFO ] 2023-06-22 17:11:10.369 [main] BaseClass - Logged in to the Agent supplier account.
+[INFO ] 2023-06-22 17:11:21.228 [main] BaseClass - Product name entered.
+[INFO ] 2023-06-22 17:11:25.770 [main] BaseClass - Price entered for all pieces.
+[INFO ] 2023-06-22 17:11:30.947 [main] BaseClass - Clicked on submit quotation button.
+[INFO ] 2023-06-22 17:11:40.018 [main] BaseClass - Verification of Submit quotation Successed..
+[INFO ] 2023-06-22 17:11:42.198 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-06-22 17:11:42.281 [main] BaseClass - Password is entered.
+[INFO ] 2023-06-22 17:11:46.355 [main] BaseClass - Client logged in successfully.
+[INFO ] 2023-06-22 17:11:51.833 [main] BaseClass - Product name searched.
+[INFO ] 2023-06-22 17:12:01.226 [main] BaseClass - Clicked on Accept Quotation button.
+[INFO ] 2023-06-22 17:12:05.272 [main] BaseClass - Verification of accepting quotation is Successed.
+[INFO ] 2023-06-22 17:20:28.030 [main] BaseClass - Application Opened.
+[INFO ] 2023-06-22 17:20:29.143 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-06-22 17:20:30.230 [main] BaseClass - Password is entered.
+[INFO ] 2023-06-22 17:20:33.304 [main] BaseClass - Logged in to the Agent supplier account.
+[INFO ] 2023-06-22 17:20:43.727 [main] BaseClass - Product name entered.
+[INFO ] 2023-06-22 17:20:48.201 [main] BaseClass - Price entered for all pieces.
+[INFO ] 2023-06-22 17:20:53.372 [main] BaseClass - Clicked on submit quotation button.
+[INFO ] 2023-06-22 17:21:02.414 [main] BaseClass - Verification of Submit quotation Successed..
+[INFO ] 2023-06-22 17:21:04.841 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-06-22 17:21:04.924 [main] BaseClass - Password is entered.
+[INFO ] 2023-06-22 17:21:09.003 [main] BaseClass - Client logged in successfully.
+[INFO ] 2023-06-22 17:21:14.457 [main] BaseClass - Product name searched.
+[INFO ] 2023-06-22 17:21:30.109 [main] BaseClass - Verification of accepting quotation is Successed.
+[INFO ] 2023-06-22 17:28:11.275 [main] BaseClass - Application Opened.
+[INFO ] 2023-06-22 17:28:12.379 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-06-22 17:28:13.535 [main] BaseClass - Password is entered.
+[INFO ] 2023-06-22 17:28:16.610 [main] BaseClass - Logged in to the Agent supplier account.
+[INFO ] 2023-06-22 17:28:27.052 [main] BaseClass - Product name entered.
+[INFO ] 2023-06-22 17:29:08.062 [main] BaseClass - Application Opened.
+[INFO ] 2023-06-22 17:29:09.163 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-06-22 17:29:10.317 [main] BaseClass - Password is entered.
+[INFO ] 2023-06-22 17:29:13.389 [main] BaseClass - Logged in to the Agent supplier account.
+[INFO ] 2023-06-22 17:29:23.916 [main] BaseClass - Product name entered.
+[INFO ] 2023-06-22 17:29:28.469 [main] BaseClass - Price entered for all pieces.
+[INFO ] 2023-06-22 17:29:33.654 [main] BaseClass - Clicked on submit quotation button.
+[INFO ] 2023-06-22 17:29:42.692 [main] BaseClass - Verification of Submit quotation Successed..
+[INFO ] 2023-06-22 17:29:44.876 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-06-22 17:29:44.958 [main] BaseClass - Password is entered.
+[INFO ] 2023-06-22 17:29:49.037 [main] BaseClass - Client logged in successfully.
+[INFO ] 2023-06-22 17:29:54.503 [main] BaseClass - Product name searched.
+[INFO ] 2023-06-22 17:30:10.063 [main] BaseClass - Verification of accepting quotation is Successed.
+[INFO ] 2023-06-22 17:30:15.248 [main] BaseClass - Verification of accepting quotation is Successed.
+[INFO ] 2023-06-22 17:30:17.835 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-06-22 17:30:18.945 [main] BaseClass - Password is entered.
+[INFO ] 2023-06-22 17:30:22.020 [main] BaseClass - Logged in to the Agent supplier account.
+[INFO ] 2023-06-22 17:30:33.648 [main] BaseClass - Product name entered.
+[INFO ] 2023-06-22 17:30:38.155 [main] BaseClass - Price entered for all pieces.
+[INFO ] 2023-06-22 17:30:43.337 [main] BaseClass - Clicked on submit quotation button.
+[INFO ] 2023-06-22 17:30:52.384 [main] BaseClass - Verification of Submit quotation Successed..
+[INFO ] 2023-06-22 17:30:54.505 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-06-22 17:30:54.587 [main] BaseClass - Password is entered.
+[INFO ] 2023-06-22 17:30:58.660 [main] BaseClass - Client logged in successfully.
+[INFO ] 2023-06-22 17:31:03.878 [main] BaseClass - Product name searched.
+[INFO ] 2023-06-22 17:31:13.298 [main] BaseClass - Clicked on Accept Quotation button.
+[INFO ] 2023-06-22 17:31:17.343 [main] BaseClass - Verification of accepting quotation is Successed.
+[INFO ] 2023-06-22 17:37:03.651 [main] BaseClass - Application Opened.
+[INFO ] 2023-06-22 17:37:04.761 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-06-22 17:37:05.916 [main] BaseClass - Password is entered.
+[INFO ] 2023-06-22 17:37:08.986 [main] BaseClass - Logged in to the Agent supplier account.
+[INFO ] 2023-06-22 17:37:19.198 [main] BaseClass - Product name entered.
+[INFO ] 2023-06-22 17:38:12.231 [main] BaseClass - Application Opened.
+[INFO ] 2023-06-22 17:38:13.329 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-06-22 17:38:14.487 [main] BaseClass - Password is entered.
+[INFO ] 2023-06-22 17:38:17.558 [main] BaseClass - Logged in to the Agent supplier account.
+[INFO ] 2023-06-22 17:38:27.535 [main] BaseClass - Product name entered.
+[INFO ] 2023-06-22 17:42:37.670 [main] BaseClass - Application Opened.
+[INFO ] 2023-06-22 17:42:38.772 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-06-22 17:42:39.855 [main] BaseClass - Password is entered.
+[INFO ] 2023-06-22 17:42:42.929 [main] BaseClass - Logged in to the Agent supplier account.
+[INFO ] 2023-06-22 17:42:52.918 [main] BaseClass - Product name entered.
+[INFO ] 2023-06-22 17:44:25.935 [main] BaseClass - Application Opened.
+[INFO ] 2023-06-22 17:44:27.040 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-06-22 17:44:28.187 [main] BaseClass - Password is entered.
+[INFO ] 2023-06-22 17:44:31.262 [main] BaseClass - Logged in to the Agent supplier account.
+[INFO ] 2023-06-22 17:44:41.583 [main] BaseClass - Product name entered.
+[INFO ] 2023-06-22 17:44:46.446 [main] BaseClass - Price entered for all pieces.
+[INFO ] 2023-06-22 17:44:51.639 [main] BaseClass - Clicked on submit quotation button.
+[INFO ] 2023-06-22 17:45:00.699 [main] BaseClass - Verification of Submit quotation Successed..
+[INFO ] 2023-06-22 17:45:02.823 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-06-22 17:45:02.899 [main] BaseClass - Password is entered.
+[INFO ] 2023-06-22 17:45:06.980 [main] BaseClass - Client logged in successfully.
+[INFO ] 2023-06-22 17:45:12.138 [main] BaseClass - Product name searched.
+[INFO ] 2023-06-22 17:45:21.613 [main] BaseClass - Clicked on Accept Quotation button.
+[INFO ] 2023-06-22 17:45:25.661 [main] BaseClass - Verification of accepting quotation is Successed.
+[INFO ] 2023-06-22 17:45:28.049 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-06-22 17:45:29.150 [main] BaseClass - Password is entered.
+[INFO ] 2023-06-22 17:45:49.453 [main] BaseClass - Requoted the quotation
+[INFO ] 2023-06-22 17:45:57.611 [main] BaseClass - Verification of Client side Requote is Successed.
+[INFO ] 2023-06-22 17:46:00.135 [main] BaseClass - Agent supplier email is entered.
+[INFO ] 2023-06-22 17:46:00.215 [main] BaseClass - Agent supplier password is entered.
+[INFO ] 2023-06-22 17:46:17.033 [main] BaseClass - Product name entered.
+[INFO ] 2023-06-22 17:46:21.423 [main] BaseClass - Price entered
+[INFO ] 2023-06-22 17:46:31.569 [main] BaseClass - Verification of Requote from Agent side is Successed.
+[INFO ] 2023-06-22 17:46:33.600 [main] BaseClass - Verification of Submit Requotation Successed..
+[INFO ] 2023-06-22 17:46:39.885 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-06-22 17:46:40.968 [main] BaseClass - Password is entered.
+[INFO ] 2023-06-22 17:47:03.496 [main] BaseClass - Clicked on accept quotation button.
+[INFO ] 2023-06-22 17:47:11.533 [main] BaseClass - Verification of accepting quotation is Successed.
+[INFO ] 2023-06-22 17:47:13.267 [main] BaseClass - Go to Orders page.
+[INFO ] 2023-06-22 17:47:19.459 [main] BaseClass - Status changed to Processing.
+[INFO ] 2023-06-22 17:47:22.017 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-06-22 17:47:23.140 [main] BaseClass - Password is entered.
+[INFO ] 2023-06-22 17:47:42.902 [main] BaseClass - Requoted the quotation
+[INFO ] 2023-06-22 17:47:51.127 [main] BaseClass - Verification of Client side Requote is Successed.
+[INFO ] 2023-06-22 17:47:53.959 [main] BaseClass - Agent supplier email is entered.
+[INFO ] 2023-06-22 17:47:54.046 [main] BaseClass - Agent supplier password is entered.
+[INFO ] 2023-06-22 17:48:10.760 [main] BaseClass - Product name entered.
+[INFO ] 2023-06-22 17:48:15.185 [main] BaseClass - Price entered
+[INFO ] 2023-06-22 17:48:25.433 [main] BaseClass - Verification of Requote from Agent side is Successed.
+[INFO ] 2023-06-22 17:48:27.461 [main] BaseClass - Verification of Submit Requotation Successed..
+[INFO ] 2023-06-22 17:48:33.983 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-06-22 17:48:35.113 [main] BaseClass - Password is entered.
+[INFO ] 2023-06-22 17:48:57.477 [main] BaseClass - Clicked on accept quotation button.
+[INFO ] 2023-06-22 17:49:05.504 [main] BaseClass - Verification of accepting quotation is Successed.
+[INFO ] 2023-06-22 17:49:07.129 [main] BaseClass - Go to Orders page.
+[INFO ] 2023-06-22 17:49:13.307 [main] BaseClass - Status changed to Processing.
+[INFO ] 2023-06-22 17:49:15.734 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-06-22 17:49:16.856 [main] BaseClass - Password is entered.
+[INFO ] 2023-06-22 17:49:36.425 [main] BaseClass - Requoted the quotation
+[INFO ] 2023-06-22 17:49:46.601 [main] BaseClass - Verification of accepting quotation is Successed.
+[INFO ] 2023-06-22 17:50:08.908 [main] BaseClass - Requoted the quotation
+[INFO ] 2023-06-22 17:50:18.758 [main] BaseClass - Agent supplier email is entered.
+[INFO ] 2023-06-22 17:50:18.851 [main] BaseClass - Agent supplier password is entered.
+[INFO ] 2023-06-22 17:50:35.710 [main] BaseClass - Product name entered.
+[INFO ] 2023-06-22 17:50:58.802 [main] BaseClass - Verification of accepting quotation is Successed.
+[INFO ] 2023-06-22 17:56:49.800 [main] BaseClass - Application Opened.
+[INFO ] 2023-06-22 17:56:50.906 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-06-22 17:56:52.016 [main] BaseClass - Password is entered.
+[INFO ] 2023-06-22 17:56:55.090 [main] BaseClass - Logged in to the Agent supplier account.
+[INFO ] 2023-06-22 17:57:05.264 [main] BaseClass - Product name entered.
+[INFO ] 2023-06-22 17:57:09.637 [main] BaseClass - Price entered for all pieces.
+[INFO ] 2023-06-22 17:57:14.804 [main] BaseClass - Clicked on submit quotation button.
+[INFO ] 2023-06-22 17:57:23.879 [main] BaseClass - Verification of Submit quotation Successed..
+[INFO ] 2023-06-22 17:57:26.001 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-06-22 17:57:26.083 [main] BaseClass - Password is entered.
+[INFO ] 2023-06-22 17:57:30.166 [main] BaseClass - Client logged in successfully.
+[INFO ] 2023-06-22 17:57:35.633 [main] BaseClass - Product name searched.
+[INFO ] 2023-06-22 17:57:45.066 [main] BaseClass - Clicked on Accept Quotation button.
+[INFO ] 2023-06-22 17:57:49.151 [main] BaseClass - Verification of accepting quotation is Successed.
+[INFO ] 2023-06-22 17:57:51.951 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-06-22 17:57:59.443 [main] BaseClass - Product name is entered.
+[INFO ] 2023-06-22 17:58:02.537 [main] BaseClass - Clicked on status dropdown.
+[INFO ] 2023-06-22 17:58:05.692 [main] BaseClass - Processing status is searched.
+[INFO ] 2023-06-22 17:58:15.174 [main] BaseClass - Tracking number entered.
+[INFO ] 2023-06-22 17:58:18.226 [main] BaseClass - clicked on add tracking button.
+[INFO ] 2023-06-22 17:58:21.394 [main] BaseClass - Clicked on submit tracking button.
+[INFO ] 2023-06-22 17:59:07.427 [main] BaseClass - Verification of adding tracking number is Successfull.
+[INFO ] 2023-06-22 18:12:33.212 [main] BaseClass - Application Opened.
+[INFO ] 2023-06-22 18:12:34.315 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-06-22 18:12:35.470 [main] BaseClass - Password is entered.
+[INFO ] 2023-06-22 18:12:38.543 [main] BaseClass - Logged in to the Agent supplier account.
+[INFO ] 2023-06-22 18:12:48.987 [main] BaseClass - Product name entered.
+[INFO ] 2023-06-22 18:12:53.425 [main] BaseClass - Price entered for all pieces.
+[INFO ] 2023-06-22 18:12:58.606 [main] BaseClass - Clicked on submit quotation button.
+[INFO ] 2023-06-22 18:13:07.682 [main] BaseClass - Verification of Submit quotation Successed..
+[INFO ] 2023-06-22 18:13:09.795 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-06-22 18:13:09.871 [main] BaseClass - Password is entered.
+[INFO ] 2023-06-22 18:13:13.951 [main] BaseClass - Client logged in successfully.
+[INFO ] 2023-06-22 18:13:19.432 [main] BaseClass - Product name searched.
+[INFO ] 2023-06-22 18:13:28.905 [main] BaseClass - Clicked on Accept Quotation button.
+[INFO ] 2023-06-22 18:13:32.953 [main] BaseClass - Verification of accepting quotation is Successed.
+[INFO ] 2023-06-22 18:13:35.471 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-06-22 18:13:43.179 [main] BaseClass - Product name is entered.
+[INFO ] 2023-06-22 18:13:46.319 [main] BaseClass - Clicked on status dropdown.
+[INFO ] 2023-06-22 18:13:49.486 [main] BaseClass - Processing status is searched.
+[INFO ] 2023-06-22 18:13:59.007 [main] BaseClass - Tracking number entered.
+[INFO ] 2023-06-22 18:14:02.069 [main] BaseClass - clicked on add tracking button.
+[INFO ] 2023-06-22 18:14:05.231 [main] BaseClass - Clicked on submit tracking button.
+[INFO ] 2023-06-22 18:14:44.268 [main] BaseClass - Verification of adding tracking number is Successfull.
+[INFO ] 2023-06-22 18:20:19.548 [main] BaseClass - Application Opened.
+[INFO ] 2023-06-22 18:20:20.655 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-06-22 18:20:21.815 [main] BaseClass - Password is entered.
+[INFO ] 2023-06-22 18:20:24.885 [main] BaseClass - Logged in to the Agent supplier account.
+[INFO ] 2023-06-22 18:20:35.237 [main] BaseClass - Product name entered.
+[INFO ] 2023-06-22 18:20:39.600 [main] BaseClass - Price entered for all pieces.
+[INFO ] 2023-06-22 18:20:44.727 [main] BaseClass - Clicked on submit quotation button.
+[INFO ] 2023-06-22 18:20:53.802 [main] BaseClass - Verification of Submit quotation Successed..
+[INFO ] 2023-06-22 18:20:55.890 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-06-22 18:20:55.978 [main] BaseClass - Password is entered.
+[INFO ] 2023-06-22 18:21:00.064 [main] BaseClass - Client logged in successfully.
+[INFO ] 2023-06-22 18:21:05.239 [main] BaseClass - Product name searched.
+[INFO ] 2023-06-22 18:21:14.598 [main] BaseClass - Clicked on Accept Quotation button.
+[INFO ] 2023-06-22 18:21:18.651 [main] BaseClass - Verification of accepting quotation is Successed.
+[INFO ] 2023-06-22 18:21:21.402 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-06-22 18:21:28.968 [main] BaseClass - Product name is entered.
+[INFO ] 2023-06-22 18:21:32.116 [main] BaseClass - Clicked on status dropdown.
+[INFO ] 2023-06-22 18:21:35.223 [main] BaseClass - Processing status is searched.
+[INFO ] 2023-06-22 18:21:44.810 [main] BaseClass - Tracking number entered.
+[INFO ] 2023-06-22 18:21:47.928 [main] BaseClass - clicked on add tracking button.
+[INFO ] 2023-06-22 18:21:51.161 [main] BaseClass - Clicked on submit tracking button.
+[INFO ] 2023-06-22 18:22:33.741 [main] BaseClass - Verification of adding tracking number is Successfull.
+[INFO ] 2023-06-22 18:35:09.465 [main] BaseClass - Application Opened.
+[INFO ] 2023-06-22 18:35:10.572 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-06-22 18:35:11.700 [main] BaseClass - Password is entered.
+[INFO ] 2023-06-22 18:35:14.769 [main] BaseClass - Logged in to the Agent supplier account.
+[INFO ] 2023-06-22 18:35:25.491 [main] BaseClass - Product name entered.
+[INFO ] 2023-06-22 18:35:29.861 [main] BaseClass - Price entered for all pieces.
+[INFO ] 2023-06-22 18:35:34.990 [main] BaseClass - Clicked on submit quotation button.
+[INFO ] 2023-06-22 18:35:44.065 [main] BaseClass - Verification of Submit quotation Successed..
+[INFO ] 2023-06-22 18:35:46.339 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-06-22 18:35:46.409 [main] BaseClass - Password is entered.
+[INFO ] 2023-06-22 18:35:50.488 [main] BaseClass - Client logged in successfully.
+[INFO ] 2023-06-22 18:35:56.034 [main] BaseClass - Product name searched.
+[INFO ] 2023-06-22 18:36:05.425 [main] BaseClass - Clicked on Accept Quotation button.
+[INFO ] 2023-06-22 18:36:09.502 [main] BaseClass - Verification of accepting quotation is Successed.
+[INFO ] 2023-06-22 18:36:12.151 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-06-22 18:36:19.839 [main] BaseClass - Product name is entered.
+[INFO ] 2023-06-22 18:36:22.969 [main] BaseClass - Clicked on status dropdown.
+[INFO ] 2023-06-22 18:36:26.134 [main] BaseClass - Processing status is searched.
+[INFO ] 2023-06-22 18:36:35.649 [main] BaseClass - Tracking number entered.
+[INFO ] 2023-06-22 18:36:38.712 [main] BaseClass - clicked on add tracking button.
+[INFO ] 2023-06-22 18:36:41.877 [main] BaseClass - Clicked on submit tracking button.
+[INFO ] 2023-06-22 18:37:22.465 [main] BaseClass - Verification of adding tracking number is Successfull.
+[INFO ] 2023-06-22 18:37:50.640 [main] BaseClass - Verification of adding discount number is Successfull.
+[INFO ] 2023-06-22 18:37:55.340 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-06-22 18:37:55.424 [main] BaseClass - Password is entered.
+[INFO ] 2023-06-22 18:38:04.919 [main] BaseClass - Both discount price is equal to discount price entered by supplier is failed to verified..
+[INFO ] 2023-06-22 18:42:18.812 [main] BaseClass - Application Opened.
+[INFO ] 2023-06-22 18:42:19.916 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-06-22 18:42:21.066 [main] BaseClass - Password is entered.
+[INFO ] 2023-06-22 18:42:24.135 [main] BaseClass - Logged in to the Agent supplier account.
+[INFO ] 2023-06-22 18:42:34.314 [main] BaseClass - Product name entered.
+[INFO ] 2023-06-22 18:42:38.667 [main] BaseClass - Price entered for all pieces.
+[INFO ] 2023-06-22 18:42:43.850 [main] BaseClass - Clicked on submit quotation button.
+[INFO ] 2023-06-22 18:42:52.926 [main] BaseClass - Verification of Submit quotation Successed..
+[INFO ] 2023-06-22 18:42:55.407 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-06-22 18:42:55.485 [main] BaseClass - Password is entered.
+[INFO ] 2023-06-22 18:42:59.568 [main] BaseClass - Client logged in successfully.
+[INFO ] 2023-06-22 18:43:05.064 [main] BaseClass - Product name searched.
+[INFO ] 2023-06-22 18:43:14.503 [main] BaseClass - Clicked on Accept Quotation button.
+[INFO ] 2023-06-22 18:43:18.548 [main] BaseClass - Verification of accepting quotation is Successed.
+[INFO ] 2023-06-22 18:43:21.024 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-06-22 18:43:28.509 [main] BaseClass - Product name is entered.
+[INFO ] 2023-06-22 18:43:31.605 [main] BaseClass - Clicked on status dropdown.
+[INFO ] 2023-06-22 18:43:34.734 [main] BaseClass - Processing status is searched.
+[INFO ] 2023-06-22 18:43:44.141 [main] BaseClass - Tracking number entered.
+[INFO ] 2023-06-22 18:43:47.198 [main] BaseClass - clicked on add tracking button.
+[INFO ] 2023-06-22 18:43:50.370 [main] BaseClass - Clicked on submit tracking button.
+[INFO ] 2023-06-22 18:44:30.340 [main] BaseClass - Verification of adding tracking number is Successfull.
+[INFO ] 2023-06-22 18:44:58.344 [main] BaseClass - Verification of adding discount number is Successfull.
+[INFO ] 2023-06-22 18:45:02.974 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-06-22 18:45:03.050 [main] BaseClass - Password is entered.
+[INFO ] 2023-06-22 18:45:12.671 [main] BaseClass - Both discount price is equal to discount price entered by supplier is failed to verified..
+[INFO ] 2023-06-22 18:54:54.740 [main] BaseClass - Application Opened.
+[INFO ] 2023-06-22 18:54:55.839 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-06-22 18:54:56.999 [main] BaseClass - Password is entered.
+[INFO ] 2023-06-22 18:55:00.071 [main] BaseClass - Logged in to the Agent supplier account.
+[INFO ] 2023-06-22 18:55:10.767 [main] BaseClass - Product name entered.
+[INFO ] 2023-06-22 18:55:15.248 [main] BaseClass - Price entered for all pieces.
+[INFO ] 2023-06-22 18:55:20.376 [main] BaseClass - Clicked on submit quotation button.
+[INFO ] 2023-06-22 18:55:29.450 [main] BaseClass - Verification of Submit quotation Successed..
+[INFO ] 2023-06-22 18:55:31.743 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-06-22 18:55:31.817 [main] BaseClass - Password is entered.
+[INFO ] 2023-06-22 18:55:35.907 [main] BaseClass - Client logged in successfully.
+[INFO ] 2023-06-22 18:55:41.418 [main] BaseClass - Product name searched.
+[INFO ] 2023-06-22 18:55:50.818 [main] BaseClass - Clicked on Accept Quotation button.
+[INFO ] 2023-06-22 18:55:51.028 [main] BaseClass - Verification of accepting quotation is Failed.
+[INFO ] 2023-06-22 18:55:53.930 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-06-22 18:56:01.328 [main] BaseClass - Product name is entered.
+[INFO ] 2023-06-22 18:56:04.472 [main] BaseClass - Clicked on status dropdown.
+[INFO ] 2023-06-22 18:56:07.632 [main] BaseClass - Processing status is searched.
+[INFO ] 2023-06-22 18:56:17.160 [main] BaseClass - Tracking number entered.
+[INFO ] 2023-06-22 18:56:20.220 [main] BaseClass - clicked on add tracking button.

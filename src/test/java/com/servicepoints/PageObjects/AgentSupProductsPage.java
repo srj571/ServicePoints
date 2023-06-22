@@ -435,7 +435,6 @@ public class AgentSupProductsPage {
 	        wait.until(ExpectedConditions.visibilityOf(singleField));
 
 	        singleField.sendKeys(value);
-	        Thread.sleep(1000);
 	    }
 	}
 	
@@ -453,7 +452,6 @@ public class AgentSupProductsPage {
 	        wait.until(ExpectedConditions.visibilityOf(singleField));
 	        
 	        singleField.sendKeys(value);
-	        Thread.sleep(1000);
 	    }
 	}
 }

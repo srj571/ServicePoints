@@ -187,6 +187,7 @@ public class AgentOrdersPage {
 		double percentage = 0.8;
 		double result = amount * percentage;
 
+		
 		return result;
 	}
 	

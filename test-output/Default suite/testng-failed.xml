@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.servicepoints.testCases.TC14_VerifyExcludeFunctionTest">
+      <class name="com.servicepoints.testCases.TC64_VerifyCancelQuotationRequestFunctionality">
         <methods>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="verifyExcludeQuotationTest"/>
+          <include name="submitAndAcceptQuotation"/>
         </methods>
-      </class> <!-- com.servicepoints.testCases.TC14_VerifyExcludeFunctionTest -->
+      </class> <!-- com.servicepoints.testCases.TC64_VerifyCancelQuotationRequestFunctionality -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

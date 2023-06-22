@@ -440,8 +440,11 @@ public class TC58_VerifyDiscountWithResendFunctionality extends BaseClass {
 
 		String amountAsString = String.valueOf(val);
 		Thread.sleep(1000);
+		
+		String formattedPrice = String.format("%.2f", val);
 
-		aop.enterDiscountAmountField(amountAsString);
+
+		aop.enterDiscountAmountField(formattedPrice);
 		Thread.sleep(2000);
 
 		aop.clickOnSubmitDiscountBtn();

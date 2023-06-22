@@ -235,7 +235,13 @@ public class TC55_VerifyAddDiscountFunctionality extends BaseClass{
 		String amountAsString =String.valueOf(val);
 		Thread.sleep(1000);
 		
-		aop.enterDiscountAmountField(amountAsString);
+		System.out.println(val);
+		
+		String formattedPrice = String.format("%.2f", val);
+		
+		System.out.println(formattedPrice);
+		
+		aop.enterDiscountAmountField(formattedPrice);
 		Thread.sleep(2000);
 		
 		aop.clickOnSubmitDiscountBtn();
@@ -285,7 +291,10 @@ public class TC55_VerifyAddDiscountFunctionality extends BaseClass{
 		
 		String actualDiscount=String.valueOf(amount);
 		
-		if(amountAsString.equals(actualDiscount)) {
+		Assert.assertEquals(formattedPrice, actualDiscount);
+		
+		
+		if(formattedPrice.equals(actualDiscount)) {
 			logger.info("Both discount price is equal to discount price entered by supplier is successfully verified.");
 			Assert.assertTrue(true);
 			Thread.sleep(3000);

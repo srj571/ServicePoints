@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-21T18:01:52 IST" name="Suite" finished-at="2023-06-21T18:02:53 IST" duration-ms="60953">
+  <suite started-at="2023-06-22T18:54:50 IST" name="Suite" finished-at="2023-06-22T18:56:29 IST" duration-ms="99426">
     <groups>
     </groups>
-    <test started-at="2023-06-21T18:01:52 IST" name="Test" finished-at="2023-06-21T18:02:53 IST" duration-ms="60953">
-      <class name="com.servicepoints.testCases.TC12_VerifySubmitQuoteTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.servicepoints.testCases.TC12_VerifySubmitQuoteTest@7813cb11]" started-at="2023-06-21T18:01:52 IST" name="setup" finished-at="2023-06-21T18:01:57 IST" duration-ms="5100" status="PASS">
+    <test started-at="2023-06-22T18:54:50 IST" name="Test" finished-at="2023-06-22T18:56:29 IST" duration-ms="99426">
+      <class name="com.servicepoints.testCases.TC55_VerifyAddDiscountFunctionality">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.servicepoints.testCases.TC55_VerifyAddDiscountFunctionality@32f0fba8]" started-at="2023-06-22T18:54:50 IST" name="setup" finished-at="2023-06-22T18:54:54 IST" duration-ms="4337" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,14 +18,14 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifySubmitQuoteTest()[pri:0, instance:com.servicepoints.testCases.TC12_VerifySubmitQuoteTest@7813cb11]" started-at="2023-06-21T18:01:57 IST" name="verifySubmitQuoteTest" finished-at="2023-06-21T18:02:28 IST" duration-ms="31201" status="FAIL">
+        <test-method signature="submitAndAcceptQuotation()[pri:1, instance:com.servicepoints.testCases.TC55_VerifyAddDiscountFunctionality@32f0fba8]" started-at="2023-06-22T18:54:54 IST" name="submitAndAcceptQuotation" finished-at="2023-06-22T18:55:51 IST" duration-ms="56299" status="FAIL">
           <exception class="junit.framework.AssertionFailedError">
             <full-stacktrace>
               <![CDATA[junit.framework.AssertionFailedError
 at junit.framework.Assert.fail(Assert.java:47)
 at junit.framework.Assert.assertTrue(Assert.java:20)
 at junit.framework.Assert.assertTrue(Assert.java:27)
-at com.servicepoints.testCases.TC12_VerifySubmitQuoteTest.verifySubmitQuoteTest(TC12_VerifySubmitQuoteTest.java:71)
+at com.servicepoints.testCases.TC55_VerifyAddDiscountFunctionality.submitAndAcceptQuotation(TC55_VerifyAddDiscountFunctionality.java:151)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -59,43 +59,26 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- junit.framework.AssertionFailedError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifySubmitQuoteTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.servicepoints.testCases.TC12_VerifySubmitQuoteTest@7813cb11]" started-at="2023-06-21T18:02:28 IST" name="tearDown" finished-at="2023-06-21T18:02:28 IST" duration-ms="77" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.servicepoints.testCases.TC12_VerifySubmitQuoteTest -->
-      <class name="com.servicepoints.testCases.TC13_VerifyAcceptQuotationTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.servicepoints.testCases.TC13_VerifyAcceptQuotationTest@ab7a938]" started-at="2023-06-21T18:02:28 IST" name="setup" finished-at="2023-06-21T18:02:33 IST" duration-ms="4727" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verifyAcceptQuoteTest()[pri:0, instance:com.servicepoints.testCases.TC13_VerifyAcceptQuotationTest@ab7a938]" started-at="2023-06-21T18:02:33 IST" name="verifyAcceptQuoteTest" finished-at="2023-06-21T18:02:53 IST" duration-ms="19738" status="FAIL">
-          <exception class="org.openqa.selenium.ElementNotInteractableException">
+        </test-method> <!-- submitAndAcceptQuotation -->
+        <test-method signature="verifyAddTrackingAndResendProduct()[pri:2, instance:com.servicepoints.testCases.TC55_VerifyAddDiscountFunctionality@32f0fba8]" started-at="2023-06-22T18:55:51 IST" name="verifyAddTrackingAndResendProduct" finished-at="2023-06-22T18:56:29 IST" duration-ms="38630" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[element not interactable
+              <![CDATA[element click intercepted: Element <input type="submit" name="submit" value="Confirm" class="btn btn-primary btn-sm selected" id="submitTrackingNumber"> is not clickable at point (1255, 663). Other element would receive the click: <div id="spinner-loader-container" style="display: block;">...</div>
   (Session info: chrome=114.0.5735.106)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'sarasvati-Precision-Tower-3420', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-75-generic', java.version: '17.0.5'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.106, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /tmp/.com.google.Chrome.WSVDJP}, goog:chromeOptions: {debuggerAddress: localhost:44971}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: ac02c2cc6cb708c2d38fa6cb552e22ae]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.106, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /tmp/.com.google.Chrome.Pmpx1X}, goog:chromeOptions: {debuggerAddress: localhost:39249}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 27a45aad588d28c32156b171be79041e]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input type="submit" name="submit" value="Confirm" class="btn btn-primary btn-sm selected" id="submitTrackingNumber"> is not clickable at point (1255, 663). Other element would receive the click: <div id="spinner-loader-container" style="display: block;">...</div>
   (Session info: chrome=114.0.5735.106)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'sarasvati-Precision-Tower-3420', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-75-generic', java.version: '17.0.5'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.106, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /tmp/.com.google.Chrome.WSVDJP}, goog:chromeOptions: {debuggerAddress: localhost:44971}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: ac02c2cc6cb708c2d38fa6cb552e22ae
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.106, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /tmp/.com.google.Chrome.Pmpx1X}, goog:chromeOptions: {debuggerAddress: localhost:39249}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 27a45aad588d28c32156b171be79041e
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -109,14 +92,13 @@ at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverComman
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
 at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 at jdk.proxy2/jdk.proxy2.$Proxy28.click(Unknown Source)
-at com.servicepoints.PageObjects.ClientProductPage.selectQuoteTab(ClientProductPage.java:217)
-at com.servicepoints.testCases.TC13_VerifyAcceptQuotationTest.verifyAcceptQuoteTest(TC13_VerifyAcceptQuotationTest.java:48)
+at com.servicepoints.PageObjects.AgentOrdersPage.clickOnSbmtTracking(AgentOrdersPage.java:88)
+at com.servicepoints.testCases.TC55_VerifyAddDiscountFunctionality.verifyAddTrackingAndResendProduct(TC55_VerifyAddDiscountFunctionality.java:207)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -147,15 +129,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyAcceptQuoteTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.servicepoints.testCases.TC13_VerifyAcceptQuotationTest@ab7a938]" started-at="2023-06-21T18:02:53 IST" name="tearDown" finished-at="2023-06-21T18:02:53 IST" duration-ms="78" status="PASS">
+        </test-method> <!-- verifyAddTrackingAndResendProduct -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.servicepoints.testCases.TC55_VerifyAddDiscountFunctionality@32f0fba8]" started-at="2023-06-22T18:56:29 IST" name="tearDown" finished-at="2023-06-22T18:56:29 IST" duration-ms="122" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.servicepoints.testCases.TC13_VerifyAcceptQuotationTest -->
+      </class> <!-- com.servicepoints.testCases.TC55_VerifyAddDiscountFunctionality -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

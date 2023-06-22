@@ -37,6 +37,22 @@ public class ClientProductPage {
 	@FindBy(xpath="//span[normalize-space()='Quotation accepted']")
 	WebElement statusEle;
 	
+	@FindBy(xpath="(//span[@class='badge-mod badge-danger'])[1]")
+	WebElement getQuotedStatus;
+	
+	@FindBy(xpath="(//span[@class='badge-mod badge-warning'])[1]")
+	WebElement getBiddingStatus;
+	
+	public String getBiddingStatus() {
+		String val=getBiddingStatus.getText();
+		return val;
+	}
+	
+	public String getQuotedStatus() {
+		String val=getQuotedStatus.getText();
+		return val;
+	}
+	
 	//Verify stop fullfilling status
 	@FindBy(xpath="//a[normalize-space()='Stop fullfilling']")
 	WebElement stopFullfill;
@@ -328,6 +344,41 @@ public class ClientProductPage {
 		
 		cancelBtnOnCountry.click();
 		Thread.sleep(2000);
+	}
+	
+	@FindBy(xpath="(//button[normalize-space()='Cancel quotation request'])[1]")
+	WebElement cancelQuotationRequest;
+	
+	public void selectCancelQuotationRequest() {
+		cancelQuotationRequest.click();
+	}
+	
+	@FindBy(xpath="(//button[@type='button'][normalize-space()='Yes, I am sure'])[1]")
+	WebElement yesImSUreBtnCancelQuote;
+	
+	public void clickOnImSureBtn() {
+		yesImSUreBtnCancelQuote.click();
+	}
+	
+	@FindBy(xpath="(//button[@type='button'][normalize-space()='Close'])[1]")
+	WebElement closeBtnSuccess;
+	
+	public void clickOnCloseBtnSuccess() {
+		closeBtnSuccess.click();
+	}
+	
+	@FindBy(xpath="(//button[normalize-space()='Request for quotation'])[1]")
+	WebElement requestForQuotationBtn;
+	
+	public void clickOnRequestForQuotationBtn() {
+		requestForQuotationBtn.click();
+	}
+	
+	@FindBy(xpath="(//button[@type='button'][normalize-space()='Close'])[1]")
+	WebElement closeBtnAfterRequestForQuote;
+	
+	public void clickOnCloseBtnAfterRQ() {
+		closeBtnAfterRequestForQuote.click();
 	}
 	
 }

@@ -364,8 +364,10 @@ public class TC57_VerifyDiscountFunctionalityWithRefundDispute2 extends BaseClas
 
 		amountAsString = String.valueOf(val);
 		Thread.sleep(1000);
+		
+		String formattedPrice = String.format("%.2f", val);
 
-		aop.enterDiscountAmountField(amountAsString);
+		aop.enterDiscountAmountField(formattedPrice);
 		Thread.sleep(2000);
 
 		aop.clickOnSubmitDiscountBtn();
