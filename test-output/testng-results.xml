@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
+<testng-results ignored="0" total="10" passed="6" failed="4" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-22T18:54:50 IST" name="Suite" finished-at="2023-06-22T18:56:29 IST" duration-ms="99426">
+  <suite started-at="2023-06-23T18:43:31 IST" name="Suite" finished-at="2023-06-23T18:53:42 IST" duration-ms="610851">
     <groups>
     </groups>
-    <test started-at="2023-06-22T18:54:50 IST" name="Test" finished-at="2023-06-22T18:56:29 IST" duration-ms="99426">
-      <class name="com.servicepoints.testCases.TC55_VerifyAddDiscountFunctionality">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.servicepoints.testCases.TC55_VerifyAddDiscountFunctionality@32f0fba8]" started-at="2023-06-22T18:54:50 IST" name="setup" finished-at="2023-06-22T18:54:54 IST" duration-ms="4337" status="PASS">
+    <test started-at="2023-06-23T18:43:31 IST" name="Test" finished-at="2023-06-23T18:53:42 IST" duration-ms="610851">
+      <class name="com.servicepoints.testCases.TC60_VerifyChangeDiscountWithResendAndRefundFunctionality">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.servicepoints.testCases.TC60_VerifyChangeDiscountWithResendAndRefundFunctionality@d5ae57e]" started-at="2023-06-23T18:43:31 IST" name="setup" finished-at="2023-06-23T18:43:37 IST" duration-ms="6051" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,14 +18,31 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="submitAndAcceptQuotation()[pri:1, instance:com.servicepoints.testCases.TC55_VerifyAddDiscountFunctionality@32f0fba8]" started-at="2023-06-22T18:54:54 IST" name="submitAndAcceptQuotation" finished-at="2023-06-22T18:55:51 IST" duration-ms="56299" status="FAIL">
-          <exception class="junit.framework.AssertionFailedError">
+        <test-method signature="submitAndAcceptQuotation()[pri:1, instance:com.servicepoints.testCases.TC60_VerifyChangeDiscountWithResendAndRefundFunctionality@d5ae57e]" started-at="2023-06-23T18:43:37 IST" name="submitAndAcceptQuotation" finished-at="2023-06-23T18:44:38 IST" duration-ms="60762" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitAndAcceptQuotation -->
+        <test-method signature="verifyAddTrackingOnProduct()[pri:2, instance:com.servicepoints.testCases.TC60_VerifyChangeDiscountWithResendAndRefundFunctionality@d5ae57e]" started-at="2023-06-23T18:44:38 IST" name="verifyAddTrackingOnProduct" finished-at="2023-06-23T18:46:20 IST" duration-ms="102234" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on LINUX (4073638956c9958712dae617b25b938a)] -> xpath: //div[@class='modal fade bd-example-modal-sm' and @id='save_client_info']] (tried for 65 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'sarasvati-Precision-Tower-3420', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-75-generic', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.106, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /tmp/.com.google.Chrome.RzEp5y}, goog:chromeOptions: {debuggerAddress: localhost:44399}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4073638956c9958712dae617b25b938a]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[junit.framework.AssertionFailedError
-at junit.framework.Assert.fail(Assert.java:47)
-at junit.framework.Assert.assertTrue(Assert.java:20)
-at junit.framework.Assert.assertTrue(Assert.java:27)
-at com.servicepoints.testCases.TC55_VerifyAddDiscountFunctionality.submitAndAcceptQuotation(TC55_VerifyAddDiscountFunctionality.java:151)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on LINUX (4073638956c9958712dae617b25b938a)] -> xpath: //div[@class='modal fade bd-example-modal-sm' and @id='save_client_info']] (tried for 65 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'sarasvati-Precision-Tower-3420', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-75-generic', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.106, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /tmp/.com.google.Chrome.RzEp5y}, goog:chromeOptions: {debuggerAddress: localhost:44399}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4073638956c9958712dae617b25b938a
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at com.servicepoints.PageObjects.AgentOrdersPage.waitTillSuccessBoxOfTrackingNum(AgentOrdersPage.java:178)
+at com.servicepoints.testCases.TC60_VerifyChangeDiscountWithResendAndRefundFunctionality.verifyAddTrackingOnProduct(TC60_VerifyChangeDiscountWithResendAndRefundFunctionality.java:214)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -56,29 +73,53 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- junit.framework.AssertionFailedError -->
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- submitAndAcceptQuotation -->
-        <test-method signature="verifyAddTrackingAndResendProduct()[pri:2, instance:com.servicepoints.testCases.TC55_VerifyAddDiscountFunctionality@32f0fba8]" started-at="2023-06-22T18:55:51 IST" name="verifyAddTrackingAndResendProduct" finished-at="2023-06-22T18:56:29 IST" duration-ms="38630" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+        </test-method> <!-- verifyAddTrackingOnProduct -->
+        <test-method signature="raiseResendDispute()[pri:3, instance:com.servicepoints.testCases.TC60_VerifyChangeDiscountWithResendAndRefundFunctionality@d5ae57e]" started-at="2023-06-23T18:46:20 IST" name="raiseResendDispute" finished-at="2023-06-23T18:47:25 IST" duration-ms="65136" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- raiseResendDispute -->
+        <test-method signature="verifyAddTrackingOnProductAgain()[pri:4, instance:com.servicepoints.testCases.TC60_VerifyChangeDiscountWithResendAndRefundFunctionality@d5ae57e]" started-at="2023-06-23T18:47:25 IST" name="verifyAddTrackingOnProductAgain" finished-at="2023-06-23T18:48:12 IST" duration-ms="46778" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddTrackingOnProductAgain -->
+        <test-method signature="verifyAddingDiscount()[pri:5, instance:com.servicepoints.testCases.TC60_VerifyChangeDiscountWithResendAndRefundFunctionality@d5ae57e]" started-at="2023-06-23T18:48:12 IST" name="verifyAddingDiscount" finished-at="2023-06-23T18:49:30 IST" duration-ms="77922" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddingDiscount -->
+        <test-method signature="raiseRefundDispute()[pri:6, instance:com.servicepoints.testCases.TC60_VerifyChangeDiscountWithResendAndRefundFunctionality@d5ae57e]" started-at="2023-06-23T18:49:30 IST" name="raiseRefundDispute" finished-at="2023-06-23T18:50:51 IST" duration-ms="81384" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- raiseRefundDispute -->
+        <test-method signature="raiseRefundDispute()[pri:6, instance:com.servicepoints.testCases.TC60_VerifyChangeDiscountWithResendAndRefundFunctionality@d5ae57e]" started-at="2023-06-23T18:50:51 IST" name="raiseRefundDispute" finished-at="2023-06-23T18:52:13 IST" duration-ms="82059" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- raiseRefundDispute -->
+        <test-method signature="raiseRefundDispute()[pri:6, instance:com.servicepoints.testCases.TC60_VerifyChangeDiscountWithResendAndRefundFunctionality@d5ae57e]" started-at="2023-06-23T18:52:13 IST" name="raiseRefundDispute" finished-at="2023-06-23T18:53:35 IST" duration-ms="81266" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[element click intercepted: Element <input type="submit" name="submit" value="Confirm" class="btn btn-primary btn-sm selected" id="submitTrackingNumber"> is not clickable at point (1255, 663). Other element would receive the click: <div id="spinner-loader-container" style="display: block;">...</div>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Change discount')]"}
   (Session info: chrome=114.0.5735.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'sarasvati-Precision-Tower-3420', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-75-generic', java.version: '17.0.5'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.106, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /tmp/.com.google.Chrome.Pmpx1X}, goog:chromeOptions: {debuggerAddress: localhost:39249}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 27a45aad588d28c32156b171be79041e]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.106, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /tmp/.com.google.Chrome.RzEp5y}, goog:chromeOptions: {debuggerAddress: localhost:44399}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4073638956c9958712dae617b25b938a
+*** Element info: {Using=xpath, value=//a[contains(text(),'Change discount')]}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input type="submit" name="submit" value="Confirm" class="btn btn-primary btn-sm selected" id="submitTrackingNumber"> is not clickable at point (1255, 663). Other element would receive the click: <div id="spinner-loader-container" style="display: block;">...</div>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Change discount')]"}
   (Session info: chrome=114.0.5735.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'sarasvati-Precision-Tower-3420', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-75-generic', java.version: '17.0.5'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.106, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /tmp/.com.google.Chrome.Pmpx1X}, goog:chromeOptions: {debuggerAddress: localhost:39249}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 27a45aad588d28c32156b171be79041e
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.106, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /tmp/.com.google.Chrome.RzEp5y}, goog:chromeOptions: {debuggerAddress: localhost:44399}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4073638956c9958712dae617b25b938a
+*** Element info: {Using=xpath, value=//a[contains(text(),'Change discount')]}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -90,15 +131,24 @@ at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCo
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy28.click(Unknown Source)
-at com.servicepoints.PageObjects.AgentOrdersPage.clickOnSbmtTracking(AgentOrdersPage.java:88)
-at com.servicepoints.testCases.TC55_VerifyAddDiscountFunctionality.verifyAddTrackingAndResendProduct(TC55_VerifyAddDiscountFunctionality.java:207)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy28.getWrappedElement(Unknown Source)
+at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:50)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:484)
+at com.servicepoints.PageObjects.AgentOrdersPage.scrollTillChangeDiscountbtn(AgentOrdersPage.java:315)
+at com.servicepoints.testCases.TC60_VerifyChangeDiscountWithResendAndRefundFunctionality.raiseRefundDispute(TC60_VerifyChangeDiscountWithResendAndRefundFunctionality.java:640)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -129,15 +179,160 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyAddTrackingAndResendProduct -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.servicepoints.testCases.TC55_VerifyAddDiscountFunctionality@32f0fba8]" started-at="2023-06-22T18:56:29 IST" name="tearDown" finished-at="2023-06-22T18:56:29 IST" duration-ms="122" status="PASS">
+        </test-method> <!-- raiseRefundDispute -->
+        <test-method signature="verifyDiscountFromClientSide()[pri:7, instance:com.servicepoints.testCases.TC60_VerifyChangeDiscountWithResendAndRefundFunctionality@d5ae57e]" started-at="2023-06-23T18:53:35 IST" name="verifyDiscountFromClientSide" finished-at="2023-06-23T18:53:42 IST" duration-ms="6965" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=114.0.5735.106)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'sarasvati-Precision-Tower-3420', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-75-generic', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.106, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /tmp/.com.google.Chrome.RzEp5y}, goog:chromeOptions: {debuggerAddress: localhost:44399}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4073638956c9958712dae617b25b938a
+*** Element info: {Using=xpath, value=//input[@id='order_search']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=114.0.5735.106)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'sarasvati-Precision-Tower-3420', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-75-generic', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.106, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /tmp/.com.google.Chrome.RzEp5y}, goog:chromeOptions: {debuggerAddress: localhost:44399}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4073638956c9958712dae617b25b938a
+*** Element info: {Using=xpath, value=//input[@id='order_search']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy28.sendKeys(Unknown Source)
+at com.servicepoints.PageObjects.AgentOrdersPage.searchPnameTrack(AgentOrdersPage.java:36)
+at com.servicepoints.testCases.TC60_VerifyChangeDiscountWithResendAndRefundFunctionality.verifyDiscountFromClientSide(TC60_VerifyChangeDiscountWithResendAndRefundFunctionality.java:663)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDiscountFromClientSide -->
+        <test-method signature="verifyAddingDiscountOnRemainingVariants()[pri:8, instance:com.servicepoints.testCases.TC60_VerifyChangeDiscountWithResendAndRefundFunctionality@d5ae57e]" started-at="2023-06-23T18:53:42 IST" name="verifyAddingDiscountOnRemainingVariants" finished-at="2023-06-23T18:53:42 IST" duration-ms="17" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=114.0.5735.106)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'sarasvati-Precision-Tower-3420', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-75-generic', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.106, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /tmp/.com.google.Chrome.RzEp5y}, goog:chromeOptions: {debuggerAddress: localhost:44399}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4073638956c9958712dae617b25b938a]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=114.0.5735.106)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'sarasvati-Precision-Tower-3420', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-75-generic', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.106, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /tmp/.com.google.Chrome.RzEp5y}, goog:chromeOptions: {debuggerAddress: localhost:44399}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4073638956c9958712dae617b25b938a
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+at com.servicepoints.testCases.TC60_VerifyChangeDiscountWithResendAndRefundFunctionality.verifyAddingDiscountOnRemainingVariants(TC60_VerifyChangeDiscountWithResendAndRefundFunctionality.java:701)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddingDiscountOnRemainingVariants -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.servicepoints.testCases.TC60_VerifyChangeDiscountWithResendAndRefundFunctionality@d5ae57e]" started-at="2023-06-23T18:53:42 IST" name="tearDown" finished-at="2023-06-23T18:53:42 IST" duration-ms="100" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.servicepoints.testCases.TC55_VerifyAddDiscountFunctionality -->
+      </class> <!-- com.servicepoints.testCases.TC60_VerifyChangeDiscountWithResendAndRefundFunctionality -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

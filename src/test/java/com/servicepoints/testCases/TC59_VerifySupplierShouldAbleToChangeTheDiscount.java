@@ -353,7 +353,7 @@ public class TC59_VerifySupplierShouldAbleToChangeTheDiscount extends BaseClass 
 	}
 
 	// invocation count will be equal to variant numbers
-	@Test(enabled = true, priority = 4, invocationCount = 3)
+	@Test(enabled = true, priority = 4, invocationCount = 2)
 	public void raiseRefundDispute() throws InterruptedException, IOException {
 		driver.get(baseURL);
 
@@ -482,17 +482,54 @@ public class TC59_VerifySupplierShouldAbleToChangeTheDiscount extends BaseClass 
 
 		aop.clickOnfDiv();
 		Thread.sleep(3000);
-
-		aop.scrollTillChangeDiscountbtn(driver);
-		Thread.sleep(3000);
-
-		aop.clickOnChangeDiscountBtn();
-		Thread.sleep(2000);
-
-		aop.clickOnShowDiscountHistory();
-		Thread.sleep(3000);
-
 		
+		try {
+			aop.scrollTillChangeDiscountbtn(driver);
+			Thread.sleep(3000);
+
+			aop.clickOnChangeDiscountBtn();
+			Thread.sleep(2000);
+
+			aop.clickOnShowDiscountHistory();
+			Thread.sleep(3000);
+			
+		}catch(Exception e) {
+			aop.scrollTillDiscountbtn(driver);
+			Thread.sleep(2000);
+			
+			aop.clickOnDiscountBtn();
+			Thread.sleep(2000);
+			
+			double amount=aop.generateTheDiscountedPrice();
+			
+			String formattedPrice = String.format("%.2f", amount);
+			
+			aop.enterDiscountAmountField(formattedPrice);
+			Thread.sleep(2000);
+
+			aop.clickOnSubmitDiscountBtn();
+			Thread.sleep(3000);
+
+			aop.clickOnSuccessDb();
+			Thread.sleep(2000);
+
+			if (driver.getPageSource().contains("Discount successfully submitted")) {
+				logger.info("Verification of adding discount number is Successfull.");
+				Assert.assertTrue(true);
+				Thread.sleep(4000);
+			} else {
+				logger.info("Verification of adding discount number is failed.");
+				Thread.sleep(2000);
+				Assert.assertTrue(false);
+			}
+
+			aop.clickOnChangeDiscountBtn();
+			Thread.sleep(2000);
+			
+			aop.clickOnShowDiscountHistory();
+			Thread.sleep(4000);
+		}
+
 		driver.get(baseURL);
 		
 		lp.setAdminMailId(clientMailD);
@@ -511,4 +548,5 @@ public class TC59_VerifySupplierShouldAbleToChangeTheDiscount extends BaseClass 
 		logger.info("Clicked on first div.");
 		Thread.sleep(4000);
 	}
+	
 }

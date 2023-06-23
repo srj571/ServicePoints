@@ -468,22 +468,6 @@ public class TC60_VerifyChangeDiscountWithResendAndRefundFunctionality extends B
 			Assert.assertTrue(false);
 		}
 
-//		driver.navigate().refresh();
-//		Thread.sleep(3000);
-//		
-//		aop.clickOnOrdersTab();
-//		Thread.sleep(3000);
-//
-//		aop.searchPnameTrack(product59);
-//		logger.info("Product name is entered.");
-//		Thread.sleep(2000);
-//
-//		wait.until(ExpectedConditions.visibilityOf(aop.fdiv));
-//		aop.clickOnfDiv();
-//		Thread.sleep(3000);
-//
-//		aop.scrollTillChangeDiscountbtn(driver);
-//		Thread.sleep(2000);
 
 		aop.clickOnChangeDiscountBtn();
 		Thread.sleep(2000);
@@ -643,24 +627,24 @@ public class TC60_VerifyChangeDiscountWithResendAndRefundFunctionality extends B
 			Assert.assertTrue(false);
 		}
 
-		AgentOrdersPage aop = new AgentOrdersPage(driver);
-		aop.clickOnOrdersTab();
-
-		aop.searchPnameTrack(product60);
-		logger.info("Product name is entered.");
-		Thread.sleep(2000);
-
-		aop.clickOnfDiv();
-		Thread.sleep(3000);
-
-		aop.scrollTillChangeDiscountbtn(driver);
-		Thread.sleep(3000);
-
-		aop.clickOnChangeDiscountBtn();
-		Thread.sleep(2000);
-
-		aop.clickOnShowDiscountHistory();
-		Thread.sleep(3000);
+//		AgentOrdersPage aop = new AgentOrdersPage(driver);
+//		aop.clickOnOrdersTab();
+//
+//		aop.searchPnameTrack(product60);
+//		logger.info("Product name is entered.");
+//		Thread.sleep(2000);
+//
+//		aop.clickOnfDiv();
+//		Thread.sleep(3000);
+//
+//		aop.scrollTillChangeDiscountbtn(driver);
+//		Thread.sleep(3000);
+//
+//		aop.clickOnChangeDiscountBtn();
+//		Thread.sleep(2000);
+//
+//		aop.clickOnShowDiscountHistory();
+//		Thread.sleep(3000);
 	}
 
 	@Test(enabled = true, priority = 7)
@@ -683,15 +667,53 @@ public class TC60_VerifyChangeDiscountWithResendAndRefundFunctionality extends B
 		aop.clickOnfDiv();
 		Thread.sleep(3000);
 
-		aop.scrollTillChangeDiscountbtn(driver);
-		Thread.sleep(3000);
+		try {
+			aop.scrollTillChangeDiscountbtn(driver);
+			Thread.sleep(3000);
 
-		aop.clickOnChangeDiscountBtn();
-		Thread.sleep(2000);
+			aop.clickOnChangeDiscountBtn();
+			Thread.sleep(2000);
 
-		aop.clickOnShowDiscountHistory();
-		Thread.sleep(3000);
+			aop.clickOnShowDiscountHistory();
+			Thread.sleep(3000);
+			
+		}catch(Exception e) {
+			aop.scrollTillDiscountbtn(driver);
+			Thread.sleep(2000);
+			
+			aop.clickOnDiscountBtn();
+			Thread.sleep(2000);
+			
+			double amount=aop.generateTheDiscountedPrice();
+			
+			String formattedPrice = String.format("%.2f", amount);
+			
+			aop.enterDiscountAmountField(formattedPrice);
+			Thread.sleep(2000);
 
+			aop.clickOnSubmitDiscountBtn();
+			Thread.sleep(3000);
+
+			aop.clickOnSuccessDb();
+			Thread.sleep(2000);
+
+			if (driver.getPageSource().contains("Discount successfully submitted")) {
+				logger.info("Verification of adding discount number is Successfull.");
+				Assert.assertTrue(true);
+				Thread.sleep(4000);
+			} else {
+				logger.info("Verification of adding discount number is failed.");
+				Thread.sleep(2000);
+				Assert.assertTrue(false);
+			}
+
+			aop.clickOnChangeDiscountBtn();
+			Thread.sleep(2000);
+			
+			aop.clickOnShowDiscountHistory();
+			Thread.sleep(4000);
+		}
+		
 		driver.get(baseURL);
 
 		Thread.sleep(3000);

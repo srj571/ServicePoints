@@ -24,18 +24,18 @@ public class TC56_VerifyDiscountFunctionalityWithRefund extends BaseClass {
 	ReadConfig rd = new ReadConfig();
 	public String product56 = rd.getProductForTC56();
 
+	public String clientMailD = rd.getClientMailforDiscount();
+	public String clientPassD = rd.getClientPassforDiscount();
+	public String agentMailD = rd.getAgentMailforDiscount();
+	public String agentPassD = rd.getAgentPassforDiscount();
+
 	public String queries = rd.setQueries();
 	public String process = rd.setProcessStatus();
 	public String agentAnswer = rd.setAnswer();
 	public String otherTxt = rd.setOtherTxt();
 	public String query2 = rd.getQuery2();
 	public String status2 = rd.setOrderStatus2();
-
-	public String clientMailD = rd.getClientMailforDiscount();
-	public String clientPassD = rd.getClientPassforDiscount();
-	public String agentMailD = rd.getAgentMailforDiscount();
-	public String agentPassD = rd.getAgentPassforDiscount();
-
+	
 	public String trackingNum = rd.setTrackingNum();
 
 	public String storeFilter = rd.storeForDisputeFilter();
