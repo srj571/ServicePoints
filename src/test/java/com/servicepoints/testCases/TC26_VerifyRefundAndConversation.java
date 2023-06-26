@@ -140,8 +140,9 @@ public class TC26_VerifyRefundAndConversation extends BaseClass{
 		
 		logger.info("clicked on first div");
 		
+		cop.scrollTillShowDisputeBtn(driver);
+		Thread.sleep(2000);
 		
-		wait.until(ExpectedConditions.visibilityOf(cop.openDspbtn));
 		cop.clickOnOpenDspbtn();
 		Thread.sleep(3000);
 		logger.info("click on open dispute button.");
@@ -192,6 +193,8 @@ public class TC26_VerifyRefundAndConversation extends BaseClass{
 		asop.clickOnFrstDsp();
 		Thread.sleep(3000);
 		
+		asop.scrollTillShowDispute(driver);
+		Thread.sleep(2000);
 		
 		asop.clickOnShowDsp();
 		logger.info("Clicked on show disputes.");

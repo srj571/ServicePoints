@@ -140,10 +140,9 @@ public class TC23_VerifyAddTrackingAndRefundDspFunction extends BaseClass{
 		Thread.sleep(3000);
 		logger.info("clicked on first div");
 		
-		cop.scrollTillEle(driver);
+		cop.scrollTillOpenDisputesBtn(driver);
 		Thread.sleep(1000);
 		
-		wait.until(ExpectedConditions.visibilityOf(cop.openDspbtn));
 		cop.clickOnOpenDspbtn();
 		Thread.sleep(3000);
 		logger.info("click on open dispute button.");
@@ -192,6 +191,9 @@ public class TC23_VerifyAddTrackingAndRefundDspFunction extends BaseClass{
 		asop.clickOnFrstDsp();
 		Thread.sleep(3000);
 		
+		
+		asop.scrollTillShowDispute(driver);
+		Thread.sleep(2000);
 		
 		asop.clickOnShowDsp();
 		logger.info("Clicked on show disputes.");

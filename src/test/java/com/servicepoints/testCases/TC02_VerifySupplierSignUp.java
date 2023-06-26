@@ -53,7 +53,7 @@ public class TC02_VerifySupplierSignUp extends BaseClass{
 		sup.setEmail(supemail);
 		logger.info("Supplier mail is entered.");
 		Thread.sleep(1000);
-		
+	
 		sup.setPassword(suppass);
 		logger.info("Password is entered.");
 		Thread.sleep(1000);

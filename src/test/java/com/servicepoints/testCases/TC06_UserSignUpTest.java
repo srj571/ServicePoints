@@ -42,6 +42,9 @@ public class TC06_UserSignUpTest extends BaseClass{
 		logger.info("Order is set.");
 		Thread.sleep(1000);
 		
+		sp.selectReferenceByDropDown();
+		Thread.sleep(1000);
+		
 		sp.setPassword(password);
 		logger.info("Password is entered.");
 		Thread.sleep(1000);

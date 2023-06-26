@@ -140,8 +140,10 @@ public class TC28_VerifyDeclinedResendDispute extends BaseClass {
 		
 		logger.info("clicked on first div");
 		
-	
-		wait.until(ExpectedConditions.visibilityOf(cop.openDspbtn));
+		cop.scrollTillOpenDisputesBtn(driver);
+		Thread.sleep(2000);
+		
+		
 		cop.clickOnOpenDspbtn();
 		Thread.sleep(3000);
 		logger.info("click on open dispute button.");
@@ -191,6 +193,9 @@ public class TC28_VerifyDeclinedResendDispute extends BaseClass {
 		
 		asop.clickOnFrstDsp();
 		Thread.sleep(3000);
+		
+		asop.scrollTillShowDispute(driver);
+		Thread.sleep(2000);
 		
 		asop.clickOnShowDsp();
 		logger.info("Clicked on show disputes.");

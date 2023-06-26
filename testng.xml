@@ -6,14 +6,14 @@
 		<listener class-name="com.servicepoints.utilities.Reporting"></listener>
 	</listeners>
 		
-	<parameter name="browser" value="chrome"></parameter>
+	<parameter name="browser" value="firefox"></parameter>
 	
     <test thread-count="5" name="Test">
     <classes>
-      <!-- <class name="com.servicepoints.testCases.TC01_AdminLoginTest"/>
+      <!--<class name="com.servicepoints.testCases.TC01_AdminLoginTest"/>
       <class name="com.servicepoints.testCases.TC02_VerifySupplierSignUp"/>
       <class name="com.servicepoints.testCases.TC03_VerifyAdminSUPLoginTest"/>
-       <class name="com.servicepoints.testCases.TC04_VerifyAddAgentSupBySupplier"/>
+      <class name="com.servicepoints.testCases.TC04_VerifyAddAgentSupBySupplier"/>
       <class name="com.servicepoints.testCases.TC05_VerifyAddAgentSupportTest"/>
       <class name="com.servicepoints.testCases.TC06_UserSignUpTest"/>
       <class name="com.servicepoints.testCases.TC07_VerifyClientApprovalTest"/>
@@ -22,10 +22,10 @@
       <class name="com.servicepoints.testCases.TC10_VerifyUpdationOfStoreTest"/>
       <class name="com.servicepoints.testCases.TC11_VerifyDeletionOfStoreTest"/>
       <class name="com.servicepoints.testCases.TC12_VerifySubmitQuoteTest"/>
-      <class name="com.servicepoints.testCases.TC13_VerifyAcceptQuotationTest"/>-->
-      <!--<class name="com.servicepoints.testCases.TC14_VerifyExcludeFunctionTest"/>
+      <class name="com.servicepoints.testCases.TC13_VerifyAcceptQuotationTest"/>
+      <class name="com.servicepoints.testCases.TC14_VerifyExcludeFunctionTest"/>
       <class name="com.servicepoints.testCases.TC15_verifyAskForPriceChange"/>
-       <class name="com.servicepoints.testCases.TC16_VerifyUpdateDeleteQuotation"/>
+      <class name="com.servicepoints.testCases.TC16_VerifyUpdateDeleteQuotation"/>
       <class name="com.servicepoints.testCases.TC17_VerifyAddNewVariant"/>
       <class name="com.servicepoints.testCases.TC18_VerifyCancelOrderFunctionality"/>
       <class name="com.servicepoints.testCases.TC19_VerifyOpenDisputFunction"/>
@@ -37,14 +37,14 @@
       <class name="com.servicepoints.testCases.TC25_VerifyDisputeForConversation"/>
       <class name="com.servicepoints.testCases.TC26_VerifyRefundAndConversation"/>
       <class name="com.servicepoints.testCases.TC27_VerifyAddTrackingAndResend"/>       
-      <class name="com.servicepoints.testCases.TC28_VerifyDeclinedResendDispute"/>
+      <class name="com.servicepoints.testCases.TC28_VerifyDeclinedResendDispute"/>-->
       <class name="com.servicepoints.testCases.TC29_VerifySpecialRequestFunction"/>
       <class name="com.servicepoints.testCases.TC30_VerifyCloseSpecialRequestFunction"/>
-      <class name="com.servicepoints.testCases.TC31_VerifySpecialRequestCloseByAdminSP"/>
+      <!--<class name="com.servicepoints.testCases.TC31_VerifySpecialRequestCloseByAdminSP"/>
       <class name="com.servicepoints.testCases.TC33_VerifyPaymentPendingOrderOffTest"/>
       <class name="com.servicepoints.testCases.TC34_VerifyPaymentPendingOrderOnTest"/>
-      <class name="com.servicepoints.testCases.TC35_VerifyPaymentPendingOrderForAddressError"/>-->
-     <!-- <class name="com.servicepoints.testCases.TC36_VerifyAddAffiliateTest"/>-->
+      <class name="com.servicepoints.testCases.TC35_VerifyPaymentPendingOrderForAddressError"/>
+      <class name="com.servicepoints.testCases.TC36_VerifyAddAffiliateTest"/>-->
       <!--<class name="com.servicepoints.testCases.TC00_verifySubmitAndAcceptQuote"/>
       <class name="com.servicepoints.testCases.TC37_VerifyStopFulfillmentAndStartFulfillmentTest"/>
       <class name="com.servicepoints.testCases.TC38_VerifyRequoteQuotationTest"/>
@@ -270,7 +270,7 @@
 			  <include name="verifyDiscountFromClientSide"></include>
 			  <include name="tearDown"></include>
 		  </methods>
-	  </class>-->
+	  </class>
 	  <class name="com.servicepoints.testCases.TC60_VerifyChangeDiscountWithResendAndRefundFunctionality">
 		  <methods>
 			  <include name="setup"></include>
@@ -284,7 +284,7 @@
 			  <include name="verifyAddingDiscountOnRemainingVariants"></include>
 			  <include name="tearDown"></include>
 		  </methods>
-	  </class>
+	  </class>-->
 	  <!--<class name="com.servicepoints.testCases.TC61_VerifyChangeDiscountWithRefundFunctionality">
 		  <methods>
 			  <include name="setup"></include>

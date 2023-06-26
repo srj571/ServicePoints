@@ -38,6 +38,10 @@ public class TC20_VerifyAcceptDispute extends BaseClass{
 		Thread.sleep(3000);
 		asop.clickOnFrstDsp();
 		Thread.sleep(3000);
+		
+		asop.scrollTillShowDispute(driver);
+		Thread.sleep(2000);
+		
 		asop.clickOnShowDsp();
 		logger.info("Clicked on show disputes.");
 		Thread.sleep(3000);
@@ -48,8 +52,10 @@ public class TC20_VerifyAcceptDispute extends BaseClass{
 		
 		asop.sendAnswer(agentAnswer);
 		Thread.sleep(3000);
+		
 		asop.scrollTillSendAns(driver);
 		Thread.sleep(1000);
+		
 		asop.clickOnSendAnswer();
 		logger.info("Dispute send.");
 		Thread.sleep(5000);

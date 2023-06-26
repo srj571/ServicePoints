@@ -21,29 +21,23 @@ public class TC18_VerifyCancelOrderFunctionality extends BaseClass{
 	
 	public String agentMailDsp=rd.setAMailDsp();
 	public String agentPassDsp=rd.setApassDsp();
-	public String CMail=rd.setCEmailFrDispt();
-	public String CPass=rd.setCpassForDispute();
+	public String clientMailForDelete=rc.setClientMailForDeleteQuote();
+	public String clientPassForDelete=rc.setClientPassForDeleteQuote();
 	public String productFetch=rd.fetchProducts();
 	public String ordersFetch=rd.fetchOrders();
 	public String status2=rd.setOrderStatus2();
 	public String productCancelOrder=rd.setProductCancelOrder();
+	public String supMail=rc.getSupMailForDeleteQuote();
+	public String supPass=rc.getSupPassForDeleteQuote();
 
 	
 	@Test
 	public void verifyCancelOrderFunctionality() throws InterruptedException, IOException {
 		
-		driver.get(productFetch);
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		
-		driver.get(ordersFetch);
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		
-		driver.get(baseURL);
-		
 		LoginPage lp=new LoginPage(driver);
 		
-		lp.setAdminMailId(agentMailDsp);
-		lp.setAdminPassword(agentPassDsp);
+		lp.setAdminMailId(supMail);
+		lp.setAdminPassword(supPass);
 		lp.clickLoginbtn();
 		logger.info("Agent logged in Successfully.");
 		
@@ -91,8 +85,8 @@ public class TC18_VerifyCancelOrderFunctionality extends BaseClass{
 		
 		driver.get(baseURL);
 		
-		lp.setAdminMailId(CMail);
-		lp.setAdminPassword(CPass);
+		lp.setAdminMailId(clientMailForDelete);
+		lp.setAdminPassword(clientPassForDelete);
 		lp.clickLoginbtn();
 		logger.info("Agent logged in Successfully.");
 		

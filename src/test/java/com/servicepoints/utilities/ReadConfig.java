@@ -1052,6 +1052,16 @@ public class ReadConfig {
 		String pro64=po.getProperty("product64");
 		return pro64;
 	}
+	
+	public String getSupMailForDeleteQuote() {
+		String supmail=po.getProperty("supDeleteQuoteMail");
+		return supmail;
+	}
+	
+	public String getSupPassForDeleteQuote() {
+		String suppass=po.getProperty("supDeleteQuotePass");
+		return suppass;
+	}
 }
 
 

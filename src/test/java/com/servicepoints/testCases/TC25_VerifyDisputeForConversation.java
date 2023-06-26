@@ -113,6 +113,10 @@ public class TC25_VerifyDisputeForConversation extends BaseClass{
 		Thread.sleep(3000);
 		asop.clickOnFrstDsp();
 		Thread.sleep(3000);
+		
+		asop.scrollTillShowDispute(driver);
+		Thread.sleep(2000);
+		
 		asop.clickOnShowDsp();
 		logger.info("Clicked on show disputes.");
 		Thread.sleep(3000);
@@ -131,6 +135,8 @@ public class TC25_VerifyDisputeForConversation extends BaseClass{
 			logger.info("Verification of Dispute conversation is failed.");
 			Assert.assertTrue(false);
 		}
+		
+		
 		
 		asop.clickOnShowDsp();
 		Thread.sleep(2000);

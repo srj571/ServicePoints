@@ -48,6 +48,8 @@ public class TC30_VerifyCloseSpecialRequestFunction extends BaseClass{
 		asop.clickOnFrstDsp();
 		Thread.sleep(3000);
 		
+		asop.scrollTillEndOfThePage(driver);
+		Thread.sleep(2000);
 		asop.clickOnShowRequestTab();
 		Thread.sleep(3000);
 		
@@ -76,13 +78,13 @@ public class TC30_VerifyCloseSpecialRequestFunction extends BaseClass{
 		cop.clickOnOrdersTab();
 		Thread.sleep(3000);
 		
-		
 		cop.clickOnGoToDisputesTab();
 		Thread.sleep(3000);
 		cop.clickOnSpecialRequestTab();
 		Thread.sleep(3000);
-		cop.clickOnAnswerOfDispute();
+		cop.clickOnAnswersBtnInSR();
 		Thread.sleep(2000);
+		
 		cop.sendPnameinSearch(proDsp);
 		Thread.sleep(2000);
 		cop.clickOnFDiv();

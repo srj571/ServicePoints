@@ -53,7 +53,7 @@ public class TC19_VerifyOpenDisputFunction extends BaseClass{
 		logger.info("Clicked on first div.");
 		Thread.sleep(3000);
 		
-		cop.scrollTillEle(driver);
+		cop.scrollTillOpenDisputesBtn(driver);
 		Thread.sleep(1000);
 		
 		cop.clickOnOpenDspbtn();

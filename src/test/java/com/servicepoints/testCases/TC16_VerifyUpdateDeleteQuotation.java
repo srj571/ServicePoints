@@ -21,10 +21,11 @@ public class TC16_VerifyUpdateDeleteQuotation extends BaseClass{
 	public String c3price = rc.setChangePrice3Pcs();
 	public String c4price = rc.setChangePrice4Pcs();
 	public String ProductForUpdate=rc.setProductForVerifyUpdate();
-	public String productFetch=rc.fetchProducts();
-	public String ordersFetch=rc.fetchOrders();
 	public String clientMailForDelete=rc.setClientMailForDeleteQuote();
 	public String clientPassForDelete=rc.setClientPassForDeleteQuote();
+	public String supMail=rc.getSupMailForDeleteQuote();
+	public String supPass=rc.getSupPassForDeleteQuote();
+	
 	
 	@Test
 	public void verifyUpdateDeleteQuotation() throws InterruptedException, IOException {
@@ -33,11 +34,11 @@ public class TC16_VerifyUpdateDeleteQuotation extends BaseClass{
 		LoginPage lp = new LoginPage(driver);
 		Thread.sleep(1000);
 
-		lp.setAdminMailId(agentsupmail);
+		lp.setAdminMailId(supMail);
 		logger.info("Email_id is entered.");
 		Thread.sleep(1000);
 
-		lp.setAdminPassword(agentsuppass);
+		lp.setAdminPassword(supPass);
 		logger.info("Password is entered.");
 
 		lp.clickLoginbtn();
@@ -75,7 +76,7 @@ public class TC16_VerifyUpdateDeleteQuotation extends BaseClass{
 		aspp.clickOnSubmitQuote();
 		Thread.sleep(5000);
 
-		if (aspp.verifyTextOnAlert()==true) {
+		if (aspp.getStatus().equals("Quotation done")) {
 			Thread.sleep(2000);
 			Assert.assertTrue(true);
 			logger.info("Verification of Submit quotation Successed..");
@@ -96,8 +97,9 @@ public class TC16_VerifyUpdateDeleteQuotation extends BaseClass{
 		aspp.scrollTillUpdateBtn(driver);
 		Thread.sleep(1000);
 		aspp.updateQuotation();
-		Thread.sleep(5000);
-
+		Thread.sleep(2000);
+		aspp.waitTillUpdationQuotePopUp(driver);
+		
 		if (aspp.verifyTextOnAlert()==true) {
 			Thread.sleep(2000);
 			Assert.assertTrue(true);

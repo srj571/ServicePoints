@@ -82,9 +82,7 @@ public class TC24_VerifyRefundDspDeclined extends BaseClass{
 		
 		
 		aop.setTrackingNum(trackingNum);
-		//aop.clickOnCloseTrackingPopup();
 		Thread.sleep(3000);
-		//wait.until(ExpectedConditions.visibilityOf(aop.sbmtTracking));
 		
 		aop.clickOnSbmtTracking();
 		logger.info("Clicked on submit tracking button.");
@@ -117,24 +115,13 @@ public class TC24_VerifyRefundDspDeclined extends BaseClass{
 		Thread.sleep(3000);
 		logger.info("Product name is entered.");
 		
-		cop.clickOnStatusDrop();
-		//Thread.sleep(3000);
-		cop.dropdownSearch(process);
-		//logger.info("fulfilled status is entered.");
-		//cop.clickOnFulfillTab();
-		//cop.clickOnFProcessingTab();
-		//aop.clickOnProcessTab();
-		cop.clickOnProcessingTab();
-		Thread.sleep(3000);
-		
 		cop.clickOnFDiv();
 		Thread.sleep(3000);
 		logger.info("clicked on first div");
 		
-		cop.scrollTillDspHistory(driver);
+		cop.scrollTillOpenDisputesBtn(driver);
 		Thread.sleep(2000);
 		
-		wait.until(ExpectedConditions.visibilityOf(cop.openDspbtn));
 		cop.clickOnOpenDspbtn();
 		Thread.sleep(3000);
 		logger.info("click on open dispute button.");
@@ -185,6 +172,9 @@ public class TC24_VerifyRefundDspDeclined extends BaseClass{
 		asop.clickOnFrstDsp();
 		Thread.sleep(3000);
 		
+		asop.scrollTillShowDispute(driver);
+		Thread.sleep(2000);
+		
 		asop.clickOnShowDsp();
 		logger.info("Clicked on show disputes.");
 		Thread.sleep(3000);
@@ -232,6 +222,7 @@ public class TC24_VerifyRefundDspDeclined extends BaseClass{
 		Thread.sleep(3000);
 		
 		cop.clickOnOrdersTab();
+		Thread.sleep(1000);
 		
 		cop.sendPnameinSearch(productRefundDD);
 		logger.info("Product name is entered.");
@@ -246,6 +237,9 @@ public class TC24_VerifyRefundDspDeclined extends BaseClass{
 		cop.clickOnDispHistory();
 		Thread.sleep(6000);
 		logger.info("Verification of open Dispute History successfull.");
+		
+		cop.clickOnFirstDisputeTab();
+		Thread.sleep(5000);
 		
 		if(cop.getDspHistoryStatusD().equals("Declined")) {
 			Assert.assertTrue(true);

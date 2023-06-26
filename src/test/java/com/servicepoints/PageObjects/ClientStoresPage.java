@@ -14,7 +14,7 @@ public class ClientStoresPage {
 	}
 	
 	
-	@FindBy(xpath="//div[normalize-space()='Stores']")
+	@FindBy(xpath="(//div[normalize-space()='Stores'])[1]")
 	WebElement storesPage;
 	
 	@FindBy(xpath="//div[@class='float-right']//a[@class='btn btn-primary btn-sm']")

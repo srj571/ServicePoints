@@ -61,7 +61,7 @@ public class TC12_VerifySubmitQuoteTest extends BaseClass {
 		aspp.clickOnSubmitQuote();
 		Thread.sleep(7000);
 		
-		if (aspp.getStatus().equals("Quotation submitted successfully.")) {
+		if (aspp.getStatus().equals("Quotation done")) {
 			Thread.sleep(2000);
 			Assert.assertTrue(true);
 			logger.info("Verification of Submit quotation Successed..");

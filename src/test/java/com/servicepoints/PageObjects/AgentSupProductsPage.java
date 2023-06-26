@@ -384,7 +384,7 @@ public class AgentSupProductsPage {
 	}
 	
 	public boolean verifyTextOnAlert() {
-		boolean val=alertUpdateQuote.getText().equals("Quotation accepted successfully.");
+		boolean val=alertUpdateQuote.getText().equals("Quotation updated successfully.");
 		return val;
 	}
 	
@@ -453,5 +453,13 @@ public class AgentSupProductsPage {
 	        
 	        singleField.sendKeys(value);
 	    }
+	}
+	
+	@FindBy(xpath="//div[@id='error_modal']//div[@class='modal-content']")
+	WebElement updationPopup;
+	
+	public void waitTillUpdationQuotePopUp(WebDriver driver) {
+		WebDriverWait wait=new WebDriverWait(driver,40);
+		wait.until(ExpectedConditions.visibilityOf(updationPopup));
 	}
 }

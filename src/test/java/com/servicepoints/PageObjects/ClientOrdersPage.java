@@ -900,4 +900,11 @@ public class ClientOrdersPage {
 	public void clickOnApprovedDispute() {
 		approvedDispute.click();
 	}
+	
+	@FindBy(xpath="(//div[@class='content-page'])[1]")
+	WebElement answersInSpecialRequest;
+	
+	public void clickOnAnswersBtnInSR() {
+		answersInSpecialRequest.click();
+	}
 }
