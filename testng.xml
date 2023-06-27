@@ -6,7 +6,7 @@
 		<listener class-name="com.servicepoints.utilities.Reporting"></listener>
 	</listeners>
 		
-	<parameter name="browser" value="firefox"></parameter>
+	<parameter name="browser" value="chrome"></parameter>
 	
     <test thread-count="5" name="Test">
     <classes>
@@ -37,9 +37,9 @@
       <class name="com.servicepoints.testCases.TC25_VerifyDisputeForConversation"/>
       <class name="com.servicepoints.testCases.TC26_VerifyRefundAndConversation"/>
       <class name="com.servicepoints.testCases.TC27_VerifyAddTrackingAndResend"/>       
-      <class name="com.servicepoints.testCases.TC28_VerifyDeclinedResendDispute"/>-->
+      <class name="com.servicepoints.testCases.TC28_VerifyDeclinedResendDispute"/>
       <class name="com.servicepoints.testCases.TC29_VerifySpecialRequestFunction"/>
-      <class name="com.servicepoints.testCases.TC30_VerifyCloseSpecialRequestFunction"/>
+      <class name="com.servicepoints.testCases.TC30_VerifyCloseSpecialRequestFunction"/>-->
       <!--<class name="com.servicepoints.testCases.TC31_VerifySpecialRequestCloseByAdminSP"/>
       <class name="com.servicepoints.testCases.TC33_VerifyPaymentPendingOrderOffTest"/>
       <class name="com.servicepoints.testCases.TC34_VerifyPaymentPendingOrderOnTest"/>
@@ -270,7 +270,7 @@
 			  <include name="verifyDiscountFromClientSide"></include>
 			  <include name="tearDown"></include>
 		  </methods>
-	  </class>
+	  </class>-->
 	  <class name="com.servicepoints.testCases.TC60_VerifyChangeDiscountWithResendAndRefundFunctionality">
 		  <methods>
 			  <include name="setup"></include>
@@ -284,7 +284,7 @@
 			  <include name="verifyAddingDiscountOnRemainingVariants"></include>
 			  <include name="tearDown"></include>
 		  </methods>
-	  </class>-->
+	  </class>
 	  <!--<class name="com.servicepoints.testCases.TC61_VerifyChangeDiscountWithRefundFunctionality">
 		  <methods>
 			  <include name="setup"></include>

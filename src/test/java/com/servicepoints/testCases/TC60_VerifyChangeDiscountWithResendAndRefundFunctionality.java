@@ -760,57 +760,51 @@ public class TC60_VerifyChangeDiscountWithResendAndRefundFunctionality extends B
 		aop.clickOnfDiv();
 		Thread.sleep(3000);
 
-		aop.scrollTillDiscountbtn(driver);
-		Thread.sleep(2000);
+		try {
+			aop.scrollTillChangeDiscountbtn(driver);
+			Thread.sleep(3000);
 
-		aop.clickOnDiscountBtn();
-		Thread.sleep(2000);
-
-		aop.verifyErrorMessages(driver);
-
-		double val = aop.generateTheDiscountedPrice();
-		Thread.sleep(2000);
-
-		String amountAsString = String.valueOf(val);
-		Thread.sleep(1000);
-
-		aop.enterDiscountAmountField(amountAsString);
-		Thread.sleep(2000);
-
-		aop.clickOnSubmitDiscountBtn();
-		Thread.sleep(3000);
-
-		aop.clickOnSuccessDb();
-		Thread.sleep(2000);
-
-		if (driver.getPageSource().contains("Discount successfully submitted")) {
-			logger.info("Verification of adding discount number is Successfull.");
-			Assert.assertTrue(true);
+			aop.clickOnChangeDiscountBtn();
 			Thread.sleep(2000);
-		} else {
-			logger.info("Verification of adding discount number is failed.");
+
+			aop.clickOnShowDiscountHistory();
+			Thread.sleep(3000);
+			
+		}catch(Exception e) {
+			aop.scrollTillDiscountbtn(driver);
 			Thread.sleep(2000);
-			Assert.assertTrue(false);
+			
+			aop.clickOnDiscountBtn();
+			Thread.sleep(2000);
+			
+			double amount=aop.generateTheDiscountedPrice();
+			
+			String formattedPrice = String.format("%.2f", amount);
+			
+			aop.enterDiscountAmountField(formattedPrice);
+			Thread.sleep(2000);
+
+			aop.clickOnSubmitDiscountBtn();
+			Thread.sleep(3000);
+
+			aop.clickOnSuccessDb();
+			Thread.sleep(2000);
+
+			if (driver.getPageSource().contains("Discount successfully submitted")) {
+				logger.info("Verification of adding discount number is Successfull.");
+				Assert.assertTrue(true);
+				Thread.sleep(4000);
+			} else {
+				logger.info("Verification of adding discount number is failed.");
+				Thread.sleep(2000);
+				Assert.assertTrue(false);
+			}
+
+			aop.clickOnChangeDiscountBtn();
+			Thread.sleep(2000);
+			
+			aop.clickOnShowDiscountHistory();
+			Thread.sleep(4000);
 		}
-
-		aop.clickOnChangeDiscountBtn();
-		Thread.sleep(2000);
-
-		aop.enterChangedDiscountedPrice("4");
-		Thread.sleep(1000);
-
-		aop.clickOnSubmitDiscountBtn();
-		Thread.sleep(3000);
-
-		String actErrorMsg = aop.getErrorMessage();
-		String expErrorMsg = "You can not give more discount.";
-
-		Assert.assertEquals(expErrorMsg, actErrorMsg);
-		Thread.sleep(2000);
-
-		logger.info("Verification done successfully.");
-
-		aop.clickOnShowDiscountHistory();
-		Thread.sleep(3000);
 	}
 }

@@ -1,124 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-26T16:32:33 IST" name="Suite" finished-at="2023-06-26T16:34:18 IST" duration-ms="104749">
+  <suite started-at="2023-06-27T09:25:24 IST" name="Suite" finished-at="2023-06-27T09:35:08 IST" duration-ms="583781">
     <groups>
     </groups>
-    <test started-at="2023-06-26T16:32:33 IST" name="Test" finished-at="2023-06-26T16:34:18 IST" duration-ms="104749">
-      <class name="com.servicepoints.testCases.TC30_VerifyCloseSpecialRequestFunction">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.servicepoints.testCases.TC30_VerifyCloseSpecialRequestFunction@42b64ab8]" started-at="2023-06-26T16:33:08 IST" name="setup" finished-at="2023-06-26T16:33:14 IST" duration-ms="6020" status="PASS">
+    <test started-at="2023-06-27T09:25:24 IST" name="Test" finished-at="2023-06-27T09:35:08 IST" duration-ms="583781">
+      <class name="com.servicepoints.testCases.TC60_VerifyChangeDiscountWithResendAndRefundFunctionality">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.servicepoints.testCases.TC60_VerifyChangeDiscountWithResendAndRefundFunctionality@d5ae57e]" started-at="2023-06-27T09:25:24 IST" name="setup" finished-at="2023-06-27T09:25:28 IST" duration-ms="4230" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[firefox]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyCloseSpecialRequest()[pri:0, instance:com.servicepoints.testCases.TC30_VerifyCloseSpecialRequestFunction@42b64ab8]" started-at="2023-06-26T16:33:14 IST" name="verifyCloseSpecialRequest" finished-at="2023-06-26T16:34:17 IST" duration-ms="62464" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Unable to locate element: //div[@class='js_table_expand_two table_expand_abso']
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'sarasvati-Precision-Tower-3420', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-75-generic', java.version: '17.0.5'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 114.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230619081400, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 5.15.0-75-generic, moz:processID: 47508, moz:profile: /tmp/rust_mozprofileB4TzD9, moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: caa8251d-d73f-4e40-b658-83badd918267
-*** Element info: {Using=xpath, value=//div[@class='js_table_expand_two table_expand_abso']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //div[@class='js_table_expand_two table_expand_abso']
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'sarasvati-Precision-Tower-3420', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-75-generic', java.version: '17.0.5'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 114.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230619081400, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 5.15.0-75-generic, moz:processID: 47508, moz:profile: /tmp/rust_mozprofileB4TzD9, moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: caa8251d-d73f-4e40-b658-83badd918267
-*** Element info: {Using=xpath, value=//div[@class='js_table_expand_two table_expand_abso']}
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy28.click(Unknown Source)
-at com.servicepoints.PageObjects.ClientOrdersPage.clickOnFDiv(ClientOrdersPage.java:85)
-at com.servicepoints.testCases.TC30_VerifyCloseSpecialRequestFunction.verifyCloseSpecialRequest(TC30_VerifyCloseSpecialRequestFunction.java:91)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method signature="submitAndAcceptQuotation()[pri:1, instance:com.servicepoints.testCases.TC60_VerifyChangeDiscountWithResendAndRefundFunctionality@d5ae57e]" started-at="2023-06-27T09:25:28 IST" name="submitAndAcceptQuotation" finished-at="2023-06-27T09:26:28 IST" duration-ms="59826" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyCloseSpecialRequest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.servicepoints.testCases.TC30_VerifyCloseSpecialRequestFunction@42b64ab8]" started-at="2023-06-26T16:34:17 IST" name="tearDown" finished-at="2023-06-26T16:34:18 IST" duration-ms="918" status="PASS">
+        </test-method> <!-- submitAndAcceptQuotation -->
+        <test-method signature="verifyAddTrackingOnProduct()[pri:2, instance:com.servicepoints.testCases.TC60_VerifyChangeDiscountWithResendAndRefundFunctionality@d5ae57e]" started-at="2023-06-27T09:26:28 IST" name="verifyAddTrackingOnProduct" finished-at="2023-06-27T09:27:24 IST" duration-ms="56525" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddTrackingOnProduct -->
+        <test-method signature="raiseResendDispute()[pri:3, instance:com.servicepoints.testCases.TC60_VerifyChangeDiscountWithResendAndRefundFunctionality@d5ae57e]" started-at="2023-06-27T09:27:24 IST" name="raiseResendDispute" finished-at="2023-06-27T09:28:29 IST" duration-ms="64155" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- raiseResendDispute -->
+        <test-method signature="verifyAddTrackingOnProductAgain()[pri:4, instance:com.servicepoints.testCases.TC60_VerifyChangeDiscountWithResendAndRefundFunctionality@d5ae57e]" started-at="2023-06-27T09:28:29 IST" name="verifyAddTrackingOnProductAgain" finished-at="2023-06-27T09:29:21 IST" duration-ms="52390" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddTrackingOnProductAgain -->
+        <test-method signature="verifyAddingDiscount()[pri:5, instance:com.servicepoints.testCases.TC60_VerifyChangeDiscountWithResendAndRefundFunctionality@d5ae57e]" started-at="2023-06-27T09:29:21 IST" name="verifyAddingDiscount" finished-at="2023-06-27T09:30:36 IST" duration-ms="75439" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddingDiscount -->
+        <test-method signature="raiseRefundDispute()[pri:6, instance:com.servicepoints.testCases.TC60_VerifyChangeDiscountWithResendAndRefundFunctionality@d5ae57e]" started-at="2023-06-27T09:30:36 IST" name="raiseRefundDispute" finished-at="2023-06-27T09:31:39 IST" duration-ms="62642" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- raiseRefundDispute -->
+        <test-method signature="raiseRefundDispute()[pri:6, instance:com.servicepoints.testCases.TC60_VerifyChangeDiscountWithResendAndRefundFunctionality@d5ae57e]" started-at="2023-06-27T09:31:39 IST" name="raiseRefundDispute" finished-at="2023-06-27T09:32:43 IST" duration-ms="63922" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- raiseRefundDispute -->
+        <test-method signature="raiseRefundDispute()[pri:6, instance:com.servicepoints.testCases.TC60_VerifyChangeDiscountWithResendAndRefundFunctionality@d5ae57e]" started-at="2023-06-27T09:32:43 IST" name="raiseRefundDispute" finished-at="2023-06-27T09:33:47 IST" duration-ms="63589" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- raiseRefundDispute -->
+        <test-method signature="verifyDiscountFromClientSide()[pri:7, instance:com.servicepoints.testCases.TC60_VerifyChangeDiscountWithResendAndRefundFunctionality@d5ae57e]" started-at="2023-06-27T09:33:47 IST" name="verifyDiscountFromClientSide" finished-at="2023-06-27T09:34:42 IST" duration-ms="54903" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDiscountFromClientSide -->
+        <test-method signature="verifyAddingDiscountOnRemainingVariants()[pri:8, instance:com.servicepoints.testCases.TC60_VerifyChangeDiscountWithResendAndRefundFunctionality@d5ae57e]" started-at="2023-06-27T09:34:42 IST" name="verifyAddingDiscountOnRemainingVariants" finished-at="2023-06-27T09:35:07 IST" duration-ms="25907" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddingDiscountOnRemainingVariants -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.servicepoints.testCases.TC60_VerifyChangeDiscountWithResendAndRefundFunctionality@d5ae57e]" started-at="2023-06-27T09:35:07 IST" name="tearDown" finished-at="2023-06-27T09:35:08 IST" duration-ms="105" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.servicepoints.testCases.TC30_VerifyCloseSpecialRequestFunction -->
-      <class name="com.servicepoints.testCases.TC29_VerifySpecialRequestFunction">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.servicepoints.testCases.TC29_VerifySpecialRequestFunction@61526469]" started-at="2023-06-26T16:32:33 IST" name="setup" finished-at="2023-06-26T16:32:39 IST" duration-ms="6344" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verifySpecialRequestTest()[pri:0, instance:com.servicepoints.testCases.TC29_VerifySpecialRequestFunction@61526469]" started-at="2023-06-26T16:32:39 IST" name="verifySpecialRequestTest" finished-at="2023-06-26T16:33:07 IST" duration-ms="27898" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySpecialRequestTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.servicepoints.testCases.TC29_VerifySpecialRequestFunction@61526469]" started-at="2023-06-26T16:33:07 IST" name="tearDown" finished-at="2023-06-26T16:33:08 IST" duration-ms="947" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.servicepoints.testCases.TC29_VerifySpecialRequestFunction -->
+      </class> <!-- com.servicepoints.testCases.TC60_VerifyChangeDiscountWithResendAndRefundFunctionality -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
