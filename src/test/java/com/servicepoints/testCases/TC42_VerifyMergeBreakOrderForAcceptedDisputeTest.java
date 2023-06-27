@@ -496,6 +496,9 @@ public class TC42_VerifyMergeBreakOrderForAcceptedDisputeTest extends BaseClass 
 //		logger.info("Clicked on show disputes.");
 //		Thread.sleep(3000);
 
+		asop.clickOnApprovedDispute();
+		Thread.sleep(1000);
+		
 		asop.clickOnEachDisputeAgentSide(driver);
 		logger.info("Verification of show dispute from Agent side.");
 	}
@@ -512,27 +515,19 @@ public class TC42_VerifyMergeBreakOrderForAcceptedDisputeTest extends BaseClass 
 
 		ClientOrdersPage cop = new ClientOrdersPage(driver);
 		cop.clickOnOrdersTab();
+		Thread.sleep(2000);
+
+		cop.clickOnGoToDisputesTab();
+		Thread.sleep(2000);
+		
 		cop.sendPnameinSearch(proMBOForADsp);
 		logger.info("Product name is entered.");
 		Thread.sleep(2000);
-
-		cop.clickOnStatusDrop();
-		Thread.sleep(1000);
-		cop.dropdownSearch(process);
-		cop.clickOnProcessingTab();
+		
+		
+		cop.clickOnApprovedDispute();
 		Thread.sleep(2000);
-
-//		cop.clickOnFDiv();		
-//		logger.info("Clicked on first div.");
-//		Thread.sleep(4000);
-//		
-//		cop.scrollTillEle(driver);
-//		Thread.sleep(3000);
-//		
-//		cop.clickOnShowDispute();
-//		logger.info("Clicked on show disputes.");
-//		Thread.sleep(3000);
-
+		
 		cop.clickOnEachDivForDisputeVerification(driver);
 		Thread.sleep(2000);
 
