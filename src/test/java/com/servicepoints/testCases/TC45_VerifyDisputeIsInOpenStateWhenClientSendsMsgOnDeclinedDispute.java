@@ -41,7 +41,7 @@ public class TC45_VerifyDisputeIsInOpenStateWhenClientSendsMsgOnDeclinedDispute 
 	public String query5 = rd.getQuery5();
 	public String query6 = rd.getQuery6();
 
-	@Test(enabled = false, priority = 1)
+	@Test(enabled = true, priority = 1)
 	public void submitAndAcceptQuotation() throws InterruptedException, IOException {
 		logger.info("Application Opened.");
 		LoginPage lp = new LoginPage(driver);

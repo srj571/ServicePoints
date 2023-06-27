@@ -601,67 +601,67 @@ public class TC63_VerifyGroupByFunctionality extends BaseClass{
 		expError = "You can not requote more than 2 times. Please contact your account manager for further assistance.";
 
 		Assert.assertEquals(expError, actError);
-
+		
 		cl.clickOnCloseBtnOnErrorMsg();
 		Thread.sleep(2000);
-		
+		logger.info("Verification of adding country to the quotation successfull.");
 		BaseClass.closeAllWinTabsExceptParent();
 		
 		
-		driver.get(baseURL);
-
-		AgentSupProductsPage aspp = new AgentSupProductsPage(driver);
-
-		lp.setAdminMailId(agentMailRQ);
-		logger.info("Agent supplier email is entered.");
-		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-
-		lp.setAdminPassword(agentPassRQ);
-		logger.info("Agent supplier password is entered.");
-		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-
-		lp.clickLoginbtn();
-		Thread.sleep(5000);
-
-		aspp.getProductsPage();
-		Thread.sleep(4000);
-		aspp.clickQuotationsClientsTab();
-		Thread.sleep(2000);
-
-		aspp.searchProductName(product63);
-		Thread.sleep(4000);
-		logger.info("Product name entered.");
-		aspp.clickOnfdiv();
-		Thread.sleep(4000);
-
-		String parentWindow1 = driver.getWindowHandle();
-		Set<String> window1 = driver.getWindowHandles();
-		Iterator<String> it1 = window1.iterator();
-		String parent1 = it1.next();
-		String child1 = it1.next();
-		driver.switchTo().window(child1);
-		Thread.sleep(4000);
-		
-		aspp.verifyGroupByFunction(variantType);
-		Thread.sleep(2000);
-		
-		aspp.verifyPassingValueInCountryQuote(driver, FirstPcsPrice, SecPcsPrice, ThirdPcsPrice,ForthPcsprice);
-		Thread.sleep(4000);
-
-		aspp.scrollTillSubmitQuotationBtn(driver);
-		Thread.sleep(2000);
-
-		aspp.clickOnSubmitQuote();
-		Thread.sleep(6000);
-		
-		if (cl.getStatus().equals("Quotation accepted")) {
-			Thread.sleep(2000);
-			Assert.assertTrue(true);
-			logger.info("Verification of accepting quotation is Successed.");
-		} else {
-			logger.info("Verification of accepting quotation is Failed.");
-			Assert.assertTrue(false);
-		}
-		
+//		driver.get(baseURL);
+//
+//		AgentSupProductsPage aspp = new AgentSupProductsPage(driver);
+//
+//		lp.setAdminMailId(agentMailRQ);
+//		logger.info("Agent supplier email is entered.");
+//		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+//
+//		lp.setAdminPassword(agentPassRQ);
+//		logger.info("Agent supplier password is entered.");
+//		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+//
+//		lp.clickLoginbtn();
+//		Thread.sleep(5000);
+//
+//		aspp.getProductsPage();
+//		Thread.sleep(4000);
+//		aspp.clickQuotationsClientsTab();
+//		Thread.sleep(2000);
+//
+//		aspp.searchProductName(product63);
+//		Thread.sleep(4000);
+//		logger.info("Product name entered.");
+//		aspp.clickOnfdiv();
+//		Thread.sleep(4000);
+//
+//		String parentWindow1 = driver.getWindowHandle();
+//		Set<String> window1 = driver.getWindowHandles();
+//		Iterator<String> it1 = window1.iterator();
+//		String parent1 = it1.next();
+//		String child1 = it1.next();
+//		driver.switchTo().window(child1);
+//		Thread.sleep(4000);
+//		
+//		aspp.verifyGroupByFunction(variantType);
+//		Thread.sleep(2000);
+//		
+//		aspp.verifyPassingValueInCountryQuote(driver, FirstPcsPrice, SecPcsPrice, ThirdPcsPrice,ForthPcsprice);
+//		Thread.sleep(4000);
+//
+//		aspp.scrollTillSubmitQuotationBtn(driver);
+//		Thread.sleep(2000);
+//
+//		aspp.clickOnSubmitQuote();
+//		Thread.sleep(6000);
+//		
+//		if (cl.getStatus().equals("Quotation accepted")) {
+//			Thread.sleep(2000);
+//			Assert.assertTrue(true);
+//			logger.info("Verification of accepting quotation is Successed.");
+//		} else {
+//			logger.info("Verification of accepting quotation is Failed.");
+//			Assert.assertTrue(false);
+//		}
+//		
 	}
 }

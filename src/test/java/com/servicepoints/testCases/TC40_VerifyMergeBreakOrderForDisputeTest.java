@@ -332,13 +332,12 @@ public class TC40_VerifyMergeBreakOrderForDisputeTest extends BaseClass{
 		Thread.sleep(3000);
 				
 		String parentWindow=driver.getWindowHandle();
-		Set<String> windowHandles = driver.getWindowHandles();
-		for(String handle: windowHandles) {
-			if(!handle.equals(parentWindow)) {
-				driver.switchTo().window(handle);
-				break;
-			}
-		}
+		Set<String> window = driver.getWindowHandles();
+		Iterator<String> it = window.iterator();
+		String parent = it.next();
+		String child = it.next();
+		driver.switchTo().window(child);
+		Thread.sleep(4000);
 		
 		cl.clickOnSpecialRequestDrop();
 		Thread.sleep(2000);
@@ -384,8 +383,8 @@ public class TC40_VerifyMergeBreakOrderForDisputeTest extends BaseClass{
 		aspp.clickOnfdiv();
 		Thread.sleep(4000);
 
-		windowHandles = driver.getWindowHandles();
-		for(String handle : windowHandles) {
+		window = driver.getWindowHandles();
+		for(String handle : window) {
 			if(!handle.equals(parentWindow) && !handle.equals(driver.getWindowHandle())) {
 				driver.switchTo().window(handle);
 				break;
@@ -451,15 +450,14 @@ public class TC40_VerifyMergeBreakOrderForDisputeTest extends BaseClass{
 		cl.selectProductTab();
 		Thread.sleep(3000);
 		
-		
 		String parentWindow=driver.getWindowHandle();
-		Set<String> windowHandles = driver.getWindowHandles();
-		for(String handle: windowHandles) {
-			if(!handle.equals(parentWindow)) {
-				driver.switchTo().window(handle);
-				break;
-			}
-		}
+		Set<String> window = driver.getWindowHandles();
+		Iterator<String> it = window.iterator();
+		String parent = it.next();
+		String child = it.next();
+		driver.switchTo().window(child);
+		Thread.sleep(4000);
+		
 		driver.navigate().refresh();
 		Thread.sleep(2000);
 		cl.selectQuoteTab();

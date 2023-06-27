@@ -7,20 +7,15 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.servicepoints.testCases.TC60_VerifyChangeDiscountWithResendAndRefundFunctionality">
+      <class name="com.servicepoints.testCases.TC42_VerifyMergeBreakOrderForAcceptedDisputeTest">
         <methods>
-          <include name="verifyAddTrackingOnProductAgain"/>
-          <include name="verifyDiscountFromClientSide"/>
-          <include name="verifyAddingDiscount"/>
-          <include name="raiseResendDispute"/>
-          <include name="verifyAddTrackingOnProduct"/>
+          <include name="verifyDisputeIsStillOpenFromAgentSide"/>
+          <include name="verifyDisputeIsStillOpenFromClientSide"/>
           <include name="setup"/>
-          <include name="verifyAddingDiscountOnRemainingVariants"/>
-          <include name="submitAndAcceptQuotation"/>
+          <include name="verifyAcceptDispute"/>
           <include name="tearDown"/>
-          <include name="raiseRefundDispute"/>
         </methods>
-      </class> <!-- com.servicepoints.testCases.TC60_VerifyChangeDiscountWithResendAndRefundFunctionality -->
+      </class> <!-- com.servicepoints.testCases.TC42_VerifyMergeBreakOrderForAcceptedDisputeTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
