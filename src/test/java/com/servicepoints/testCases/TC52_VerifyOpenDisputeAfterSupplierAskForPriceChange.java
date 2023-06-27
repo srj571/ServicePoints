@@ -54,7 +54,7 @@ public class TC52_VerifyOpenDisputeAfterSupplierAskForPriceChange extends BaseCl
 	public String val8 = rd.getVal8();
 	public String val9 = rd.getVal9();
 
-	@Test(enabled = false, priority = 1)
+	@Test(enabled = true, priority = 1)
 	public void submitAndAcceptQuotation() throws InterruptedException, IOException {
 		logger.info("Application Opened.");
 		LoginPage lp = new LoginPage(driver);
@@ -167,7 +167,7 @@ public class TC52_VerifyOpenDisputeAfterSupplierAskForPriceChange extends BaseCl
 		BaseClass.closeAllWinTabsExceptParent();
 	}
 
-	@Test(enabled = false, priority = 2)
+	@Test(enabled = true, priority = 2)
 	public void verifyOpenDispute() throws InterruptedException, IOException {
 		driver.get(baseURL);
 
@@ -229,7 +229,7 @@ public class TC52_VerifyOpenDisputeAfterSupplierAskForPriceChange extends BaseCl
 		}
 	}
 
-	@Test(enabled = false, priority = 3)
+	@Test(enabled = true, priority = 3)
 	public void verifyAskForPriceChange() throws InterruptedException, IOException {
 		driver.get(baseURL);
 		AgentSupProductsPage asop = new AgentSupProductsPage(driver);
@@ -378,7 +378,7 @@ public class TC52_VerifyOpenDisputeAfterSupplierAskForPriceChange extends BaseCl
 		BaseClass.closeAllWinTabsExceptParent();
 	}
 
-	@Test(enabled = false, priority = 4)
+	@Test(enabled = true, priority = 4)
 	public void verifyByClient() throws InterruptedException {
 		driver.get(baseURL);
 		logger.info("Logged out from Agent account.");

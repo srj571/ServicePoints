@@ -48,7 +48,7 @@
       <!--<class name="com.servicepoints.testCases.TC00_verifySubmitAndAcceptQuote"/>
       <class name="com.servicepoints.testCases.TC37_VerifyStopFulfillmentAndStartFulfillmentTest"/>
       <class name="com.servicepoints.testCases.TC38_VerifyRequoteQuotationTest"/>
-      <class name="com.servicepoints.testCases.TC39_VerifyAcceptingRequoteQuotationTest"/>-->
+      <class name="com.servicepoints.testCases.TC39_VerifyAcceptingRequoteQuotationTest"/>
       <class name="com.servicepoints.testCases.TC40_VerifyMergeBreakOrderForDisputeTest">
 		  <methods>
 			  <include name="setup"></include>
@@ -85,7 +85,7 @@
 			  <include name="tearDown"></include>
 		  </methods>
       </class>
-     <!-- <class name="com.servicepoints.testCases.TC43_VerifyAfterCloseDisputeNoConversationBetweenClientAndSupplier">
+      <class name="com.servicepoints.testCases.TC43_VerifyAfterCloseDisputeNoConversationBetweenClientAndSupplier">
 		  <methods>
 			  <include name="setup"></include>
 			  <include name="submitAndAcceptQuotation"></include> 
@@ -110,7 +110,7 @@
 			  <include name="verifyOpenDispute"></include>
 			  <include name="tearDown"></include>
 		  </methods>
-      </class>
+      </class>-->
      <class name="com.servicepoints.testCases.TC46_VerifyDisputeIsInOpenStateForTheOderHasTrackingNum">
 		  <methods>
 			  <include name="setup"></include>
@@ -119,7 +119,7 @@
 			  <include name="tearDown"></include>
 		  </methods>
 	  </class>
-	  <class name="com.servicepoints.testCases.TC47_VerifyDisputeCantBeInReopenStateForTheOderStatusResend">
+	  <!--<class name="com.servicepoints.testCases.TC47_VerifyDisputeCantBeInReopenStateForTheOderStatusResend">
 		  <methods>
 			  <include name="setup"></include>
 			  <include name="submitAndAcceptQuotation"></include>

@@ -184,7 +184,7 @@ public class AgentDisputesPage {
 	@FindBy(xpath = "//div[@id='client_orders_body']/div/div[1]")
 	List<WebElement> eachDspDivFromAgentSide;
 
-	@FindBy(xpath = "//a[@class='btn btn-border btn-block mt-3 supportDispute linkactive']")
+	@FindBy(xpath = "//a[@class='btn btn-border btn-block mt-2 showDisputes linkactive']")
 	List<WebElement> allShowBtn;
 
 	@FindBy(xpath = "//h5[@id='orderDisputeId']//button[@aria-label='Close']")

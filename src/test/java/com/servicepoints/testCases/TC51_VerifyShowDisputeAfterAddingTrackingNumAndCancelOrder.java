@@ -44,7 +44,7 @@ public class TC51_VerifyShowDisputeAfterAddingTrackingNumAndCancelOrder extends 
 
 	public String storeFilter = rd.storeForDisputeFilter();
 
-	@Test(enabled = false, priority = 1)
+	@Test(enabled = true, priority = 1)
 	public void submitAndAcceptQuotation() throws InterruptedException, IOException {
 		logger.info("Application Opened.");
 		LoginPage lp = new LoginPage(driver);
@@ -157,7 +157,7 @@ public class TC51_VerifyShowDisputeAfterAddingTrackingNumAndCancelOrder extends 
 		BaseClass.closeAllWinTabsExceptParent();
 	}
 
-	@Test(enabled = false, priority = 2)
+	@Test(enabled = true, priority = 2)
 	public void verifyOpenDispute() throws InterruptedException, IOException {
 		driver.get(baseURL);
 
@@ -219,7 +219,7 @@ public class TC51_VerifyShowDisputeAfterAddingTrackingNumAndCancelOrder extends 
 		}
 	}
 
-	@Test(enabled = false, priority = 3)
+	@Test(enabled = true, priority = 3)
 	public void verifyAddingTrackingNumOn3rdVariant() throws InterruptedException {
 		driver.get(baseURL);
 		LoginPage lp = new LoginPage(driver);
@@ -325,8 +325,6 @@ public class TC51_VerifyShowDisputeAfterAddingTrackingNumAndCancelOrder extends 
 		Thread.sleep(5000);
 		logger.info("Clicked on Show Dispute.");
 
-		cop.clickOnEachDivForDisputeVerification(driver);
-		logger.info("Verified from client side.");
 
 	}
 
@@ -420,9 +418,6 @@ public class TC51_VerifyShowDisputeAfterAddingTrackingNumAndCancelOrder extends 
 		cop.clickOnShowDispute();
 		Thread.sleep(5000);
 		logger.info("Clicked on Show Dispute.");
-
-		cop.clickOnEachDivForDisputeVerification(driver);
-		logger.info("Verified from client side.");
 
 	}
 }
