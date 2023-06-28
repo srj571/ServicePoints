@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Jun 28 11:21:50 IST 2023</td>
+<td>Started on:</td><td>Wed Jun 28 12:50:08 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>48 seconds (48724 ms)</td>
+<tr><td>Total time:</td><td>121 seconds (121056 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,14 +76,14 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.servicepoints.testCases.TC26_VerifyRefundAndConversation.verifyRefundAndConversation()'><b>verifyRefundAndConversation</b><br>Test class: com.servicepoints.testCases.TC26_VerifyRefundAndConversation</td>
-<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+<td title='com.servicepoints.testCases.TC31_VerifySpecialRequestCloseByAdminSP.verifySpecialRequestCloseByAdminSp()'><b>verifySpecialRequestCloseByAdminSp</b><br>Test class: com.servicepoints.testCases.TC31_VerifySpecialRequestCloseByAdminSP</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (1699, -360)
   (Session info: chrome=114.0.5735.106)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;sarasvati-Precision-Tower-3420&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-75-generic&apos;, java.version: &apos;17.0.5&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.106, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /tmp/.com.google.Chrome.oHLhvD}, goog:chromeOptions: {debuggerAddress: localhost:33373}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: ee66ac4fff4d5b550238a1015e83be92
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.106, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /tmp/.com.google.Chrome.E6Myty}, goog:chromeOptions: {debuggerAddress: localhost:38031}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4bebcd6651f718d5df8539da3f9125bb
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -91,20 +91,20 @@ Session ID: ee66ac4fff4d5b550238a1015e83be92
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy28.sendKeys(Unknown Source)
-	at com.servicepoints.PageObjects.AgentOrdersPage.setTrackingNum(AgentOrdersPage.java:81)
-	at com.servicepoints.testCases.TC26_VerifyRefundAndConversation.verifyRefundAndConversation(TC26_VerifyRefundAndConversation.java:88)
+	at jdk.proxy2/jdk.proxy2.$Proxy28.click(Unknown Source)
+	at com.servicepoints.PageObjects.ClientOrdersPage.clickOnShowRequestTab(ClientOrdersPage.java:626)
+	at com.servicepoints.testCases.TC31_VerifySpecialRequestCloseByAdminSP.verifySpecialRequestCloseByAdminSp(TC31_VerifySpecialRequestCloseByAdminSP.java:180)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace796969849", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace796969849'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1802415698", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1802415698'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (1699, -360)
   (Session info: chrome=114.0.5735.106)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;sarasvati-Precision-Tower-3420&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-75-generic&apos;, java.version: &apos;17.0.5&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.106, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /tmp/.com.google.Chrome.oHLhvD}, goog:chromeOptions: {debuggerAddress: localhost:33373}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: ee66ac4fff4d5b550238a1015e83be92
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.106, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /tmp/.com.google.Chrome.E6Myty}, goog:chromeOptions: {debuggerAddress: localhost:38031}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4bebcd6651f718d5df8539da3f9125bb
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -117,15 +117,14 @@ Session ID: ee66ac4fff4d5b550238a1015e83be92
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy28.sendKeys(Unknown Source)
-	at com.servicepoints.PageObjects.AgentOrdersPage.setTrackingNum(AgentOrdersPage.java:81)
-	at com.servicepoints.testCases.TC26_VerifyRefundAndConversation.verifyRefundAndConversation(TC26_VerifyRefundAndConversation.java:88)
+	at jdk.proxy2/jdk.proxy2.$Proxy28.click(Unknown Source)
+	at com.servicepoints.PageObjects.ClientOrdersPage.clickOnShowRequestTab(ClientOrdersPage.java:626)
+	at com.servicepoints.testCases.TC31_VerifySpecialRequestCloseByAdminSP.verifySpecialRequestCloseByAdminSp(TC31_VerifySpecialRequestCloseByAdminSP.java:180)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -155,8 +154,8 @@ Session ID: ee66ac4fff4d5b550238a1015e83be92
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>39</td>
-<td>com.servicepoints.testCases.TC26_VerifyRefundAndConversation@4648ce9</td></tr>
+<td>115</td>
+<td>com.servicepoints.testCases.TC31_VerifySpecialRequestCloseByAdminSP@569bf9eb</td></tr>
 </table><p>
 </body>
 </html>

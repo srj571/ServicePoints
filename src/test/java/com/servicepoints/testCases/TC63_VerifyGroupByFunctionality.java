@@ -335,7 +335,7 @@ public class TC63_VerifyGroupByFunctionality extends BaseClass{
 
 	}
 	
-	@Test(enabled = false, priority = 2)
+	@Test(enabled = true, priority = 2)
 	public void verifyRequoteQuotation() throws InterruptedException, IOException, AWTException {
 		ClientProductPage cl = new ClientProductPage(driver);
 		AgentSupProductsPage aspp = new AgentSupProductsPage(driver);
@@ -460,7 +460,7 @@ public class TC63_VerifyGroupByFunctionality extends BaseClass{
 		BaseClass.closeAllWinTabsExceptParent();
 	}
 	
-	@Test(enabled = false, priority = 3)
+	@Test(enabled = true, priority = 3)
 	public void verifyAcceptingRequoteQuote() throws InterruptedException, IOException {
 		ClientProductPage cl = new ClientProductPage(driver);
 		AgentSupProductsPage aspp = new AgentSupProductsPage(driver);

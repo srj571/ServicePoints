@@ -134,6 +134,8 @@ public class TC31_VerifySpecialRequestCloseByAdminSP extends BaseClass{
 		asop.clickOnFrstDsp();
 		Thread.sleep(3000);
 		
+		asop.scrollTillTheLast(driver);
+		Thread.sleep(2000);
 		asop.clickOnShowRequestTab();
 		Thread.sleep(3000);
 		
@@ -167,11 +169,13 @@ public class TC31_VerifySpecialRequestCloseByAdminSP extends BaseClass{
 		Thread.sleep(3000);
 		cop.clickOnSpecialRequestTab();
 		Thread.sleep(3000);
-		cop.clickOnAnswerOfDispute();
+		cop.clickOnAnswersBtnInSR();
 		Thread.sleep(2000);
 		cop.sendPnameinSearch(productSR);
 		Thread.sleep(2000);
 		cop.clickOnFDiv();
+		Thread.sleep(2000);
+		cop.scrollTillTheLast(driver);
 		Thread.sleep(2000);
 		cop.clickOnShowRequestTab();
 		Thread.sleep(5000);

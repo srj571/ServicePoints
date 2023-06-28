@@ -89,6 +89,8 @@ public class TC30_VerifyCloseSpecialRequestFunction extends BaseClass{
 		Thread.sleep(2000);
 		cop.clickOnFDiv();
 		Thread.sleep(2000);
+		cop.scrollTillTheLast(driver);
+		Thread.sleep(2000);
 		cop.clickOnShowRequestTab();
 		Thread.sleep(2000);
 		

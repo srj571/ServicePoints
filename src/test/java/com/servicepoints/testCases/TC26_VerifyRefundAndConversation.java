@@ -78,7 +78,7 @@ public class TC26_VerifyRefundAndConversation extends BaseClass{
 		aop.clickOnAllCheckBoxes();
 		Thread.sleep(1000);
 		
-		aop.checkCheckboxesAndClick();
+		aop.checkCheckboxesAndClick2();
 		Thread.sleep(2000);
 		
 //		aop.clickOnFirstCheckBox();

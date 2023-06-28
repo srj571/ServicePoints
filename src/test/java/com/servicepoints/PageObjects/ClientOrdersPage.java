@@ -901,10 +901,12 @@ public class ClientOrdersPage {
 		approvedDispute.click();
 	}
 	
-	@FindBy(xpath="(//div[@class='content-page'])[1]")
+	@FindBy(xpath="(//a[normalize-space()='Answers'])[1]")
 	WebElement answersInSpecialRequest;
 	
 	public void clickOnAnswersBtnInSR() {
 		answersInSpecialRequest.click();
 	}
+	
+	
 }

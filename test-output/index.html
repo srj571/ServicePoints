@@ -103,7 +103,7 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.servicepoints.testCases.TC26_VerifyRefundAndConversation" class="method navigator-link" hash-for-method="verifyRefundAndConversation">verifyRefundAndConversation</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.servicepoints.testCases.TC31_VerifySpecialRequestCloseByAdminSP" class="method navigator-link" hash-for-method="verifySpecialRequestCloseByAdminSp">verifySpecialRequestCloseByAdminSp</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -121,21 +121,21 @@
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.servicepoints.testCases.TC26_VerifyRefundAndConversation</span>
+              <span class="class-name">com.servicepoints.testCases.TC31_VerifySpecialRequestCloseByAdminSP</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyRefundAndConversation">
-                  </a> <!-- verifyRefundAndConversation -->
-                  <span class="method-name">verifyRefundAndConversation</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+                  <a name="verifySpecialRequestCloseByAdminSp">
+                  </a> <!-- verifySpecialRequestCloseByAdminSp -->
+                  <span class="method-name">verifySpecialRequestCloseByAdminSp</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (1699, -360)
   (Session info: chrome=114.0.5735.106)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;sarasvati-Precision-Tower-3420&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-75-generic&apos;, java.version: &apos;17.0.5&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.106, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /tmp/.com.google.Chrome.oHLhvD}, goog:chromeOptions: {debuggerAddress: localhost:33373}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: ee66ac4fff4d5b550238a1015e83be92
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.106, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /tmp/.com.google.Chrome.E6Myty}, goog:chromeOptions: {debuggerAddress: localhost:38031}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4bebcd6651f718d5df8539da3f9125bb
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -143,13 +143,13 @@ Session ID: ee66ac4fff4d5b550238a1015e83be92
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy28.sendKeys(Unknown Source)
-	at com.servicepoints.PageObjects.AgentOrdersPage.setTrackingNum(AgentOrdersPage.java:81)
-	at com.servicepoints.testCases.TC26_VerifyRefundAndConversation.verifyRefundAndConversation(TC26_VerifyRefundAndConversation.java:88)
+	at jdk.proxy2/jdk.proxy2.$Proxy28.click(Unknown Source)
+	at com.servicepoints.PageObjects.ClientOrdersPage.clickOnShowRequestTab(ClientOrdersPage.java:626)
+	at com.servicepoints.testCases.TC31_VerifySpecialRequestCloseByAdminSP.verifySpecialRequestCloseByAdminSp(TC31_VerifySpecialRequestCloseByAdminSP.java:180)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 36 stack frames
+... Removed 35 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -171,7 +171,7 @@ Session ID: ee66ac4fff4d5b550238a1015e83be92
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.servicepoints.testCases.TC26_VerifyRefundAndConversation&quot;/&gt;
+      &lt;class name=&quot;com.servicepoints.testCases.TC31_VerifySpecialRequestCloseByAdminSP&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -213,14 +213,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyRefundAndConversation')
-data.setCell(0, 2, 'com.servicepoints.testCases.TC26_VerifyRefundAndConversation')
-data.setCell(0, 3, 39679);
+data.setCell(0, 1, 'verifySpecialRequestCloseByAdminSp')
+data.setCell(0, 2, 'com.servicepoints.testCases.TC31_VerifySpecialRequestCloseByAdminSP')
+data.setCell(0, 3, 115788);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 39 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -246,7 +246,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.servicepoints.testCases.TC26_VerifyRefundAndConversation</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.servicepoints.testCases.TC31_VerifySpecialRequestCloseByAdminSP</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup(chrome)</span>
                 <span class="method-start">0 ms</span>
@@ -254,12 +254,12 @@ return data;
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">verifyRefundAndConversation</span>
-                <span class="method-start">8813 ms</span>
+                <span class="method-name">verifySpecialRequestCloseByAdminSp</span>
+                <span class="method-start">5050 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">48504 ms</span>
+                <span class="method-start">120847 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

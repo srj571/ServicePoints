@@ -5737,3 +5737,127 @@
 [INFO ] 2023-06-28 11:22:19.248 [main] BaseClass - Processing status is searched.
 [INFO ] 2023-06-28 11:22:24.536 [main] BaseClass - Tracking number entered.
 [INFO ] 2023-06-28 11:22:28.712 [main] BaseClass - clicked on add tracking button.
+[INFO ] 2023-06-28 11:42:26.100 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-06-28 11:42:33.573 [main] BaseClass - Product name is entered.
+[INFO ] 2023-06-28 11:42:36.762 [main] BaseClass - Clicked on status dropdown.
+[INFO ] 2023-06-28 11:42:39.869 [main] BaseClass - Processing status is searched.
+[INFO ] 2023-06-28 11:42:49.444 [main] BaseClass - Tracking number entered.
+[INFO ] 2023-06-28 11:42:52.570 [main] BaseClass - clicked on add tracking button.
+[INFO ] 2023-06-28 11:42:58.205 [main] BaseClass - Clicked on submit tracking button.
+[INFO ] 2023-06-28 11:43:04.278 [main] BaseClass - Verification of adding tracking number is failed.
+[INFO ] 2023-06-28 11:54:20.221 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-06-28 11:54:27.630 [main] BaseClass - Product name is entered.
+[INFO ] 2023-06-28 11:54:30.845 [main] BaseClass - Clicked on status dropdown.
+[INFO ] 2023-06-28 11:54:34.015 [main] BaseClass - Processing status is searched.
+[INFO ] 2023-06-28 11:54:43.494 [main] BaseClass - Tracking number entered.
+[INFO ] 2023-06-28 11:54:46.615 [main] BaseClass - clicked on add tracking button.
+[INFO ] 2023-06-28 11:57:50.843 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-06-28 11:57:58.445 [main] BaseClass - Product name is entered.
+[INFO ] 2023-06-28 11:58:01.683 [main] BaseClass - Clicked on status dropdown.
+[INFO ] 2023-06-28 11:58:04.784 [main] BaseClass - Processing status is searched.
+[INFO ] 2023-06-28 11:58:14.336 [main] BaseClass - Tracking number entered.
+[INFO ] 2023-06-28 11:58:17.415 [main] BaseClass - clicked on add tracking button.
+[INFO ] 2023-06-28 11:58:23.088 [main] BaseClass - Clicked on submit tracking button.
+[INFO ] 2023-06-28 11:58:29.183 [main] BaseClass - Verification of adding tracking number is failed.
+[INFO ] 2023-06-28 12:09:45.774 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-06-28 12:09:53.778 [main] BaseClass - Product name is entered.
+[INFO ] 2023-06-28 12:09:56.970 [main] BaseClass - Clicked on status dropdown.
+[INFO ] 2023-06-28 12:10:00.135 [main] BaseClass - Processing status is searched.
+[INFO ] 2023-06-28 12:10:09.688 [main] BaseClass - Tracking number entered.
+[INFO ] 2023-06-28 12:10:12.812 [main] BaseClass - clicked on add tracking button.
+[INFO ] 2023-06-28 12:10:18.582 [main] BaseClass - Clicked on submit tracking button.
+[INFO ] 2023-06-28 12:10:24.650 [main] BaseClass - Verification of adding tracking number is failed.
+[INFO ] 2023-06-28 12:18:23.226 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-06-28 12:18:27.444 [main] BaseClass - Open disputes page.
+[INFO ] 2023-06-28 12:18:31.264 [main] BaseClass - Click on special request.
+[INFO ] 2023-06-28 12:18:34.395 [main] BaseClass - Click on special request.
+[INFO ] 2023-06-28 12:18:49.562 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-06-28 12:20:35.549 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-06-28 12:20:39.865 [main] BaseClass - Product name is entered.
+[INFO ] 2023-06-28 12:20:42.008 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-06-28 12:20:55.698 [main] BaseClass - Checkboxes selected.
+[INFO ] 2023-06-28 12:20:55.850 [main] BaseClass - Clicked on Send Request.
+[INFO ] 2023-06-28 12:21:01.980 [main] BaseClass - Special Request is opend by Client Successfully..
+[INFO ] 2023-06-28 12:21:09.893 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-06-28 12:21:14.066 [main] BaseClass - Open disputes page.
+[INFO ] 2023-06-28 12:21:17.867 [main] BaseClass - Click on special request.
+[INFO ] 2023-06-28 12:21:20.985 [main] BaseClass - Click on special request.
+[INFO ] 2023-06-28 12:21:39.710 [main] BaseClass - Verification of Close Special request is successfull..
+[INFO ] 2023-06-28 12:21:46.471 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-06-28 12:23:15.938 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-06-28 12:23:20.136 [main] BaseClass - Product name is entered.
+[INFO ] 2023-06-28 12:23:22.220 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-06-28 12:23:36.054 [main] BaseClass - Checkboxes selected.
+[INFO ] 2023-06-28 12:23:36.201 [main] BaseClass - Clicked on Send Request.
+[INFO ] 2023-06-28 12:23:42.331 [main] BaseClass - Special Request is opend by Client Successfully..
+[INFO ] 2023-06-28 12:23:50.138 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-06-28 12:23:54.250 [main] BaseClass - Open disputes page.
+[INFO ] 2023-06-28 12:23:57.981 [main] BaseClass - Click on special request.
+[INFO ] 2023-06-28 12:24:01.103 [main] BaseClass - Click on special request.
+[INFO ] 2023-06-28 12:24:19.885 [main] BaseClass - Verification of Close Special request is successfull..
+[INFO ] 2023-06-28 12:24:26.549 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-06-28 12:29:18.970 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-06-28 12:29:23.274 [main] BaseClass - Product name is entered.
+[INFO ] 2023-06-28 12:29:25.356 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-06-28 12:29:39.170 [main] BaseClass - Checkboxes selected.
+[INFO ] 2023-06-28 12:29:39.247 [main] BaseClass - Clicked on Send Request.
+[INFO ] 2023-06-28 12:29:45.363 [main] BaseClass - Special Request is opend by Client Successfully..
+[INFO ] 2023-06-28 12:29:53.366 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-06-28 12:29:57.346 [main] BaseClass - Open disputes page.
+[INFO ] 2023-06-28 12:30:01.292 [main] BaseClass - Click on special request.
+[INFO ] 2023-06-28 12:30:04.416 [main] BaseClass - Click on special request.
+[INFO ] 2023-06-28 12:30:22.970 [main] BaseClass - Verification of Close Special request is successfull..
+[INFO ] 2023-06-28 12:30:29.600 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-06-28 12:30:55.188 [main] BaseClass - Verification of Close Special request is successfull..
+[INFO ] 2023-06-28 12:41:22.147 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-06-28 12:41:30.325 [main] BaseClass - Product name is entered.
+[INFO ] 2023-06-28 12:41:32.380 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-06-28 12:41:45.794 [main] BaseClass - Checkboxes selected.
+[INFO ] 2023-06-28 12:41:45.876 [main] BaseClass - Clicked on Send Request.
+[INFO ] 2023-06-28 12:41:51.959 [main] BaseClass - Special Request is open by Client Successfully..
+[INFO ] 2023-06-28 12:41:58.419 [main] BaseClass - Admin logged in Successfully.
+[INFO ] 2023-06-28 12:42:00.624 [main] BaseClass - Accounts page opened.
+[INFO ] 2023-06-28 12:42:03.712 [main] BaseClass - Entered Admin Supplier name in search field.
+[INFO ] 2023-06-28 12:42:09.881 [main] BaseClass - Logged in to the admin supplier Account.
+[INFO ] 2023-06-28 12:42:21.008 [main] BaseClass - Open disputes page.
+[INFO ] 2023-06-28 12:42:24.744 [main] BaseClass - Click on special request.
+[INFO ] 2023-06-28 12:42:44.387 [main] BaseClass - Verification of Close Special request by Admin supplier is successfull..
+[INFO ] 2023-06-28 12:42:50.473 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-06-28 12:45:17.065 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-06-28 12:45:25.338 [main] BaseClass - Product name is entered.
+[INFO ] 2023-06-28 12:45:27.469 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-06-28 12:45:40.924 [main] BaseClass - Checkboxes selected.
+[INFO ] 2023-06-28 12:45:41.068 [main] BaseClass - Clicked on Send Request.
+[INFO ] 2023-06-28 12:45:47.189 [main] BaseClass - Special Request is open by Client Successfully..
+[INFO ] 2023-06-28 12:45:53.798 [main] BaseClass - Admin logged in Successfully.
+[INFO ] 2023-06-28 12:45:56.099 [main] BaseClass - Accounts page opened.
+[INFO ] 2023-06-28 12:45:59.229 [main] BaseClass - Entered Admin Supplier name in search field.
+[INFO ] 2023-06-28 12:46:05.500 [main] BaseClass - Logged in to the admin supplier Account.
+[INFO ] 2023-06-28 12:46:16.573 [main] BaseClass - Open disputes page.
+[INFO ] 2023-06-28 12:46:20.357 [main] BaseClass - Click on special request.
+[INFO ] 2023-06-28 12:47:19.518 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-06-28 12:47:27.888 [main] BaseClass - Product name is entered.
+[INFO ] 2023-06-28 12:47:30.041 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-06-28 12:47:43.419 [main] BaseClass - Checkboxes selected.
+[INFO ] 2023-06-28 12:47:43.500 [main] BaseClass - Clicked on Send Request.
+[INFO ] 2023-06-28 12:47:49.613 [main] BaseClass - Special Request is open by Client Successfully..
+[INFO ] 2023-06-28 12:47:55.932 [main] BaseClass - Admin logged in Successfully.
+[INFO ] 2023-06-28 12:47:58.117 [main] BaseClass - Accounts page opened.
+[INFO ] 2023-06-28 12:48:01.270 [main] BaseClass - Entered Admin Supplier name in search field.
+[INFO ] 2023-06-28 12:48:07.392 [main] BaseClass - Logged in to the admin supplier Account.
+[INFO ] 2023-06-28 12:48:18.511 [main] BaseClass - Open disputes page.
+[INFO ] 2023-06-28 12:48:22.278 [main] BaseClass - Click on special request.
+[INFO ] 2023-06-28 12:50:13.539 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-06-28 12:50:21.875 [main] BaseClass - Product name is entered.
+[INFO ] 2023-06-28 12:50:23.941 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-06-28 12:50:37.366 [main] BaseClass - Checkboxes selected.
+[INFO ] 2023-06-28 12:50:37.444 [main] BaseClass - Clicked on Send Request.
+[INFO ] 2023-06-28 12:50:43.553 [main] BaseClass - Special Request is open by Client Successfully..
+[INFO ] 2023-06-28 12:50:50.062 [main] BaseClass - Admin logged in Successfully.
+[INFO ] 2023-06-28 12:50:52.281 [main] BaseClass - Accounts page opened.
+[INFO ] 2023-06-28 12:50:55.360 [main] BaseClass - Entered Admin Supplier name in search field.
+[INFO ] 2023-06-28 12:51:01.490 [main] BaseClass - Logged in to the admin supplier Account.
+[INFO ] 2023-06-28 12:51:12.835 [main] BaseClass - Open disputes page.
+[INFO ] 2023-06-28 12:51:16.687 [main] BaseClass - Click on special request.
+[INFO ] 2023-06-28 12:51:38.489 [main] BaseClass - Verification of Close Special request by Admin supplier is successfull..
+[INFO ] 2023-06-28 12:51:44.745 [main] BaseClass - Client logged in Successfully.

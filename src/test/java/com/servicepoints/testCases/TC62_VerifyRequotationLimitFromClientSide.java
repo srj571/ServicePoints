@@ -464,11 +464,8 @@ public class TC62_VerifyRequotationLimitFromClientSide extends BaseClass {
 		
 	}
 
-	@Test(enabled = false, priority = 4)
+	@Test(enabled = true, priority = 4)
 	public void verifyRequotationLimitAfterAddingVariant() throws InterruptedException {
-
-		driver.get(productFetch);
-		driver.get(ordersFetch);
 
 		driver.get(baseURL);
 

@@ -113,21 +113,34 @@ public class AgentOrdersPage {
 			addTrackingCheck.get(0).click();
 		}
 	}
-	
+
 	public void checkCheckboxesAndClick() {
-		for(int i=0;i<addTrackingCheck.size();i++) {
-			boolean val=addTrackingCheck.get(i).isEnabled();
-			if(val==true) {
-				
+		for (int i = 0; i < addTrackingCheck.size(); i++) {
+			boolean val = addTrackingCheck.get(i).isEnabled();
+			if (val == true) {
 				addTrackingCheck.get(i).click();
 			}
-			else {
-				addTrackingCheck.get(i+1).click();
-			}
-			break;
+//			else {
+//				addTrackingCheck.get(i+1).click();
+//			}
 		}
 	}
-	
+
+	public void checkCheckboxesAndClick2() {
+		for (int i = 0; i < addTrackingCheck.size(); i++) {
+			WebElement checkbox = addTrackingCheck.get(i);
+			if (!checkbox.isEnabled()) {
+				for (int j = 0; j < addTrackingCheck.size(); j++) {
+					//int k=1;
+					WebElement next=addTrackingCheck.get(j);
+					if (!next.isEnabled()) {
+						addTrackingCheck.get(j + 1).click();
+					}
+				}
+			}
+		}
+	}
+
 	public void clickOnTwoCheckBoxes() {
 		if (addTrackingCheck.size() > 0) {
 			addTrackingCheck.get(0).click();
@@ -152,61 +165,58 @@ public class AgentOrdersPage {
 	public void clickOnDiscountBtn() {
 		discountBtn.click();
 	}
-	
+
 	public void scrollTillDiscountbtn(WebDriver driver) {
 		JavascriptExecutor exe = (JavascriptExecutor) driver;
 		exe.executeScript("arguments[0].scrollIntoView();", discountBtn);
 	}
-	
-	
-	
-	@FindBy(xpath="//span[@id='quotePrice']")
+
+	@FindBy(xpath = "//span[@id='quotePrice']")
 	public WebElement quotePrice;
-	
-	@FindBy(xpath="//div[@class='col']//input[@id='discount_amount']")
+
+	@FindBy(xpath = "//div[@class='col']//input[@id='discount_amount']")
 	WebElement amountField;
-	
+
 	public void enterDiscountAmountField(String result) {
 		amountField.sendKeys(result);
 	}
 
-	@FindBy(xpath="//input[@id='submitDiscount']")
+	@FindBy(xpath = "//input[@id='submitDiscount']")
 	WebElement submitDiscount;
-	
+
 	public void clickOnSubmitDiscountBtn() {
 		submitDiscount.click();
 	}
-	
-	@FindBy(xpath="//div[@id='successModal']//div[@class='small_modal_mod update_address_modal_body']")
+
+	@FindBy(xpath = "//div[@id='successModal']//div[@class='small_modal_mod update_address_modal_body']")
 	WebElement successDialogBox;
-	
+
 	public void clickOnSuccessDb() {
 		successDialogBox.click();
 	}
-	
-	@FindBy(xpath="//div[@class='modal fade bd-example-modal-sm' and @id='save_client_info']")
+
+	@FindBy(xpath = "//div[@class='modal fade bd-example-modal-sm' and @id='save_client_info']")
 	WebElement addTrackingSuccessBox;
-	
+
 	public void waitTillSuccessBoxOfTrackingNum(WebDriver driver) {
-		WebDriverWait wait=new WebDriverWait(driver,65);
+		WebDriverWait wait = new WebDriverWait(driver, 65);
 		wait.until(ExpectedConditions.visibilityOf(addTrackingSuccessBox));
 	}
-	
+
 	public double generateTheDiscountedPrice() {
-		
-		String amountWithSymbol=quotePrice.getText();
+
+		String amountWithSymbol = quotePrice.getText();
 		String amountWithoutSymbol = amountWithSymbol.replace("€", "").replace(",", ".");
 
 		double amount = Double.parseDouble(amountWithoutSymbol);
 		double percentage = 0.8;
 		double result = amount * percentage;
 
-		
 		return result;
 	}
-	
+
 	public double generateSeventyPercentDiscountPrice() {
-		String amountWithSymbol=quotePrice.getText();
+		String amountWithSymbol = quotePrice.getText();
 		String amountWithoutSymbol = amountWithSymbol.replace("€", "").replace(",", ".");
 
 		double amount = Double.parseDouble(amountWithoutSymbol);
@@ -215,60 +225,60 @@ public class AgentOrdersPage {
 
 		return result;
 	}
-	
-	@FindBy(xpath="//span[@id='discountOrderPriceModalContentError']")
+
+	@FindBy(xpath = "//span[@id='discountOrderPriceModalContentError']")
 	WebElement errorMsg2;
-	
-	@FindBy(xpath="//li[@class='parsley-required']")
+
+	@FindBy(xpath = "//li[@class='parsley-required']")
 	WebElement errorMsg;
-	
+
 	public void verifyErrorMessages(WebDriver driver) throws InterruptedException {
 		submitDiscount.click();
 		Thread.sleep(2000);
-		
-		String expError=errorMsg.getText();
-		String actError="Amount is required";
+
+		String expError = errorMsg.getText();
+		String actError = "Amount is required";
 		Assert.assertEquals(actError, expError);
-		
-		String amountWithSymbol=quotePrice.getText();
+
+		String amountWithSymbol = quotePrice.getText();
 		String amountWithoutSymbol = amountWithSymbol.replace("€", "").replace(",", ".");
 
 		double amount = Double.parseDouble(amountWithoutSymbol);
-		
-		String amountAsString =String.valueOf(amount);
+
+		String amountAsString = String.valueOf(amount);
 		Thread.sleep(1000);
-		
+
 		amountField.sendKeys(amountAsString);
 		Thread.sleep(1000);
-		
+
 		submitDiscount.click();
 		Thread.sleep(1000);
-		
-		String actError2=errorMsg2.getText();
+
+		String actError2 = errorMsg2.getText();
 		Thread.sleep(1000);
-		
-		AgentOrdersPage apo=new AgentOrdersPage(driver);
-		
+
+		AgentOrdersPage apo = new AgentOrdersPage(driver);
+
 		double discountedPrice = apo.generateTheDiscountedPrice();
-		
+
 		String formattedPrice = String.format("%.2f", discountedPrice);
-		
-		String expError2="Enter amount should not be greater than €"+formattedPrice;
-		
+
+		String expError2 = "Enter amount should not be greater than €" + formattedPrice;
+
 		System.out.println(expError2);
 		System.out.println(actError2);
-		
-		//Assert.assertEquals(expError2, actError2);
+
+		// Assert.assertEquals(expError2, actError2);
 		Assert.assertEquals(expError2, actError2);
 		Thread.sleep(2000);
-		
+
 		amountField.clear();
 		Thread.sleep(1000);
 	}
-	
-	@FindBy(xpath="//a[contains(text(),'Change discount')]")
+
+	@FindBy(xpath = "//a[contains(text(),'Change discount')]")
 	WebElement changeDiscountBtn;
-	
+
 	public void clickOnChangeDiscountBtn() {
 		changeDiscountBtn.click();
 	}
@@ -276,80 +286,79 @@ public class AgentOrdersPage {
 	public void verifyErrorMessagesOnChangeDiscountWin(WebDriver driver, double val3) throws InterruptedException {
 		submitDiscount.click();
 		Thread.sleep(2000);
-		
-		String expError=errorMsg.getText();
-		String actError="Amount is required";
+
+		String expError = errorMsg.getText();
+		String actError = "Amount is required";
 		Assert.assertEquals(actError, expError);
-		
-		String amountWithSymbol=quotePrice.getText();
+
+		String amountWithSymbol = quotePrice.getText();
 		String amountWithoutSymbol = amountWithSymbol.replace("€", "").replace(",", ".");
 
 		double amount = Double.parseDouble(amountWithoutSymbol);
-		
-		String amountAsString =String.valueOf(amount);
+
+		String amountAsString = String.valueOf(amount);
 		Thread.sleep(1000);
-		
+
 		amountField.sendKeys(amountAsString);
 		Thread.sleep(1000);
-		
+
 		submitDiscount.click();
 		Thread.sleep(1000);
-		
-		String actError2=errorMsg2.getText();
+
+		String actError2 = errorMsg2.getText();
 		Thread.sleep(1000);
-		
-		AgentOrdersPage apo=new AgentOrdersPage(driver);
-		
-		//double discountedPrice = apo.generateTheDiscountedPrice();
-		
+
+		AgentOrdersPage apo = new AgentOrdersPage(driver);
+
+		// double discountedPrice = apo.generateTheDiscountedPrice();
+
 		String formattedPrice = String.format("%.2f", val3);
-		
-		String expError2="Enter amount should not be greater than €"+formattedPrice;
-		
+
+		String expError2 = "Enter amount should not be greater than €" + formattedPrice;
+
 		System.out.println(expError2);
 		System.out.println(actError2);
-		
-		//Assert.assertEquals(expError2, actError2);
+
+		// Assert.assertEquals(expError2, actError2);
 		Assert.assertEquals(expError2, actError2);
 		Thread.sleep(2000);
-		
+
 		amountField.clear();
 		Thread.sleep(1000);
 	}
-	
-	@FindBy(xpath="//input[@placeholder='Enter amount']")
+
+	@FindBy(xpath = "//input[@placeholder='Enter amount']")
 	WebElement enterPrice2;
-	
+
 	public void enterChangedDiscountedPrice(String changedDis) {
 		enterPrice2.sendKeys(changedDis);
 	}
-	
+
 	public void scrollTillChangeDiscountbtn(WebDriver driver) {
 		JavascriptExecutor exe = (JavascriptExecutor) driver;
 		exe.executeScript("arguments[0].scrollIntoView();", changeDiscountBtn);
 	}
-	
-	@FindBy(xpath="//span[@id='discountOrderPriceModalContentError']")
+
+	@FindBy(xpath = "//span[@id='discountOrderPriceModalContentError']")
 	WebElement errorMessage2;
-	
+
 	public String getErrorMessage() {
-		String error=errorMessage2.getText();
+		String error = errorMessage2.getText();
 		return error;
 	}
-	
-	@FindBy(xpath="div[id='discountModelContent'] span[aria-hidden='true']")
+
+	@FindBy(xpath = "div[id='discountModelContent'] span[aria-hidden='true']")
 	WebElement closeChangedDiscountWin;
-	
+
 	public void closeChangedDiscountWin() {
 		closeChangedDiscountWin.click();
 	}
-	
-	@FindBy(xpath="//i[@class='fas fa-angle-down order-discounts']")
+
+	@FindBy(xpath = "//i[@class='fas fa-angle-down order-discounts']")
 	WebElement showDiscountHistory;
-	
+
 	public void clickOnShowDiscountHistory() {
 		showDiscountHistory.click();
 	}
-	
-	
+
 }
