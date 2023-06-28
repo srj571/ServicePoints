@@ -141,6 +141,29 @@ public class AgentOrdersPage {
 		}
 	}
 
+	public void checkCheckboxesAndClick3() {
+	    boolean foundEnabledCheckbox = false;
+
+	    for (int i = 0; i < addTrackingCheck.size(); i++) {
+	        WebElement checkbox = addTrackingCheck.get(i);
+
+	        if (checkbox.isEnabled()) {
+	            if (!foundEnabledCheckbox) {
+	                checkbox.click();
+	                foundEnabledCheckbox = true;
+	            }
+	        } else {
+	            if (foundEnabledCheckbox) {
+	                continue;  // Move to the next checkbox
+	            }
+
+	            checkbox.click();
+	        }
+	    }
+	}
+
+	
+	
 	public void clickOnTwoCheckBoxes() {
 		if (addTrackingCheck.size() > 0) {
 			addTrackingCheck.get(0).click();
