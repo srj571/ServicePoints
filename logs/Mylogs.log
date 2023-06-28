@@ -5730,3 +5730,10 @@
 [INFO ] 2023-06-27 14:50:57.736 [main] BaseClass - Dispute send.
 [INFO ] 2023-06-27 14:51:02.773 [main] BaseClass - Verification of Dispute rejection is successed.
 [INFO ] 2023-06-27 14:51:28.880 [main] BaseClass - Verification of message that you have reached the limits of reopen dispute is successfull.
+[INFO ] 2023-06-28 11:21:59.996 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-06-28 11:22:09.725 [main] BaseClass - Product name is entered.
+[INFO ] 2023-06-28 11:22:12.942 [main] BaseClass - Clicked on status dropdown.
+[INFO ] 2023-06-28 11:22:16.041 [main] BaseClass - Processing status is searched.
+[INFO ] 2023-06-28 11:22:19.248 [main] BaseClass - Processing status is searched.
+[INFO ] 2023-06-28 11:22:24.536 [main] BaseClass - Tracking number entered.
+[INFO ] 2023-06-28 11:22:28.712 [main] BaseClass - clicked on add tracking button.

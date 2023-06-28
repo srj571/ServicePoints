@@ -114,6 +114,20 @@ public class AgentOrdersPage {
 		}
 	}
 	
+	public void checkCheckboxesAndClick() {
+		for(int i=0;i<addTrackingCheck.size();i++) {
+			boolean val=addTrackingCheck.get(i).isEnabled();
+			if(val==true) {
+				
+				addTrackingCheck.get(i).click();
+			}
+			else {
+				addTrackingCheck.get(i+1).click();
+			}
+			break;
+		}
+	}
+	
 	public void clickOnTwoCheckBoxes() {
 		if (addTrackingCheck.size() > 0) {
 			addTrackingCheck.get(0).click();
