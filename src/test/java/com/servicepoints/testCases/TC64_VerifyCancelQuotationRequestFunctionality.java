@@ -256,6 +256,6 @@ public class TC64_VerifyCancelQuotationRequestFunctionality extends BaseClass{
 			captureScreen(driver, "Quotation Accepting");
 			logger.info("Verification of accepting quotation is Failed.");
 			Assert.assertTrue(false);
-		}
+		} 
 	}
 }

@@ -400,16 +400,6 @@ public class TC62_VerifyRequotationLimitFromClientSide extends BaseClass {
 		
 		BaseClass.closeAllWinTabsExceptParent();
 		
-
-//		if (cl.getStatus().equals("Quotation accepted - Add country")) {
-//			Thread.sleep(2000);
-//			Assert.assertTrue(true);
-//			logger.info("Verification of accepting quotation is Successed.");
-//		} else {
-//			logger.info("Verification of accepting quotation is Failed.");
-//			Assert.assertTrue(false);
-//		}
-		
 		driver.get(baseURL);
 
 		AgentSupProductsPage aspp = new AgentSupProductsPage(driver);
@@ -462,73 +452,15 @@ public class TC62_VerifyRequotationLimitFromClientSide extends BaseClass {
 			Assert.assertTrue(false);
 		}
 		
+		BaseClass.closeAllWinTabsExceptParent();
 	}
 
 	@Test(enabled = true, priority = 4)
 	public void verifyRequotationLimitAfterAddingVariant() throws InterruptedException {
-
 		driver.get(baseURL);
-
+		LoginPage lp=new LoginPage(driver);
+		
 		ClientProductPage cl = new ClientProductPage(driver);
-		AgentSupProductsPage aspp = new AgentSupProductsPage(driver);
-		LoginPage lp = new LoginPage(driver);
-
-		lp.setAdminMailId(agentMailRQ);
-		logger.info("Agent supplier email is entered.");
-		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-
-		lp.setAdminPassword(agentPassRQ);
-		logger.info("Agent supplier password is entered.");
-		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-
-		lp.clickLoginbtn();
-		Thread.sleep(5000);
-
-		aspp.getProductsPage();
-		Thread.sleep(4000);
-		aspp.clickQuotationsClientsTab();
-		Thread.sleep(2000);
-
-		aspp.searchProductName(product62);
-		Thread.sleep(4000);
-		logger.info("Product name entered.");
-		aspp.clickOnfdiv();
-		Thread.sleep(4000);
-
-		String parentWindow = driver.getWindowHandle();
-		Set<String> window = driver.getWindowHandles();
-		Iterator<String> it = window.iterator();
-		String parent = it.next();
-		String child = it.next();
-		driver.switchTo().window(child);
-		Thread.sleep(4000);
-
-		aspp.verifyPassingDiffValuesInFirstCountry(driver, FirstPcsPrice, SecPcsPrice, ThirdPcsPrice, ForthPcsprice);
-		Thread.sleep(2000);
-		aspp.verifyPassingValueInCountryQuote(driver, FirstPcsPrice, SecPcsPrice, ThirdPcsPrice, ForthPcsprice);
-		Thread.sleep(4000);
-
-		aspp.scrollTillSubmitQuotationBtn(driver);
-		Thread.sleep(2000);
-
-		aspp.clickOnSubmitQuote();
-		Thread.sleep(6000);
-
-		if (aspp.getStatus().equals("Quotation accepted")) {
-			Thread.sleep(2000);
-			Assert.assertTrue(true);
-			logger.info("Verification of Submit Requotation Successed..");
-		} else {
-			logger.info("Verification of Submit Requotation failed..");
-			Assert.assertTrue(true);
-			Thread.sleep(4000);
-		}
-
-		BaseClass.closeAllWinTabsExceptParent();
-		Thread.sleep(1000);
-
-		driver.get(baseURL);
-
 		lp.setAdminMailId(clientMailRQ);
 		logger.info("Email_id is entered.");
 		Thread.sleep(1000);

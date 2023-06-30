@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-30T10:03:45 IST" name="Suite" finished-at="2023-06-30T10:08:32 IST" duration-ms="286621">
+  <suite started-at="2023-06-30T16:28:48 IST" name="Suite" finished-at="2023-06-30T16:30:56 IST" duration-ms="127748">
     <groups>
     </groups>
-    <test started-at="2023-06-30T10:03:45 IST" name="Test" finished-at="2023-06-30T10:08:32 IST" duration-ms="286621">
-      <class name="com.servicepoints.testCases.TC27_VerifyAddTrackingAndResend">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.servicepoints.testCases.TC27_VerifyAddTrackingAndResend@61526469]" started-at="2023-06-30T10:03:45 IST" name="setup" finished-at="2023-06-30T10:03:49 IST" duration-ms="4174" status="PASS">
+    <test started-at="2023-06-30T16:28:48 IST" name="Test" finished-at="2023-06-30T16:30:56 IST" duration-ms="127748">
+      <class name="com.servicepoints.testCases.TC64_VerifyCancelQuotationRequestFunctionality">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.servicepoints.testCases.TC64_VerifyCancelQuotationRequestFunctionality@eb6449b]" started-at="2023-06-30T16:28:48 IST" name="setup" finished-at="2023-06-30T16:28:52 IST" duration-ms="4316" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,36 +18,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyAddTrackingAndResendProduct()[pri:0, instance:com.servicepoints.testCases.TC27_VerifyAddTrackingAndResend@61526469]" started-at="2023-06-30T10:03:49 IST" name="verifyAddTrackingAndResendProduct" finished-at="2023-06-30T10:06:07 IST" duration-ms="138061" status="PASS">
+        <test-method signature="submitAndAcceptQuotation()[pri:1, instance:com.servicepoints.testCases.TC64_VerifyCancelQuotationRequestFunctionality@eb6449b]" started-at="2023-06-30T16:28:52 IST" name="submitAndAcceptQuotation" finished-at="2023-06-30T16:30:55 IST" duration-ms="123197" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyAddTrackingAndResendProduct -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.servicepoints.testCases.TC27_VerifyAddTrackingAndResend@61526469]" started-at="2023-06-30T10:06:07 IST" name="tearDown" finished-at="2023-06-30T10:06:07 IST" duration-ms="127" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.servicepoints.testCases.TC27_VerifyAddTrackingAndResend -->
-      <class name="com.servicepoints.testCases.TC28_VerifyDeclinedResendDispute">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.servicepoints.testCases.TC28_VerifyDeclinedResendDispute@42b64ab8]" started-at="2023-06-30T10:06:07 IST" name="setup" finished-at="2023-06-30T10:06:12 IST" duration-ms="4549" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verifyDeclinedResendDispute()[pri:0, instance:com.servicepoints.testCases.TC28_VerifyDeclinedResendDispute@42b64ab8]" started-at="2023-06-30T10:06:12 IST" name="verifyDeclinedResendDispute" finished-at="2023-06-30T10:08:31 IST" duration-ms="139491" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyDeclinedResendDispute -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.servicepoints.testCases.TC28_VerifyDeclinedResendDispute@42b64ab8]" started-at="2023-06-30T10:08:31 IST" name="tearDown" finished-at="2023-06-30T10:08:32 IST" duration-ms="100" status="PASS">
+        </test-method> <!-- submitAndAcceptQuotation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.servicepoints.testCases.TC64_VerifyCancelQuotationRequestFunctionality@eb6449b]" started-at="2023-06-30T16:30:55 IST" name="tearDown" finished-at="2023-06-30T16:30:56 IST" duration-ms="99" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.servicepoints.testCases.TC28_VerifyDeclinedResendDispute -->
+      </class> <!-- com.servicepoints.testCases.TC64_VerifyCancelQuotationRequestFunctionality -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

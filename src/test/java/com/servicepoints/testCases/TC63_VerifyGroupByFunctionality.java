@@ -16,9 +16,8 @@ import com.servicepoints.utilities.ReadConfig;
 
 import junit.framework.Assert;
 
-public class TC63_VerifyGroupByFunctionality extends BaseClass{
+public class TC63_VerifyGroupByFunctionality extends BaseClass {
 
-	
 	ReadConfig rd = new ReadConfig();
 	public String product63 = rd.getProductForTC63();
 
@@ -26,10 +25,10 @@ public class TC63_VerifyGroupByFunctionality extends BaseClass{
 	public String clientPassRQ = rd.getClientPassForMaxRequotaion();
 	public String agentMailRQ = rd.getSupplierMailForMaxRequotaion();
 	public String agentPassRQ = rd.getSupplierPassForMaxRequotaion();
-	
+
 	public String trackingNum = rd.setTrackingNum();
 	public String storeFilter = rd.storeForDisputeFilter();
-	public String variantType=rd.getGroupByVariantType();
+	public String variantType = rd.getGroupByVariantType();
 
 	@Test(enabled = true, priority = 1)
 	public void submitAndAcceptQuotation() throws InterruptedException, IOException {
@@ -67,7 +66,7 @@ public class TC63_VerifyGroupByFunctionality extends BaseClass{
 		String child = it.next();
 		driver.switchTo().window(child);
 		Thread.sleep(4000);
-		
+
 		aspp.verifyGroupByFunction(variantType);
 		Thread.sleep(2000);
 
@@ -75,7 +74,7 @@ public class TC63_VerifyGroupByFunctionality extends BaseClass{
 //		aspp.secPcsPrice(SecPcsPrice);
 //		aspp.thirdPcsPrice(ThirdPcsPrice);
 //		aspp.forthPcsPrice(ForthPcsprice);
-		
+
 		aspp.verifyPassingDiffValuesInFirstCountry(driver, FirstPcsPrice, SecPcsPrice, ThirdPcsPrice, ForthPcsprice);
 		logger.info("Price entered for all pieces.");
 		Thread.sleep(4000);
@@ -97,7 +96,6 @@ public class TC63_VerifyGroupByFunctionality extends BaseClass{
 			Thread.sleep(4000);
 		}
 
-		
 		driver.get(baseURL);
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
@@ -150,7 +148,7 @@ public class TC63_VerifyGroupByFunctionality extends BaseClass{
 		}
 		BaseClass.closeAllWinTabsExceptParent();
 	}
-	
+
 	@Test(enabled = true, priority = 2, invocationCount = 2)
 	public void verifyAcceptingRequoteQuotation() throws InterruptedException, IOException, AWTException {
 		driver.get(baseURL);
@@ -233,17 +231,17 @@ public class TC63_VerifyGroupByFunctionality extends BaseClass{
 				break;
 			}
 		}
-		
+
 		aspp.verifyGroupByFunction(variantType);
 		Thread.sleep(2000);
-		
+
 		aspp.firstPcsPrice(FirstPcsPrice);
 		aspp.secPcsPrice(SecPcsPrice);
 		aspp.thirdPcsPrice(ThirdPcsPrice);
 		aspp.forthPcsPrice(ForthPcsprice);
 		logger.info("Price entered");
 		Thread.sleep(4000);
-		
+
 		aspp.scrollTillSubmitQuotationBtn(driver);
 		Thread.sleep(2000);
 
@@ -334,41 +332,40 @@ public class TC63_VerifyGroupByFunctionality extends BaseClass{
 		BaseClass.closeAllWinTabsExceptParent();
 
 	}
-	
-	@Test(enabled = true, priority = 2)
+
+	@Test(enabled = true, priority = 3)
 	public void verifyRequoteQuotation() throws InterruptedException, IOException, AWTException {
 		ClientProductPage cl = new ClientProductPage(driver);
 		AgentSupProductsPage aspp = new AgentSupProductsPage(driver);
-		LoginPage lp=new LoginPage(driver);
-		
+		LoginPage lp = new LoginPage(driver);
+
 		driver.get(baseURL);
-		
+
 		lp.setAdminMailId(clientMailRQ);
 		logger.info("Email_id is entered.");
 		Thread.sleep(1000);
-				
+
 		lp.setAdminPassword(clientPassRQ);
 		logger.info("Password is entered.");
 		Thread.sleep(1000);
-				
+
 		lp.clickLoginbtn();
 		Thread.sleep(4000);
 		cl.getProductsPage();
-				
+
 		cl.searchProduct(product63);
 		Thread.sleep(4000);
 		cl.selectProductTab();
 		Thread.sleep(3000);
-				
-		String parentWindow=driver.getWindowHandle();
-		Set<String> windowHandles = driver.getWindowHandles();
-		for(String handle: windowHandles) {
-			if(!handle.equals(parentWindow)) {
-				driver.switchTo().window(handle);
-				break;
-			}
-		}
-		
+
+		String parentWindow1 = driver.getWindowHandle();
+		Set<String> window1 = driver.getWindowHandles();
+		Iterator<String> it1 = window1.iterator();
+		String parent1 = it1.next();
+		String child1 = it1.next();
+		driver.switchTo().window(child1);
+		Thread.sleep(4000);
+
 		cl.clickOnSpecialRequestDrop();
 		Thread.sleep(2000);
 		cl.pleaseRequote();
@@ -378,74 +375,72 @@ public class TC63_VerifyGroupByFunctionality extends BaseClass{
 		Thread.sleep(3000);
 		cl.clickOnClosebtn();
 		Thread.sleep(3000);
-				
-		if(driver.getPageSource().contains("Requote - Bidding")) {
+
+		if (driver.getPageSource().contains("Requote - Bidding")) {
 			logger.info("Verification of Client side Requote is Successed.");
 			Assert.assertTrue(true);
-		}
-		else {
+		} else {
 			logger.info("Verification of client side Requote is failed.");
 			Assert.assertTrue(false);
 			Thread.sleep(2000);
 		}
 
 		cl.logoutTheClient();
-		
+
 		lp.setAdminMailId(agentMailRQ);
 		logger.info("Agent supplier email is entered.");
 		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-		
+
 		lp.setAdminPassword(agentPassRQ);
 		logger.info("Agent supplier password is entered.");
 		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-		
+
 		lp.clickLoginbtn();
 		Thread.sleep(5000);
-				
+
 		aspp.getProductsPage();
 		Thread.sleep(4000);
 		aspp.clickQuotationsClientsTab();
 		Thread.sleep(2000);
-		
+
 		aspp.searchProductName(product63);
 		Thread.sleep(4000);
 		logger.info("Product name entered.");
 		aspp.clickOnfdiv();
 		Thread.sleep(4000);
 
-		windowHandles = driver.getWindowHandles();
-		for(String handle : windowHandles) {
-			if(!handle.equals(parentWindow) && !handle.equals(driver.getWindowHandle())) {
+		window1 = driver.getWindowHandles();
+		for (String handle : window1) {
+			if (!handle.equals(parentWindow1) && !handle.equals(driver.getWindowHandle())) {
 				driver.switchTo().window(handle);
 				break;
 			}
 		}
-		
+
 		aspp.verifyGroupByFunction(variantType);
 		Thread.sleep(2000);
-		
+
 		aspp.firstPcsPrice(FirstPcsPrice);
 		aspp.secPcsPrice(SecPcsPrice);
 		aspp.thirdPcsPrice(ThirdPcsPrice);
 		aspp.forthPcsPrice(ForthPcsprice);
 		logger.info("Price entered");
 		Thread.sleep(4000);
-		
-		
+
 		aspp.scrollTillSubmitQuotationBtn(driver);
 		Thread.sleep(2000);
-		
+
 		aspp.clickOnSubmitQuote();
 		Thread.sleep(6000);
 
-		if(driver.getPageSource().contains("Quotation done")) {
+		if (driver.getPageSource().contains("Quotation done")) {
 			logger.info("Verification of Requote from Agent side is Successed.");
 			Assert.assertTrue(true);
-		}else {
+		} else {
 			logger.info("Verification of Requote from Agent side is failed.");
 			Assert.assertTrue(false);
 		}
-		
+
 		if (aspp.getStatus().equals("Quotation done")) {
 			Thread.sleep(2000);
 			Assert.assertTrue(true);
@@ -456,43 +451,42 @@ public class TC63_VerifyGroupByFunctionality extends BaseClass{
 			Assert.assertTrue(true);
 			Thread.sleep(4000);
 		}
-		
+
 		BaseClass.closeAllWinTabsExceptParent();
 	}
-	
-	@Test(enabled = true, priority = 3)
+
+	@Test(enabled = true, priority = 4)
 	public void verifyAcceptingRequoteQuote() throws InterruptedException, IOException {
 		ClientProductPage cl = new ClientProductPage(driver);
 		AgentSupProductsPage aspp = new AgentSupProductsPage(driver);
-		LoginPage lp=new LoginPage(driver);
+		LoginPage lp = new LoginPage(driver);
 		driver.get(baseURL);
 		Thread.sleep(3000);
 		lp.setAdminMailId(clientMailRQ);
 		logger.info("Email_id is entered.");
 		Thread.sleep(1000);
-				
+
 		lp.setAdminPassword(clientPassRQ);
 		logger.info("Password is entered.");
 		Thread.sleep(1000);
-				
+
 		lp.clickLoginbtn();
 		Thread.sleep(4000);
 		cl.getProductsPage();
-				
+
 		cl.searchProduct(product63);
 		Thread.sleep(4000);
 		cl.selectProductTab();
 		Thread.sleep(3000);
-		
-		
-		String parentWindow=driver.getWindowHandle();
-		Set<String> windowHandles = driver.getWindowHandles();
-		for(String handle: windowHandles) {
-			if(!handle.equals(parentWindow)) {
-				driver.switchTo().window(handle);
-				break;
-			}
-		}
+
+		String parentWindow1 = driver.getWindowHandle();
+		Set<String> window1 = driver.getWindowHandles();
+		Iterator<String> it1 = window1.iterator();
+		String parent1 = it1.next();
+		String child1 = it1.next();
+		driver.switchTo().window(child1);
+		Thread.sleep(4000);
+
 		driver.navigate().refresh();
 		Thread.sleep(2000);
 		cl.selectQuoteTab();
@@ -507,14 +501,14 @@ public class TC63_VerifyGroupByFunctionality extends BaseClass{
 			Thread.sleep(4000);
 			Assert.assertTrue(true);
 			logger.info("Verification of accepting quotation is Successed.");
-		
+
 		} else {
 			captureScreen(driver, "Quotation Accepting");
 			logger.info("Verification of accepting quotation is Failed.");
 			Assert.assertTrue(false);
 		}
-		
-		ClientOrdersPage cp=new ClientOrdersPage(driver);
+
+		ClientOrdersPage cp = new ClientOrdersPage(driver);
 		cp.clickOnOrdersTab();
 		logger.info("Go to Orders page.");
 		Thread.sleep(2000);
@@ -523,10 +517,12 @@ public class TC63_VerifyGroupByFunctionality extends BaseClass{
 		cp.clickOnFDiv();
 		Thread.sleep(2000);
 		logger.info("Status changed to Processing.");
+
+		BaseClass.closeAllWinTabsExceptParent();
+
 	}
-	
-	
-	@Test(enabled = true, priority = 4)
+
+	@Test(enabled = true, priority = 5)
 	public void verifyMessageWhenClientTryToRequoteTwoTimes() throws InterruptedException, IOException, AWTException {
 		driver.get(baseURL);
 
@@ -557,7 +553,7 @@ public class TC63_VerifyGroupByFunctionality extends BaseClass{
 		String child = it.next();
 		driver.switchTo().window(child);
 		Thread.sleep(4000);
-		
+
 		cl.clickOnSpecialRequestDrop();
 		Thread.sleep(2000);
 		cl.pleaseRequote();
@@ -601,13 +597,12 @@ public class TC63_VerifyGroupByFunctionality extends BaseClass{
 		expError = "You can not requote more than 2 times. Please contact your account manager for further assistance.";
 
 		Assert.assertEquals(expError, actError);
-		
+
 		cl.clickOnCloseBtnOnErrorMsg();
 		Thread.sleep(2000);
 		logger.info("Verification of adding country to the quotation successfull.");
 		BaseClass.closeAllWinTabsExceptParent();
-		
-		
+
 //		driver.get(baseURL);
 //
 //		AgentSupProductsPage aspp = new AgentSupProductsPage(driver);
