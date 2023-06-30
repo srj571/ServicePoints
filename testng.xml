@@ -10,7 +10,7 @@
 	
     <test thread-count="5" name="Test">
     <classes>
-      <class name="com.servicepoints.testCases.TC01_AdminLoginTest"/>
+      <!--<class name="com.servicepoints.testCases.TC01_AdminLoginTest"/>
       <class name="com.servicepoints.testCases.TC02_VerifySupplierSignUp"/>
       <class name="com.servicepoints.testCases.TC03_VerifyAdminSUPLoginTest"/>
       <class name="com.servicepoints.testCases.TC04_VerifyAddAgentSupBySupplier"/>
@@ -26,7 +26,7 @@
       <class name="com.servicepoints.testCases.TC14_VerifyExcludeFunctionTest"/>
       <class name="com.servicepoints.testCases.TC15_verifyAskForPriceChange"/>
       <class name="com.servicepoints.testCases.TC16_VerifyUpdateDeleteQuotation"/>
-      <!--<class name="com.servicepoints.testCases.TC17_VerifyAddNewVariant"/> -->
+      <class name="com.servicepoints.testCases.TC17_VerifyAddNewVariant"/>
       <class name="com.servicepoints.testCases.TC18_VerifyCancelOrderFunctionality"/>
       <class name="com.servicepoints.testCases.TC19_VerifyOpenDisputFunction"/>
       <class name="com.servicepoints.testCases.TC20_VerifyAcceptDispute"/>
@@ -34,11 +34,11 @@
       <class name="com.servicepoints.testCases.TC22_VerifyDeclinedDisputeFunction"/>
       <class name="com.servicepoints.testCases.TC23_VerifyAddTrackingAndRefundDspFunction"/>
       <class name="com.servicepoints.testCases.TC24_VerifyRefundDspDeclined"/>
-      <class name="com.servicepoints.testCases.TC25_VerifyDisputeForConversation"/>
-      <class name="com.servicepoints.testCases.TC26_VerifyRefundAndConversation"/>
+      <class name="com.servicepoints.testCases.TC25_VerifyDisputeForConversation"/> 
+      <class name="com.servicepoints.testCases.TC26_VerifyRefundAndConversation"/>-->
       <class name="com.servicepoints.testCases.TC27_VerifyAddTrackingAndResend"/>       
       <class name="com.servicepoints.testCases.TC28_VerifyDeclinedResendDispute"/>
-      <class name="com.servicepoints.testCases.TC29_VerifySpecialRequestFunction"/>
+      <!--<class name="com.servicepoints.testCases.TC29_VerifySpecialRequestFunction"/>
       <class name="com.servicepoints.testCases.TC30_VerifyCloseSpecialRequestFunction"/>
       <class name="com.servicepoints.testCases.TC31_VerifySpecialRequestCloseByAdminSP"/>
       <class name="com.servicepoints.testCases.TC33_VerifyPaymentPendingOrderOffTest"/>
@@ -62,7 +62,7 @@
 			  <include name="tearDown"></include>
 		  </methods>
       </class>
-      <!--<class name="com.servicepoints.testCases.TC41_VerifyMergeBreakOrderForNewVariantInDispute">
+      <class name="com.servicepoints.testCases.TC41_VerifyMergeBreakOrderForNewVariantInDispute">
 		  <methods>
 			  <include name="setup"></include>
 			  <include name="verifySubmitAndAcceptQuotation"></include>
@@ -72,7 +72,7 @@
 			  <include name="tearDown"></include>
 		  </methods>
       </class> --> 
-     <class name="com.servicepoints.testCases.TC42_VerifyMergeBreakOrderForAcceptedDisputeTest">
+     <!--<class name="com.servicepoints.testCases.TC42_VerifyMergeBreakOrderForAcceptedDisputeTest">
 		  <methods>
 			  <include name="setup"></include>
 			  <include name="submitAndAcceptQuotation"></include> 
@@ -318,7 +318,7 @@
 			  <include name="tearDown"></include>
 		  </methods>
 	  </class>
-	 <!--<class name="com.servicepoints.testCases.TC64_VerifyCancelQuotationRequestFunctionality">
+	 <class name="com.servicepoints.testCases.TC64_VerifyCancelQuotationRequestFunctionality">
 		  <methods>
 			  <include name="setup"></include>
 			  <include name="submitAndAcceptQuotation"></include>

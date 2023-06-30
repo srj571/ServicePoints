@@ -15,15 +15,15 @@ import junit.framework.Assert;
 public class TC25_VerifyDisputeForConversation extends BaseClass{
 	
 	ReadConfig con=new ReadConfig();
-	public String CMail=con.setCEmailFrDispt();
+	public String clmail=con.setClientTrackMail();
+	public String clpass=con.setClientTrackPass();
 	public String process=con.setProcessStatus();
-	public String CPass=con.setCpassForDispute();
 	public String proForConversation=con.setProductForConversation();
 	public String queries=con.setQueries();
 	public String otherTxt=con.setOtherTxt();
 
-	public String agentMailDsp=con.setAMailDsp();
-	public String agentPassDsp=con.setApassDsp();
+	public String agmail=con.setAgentTrackMail();
+	public String agpass=con.setAgentTrackPass();
 	public String agentAnswer=con.setAnswer();
 	public String fileName="A319.pdf";
 
@@ -31,8 +31,8 @@ public class TC25_VerifyDisputeForConversation extends BaseClass{
 	public void verifyDisputeForConversation() throws InterruptedException, IOException {
 		LoginPage lp=new LoginPage(driver);
 		Thread.sleep(3000);
-		lp.setAdminMailId(CMail);
-		lp.setAdminPassword(CPass);
+		lp.setAdminMailId(clmail);
+		lp.setAdminPassword(clpass);
 		lp.clickLoginbtn();
 		logger.info("Client logged in Successfully.");
 		Thread.sleep(2000);
@@ -99,8 +99,8 @@ public class TC25_VerifyDisputeForConversation extends BaseClass{
 		logger.info("Client logged out Successfully.");
 		driver.get(baseURL);
 		
-		lp.setAdminMailId(agentMailDsp);
-		lp.setAdminPassword(agentPassDsp);
+		lp.setAdminMailId(agmail);
+		lp.setAdminPassword(agpass);
 		lp.clickLoginbtn();
 		logger.info("Agent logged in Successfully.");
 		Thread.sleep(3000);
@@ -149,12 +149,11 @@ public class TC25_VerifyDisputeForConversation extends BaseClass{
 		
 		driver.get(baseURL);
 		
-		lp.setAdminMailId(CMail);
-		lp.setAdminPassword(CPass);
+		lp.setAdminMailId(clmail);
+		lp.setAdminPassword(clpass);
 		lp.clickLoginbtn();
 		logger.info("Client logged in Successfully.");
 		Thread.sleep(3000);
-		
 		
 		cop.clickOnOrdersTab();
 		Thread.sleep(3000);

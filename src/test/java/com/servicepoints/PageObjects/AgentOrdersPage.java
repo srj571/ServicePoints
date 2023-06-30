@@ -115,55 +115,26 @@ public class AgentOrdersPage {
 	}
 
 	public void checkCheckboxesAndClick() {
-		for (int i = 0; i < addTrackingCheck.size(); i++) {
-			boolean val = addTrackingCheck.get(i).isEnabled();
-			if (val == true) {
-				addTrackingCheck.get(i).click();
-			}
-//			else {
-//				addTrackingCheck.get(i+1).click();
-//			}
-		}
-	}
+		boolean foundEnabledCheckbox = false;
 
-	public void checkCheckboxesAndClick2() {
 		for (int i = 0; i < addTrackingCheck.size(); i++) {
 			WebElement checkbox = addTrackingCheck.get(i);
-			if (!checkbox.isEnabled()) {
-				for (int j = 0; j < addTrackingCheck.size(); j++) {
-					//int k=1;
-					WebElement next=addTrackingCheck.get(j);
-					if (!next.isEnabled()) {
-						addTrackingCheck.get(j + 1).click();
-					}
+
+			if (checkbox.isEnabled()) {
+				if (!foundEnabledCheckbox) {
+					checkbox.click();
+					foundEnabledCheckbox = true;
 				}
+			} else {
+				if (foundEnabledCheckbox) {
+					continue;
+				}
+
+				checkbox.click();
 			}
 		}
 	}
 
-	public void checkCheckboxesAndClick3() {
-	    boolean foundEnabledCheckbox = false;
-
-	    for (int i = 0; i < addTrackingCheck.size(); i++) {
-	        WebElement checkbox = addTrackingCheck.get(i);
-
-	        if (checkbox.isEnabled()) {
-	            if (!foundEnabledCheckbox) {
-	                checkbox.click();
-	                foundEnabledCheckbox = true;
-	            }
-	        } else {
-	            if (foundEnabledCheckbox) {
-	                continue;  // Move to the next checkbox
-	            }
-
-	            checkbox.click();
-	        }
-	    }
-	}
-
-	
-	
 	public void clickOnTwoCheckBoxes() {
 		if (addTrackingCheck.size() > 0) {
 			addTrackingCheck.get(0).click();
