@@ -6476,3 +6476,93 @@
 [INFO ] 2023-07-03 15:33:54.584 [main] BaseClass - Go to Orders page.
 [INFO ] 2023-07-03 15:34:00.856 [main] BaseClass - Status changed to Processing.
 [INFO ] 2023-07-03 15:34:00.893 [main] BaseClass - Verification of accepting quotation is Successed.
+[INFO ] 2023-07-03 18:04:18.173 [main] BaseClass - Application Opened.
+[INFO ] 2023-07-03 18:04:19.272 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-07-03 18:04:20.402 [main] BaseClass - Password is entered.
+[INFO ] 2023-07-03 18:04:33.932 [main] BaseClass - Product name entered.
+[INFO ] 2023-07-03 18:04:38.397 [main] BaseClass - Price entered
+[INFO ] 2023-07-03 18:04:52.626 [main] BaseClass - Verification of Submit quotation Successed..
+[INFO ] 2023-07-03 18:04:55.745 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-07-03 18:04:55.832 [main] BaseClass - Password is entered.
+[INFO ] 2023-07-03 18:05:22.787 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-07-03 18:05:22.863 [main] BaseClass - Password is entered.
+[INFO ] 2023-07-03 18:07:05.093 [main] BaseClass - Application Opened.
+[INFO ] 2023-07-03 18:07:06.197 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-07-03 18:07:07.359 [main] BaseClass - Password is entered.
+[INFO ] 2023-07-03 18:07:20.947 [main] BaseClass - Product name entered.
+[INFO ] 2023-07-03 18:07:25.469 [main] BaseClass - Price entered
+[INFO ] 2023-07-03 18:07:39.661 [main] BaseClass - Verification of Submit quotation Successed..
+[INFO ] 2023-07-03 18:07:42.839 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-07-03 18:07:42.920 [main] BaseClass - Password is entered.
+[INFO ] 2023-07-03 18:10:07.390 [main] BaseClass - Application Opened.
+[INFO ] 2023-07-03 18:10:08.492 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-07-03 18:10:09.648 [main] BaseClass - Password is entered.
+[INFO ] 2023-07-03 18:10:22.773 [main] BaseClass - Product name entered.
+[INFO ] 2023-07-03 18:10:27.305 [main] BaseClass - Price entered
+[INFO ] 2023-07-03 18:10:41.576 [main] BaseClass - Verification of Submit quotation Successed..
+[INFO ] 2023-07-03 18:10:44.493 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-07-03 18:10:44.578 [main] BaseClass - Password is entered.
+[INFO ] 2023-07-03 18:13:09.921 [main] BaseClass - Application Opened.
+[INFO ] 2023-07-03 18:13:11.021 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-07-03 18:13:12.121 [main] BaseClass - Password is entered.
+[INFO ] 2023-07-03 18:13:25.424 [main] BaseClass - Product name entered.
+[INFO ] 2023-07-03 18:13:29.876 [main] BaseClass - Price entered
+[INFO ] 2023-07-03 18:13:44.155 [main] BaseClass - Verification of Submit quotation Successed..
+[INFO ] 2023-07-03 18:13:47.527 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-07-03 18:13:47.610 [main] BaseClass - Password is entered.
+[INFO ] 2023-07-03 18:14:21.385 [main] BaseClass - Verification of accepting quotation is Successed.
+[INFO ] 2023-07-03 18:14:22.678 [main] BaseClass - Go to Orders page.
+[INFO ] 2023-07-03 18:14:28.924 [main] BaseClass - Status changed to Processing.
+[INFO ] 2023-07-03 18:14:28.957 [main] BaseClass - Verification of accepting quotation is Successed.
+[INFO ] 2023-07-03 18:14:32.464 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-07-03 18:14:32.555 [main] BaseClass - Password is entered.
+[INFO ] 2023-07-03 18:14:51.254 [main] BaseClass - Clicked on Stop fullfillment
+[INFO ] 2023-07-03 18:14:55.410 [main] BaseClass - Verification of Stop fullfilment of Quotation is Successed.
+[INFO ] 2023-07-03 18:14:59.429 [main] BaseClass - Go to Orders page.
+[INFO ] 2023-07-03 18:15:05.604 [main] BaseClass - Status changed to Hold.
+[INFO ] 2023-07-03 18:15:05.637 [main] BaseClass - Verification of Order status to Hold is Successfull.
+[INFO ] 2023-07-03 18:15:11.022 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-07-03 18:15:11.106 [main] BaseClass - Password is entered.
+[INFO ] 2023-07-03 18:15:36.681 [main] BaseClass - Verification of Quotation accepted is Successfull.
+[INFO ] 2023-07-03 18:15:45.180 [main] BaseClass - Verification of Order status to Processing is Successfull.
+[INFO ] 2023-07-03 18:15:50.494 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-07-03 18:15:50.575 [main] BaseClass - Password is entered.
+[INFO ] 2023-07-03 18:16:16.608 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-07-03 18:16:16.690 [main] BaseClass - Password is entered.
+[INFO ] 2023-07-03 18:16:28.776 [main] BaseClass - Product name entered.
+[INFO ] 2023-07-03 18:21:06.543 [main] BaseClass - Application Opened.
+[INFO ] 2023-07-03 18:21:07.644 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-07-03 18:21:08.721 [main] BaseClass - Password is entered.
+[INFO ] 2023-07-03 18:21:21.888 [main] BaseClass - Product name entered.
+[INFO ] 2023-07-03 18:21:26.436 [main] BaseClass - Price entered
+[INFO ] 2023-07-03 18:21:40.593 [main] BaseClass - Verification of Submit quotation Successed..
+[INFO ] 2023-07-03 18:21:43.872 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-07-03 18:21:43.958 [main] BaseClass - Password is entered.
+[INFO ] 2023-07-03 18:22:18.270 [main] BaseClass - Verification of accepting quotation is Successed.
+[INFO ] 2023-07-03 18:22:19.389 [main] BaseClass - Go to Orders page.
+[INFO ] 2023-07-03 18:22:25.695 [main] BaseClass - Status changed to Processing.
+[INFO ] 2023-07-03 18:22:25.772 [main] BaseClass - Verification of accepting quotation is Successed.
+[INFO ] 2023-07-03 18:22:29.186 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-07-03 18:22:29.296 [main] BaseClass - Password is entered.
+[INFO ] 2023-07-03 18:22:48.808 [main] BaseClass - Clicked on Stop fullfillment
+[INFO ] 2023-07-03 18:22:52.988 [main] BaseClass - Verification of Stop fullfilment of Quotation is Successed.
+[INFO ] 2023-07-03 18:22:56.994 [main] BaseClass - Go to Orders page.
+[INFO ] 2023-07-03 18:23:03.239 [main] BaseClass - Status changed to Hold.
+[INFO ] 2023-07-03 18:23:03.276 [main] BaseClass - Verification of Order status to Hold is Successfull.
+[INFO ] 2023-07-03 18:23:08.609 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-07-03 18:23:08.694 [main] BaseClass - Password is entered.
+[INFO ] 2023-07-03 18:23:34.403 [main] BaseClass - Verification of Quotation accepted is Successfull.
+[INFO ] 2023-07-03 18:23:42.270 [main] BaseClass - Verification of Order status to Processing is Successfull.
+[INFO ] 2023-07-03 18:23:47.713 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-07-03 18:23:47.794 [main] BaseClass - Password is entered.
+[INFO ] 2023-07-03 18:24:11.678 [main] BaseClass - Verification of Client side Requote is Successed.
+[INFO ] 2023-07-03 18:24:36.004 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-07-03 18:24:36.086 [main] BaseClass - Password is entered.
+[INFO ] 2023-07-03 18:24:48.215 [main] BaseClass - Product name entered.
+[INFO ] 2023-07-03 18:25:14.327 [main] BaseClass - Verification of accepting quotation is Successed.
+[INFO ] 2023-07-03 18:25:17.351 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-07-03 18:25:17.438 [main] BaseClass - Password is entered.
+[INFO ] 2023-07-03 18:25:44.674 [main] BaseClass - Verification of accepting quotation is Successed.
+[INFO ] 2023-07-03 18:25:45.993 [main] BaseClass - Go to Orders page.
+[INFO ] 2023-07-03 18:25:52.163 [main] BaseClass - Status changed to Processing.
+[INFO ] 2023-07-03 18:25:52.197 [main] BaseClass - Verification of accepting quotation is Successed.

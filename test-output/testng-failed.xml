@@ -7,13 +7,15 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.servicepoints.testCases.TC65_VerifyProductPageOnSupportAndTeamleadSide">
+      <class name="com.servicepoints.testCases.TC66_VerifyProductPageOffSupportAndTeamleaderSideAnotherScenario">
         <methods>
-          <include name="acceptQuotationFromTeamlead"/>
+          <include name="acceptQuotationFromSupport"/>
           <include name="setup"/>
+          <include name="requoteQuoteByClient"/>
+          <include name="supplierSubmitQuotationAgain"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.servicepoints.testCases.TC65_VerifyProductPageOnSupportAndTeamleadSide -->
+      </class> <!-- com.servicepoints.testCases.TC66_VerifyProductPageOffSupportAndTeamleaderSideAnotherScenario -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
