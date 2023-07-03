@@ -90,6 +90,8 @@ public class TC66_VerifyProductPageOffSupportAndTeamleaderSideAnotherScenario ex
 			Thread.sleep(4000);
 		}
 
+		BaseClass.closeAllWinTabsExceptParent();
+		
 		driver.get(baseURL);
 		
 		lp.setAdminMailId(AdminMailID);
@@ -162,7 +164,7 @@ public class TC66_VerifyProductPageOffSupportAndTeamleaderSideAnotherScenario ex
 		sop.searchProducts(product66);
 		Thread.sleep(2000);
 		sop.clickOnFDiv();
-		Thread.sleep(2000);
+		Thread.sleep(4000);
 		logger.info("Status changed to Processing.");
 
 		if (sop.getOrderStatusFromSupportSide().equals("Processing")) {
@@ -238,6 +240,14 @@ public class TC66_VerifyProductPageOffSupportAndTeamleaderSideAnotherScenario ex
 		Thread.sleep(2000);
 		logger.info("Status changed to Hold.");
 		
+//		window = driver.getWindowHandles();
+//		for (String handle : window) {
+//			if (!handle.equals(parentWindow) && !handle.equals(driver.getWindowHandle())) {
+//				driver.switchTo().window(handle);
+//				break;
+//			}
+//		}
+//		
 		if(cp.checkOrderStatusHold().equals("Hold")) {
 			logger.info("Verification of Order status to Hold is Successfull.");
 			Assert.assertTrue(true);
@@ -246,6 +256,7 @@ public class TC66_VerifyProductPageOffSupportAndTeamleaderSideAnotherScenario ex
 			logger.info("Verification of Order status to Hold is Failed.");
 			Assert.assertTrue(false);
 		}
+		BaseClass.closeAllWinTabsExceptParent();
 	}
 	
 	@Test(priority = 3, enabled = true)
@@ -320,6 +331,7 @@ public class TC66_VerifyProductPageOffSupportAndTeamleaderSideAnotherScenario ex
 			Assert.assertTrue(false);
 		}
 		
+		BaseClass.closeAllWinTabsExceptParent();
 	}
 	
 	@Test(priority = 4, enabled = true)

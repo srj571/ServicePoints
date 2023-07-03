@@ -335,7 +335,7 @@
 			  <include name="tearDown"></include>
 		  </methods>
 	  </class>-->
-	  <class name="com.servicepoints.testCases.TC65_VerifyProductPageOnSupportAndTeamleadSide">
+	  <class name="com.servicepoints.testCases.TC66_VerifyProductPageOffSupportAndTeamleaderSideAnotherScenario">
 		  <methods>
 			  <include name="setup"></include>
 			  <include name="submitAndAcceptQuotation"></include>
