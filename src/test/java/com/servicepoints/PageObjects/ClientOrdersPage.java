@@ -908,6 +908,13 @@ public class ClientOrdersPage {
 		answersInSpecialRequest.click();
 	}
 	
+	@FindBy(xpath="(//span[@class='badge-mod badge-danger'])[1]")
+	WebElement holdStatusOrder;
+	
+	public String checkOrderStatusHold() {
+		String text=holdStatusOrder.getText();
+		return text;
+	}
 	
 	
 }

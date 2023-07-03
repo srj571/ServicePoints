@@ -324,7 +324,7 @@
 			  <include name="submitAndAcceptQuotation"></include>
 			  <include name="tearDown"></include>
 		  </methods>
-	  </class>-->
+	  </class>
 	   <class name="com.servicepoints.testCases.TC65_VerifyProductPageOnSupportAndTeamleadSide">
 		  <methods>
 			  <include name="setup"></include>
@@ -332,6 +332,18 @@
 			  <include name="requoteQuoteByClient"></include>
 			  <include name="supplierSubmitQuotationAgain"></include>
 			  <include name="acceptQuotationFromTeamlead"></include>
+			  <include name="tearDown"></include>
+		  </methods>
+	  </class>-->
+	  <class name="com.servicepoints.testCases.TC65_VerifyProductPageOnSupportAndTeamleadSide">
+		  <methods>
+			  <include name="setup"></include>
+			  <include name="submitAndAcceptQuotation"></include>
+			  <include name="stopFulfillmentByClient"></include>
+			  <include name="startFulfillmentBySupport"></include>
+			  <include name="requoteQuoteByClient"></include>
+			  <include name="supplierSubmitQuotationAgain"></include>
+			  <include name="acceptQuotationFromSupport"></include>
 			  <include name="tearDown"></include>
 		  </methods>
 	  </class>

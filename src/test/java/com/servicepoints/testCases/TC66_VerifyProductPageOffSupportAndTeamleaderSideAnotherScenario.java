@@ -13,16 +13,17 @@ import com.servicepoints.PageObjects.ClientOrdersPage;
 import com.servicepoints.PageObjects.ClientProductPage;
 import com.servicepoints.PageObjects.LoginPage;
 import com.servicepoints.PageObjects.SupportOrdersPage;
+import com.servicepoints.PageObjects.SupportProductsPage;
 import com.servicepoints.PageObjects.TeamleaderOrdersPage;
 import com.servicepoints.PageObjects.TeamleaderProductsPage;
 import com.servicepoints.utilities.ReadConfig;
 
 import junit.framework.Assert;
 
-public class TC65_VerifyProductPageOnSupportAndTeamleadSide extends BaseClass {
+public class TC66_VerifyProductPageOffSupportAndTeamleaderSideAnotherScenario extends BaseClass{
 
 	ReadConfig rd = new ReadConfig();
-	public String product65 = rd.getProductForTC65();
+	public String product66 = rd.getProductForTC66();
 	public String supplierMailPP = rd.getSuppllierMailForProductsPage();
 	public String supplierPassPP = rd.getSupplierPassForProductsPage();
 	public String supportMailPP = rd.getSupportMailForProductsPage();
@@ -53,7 +54,7 @@ public class TC65_VerifyProductPageOnSupportAndTeamleadSide extends BaseClass {
 		aspp.clickQuotationsClientsTab();
 		Thread.sleep(2000);
 
-		aspp.searchProductName(product65);
+		aspp.searchProductName(product66);
 		Thread.sleep(3000);
 		logger.info("Product name entered.");
 		aspp.clickOnfdiv();
@@ -90,38 +91,58 @@ public class TC65_VerifyProductPageOnSupportAndTeamleadSide extends BaseClass {
 		}
 
 		driver.get(baseURL);
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-
-		lp.setAdminMailId(supportMailPP);
+		
+		lp.setAdminMailId(AdminMailID);
 		logger.info("Email_id is entered.");
 
-		lp.setAdminPassword(supportPassPP);
+		lp.setAdminPassword(AdminPassword);
 		logger.info("Password is entered.");
 
 		lp.clickLoginbtn();
 		Thread.sleep(4000);
 
-		ClientProductPage cl = new ClientProductPage(driver);
-		cl.getProductsPage();
+		AdminAccountsPage aap = new AdminAccountsPage(driver);
 
-		cl.searchProduct(product65);
+		aap.getAdminAccountsPage();
+		Thread.sleep(2000);
+		aap.clickOnTeamleaderTab();
+		Thread.sleep(2000);
+
+		aap.enterUserName(teamleadName);
+		Thread.sleep(1000);
+
+		aap.clickOnLoginBtn();
+		Thread.sleep(2000);
+
+		String parentWindow1 = driver.getWindowHandle();
+		Set<String> window1 = driver.getWindowHandles();
+		Iterator<String> it1 = window1.iterator();
+		String parent1 = it1.next();
+		String child1 = it1.next();
+		driver.switchTo().window(child1);
 		Thread.sleep(4000);
-		cl.selectProductTab();
-		Thread.sleep(3000);
 
-		window = driver.getWindowHandles();
-		for (String handle : window) {
-			if (!handle.equals(parentWindow) && !handle.equals(driver.getWindowHandle())) {
+		TeamleaderProductsPage tpp = new TeamleaderProductsPage(driver);
+		tpp.clickOnProductsTab();
+		Thread.sleep(1000);
+
+		tpp.searchProduct(product66);
+		Thread.sleep(2000);
+		tpp.clickOnFtab();
+		Thread.sleep(2000);
+
+		window1 = driver.getWindowHandles();
+		for (String handle : window1) {
+			if (!handle.equals(parentWindow1) && !handle.equals(driver.getWindowHandle())) {
 				driver.switchTo().window(handle);
 				break;
 			}
 		}
 
-		cl.clickOnQuoteTabSupportSide();
-		Thread.sleep(1000);
-		cl.scrollTillAcceptQbtn(driver);
-		Thread.sleep(1000);
-		cl.selectAcceptQuoteBtn();
+		tpp.clickOnQouteTab();
+		Thread.sleep(2000);
+
+		tpp.clickOnAcceptQuoteBtn();
 		Thread.sleep(4000);
 
 		if (driver.getPageSource().contains("Quotation accepted successfully.")) {
@@ -130,16 +151,15 @@ public class TC65_VerifyProductPageOnSupportAndTeamleadSide extends BaseClass {
 			logger.info("Verification of accepting quotation is Successed.");
 
 		} else {
-			captureScreen(driver, "Quotation Accepting");
 			logger.info("Verification of accepting quotation is Failed.");
 			Assert.assertTrue(false);
 		}
 
-		SupportOrdersPage sop = new SupportOrdersPage(driver);
+		TeamleaderOrdersPage sop = new TeamleaderOrdersPage(driver);
 		sop.clickOnOrdersTab();
 		logger.info("Go to Orders page.");
 		Thread.sleep(2000);
-		sop.sendProductName(product65);
+		sop.searchProducts(product66);
 		Thread.sleep(2000);
 		sop.clickOnFDiv();
 		Thread.sleep(2000);
@@ -152,11 +172,157 @@ public class TC65_VerifyProductPageOnSupportAndTeamleadSide extends BaseClass {
 			logger.info("Verification of accepting quotation is Failed.");
 			Assert.assertTrue(false);
 		}
-
+		
 		BaseClass.closeAllWinTabsExceptParent();
 	}
-
+	
 	@Test(priority = 2, enabled = true)
+	public void stopFulfillmentByClient() throws InterruptedException {
+		driver.get(baseURL);
+		LoginPage lp = new LoginPage(driver);
+
+		lp.setAdminMailId(clientMailPP);
+		logger.info("Email_id is entered.");
+
+		lp.setAdminPassword(clientPassPP);
+		logger.info("Password is entered.");
+
+		lp.clickLoginbtn();
+		Thread.sleep(4000);
+
+		ClientProductPage cl = new ClientProductPage(driver);
+		cl.getProductsPage();
+
+		cl.searchProduct(product66);
+		Thread.sleep(4000);
+		cl.selectProductTab();
+		Thread.sleep(3000);
+
+		String parentWindow = driver.getWindowHandle();
+		Set<String> window = driver.getWindowHandles();
+		Iterator<String> it = window.iterator();
+		String parent = it.next();
+		String child = it.next();
+		driver.switchTo().window(child);
+		Thread.sleep(3000);
+
+		cl.clickOnSpecialRequestDrop();
+		Thread.sleep(1000);
+		
+		cl.stopFullfilling();
+		Thread.sleep(2000);
+		logger.info("Clicked on Stop fullfillment");
+				
+		cl.clickOnYesImSure();
+		Thread.sleep(2000);
+				
+		cl.clickOnClosebtn();
+		Thread.sleep(2000);
+				
+		if(driver.getPageSource().contains("Stop fullfilment")) {
+			logger.info("Verification of Stop fullfilment of Quotation is Successed.");
+			Assert.assertTrue(true);
+			Thread.sleep(2000);
+		}else {
+			logger.info("Verification of Stop fullfillment of Quotation is Failed.");
+			Assert.assertTrue(false);
+		}
+				
+		ClientOrdersPage cp=new ClientOrdersPage(driver);
+		cp.clickOnOrdersTab();
+		logger.info("Go to Orders page.");
+		Thread.sleep(2000);
+		cp.sendPnameinSearch(product66);
+		Thread.sleep(2000);
+		cp.clickOnFDiv();
+		Thread.sleep(2000);
+		logger.info("Status changed to Hold.");
+		
+		if(cp.checkOrderStatusHold().equals("Hold")) {
+			logger.info("Verification of Order status to Hold is Successfull.");
+			Assert.assertTrue(true);
+			Thread.sleep(2000);
+		}else {
+			logger.info("Verification of Order status to Hold is Failed.");
+			Assert.assertTrue(false);
+		}
+	}
+	
+	@Test(priority = 3, enabled = true)
+	public void startFulfillmentBySupport() throws InterruptedException {
+		driver.get(baseURL);
+		LoginPage lp = new LoginPage(driver);
+
+		lp.setAdminMailId(supportMailPP);
+		logger.info("Email_id is entered.");
+
+		lp.setAdminPassword(supportPassPP);
+		logger.info("Password is entered.");
+
+		lp.clickLoginbtn();
+		Thread.sleep(4000);
+		
+		SupportProductsPage spp=new SupportProductsPage(driver);
+		spp.clickOnProductsTab();
+		Thread.sleep(2000);
+		
+		spp.searchProducts(product66);
+		Thread.sleep(1000);
+		
+		spp.clickOnFDiv();
+		Thread.sleep(2000);
+
+		String parentWindow = driver.getWindowHandle();
+		Set<String> window = driver.getWindowHandles();
+		Iterator<String> it = window.iterator();
+		String parent = it.next();
+		String child = it.next();
+		driver.switchTo().window(child);
+		Thread.sleep(4000);
+		
+		spp.clickOnSpecialRequestDrop();
+		Thread.sleep(1000);
+		spp.clickOnStartFulfillmentBtn();
+		Thread.sleep(3000);
+		spp.clickOnPreviousOrderQuote();
+		Thread.sleep(1000);
+		spp.clickOnStartFulfilling();
+		Thread.sleep(3000);
+		spp.clickOnCloseBtn();
+		Thread.sleep(2000);
+		
+		if(spp.getOrderStatus().equals("Quotation accepted")) {
+			logger.info("Verification of Quotation accepted is Successfull.");
+			Assert.assertTrue(true);
+			Thread.sleep(2000);
+		}else {
+			logger.info("Verification of Quotation accepted is Failed.");
+			Assert.assertTrue(false);
+		}
+		
+		
+		SupportOrdersPage sop=new SupportOrdersPage(driver);
+		sop.clickOnOrdersTab();
+		Thread.sleep(1000);
+		
+		sop.sendProductName(product66);
+		Thread.sleep(2000);
+		
+		sop.clickOnFDiv();
+		Thread.sleep(1000);
+		
+		if(sop.getOrderStatusFromSupportSide().equals("Processing")) {
+			logger.info("Verification of Order status to Processing is Successfull.");
+			Assert.assertTrue(true);
+			Thread.sleep(2000);
+		}else {
+			logger.info("Verification of Order status to Processing is Failed.");
+			Assert.assertTrue(false);
+		}
+		
+	}
+	
+	@Test(priority = 4, enabled = true)
 	public void requoteQuoteByClient() throws InterruptedException {
 		driver.get(baseURL);
 		LoginPage lp = new LoginPage(driver);
@@ -173,7 +339,7 @@ public class TC65_VerifyProductPageOnSupportAndTeamleadSide extends BaseClass {
 		ClientProductPage cl = new ClientProductPage(driver);
 		cl.getProductsPage();
 
-		cl.searchProduct(product65);
+		cl.searchProduct(product66);
 		Thread.sleep(4000);
 		cl.selectProductTab();
 		Thread.sleep(3000);
@@ -212,8 +378,8 @@ public class TC65_VerifyProductPageOnSupportAndTeamleadSide extends BaseClass {
 		BaseClass.closeAllWinTabsExceptParent();
 
 	}
-
-	@Test(priority = 3, enabled = true)
+	
+	@Test(priority = 5, enabled = true)
 	public void supplierSubmitQuotationAgain() throws InterruptedException {
 		driver.get(baseURL);
 		LoginPage lp = new LoginPage(driver);
@@ -234,7 +400,7 @@ public class TC65_VerifyProductPageOnSupportAndTeamleadSide extends BaseClass {
 		asp.clickQuotationsClientsTab();
 		Thread.sleep(2000);
 
-		asp.searchProductName(product65);
+		asp.searchProductName(product66);
 		Thread.sleep(4000);
 		logger.info("Product name entered.");
 		asp.clickOnfdiv();
@@ -270,63 +436,43 @@ public class TC65_VerifyProductPageOnSupportAndTeamleadSide extends BaseClass {
 
 		BaseClass.closeAllWinTabsExceptParent();
 	}
-
-	@Test(priority = 4, enabled = true)
-	public void acceptQuotationFromTeamlead() throws InterruptedException {
+	
+	@Test(priority = 6, enabled = true)
+	public void acceptQuotationFromSupport() throws InterruptedException {
 		driver.get(baseURL);
+		
 		LoginPage lp = new LoginPage(driver);
-
-		lp.setAdminMailId(AdminMailID);
+		
+		lp.setAdminMailId(supportMailPP);
 		logger.info("Email_id is entered.");
 
-		lp.setAdminPassword(AdminPassword);
+		lp.setAdminPassword(supportPassPP);
 		logger.info("Password is entered.");
 
 		lp.clickLoginbtn();
 		Thread.sleep(4000);
 
-		AdminAccountsPage aap = new AdminAccountsPage(driver);
+		ClientProductPage cl = new ClientProductPage(driver);
+		cl.getProductsPage();
 
-		aap.getAdminAccountsPage();
-		Thread.sleep(2000);
-		aap.clickOnTeamleaderTab();
-		Thread.sleep(2000);
+		cl.searchProduct(product66);
+		Thread.sleep(4000);
+		cl.selectProductTab();
+		Thread.sleep(3000);
 
-		aap.enterUserName(teamleadName);
-		Thread.sleep(1000);
-
-		aap.clickOnLoginBtn();
-		Thread.sleep(2000);
-
-		String parentWindow1 = driver.getWindowHandle();
-		Set<String> window1 = driver.getWindowHandles();
-		Iterator<String> it1 = window1.iterator();
-		String parent1 = it1.next();
-		String child1 = it1.next();
-		driver.switchTo().window(child1);
+		String parentWindow = driver.getWindowHandle();
+		Set<String> window = driver.getWindowHandles();
+		Iterator<String> it = window.iterator();
+		String parent = it.next();
+		String child = it.next();
+		driver.switchTo().window(child);
 		Thread.sleep(4000);
 
-		TeamleaderProductsPage tpp = new TeamleaderProductsPage(driver);
-		tpp.clickOnProductsTab();
+		cl.clickOnQuoteTabSupportSide();
 		Thread.sleep(1000);
-
-		tpp.searchProduct(product65);
-		Thread.sleep(2000);
-		tpp.clickOnFtab();
-		Thread.sleep(2000);
-
-		window1 = driver.getWindowHandles();
-		for (String handle : window1) {
-			if (!handle.equals(parentWindow1) && !handle.equals(driver.getWindowHandle())) {
-				driver.switchTo().window(handle);
-				break;
-			}
-		}
-
-		tpp.clickOnQouteTab();
-		Thread.sleep(2000);
-
-		tpp.clickOnAcceptQuoteBtn();
+		cl.scrollTillAcceptQbtn(driver);
+		Thread.sleep(1000);
+		cl.selectAcceptQuoteBtn();
 		Thread.sleep(4000);
 
 		if (driver.getPageSource().contains("Quotation accepted successfully.")) {
@@ -339,11 +485,11 @@ public class TC65_VerifyProductPageOnSupportAndTeamleadSide extends BaseClass {
 			Assert.assertTrue(false);
 		}
 
-		TeamleaderOrdersPage sop = new TeamleaderOrdersPage(driver);
+		SupportOrdersPage sop = new SupportOrdersPage(driver);
 		sop.clickOnOrdersTab();
 		logger.info("Go to Orders page.");
 		Thread.sleep(2000);
-		sop.searchProducts(product65);
+		sop.sendProductName(product66);
 		Thread.sleep(2000);
 		sop.clickOnFDiv();
 		Thread.sleep(2000);

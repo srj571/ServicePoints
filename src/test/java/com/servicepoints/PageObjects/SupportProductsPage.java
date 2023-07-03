@@ -1,0 +1,80 @@
+package com.servicepoints.PageObjects;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class SupportProductsPage {
+
+	WebDriver rdriver;
+	public SupportProductsPage(WebDriver ldriver) {
+		rdriver=ldriver;
+		PageFactory.initElements(ldriver, this);
+	}
+	
+	@FindBy(xpath="(//div[contains(text(),'Products')])[1]")
+	WebElement productsTab;
+	
+	public void clickOnProductsTab() {
+		productsTab.click();
+	}
+	
+	@FindBy(xpath="(//input[@id='client_product_search'])[1]")
+	WebElement searchProducts;
+			
+	public void searchProducts(String product) {
+		searchProducts.sendKeys(product);
+	}
+	
+	@FindBy(xpath="(//a[@class='table_expand_abso cp_link'])[1]")
+	WebElement fdiv;
+	
+	public void clickOnFDiv() {
+		fdiv.click();
+	}
+	
+	@FindBy(xpath="(//a[normalize-space()='Special request'])[1]")
+	WebElement specialRequest;
+	
+	public void clickOnSpecialRequestDrop() {
+		specialRequest.click();
+	}
+	
+	@FindBy(xpath="//a[normalize-space()='Start fullfiling']")
+	WebElement startFulfillmentBtn;
+	
+	public void clickOnStartFulfillmentBtn() {
+		startFulfillmentBtn.click();
+	}
+	
+	@FindBy(xpath="//div[@id='special_request_modal']//button[@class='btn btn-border btn-sm mb-3 start_fullfilling_order_num']")
+	WebElement previousOrderQuote;
+	
+	public void clickOnPreviousOrderQuote() {
+		previousOrderQuote.click();
+	}
+	
+	@FindBy(xpath="(//button[@type='button'][normalize-space()='Start fulfilling'])[1]")
+	WebElement startFulfillingBtn;
+	
+	public void clickOnStartFulfilling() {
+		startFulfillingBtn.click();
+	}
+	
+	@FindBy(xpath="(//button[@type='button'][normalize-space()='Close'])[1]")
+	WebElement closeBtn;
+	
+	public void clickOnCloseBtn() {
+		closeBtn.click();
+	}
+	
+	@FindBy(xpath="(//span[@class='badge-mod badge-success'])[1]")
+	WebElement orderStatus;
+	
+	public String getOrderStatus() {
+		String text=orderStatus.getText();
+		return text;
+	}
+	
+}

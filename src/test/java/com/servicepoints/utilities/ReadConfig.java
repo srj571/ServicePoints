@@ -1103,6 +1103,10 @@ public class ReadConfig {
 		return tlname;
 	}
 
+	public String getProductForTC66() {
+		String pro66=po.getProperty("product66");
+		return pro66;
+	}
 	
 }
 
