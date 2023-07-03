@@ -31,6 +31,9 @@ public class ClientProductPage {
 	@FindBy(xpath="(//div)[83]")
 	WebElement quoteTab;
 	
+	@FindBy(xpath="(//div)[75]")
+	WebElement quoteTabSupportSide;
+	
 	@FindBy(xpath="//button[normalize-space()='Accept selected quotation']")
 	WebElement acceptbtn;
 	
@@ -379,6 +382,10 @@ public class ClientProductPage {
 	
 	public void clickOnCloseBtnAfterRQ() {
 		closeBtnAfterRequestForQuote.click();
+	}
+	
+	public void clickOnQuoteTabSupportSide() {
+		quoteTabSupportSide.click();
 	}
 	
 }

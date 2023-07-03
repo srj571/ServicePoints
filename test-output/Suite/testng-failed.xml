@@ -7,15 +7,13 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.servicepoints.testCases.TC63_VerifyGroupByFunctionality">
+      <class name="com.servicepoints.testCases.TC65_VerifyProductPageOnSupportAndTeamleadSide">
         <methods>
-          <include name="verifyRequoteQuotation"/>
+          <include name="acceptQuotationFromTeamlead"/>
           <include name="setup"/>
-          <include name="verifyAcceptingRequoteQuote"/>
-          <include name="verifyMessageWhenClientTryToRequoteTwoTimes"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.servicepoints.testCases.TC63_VerifyGroupByFunctionality -->
+      </class> <!-- com.servicepoints.testCases.TC65_VerifyProductPageOnSupportAndTeamleadSide -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -1062,6 +1062,48 @@ public class ReadConfig {
 		String suppass=po.getProperty("supDeleteQuotePass");
 		return suppass;
 	}
+	
+	public String getProductForTC65() {
+		String pro65=po.getProperty("product65");
+		return pro65;
+	}
+	
+	public String getSuppllierMailForProductsPage() {
+		String supmail=po.getProperty("supplierMailPP");
+		return supmail;
+	}
+	
+	public String getSupplierPassForProductsPage() {
+		String suppass=po.getProperty("supplierPassPP");
+		return suppass;
+	}
+	
+	public String getSupportMailForProductsPage() {
+		String spmail=po.getProperty("supportMailPP");
+		return spmail;
+	}
+	
+	public String getSupportPassForProductsPage() {
+		String sppass=po.getProperty("supportPassPP");
+		return sppass;
+	}
+	
+	public String getClientMailForProductsPage() {
+		String cmail=po.getProperty("clientMailPP");
+		return cmail;
+	}
+	
+	public String getClientPassForProductsPage() {
+		String cpass=po.getProperty("clientPassPP");
+		return cpass;
+	}
+	
+	public String getTeamleadNameForProductsPage() {
+		String tlname=po.getProperty("teamleaderForPP");
+		return tlname;
+	}
+
+	
 }
 
 
