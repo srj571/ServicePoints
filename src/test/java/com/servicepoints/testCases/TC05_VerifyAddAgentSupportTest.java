@@ -1,5 +1,7 @@
 package com.servicepoints.testCases;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.util.Iterator;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
@@ -80,12 +82,12 @@ public class TC05_VerifyAddAgentSupportTest extends BaseClass {
 
 		if (driver.getPageSource().contains("Agents are successfully registered.")) {
 			logger.info("Verification of AgentSupport adding Successfull.");
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			Thread.sleep(4000);
 		} else {
 			captureScreen(driver,"Add agent");
 			logger.info("Verification of AgentSupport adding failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 			driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 		}
 
@@ -107,12 +109,12 @@ public class TC05_VerifyAddAgentSupportTest extends BaseClass {
 
 		if (driver.getPageSource().contains(TAfname)) {
 			logger.info("Verification of AgentSupport login Successfull.");
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 		} else {
 			captureScreen(driver, "Agent loginned.");
 			logger.info("Verification of AgentSupport login failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 			driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 		}
 		

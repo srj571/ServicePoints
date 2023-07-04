@@ -1,5 +1,7 @@
 package com.servicepoints.testCases;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.io.IOException;
 import java.util.Iterator;
 import java.util.Set;
@@ -13,8 +15,6 @@ import com.servicepoints.PageObjects.ClientOrdersPage;
 import com.servicepoints.PageObjects.ClientProductPage;
 import com.servicepoints.PageObjects.LoginPage;
 import com.servicepoints.utilities.ReadConfig;
-
-import junit.framework.Assert;
 
 public class TC34_VerifyPaymentPendingOrderOnTest extends BaseClass{
 	
@@ -54,22 +54,22 @@ public class TC34_VerifyPaymentPendingOrderOnTest extends BaseClass{
 		
 		if(cp.getFinancialStatus().equals("Pending")) {
 			Thread.sleep(2000);
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			logger.info("Verification of Financial Status to Pending.");
 		}else {
 			captureScreen(driver, "Quotation Accepting");
 			logger.info("Verification of Financial Status to Pending failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 		
 		if(cp.getOrderStatusPayment().equals("Not quoted")) {
 			Thread.sleep(6000);
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			logger.info("Verification of Order Status to Not quoted.");
 		}else {
 			captureScreen(driver, "Quotation Accepting");
 			logger.info("Verification of Financial Status to Not quoted failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 		
 		driver.get(baseURL);
@@ -112,12 +112,12 @@ public class TC34_VerifyPaymentPendingOrderOnTest extends BaseClass{
 
 		if (aspp.getStatus().equals("Quotation done")) {
 			Thread.sleep(2000);
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			logger.info("Verification of Submit quotation Successed..");
 		} else {
 			captureScreen(driver, "Submit Quote Test");
 			logger.info("Verification of Submit quotation failed..");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 			Thread.sleep(4000);
 		}
 		
@@ -153,13 +153,13 @@ public class TC34_VerifyPaymentPendingOrderOnTest extends BaseClass{
 
 		if (driver.getPageSource().contains("Quotation accepted successfully.")) {
 			Thread.sleep(4000);
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			logger.info("Verification of accepting quotation is Successed.");
 		
 		} else {
 			captureScreen(driver, "Quotation Accepting");
 			logger.info("Verification of accepting quotation is Failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 		
 		cp.clickOnOrdersTab();
@@ -173,22 +173,22 @@ public class TC34_VerifyPaymentPendingOrderOnTest extends BaseClass{
 		
 		if(cp.getFinancialStatus().equals("Pending")) {
 			Thread.sleep(2000);
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			logger.info("Verification of Financial Status to Pending successfully.");
 		}else {
 			captureScreen(driver, "Quotation Accepting");
 			logger.info("Verification of Financial Status to Pending failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 		
 		if(cp.verifyStatusToProcessing().equals("Processing")) {
 			Thread.sleep(2000);
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			logger.info("Verification of Order Status to Processing.");
 		}else {
 			captureScreen(driver, "Quotation Accepting");
 			logger.info("Verification of Financial Status to Processing failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 		
 		driver.get(baseURL);
@@ -207,11 +207,11 @@ public class TC34_VerifyPaymentPendingOrderOnTest extends BaseClass{
 		
 		if(acp.toggleStatusPayment()==true) {
 			Thread.sleep(4000);
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			logger.info("Payment Pending order toggle is ON.");
 		} else {
 			logger.info("Verification of Toggle is failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 	}
 }

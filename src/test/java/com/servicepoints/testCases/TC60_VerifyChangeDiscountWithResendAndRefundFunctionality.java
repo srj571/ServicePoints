@@ -1,5 +1,7 @@
 package com.servicepoints.testCases;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.io.IOException;
 import java.util.Iterator;
 import java.util.Set;
@@ -16,8 +18,6 @@ import com.servicepoints.PageObjects.ClientOrdersPage;
 import com.servicepoints.PageObjects.ClientProductPage;
 import com.servicepoints.PageObjects.LoginPage;
 import com.servicepoints.utilities.ReadConfig;
-
-import junit.framework.Assert;
 
 public class TC60_VerifyChangeDiscountWithResendAndRefundFunctionality extends BaseClass {
 
@@ -92,12 +92,12 @@ public class TC60_VerifyChangeDiscountWithResendAndRefundFunctionality extends B
 
 		if (aspp.getStatus().equals("Quotation done")) {
 			Thread.sleep(2000);
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			logger.info("Verification of Submit quotation Successed..");
 		} else {
 			captureScreen(driver, "Submit Quote Test");
 			logger.info("Verification of Submit quotation failed..");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 			Thread.sleep(4000);
 		}
 
@@ -143,13 +143,13 @@ public class TC60_VerifyChangeDiscountWithResendAndRefundFunctionality extends B
 
 		if (driver.getPageSource().contains("Quotation accepted successfully.")) {
 			Thread.sleep(4000);
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			logger.info("Verification of accepting quotation is Successed.");
 
 		} else {
 			captureScreen(driver, "Quotation Accepting");
 			logger.info("Verification of accepting quotation is Failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 		BaseClass.closeAllWinTabsExceptParent();
 	}
@@ -215,12 +215,12 @@ public class TC60_VerifyChangeDiscountWithResendAndRefundFunctionality extends B
 
 		if (driver.getPageSource().contains("Tracking number successfully added")) {
 			logger.info("Verification of adding tracking number is Successfull.");
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			Thread.sleep(2000);
 		} else {
 			logger.info("Verification of adding tracking number is failed.");
 			Thread.sleep(2000);
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 	}
 
@@ -250,13 +250,13 @@ public class TC60_VerifyChangeDiscountWithResendAndRefundFunctionality extends B
 		Thread.sleep(2000);
 
 		if (cop.verifyOpenDisputeButtonIsVisible() == true) {
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			Thread.sleep(3000);
 			logger.info("Verification of Dispute for Refund is not able to reopen once accepted is successed.");
 		} else {
 			captureScreen(driver, "Dispute for resend reopen.");
 			logger.info("Verification of Dispute acceptance is failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 
 		cop.clickOnOpenDspbtn();
@@ -279,12 +279,12 @@ public class TC60_VerifyChangeDiscountWithResendAndRefundFunctionality extends B
 		logger.info("Dispute saved.");
 
 		if (driver.getPageSource().contains("Dispute raised successfully")) {
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			logger.info("Verification of Refund Dispute raised Successfully.");
 		} else {
 			captureScreen(driver, "disputeRaised");
 			logger.info("Verification of Refund Dispute raised failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 
 		driver.get(baseURL);
@@ -324,13 +324,13 @@ public class TC60_VerifyChangeDiscountWithResendAndRefundFunctionality extends B
 		Thread.sleep(5000);
 
 		if (driver.getPageSource().contains("Dispute accepted successfully")) {
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			Thread.sleep(3000);
 			logger.info("Verification of Refund Dispute acceptance is successed.");
 		} else {
 			captureScreen(driver, "Dispute for resend");
 			logger.info("Verification of Refund Dispute acceptance is failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 	}
 
@@ -395,12 +395,12 @@ public class TC60_VerifyChangeDiscountWithResendAndRefundFunctionality extends B
 
 		if (driver.getPageSource().contains("Tracking number successfully added")) {
 			logger.info("Verification of adding tracking number is Successfull.");
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			Thread.sleep(2000);
 		} else {
 			logger.info("Verification of adding tracking number is failed.");
 			Thread.sleep(2000);
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 	}
 
@@ -460,12 +460,12 @@ public class TC60_VerifyChangeDiscountWithResendAndRefundFunctionality extends B
 
 		if (driver.getPageSource().contains("Discount successfully submitted")) {
 			logger.info("Verification of adding discount number is Successfull.");
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			Thread.sleep(3000);
 		} else {
 			logger.info("Verification of adding discount number is failed.");
 			Thread.sleep(2000);
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 
 
@@ -487,12 +487,12 @@ public class TC60_VerifyChangeDiscountWithResendAndRefundFunctionality extends B
 
 		if (driver.getPageSource().contains("Discount updated successfully")) {
 			logger.info("Verification of adding discount number is Successfull.");
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			Thread.sleep(3000);
 		} else {
 			logger.info("Verification of adding discount number is failed.");
 			Thread.sleep(2000);
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 
 		aop.clickOnChangeDiscountBtn();
@@ -507,7 +507,7 @@ public class TC60_VerifyChangeDiscountWithResendAndRefundFunctionality extends B
 		String actErrorMsg = aop.getErrorMessage();
 		String expErrorMsg = "You can not give more discount.";
 
-		Assert.assertEquals(expErrorMsg, actErrorMsg);
+		AssertJUnit.assertEquals(expErrorMsg, actErrorMsg);
 		Thread.sleep(2000);
 
 		logger.info("Verification done successfully.");
@@ -540,13 +540,13 @@ public class TC60_VerifyChangeDiscountWithResendAndRefundFunctionality extends B
 		Thread.sleep(3000);
 
 		if (cop.verifyOpenDisputeButtonIsVisible() == true) {
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			Thread.sleep(3000);
 			logger.info("Verification of Dispute for Refund is not able to reopen once accepted is successed.");
 		} else {
 			captureScreen(driver, "Dispute for resend reopen.");
 			logger.info("Verification of Dispute acceptance is failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 
 		cop.scrollTillOpenDisputesBtn(driver);
@@ -572,12 +572,12 @@ public class TC60_VerifyChangeDiscountWithResendAndRefundFunctionality extends B
 		logger.info("Dispute saved.");
 
 		if (driver.getPageSource().contains("Dispute raised successfully")) {
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			logger.info("Verification of Refund Dispute raised Successfully.");
 		} else {
 			captureScreen(driver, "disputeRaised");
 			logger.info("Verification of Refund Dispute raised failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 
 		driver.get(baseURL);
@@ -618,13 +618,13 @@ public class TC60_VerifyChangeDiscountWithResendAndRefundFunctionality extends B
 		Thread.sleep(5000);
 
 		if (driver.getPageSource().contains("Dispute accepted successfully")) {
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			Thread.sleep(3000);
 			logger.info("Verification of Refund Dispute acceptance is successed.");
 		} else {
 			captureScreen(driver, "Dispute for resend");
 			logger.info("Verification of Refund Dispute acceptance is failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 
 //		AgentOrdersPage aop = new AgentOrdersPage(driver);
@@ -699,12 +699,12 @@ public class TC60_VerifyChangeDiscountWithResendAndRefundFunctionality extends B
 
 			if (driver.getPageSource().contains("Discount successfully submitted")) {
 				logger.info("Verification of adding discount number is Successfull.");
-				Assert.assertTrue(true);
+				AssertJUnit.assertTrue(true);
 				Thread.sleep(4000);
 			} else {
 				logger.info("Verification of adding discount number is failed.");
 				Thread.sleep(2000);
-				Assert.assertTrue(false);
+				AssertJUnit.assertTrue(false);
 			}
 
 			aop.clickOnChangeDiscountBtn();
@@ -792,12 +792,12 @@ public class TC60_VerifyChangeDiscountWithResendAndRefundFunctionality extends B
 
 			if (driver.getPageSource().contains("Discount successfully submitted")) {
 				logger.info("Verification of adding discount number is Successfull.");
-				Assert.assertTrue(true);
+				AssertJUnit.assertTrue(true);
 				Thread.sleep(4000);
 			} else {
 				logger.info("Verification of adding discount number is failed.");
 				Thread.sleep(2000);
-				Assert.assertTrue(false);
+				AssertJUnit.assertTrue(false);
 			}
 
 			aop.clickOnChangeDiscountBtn();

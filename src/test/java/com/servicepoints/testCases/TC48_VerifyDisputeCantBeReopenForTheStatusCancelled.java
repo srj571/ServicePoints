@@ -1,5 +1,7 @@
 package com.servicepoints.testCases;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.io.IOException;
 import java.util.Iterator;
 import java.util.Set;
@@ -17,8 +19,6 @@ import com.servicepoints.PageObjects.ClientOrdersPage;
 import com.servicepoints.PageObjects.ClientProductPage;
 import com.servicepoints.PageObjects.LoginPage;
 import com.servicepoints.utilities.ReadConfig;
-
-import junit.framework.Assert;
 
 public class TC48_VerifyDisputeCantBeReopenForTheStatusCancelled extends BaseClass {
 	ReadConfig rd = new ReadConfig();
@@ -93,12 +93,12 @@ public class TC48_VerifyDisputeCantBeReopenForTheStatusCancelled extends BaseCla
 
 		if (aspp.getStatus().equals("Quotation done")) {
 			Thread.sleep(2000);
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			logger.info("Verification of Submit quotation Successed..");
 		} else {
 			captureScreen(driver, "Submit Quote Test");
 			logger.info("Verification of Submit quotation failed..");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 			Thread.sleep(4000);
 		}
 
@@ -139,13 +139,13 @@ public class TC48_VerifyDisputeCantBeReopenForTheStatusCancelled extends BaseCla
 
 		if (driver.getPageSource().contains("Quotation accepted successfully.")) {
 			Thread.sleep(4000);
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			logger.info("Verification of accepting quotation is Successed.");
 
 		} else {
 			captureScreen(driver, "Quotation Accepting");
 			logger.info("Verification of accepting quotation is Failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 		BaseClass.closeAllWinTabsExceptParent();
 	}
@@ -203,12 +203,12 @@ public class TC48_VerifyDisputeCantBeReopenForTheStatusCancelled extends BaseCla
 		logger.info("Clicked on Saved dispute.");
 
 		if (driver.getPageSource().contains("Dispute raised successfully")) {
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			logger.info("Verification of Dispute raised Successfully.");
 		} else {
 			captureScreen(driver, "disputeRaised");
 			logger.info("Verification of Dispute raised failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 
 		driver.get(baseURL);
@@ -246,12 +246,12 @@ public class TC48_VerifyDisputeCantBeReopenForTheStatusCancelled extends BaseCla
 		Thread.sleep(5000);
 
 		if (driver.getPageSource().contains("Dispute declined successfully")) {
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			logger.info("Verification of Dispute rejection is successed.");
 		} else {
 			captureScreen(driver, "acceptDispute");
 			logger.info("Verification of Dispute rejection is failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 		BaseClass.closeAllWinTabsExceptParent();
 	}
@@ -306,13 +306,13 @@ public class TC48_VerifyDisputeCantBeReopenForTheStatusCancelled extends BaseCla
 		Thread.sleep(3000);
 
 		if (driver.getPageSource().contains("Order cancelled successfully")) {
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			logger.info("Verification of cancel one variant is Successed.");
 		} else {
 			captureScreen(driver, "Cancel order in dispute");
 			Thread.sleep(4000);
 			logger.info("Verification of cancel one variant is failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 	}
 
@@ -369,12 +369,12 @@ public class TC48_VerifyDisputeCantBeReopenForTheStatusCancelled extends BaseCla
 		logger.info("Clicked on Saved dispute.");
 
 		if (driver.getPageSource().contains("Dispute raised successfully")) {
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			logger.info("Verification of Dispute raised Successfully.");
 		} else {
 			captureScreen(driver, "disputeRaised");
 			logger.info("Verification of Dispute raised failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 
 		driver.get(baseURL);
@@ -410,13 +410,13 @@ public class TC48_VerifyDisputeCantBeReopenForTheStatusCancelled extends BaseCla
 		Thread.sleep(5000);
 
 		if (driver.getPageSource().contains("Dispute accepted successfully")) {
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			Thread.sleep(3000);
 			logger.info("Verification of Dispute acceptance is successfull.");
 		} else {
 			captureScreen(driver, "acceptDispute");
 			logger.info("Verification of Dispute acceptance is failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 	}
 
@@ -456,12 +456,12 @@ public class TC48_VerifyDisputeCantBeReopenForTheStatusCancelled extends BaseCla
 		Thread.sleep(3000);
 
 		if(driver.getPageSource().contains("Message send successfully")) {
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			Thread.sleep(3000);
 			logger.info("Verification of Dispute acceptance is successfull.");
 		}else {
 			logger.info("Verification of Dispute acceptance is failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 	}
 }

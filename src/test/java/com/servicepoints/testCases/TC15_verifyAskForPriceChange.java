@@ -1,5 +1,7 @@
 package com.servicepoints.testCases;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.io.IOException;
 import java.util.Set;
 
@@ -10,8 +12,6 @@ import com.servicepoints.PageObjects.ClientOrdersPage;
 import com.servicepoints.PageObjects.ClientProductPage;
 import com.servicepoints.PageObjects.LoginPage;
 import com.servicepoints.utilities.ReadConfig;
-
-import junit.framework.Assert;
 
 public class TC15_verifyAskForPriceChange extends BaseClass {
 
@@ -151,12 +151,12 @@ public class TC15_verifyAskForPriceChange extends BaseClass {
 		Thread.sleep(3000);
 		
 		if(driver.getPageSource().contains("Quotation accepted")) {
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			logger.info("Verification is done from Client side for Ask for Price change test.");
 		}else {
 			captureScreen(driver, "askForPriceChange");
 			logger.info("Verification is for Ask for Price change test is failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 		
 		ClientOrdersPage cp=new ClientOrdersPage(driver);

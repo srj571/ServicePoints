@@ -1,5 +1,7 @@
 package com.servicepoints.testCases;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.io.IOException;
 
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -11,8 +13,6 @@ import com.servicepoints.PageObjects.AgentOrdersPage;
 import com.servicepoints.PageObjects.ClientOrdersPage;
 import com.servicepoints.PageObjects.LoginPage;
 import com.servicepoints.utilities.ReadConfig;
-
-import junit.framework.Assert;
 
 public class TC26_VerifyRefundAndConversation extends BaseClass{
 
@@ -93,12 +93,12 @@ public class TC26_VerifyRefundAndConversation extends BaseClass{
 		
 		if(driver.getPageSource().contains("Tracking number successfully added")) {
 			logger.info("Verification of adding tracking number is Successfull.");
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			Thread.sleep(3000);
 		}else {
 			logger.info("Verification of adding tracking number is failed.");
 			Thread.sleep(2000);
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 		
 		driver.get(baseURL);
@@ -167,13 +167,13 @@ public class TC26_VerifyRefundAndConversation extends BaseClass{
 		
 		Thread.sleep(3000);
 		if(driver.getPageSource().contains("Dispute raised successfully")) {
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			logger.info("Verification of Dispute for refund raised Successfully.");
 			Thread.sleep(3000);
 		}else {
 			captureScreen(driver, "disputeRaised");
 			logger.info("Verification of Dispute for refund raising failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 		
 		driver.get(baseURL);
@@ -214,11 +214,11 @@ public class TC26_VerifyRefundAndConversation extends BaseClass{
 		
 		
 		if(driver.getPageSource().contains("Message send successfully")) {
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			logger.info("Verification of conversation in dispute is successfull.");
 		}else {
 			captureScreen(driver, "acceptDispute");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 			logger.info("Verification of conversation in dispute is failed.");
 		}
 		
@@ -269,12 +269,12 @@ public class TC26_VerifyRefundAndConversation extends BaseClass{
 		Thread.sleep(5000);
 		                                     
 		if(driver.getPageSource().contains("Dispute history")) {
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			logger.info("Verification of Dispute history opening is successfull.");
 		}else {                                                                                                     
 			captureScreen(driver, "acceptDispute");
 			logger.info("Verification of Dispute history opening is failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 	}
 }                                                                                                                                              

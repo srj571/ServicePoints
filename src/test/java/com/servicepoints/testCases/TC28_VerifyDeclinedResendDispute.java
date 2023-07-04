@@ -1,5 +1,7 @@
 package com.servicepoints.testCases;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.io.IOException;
 
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -11,8 +13,6 @@ import com.servicepoints.PageObjects.AgentOrdersPage;
 import com.servicepoints.PageObjects.ClientOrdersPage;
 import com.servicepoints.PageObjects.LoginPage;
 import com.servicepoints.utilities.ReadConfig;
-
-import junit.framework.Assert;
 
 public class TC28_VerifyDeclinedResendDispute extends BaseClass {
 
@@ -92,10 +92,10 @@ public class TC28_VerifyDeclinedResendDispute extends BaseClass {
 		
 		if(driver.getPageSource().contains("Tracking number successfully added")) {
 			logger.info("Verification of adding tracking number is Successfull.");
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			Thread.sleep(2000);
 		}else {
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 			logger.info("Verification of adding tracking number is failed.");
 			Thread.sleep(2000);
 		}
@@ -167,13 +167,13 @@ public class TC28_VerifyDeclinedResendDispute extends BaseClass {
 		
 		Thread.sleep(3000);
 		if(driver.getPageSource().contains("Dispute raised successfully")) {
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			logger.info("Verification of Dispute for resend raised Successfully.");
 			Thread.sleep(3000);
 		}else {
 			captureScreen(driver, "disputeRaised");
 			logger.info("Verification of Dispute for resend raising failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 		
 		driver.get(baseURL);
@@ -214,11 +214,11 @@ public class TC28_VerifyDeclinedResendDispute extends BaseClass {
 		
 		
 		if(driver.getPageSource().contains("Dispute declined successfully")) {
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			logger.info("Verification of Dispute declining is successfull.");
 		}else {
 			captureScreen(driver, "acceptDispute");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 			logger.info("Verification of Dispute declining is failed.");
 		}
 		
@@ -257,20 +257,20 @@ public class TC28_VerifyDeclinedResendDispute extends BaseClass {
 		Thread.sleep(5000);
 		
 		if(driver.getPageSource().contains("Dispute history")) {
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			logger.info("Verification of Dispute history opening is successfull.");
 		}else {
 			captureScreen(driver, "acceptDispute");
 			logger.info("Verification of Dispute history opening is failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 		
 		if(cop.getDspHistoryStatusD().equals("Declined")) {
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			logger.info("Verification of Dispute declined is successed.");
 		}else {
 			logger.info("Verification of Dispute declined is failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 	}
 }

@@ -1,5 +1,7 @@
 package com.servicepoints.testCases;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.io.IOException;
 import java.util.Iterator;
 import java.util.Set;
@@ -11,8 +13,6 @@ import com.servicepoints.PageObjects.AgentSupProductsPage;
 import com.servicepoints.PageObjects.ClientProductPage;
 import com.servicepoints.PageObjects.LoginPage;
 import com.servicepoints.utilities.ReadConfig;
-
-import junit.framework.Assert;
 
 public class TC32_VerifyClientPaymentApproveByAdmin extends BaseClass{
 	
@@ -74,12 +74,12 @@ public class TC32_VerifyClientPaymentApproveByAdmin extends BaseClass{
 
 		if (aspp.getStatus().equals("Quotation done")) {
 			Thread.sleep(2000);
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			logger.info("Verification of Submit quotation Successed..");
 		} else {
 			captureScreen(driver, "Submit Quote Test");
 			logger.info("Verification of Submit quotation failed..");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 			Thread.sleep(4000);
 		}
 
@@ -125,13 +125,13 @@ public class TC32_VerifyClientPaymentApproveByAdmin extends BaseClass{
 
 		if (driver.getPageSource().contains("Quotation accepted successfully.")) {
 			Thread.sleep(4000);
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			logger.info("Verification of accepting quotation is Successed.");
 
 		} else {
 			captureScreen(driver, "Quotation Accepting");
 			logger.info("Verification of accepting quotation is Failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 		BaseClass.closeAllWinTabsExceptParent();
 	}

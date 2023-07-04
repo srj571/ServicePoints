@@ -1,5 +1,7 @@
 package com.servicepoints.testCases;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.io.IOException;
 import java.util.Iterator;
 import java.util.Set;
@@ -52,12 +54,12 @@ public class TC03_VerifyAdminSUPLoginTest  extends BaseClass {
 		
 		if(driver.getPageSource().contains(adminSupplierName)) {
 			logger.info("Verification of Admin Supplier login Successfull.");
-			Assert.assertTrue(true);	
+			AssertJUnit.assertTrue(true);	
 			Thread.sleep(1000);
 		}else {
 			captureScreen(driver, "AdminSUP Login Verification");
 			logger.info("Verification of client login Failed.");
-			Assert.assertTrue(false);	
+			AssertJUnit.assertTrue(false);	
 		}
 		
 		

@@ -1,5 +1,7 @@
 package com.servicepoints.testCases;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
@@ -67,12 +69,12 @@ public class TC02_VerifySupplierSignUp extends BaseClass{
 
 		if (driver.getPageSource().contains("Congratulations! You have successfully signed up for Service Points.")) {
 			logger.info("Supplier is Successfully Signed up.");
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			Thread.sleep(4000);
 		} else {
 			captureScreen(driver, "SupplierSignUp");
 			logger.info("Supplier is Failed to Signed up.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 
 		driver.get(baseURL);
@@ -90,12 +92,12 @@ public class TC02_VerifySupplierSignUp extends BaseClass{
 
 		if (driver.getTitle().contains("Admin Supplier Dashboard | Service Points")) {
 			logger.info("Verification of Supplier Sign in is Successed.");
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			Thread.sleep(4000);
 		} else {
 			captureScreen(driver, "VerifySupSignIn");
 			logger.info("Verification of Supplier Sign in is failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 	}
 }

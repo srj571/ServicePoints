@@ -1,5 +1,7 @@
 package com.servicepoints.testCases;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.io.IOException;
 
 import org.testng.Assert;
@@ -79,13 +81,13 @@ public class TC07_VerifyClientApprovalTest extends BaseClass{
 		
 		
 		if(driver.getPageSource().contains("Account updated successfully")) {
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			logger.info("Account updated successfully");
 			Thread.sleep(4000);
 		}else {
 			captureScreen(driver, "Client approval");
 			logger.info("Account updated successfully");
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 		}
 		
 //		adminAccount.logoutAdmPanel();

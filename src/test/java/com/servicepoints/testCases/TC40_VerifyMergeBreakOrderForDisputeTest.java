@@ -1,5 +1,7 @@
 package com.servicepoints.testCases;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.io.IOException;
 import java.util.Iterator;
 import java.util.Set;
@@ -13,8 +15,6 @@ import com.servicepoints.PageObjects.ClientOrdersPage;
 import com.servicepoints.PageObjects.ClientProductPage;
 import com.servicepoints.PageObjects.LoginPage;
 import com.servicepoints.utilities.ReadConfig;
-
-import junit.framework.Assert;
 
 public class TC40_VerifyMergeBreakOrderForDisputeTest extends BaseClass{
 	
@@ -89,12 +89,12 @@ public class TC40_VerifyMergeBreakOrderForDisputeTest extends BaseClass{
 		
 		if (aspp.getStatus().equals("Quotation done")) {
 			Thread.sleep(2000);
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			logger.info("Verification of Submit quotation Successed..");
 		} else {
 			captureScreen(driver, "Submit Quote Test");
 			logger.info("Verification of Submit quotation failed..");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 			Thread.sleep(4000);
 		}
 		
@@ -135,13 +135,13 @@ public class TC40_VerifyMergeBreakOrderForDisputeTest extends BaseClass{
 
 		if (driver.getPageSource().contains("Quotation accepted successfully.")) {
 			Thread.sleep(4000);
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			logger.info("Verification of accepting quotation is Successed.");
 		
 		} else {
 			captureScreen(driver, "Quotation Accepting");
 			logger.info("Verification of accepting quotation is Failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 		
 		ClientOrdersPage cp=new ClientOrdersPage(driver);
@@ -212,12 +212,12 @@ public class TC40_VerifyMergeBreakOrderForDisputeTest extends BaseClass{
 		logger.info("Dispute saved.");
 		
 		if(driver.getPageSource().contains("Dispute raised successfully")) {
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			logger.info("Verification of Dispute raised Successfully.");
 		}else {
 			captureScreen(driver, "disputeRaised");
 			logger.info("Verification of Dispute raised failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 		BaseClass.closeAllWinTabsExceptParent();
  	}
@@ -258,13 +258,13 @@ public class TC40_VerifyMergeBreakOrderForDisputeTest extends BaseClass{
 		
 		
 		if(driver.getPageSource().contains("Dispute accepted successfully")) {
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			Thread.sleep(3000);
 			logger.info("Verification of Dispute acceptance is successed.");
 		}else {
 			captureScreen(driver, "acceptDispute");
 			logger.info("Verification of Dispute acceptance is failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 		
 		driver.get(baseURL);
@@ -298,11 +298,11 @@ public class TC40_VerifyMergeBreakOrderForDisputeTest extends BaseClass{
 		logger.info("Verification of open Dispute History successfull.");
 		
 		if(cop.getDspHistoryStatusA().equals("Accepted")) {
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			logger.info("Verification of Dispute acceptance is successed.");
 		}else {
 			logger.info("Verification of Dispute acceptance is failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
  	}
  	
@@ -351,11 +351,11 @@ public class TC40_VerifyMergeBreakOrderForDisputeTest extends BaseClass{
 				
 		if(driver.getPageSource().contains("Requote - Bidding")) {
 			logger.info("Verification of Client side Requote is Successed.");
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 		}
 		else {
 			logger.info("Verification of client side Requote is failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 			Thread.sleep(2000);
 		}
 
@@ -407,20 +407,20 @@ public class TC40_VerifyMergeBreakOrderForDisputeTest extends BaseClass{
 
 		if(driver.getPageSource().contains("Quotation done")) {
 			logger.info("Verification of Requote from Agent side is Successed.");
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 		}else {
 			logger.info("Verification of Requote from Agent side is failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 		
 		if (aspp.getStatus().equals("Quotation done")) {
 			Thread.sleep(2000);
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			logger.info("Verification of Submit Requotation Successed..");
 		} else {
 			captureScreen(driver, "Submit Quote Test");
 			logger.info("Verification of Submit Requotation failed..");
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			Thread.sleep(4000);
 		}
 		 BaseClass.closeAllWinTabsExceptParent();
@@ -470,13 +470,13 @@ public class TC40_VerifyMergeBreakOrderForDisputeTest extends BaseClass{
 
 		if (driver.getPageSource().contains("Quotation accepted successfully.")) {
 			Thread.sleep(4000);
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			logger.info("Verification of accepting quotation is Successed.");
 		
 		} else {
 			captureScreen(driver, "Quotation Accepting");
 			logger.info("Verification of accepting quotation is Failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 		
 		ClientOrdersPage cp=new ClientOrdersPage(driver);

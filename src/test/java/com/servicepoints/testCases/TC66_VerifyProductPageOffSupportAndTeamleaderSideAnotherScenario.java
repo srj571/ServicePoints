@@ -1,5 +1,7 @@
 package com.servicepoints.testCases;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.io.IOException;
 import java.util.Iterator;
 import java.util.Set;
@@ -17,8 +19,6 @@ import com.servicepoints.PageObjects.SupportProductsPage;
 import com.servicepoints.PageObjects.TeamleaderOrdersPage;
 import com.servicepoints.PageObjects.TeamleaderProductsPage;
 import com.servicepoints.utilities.ReadConfig;
-
-import junit.framework.Assert;
 
 public class TC66_VerifyProductPageOffSupportAndTeamleaderSideAnotherScenario extends BaseClass{
 
@@ -81,12 +81,12 @@ public class TC66_VerifyProductPageOffSupportAndTeamleaderSideAnotherScenario ex
 
 		if (aspp.getStatus().equals("Quotation done")) {
 			Thread.sleep(2000);
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			logger.info("Verification of Submit quotation Successed..");
 		} else {
 			captureScreen(driver, "Submit Quote Test");
 			logger.info("Verification of Submit quotation failed..");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 			Thread.sleep(4000);
 		}
 
@@ -149,12 +149,12 @@ public class TC66_VerifyProductPageOffSupportAndTeamleaderSideAnotherScenario ex
 
 		if (driver.getPageSource().contains("Quotation accepted successfully.")) {
 			Thread.sleep(4000);
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			logger.info("Verification of accepting quotation is Successed.");
 
 		} else {
 			logger.info("Verification of accepting quotation is Failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 
 		TeamleaderOrdersPage sop = new TeamleaderOrdersPage(driver);
@@ -168,11 +168,11 @@ public class TC66_VerifyProductPageOffSupportAndTeamleaderSideAnotherScenario ex
 		logger.info("Status changed to Processing.");
 
 		if (sop.getOrderStatusFromSupportSide().equals("Processing")) {
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			logger.info("Verification of accepting quotation is Successed.");
 		} else {
 			logger.info("Verification of accepting quotation is Failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 		
 		BaseClass.closeAllWinTabsExceptParent();
@@ -223,11 +223,11 @@ public class TC66_VerifyProductPageOffSupportAndTeamleaderSideAnotherScenario ex
 				
 		if(driver.getPageSource().contains("Stop fullfilment")) {
 			logger.info("Verification of Stop fullfilment of Quotation is Successed.");
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			Thread.sleep(2000);
 		}else {
 			logger.info("Verification of Stop fullfillment of Quotation is Failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 				
 		ClientOrdersPage cp=new ClientOrdersPage(driver);
@@ -250,11 +250,11 @@ public class TC66_VerifyProductPageOffSupportAndTeamleaderSideAnotherScenario ex
 //		
 		if(cp.checkOrderStatusHold().equals("Hold")) {
 			logger.info("Verification of Order status to Hold is Successfull.");
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			Thread.sleep(2000);
 		}else {
 			logger.info("Verification of Order status to Hold is Failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 		BaseClass.closeAllWinTabsExceptParent();
 	}
@@ -304,11 +304,11 @@ public class TC66_VerifyProductPageOffSupportAndTeamleaderSideAnotherScenario ex
 		
 		if(spp.getOrderStatus().equals("Quotation accepted")) {
 			logger.info("Verification of Quotation accepted is Successfull.");
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			Thread.sleep(2000);
 		}else {
 			logger.info("Verification of Quotation accepted is Failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 		
 		
@@ -324,11 +324,11 @@ public class TC66_VerifyProductPageOffSupportAndTeamleaderSideAnotherScenario ex
 		
 		if(sop.getOrderStatusFromSupportSide().equals("Processing")) {
 			logger.info("Verification of Order status to Processing is Successfull.");
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			Thread.sleep(2000);
 		}else {
 			logger.info("Verification of Order status to Processing is Failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 		
 		BaseClass.closeAllWinTabsExceptParent();
@@ -375,10 +375,10 @@ public class TC66_VerifyProductPageOffSupportAndTeamleaderSideAnotherScenario ex
 
 		if (driver.getPageSource().contains("Requote - Bidding")) {
 			logger.info("Verification of Client side Requote is Successed.");
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 		} else {
 			logger.info("Verification of client side Requote is failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 			Thread.sleep(2000);
 		}
 
@@ -439,11 +439,11 @@ public class TC66_VerifyProductPageOffSupportAndTeamleaderSideAnotherScenario ex
 
 		if (asp.getStatus().equals("Quotation done")) {
 			Thread.sleep(2000);
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			logger.info("Verification of accepting quotation is Successed.");
 		} else {
 			logger.info("Verification of accepting quotation is Failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 
 		BaseClass.closeAllWinTabsExceptParent();
@@ -489,12 +489,12 @@ public class TC66_VerifyProductPageOffSupportAndTeamleaderSideAnotherScenario ex
 
 		if (driver.getPageSource().contains("Quotation accepted successfully.")) {
 			Thread.sleep(4000);
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			logger.info("Verification of accepting quotation is Successed.");
 
 		} else {
 			logger.info("Verification of accepting quotation is Failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 
 		SupportOrdersPage sop = new SupportOrdersPage(driver);
@@ -508,11 +508,11 @@ public class TC66_VerifyProductPageOffSupportAndTeamleaderSideAnotherScenario ex
 		logger.info("Status changed to Processing.");
 
 		if (sop.getOrderStatusFromSupportSide().equals("Processing")) {
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			logger.info("Verification of accepting quotation is Successed.");
 		} else {
 			logger.info("Verification of accepting quotation is Failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 
 		BaseClass.closeAllWinTabsExceptParent();

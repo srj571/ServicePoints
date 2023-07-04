@@ -1,5 +1,7 @@
 package com.servicepoints.testCases;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.io.IOException;
 import java.util.Iterator;
 import java.util.Set;
@@ -15,8 +17,6 @@ import com.servicepoints.PageObjects.ClientProductPage;
 import com.servicepoints.PageObjects.LoginPage;
 import com.servicepoints.PageObjects.TeamleaderDisputePage;
 import com.servicepoints.utilities.ReadConfig;
-
-import junit.framework.Assert;
 
 public class TC50_VerifyDeletedDisputeFromClientSupplierAndSupportSide extends BaseClass {
 
@@ -92,12 +92,12 @@ public class TC50_VerifyDeletedDisputeFromClientSupplierAndSupportSide extends B
 
 		if (aspp.getStatus().equals("Quotation done")) {
 			Thread.sleep(2000);
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			logger.info("Verification of Submit quotation Successed..");
 		} else {
 			captureScreen(driver, "Submit Quote Test");
 			logger.info("Verification of Submit quotation failed..");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 			Thread.sleep(4000);
 		}
 
@@ -143,13 +143,13 @@ public class TC50_VerifyDeletedDisputeFromClientSupplierAndSupportSide extends B
 
 		if (driver.getPageSource().contains("Quotation accepted successfully.")) {
 			Thread.sleep(4000);
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			logger.info("Verification of accepting quotation is Successed.");
 
 		} else {
 			captureScreen(driver, "Quotation Accepting");
 			logger.info("Verification of accepting quotation is Failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 		BaseClass.closeAllWinTabsExceptParent();
 	}
@@ -207,12 +207,12 @@ public class TC50_VerifyDeletedDisputeFromClientSupplierAndSupportSide extends B
 		logger.info("Clicked on Saved dispute.");
 
 		if (driver.getPageSource().contains("Dispute raised successfully")) {
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			logger.info("Verification of Dispute raised Successfully.");
 		} else {
 			captureScreen(driver, "disputeRaised");
 			logger.info("Verification of Dispute raised failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 	}
 
@@ -280,12 +280,12 @@ public class TC50_VerifyDeletedDisputeFromClientSupplierAndSupportSide extends B
 		Thread.sleep(3000);
 
 		if (driver.getPageSource().contains("Dispute request deleted successfully")) {
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			logger.info("Verification of Dispute deleted Successfully.");
 		} else {
 			captureScreen(driver, "delete dispute");
 			logger.info("Verification of Dispute deletion failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 	}
 
@@ -317,12 +317,12 @@ public class TC50_VerifyDeletedDisputeFromClientSupplierAndSupportSide extends B
 		Thread.sleep(2000);
 
 		if (driver.getPageSource().contains("No disputes found")) {
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			logger.info("Verification of deleted dispute from client side Successfully.");
 		} else {
 			captureScreen(driver, "delete dispute client");
 			logger.info("Verification of deleted dispute from client side failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 	}
 
@@ -344,12 +344,12 @@ public class TC50_VerifyDeletedDisputeFromClientSupplierAndSupportSide extends B
 		Thread.sleep(3000);
 
 		if (driver.getPageSource().contains("No disputes found")) {
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			logger.info("Verification of deleted dispute from supplier side Successfully.");
 		} else {
 			captureScreen(driver, "delete dispute supplier");
 			logger.info("Verification of deleted dispute from supplier side failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 	}
 
@@ -380,12 +380,12 @@ public class TC50_VerifyDeletedDisputeFromClientSupplierAndSupportSide extends B
 		logger.info("Product name searched.");
 
 		if (driver.getPageSource().contains("No disputes found")) {
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			logger.info("Verification of deleted dispute from support side Successfully.");
 		} else {
 			captureScreen(driver, "delete dispute support");
 			logger.info("Verification of deleted dispute from support side failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 	}
 }

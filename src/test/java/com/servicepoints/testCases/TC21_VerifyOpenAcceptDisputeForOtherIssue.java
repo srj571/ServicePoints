@@ -1,5 +1,7 @@
 package com.servicepoints.testCases;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.io.IOException;
 
 import org.testng.annotations.Test;
@@ -8,8 +10,6 @@ import com.servicepoints.PageObjects.AgentDisputesPage;
 import com.servicepoints.PageObjects.ClientOrdersPage;
 import com.servicepoints.PageObjects.LoginPage;
 import com.servicepoints.utilities.ReadConfig;
-
-import junit.framework.Assert;
 
 public class TC21_VerifyOpenAcceptDisputeForOtherIssue extends BaseClass{
 
@@ -68,12 +68,12 @@ public class TC21_VerifyOpenAcceptDisputeForOtherIssue extends BaseClass{
 		logger.info("Dispute saved.");
 		
 		if(driver.getPageSource().contains("Dispute raised successfully")) {
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			logger.info("Verification of Dispute raised Successfully.");
 		}else {
 			captureScreen(driver, "other dispute");
 			logger.info("Verification of Dispute raised failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 		
 		logger.info("Client logged out Successfully.");
@@ -114,12 +114,12 @@ public class TC21_VerifyOpenAcceptDisputeForOtherIssue extends BaseClass{
 		
 		
 		if(driver.getPageSource().contains("Dispute accepted successfully")) {
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			logger.info("Verification of Dispute acceptance is successed.");
 		}else {
 			captureScreen(driver, "acceptDispute");
 			logger.info("Verification of Dispute acceptance is failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 		
 		driver.get(baseURL);
@@ -146,11 +146,11 @@ public class TC21_VerifyOpenAcceptDisputeForOtherIssue extends BaseClass{
 		logger.info("Verification of open Dispute History successfull.");
 		
 		if(cop.getDspHistoryStatusA().equals("Accepted")) {
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			logger.info("Verification of Dispute acceptance is successed.");
 		}else {
 			logger.info("Verification of Dispute acceptance is failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 	}
 }

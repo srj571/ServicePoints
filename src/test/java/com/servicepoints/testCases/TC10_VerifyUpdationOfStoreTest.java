@@ -1,5 +1,7 @@
 package com.servicepoints.testCases;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.io.IOException;
 
 import org.testng.annotations.Test;
@@ -7,8 +9,6 @@ import org.testng.annotations.Test;
 import com.servicepoints.PageObjects.ClientStoresPage;
 import com.servicepoints.PageObjects.LoginPage;
 import com.servicepoints.utilities.ReadConfig;
-
-import junit.framework.Assert;
 
 public class TC10_VerifyUpdationOfStoreTest extends BaseClass{
 	
@@ -49,14 +49,14 @@ public class TC10_VerifyUpdationOfStoreTest extends BaseClass{
 		Thread.sleep(6000);
 		
 		if(driver.getPageSource().contains("Store details updated successfully.")) {
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			logger.info("Varification for Store updation is done.");
 			Thread.sleep(3000);
 		}
 		else {
 			captureScreen(driver, "VerifyUpdatingStore");
 			logger.info("Varification for Store updation is failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 			Thread.sleep(3000);
 		}	
 	}

@@ -1,5 +1,7 @@
 package com.servicepoints.testCases;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.awt.AWTException;
 import java.io.IOException;
 import java.util.Iterator;
@@ -16,8 +18,6 @@ import com.servicepoints.PageObjects.ClientProductPage;
 import com.servicepoints.PageObjects.LoginPage;
 import com.servicepoints.PageObjects.TeamleaderDisputePage;
 import com.servicepoints.utilities.ReadConfig;
-
-import junit.framework.Assert;
 
 public class TC53_VerifyRaiseDisputeAfterClientStopsFulfillment extends BaseClass{
 	
@@ -93,12 +93,12 @@ public class TC53_VerifyRaiseDisputeAfterClientStopsFulfillment extends BaseClas
 
 		if (aspp.getStatus().equals("Quotation done")) {
 			Thread.sleep(2000);
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			logger.info("Verification of Submit quotation Successed..");
 		} else {
 			captureScreen(driver, "Submit Quote Test");
 			logger.info("Verification of Submit quotation failed..");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 			Thread.sleep(4000);
 		}
 
@@ -144,13 +144,13 @@ public class TC53_VerifyRaiseDisputeAfterClientStopsFulfillment extends BaseClas
 
 		if (driver.getPageSource().contains("Quotation accepted successfully.")) {
 			Thread.sleep(4000);
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			logger.info("Verification of accepting quotation is Successed.");
 
 		} else {
 			captureScreen(driver, "Quotation Accepting");
 			logger.info("Verification of accepting quotation is Failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 		BaseClass.closeAllWinTabsExceptParent();
 	}
@@ -208,12 +208,12 @@ public class TC53_VerifyRaiseDisputeAfterClientStopsFulfillment extends BaseClas
 		logger.info("Clicked on Saved dispute.");
 
 		if (driver.getPageSource().contains("Dispute raised successfully")) {
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			logger.info("Verification of Dispute raised Successfully.");
 		} else {
 			captureScreen(driver, "disputeRaised");
 			logger.info("Verification of Dispute raised failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 	}
 	
@@ -271,12 +271,12 @@ public class TC53_VerifyRaiseDisputeAfterClientStopsFulfillment extends BaseClas
 				
 		if(driver.getPageSource().contains("Stop fullfilment")) {
 			logger.info("Verification of Stop fullfilment of Quotation is Successed.");
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			Thread.sleep(2000);
 		}else {
 			captureScreen(driver, "Stop fullfilling");
 			logger.info("Verification of Stop fullfillment of Quotation is Failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 				
 		ClientOrdersPage cp=new ClientOrdersPage(driver);
@@ -324,12 +324,12 @@ public class TC53_VerifyRaiseDisputeAfterClientStopsFulfillment extends BaseClas
 		
 		if(driver.getPageSource().contains("No disputes found")) {
 			logger.info("Verification of dispute from client side is Successed.");
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			Thread.sleep(2000);
 		}else {
 			captureScreen(driver, "Stop fullfilling and verify dsp");
 			logger.info("Verification of dispute from client side is Failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 	}
 	
@@ -370,11 +370,11 @@ public class TC53_VerifyRaiseDisputeAfterClientStopsFulfillment extends BaseClas
 		
 		if(asop.visibilityOfShowBtn()==true) {
 			logger.info("Verification of dispute from support side is Successed.");
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			Thread.sleep(2000);
 		}else {
 			logger.info("Verification of dispute from support side is Failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 		
 		asop.scrollTillShowDispute(driver);
@@ -485,12 +485,12 @@ public class TC53_VerifyRaiseDisputeAfterClientStopsFulfillment extends BaseClas
 		if(cl.checkEleIsDisabled()==false) {
 			Thread.sleep(2000);
 			logger.info("Verification of Start fullfilment of Quotation is Successed.");
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			Thread.sleep(2000);
 		}else {
 			captureScreen(driver, "Start fullfilling");
 			logger.info("Verification of Start fullfilment of Quotation is failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 		
 		cp.clickOnOrdersTab();

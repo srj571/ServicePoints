@@ -1,5 +1,7 @@
 package com.servicepoints.testCases;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.io.IOException;
 import java.util.Iterator;
 import java.util.Set;
@@ -11,8 +13,6 @@ import com.servicepoints.PageObjects.ClientOrdersPage;
 import com.servicepoints.PageObjects.ClientProductPage;
 import com.servicepoints.PageObjects.LoginPage;
 import com.servicepoints.utilities.ReadConfig;
-
-import junit.framework.Assert;
 
 public class TC16_VerifyUpdateDeleteQuotation extends BaseClass{
 	ReadConfig rc = new ReadConfig();
@@ -78,12 +78,12 @@ public class TC16_VerifyUpdateDeleteQuotation extends BaseClass{
 
 		if (aspp.getStatus().equals("Quotation done")) {
 			Thread.sleep(2000);
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			logger.info("Verification of Submit quotation Successed..");
 		} else {
 			captureScreen(driver, "Submit Quote Test");
 			logger.info("Verification of Submit quotation failed..");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 			Thread.sleep(4000);
 		}
 
@@ -102,12 +102,12 @@ public class TC16_VerifyUpdateDeleteQuotation extends BaseClass{
 		
 		if (aspp.verifyTextOnAlert()==true) {
 			Thread.sleep(2000);
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			logger.info("Verification of Quotation updation Successed..");
 		} else {
 			captureScreen(driver, "Submit Updated Quote Test");
 			logger.info("Verification of Quotation updation failed..");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 			Thread.sleep(4000);
 		}
 		
@@ -175,13 +175,13 @@ public class TC16_VerifyUpdateDeleteQuotation extends BaseClass{
 
 		if (aspp.checkSubmitQuotebtn() == true) {
 			Thread.sleep(4000);
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			logger.info("Verification of Quotation deletion Successed..");
 		} else {
 			captureScreen(driver, "Delete Quote Test");
 			Thread.sleep(2000);
 			logger.info("Verification of Quotation deletion failed..");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 		
 		driver.get(baseURL);

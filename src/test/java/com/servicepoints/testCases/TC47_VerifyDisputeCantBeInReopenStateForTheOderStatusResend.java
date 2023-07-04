@@ -1,5 +1,7 @@
 package com.servicepoints.testCases;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.io.IOException;
 import java.util.Iterator;
 import java.util.Set;
@@ -16,8 +18,6 @@ import com.servicepoints.PageObjects.ClientOrdersPage;
 import com.servicepoints.PageObjects.ClientProductPage;
 import com.servicepoints.PageObjects.LoginPage;
 import com.servicepoints.utilities.ReadConfig;
-
-import junit.framework.Assert;
 
 public class TC47_VerifyDisputeCantBeInReopenStateForTheOderStatusResend extends BaseClass {
 	ReadConfig rd = new ReadConfig();
@@ -91,12 +91,12 @@ public class TC47_VerifyDisputeCantBeInReopenStateForTheOderStatusResend extends
 
 		if (aspp.getStatus().equals("Quotation done")) {
 			Thread.sleep(2000);
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			logger.info("Verification of Submit quotation Successed..");
 		} else {
 			captureScreen(driver, "Submit Quote Test");
 			logger.info("Verification of Submit quotation failed..");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 			Thread.sleep(4000);
 		}
 
@@ -137,13 +137,13 @@ public class TC47_VerifyDisputeCantBeInReopenStateForTheOderStatusResend extends
 
 		if (driver.getPageSource().contains("Quotation accepted successfully.")) {
 			Thread.sleep(4000);
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			logger.info("Verification of accepting quotation is Successed.");
 
 		} else {
 			captureScreen(driver, "Quotation Accepting");
 			logger.info("Verification of accepting quotation is Failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 		BaseClass.closeAllWinTabsExceptParent();
 	}
@@ -216,10 +216,10 @@ public class TC47_VerifyDisputeCantBeInReopenStateForTheOderStatusResend extends
 
 		if (driver.getPageSource().contains("Tracking number successfully added")) {
 			logger.info("Verification of adding tracking number is Successfull.");
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			Thread.sleep(2000);
 		} else {
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 			logger.info("Verification of adding tracking number is failed.");
 		}
 	}
@@ -278,12 +278,12 @@ public class TC47_VerifyDisputeCantBeInReopenStateForTheOderStatusResend extends
 		logger.info("Dispute saved.");
 
 		if (driver.getPageSource().contains("Dispute raised successfully")) {
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			logger.info("Verification of Dispute raised Successfully.");
 		} else {
 			captureScreen(driver, "dispute Raised again");
 			logger.info("Verification of Dispute raised failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 
 		driver.get(baseURL);
@@ -319,12 +319,12 @@ public class TC47_VerifyDisputeCantBeInReopenStateForTheOderStatusResend extends
 		Thread.sleep(5000);
 
 		if (driver.getPageSource().contains("Dispute declined successfully")) {
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			logger.info("Verification of Dispute rejection is successed.");
 		} else {
 			captureScreen(driver, "acceptDispute");
 			logger.info("Verification of Dispute rejection is failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 	}
 
@@ -383,12 +383,12 @@ public class TC47_VerifyDisputeCantBeInReopenStateForTheOderStatusResend extends
 		logger.info("Dispute saved.");
 
 		if (driver.getPageSource().contains("Dispute raised successfully")) {
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			logger.info("Verification of Dispute raised Successfully.");
 		} else {
 			captureScreen(driver, "disputeRaised");
 			logger.info("Verification of Dispute raised failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 
 		driver.get(baseURL);
@@ -424,13 +424,13 @@ public class TC47_VerifyDisputeCantBeInReopenStateForTheOderStatusResend extends
 		Thread.sleep(5000);
 
 		if (driver.getPageSource().contains("Dispute accepted successfully")) {
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			Thread.sleep(3000);
 			logger.info("Verification of Dispute acceptance is successed.");
 		} else {
 			captureScreen(driver, "Dispute for resend");
 			logger.info("Verification of Dispute acceptance is failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 	}
 
@@ -457,13 +457,13 @@ public class TC47_VerifyDisputeCantBeInReopenStateForTheOderStatusResend extends
 		Thread.sleep(3000);
 
 		if (cop.verifyOpenDisputeButtonIsVisible() == true) {
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			Thread.sleep(3000);
 			logger.info("Verification of Dispute for Resend is not able to reopen once accepted is successed.");
 		} else {
 			captureScreen(driver, "Dispute for resend reopen.");
 			logger.info("Verification of Dispute acceptance is failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 
 		cop.clickOnOpenDspbtn();
@@ -486,12 +486,12 @@ public class TC47_VerifyDisputeCantBeInReopenStateForTheOderStatusResend extends
 		logger.info("Dispute saved.");
 
 		if (driver.getPageSource().contains("Dispute raised successfully")) {
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			logger.info("Verification of Refund Dispute raised Successfully.");
 		} else {
 			captureScreen(driver, "disputeRaised");
 			logger.info("Verification of Refund Dispute raised failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 
 		driver.get(baseURL);
@@ -527,13 +527,13 @@ public class TC47_VerifyDisputeCantBeInReopenStateForTheOderStatusResend extends
 		Thread.sleep(5000);
 
 		if (driver.getPageSource().contains("Dispute accepted successfully")) {
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			Thread.sleep(3000);
 			logger.info("Verification of Refund Dispute acceptance is successed.");
 		} else {
 			captureScreen(driver, "Dispute for resend");
 			logger.info("Verification of Refund Dispute acceptance is failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 	}
 
@@ -560,7 +560,7 @@ public class TC47_VerifyDisputeCantBeInReopenStateForTheOderStatusResend extends
 		Thread.sleep(3000);
 
 		if (cop.verifyOpenDisputeButtonIsVisible() == false) {
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			Thread.sleep(3000);
 			logger.info("Verification of not reopening of Dispute for refund is successed.");
 		} else {
@@ -575,13 +575,13 @@ public class TC47_VerifyDisputeCantBeInReopenStateForTheOderStatusResend extends
 			logger.info("Resend dispute option is selected.");
 
 			if (cop.verifyCheckBoxesDisabled() == true) {
-				Assert.assertTrue(true);
+				AssertJUnit.assertTrue(true);
 				Thread.sleep(3000);
 				logger.info("Verification of not reopening of Dispute for refund is successed.");
 			} else {
 				captureScreen(driver, "Dispute for refund reopen.");
 				logger.info("Verification of not reopening of Dispute for refund is failed.");
-				Assert.assertTrue(false);
+				AssertJUnit.assertTrue(false);
 			}
 		}
 	}

@@ -1,5 +1,7 @@
 package com.servicepoints.testCases;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.io.IOException;
 import java.util.Iterator;
 import java.util.Set;
@@ -14,8 +16,6 @@ import com.servicepoints.PageObjects.ClientOrdersPage;
 import com.servicepoints.PageObjects.ClientProductPage;
 import com.servicepoints.PageObjects.LoginPage;
 import com.servicepoints.utilities.ReadConfig;
-
-import junit.framework.Assert;
 
 public class TC43_VerifyAfterCloseDisputeNoConversationBetweenClientAndSupplier extends BaseClass {
 
@@ -80,12 +80,12 @@ public class TC43_VerifyAfterCloseDisputeNoConversationBetweenClientAndSupplier 
 
 		if (aspp.getStatus().equals("Quotation done")) {
 			Thread.sleep(2000);
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			logger.info("Verification of Submit quotation Successed..");
 		} else {
 			captureScreen(driver, "Submit Quote Test");
 			logger.info("Verification of Submit quotation failed..");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 			Thread.sleep(4000);
 		}
 
@@ -126,13 +126,13 @@ public class TC43_VerifyAfterCloseDisputeNoConversationBetweenClientAndSupplier 
 
 		if (driver.getPageSource().contains("Quotation accepted successfully.")) {
 			Thread.sleep(4000);
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			logger.info("Verification of accepting quotation is Successed.");
 
 		} else {
 			captureScreen(driver, "Quotation Accepting");
 			logger.info("Verification of accepting quotation is Failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 		BaseClass.closeAllWinTabsExceptParent();
 	}
@@ -192,12 +192,12 @@ public class TC43_VerifyAfterCloseDisputeNoConversationBetweenClientAndSupplier 
 		logger.info("Dispute saved.");
 
 		if (driver.getPageSource().contains("Dispute raised successfully")) {
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			logger.info("Verification of Dispute raised Successfully.");
 		} else {
 			captureScreen(driver, "disputeRaised");
 			logger.info("Verification of Dispute raised failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 		BaseClass.closeAllWinTabsExceptParent();
 	}
@@ -238,13 +238,13 @@ public class TC43_VerifyAfterCloseDisputeNoConversationBetweenClientAndSupplier 
 		Thread.sleep(5000);
 
 		if (driver.getPageSource().contains("Dispute accepted successfully")) {
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			Thread.sleep(3000);
 			logger.info("Verification of Dispute acceptance is successfull.");
 		} else {
 			captureScreen(driver, "acceptDispute");
 			logger.info("Verification of Dispute acceptance is failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 
 		asop.scrollTillApprovedDispute(driver);
@@ -298,13 +298,13 @@ public class TC43_VerifyAfterCloseDisputeNoConversationBetweenClientAndSupplier 
 		Thread.sleep(1000);
 
 		if (driver.getPageSource().contains("Notification sent successfully")) {
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			Thread.sleep(3000);
 			logger.info("Verification of Notify Support is successfull.");
 		} else {
 			captureScreen(driver, "Notify Support");
 			logger.info("Verification of Notify Support is failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 	}
 
@@ -329,13 +329,13 @@ public class TC43_VerifyAfterCloseDisputeNoConversationBetweenClientAndSupplier 
 		Thread.sleep(1000);
 
 		if (adp.visibilityOfShowBtn() == true) {
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			Thread.sleep(3000);
 			logger.info("Verification of Show dispute in Notification is successfull.");
 		} else {
 			captureScreen(driver, "Show dispute in notification");
 			logger.info("Verification of Show dispute in Notification is failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 
 		adp.clickOnShowDsp();

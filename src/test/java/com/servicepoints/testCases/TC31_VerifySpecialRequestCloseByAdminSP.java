@@ -1,5 +1,7 @@
 package com.servicepoints.testCases;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.io.IOException;
 import java.util.Iterator;
 import java.util.Set;
@@ -11,8 +13,6 @@ import com.servicepoints.PageObjects.AgentDisputesPage;
 import com.servicepoints.PageObjects.ClientOrdersPage;
 import com.servicepoints.PageObjects.LoginPage;
 import com.servicepoints.utilities.ReadConfig;
-
-import junit.framework.Assert;
 
 public class TC31_VerifySpecialRequestCloseByAdminSP extends BaseClass{
 
@@ -76,12 +76,12 @@ public class TC31_VerifySpecialRequestCloseByAdminSP extends BaseClass{
 		
 		Thread.sleep(6000);
 		if(driver.getPageSource().contains("Proof of shipment will be sent to you within 24 hours")) {
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			logger.info("Special Request is open by Client Successfully..");		
 		}
 		else {
 			captureScreen(driver, "Special Request");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 			logger.info("Special Request is failed to open by Client..");		
 		}
 		
@@ -146,10 +146,10 @@ public class TC31_VerifySpecialRequestCloseByAdminSP extends BaseClass{
 		Thread.sleep(4000);
 		
 		if(driver.getPageSource().contains("Thanks for the answer.")) {
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			logger.info("Verification of Close Special request by Admin supplier is successfull..");
 		}else {
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 			logger.info("Verification of Close Special request by Admin supplier is failed..");
 		}
 		
@@ -181,11 +181,11 @@ public class TC31_VerifySpecialRequestCloseByAdminSP extends BaseClass{
 		Thread.sleep(5000);
 		
 		if(driver.getPageSource().contains("Special request")) {
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			logger.info("Verification of Close Special request is successfull..");
 		}else {
 			logger.info("Verification of Close Special request is failed..");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 	}
 }

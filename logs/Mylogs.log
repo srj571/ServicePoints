@@ -6566,3 +6566,44 @@
 [INFO ] 2023-07-03 18:25:45.993 [main] BaseClass - Go to Orders page.
 [INFO ] 2023-07-03 18:25:52.163 [main] BaseClass - Status changed to Processing.
 [INFO ] 2023-07-03 18:25:52.197 [main] BaseClass - Verification of accepting quotation is Successed.
+[INFO ] 2023-07-03 18:50:39.430 [TestNG-test=Test-2] BaseClass - Application Opened.
+[INFO ] 2023-07-03 18:50:39.430 [TestNG-test=Test-1] BaseClass - Application Opened.
+[INFO ] 2023-07-03 18:50:40.964 [TestNG-test=Test-3] BaseClass - Email_id is entered.
+[INFO ] 2023-07-03 18:50:41.056 [TestNG-test=Test-4] BaseClass - Email_id is entered.
+[INFO ] 2023-07-03 18:50:41.130 [TestNG-test=Test-2] BaseClass - Email_id is entered.
+[INFO ] 2023-07-03 18:50:41.197 [TestNG-test=Test-1] BaseClass - Email_id is entered.
+[INFO ] 2023-07-03 18:50:41.259 [TestNG-test=Test-5] BaseClass - Email_id is entered.
+[INFO ] 2023-07-03 18:50:41.347 [TestNG-test=Test-3] BaseClass - Password is entered.
+[INFO ] 2023-07-03 18:50:41.380 [TestNG-test=Test-4] BaseClass - Password is entered.
+[INFO ] 2023-07-03 18:50:41.417 [TestNG-test=Test-5] BaseClass - Password is entered.
+[INFO ] 2023-07-03 18:50:42.282 [TestNG-test=Test-2] BaseClass - Password is entered.
+[INFO ] 2023-07-03 18:50:42.339 [TestNG-test=Test-1] BaseClass - Password is entered.
+[INFO ] 2023-07-03 18:51:27.031 [TestNG-test=Test-1] BaseClass - Application Opened.
+[INFO ] 2023-07-03 18:51:27.033 [TestNG-test=Test-2] BaseClass - Application Opened.
+[INFO ] 2023-07-03 18:51:28.504 [TestNG-test=Test-5] BaseClass - Email_id is entered.
+[INFO ] 2023-07-03 18:51:28.568 [TestNG-test=Test-4] BaseClass - Email_id is entered.
+[INFO ] 2023-07-03 18:51:28.646 [TestNG-test=Test-1] BaseClass - Email_id is entered.
+[INFO ] 2023-07-03 18:51:28.700 [TestNG-test=Test-2] BaseClass - Email_id is entered.
+[INFO ] 2023-07-03 18:51:28.754 [TestNG-test=Test-3] BaseClass - Email_id is entered.
+[INFO ] 2023-07-03 18:51:28.836 [TestNG-test=Test-5] BaseClass - Password is entered.
+[INFO ] 2023-07-03 18:51:28.868 [TestNG-test=Test-4] BaseClass - Password is entered.
+[INFO ] 2023-07-03 18:51:28.906 [TestNG-test=Test-3] BaseClass - Password is entered.
+[INFO ] 2023-07-03 18:51:29.789 [TestNG-test=Test-1] BaseClass - Password is entered.
+[INFO ] 2023-07-03 18:51:29.843 [TestNG-test=Test-2] BaseClass - Password is entered.
+[INFO ] 2023-07-03 18:52:13.348 [TestNG-test=Test-2] BaseClass - Application Opened.
+[INFO ] 2023-07-03 18:52:13.351 [TestNG-test=Test-1] BaseClass - Application Opened.
+[INFO ] 2023-07-03 18:52:14.491 [TestNG-test=Test-2] BaseClass - Email_id is entered.
+[INFO ] 2023-07-03 18:52:14.559 [TestNG-test=Test-1] BaseClass - Email_id is entered.
+[INFO ] 2023-07-03 18:52:15.603 [TestNG-test=Test-2] BaseClass - Password is entered.
+[INFO ] 2023-07-03 18:52:15.658 [TestNG-test=Test-1] BaseClass - Password is entered.
+[INFO ] 2023-07-03 18:52:35.052 [TestNG-test=Test-2] BaseClass - Email_id is entered.
+[INFO ] 2023-07-03 18:52:57.041 [TestNG-tests-1] BaseClass - Application Opened.
+[INFO ] 2023-07-03 18:52:58.144 [TestNG-tests-1] BaseClass - Email_id is entered.
+[INFO ] 2023-07-03 18:52:59.226 [TestNG-tests-1] BaseClass - Password is entered.
+[INFO ] 2023-07-03 18:53:17.511 [TestNG-tests-1] BaseClass - Application Opened.
+[INFO ] 2023-07-04 09:29:05.031 [TestNG-test=Test-1] BaseClass - Application Opened.
+[INFO ] 2023-07-04 09:29:05.033 [TestNG-test=Test-2] BaseClass - Application Opened.
+[INFO ] 2023-07-04 09:29:06.164 [TestNG-test=Test-1] BaseClass - Email_id is entered.
+[INFO ] 2023-07-04 09:29:06.238 [TestNG-test=Test-2] BaseClass - Email_id is entered.
+[INFO ] 2023-07-04 09:29:07.318 [TestNG-test=Test-1] BaseClass - Password is entered.
+[INFO ] 2023-07-04 09:29:07.370 [TestNG-test=Test-2] BaseClass - Password is entered.

@@ -1,5 +1,7 @@
 package com.servicepoints.testCases;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.io.IOException;
 import java.util.Iterator;
 import java.util.Set;
@@ -11,8 +13,6 @@ import com.servicepoints.PageObjects.AdminAccountsPage;
 import com.servicepoints.PageObjects.AgentSupProductsPage;
 import com.servicepoints.PageObjects.LoginPage;
 import com.servicepoints.utilities.ReadConfig;
-
-import junit.framework.Assert;
 
 public class TC14_VerifyExcludeFunctionTest extends BaseClass{
 	ReadConfig rd=new ReadConfig();
@@ -100,9 +100,9 @@ public class TC14_VerifyExcludeFunctionTest extends BaseClass{
 				if(driver.getPageSource().contains("No more product quotations.")) {
 					logger.info("Verification of Exclude Button failed.");
 					Thread.sleep(4000);
-					Assert.assertTrue(false);
+					AssertJUnit.assertTrue(false);
 				}else {
-					Assert.assertTrue(true);
+					AssertJUnit.assertTrue(true);
 					Thread.sleep(4000);
 					logger.info("Verification of exclude button is Successed.");
 				}
@@ -122,12 +122,12 @@ public class TC14_VerifyExcludeFunctionTest extends BaseClass{
 			
 			if(adminAccount.verifyExcludeBtn() == false) {
 				logger.info("Verification of Exclude Button Successed.");
-				Assert.assertTrue(true);				
+				AssertJUnit.assertTrue(true);				
 			}else {
 				captureScreen(driver, "verify exclude fun");
 				Thread.sleep(4000);
 				logger.info("Verification of Exclude button is failed.");
-				Assert.assertTrue(false);
+				AssertJUnit.assertTrue(false);
 			}
 		}
 		

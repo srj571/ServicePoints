@@ -1,5 +1,7 @@
 package com.servicepoints.testCases;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.io.IOException;
 
 import org.testng.annotations.Test;
@@ -7,8 +9,6 @@ import org.testng.annotations.Test;
 import com.servicepoints.PageObjects.ClientStoresPage;
 import com.servicepoints.PageObjects.LoginPage;
 import com.servicepoints.utilities.ReadConfig;
-
-import junit.framework.Assert;
 
 public class TC11_VerifyDeletionOfStoreTest extends BaseClass{
 	
@@ -38,12 +38,12 @@ public class TC11_VerifyDeletionOfStoreTest extends BaseClass{
 		sp.clickOnDelePop();
 		Thread.sleep(5000);
 		if(driver.getPageSource().contains("Store deleted successfully.")) {
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			logger.info("Varification for Store deletion is done.");
 			Thread.sleep(2000);
 		}else {
 			captureScreen(driver, "StoreDeleteTest");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 			logger.info("Varification for Store deletion is failed.");
 			Thread.sleep(2000);
 		}

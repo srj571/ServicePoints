@@ -1,6 +1,8 @@
 package com.servicepoints.testCases;
 
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.io.IOException;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
@@ -193,13 +195,13 @@ public class TC17_VerifyAddNewVariant extends BaseClass{
 		
 		
 		if(driver.getPageSource().contains("Processing")){
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			logger.info("Verification of accept quotation after Adding new varient is successfull. ");
 			
 		}else{
 			captureScreen(driver, "verify add new varient");
 			logger.info("Verification of accept quotation after Adding new varient is failed. ");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 	}
 }

@@ -1,5 +1,7 @@
 package com.servicepoints.testCases;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.io.IOException;
 
 import org.testng.annotations.Test;
@@ -8,8 +10,6 @@ import com.servicepoints.PageObjects.AgentDisputesPage;
 import com.servicepoints.PageObjects.ClientOrdersPage;
 import com.servicepoints.PageObjects.LoginPage;
 import com.servicepoints.utilities.ReadConfig;
-
-import junit.framework.Assert;
 
 
 public class TC25_VerifyDisputeForConversation extends BaseClass{
@@ -88,12 +88,12 @@ public class TC25_VerifyDisputeForConversation extends BaseClass{
 		logger.info("Dispute saved.");
 		
 		if(driver.getPageSource().contains("Dispute raised successfully")) {
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			logger.info("Verification of Dispute raised Successfully.");
 		}else {
 			captureScreen(driver, "other dispute");
 			logger.info("Verification of Dispute raised failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 		
 		logger.info("Client logged out Successfully.");
@@ -128,12 +128,12 @@ public class TC25_VerifyDisputeForConversation extends BaseClass{
 		Thread.sleep(6000);
 		
 		if(driver.getPageSource().contains("Message send successfully")) {
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			logger.info("Verification of Dispute conversation is successed.");
 		}else {
 			captureScreen(driver, "acceptDispute");
 			logger.info("Verification of Dispute conversation is failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 		
 		
@@ -182,12 +182,12 @@ public class TC25_VerifyDisputeForConversation extends BaseClass{
 		
 		
 		if(driver.getPageSource().contains("Dispute history")) {
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			logger.info("Verification of Dispute history opening is successfull.");
 		}else {
 			captureScreen(driver, "acceptDispute");
 			logger.info("Verification of Dispute history opening is failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 		
 	}

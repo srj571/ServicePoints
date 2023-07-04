@@ -1,5 +1,7 @@
 package com.servicepoints.testCases;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.awt.AWTException;
 import java.io.IOException;
 import java.util.Set;
@@ -78,12 +80,12 @@ public class TC37_VerifyStopFulfillmentAndStartFulfillmentTest extends BaseClass
 				
 		if(driver.getPageSource().contains("Stop fullfilment")) {
 			logger.info("Verification of Stop fullfilment of Quotation is Successed.");
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			Thread.sleep(2000);
 		}else {
 			captureScreen(driver, "Stop fullfilling");
 			logger.info("Verification of Stop fullfillment of Quotation is Failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 				
 		ClientOrdersPage cp=new ClientOrdersPage(driver);
@@ -125,11 +127,11 @@ public class TC37_VerifyStopFulfillmentAndStartFulfillmentTest extends BaseClass
 				
 		if(driver.getPageSource().contains("No more product quotations")) {
 			logger.info("Verification of visiblity of product after Stop fullifilling in Quotations Client tab in Agent side is Successfull.");
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			Thread.sleep(2000);
 		}else {
 			logger.info("Verification of visiblity of product after Stop fullifilling in Products tab in Agent side is failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 			Thread.sleep(2000);
 		}
 				
@@ -138,11 +140,11 @@ public class TC37_VerifyStopFulfillmentAndStartFulfillmentTest extends BaseClass
 				
 		if(driver.getPageSource().contains("No more product quotations")) {
 			logger.info("Verification of visiblity of product after Stop fullifilling in Products tab in Agent side is Successfull.");
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			Thread.sleep(2000);
 		}else {
 			logger.info("Verification of visiblity of product after Stop fullifilling in Products tab in Agent side is failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 			Thread.sleep(2000);
 		}
 				
@@ -188,12 +190,12 @@ public class TC37_VerifyStopFulfillmentAndStartFulfillmentTest extends BaseClass
 		if(cl.checkEleIsDisabled()==false) {
 			Thread.sleep(2000);
 			logger.info("Verification of Start fullfilment of Quotation is Successed.");
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			Thread.sleep(2000);
 		}else {
 			captureScreen(driver, "Start fullfilling");
 			logger.info("Verification of Start fullfilment of Quotation is failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 		
 		cp.clickOnOrdersTab();

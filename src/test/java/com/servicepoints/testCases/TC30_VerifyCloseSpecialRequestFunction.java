@@ -1,13 +1,13 @@
 package com.servicepoints.testCases;
 
 import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
 
 import com.servicepoints.PageObjects.AgentDisputesPage;
 import com.servicepoints.PageObjects.ClientOrdersPage;
 import com.servicepoints.PageObjects.LoginPage;
 import com.servicepoints.utilities.ReadConfig;
-
-import junit.framework.Assert;
 
 public class TC30_VerifyCloseSpecialRequestFunction extends BaseClass{
 	
@@ -60,11 +60,11 @@ public class TC30_VerifyCloseSpecialRequestFunction extends BaseClass{
 		Thread.sleep(4000);
 		
 		if(driver.getPageSource().contains("Thanks for the answer.")) {
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			logger.info("Verification of Close Special request is successfull..");
 		}else {
 			logger.info("Verification of Close Special request is failed..");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 		
 		driver.get(baseURL);
@@ -95,11 +95,11 @@ public class TC30_VerifyCloseSpecialRequestFunction extends BaseClass{
 		Thread.sleep(2000);
 		
 		if(driver.getPageSource().contains("Special request")) {
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			logger.info("Verification of Close Special request is successfull..");
 		}else {
 			logger.info("Verification of Close Special request is failed..");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 	}
 }

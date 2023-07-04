@@ -1,5 +1,7 @@
 package com.servicepoints.testCases;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.io.IOException;
 
 import org.testng.Assert;
@@ -65,7 +67,7 @@ public class TC04_VerifyAddAgentSupBySupplier extends BaseClass {
 		
 		if(driver.getPageSource().contains("Agent with the same email address already exists. Please use different email address.")) {
 			logger.info("Agent with the same email address already exists.");
-			Assert.assertTrue(false);			
+			AssertJUnit.assertTrue(false);			
 		}
 			
 		asp.closePopup();
@@ -85,12 +87,12 @@ public class TC04_VerifyAddAgentSupBySupplier extends BaseClass {
 
 		if (driver.getTitle().contains("Agent Supplier Dashboard | Service Points")) {
 			logger.info("Verification of Agent Supplier Login is Successfull.");
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			Thread.sleep(1000);
 		} else {
 			captureScreen(driver, "AddAgent");
 			logger.info("Verification of Agent Supplier Login is Failed.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 	}
 

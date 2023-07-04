@@ -1,5 +1,7 @@
 package com.servicepoints.testCases;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.io.IOException;
 
 import org.testng.Assert;
@@ -61,12 +63,12 @@ public class TC06_UserSignUpTest extends BaseClass{
 		
 		if(driver.getPageSource().contains("Congratulations! You have successfully signed up for Service Points.")) {
 			logger.info("User is Successfully Signed up.");
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			Thread.sleep(4000);
 		}else {
 			captureScreen(driver, "UserSignUp");
 			logger.info("User is Failed to Signed up.");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 			
 	}

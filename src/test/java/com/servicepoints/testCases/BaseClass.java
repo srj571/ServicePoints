@@ -1,5 +1,6 @@
 package com.servicepoints.testCases;
 
+import org.testng.annotations.AfterMethod;
 import java.io.File;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
@@ -97,6 +98,7 @@ public class BaseClass {
 		driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
 	}
 
+	@AfterMethod
 	@AfterClass
 	public void tearDown() {
 		driver.quit();

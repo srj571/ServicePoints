@@ -1,5 +1,7 @@
 package com.servicepoints.testCases;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.io.IOException;
 
 import org.testng.annotations.Test;
@@ -7,8 +9,6 @@ import org.testng.annotations.Test;
 import com.servicepoints.PageObjects.ClientOrdersPage;
 import com.servicepoints.PageObjects.LoginPage;
 import com.servicepoints.utilities.ReadConfig;
-
-import junit.framework.Assert;
 
 public class TC29_VerifySpecialRequestFunction extends BaseClass{
 
@@ -57,12 +57,12 @@ public class TC29_VerifySpecialRequestFunction extends BaseClass{
 		
 		Thread.sleep(6000);
 		if(driver.getPageSource().contains("Proof of shipment will be sent to you within 24 hours")) {
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 			logger.info("Special Request is opend by Client Successfully..");		
 		}
 		else {
 			captureScreen(driver, "Special Request");
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 			logger.info("Special Request is failed to opend by Client..");		
 		}
 	}
