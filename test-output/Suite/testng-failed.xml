@@ -9,7 +9,6 @@
     <classes>
       <class name="com.servicepoints.testCases.TC67_VerifySimpleSpecialRequestFunctionalityBySupportAndTeamleader">
         <methods>
-          <include name="verifyCloseSpecialRequestFromTeamleaderSide"/>
           <include name="verifySupplierSubmittedTheSpRequestFromSupport"/>
           <include name="setup"/>
           <include name="tearDown"/>
