@@ -6607,3 +6607,46 @@
 [INFO ] 2023-07-04 09:29:06.238 [TestNG-test=Test-2] BaseClass - Email_id is entered.
 [INFO ] 2023-07-04 09:29:07.318 [TestNG-test=Test-1] BaseClass - Password is entered.
 [INFO ] 2023-07-04 09:29:07.370 [TestNG-test=Test-2] BaseClass - Password is entered.
+[INFO ] 2023-07-04 12:40:28.968 [main] BaseClass - Application Opened.
+[INFO ] 2023-07-04 12:40:30.062 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-07-04 12:40:31.225 [main] BaseClass - Password is entered.
+[INFO ] 2023-07-04 12:40:44.665 [main] BaseClass - Product name entered.
+[INFO ] 2023-07-04 12:40:49.166 [main] BaseClass - Price entered
+[INFO ] 2023-07-04 12:41:03.444 [main] BaseClass - Verification of Submit quotation Successed..
+[INFO ] 2023-07-04 12:41:05.658 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-07-04 12:41:05.760 [main] BaseClass - Password is entered.
+[INFO ] 2023-07-04 12:41:39.481 [main] BaseClass - Verification of accepting quotation is Successed.
+[INFO ] 2023-07-04 12:41:40.537 [main] BaseClass - Go to Orders page.
+[INFO ] 2023-07-04 12:41:48.872 [main] BaseClass - Status changed to Processing.
+[INFO ] 2023-07-04 12:41:48.911 [main] BaseClass - Verification of accepting quotation is Successed.
+[INFO ] 2023-07-04 12:43:29.738 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-07-04 12:43:29.821 [main] BaseClass - Password is entered.
+[INFO ] 2023-07-04 12:43:42.160 [main] BaseClass - Teamleader login successfully.
+[INFO ] 2023-07-04 12:43:50.813 [main] BaseClass - Product name searched.
+[INFO ] 2023-07-04 12:43:56.174 [main] BaseClass - Order status filtered.
+[INFO ] 2023-07-04 12:44:01.458 [main] BaseClass - Client name filtered.
+[INFO ] 2023-07-04 12:44:08.079 [main] BaseClass - I need a sizing chart message verified successfully.
+[INFO ] 2023-07-04 12:44:10.254 [main] BaseClass - Open special request status verified successfully.
+[INFO ] 2023-07-04 12:45:19.880 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-07-04 12:45:19.976 [main] BaseClass - Password is entered.
+[INFO ] 2023-07-04 12:45:32.312 [main] BaseClass - Teamleader login successfully.
+[INFO ] 2023-07-04 12:45:40.954 [main] BaseClass - Product name searched.
+[INFO ] 2023-07-04 12:45:46.251 [main] BaseClass - Order status filtered.
+[INFO ] 2023-07-04 12:45:51.519 [main] BaseClass - Client name filtered.
+[INFO ] 2023-07-04 12:45:58.117 [main] BaseClass - I need a sizing chart message verified successfully.
+[INFO ] 2023-07-04 12:46:00.286 [main] BaseClass - Open special request status verified successfully.
+[INFO ] 2023-07-04 12:47:46.520 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-07-04 12:47:46.604 [main] BaseClass - Password is entered.
+[INFO ] 2023-07-04 12:47:58.960 [main] BaseClass - Teamleader login successfully.
+[INFO ] 2023-07-04 12:48:07.502 [main] BaseClass - Product name searched.
+[INFO ] 2023-07-04 12:48:12.907 [main] BaseClass - Order status filtered.
+[INFO ] 2023-07-04 12:48:18.240 [main] BaseClass - Client name filtered.
+[INFO ] 2023-07-04 12:48:24.853 [main] BaseClass - I need a sizing chart message verified successfully.
+[INFO ] 2023-07-04 12:48:26.986 [main] BaseClass - Open special request status verified successfully.
+[INFO ] 2023-07-04 12:50:06.116 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-07-04 12:50:06.204 [main] BaseClass - Password is entered.
+[INFO ] 2023-07-04 12:50:18.292 [main] BaseClass - Product name entered.
+[INFO ] 2023-07-04 12:50:29.871 [main] BaseClass - Message sent successfully for the special request.
+[INFO ] 2023-07-04 12:52:27.820 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-07-04 12:52:27.908 [main] BaseClass - Password is entered.
+[INFO ] 2023-07-04 12:52:40.216 [main] BaseClass - Teamleader login successfully.
