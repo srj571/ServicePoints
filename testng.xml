@@ -351,7 +351,7 @@
 		  <methods>
 			  <include name="setup"></include>
 			  <include name="submitAndAcceptQuotation"></include>
-			  <include name="submitSpecialRequestBySupport"></include>
+			  <include name="submitSpecialRequestByTeamleader"></include>
 			  <include name="verifySupplierSubmittedTheSpRequest"></include>
 			  <include name="verifyCloseSpecialRequestFromTeamleaderSide"></include>
 			  <include name="verifySumbmittingSpRequestFromSupport"></include>

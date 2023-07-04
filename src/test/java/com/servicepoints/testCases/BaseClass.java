@@ -98,7 +98,6 @@ public class BaseClass {
 		driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
 	}
 
-	@AfterMethod
 	@AfterClass
 	public void tearDown() {
 		driver.quit();

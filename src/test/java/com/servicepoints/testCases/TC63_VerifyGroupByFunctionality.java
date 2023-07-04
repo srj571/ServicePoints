@@ -1,7 +1,7 @@
 package com.servicepoints.testCases;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
 import java.awt.AWTException;
 import java.io.IOException;
 import java.util.Iterator;
@@ -87,12 +87,12 @@ public class TC63_VerifyGroupByFunctionality extends BaseClass {
 
 		if (aspp.getStatus().equals("Quotation done")) {
 			Thread.sleep(2000);
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			logger.info("Verification of Submit quotation Successed..");
 		} else {
 			captureScreen(driver, "Submit Quote Test");
 			logger.info("Verification of Submit quotation failed..");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 			Thread.sleep(4000);
 		}
 
@@ -138,13 +138,13 @@ public class TC63_VerifyGroupByFunctionality extends BaseClass {
 
 		if (driver.getPageSource().contains("Quotation accepted successfully.")) {
 			Thread.sleep(4000);
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			logger.info("Verification of accepting quotation is Successed.");
 
 		} else {
 			captureScreen(driver, "Quotation Accepting");
 			logger.info("Verification of accepting quotation is Failed.");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 		}
 		BaseClass.closeAllWinTabsExceptParent();
 	}
@@ -193,10 +193,10 @@ public class TC63_VerifyGroupByFunctionality extends BaseClass {
 
 		if (driver.getPageSource().contains("Requote - Bidding")) {
 			logger.info("Verification of Client side Requote is Successed.");
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 		} else {
 			logger.info("Verification of client side Requote is failed.");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 			Thread.sleep(2000);
 		}
 
@@ -250,20 +250,20 @@ public class TC63_VerifyGroupByFunctionality extends BaseClass {
 
 		if (driver.getPageSource().contains("Quotation done")) {
 			logger.info("Verification of Requote from Agent side is Successed.");
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 		} else {
 			logger.info("Verification of Requote from Agent side is failed.");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 		}
 
 		if (aspp.getStatus().equals("Quotation done")) {
 			Thread.sleep(2000);
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			logger.info("Verification of Submit Requotation Successed..");
 		} else {
 			captureScreen(driver, "Submit Quote Test");
 			logger.info("Verification of Submit Requotation failed..");
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			Thread.sleep(4000);
 		}
 
@@ -310,13 +310,13 @@ public class TC63_VerifyGroupByFunctionality extends BaseClass {
 
 		if (driver.getPageSource().contains("Quotation accepted successfully.")) {
 			Thread.sleep(4000);
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			logger.info("Verification of accepting quotation is Successed.");
 
 		} else {
 			captureScreen(driver, "Quotation Accepting");
 			logger.info("Verification of accepting quotation is Failed.");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 		}
 
 		ClientOrdersPage cp = new ClientOrdersPage(driver);
@@ -378,10 +378,10 @@ public class TC63_VerifyGroupByFunctionality extends BaseClass {
 
 		if (driver.getPageSource().contains("Requote - Bidding")) {
 			logger.info("Verification of Client side Requote is Successed.");
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 		} else {
 			logger.info("Verification of client side Requote is failed.");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 			Thread.sleep(2000);
 		}
 
@@ -435,20 +435,20 @@ public class TC63_VerifyGroupByFunctionality extends BaseClass {
 
 		if (driver.getPageSource().contains("Quotation done")) {
 			logger.info("Verification of Requote from Agent side is Successed.");
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 		} else {
 			logger.info("Verification of Requote from Agent side is failed.");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 		}
 
 		if (aspp.getStatus().equals("Quotation done")) {
 			Thread.sleep(2000);
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			logger.info("Verification of Submit Requotation Successed..");
 		} else {
 			captureScreen(driver, "Submit Quote Test");
 			logger.info("Verification of Submit Requotation failed..");
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			Thread.sleep(4000);
 		}
 
@@ -499,13 +499,13 @@ public class TC63_VerifyGroupByFunctionality extends BaseClass {
 
 		if (driver.getPageSource().contains("Quotation accepted successfully.")) {
 			Thread.sleep(4000);
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			logger.info("Verification of accepting quotation is Successed.");
 
 		} else {
 			captureScreen(driver, "Quotation Accepting");
 			logger.info("Verification of accepting quotation is Failed.");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 		}
 
 		ClientOrdersPage cp = new ClientOrdersPage(driver);
@@ -565,18 +565,18 @@ public class TC63_VerifyGroupByFunctionality extends BaseClass {
 		String actError = cl.getErrorTextAfterReqouteTwoTimes();
 		String expError = "You can not requote more than 2 times. Please contact your account manager for further assistance.";
 
-		AssertJUnit.assertEquals(expError, actError);
+		Assert.assertEquals(expError, actError);
 
 		cl.clickOnCloseBtnOnErrorMsg();
 		Thread.sleep(3000);
 
 		if (cl.getStatus().equals("Quotation accepted")) {
 			Thread.sleep(2000);
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			logger.info("Verification of accepting quotation is Successed.");
 		} else {
 			logger.info("Verification of accepting quotation is Failed.");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 		}
 
 		cl.clickOnSpecialRequestDrop();
@@ -596,7 +596,7 @@ public class TC63_VerifyGroupByFunctionality extends BaseClass {
 		actError = cl.getErrorTextAfterReqouteTwoTimes();
 		expError = "You can not requote more than 2 times. Please contact your account manager for further assistance.";
 
-		AssertJUnit.assertEquals(expError, actError);
+		Assert.assertEquals(expError, actError);
 
 		cl.clickOnCloseBtnOnErrorMsg();
 		Thread.sleep(2000);

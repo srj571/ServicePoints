@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.Iterator;
 import java.util.Set;
 
-import org.testng.AssertJUnit;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.servicepoints.PageObjects.AdminAccountsPage;
@@ -16,7 +16,6 @@ import com.servicepoints.PageObjects.TeamleaderOrdersPage;
 import com.servicepoints.PageObjects.TeamleaderProductsPage;
 import com.servicepoints.utilities.ReadConfig;
 
-import junit.framework.Assert;
 
 public class TC67_VerifySimpleSpecialRequestFunctionalityBySupportAndTeamleader extends BaseClass{
 
@@ -83,12 +82,12 @@ public class TC67_VerifySimpleSpecialRequestFunctionalityBySupportAndTeamleader 
 
 		if (aspp.getStatus().equals("Quotation done")) {
 			Thread.sleep(2000);
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			logger.info("Verification of Submit quotation Successed..");
 		} else {
 			captureScreen(driver, "Submit Quote Test");
 			logger.info("Verification of Submit quotation failed..");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 			Thread.sleep(4000);
 		}
 
@@ -151,12 +150,12 @@ public class TC67_VerifySimpleSpecialRequestFunctionalityBySupportAndTeamleader 
 
 		if (driver.getPageSource().contains("Quotation accepted successfully.")) {
 			Thread.sleep(4000);
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			logger.info("Verification of accepting quotation is Successed.");
 
 		} else {
 			logger.info("Verification of accepting quotation is Failed.");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 		}
 
 		TeamleaderOrdersPage sop = new TeamleaderOrdersPage(driver);
@@ -170,11 +169,11 @@ public class TC67_VerifySimpleSpecialRequestFunctionalityBySupportAndTeamleader 
 		logger.info("Status changed to Processing.");
 
 		if (sop.getOrderStatusFromSupportSide().equals("Processing")) {
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			logger.info("Verification of accepting quotation is Successed.");
 		} else {
 			logger.info("Verification of accepting quotation is Failed.");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 		}
 		
 		BaseClass.closeAllWinTabsExceptParent();
@@ -182,8 +181,7 @@ public class TC67_VerifySimpleSpecialRequestFunctionalityBySupportAndTeamleader 
 	
 	
 	@Test(priority = 2, enabled = false)
-	public void submitSpecialRequestBySupport() throws InterruptedException {
-		driver.get(baseURL);
+	public void submitSpecialRequestByTeamleader() throws InterruptedException {
 		
 		LoginPage lp=new LoginPage(driver);
 		
@@ -269,7 +267,7 @@ public class TC67_VerifySimpleSpecialRequestFunctionalityBySupportAndTeamleader 
 	
 	@Test(priority = 3,enabled = false)
 	public void verifySupplierSubmittedTheSpRequest() throws InterruptedException {
-		driver.get(baseURL);
+		
 		LoginPage lp = new LoginPage(driver);
 
 		lp.setAdminMailId(supplierMailPP);
@@ -315,9 +313,9 @@ public class TC67_VerifySimpleSpecialRequestFunctionalityBySupportAndTeamleader 
 		
 	}
 	
-	@Test(priority = 4, enabled = true)
+	@Test(priority = 4, enabled = false)
 	public void verifyCloseSpecialRequestFromTeamleaderSide() throws InterruptedException {
-		
+		driver.get(baseURL);
 		LoginPage lp=new LoginPage(driver);
 		
 		lp.setAdminMailId(AdminMailID);
@@ -389,7 +387,7 @@ public class TC67_VerifySimpleSpecialRequestFunctionalityBySupportAndTeamleader 
 	
 	@Test(priority = 5, enabled = true)
 	public void verifySumbmittingSpRequestFromSupport() throws InterruptedException {
-		
+		driver.get(baseURL);
 		LoginPage lp = new LoginPage(driver);
 		
 		lp.setAdminMailId(supportMailPP);
@@ -406,6 +404,9 @@ public class TC67_VerifySimpleSpecialRequestFunctionalityBySupportAndTeamleader 
 		
 		cl.searchProducts(product67);
 		Thread.sleep(4000);
+		
+		cl.clickOnFDiv();
+		Thread.sleep(1000);
 
 		String parentWindow = driver.getWindowHandle();
 		Set<String> window = driver.getWindowHandles();
@@ -467,12 +468,12 @@ public class TC67_VerifySimpleSpecialRequestFunctionalityBySupportAndTeamleader 
 		asp.clickOnfdiv();
 		Thread.sleep(4000);
 
-		String parentWindow1 = driver.getWindowHandle();
-		Set<String> window1 = driver.getWindowHandles();
-		Iterator<String> it1 = window1.iterator();
-		String parent1 = it1.next();
-		String child1 = it1.next();
-		driver.switchTo().window(child1);
+		String parentWindow = driver.getWindowHandle();
+		Set<String> window = driver.getWindowHandles();
+		Iterator<String> it = window.iterator();
+		String parent = it.next();
+		String child = it.next();
+		driver.switchTo().window(child);
 		Thread.sleep(4000);
 		
 		asp.clickOnCheckBoxForSpecialRequest();
@@ -487,4 +488,7 @@ public class TC67_VerifySimpleSpecialRequestFunctionalityBySupportAndTeamleader 
 		BaseClass.closeAllWinTabsExceptParent();
 		
 	}
+	
+	
+	
 }
