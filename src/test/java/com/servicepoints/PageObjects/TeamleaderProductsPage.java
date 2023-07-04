@@ -53,4 +53,84 @@ public class TeamleaderProductsPage {
 		JavascriptExecutor jse=(JavascriptExecutor) driver;
 		jse.executeScript("arguments[0],scrollIntoView;", acceptQuoteBtn);
 	}
+	
+	@FindBy(xpath="(//span[contains(@role,'presentation')])[1]")
+	WebElement productStatusDrop;
+	
+	@FindBy(xpath="(//span[@title='All clients'])[1]")
+	WebElement allClientDrop;
+	
+	@FindBy(xpath="(//input[@role='searchbox'])[1]")
+	WebElement searchField;
+	
+	@FindBy(xpath="(//li[@role='option'])[1]")
+	WebElement firstTab;
+	
+	public void handleOrderStatusDropdown(String status) throws InterruptedException {
+		productStatusDrop.click();
+		Thread.sleep(1000);
+		
+		searchField.sendKeys(status);
+		Thread.sleep(1000);
+		
+		firstTab.click();
+		Thread.sleep(2000);
+	}
+	
+	public void handleClientNameDropdown(String name) throws InterruptedException {
+		allClientDrop.click();
+		Thread.sleep(1000);
+		
+		searchField.sendKeys(name);
+		Thread.sleep(1000);
+		
+		firstTab.click();
+		Thread.sleep(2000);
+	}
+	
+	@FindBy(xpath="(//a[normalize-space()='Special request'])[1]")
+	WebElement specialRequstDropdown;
+	
+	public void clickOnSpecialrequestDrop() {
+		specialRequstDropdown.click();
+	}
+	
+	@FindBy(xpath="(//a[normalize-space()='I need a sizing chart'])[1]")
+	WebElement needSizingChartSp;
+	
+	public void clickOnNeedSizingChartSp() {
+		needSizingChartSp.click();
+	}
+	
+	@FindBy(xpath="(//p[@class='special_request_messgae'])[1]")
+	WebElement iNeedSizeChartMessage;
+	
+	public String getMesssageOfINeedSizeChart() {
+		String val=iNeedSizeChartMessage.getText();
+		return val;
+	}
+	
+	@FindBy(xpath="(//button[@type='button'][normalize-space()='Submit'])[1]")
+	WebElement submitBtn;
+	
+	public void clickOnSubmitBtn() {
+		submitBtn.click();
+	}
+	
+	@FindBy(xpath="(//span[@class='badge-mod badge-warning'])[1]")
+	WebElement openSpStatus;
+	
+	public String getOpenSPStatus() {
+		String val=openSpStatus.getText();
+		return val;
+	}
+	
+	@FindBy(xpath="(//span[normalize-space()='Closed special request'])[1]")
+	WebElement closedSpecialRequestTag;
+	
+	
+	public String getClosedSpRequestTag() {
+		String val=closedSpecialRequestTag.getText();
+		return val;
+	}
 }

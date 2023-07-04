@@ -1108,6 +1108,25 @@ public class ReadConfig {
 		return pro66;
 	}
 	
+	public String getOrderStatus() {
+		String status=po.getProperty("orderStatusPP");
+		return status;
+	}
+	
+	public String getclientNameForPP() {
+		String name=po.getProperty("clientNamePP");
+		return name;
+	}
+	
+	public String getMessageBySupplier() {
+		String status=po.getProperty("MessageBySupplier");
+		return status;
+	}
+	
+	public String getProductForTC67() {
+		String pro67=po.getProperty("product67");
+		return pro67;
+	}
 }
 
 

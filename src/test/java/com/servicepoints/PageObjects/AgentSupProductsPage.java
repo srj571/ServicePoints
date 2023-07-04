@@ -462,4 +462,38 @@ public class AgentSupProductsPage {
 		WebDriverWait wait=new WebDriverWait(driver,40);
 		wait.until(ExpectedConditions.visibilityOf(updationPopup));
 	}
+	
+	@FindBy(xpath="(//input[@name='cross'])[1]")
+	WebElement checkBoxForSp;
+	
+	public void clickOnCheckBoxForSpecialRequest() {
+		checkBoxForSp.click();
+	}
+	
+	@FindBy(xpath="(//input[@placeholder='Do you have a similar variant? Please add the explanation and pictures here'])[1]")
+	WebElement spMessageField;
+	
+	public void sendMessageForSpecialRequest(String message) {
+		spMessageField.sendKeys(message);
+	}
+	
+	@FindBy(xpath="(//button[@type='submit'])[1]")
+	WebElement submitBtn;
+	
+	public void clickOnSubmitBtn() {
+		submitBtn.click();
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }

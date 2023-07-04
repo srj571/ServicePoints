@@ -77,4 +77,35 @@ public class SupportProductsPage {
 		return text;
 	}
 	
+	@FindBy(xpath="(//a[normalize-space()='I want real factory pictures'])[1]")
+	WebElement iWantRealFactoryPic;
+	
+	public void clickOnIWantRealFactoryPicSp() {
+		iWantRealFactoryPic.click();
+	}
+	
+	@FindBy(xpath="(//p[@class='special_request_messgae'][normalize-space()='I want real factory pictures'])[1]")
+	WebElement iWantRealFactoryPicspText;
+	
+	public String getTextOFiWantRealFactoryPicSp() {
+		String val=iWantRealFactoryPicspText.getText();
+		return val;
+	}
+	
+	@FindBy(xpath="(//button[@type='button'][normalize-space()='Submit'])[1]")
+	WebElement submitBtn;
+	
+	public void clickOnSubmitBtn() {
+		submitBtn.click();
+	}
+	
+	@FindBy(xpath="(//span[@class='badge-mod badge-warning'])[1]")
+	WebElement openSpRequestStatus;
+	
+	public String getSPStatus() {
+		String val=openSpRequestStatus.getText();
+		return val;
+	}
+	
+	
 }
