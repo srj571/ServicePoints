@@ -150,6 +150,7 @@ public class AgentSupProductsPage {
 		return text;
 	}
 	
+	
 	@FindBy(xpath="(//input[@placeholder='1 Pcs price'])[6]")
 	WebElement txt2Var1;
 	
@@ -503,15 +504,36 @@ public class AgentSupProductsPage {
 			disableQuoteCheckBoxes.get(3).click();
 			disableQuoteCheckBoxes.get(6).click();
 			disableQuoteCheckBoxes.get(7).click();
+			break;
 		}
 	}
 	
 	public void deselectCheckBoxes()
 	{
-		
+		for(int i=0; i<disableQuoteCheckBoxes.size();i++) {
+			disableQuoteCheckBoxes.get(2).click();
+			disableQuoteCheckBoxes.get(3).click();
+			break;
+		}
+	}
+	
+	public void deselectCheckBoxesAnother()
+	{
+		for(int i=0; i<disableQuoteCheckBoxes.size();i++) {
+			disableQuoteCheckBoxes.get(6).click();
+			disableQuoteCheckBoxes.get(7).click();
+			break;
+		}
 	}
 	
 	
+	@FindBy(xpath="(//span[@class='badge-mod badge-warning'])[1]")
+	WebElement orderStatusNewPrice;
+	
+	public String getOrderStatusToNewPrice() {
+		String val=orderStatusNewPrice.getText();
+		return val;
+	}
 	
 	
 	

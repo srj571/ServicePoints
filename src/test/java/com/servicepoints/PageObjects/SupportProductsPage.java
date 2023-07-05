@@ -115,5 +115,39 @@ public class SupportProductsPage {
 		return val;
 	}
 	
+	@FindBy(xpath="(//div)[76]")
+	WebElement newQuoteTab;
+	
+	public void clickOnNewQuoteTab() {
+		newQuoteTab.click();
+	}
+	
+	@FindBy(xpath="(//button[normalize-space()='Accept'])[1]")
+	WebElement acceptBtnAskForPriceChange;
+	
+	public void clickOnAcceptBtnAskForPriceChange() {
+		acceptBtnAskForPriceChange.click();
+	}
+	
+	@FindBy(xpath="(//button[@type='button'][normalize-space()='Yes, I am sure'])[1]")
+	WebElement yesImSureBtn;
+	
+	public void clickOnYesImSureBtn() {
+		yesImSureBtn.click();
+	}
+	
+	@FindBy(xpath="(//button[normalize-space()='Submit'])[1]")
+	WebElement submitBtnOnCantAbleToQuoteBtn;
+	
+	public void clickSubmitBtnOnCantAbleToQuoteBtn() {
+		submitBtnOnCantAbleToQuoteBtn.click();
+	}
+	
+	@FindBy(xpath="(//button[contains(@type,'button')][normalize-space()='Close'])[1]")
+	WebElement closeBtnOnAcceptingNewPricePopup;
+	
+	public void clickCloseBtnOnAcceptingNewPricePopup() {
+		closeBtnOnAcceptingNewPricePopup.click();
+	}
 	
 }

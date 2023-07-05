@@ -362,7 +362,7 @@
 			  <include name="verifyCloseSpecialRequestSubmittedFromSupplier"></include>
 			  <include name="tearDown"></include>
 		  </methods>
-	  </class>-->
+	  </class>
 	  <class name="com.servicepoints.testCases.TC68_VerifyAskForPriceChangeFunctionFromSupportAndTeamleaderSide">
 		  <methods>
 			  <include name="setup"></include>
@@ -371,6 +371,17 @@
 			  <include name="verifyClientAcceptedTheNewPrice"></include>
 			  <include name="verifyDisableQuotationFromSupplier"></include>
 			  <include name="verifyAcceptingNewQuotation"></include>
+			  <include name="tearDown"></include>
+		  </methods>
+	  </class>-->
+	  <class name="com.servicepoints.testCases.TC69_VerifyProductsPageOfSupportAndTeamleaderSideForAddNewVariant">
+		  <methods>
+			  <include name="setup"></include>
+			  <include name="submitAndAcceptQuotation"></include>
+			  <include name="verifyDisableQuotationBySupplier"></include>
+			  <include name="startFulfillmentBySupport"></include>
+			  <include name="verifyUnableQuotationBySupplier"></include>
+			  <include name="verifyAcceptQuotationByTeamleader"></include>
 			  <include name="tearDown"></include>
 		  </methods>
 	  </class>

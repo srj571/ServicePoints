@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,41 +92,41 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">5 methods, 5 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
                     </span>
-                    <div class="method-list-content passed suite-Suite">
+                    <div class="method-list-content failed suite-Suite">
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.servicepoints.testCases.TC68_VerifyAskForPriceChangeFunctionFromSupportAndTeamleaderSide" class="method navigator-link" hash-for-method="submitAndAcceptQuotation">submitAndAcceptQuotation</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.servicepoints.testCases.TC69_VerifyProductsPageOfSupportAndTeamleaderSideForAddNewVariant" class="method navigator-link" hash-for-method="startFulfillmentBySupport">startFulfillmentBySupport</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.servicepoints.testCases.TC68_VerifyAskForPriceChangeFunctionFromSupportAndTeamleaderSide" class="method navigator-link" hash-for-method="verifyAcceptingNewQuotation">verifyAcceptingNewQuotation</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.servicepoints.testCases.TC69_VerifyProductsPageOfSupportAndTeamleaderSideForAddNewVariant" class="method navigator-link" hash-for-method="submitAndAcceptQuotation">submitAndAcceptQuotation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.servicepoints.testCases.TC68_VerifyAskForPriceChangeFunctionFromSupportAndTeamleaderSide" class="method navigator-link" hash-for-method="verifyClientAcceptedTheNewPrice">verifyClientAcceptedTheNewPrice</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.servicepoints.testCases.TC69_VerifyProductsPageOfSupportAndTeamleaderSideForAddNewVariant" class="method navigator-link" hash-for-method="verifyAcceptQuotationByTeamleader">verifyAcceptQuotationByTeamleader</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.servicepoints.testCases.TC68_VerifyAskForPriceChangeFunctionFromSupportAndTeamleaderSide" class="method navigator-link" hash-for-method="verifyDisableQuotationFromSupplier">verifyDisableQuotationFromSupplier</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.servicepoints.testCases.TC69_VerifyProductsPageOfSupportAndTeamleaderSideForAddNewVariant" class="method navigator-link" hash-for-method="verifyDisableQuotationBySupplier">verifyDisableQuotationBySupplier</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.servicepoints.testCases.TC68_VerifyAskForPriceChangeFunctionFromSupportAndTeamleaderSide" class="method navigator-link" hash-for-method="verifySubmitingAskForPriceChange">verifySubmitingAskForPriceChange</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.servicepoints.testCases.TC69_VerifyProductsPageOfSupportAndTeamleaderSideForAddNewVariant" class="method navigator-link" hash-for-method="verifyUnableQuotationBySupplier">verifyUnableQuotationBySupplier</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Suite -->
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -138,49 +138,152 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.servicepoints.testCases.TC68_VerifyAskForPriceChangeFunctionFromSupportAndTeamleaderSide</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.servicepoints.testCases.TC69_VerifyProductsPageOfSupportAndTeamleaderSideForAddNewVariant</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="startFulfillmentBySupport">
+                  </a> <!-- startFulfillmentBySupport -->
+                  <span class="method-name">startFulfillmentBySupport</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=114.0.5735.198)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;sarasvati-Precision-Tower-3420&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-76-generic&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.198, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /tmp/.com.google.Chrome.Gerjr5}, goog:chromeOptions: {debuggerAddress: localhost:40805}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6d3af643964302620ff2061e626300f2
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.servicepoints.testCases.TC69_VerifyProductsPageOfSupportAndTeamleaderSideForAddNewVariant.startFulfillmentBySupport(TC69_VerifyProductsPageOfSupportAndTeamleaderSideForAddNewVariant.java:255)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="submitAndAcceptQuotation">
                   </a> <!-- submitAndAcceptQuotation -->
                   <span class="method-name">submitAndAcceptQuotation</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=114.0.5735.198)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;sarasvati-Precision-Tower-3420&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-76-generic&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.198, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /tmp/.com.google.Chrome.Gerjr5}, goog:chromeOptions: {debuggerAddress: localhost:40805}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6d3af643964302620ff2061e626300f2
+*** Element info: {Using=xpath, value=//span[@class=&apos;badge-mod badge-success&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy28.getText(Unknown Source)
+	at com.servicepoints.PageObjects.AgentSupProductsPage.getStatus(AgentSupProductsPage.java:149)
+	at com.servicepoints.testCases.TC69_VerifyProductsPageOfSupportAndTeamleaderSideForAddNewVariant.submitAndAcceptQuotation(TC69_VerifyProductsPageOfSupportAndTeamleaderSideForAddNewVariant.java:92)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyAcceptingNewQuotation">
-                  </a> <!-- verifyAcceptingNewQuotation -->
-                  <span class="method-name">verifyAcceptingNewQuotation</span>
+                  <a name="verifyAcceptQuotationByTeamleader">
+                  </a> <!-- verifyAcceptQuotationByTeamleader -->
+                  <span class="method-name">verifyAcceptQuotationByTeamleader</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=114.0.5735.198)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;sarasvati-Precision-Tower-3420&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-76-generic&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.198, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /tmp/.com.google.Chrome.Gerjr5}, goog:chromeOptions: {debuggerAddress: localhost:40805}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6d3af643964302620ff2061e626300f2
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.servicepoints.testCases.TC69_VerifyProductsPageOfSupportAndTeamleaderSideForAddNewVariant.verifyAcceptQuotationByTeamleader(TC69_VerifyProductsPageOfSupportAndTeamleaderSideForAddNewVariant.java:402)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyClientAcceptedTheNewPrice">
-                  </a> <!-- verifyClientAcceptedTheNewPrice -->
-                  <span class="method-name">verifyClientAcceptedTheNewPrice</span>
+                  <a name="verifyDisableQuotationBySupplier">
+                  </a> <!-- verifyDisableQuotationBySupplier -->
+                  <span class="method-name">verifyDisableQuotationBySupplier</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=114.0.5735.198)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;sarasvati-Precision-Tower-3420&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-76-generic&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.198, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /tmp/.com.google.Chrome.Gerjr5}, goog:chromeOptions: {debuggerAddress: localhost:40805}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6d3af643964302620ff2061e626300f2
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.servicepoints.testCases.TC69_VerifyProductsPageOfSupportAndTeamleaderSideForAddNewVariant.verifyDisableQuotationBySupplier(TC69_VerifyProductsPageOfSupportAndTeamleaderSideForAddNewVariant.java:157)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyDisableQuotationFromSupplier">
-                  </a> <!-- verifyDisableQuotationFromSupplier -->
-                  <span class="method-name">verifyDisableQuotationFromSupplier</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifySubmitingAskForPriceChange">
-                  </a> <!-- verifySubmitingAskForPriceChange -->
-                  <span class="method-name">verifySubmitingAskForPriceChange</span>
+                  <a name="verifyUnableQuotationBySupplier">
+                  </a> <!-- verifyUnableQuotationBySupplier -->
+                  <span class="method-name">verifyUnableQuotationBySupplier</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=114.0.5735.198)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;sarasvati-Precision-Tower-3420&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-76-generic&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.198, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /tmp/.com.google.Chrome.Gerjr5}, goog:chromeOptions: {debuggerAddress: localhost:40805}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6d3af643964302620ff2061e626300f2
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.servicepoints.testCases.TC69_VerifyProductsPageOfSupportAndTeamleaderSideForAddNewVariant.verifyUnableQuotationBySupplier(TC69_VerifyProductsPageOfSupportAndTeamleaderSideForAddNewVariant.java:335)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
+          </div> <!-- suite-Suite-class-failed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -192,22 +295,19 @@
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
-  &lt;listeners&gt;
-    &lt;listener class-name=&quot;com.servicepoints.utilities.Reporting&quot;/&gt;
-  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.servicepoints.testCases.TC68_VerifyAskForPriceChangeFunctionFromSupportAndTeamleaderSide&quot;&gt;
+      &lt;class name=&quot;com.servicepoints.testCases.TC69_VerifyProductsPageOfSupportAndTeamleaderSideForAddNewVariant&quot;&gt;
         &lt;methods&gt;
           &lt;include name=&quot;setup&quot;/&gt;
           &lt;include name=&quot;submitAndAcceptQuotation&quot;/&gt;
-          &lt;include name=&quot;verifySubmitingAskForPriceChange&quot;/&gt;
-          &lt;include name=&quot;verifyClientAcceptedTheNewPrice&quot;/&gt;
-          &lt;include name=&quot;verifyDisableQuotationFromSupplier&quot;/&gt;
-          &lt;include name=&quot;verifyAcceptingNewQuotation&quot;/&gt;
+          &lt;include name=&quot;verifyDisableQuotationBySupplier&quot;/&gt;
+          &lt;include name=&quot;startFulfillmentBySupport&quot;/&gt;
+          &lt;include name=&quot;verifyUnableQuotationBySupplier&quot;/&gt;
+          &lt;include name=&quot;verifyAcceptQuotationByTeamleader&quot;/&gt;
           &lt;include name=&quot;tearDown&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- com.servicepoints.testCases.TC68_VerifyAskForPriceChangeFunctionFromSupportAndTeamleaderSide --&gt;
+      &lt;/class&gt; &lt;!-- com.servicepoints.testCases.TC69_VerifyProductsPageOfSupportAndTeamleaderSideForAddNewVariant --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -250,29 +350,29 @@ data.addColumn('number', 'Time (ms)');
 data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'submitAndAcceptQuotation')
-data.setCell(0, 2, 'com.servicepoints.testCases.TC68_VerifyAskForPriceChangeFunctionFromSupportAndTeamleaderSide')
-data.setCell(0, 3, 71741);
+data.setCell(0, 2, 'com.servicepoints.testCases.TC69_VerifyProductsPageOfSupportAndTeamleaderSideForAddNewVariant')
+data.setCell(0, 3, 32676);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyAcceptingNewQuotation')
-data.setCell(1, 2, 'com.servicepoints.testCases.TC68_VerifyAskForPriceChangeFunctionFromSupportAndTeamleaderSide')
-data.setCell(1, 3, 55510);
+data.setCell(1, 1, 'verifyDisableQuotationBySupplier')
+data.setCell(1, 2, 'com.servicepoints.testCases.TC69_VerifyProductsPageOfSupportAndTeamleaderSideForAddNewVariant')
+data.setCell(1, 3, 12);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifySubmitingAskForPriceChange')
-data.setCell(2, 2, 'com.servicepoints.testCases.TC68_VerifyAskForPriceChangeFunctionFromSupportAndTeamleaderSide')
-data.setCell(2, 3, 42665);
+data.setCell(2, 1, 'startFulfillmentBySupport')
+data.setCell(2, 2, 'com.servicepoints.testCases.TC69_VerifyProductsPageOfSupportAndTeamleaderSideForAddNewVariant')
+data.setCell(2, 3, 8);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifyClientAcceptedTheNewPrice')
-data.setCell(3, 2, 'com.servicepoints.testCases.TC68_VerifyAskForPriceChangeFunctionFromSupportAndTeamleaderSide')
-data.setCell(3, 3, 41273);
+data.setCell(3, 1, 'verifyUnableQuotationBySupplier')
+data.setCell(3, 2, 'com.servicepoints.testCases.TC69_VerifyProductsPageOfSupportAndTeamleaderSideForAddNewVariant')
+data.setCell(3, 3, 8);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'verifyDisableQuotationFromSupplier')
-data.setCell(4, 2, 'com.servicepoints.testCases.TC68_VerifyAskForPriceChangeFunctionFromSupportAndTeamleaderSide')
-data.setCell(4, 3, 37942);
+data.setCell(4, 1, 'verifyAcceptQuotationByTeamleader')
+data.setCell(4, 2, 'com.servicepoints.testCases.TC69_VerifyProductsPageOfSupportAndTeamleaderSideForAddNewVariant')
+data.setCell(4, 3, 8);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 minutes</span>
+              <span class="suite-total-time">Total running time: 32 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -298,34 +398,44 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.servicepoints.testCases.TC68_VerifyAskForPriceChangeFunctionFromSupportAndTeamleaderSide</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.servicepoints.testCases.TC69_VerifyProductsPageOfSupportAndTeamleaderSideForAddNewVariant</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">submitAndAcceptQuotation</span>
-                <span class="method-start">4738 ms</span>
+                <span class="method-start">4749 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">verifySubmitingAskForPriceChange</span>
-                <span class="method-start">76495 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyDisableQuotationBySupplier</span>
+                <span class="method-start">37436 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">verifyClientAcceptedTheNewPrice</span>
-                <span class="method-start">119162 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">startFulfillmentBySupport</span>
+                <span class="method-start">37450 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">verifyDisableQuotationFromSupplier</span>
-                <span class="method-start">160441 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyUnableQuotationBySupplier</span>
+                <span class="method-start">37460 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">verifyAcceptingNewQuotation</span>
-                <span class="method-start">198384 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyAcceptQuotationByTeamleader</span>
+                <span class="method-start">37470 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">253895 ms</span>
+                <span class="method-start">37480 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

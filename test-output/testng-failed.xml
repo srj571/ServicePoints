@@ -2,18 +2,19 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <parameter name="browser" value="chrome"/>
-  <listeners>
-    <listener class-name="com.servicepoints.utilities.Reporting"/>
-  </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.servicepoints.testCases.TC68_VerifyAskForPriceChangeFunctionFromSupportAndTeamleaderSide">
+      <class name="com.servicepoints.testCases.TC69_VerifyProductsPageOfSupportAndTeamleaderSideForAddNewVariant">
         <methods>
-          <include name="verifyAcceptingNewQuotation"/>
+          <include name="startFulfillmentBySupport"/>
+          <include name="submitAndAcceptQuotation"/>
+          <include name="verifyAcceptQuotationByTeamleader"/>
+          <include name="verifyUnableQuotationBySupplier"/>
           <include name="setup"/>
+          <include name="verifyDisableQuotationBySupplier"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.servicepoints.testCases.TC68_VerifyAskForPriceChangeFunctionFromSupportAndTeamleaderSide -->
+      </class> <!-- com.servicepoints.testCases.TC69_VerifyProductsPageOfSupportAndTeamleaderSideForAddNewVariant -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
