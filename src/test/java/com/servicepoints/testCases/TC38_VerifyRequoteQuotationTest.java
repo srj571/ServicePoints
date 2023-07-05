@@ -1,17 +1,13 @@
 package com.servicepoints.testCases;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
 import java.awt.AWTException;
 import java.io.IOException;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
-import org.testng.Assert;
-import org.testng.annotations.Test;
-
 import com.servicepoints.PageObjects.AgentSupProductsPage;
-import com.servicepoints.PageObjects.ClientOrdersPage;
 import com.servicepoints.PageObjects.ClientProductPage;
 import com.servicepoints.PageObjects.LoginPage;
 import com.servicepoints.utilities.ReadConfig;
@@ -68,11 +64,11 @@ public class TC38_VerifyRequoteQuotationTest extends BaseClass{
 				
 		if(driver.getPageSource().contains("Requote - Bidding")) {
 			logger.info("Verification of Client side Requote is Successed.");
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 		}
 		else {
 			logger.info("Verification of client side Requote is failed.");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 			Thread.sleep(2000);
 		}
 
@@ -120,20 +116,20 @@ public class TC38_VerifyRequoteQuotationTest extends BaseClass{
 
 		if(driver.getPageSource().contains("Quotation done")) {
 			logger.info("Verification of Requote from Agent side is Successed.");
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 		}else {
 			logger.info("Verification of Requote from Agent side is failed.");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 		}
 		
 		if (aspp.getStatus().equals("Quotation done")) {
 			Thread.sleep(2000);
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			logger.info("Verification of Submit Requotation Successed..");
 		} else {
 			captureScreen(driver, "Submit Quote Test");
 			logger.info("Verification of Submit Requotation failed..");
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			Thread.sleep(4000);
 		}
 	}

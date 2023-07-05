@@ -1,11 +1,8 @@
 package com.servicepoints.testCases;
 
-import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
-import java.io.IOException;
-
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import java.io.IOException;
 
 import com.servicepoints.PageObjects.AdminAccountsPage;
 import com.servicepoints.PageObjects.ClientAffiliatePage;
@@ -102,12 +99,12 @@ public class TC36_VerifyAddAffiliateTest extends BaseClass{
 		
 		if(driver.getPageSource().contains("Congratulations! You have successfully signed up for Service Points.")) {
 			logger.info("User is Successfully Signed up.");
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			Thread.sleep(4000);
 		}else {
 			captureScreen(driver, "UserSignUp");
 			logger.info("User is Failed to Signed up.");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 		}
 		
 		driver.get(baseURL);
@@ -171,13 +168,12 @@ public class TC36_VerifyAddAffiliateTest extends BaseClass{
 		
 		
 		if(driver.getPageSource().contains("Account updated successfully")) {
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			logger.info("Account updated successfully");
 			Thread.sleep(6000);
 		}else {
-			captureScreen(driver, "Client approval");
 			logger.info("Account updation failed.");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 		}
 		
 		driver.get(baseURL);
@@ -188,13 +184,12 @@ public class TC36_VerifyAddAffiliateTest extends BaseClass{
 		Thread.sleep(3000);
 		
 		if(driver.getPageSource().contains(fnameAf)) {
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			logger.info("Verification of Affiliate login successfully");
 			Thread.sleep(4000);
 		}else {
-			captureScreen(driver, "Client approval");
 			logger.info("Verification of Affiliate login failed.");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 		}
 	}
 }

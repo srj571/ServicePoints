@@ -1,13 +1,11 @@
 package com.servicepoints.testCases;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
 import java.io.IOException;
 import java.util.Iterator;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
-
-import org.testng.annotations.Test;
 
 import com.servicepoints.PageObjects.AgentDisputesPage;
 import com.servicepoints.PageObjects.AgentSupProductsPage;
@@ -79,12 +77,12 @@ public class TC41_VerifyMergeBreakOrderForNewVariantInDispute extends BaseClass 
 
 		if (aspp.getStatus().equals("Quotation done")) {
 			Thread.sleep(2000);
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			logger.info("Verification of Submit quotation Successed..");
 		} else {
 			captureScreen(driver, "Submit Quote Test");
 			logger.info("Verification of Submit quotation failed..");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 			Thread.sleep(4000);
 		}
 
@@ -125,13 +123,13 @@ public class TC41_VerifyMergeBreakOrderForNewVariantInDispute extends BaseClass 
 
 		if (driver.getPageSource().contains("Quotation accepted successfully.")) {
 			Thread.sleep(4000);
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			logger.info("Verification of accepting quotation is Successed.");
 
 		} else {
 			captureScreen(driver, "Quotation Accepting");
 			logger.info("Verification of accepting quotation is Failed.");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 		}
 	}
 
@@ -185,12 +183,12 @@ public class TC41_VerifyMergeBreakOrderForNewVariantInDispute extends BaseClass 
 		logger.info("Dispute saved.");
 
 		if (driver.getPageSource().contains("Dispute raised successfully")) {
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			logger.info("Verification of Dispute raised Successfully.");
 		} else {
 			captureScreen(driver, "disputeRaised");
 			logger.info("Verification of Dispute raised failed.");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 		}
 		BaseClass.closeAllWinTabsExceptParent();
 	}

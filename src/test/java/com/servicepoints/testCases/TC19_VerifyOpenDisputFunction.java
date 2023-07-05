@@ -1,11 +1,8 @@
 package com.servicepoints.testCases;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
-import java.awt.AWTException;
 import java.io.IOException;
-
-import org.testng.annotations.Test;
 
 import com.servicepoints.PageObjects.ClientOrdersPage;
 import com.servicepoints.PageObjects.LoginPage;
@@ -76,12 +73,12 @@ public class TC19_VerifyOpenDisputFunction extends BaseClass{
 		logger.info("Dispute saved.");
 		
 		if(driver.getPageSource().contains("Dispute raised successfully")) {
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			logger.info("Verification of Dispute raised Successfully.");
 		}else {
 			captureScreen(driver, "disputeRaised");
 			logger.info("Verification of Dispute raised failed.");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 		}
 	}
 }

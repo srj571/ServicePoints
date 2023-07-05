@@ -1,14 +1,12 @@
 package com.servicepoints.testCases;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
 import java.awt.AWTException;
 import java.io.IOException;
 import java.util.Iterator;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
-
-import org.testng.annotations.Test;
 
 import com.servicepoints.PageObjects.AdminAccountsPage;
 import com.servicepoints.PageObjects.AgentDisputesPage;
@@ -19,8 +17,8 @@ import com.servicepoints.PageObjects.LoginPage;
 import com.servicepoints.PageObjects.TeamleaderDisputePage;
 import com.servicepoints.utilities.ReadConfig;
 
-public class TC53_VerifyRaiseDisputeAfterClientStopsFulfillment extends BaseClass{
-	
+public class TC53_VerifyRaiseDisputeAfterClientStopsFulfillment extends BaseClass {
+
 	ReadConfig rd = new ReadConfig();
 	public String agentMailMBO = rd.setAgentMailMergeBreakOrder();
 	public String agentPassMBO = rd.setAgentPassMergeBreakOrder();
@@ -34,18 +32,18 @@ public class TC53_VerifyRaiseDisputeAfterClientStopsFulfillment extends BaseClas
 	public String agentAnswer = rd.setAnswer();
 	public String otherTxt = rd.setOtherTxt();
 	public String query2 = rd.getQuery2();
-	public String status2=rd.setOrderStatus2();
-	
-	public String agentSpMail=rd.getAgentSpMailDsp();
-	public String agentSpPass=rd.getAgentSpPassDsp();
-	public String teamleaderName=rd.getTeamleaderName();
-	public String storeFilter=rd.storeForDisputeFilter();
+	public String status2 = rd.setOrderStatus2();
 
-	@Test(enabled = true,priority = 1)
+	public String agentSpMail = rd.getAgentSpMailDsp();
+	public String agentSpPass = rd.getAgentSpPassDsp();
+	public String teamleaderName = rd.getTeamleaderName();
+	public String storeFilter = rd.storeForDisputeFilter();
+
+	@Test(enabled = true, priority = 1)
 	public void submitAndAcceptQuotation() throws InterruptedException, IOException {
 		logger.info("Application Opened.");
 		LoginPage lp = new LoginPage(driver);
-		
+
 		Thread.sleep(1000);
 
 		lp.setAdminMailId(agentMailMBO);
@@ -93,12 +91,12 @@ public class TC53_VerifyRaiseDisputeAfterClientStopsFulfillment extends BaseClas
 
 		if (aspp.getStatus().equals("Quotation done")) {
 			Thread.sleep(2000);
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			logger.info("Verification of Submit quotation Successed..");
 		} else {
 			captureScreen(driver, "Submit Quote Test");
 			logger.info("Verification of Submit quotation failed..");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 			Thread.sleep(4000);
 		}
 
@@ -121,7 +119,7 @@ public class TC53_VerifyRaiseDisputeAfterClientStopsFulfillment extends BaseClas
 		cl.searchProduct(product53);
 		Thread.sleep(4000);
 		logger.info("Product name searched.");
-		
+
 		cl.selectProductTab();
 		Thread.sleep(3000);
 
@@ -137,37 +135,37 @@ public class TC53_VerifyRaiseDisputeAfterClientStopsFulfillment extends BaseClas
 		Thread.sleep(1000);
 		cl.scrollTillAcceptQbtn(driver);
 		Thread.sleep(1000);
-		
+
 		cl.selectAcceptQuoteBtn();
 		Thread.sleep(4000);
 		logger.info("Clicked on Accept Quotation button.");
 
 		if (driver.getPageSource().contains("Quotation accepted successfully.")) {
 			Thread.sleep(4000);
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			logger.info("Verification of accepting quotation is Successed.");
 
 		} else {
 			captureScreen(driver, "Quotation Accepting");
 			logger.info("Verification of accepting quotation is Failed.");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 		}
 		BaseClass.closeAllWinTabsExceptParent();
 	}
 
-	@Test(enabled = true,priority = 2)
+	@Test(enabled = true, priority = 2)
 	public void verifyOpenDispute() throws InterruptedException, IOException {
 		driver.get(baseURL);
 
 		LoginPage lp = new LoginPage(driver);
 		Thread.sleep(3000);
-		
+
 		lp.setAdminMailId(clientMailMBO);
 		lp.setAdminPassword(clientPassMBO);
 		lp.clickLoginbtn();
 		Thread.sleep(2000);
 		logger.info("client logged in Successfully.");
-		
+
 		ClientOrdersPage cop = new ClientOrdersPage(driver);
 		cop.clickOnOrdersTab();
 		cop.sendPnameinSearch(product53);
@@ -179,7 +177,7 @@ public class TC53_VerifyRaiseDisputeAfterClientStopsFulfillment extends BaseClas
 		cop.clickOnProcessingTab();
 		Thread.sleep(3000);
 		logger.info("Processing filter selected.");
-		
+
 		cop.clickOnFDiv();
 		logger.info("Clicked on first div.");
 		Thread.sleep(3000);
@@ -208,78 +206,78 @@ public class TC53_VerifyRaiseDisputeAfterClientStopsFulfillment extends BaseClas
 		logger.info("Clicked on Saved dispute.");
 
 		if (driver.getPageSource().contains("Dispute raised successfully")) {
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			logger.info("Verification of Dispute raised Successfully.");
 		} else {
 			captureScreen(driver, "disputeRaised");
 			logger.info("Verification of Dispute raised failed.");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 		}
 	}
-	
-	@Test(enabled = true,priority = 3)
+
+	@Test(enabled = true, priority = 3)
 	public void verifyStopFulfillment() throws InterruptedException, IOException, AWTException {
 		driver.get(baseURL);
-		
+
 		ClientProductPage cl = new ClientProductPage(driver);
 		LoginPage lp = new LoginPage(driver);
 		AgentSupProductsPage aspp = new AgentSupProductsPage(driver);
-		
+
 		lp.setAdminMailId(clientMailMBO);
 		logger.info("Email_id is entered.");
 		Thread.sleep(1000);
-		
+
 		lp.setAdminPassword(clientPassMBO);
 		logger.info("Password is entered.");
 		Thread.sleep(1000);
-		
+
 		lp.clickLoginbtn();
 		Thread.sleep(4000);
 		logger.info("Client login successed.");
-		
+
 		cl.getProductsPage();
-		
+
 		cl.searchProduct(product53);
 		Thread.sleep(4000);
 		cl.selectProductTab();
 		Thread.sleep(3000);
 
-		String parentWindow=driver.getWindowHandle();
+		String parentWindow = driver.getWindowHandle();
 		Set<String> windowHandles = driver.getWindowHandles();
-		for(String handle: windowHandles) {
-			if(!handle.equals(parentWindow)) {
+		for (String handle : windowHandles) {
+			if (!handle.equals(parentWindow)) {
 				driver.switchTo().window(handle);
 				break;
 			}
 		}
-				
+
 		cl.scrollTillSpRequestBtn(driver);
 		Thread.sleep(3000);
-				
+
 		cl.clickOnSpecialRequestDrop();
 		Thread.sleep(2000);
-				
+
 		cl.stopFullfilling();
 		Thread.sleep(2000);
 		logger.info("Clicked on Stop fullfillment");
-				
+
 		cl.clickOnYesImSure();
 		Thread.sleep(2000);
-				
+
 		cl.clickOnClosebtn();
 		Thread.sleep(2000);
-				
-		if(driver.getPageSource().contains("Stop fullfilment")) {
+
+		if (driver.getPageSource().contains("Stop fullfilment")) {
 			logger.info("Verification of Stop fullfilment of Quotation is Successed.");
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			Thread.sleep(2000);
-		}else {
+		} else {
 			captureScreen(driver, "Stop fullfilling");
 			logger.info("Verification of Stop fullfillment of Quotation is Failed.");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 		}
-				
-		ClientOrdersPage cp=new ClientOrdersPage(driver);
+
+		ClientOrdersPage cp = new ClientOrdersPage(driver);
 		cp.clickOnOrdersTab();
 		logger.info("Go to Orders page.");
 		Thread.sleep(2000);
@@ -287,189 +285,189 @@ public class TC53_VerifyRaiseDisputeAfterClientStopsFulfillment extends BaseClas
 		Thread.sleep(2000);
 		cp.clickOnFDiv();
 		Thread.sleep(1000);
-		
+
 		cp.scrollTillShowDisputeBtn(driver);
 		Thread.sleep(2000);
 		cp.clickOnShowDispute();
 		Thread.sleep(4000);
-		
+
 		logger.info("Status changed to Processing.");
 		BaseClass.closeAllWinTabsExceptParent();
 	}
-	
-	@Test(enabled = true,priority = 4)
+
+	@Test(enabled = true, priority = 4)
 	public void verifyDisputeOnSupplierSide() throws InterruptedException, IOException {
-		
+
 		driver.get(baseURL);
-		LoginPage lp=new LoginPage(driver);
-		
+		LoginPage lp = new LoginPage(driver);
+
 		lp.setAdminMailId(agentMailMBO);
 		logger.info("Email_id is entered.");
 		Thread.sleep(1000);
-		
+
 		lp.setAdminPassword(agentPassMBO);
 		logger.info("Password is entered.");
 		Thread.sleep(1000);
-		
+
 		lp.clickLoginbtn();
 		Thread.sleep(4000);
 		logger.info("Agent login successed.");
-		
-		AgentDisputesPage adp=new AgentDisputesPage(driver);
-		
+
+		AgentDisputesPage adp = new AgentDisputesPage(driver);
+
 		adp.clickOnDisputesTab();
 		Thread.sleep(1000);
 		adp.searchProductForDsp(product53);
 		Thread.sleep(2000);
-		
-		if(driver.getPageSource().contains("No disputes found")) {
+
+		if (driver.getPageSource().contains("No disputes found")) {
 			logger.info("Verification of dispute from client side is Successed.");
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			Thread.sleep(2000);
-		}else {
+		} else {
 			captureScreen(driver, "Stop fullfilling and verify dsp");
 			logger.info("Verification of dispute from client side is Failed.");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 		}
 	}
-	
-	@Test(enabled = true,priority = 5)
+
+	@Test(enabled = true, priority = 5)
 	public void verifyDisputeOnSupportSide() throws InterruptedException {
 		driver.get(baseURL);
-		LoginPage lp=new LoginPage(driver);
-		
+		LoginPage lp = new LoginPage(driver);
+
 		lp.setAdminMailId(agentSpMail);
 		logger.info("Email_id is entered.");
 		Thread.sleep(1000);
-		
+
 		lp.setAdminPassword(agentSpPass);
 		logger.info("Password is entered.");
 		Thread.sleep(1000);
-		
+
 		lp.clickLoginbtn();
 		Thread.sleep(4000);
 		logger.info("Agent login successed.");
-		
+
 		AgentDisputesPage asop = new AgentDisputesPage(driver);
 		asop.clickOnDisputesTab();
 		logger.info("Open disputes page.");
 
 		asop.searchProductForDsp(product53);
 		Thread.sleep(2000);
-		
+
 		asop.clickOnAllStoreBtn();
 		asop.sendStoreNameInStoreFilter(storeFilter);
 		Thread.sleep(1000);
 		logger.info("Store name entered.");
-		
+
 		asop.clickOnFStoreEle();
 		Thread.sleep(3000);
-		
+
 		asop.clickOnFrstDsp();
 		Thread.sleep(1000);
-		
-		if(asop.visibilityOfShowBtn()==true) {
+
+		if (asop.visibilityOfShowBtn() == true) {
 			logger.info("Verification of dispute from support side is Successed.");
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			Thread.sleep(2000);
-		}else {
+		} else {
 			logger.info("Verification of dispute from support side is Failed.");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 		}
-		
+
 		asop.scrollTillShowDispute(driver);
 		Thread.sleep(2000);
-		
+
 		asop.clickOnShowDsp();
 		Thread.sleep(5000);
 		logger.info("Product name searched.");
 	}
-	
-	@Test(enabled = true,priority = 6)
+
+	@Test(enabled = true, priority = 6)
 	public void verifyShowDisputeFromTeamleaderSide() throws InterruptedException {
 		driver.get(baseURL);
-		LoginPage lp=new LoginPage(driver);
+		LoginPage lp = new LoginPage(driver);
 		lp.setAdminMailId(AdminMailID);
 		lp.setAdminPassword(AdminPassword);
 		lp.clickLoginbtn();
 		Thread.sleep(2000);
 		logger.info("Admin logged in successfully.");
-		
-		AdminAccountsPage adminAccount=new AdminAccountsPage(driver);
+
+		AdminAccountsPage adminAccount = new AdminAccountsPage(driver);
 		adminAccount.getAdminAccountsPage();
 		logger.info("Accounts page opened.");
 		Thread.sleep(3000);
-		
+
 		adminAccount.enterUserName(teamleaderName);
 		logger.info("Entered Client name in search field.");
-		
+
 		adminAccount.getTeamleaderTab();
 		Thread.sleep(2000);
-		
+
 		adminAccount.clickOnLoginBtn();
 		Thread.sleep(3000);
 		logger.info("Teamleader logged in successfully.");
-		
-		Set<String> window=driver.getWindowHandles();
-		Iterator<String> it=window.iterator();
-		String parent=it.next();
-		String child=it.next();
+
+		Set<String> window = driver.getWindowHandles();
+		Iterator<String> it = window.iterator();
+		String parent = it.next();
+		String child = it.next();
 		driver.switchTo().window(child);
 		Thread.sleep(3000);
-		
-		TeamleaderDisputePage tdp=new TeamleaderDisputePage(driver);
+
+		TeamleaderDisputePage tdp = new TeamleaderDisputePage(driver);
 		tdp.clickOnDisputeTab();
 		Thread.sleep(1000);
-		
+
 		tdp.searchProduct(product53);
 		logger.info("Product name searched.");
 		Thread.sleep(1000);
-		
+
 		tdp.clickOnFDiv();
 		Thread.sleep(2000);
-		
+
 		tdp.scrollTillShowDispute(driver);
 		Thread.sleep(2000);
-		
+
 		tdp.clickOnShowDsp();
 		Thread.sleep(5000);
 		BaseClass.closeAllWinTabsExceptParent();
 	}
-	
-	@Test(enabled = true,priority = 7)
+
+	@Test(enabled = true, priority = 7)
 	public void verifyStartFulfillment() throws InterruptedException, IOException {
 		driver.get(baseURL);
 		Thread.sleep(3000);
-		LoginPage lp=new LoginPage(driver);
+		LoginPage lp = new LoginPage(driver);
 		ClientProductPage cl = new ClientProductPage(driver);
-		ClientOrdersPage cp=new ClientOrdersPage(driver);
-		
+		ClientOrdersPage cp = new ClientOrdersPage(driver);
+
 		lp.setAdminMailId(clientMailMBO);
 		logger.info("Email_id is entered.");
 		Thread.sleep(1000);
-				
+
 		lp.setAdminPassword(clientPassMBO);
 		logger.info("Password is entered.");
 		Thread.sleep(1000);
-				
+
 		lp.clickLoginbtn();
 		Thread.sleep(4000);
 		cl.getProductsPage();
-				
+
 		cl.searchProduct(product53);
 		Thread.sleep(4000);
 		cl.selectProductTab();
 		Thread.sleep(3000);
-				
-		String parentWindow=driver.getWindowHandle();
+
+		String parentWindow = driver.getWindowHandle();
 		Set<String> windowHandles = driver.getWindowHandles();
-		for(String handle : windowHandles) {
-			if(!handle.equals(parentWindow) && !handle.equals(driver.getWindowHandle())) {
+		for (String handle : windowHandles) {
+			if (!handle.equals(parentWindow) && !handle.equals(driver.getWindowHandle())) {
 				driver.switchTo().window(handle);
 				break;
 			}
 		}
-		
+
 		cl.clickOnSpecialRequestDrop();
 		Thread.sleep(2000);
 		cl.startFulfillingDropbtn();
@@ -481,18 +479,18 @@ public class TC53_VerifyRaiseDisputeAfterClientStopsFulfillment extends BaseClas
 		Thread.sleep(3000);
 		cl.clickOnClosebtn();
 		Thread.sleep(3000);
-				
-		if(cl.checkEleIsDisabled()==false) {
+
+		if (cl.checkEleIsDisabled() == false) {
 			Thread.sleep(2000);
 			logger.info("Verification of Start fullfilment of Quotation is Successed.");
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			Thread.sleep(2000);
-		}else {
+		} else {
 			captureScreen(driver, "Start fullfilling");
 			logger.info("Verification of Start fullfilment of Quotation is failed.");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 		}
-		
+
 		cp.clickOnOrdersTab();
 		logger.info("Go to Orders page.");
 		Thread.sleep(2000);
@@ -501,10 +499,10 @@ public class TC53_VerifyRaiseDisputeAfterClientStopsFulfillment extends BaseClas
 		cp.clickOnFDiv();
 		Thread.sleep(2000);
 		logger.info("Status changed to Processing.");
-		
+
 		cp.scrollTillShowDisputeBtn(driver);
 		Thread.sleep(2000);
-		
+
 		cp.clickOnShowDispute();
 		Thread.sleep(4000);
 	}

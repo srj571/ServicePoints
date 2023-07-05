@@ -1,13 +1,11 @@
 package com.servicepoints.testCases;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
 import java.io.IOException;
 import java.util.Iterator;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
-
-import org.testng.annotations.Test;
 
 import com.servicepoints.PageObjects.AgentDisputesPage;
 import com.servicepoints.PageObjects.AgentSupProductsPage;
@@ -89,12 +87,12 @@ public class TC42_VerifyMergeBreakOrderForAcceptedDisputeTest extends BaseClass 
 
 		if (aspp.getStatus().equals("Quotation done")) {
 			Thread.sleep(2000);
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			logger.info("Verification of Submit quotation Successed..");
 		} else {
 			captureScreen(driver, "Submit Quote Test");
 			logger.info("Verification of Submit quotation failed..");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 			Thread.sleep(4000);
 		}
 
@@ -135,13 +133,13 @@ public class TC42_VerifyMergeBreakOrderForAcceptedDisputeTest extends BaseClass 
 
 		if (driver.getPageSource().contains("Quotation accepted successfully.")) {
 			Thread.sleep(4000);
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			logger.info("Verification of accepting quotation is Successed.");
 
 		} else {
 			captureScreen(driver, "Quotation Accepting");
 			logger.info("Verification of accepting quotation is Failed.");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 		}
 		BaseClass.closeAllWinTabsExceptParent();
 	}
@@ -198,12 +196,12 @@ public class TC42_VerifyMergeBreakOrderForAcceptedDisputeTest extends BaseClass 
 		logger.info("Dispute saved.");
 
 		if (driver.getPageSource().contains("Dispute raised successfully")) {
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			logger.info("Verification of Dispute raised Successfully.");
 		} else {
 			captureScreen(driver, "disputeRaised");
 			logger.info("Verification of Dispute raised failed.");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 		}
 		BaseClass.closeAllWinTabsExceptParent();
 	}
@@ -244,13 +242,13 @@ public class TC42_VerifyMergeBreakOrderForAcceptedDisputeTest extends BaseClass 
 		Thread.sleep(5000);
 
 		if (driver.getPageSource().contains("Dispute accepted successfully")) {
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			Thread.sleep(3000);
 			logger.info("Verification of Dispute acceptance is successed.");
 		} else {
 			captureScreen(driver, "acceptDispute");
 			logger.info("Verification of Dispute acceptance is failed.");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 		}
 
 		driver.get(baseURL);
@@ -284,11 +282,11 @@ public class TC42_VerifyMergeBreakOrderForAcceptedDisputeTest extends BaseClass 
 		logger.info("Verification of open Dispute History successfull.");
 
 		if (cop.getDspHistoryStatusA().equals("Accepted")) {
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			logger.info("Verification of Dispute acceptance is successed.");
 		} else {
 			logger.info("Verification of Dispute acceptance is failed.");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 		}
 	}
 
@@ -336,10 +334,10 @@ public class TC42_VerifyMergeBreakOrderForAcceptedDisputeTest extends BaseClass 
 
 		if (driver.getPageSource().contains("Requote - Bidding")) {
 			logger.info("Verification of Client side Requote is Successed.");
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 		} else {
 			logger.info("Verification of client side Requote is failed.");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 			Thread.sleep(2000);
 		}
 
@@ -391,20 +389,20 @@ public class TC42_VerifyMergeBreakOrderForAcceptedDisputeTest extends BaseClass 
 
 		if (driver.getPageSource().contains("Quotation done")) {
 			logger.info("Verification of Requote from Agent side is Successed.");
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 		} else {
 			logger.info("Verification of Requote from Agent side is failed.");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 		}
 
 		if (aspp.getStatus().equals("Quotation done")) {
 			Thread.sleep(2000);
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			logger.info("Verification of Submit Requotation Successed..");
 		} else {
 			captureScreen(driver, "Submit Quote Test");
 			logger.info("Verification of Submit Requotation failed..");
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			Thread.sleep(4000);
 		}
 		BaseClass.closeAllWinTabsExceptParent();
@@ -441,7 +439,7 @@ public class TC42_VerifyMergeBreakOrderForAcceptedDisputeTest extends BaseClass 
 		String child = it.next();
 		driver.switchTo().window(child);
 		Thread.sleep(4000);
-		
+
 		driver.navigate().refresh();
 		Thread.sleep(2000);
 		cl.selectQuoteTab();
@@ -454,13 +452,13 @@ public class TC42_VerifyMergeBreakOrderForAcceptedDisputeTest extends BaseClass 
 
 		if (driver.getPageSource().contains("Quotation accepted successfully.")) {
 			Thread.sleep(4000);
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			logger.info("Verification of accepting quotation is Successed.");
 
 		} else {
 			captureScreen(driver, "Quotation Accepting");
 			logger.info("Verification of accepting quotation is Failed.");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 		}
 
 		ClientOrdersPage cp = new ClientOrdersPage(driver);
@@ -498,7 +496,7 @@ public class TC42_VerifyMergeBreakOrderForAcceptedDisputeTest extends BaseClass 
 
 		asop.clickOnApprovedDispute();
 		Thread.sleep(1000);
-		
+
 		asop.clickOnEachDisputeAgentSide(driver);
 		logger.info("Verification of show dispute from Agent side.");
 	}
@@ -519,15 +517,14 @@ public class TC42_VerifyMergeBreakOrderForAcceptedDisputeTest extends BaseClass 
 
 		cop.clickOnGoToDisputesTab();
 		Thread.sleep(2000);
-		
+
 		cop.sendPnameinSearch(proMBOForADsp);
 		logger.info("Product name is entered.");
 		Thread.sleep(2000);
-		
-		
+
 		cop.clickOnApprovedDispute();
 		Thread.sleep(2000);
-		
+
 		cop.clickOnEachDivForDisputeVerification(driver);
 		Thread.sleep(2000);
 

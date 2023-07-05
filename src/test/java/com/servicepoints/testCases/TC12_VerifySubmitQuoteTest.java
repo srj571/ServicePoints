@@ -1,12 +1,10 @@
 package com.servicepoints.testCases;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
 import java.io.IOException;
 import java.util.Iterator;
 import java.util.Set;
-
-import org.testng.annotations.Test;
 
 import com.servicepoints.PageObjects.AgentSupProductsPage;
 import com.servicepoints.PageObjects.LoginPage;
@@ -18,15 +16,14 @@ public class TC12_VerifySubmitQuoteTest extends BaseClass {
 		logger.info("Application Opened.");
 		LoginPage lp = new LoginPage(driver);
 		Thread.sleep(1000);
-		
+
 		lp.setAdminMailId(agentsupmail);
 		logger.info("Email_id is entered.");
 		Thread.sleep(1000);
-		
+
 		lp.setAdminPassword(agentsuppass);
 		logger.info("Password is entered.");
 
-		
 		lp.clickLoginbtn();
 		Thread.sleep(3000);
 
@@ -55,20 +52,19 @@ public class TC12_VerifySubmitQuoteTest extends BaseClass {
 		logger.info("Price entered");
 		Thread.sleep(4000);
 
-		
 		aspp.scrollTillEle(driver);
 		Thread.sleep(1000);
 		aspp.clickOnSubmitQuote();
 		Thread.sleep(7000);
-		
+
 		if (aspp.getStatus().equals("Quotation done")) {
 			Thread.sleep(2000);
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			logger.info("Verification of Submit quotation Successed..");
 		} else {
 			captureScreen(driver, "Submit Quote Test");
 			logger.info("Verification of Submit quotation failed..");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 			Thread.sleep(4000);
 		}
 	}

@@ -1,13 +1,10 @@
 package com.servicepoints.testCases;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
 import java.util.Iterator;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
-
-import org.testng.Assert;
-import org.testng.annotations.Test;
 
 import com.servicepoints.PageObjects.AdminAccountsPage;
 import com.servicepoints.PageObjects.AdminSupplierPage;
@@ -57,37 +54,37 @@ public class TC05_VerifyAddAgentSupportTest extends BaseClass {
 		AdminSupplierPage asp = new AdminSupplierPage(driver);
 		asp.sendFName(TAfname);
 		Thread.sleep(1000);
-		
+
 		asp.sendLname(TAlname);
 		Thread.sleep(1000);
-		
+
 		asp.sendCCode(TACode);
 		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 		String num = BaseClass.getRandomNum();
 		asp.sendmobNum(num);
 		Thread.sleep(1000);
-		
+
 		asp.sendEmail(TAEmail);
 		Thread.sleep(1000);
-		
+
 		asp.sendPass(TAPass);
 		Thread.sleep(1000);
-		
+
 		asp.sendcpass(TAcPass);
 		Thread.sleep(1000);
-		
+
 		adminAccount.clickOnAddAgetSP();
 		logger.info("Click on Add Agent Button.");
 		Thread.sleep(6000);
 
 		if (driver.getPageSource().contains("Agents are successfully registered.")) {
 			logger.info("Verification of AgentSupport adding Successfull.");
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			Thread.sleep(4000);
 		} else {
-			captureScreen(driver,"Add agent");
+			captureScreen(driver, "Add agent");
 			logger.info("Verification of AgentSupport adding failed.");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 			driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 		}
 
@@ -109,14 +106,14 @@ public class TC05_VerifyAddAgentSupportTest extends BaseClass {
 
 		if (driver.getPageSource().contains(TAfname)) {
 			logger.info("Verification of AgentSupport login Successfull.");
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 		} else {
 			captureScreen(driver, "Agent loginned.");
 			logger.info("Verification of AgentSupport login failed.");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 			driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 		}
-		
+
 	}
 }

@@ -1,12 +1,9 @@
 package com.servicepoints.testCases;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
 import java.io.IOException;
 import java.util.Set;
-import java.util.concurrent.TimeUnit;
-
-import org.testng.annotations.Test;
 
 import com.servicepoints.PageObjects.AgentSupProductsPage;
 import com.servicepoints.PageObjects.ClientOrdersPage;
@@ -35,11 +32,11 @@ public class TC13_VerifyAcceptQuotationTest extends BaseClass {
 		cl.selectProductTab();
 		logger.info("Go to Products page.");
 		Thread.sleep(3000);
-		
-		String parentWindow=driver.getWindowHandle();
+
+		String parentWindow = driver.getWindowHandle();
 		Set<String> windowHandles = driver.getWindowHandles();
-		for(String handle: windowHandles) {
-			if(!handle.equals(parentWindow)) {
+		for (String handle : windowHandles) {
+			if (!handle.equals(parentWindow)) {
 				driver.switchTo().window(handle);
 				break;
 			}
@@ -55,16 +52,16 @@ public class TC13_VerifyAcceptQuotationTest extends BaseClass {
 
 		if (driver.getPageSource().contains("Quotation accepted successfully.")) {
 			Thread.sleep(4000);
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			logger.info("Verification of accepting quotation is Successed.");
-		
+
 		} else {
 			captureScreen(driver, "Quotation Accepting");
 			logger.info("Verification of accepting quotation is Failed.");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 		}
-		
-		ClientOrdersPage cp=new ClientOrdersPage(driver);
+
+		ClientOrdersPage cp = new ClientOrdersPage(driver);
 		cp.clickOnOrdersTab();
 		logger.info("Go to Orders page.");
 		Thread.sleep(2000);
@@ -73,7 +70,7 @@ public class TC13_VerifyAcceptQuotationTest extends BaseClass {
 		cp.clickOnFDiv();
 		Thread.sleep(2000);
 		logger.info("Status changed to Processing.");
-		
+
 //		cl.getProductsPage();
 //
 //		cl.searchProduct(proToAcceptQuo);
@@ -236,7 +233,7 @@ public class TC13_VerifyAcceptQuotationTest extends BaseClass {
 //			Assert.assertTrue(false);
 //			Thread.sleep(2000);
 //		}
-		
+
 //		cl.logoutTheClient();
 //		
 //		lp.setAdminMailId(agentsupmail);
@@ -259,10 +256,10 @@ public class TC13_VerifyAcceptQuotationTest extends BaseClass {
 //		Thread.sleep(4000);
 //		logger.info("Product name entered.");
 ////		aspp.clickOnfdiv();
-		//Thread.sleep(4000);
-		
-	//	String childg=it.next();
-	//	driver.switchTo().window(childg);
+		// Thread.sleep(4000);
+
+		// String childg=it.next();
+		// driver.switchTo().window(childg);
 //		String pwin=driver.getWindowHandle();
 //		Set<String>windowHs = driver.getWindowHandles();
 //		for(String handle : windowHs) {
@@ -271,7 +268,7 @@ public class TC13_VerifyAcceptQuotationTest extends BaseClass {
 //				break;
 //			}
 //		}
-		
+
 //		if (aspp.getStatusAwating().equals("Requote - Bidding")) {
 //			Thread.sleep(2000);
 //			Assert.assertTrue(true);
@@ -282,7 +279,7 @@ public class TC13_VerifyAcceptQuotationTest extends BaseClass {
 //			Assert.assertTrue(false);
 //			Thread.sleep(4000);
 //		}
-		
+
 //		logger.info("Switched to new window.");
 //		Thread.sleep(5000);
 //		
@@ -296,8 +293,6 @@ public class TC13_VerifyAcceptQuotationTest extends BaseClass {
 //		aspp.clickOnSubmitQuote();
 //		Thread.sleep(6000);
 
-		
-		
 //		if(driver.getPageSource().contains("Quotation done")) {
 //			logger.info("Verification of Requote from Agent side is Successed.");
 //			Assert.assertTrue(true);
@@ -313,7 +308,7 @@ public class TC13_VerifyAcceptQuotationTest extends BaseClass {
 //			logger.info("Verification of Requote from Agent side is failed.");
 //			Assert.assertTrue(false);
 //		}
-		
+
 //		if (aspp.getStatus().equals("Quotation done")) {
 //			Thread.sleep(2000);
 //			Assert.assertTrue(true);
@@ -324,6 +319,6 @@ public class TC13_VerifyAcceptQuotationTest extends BaseClass {
 //			Assert.assertTrue(true);
 //			Thread.sleep(4000);
 //		}
-	
+
 	}
 }

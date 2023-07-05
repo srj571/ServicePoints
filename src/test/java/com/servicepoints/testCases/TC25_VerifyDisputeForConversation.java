@@ -1,143 +1,138 @@
 package com.servicepoints.testCases;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
 import java.io.IOException;
-
-import org.testng.annotations.Test;
 
 import com.servicepoints.PageObjects.AgentDisputesPage;
 import com.servicepoints.PageObjects.ClientOrdersPage;
 import com.servicepoints.PageObjects.LoginPage;
 import com.servicepoints.utilities.ReadConfig;
 
+public class TC25_VerifyDisputeForConversation extends BaseClass {
 
-public class TC25_VerifyDisputeForConversation extends BaseClass{
-	
-	ReadConfig con=new ReadConfig();
-	public String clmail=con.setClientTrackMail();
-	public String clpass=con.setClientTrackPass();
-	public String process=con.setProcessStatus();
-	public String proForConversation=con.setProductForConversation();
-	public String queries=con.setQueries();
-	public String otherTxt=con.setOtherTxt();
+	ReadConfig con = new ReadConfig();
+	public String clmail = con.setClientTrackMail();
+	public String clpass = con.setClientTrackPass();
+	public String process = con.setProcessStatus();
+	public String proForConversation = con.setProductForConversation();
+	public String queries = con.setQueries();
+	public String otherTxt = con.setOtherTxt();
 
-	public String agmail=con.setAgentTrackMail();
-	public String agpass=con.setAgentTrackPass();
-	public String agentAnswer=con.setAnswer();
-	public String fileName="A319.pdf";
+	public String agmail = con.setAgentTrackMail();
+	public String agpass = con.setAgentTrackPass();
+	public String agentAnswer = con.setAnswer();
+	public String fileName = "A319.pdf";
 
 	@Test
 	public void verifyDisputeForConversation() throws InterruptedException, IOException {
-		LoginPage lp=new LoginPage(driver);
+		LoginPage lp = new LoginPage(driver);
 		Thread.sleep(3000);
 		lp.setAdminMailId(clmail);
 		lp.setAdminPassword(clpass);
 		lp.clickLoginbtn();
 		logger.info("Client logged in Successfully.");
 		Thread.sleep(2000);
-		
-		ClientOrdersPage cop=new ClientOrdersPage(driver);
+
+		ClientOrdersPage cop = new ClientOrdersPage(driver);
 		cop.clickOnOrdersTab();
-		
+
 		cop.sendPnameinSearch(proForConversation);
 		logger.info("Product name is entered.");
 		Thread.sleep(2000);
-		
+
 		cop.clickOnStatusDrop();
-		//Thread.sleep(3000);
+		// Thread.sleep(3000);
 		cop.dropdownSearch(process);
-		//logger.info("fulfilled status is entered.");
-		//cop.clickOnFulfillTab();
-		//cop.clickOnFProcessingTab();
-		//aop.clickOnProcessTab();
+		// logger.info("fulfilled status is entered.");
+		// cop.clickOnFulfillTab();
+		// cop.clickOnFProcessingTab();
+		// aop.clickOnProcessTab();
 		cop.clickOnProcessingTab();
 		Thread.sleep(3000);
-		
-		cop.clickOnFDiv();		
+
+		cop.clickOnFDiv();
 		logger.info("Clicked on first div.");
 		Thread.sleep(3000);
-		
+
 		cop.scrollTillEle(driver);
 		Thread.sleep(2000);
-		
+
 		cop.clickOnOpenDspbtn();
 		Thread.sleep(2000);
-		
+
 		cop.selectOtherDspOption();
 		logger.info("Customer got wrong product option selected.");
-		
+
 		cop.setOtherInfo(otherTxt);
 		Thread.sleep(2000);
-		
+
 		cop.handleDspSolution();
 		logger.info("I want the order to be shipped immediately option is selected.");
 		Thread.sleep(3000);
-		
-		cop.clickOnCheckBox();	
+
+		cop.clickOnCheckBox();
 		Thread.sleep(3000);
-		
+
 //		cop.sendFiles(fileName);
 //		Thread.sleep(2000);
-		
+
 		cop.sendQueries(queries);
 		Thread.sleep(2000);
-		
+
 		cop.SaveDispute();
 		Thread.sleep(5000);
 		logger.info("Dispute saved.");
-		
-		if(driver.getPageSource().contains("Dispute raised successfully")) {
-			AssertJUnit.assertTrue(true);
+
+		if (driver.getPageSource().contains("Dispute raised successfully")) {
+			Assert.assertTrue(true);
 			logger.info("Verification of Dispute raised Successfully.");
-		}else {
+		} else {
 			captureScreen(driver, "other dispute");
 			logger.info("Verification of Dispute raised failed.");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 		}
-		
+
 		logger.info("Client logged out Successfully.");
 		driver.get(baseURL);
-		
+
 		lp.setAdminMailId(agmail);
 		lp.setAdminPassword(agpass);
 		lp.clickLoginbtn();
 		logger.info("Agent logged in Successfully.");
 		Thread.sleep(3000);
-		
-		AgentDisputesPage asop=new AgentDisputesPage(driver);
+
+		AgentDisputesPage asop = new AgentDisputesPage(driver);
 		asop.clickOnDisputesTab();
 		logger.info("Open disputes page.");
-		
+
 		asop.searchProductForDsp(proForConversation);
 		Thread.sleep(3000);
 		asop.clickOnFrstDsp();
 		Thread.sleep(3000);
-		
+
 		asop.scrollTillShowDispute(driver);
 		Thread.sleep(2000);
-		
+
 		asop.clickOnShowDsp();
 		logger.info("Clicked on show disputes.");
 		Thread.sleep(3000);
-		
+
 		asop.sendAnswer(agentAnswer);
 		Thread.sleep(3000);
 		asop.clickOnSendAnswer();
 		logger.info("Dispute send.");
 		Thread.sleep(6000);
-		
-		if(driver.getPageSource().contains("Message send successfully")) {
-			AssertJUnit.assertTrue(true);
+
+		if (driver.getPageSource().contains("Message send successfully")) {
+			Assert.assertTrue(true);
 			logger.info("Verification of Dispute conversation is successed.");
-		}else {
+		} else {
 			captureScreen(driver, "acceptDispute");
 			logger.info("Verification of Dispute conversation is failed.");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 		}
-		
-		
-		
+
 		asop.clickOnShowDsp();
 		Thread.sleep(2000);
 		asop.selectDspStatus();
@@ -146,49 +141,48 @@ public class TC25_VerifyDisputeForConversation extends BaseClass{
 		Thread.sleep(2000);
 		asop.clickOnSendAnswer();
 		Thread.sleep(4000);
-		
+
 		driver.get(baseURL);
-		
+
 		lp.setAdminMailId(clmail);
 		lp.setAdminPassword(clpass);
 		lp.clickLoginbtn();
 		logger.info("Client logged in Successfully.");
 		Thread.sleep(3000);
-		
+
 		cop.clickOnOrdersTab();
 		Thread.sleep(3000);
-		
+
 		cop.sendPnameinSearch(proForConversation);
 		Thread.sleep(3000);
 		logger.info("Product name is entered.");
-		
+
 		cop.clickOnStatusDrop();
-		//Thread.sleep(3000);
+		// Thread.sleep(3000);
 		cop.dropdownSearch(process);
-		//logger.info("fulfilled status is entered.");
-		//cop.clickOnFulfillTab();
-		//cop.clickOnFProcessingTab();
-		//aop.clickOnProcessTab();
+		// logger.info("fulfilled status is entered.");
+		// cop.clickOnFulfillTab();
+		// cop.clickOnFProcessingTab();
+		// aop.clickOnProcessTab();
 		cop.clickOnProcessingTab();
 		Thread.sleep(3000);
 		cop.clickOnFDiv();
-		
+
 		cop.scrollTillDspHistory(driver);
 		Thread.sleep(3000);
 		cop.clickOnDispHistory();
 		Thread.sleep(2000);
 		cop.clickOnFirstDisputeTab();
 		Thread.sleep(5000);
-		
-		
-		if(driver.getPageSource().contains("Dispute history")) {
-			AssertJUnit.assertTrue(true);
+
+		if (driver.getPageSource().contains("Dispute history")) {
+			Assert.assertTrue(true);
 			logger.info("Verification of Dispute history opening is successfull.");
-		}else {
+		} else {
 			captureScreen(driver, "acceptDispute");
 			logger.info("Verification of Dispute history opening is failed.");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 		}
-		
+
 	}
 }

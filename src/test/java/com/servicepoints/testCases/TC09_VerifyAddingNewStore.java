@@ -1,10 +1,8 @@
 package com.servicepoints.testCases;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
 import java.io.IOException;
-
-import org.testng.annotations.Test;
 
 import com.servicepoints.PageObjects.ClientStoresPage;
 import com.servicepoints.PageObjects.LoginPage;
@@ -59,11 +57,11 @@ public class TC09_VerifyAddingNewStore extends BaseClass {
 
 		if (sp.checkElementText().equals(Alias)) {
 			logger.info("Verification of Store Adding successfull.");
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 		} else {
 			captureScreen(driver, "AddStore");
 			logger.info("Verification of Store Adding Failed.");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 		}
 	}
 }

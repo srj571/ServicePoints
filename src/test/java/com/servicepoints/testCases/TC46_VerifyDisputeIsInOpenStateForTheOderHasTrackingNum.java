@@ -1,13 +1,11 @@
 package com.servicepoints.testCases;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
 import java.io.IOException;
 
-import org.apache.commons.io.filefilter.FalseFileFilter;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.Test;
 
 import com.servicepoints.PageObjects.AgentDisputesPage;
 import com.servicepoints.PageObjects.AgentOrdersPage;
@@ -104,10 +102,10 @@ public class TC46_VerifyDisputeIsInOpenStateForTheOderHasTrackingNum extends Bas
 
 		if (driver.getPageSource().contains("Tracking number successfully added")) {
 			logger.info("Verification of adding tracking number is Successfull.");
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			Thread.sleep(2000);
 		} else {
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 			logger.info("Verification of adding tracking number is failed.");
 		}
 	}
@@ -167,12 +165,12 @@ public class TC46_VerifyDisputeIsInOpenStateForTheOderHasTrackingNum extends Bas
 		logger.info("Dispute saved.");
 
 		if (driver.getPageSource().contains("Dispute raised successfully")) {
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			logger.info("Verification of Dispute raised Successfully.");
 		} else {
 			captureScreen(driver, "Dispute Reopen");
 			logger.info("Verification of Dispute raised failed.");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 		}
 
 		driver.get(baseURL);
@@ -211,12 +209,12 @@ public class TC46_VerifyDisputeIsInOpenStateForTheOderHasTrackingNum extends Bas
 		Thread.sleep(5000);
 
 		if (driver.getPageSource().contains("Dispute declined successfully")) {
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			logger.info("Verification of Dispute rejection is successed.");
 		} else {
 			captureScreen(driver, "acceptDispute");
 			logger.info("Verification of Dispute rejection is failed.");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 		}
 
 		driver.get(baseURL);
@@ -248,11 +246,11 @@ public class TC46_VerifyDisputeIsInOpenStateForTheOderHasTrackingNum extends Bas
 		Thread.sleep(3000);
 
 		if (driver.getPageSource().contains("Message send successfully")) {
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			Thread.sleep(2000);
 			logger.info("Verification of message send on closed dispute is successfull.");
 		} else {
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 			logger.info("Verification of message send on closed dispute is failed.");
 		}
 
@@ -290,12 +288,12 @@ public class TC46_VerifyDisputeIsInOpenStateForTheOderHasTrackingNum extends Bas
 		Thread.sleep(5000);
 
 		if (driver.getPageSource().contains("Dispute declined successfully")) {
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			logger.info("Verification of Dispute rejection is successed.");
 		} else {
 			captureScreen(driver, "acceptDispute");
 			logger.info("Verification of Dispute rejection is failed.");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 		}
 
 		driver.get(baseURL);
@@ -328,11 +326,11 @@ public class TC46_VerifyDisputeIsInOpenStateForTheOderHasTrackingNum extends Bas
 		Thread.sleep(3000);
 
 		if (driver.getPageSource().contains("Message send successfully")) {
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			Thread.sleep(2000);
 			logger.info("Verification of message send on closed dispute is successfull.");
 		} else {
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 			logger.info("Verification of message send on closed dispute is failed.");
 		}
 
@@ -370,12 +368,12 @@ public class TC46_VerifyDisputeIsInOpenStateForTheOderHasTrackingNum extends Bas
 		Thread.sleep(5000);
 
 		if (driver.getPageSource().contains("Dispute declined successfully")) {
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			logger.info("Verification of Dispute rejection is successed.");
 		} else {
 			captureScreen(driver, "acceptDispute");
 			logger.info("Verification of Dispute rejection is failed.");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 		}
 
 		driver.get(baseURL);
@@ -406,11 +404,11 @@ public class TC46_VerifyDisputeIsInOpenStateForTheOderHasTrackingNum extends Bas
 		Thread.sleep(3000);
 
 		if (driver.getPageSource().contains("Message send successfully")) {
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			Thread.sleep(2000);
 			logger.info("Verification of message send on closed dispute is successfull.");
 		} else {
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 			logger.info("Verification of message send on closed dispute is failed.");
 		}
 
@@ -448,12 +446,12 @@ public class TC46_VerifyDisputeIsInOpenStateForTheOderHasTrackingNum extends Bas
 		Thread.sleep(5000);
 
 		if (driver.getPageSource().contains("Dispute declined successfully")) {
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			logger.info("Verification of Dispute rejection is successed.");
 		} else {
 			captureScreen(driver, "acceptDispute");
 			logger.info("Verification of Dispute rejection is failed.");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 		}
 
 		driver.get(baseURL);
@@ -483,11 +481,11 @@ public class TC46_VerifyDisputeIsInOpenStateForTheOderHasTrackingNum extends Bas
 		Thread.sleep(3000);
 
 		if (driver.getPageSource().contains("Message send successfully")) {
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			Thread.sleep(2000);
 			logger.info("Verification of message send on closed dispute is successfull.");
 		} else {
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 			logger.info("Verification of message send on closed dispute is failed.");
 		}
 
@@ -525,12 +523,12 @@ public class TC46_VerifyDisputeIsInOpenStateForTheOderHasTrackingNum extends Bas
 		Thread.sleep(5000);
 
 		if (driver.getPageSource().contains("Dispute declined successfully")) {
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			logger.info("Verification of Dispute rejection is successed.");
 		} else {
 			captureScreen(driver, "acceptDispute");
 			logger.info("Verification of Dispute rejection is failed.");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 		}
 
 		driver.get(baseURL);
@@ -560,11 +558,11 @@ public class TC46_VerifyDisputeIsInOpenStateForTheOderHasTrackingNum extends Bas
 		Thread.sleep(3000);
 
 		if (driver.getPageSource().contains("Message send successfully")) {
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			Thread.sleep(2000);
 			logger.info("Verification of message send on closed dispute is successfull.");
 		} else {
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 			logger.info("Verification of message send on closed dispute is failed.");
 		}
 
@@ -602,12 +600,12 @@ public class TC46_VerifyDisputeIsInOpenStateForTheOderHasTrackingNum extends Bas
 		Thread.sleep(5000);
 
 		if (driver.getPageSource().contains("Dispute declined successfully")) {
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			logger.info("Verification of Dispute rejection is successed.");
 		} else {
 			captureScreen(driver, "acceptDispute");
 			logger.info("Verification of Dispute rejection is failed.");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 		}
 
 		driver.get(baseURL);
@@ -637,11 +635,11 @@ public class TC46_VerifyDisputeIsInOpenStateForTheOderHasTrackingNum extends Bas
 		Thread.sleep(3000);
 
 		if (driver.getPageSource().contains("You have reached the limits of reopen dispute.")) {
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			Thread.sleep(2000);
 			logger.info("Verification of message that you have reached the limits of reopen dispute is successfull.");
 		} else {
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 			logger.info("Verification of message that you have reached the limits of reopen dispute is failed.");
 		}
 

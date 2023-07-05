@@ -1,13 +1,11 @@
 package com.servicepoints.testCases;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
 import java.io.IOException;
 import java.util.Iterator;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
-
-import org.testng.annotations.Test;
 
 import com.servicepoints.PageObjects.AgentDisputesPage;
 import com.servicepoints.PageObjects.AgentHomePage;
@@ -80,12 +78,12 @@ public class TC43_VerifyAfterCloseDisputeNoConversationBetweenClientAndSupplier 
 
 		if (aspp.getStatus().equals("Quotation done")) {
 			Thread.sleep(2000);
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			logger.info("Verification of Submit quotation Successed..");
 		} else {
 			captureScreen(driver, "Submit Quote Test");
 			logger.info("Verification of Submit quotation failed..");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 			Thread.sleep(4000);
 		}
 
@@ -126,13 +124,13 @@ public class TC43_VerifyAfterCloseDisputeNoConversationBetweenClientAndSupplier 
 
 		if (driver.getPageSource().contains("Quotation accepted successfully.")) {
 			Thread.sleep(4000);
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			logger.info("Verification of accepting quotation is Successed.");
 
 		} else {
 			captureScreen(driver, "Quotation Accepting");
 			logger.info("Verification of accepting quotation is Failed.");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 		}
 		BaseClass.closeAllWinTabsExceptParent();
 	}
@@ -192,12 +190,12 @@ public class TC43_VerifyAfterCloseDisputeNoConversationBetweenClientAndSupplier 
 		logger.info("Dispute saved.");
 
 		if (driver.getPageSource().contains("Dispute raised successfully")) {
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			logger.info("Verification of Dispute raised Successfully.");
 		} else {
 			captureScreen(driver, "disputeRaised");
 			logger.info("Verification of Dispute raised failed.");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 		}
 		BaseClass.closeAllWinTabsExceptParent();
 	}
@@ -238,13 +236,13 @@ public class TC43_VerifyAfterCloseDisputeNoConversationBetweenClientAndSupplier 
 		Thread.sleep(5000);
 
 		if (driver.getPageSource().contains("Dispute accepted successfully")) {
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			Thread.sleep(3000);
 			logger.info("Verification of Dispute acceptance is successfull.");
 		} else {
 			captureScreen(driver, "acceptDispute");
 			logger.info("Verification of Dispute acceptance is failed.");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 		}
 
 		asop.scrollTillApprovedDispute(driver);
@@ -286,7 +284,7 @@ public class TC43_VerifyAfterCloseDisputeNoConversationBetweenClientAndSupplier 
 		cop.clickOnFDiv();
 		logger.info("Clicked on first div.");
 		Thread.sleep(4000);
-		
+
 		cop.scrollTillShowDisputeBtn(driver);
 		Thread.sleep(3000);
 
@@ -298,13 +296,13 @@ public class TC43_VerifyAfterCloseDisputeNoConversationBetweenClientAndSupplier 
 		Thread.sleep(1000);
 
 		if (driver.getPageSource().contains("Notification sent successfully")) {
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			Thread.sleep(3000);
 			logger.info("Verification of Notify Support is successfull.");
 		} else {
 			captureScreen(driver, "Notify Support");
 			logger.info("Verification of Notify Support is failed.");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 		}
 	}
 
@@ -329,13 +327,13 @@ public class TC43_VerifyAfterCloseDisputeNoConversationBetweenClientAndSupplier 
 		Thread.sleep(1000);
 
 		if (adp.visibilityOfShowBtn() == true) {
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			Thread.sleep(3000);
 			logger.info("Verification of Show dispute in Notification is successfull.");
 		} else {
 			captureScreen(driver, "Show dispute in notification");
 			logger.info("Verification of Show dispute in Notification is failed.");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 		}
 
 		adp.clickOnShowDsp();

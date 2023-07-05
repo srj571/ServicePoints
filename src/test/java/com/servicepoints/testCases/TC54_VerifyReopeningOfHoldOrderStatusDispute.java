@@ -1,13 +1,11 @@
 package com.servicepoints.testCases;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
 import java.io.IOException;
 import java.util.Iterator;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
-
-import org.testng.annotations.Test;
 
 import com.servicepoints.PageObjects.AdminAccountsPage;
 import com.servicepoints.PageObjects.AgentDisputesPage;
@@ -94,12 +92,12 @@ public class TC54_VerifyReopeningOfHoldOrderStatusDispute extends BaseClass {
 
 		if (aspp.getStatus().equals("Quotation done")) {
 			Thread.sleep(2000);
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			logger.info("Verification of Submit quotation Successed..");
 		} else {
 			captureScreen(driver, "Submit Quote Test");
 			logger.info("Verification of Submit quotation failed..");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 			Thread.sleep(4000);
 		}
 
@@ -140,13 +138,13 @@ public class TC54_VerifyReopeningOfHoldOrderStatusDispute extends BaseClass {
 
 		if (driver.getPageSource().contains("Quotation accepted successfully.")) {
 			Thread.sleep(4000);
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			logger.info("Verification of accepting quotation is Successed.");
 
 		} else {
 			captureScreen(driver, "Quotation Accepting");
 			logger.info("Verification of accepting quotation is Failed.");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 		}
 		BaseClass.closeAllWinTabsExceptParent();
 	}
@@ -204,12 +202,12 @@ public class TC54_VerifyReopeningOfHoldOrderStatusDispute extends BaseClass {
 		logger.info("Clicked on Saved dispute.");
 
 		if (driver.getPageSource().contains("Dispute raised successfully")) {
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			logger.info("Verification of Dispute raised Successfully.");
 		} else {
 			captureScreen(driver, "disputeRaised");
 			logger.info("Verification of Dispute raised failed.");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 		}
 	}
 
@@ -257,10 +255,10 @@ public class TC54_VerifyReopeningOfHoldOrderStatusDispute extends BaseClass {
 
 		if (driver.getPageSource().contains("Requote - Bidding")) {
 			logger.info("Verification of Client side Requote is Successed.");
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 		} else {
 			logger.info("Verification of client side Requote is failed.");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 			Thread.sleep(2000);
 		}
 
@@ -334,12 +332,12 @@ public class TC54_VerifyReopeningOfHoldOrderStatusDispute extends BaseClass {
 		Thread.sleep(2000);
 
 		if (driver.getPageSource().contains("Dispute declined successfully")) {
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			logger.info("Verification of Dispute rejection is successed.");
 		} else {
 			captureScreen(driver, "acceptDispute");
 			logger.info("Verification of Dispute rejection is failed.");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 		}
 		BaseClass.closeAllWinTabsExceptParent();
 	}
@@ -429,20 +427,20 @@ public class TC54_VerifyReopeningOfHoldOrderStatusDispute extends BaseClass {
 
 		if (driver.getPageSource().contains("Quotation done")) {
 			logger.info("Verification of Requote from Agent side is Successed.");
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 		} else {
 			logger.info("Verification of Requote from Agent side is failed.");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 		}
 
 		if (aspp.getStatus().equals("Quotation done")) {
 			Thread.sleep(2000);
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			logger.info("Verification of Submit Requotation Successed..");
 		} else {
 			captureScreen(driver, "Submit Quote Test");
 			logger.info("Verification of Submit Requotation failed..");
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			Thread.sleep(4000);
 		}
 		BaseClass.closeAllWinTabsExceptParent();
@@ -491,13 +489,13 @@ public class TC54_VerifyReopeningOfHoldOrderStatusDispute extends BaseClass {
 
 		if (driver.getPageSource().contains("Quotation accepted successfully.")) {
 			Thread.sleep(4000);
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			logger.info("Verification of accepting quotation is Successed.");
 
 		} else {
 			captureScreen(driver, "Quotation Accepting");
 			logger.info("Verification of accepting quotation is Failed.");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 		}
 	}
 

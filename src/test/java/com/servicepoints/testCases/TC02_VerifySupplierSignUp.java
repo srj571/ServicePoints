@@ -1,24 +1,18 @@
 package com.servicepoints.testCases;
 
-import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
-import java.io.IOException;
-import java.util.concurrent.TimeUnit;
-
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 import com.servicepoints.PageObjects.LoginPage;
 import com.servicepoints.PageObjects.SignUpPage;
 import com.servicepoints.utilities.ReadConfig;
 
+public class TC02_VerifySupplierSignUp extends BaseClass {
 
-public class TC02_VerifySupplierSignUp extends BaseClass{
-	
 	ReadConfig rc = new ReadConfig();
-	
+
 	public String baseURL = rc.getApplicationUrl();
 	public String supurl = rc.getSuppllierURL();
 	public String supfname = rc.getSupFirstName();
@@ -38,7 +32,7 @@ public class TC02_VerifySupplierSignUp extends BaseClass{
 		sup.setUserFirstName(supfname);
 		logger.info("Supplier name is entered.");
 		Thread.sleep(1000);
-		
+
 		sup.setUserLastName(suplname);
 		logger.info("Supplier last name is entered.");
 		Thread.sleep(1000);
@@ -46,7 +40,7 @@ public class TC02_VerifySupplierSignUp extends BaseClass{
 		sup.setCountryCode(supccode);
 		logger.info("Country code is entered.");
 		Thread.sleep(1000);
-		
+
 		String num = BaseClass.getRandomNum();
 		sup.setMobileNum(num);
 		logger.info("Mobile number is entered.");
@@ -55,11 +49,11 @@ public class TC02_VerifySupplierSignUp extends BaseClass{
 		sup.setEmail(supemail);
 		logger.info("Supplier mail is entered.");
 		Thread.sleep(1000);
-	
+
 		sup.setPassword(suppass);
 		logger.info("Password is entered.");
 		Thread.sleep(1000);
-		
+
 		sup.setCofirmPass(supcpass);
 		Thread.sleep(1000);
 		sup.clickTermCheckBox();
@@ -69,12 +63,12 @@ public class TC02_VerifySupplierSignUp extends BaseClass{
 
 		if (driver.getPageSource().contains("Congratulations! You have successfully signed up for Service Points.")) {
 			logger.info("Supplier is Successfully Signed up.");
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			Thread.sleep(4000);
 		} else {
 			captureScreen(driver, "SupplierSignUp");
 			logger.info("Supplier is Failed to Signed up.");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 		}
 
 		driver.get(baseURL);
@@ -92,12 +86,12 @@ public class TC02_VerifySupplierSignUp extends BaseClass{
 
 		if (driver.getTitle().contains("Admin Supplier Dashboard | Service Points")) {
 			logger.info("Verification of Supplier Sign in is Successed.");
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			Thread.sleep(4000);
 		} else {
 			captureScreen(driver, "VerifySupSignIn");
 			logger.info("Verification of Supplier Sign in is failed.");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 		}
 	}
 }

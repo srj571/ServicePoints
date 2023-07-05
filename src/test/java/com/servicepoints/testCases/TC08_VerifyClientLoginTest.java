@@ -1,14 +1,11 @@
 package com.servicepoints.testCases;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
 import java.io.IOException;
 import java.util.Iterator;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
-
-import org.testng.Assert;
-import org.testng.annotations.Test;
 
 import com.servicepoints.PageObjects.AdminAccountsPage;
 import com.servicepoints.PageObjects.LoginPage;
@@ -55,12 +52,12 @@ public class TC08_VerifyClientLoginTest extends BaseClass{
 			
 		if(driver.getPageSource().contains(clientName)) {
 			logger.info("Verification of client login Successfull.");
-			AssertJUnit.assertTrue(true);	
+			Assert.assertTrue(true);	
 			driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 		}else {
 			captureScreen(driver, "Client Login Verification");
 			logger.info("Verification of client login Failed.");
-			AssertJUnit.assertTrue(false);	
+			Assert.assertTrue(false);	
 		}
 		
 	}

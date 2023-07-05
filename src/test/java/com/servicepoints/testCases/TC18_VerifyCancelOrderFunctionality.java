@@ -1,13 +1,10 @@
 package com.servicepoints.testCases;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
 import java.io.IOException;
 import java.util.Iterator;
 import java.util.Set;
-import java.util.concurrent.TimeUnit;
-
-import org.testng.annotations.Test;
 
 import com.servicepoints.PageObjects.AgentSupProductsPage;
 import com.servicepoints.PageObjects.ClientOrdersPage;
@@ -74,12 +71,12 @@ public class TC18_VerifyCancelOrderFunctionality extends BaseClass{
 
 		if (aspp.getStatus().equals("Quotation done")) {
 			Thread.sleep(2000);
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			logger.info("Verification of Submit quotation Successed..");
 		} else {
 			captureScreen(driver, "Submit Quote Test");
 			logger.info("Verification of Submit quotation failed..");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 			Thread.sleep(4000);
 		}
 		
@@ -113,13 +110,13 @@ public class TC18_VerifyCancelOrderFunctionality extends BaseClass{
 
 		if (driver.getPageSource().contains("Quotation accepted successfully.")) {
 			Thread.sleep(4000);
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			logger.info("Verification of accepting quotation is Successed.");
 		
 		} else {
 			captureScreen(driver, "Quotation Accepting");
 			logger.info("Verification of accepting quotation is Failed.");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 		}
 		
 		ClientOrdersPage cop=new ClientOrdersPage(driver);
@@ -158,13 +155,13 @@ public class TC18_VerifyCancelOrderFunctionality extends BaseClass{
 		Thread.sleep(3000);
 		
 		if(driver.getPageSource().contains("Order cancelled successfully")) {
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			logger.info("Verification of cancel variant is Successed.");
 		}else {
 			captureScreen(driver, "Cancel order");
 			Thread.sleep(4000);
 			logger.info("Verification of cancel variant is failed.");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 		}
 		
 //		cl.getProductsPage();

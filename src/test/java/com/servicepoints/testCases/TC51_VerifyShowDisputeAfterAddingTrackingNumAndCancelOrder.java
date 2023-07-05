@@ -1,16 +1,14 @@
 package com.servicepoints.testCases;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
 import java.io.IOException;
 import java.util.Iterator;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
-import org.apache.commons.io.filefilter.FalseFileFilter;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.Test;
 
 import com.servicepoints.PageObjects.AgentOrdersPage;
 import com.servicepoints.PageObjects.AgentSupProductsPage;
@@ -95,12 +93,12 @@ public class TC51_VerifyShowDisputeAfterAddingTrackingNumAndCancelOrder extends 
 
 		if (aspp.getStatus().equals("Quotation done")) {
 			Thread.sleep(2000);
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			logger.info("Verification of Submit quotation Successed..");
 		} else {
 			captureScreen(driver, "Submit Quote Test");
 			logger.info("Verification of Submit quotation failed..");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 			Thread.sleep(4000);
 		}
 
@@ -146,13 +144,13 @@ public class TC51_VerifyShowDisputeAfterAddingTrackingNumAndCancelOrder extends 
 
 		if (driver.getPageSource().contains("Quotation accepted successfully.")) {
 			Thread.sleep(4000);
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			logger.info("Verification of accepting quotation is Successed.");
 
 		} else {
 			captureScreen(driver, "Quotation Accepting");
 			logger.info("Verification of accepting quotation is Failed.");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 		}
 		BaseClass.closeAllWinTabsExceptParent();
 	}
@@ -210,12 +208,12 @@ public class TC51_VerifyShowDisputeAfterAddingTrackingNumAndCancelOrder extends 
 		logger.info("Clicked on Saved dispute.");
 
 		if (driver.getPageSource().contains("Dispute raised successfully")) {
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			logger.info("Verification of Dispute raised Successfully.");
 		} else {
 			captureScreen(driver, "disputeRaised");
 			logger.info("Verification of Dispute raised failed.");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 		}
 	}
 
@@ -284,10 +282,10 @@ public class TC51_VerifyShowDisputeAfterAddingTrackingNumAndCancelOrder extends 
 
 		if (driver.getPageSource().contains("Tracking number successfully added")) {
 			logger.info("Verification of adding tracking number is Successfull.");
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			Thread.sleep(2000);
 		} else {
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 			logger.info("Verification of adding tracking number is failed.");
 		}
 	}
@@ -324,7 +322,6 @@ public class TC51_VerifyShowDisputeAfterAddingTrackingNumAndCancelOrder extends 
 		cop.clickOnShowDispute();
 		Thread.sleep(5000);
 		logger.info("Clicked on Show Dispute.");
-
 
 	}
 
@@ -381,13 +378,13 @@ public class TC51_VerifyShowDisputeAfterAddingTrackingNumAndCancelOrder extends 
 		logger.info("Processing filter selected.");
 
 		if (driver.getPageSource().contains("Order cancelled successfully")) {
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			logger.info("Verification of cancel variant is Successed.");
 		} else {
 			captureScreen(driver, "Cancel order for dispute");
 			Thread.sleep(4000);
 			logger.info("Verification of cancel variant is failed.");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 		}
 
 		driver.get(baseURL);
@@ -414,7 +411,7 @@ public class TC51_VerifyShowDisputeAfterAddingTrackingNumAndCancelOrder extends 
 
 		cop.scrollTillShowDisputeBtn(driver);
 		Thread.sleep(2000);
-		
+
 		cop.clickOnShowDispute();
 		Thread.sleep(5000);
 		logger.info("Clicked on Show Dispute.");

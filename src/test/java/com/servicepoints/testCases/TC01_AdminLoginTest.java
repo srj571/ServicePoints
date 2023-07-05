@@ -1,12 +1,9 @@
 package com.servicepoints.testCases;
 
-import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
-import java.io.IOException;
-import java.util.concurrent.TimeUnit;
-
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 import com.servicepoints.PageObjects.LoginPage;
 
@@ -27,14 +24,14 @@ public class TC01_AdminLoginTest extends BaseClass {
 		Thread.sleep(5000);
 
 		if (driver.getTitle().equals("Admin Dashboard | Service Points")) {
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 			logger.info("Login to the Admin Dashboard Successfully.");
 		} else {
 			captureScreen(driver, "AdminLoginPage");
 			logger.info("Login to Admin Dashboard failed.");
 			driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 		}
 	}
 }

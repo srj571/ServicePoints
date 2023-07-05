@@ -494,9 +494,22 @@ public class AgentSupProductsPage {
 	}
 	
 	
+	@FindBy(xpath="(//div[@class='arrange_country_variant'])[1]//input[@type='checkbox']")
+	List<WebElement> disableQuoteCheckBoxes;
 	
+	public void clickOncheckBoxesToDisableQuote() {
+		for(int i=0; i<disableQuoteCheckBoxes.size();i++) {
+			disableQuoteCheckBoxes.get(2).click();
+			disableQuoteCheckBoxes.get(3).click();
+			disableQuoteCheckBoxes.get(6).click();
+			disableQuoteCheckBoxes.get(7).click();
+		}
+	}
 	
-	
+	public void deselectCheckBoxes()
+	{
+		
+	}
 	
 	
 	

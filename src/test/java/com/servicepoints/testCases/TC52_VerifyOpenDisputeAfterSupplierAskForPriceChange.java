@@ -1,13 +1,11 @@
 package com.servicepoints.testCases;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
 import java.io.IOException;
 import java.util.Iterator;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
-
-import org.testng.annotations.Test;
 
 import com.servicepoints.PageObjects.AgentDisputesPage;
 import com.servicepoints.PageObjects.AgentSupProductsPage;
@@ -105,12 +103,12 @@ public class TC52_VerifyOpenDisputeAfterSupplierAskForPriceChange extends BaseCl
 
 		if (aspp.getStatus().equals("Quotation done")) {
 			Thread.sleep(2000);
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			logger.info("Verification of Submit quotation Successed..");
 		} else {
 			captureScreen(driver, "Submit Quote Test");
 			logger.info("Verification of Submit quotation failed..");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 			Thread.sleep(4000);
 		}
 
@@ -156,13 +154,13 @@ public class TC52_VerifyOpenDisputeAfterSupplierAskForPriceChange extends BaseCl
 
 		if (driver.getPageSource().contains("Quotation accepted successfully.")) {
 			Thread.sleep(4000);
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			logger.info("Verification of accepting quotation is Successed.");
 
 		} else {
 			captureScreen(driver, "Quotation Accepting");
 			logger.info("Verification of accepting quotation is Failed.");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 		}
 		BaseClass.closeAllWinTabsExceptParent();
 	}
@@ -220,12 +218,12 @@ public class TC52_VerifyOpenDisputeAfterSupplierAskForPriceChange extends BaseCl
 		logger.info("Clicked on Saved dispute.");
 
 		if (driver.getPageSource().contains("Dispute raised successfully")) {
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			logger.info("Verification of Dispute raised Successfully.");
 		} else {
 			captureScreen(driver, "disputeRaised");
 			logger.info("Verification of Dispute raised failed.");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 		}
 	}
 
@@ -357,12 +355,12 @@ public class TC52_VerifyOpenDisputeAfterSupplierAskForPriceChange extends BaseCl
 		Thread.sleep(3000);
 
 		if (driver.getPageSource().contains("Quotation accepted")) {
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			logger.info("Verification is done from Client side for Ask for Price change test.");
 		} else {
 			captureScreen(driver, "askForPriceChange");
 			logger.info("Verification is for Ask for Price change test is failed.");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 		}
 
 		ClientOrdersPage cp = new ClientOrdersPage(driver);
@@ -374,7 +372,7 @@ public class TC52_VerifyOpenDisputeAfterSupplierAskForPriceChange extends BaseCl
 		cp.clickOnEachDivForDisputeVerification(driver);
 		Thread.sleep(5000);
 		logger.info("Status changed to Processing.");
-		
+
 		BaseClass.closeAllWinTabsExceptParent();
 	}
 
@@ -405,8 +403,8 @@ public class TC52_VerifyOpenDisputeAfterSupplierAskForPriceChange extends BaseCl
 		Thread.sleep(5000);
 		logger.info("Status changed to Processing.");
 	}
-	
-	@Test(enabled = true,priority = 5)
+
+	@Test(enabled = true, priority = 5)
 	public void verifyDisputesFromSupplierSide() throws InterruptedException, IOException {
 		driver.get(baseURL);
 		LoginPage lp = new LoginPage(driver);

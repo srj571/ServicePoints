@@ -1,11 +1,8 @@
 package com.servicepoints.testCases;
 
-import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
-import java.io.IOException;
-
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import java.io.IOException;
 
 import com.servicepoints.PageObjects.AdminSupplierPage;
 import com.servicepoints.PageObjects.LoginPage;
@@ -22,7 +19,7 @@ public class TC04_VerifyAddAgentSupBySupplier extends BaseClass {
 		lp.setAdminPassword(adminagpass);
 		logger.info("Password is entered.");
 		Thread.sleep(1000);
-		
+
 		lp.clickLoginbtn();
 		Thread.sleep(4000);
 		logger.info("Admin(SUP) Loged in.");
@@ -38,7 +35,7 @@ public class TC04_VerifyAddAgentSupBySupplier extends BaseClass {
 		asp.sendFName(afname);
 		logger.info("First name is entered.");
 		Thread.sleep(1000);
-		
+
 		asp.sendLname(alname);
 		logger.info("Last name is entered.");
 		Thread.sleep(1000);
@@ -64,12 +61,13 @@ public class TC04_VerifyAddAgentSupBySupplier extends BaseClass {
 		asp.clickOnAddAgentbtn();
 		logger.info("Agent info is saved.");
 		Thread.sleep(4000);
-		
-		if(driver.getPageSource().contains("Agent with the same email address already exists. Please use different email address.")) {
+
+		if (driver.getPageSource()
+				.contains("Agent with the same email address already exists. Please use different email address.")) {
 			logger.info("Agent with the same email address already exists.");
-			AssertJUnit.assertTrue(false);			
+			Assert.assertTrue(false);
 		}
-			
+
 		asp.closePopup();
 
 		driver.get(baseURL);
@@ -77,7 +75,7 @@ public class TC04_VerifyAddAgentSupBySupplier extends BaseClass {
 		lp.setAdminMailId(amail);
 		logger.info("Agent email is entered.");
 		Thread.sleep(1000);
-		
+
 		lp.setAdminPassword(pass);
 		logger.info("Agent password is entered.");
 		Thread.sleep(1000);
@@ -87,12 +85,12 @@ public class TC04_VerifyAddAgentSupBySupplier extends BaseClass {
 
 		if (driver.getTitle().contains("Agent Supplier Dashboard | Service Points")) {
 			logger.info("Verification of Agent Supplier Login is Successfull.");
-			AssertJUnit.assertTrue(true);
+			Assert.assertTrue(true);
 			Thread.sleep(1000);
 		} else {
 			captureScreen(driver, "AddAgent");
 			logger.info("Verification of Agent Supplier Login is Failed.");
-			AssertJUnit.assertTrue(false);
+			Assert.assertTrue(false);
 		}
 	}
 
