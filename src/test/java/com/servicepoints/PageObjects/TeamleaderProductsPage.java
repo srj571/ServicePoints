@@ -133,4 +133,33 @@ public class TeamleaderProductsPage {
 		String val=closedSpecialRequestTag.getText();
 		return val;
 	}
+	
+	@FindBy(xpath="(//button[normalize-space()='Accept'])[1]")
+	WebElement acceptAskForPriceChange;
+	
+	public void clickOnAcceptAskForPriceChangeBtn() {
+		acceptAskForPriceChange.click();
+	}
+	
+	@FindBy(xpath="(//button[@type='button'][normalize-space()='Yes, I am sure'])[1]")
+	WebElement yesImSureBtn;
+	
+	public void clickOnYesImSureBtn() {
+		yesImSureBtn.click();
+	}
+	
+	@FindBy(xpath="(//button[normalize-space()='Submit'])[1]")
+	WebElement submitBtnOnDisableVariantPopup;
+	
+	public void clickSubmitBtnOnDisableVariantPopup() {
+		submitBtnOnDisableVariantPopup.click();
+	}
+	
+	@FindBy(xpath="(//button[@type='button'][normalize-space()='Close'])[1]")
+	WebElement closeBtnOnYouHaveAcceptedTheNewPrice;
+	
+	public void clickCloseBtnOnYouHaveAcceptedTheNewPrice() {
+		closeBtnOnYouHaveAcceptedTheNewPrice.click();
+	}
+	
 }

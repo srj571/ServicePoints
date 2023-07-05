@@ -16,8 +16,7 @@ import com.servicepoints.PageObjects.TeamleaderOrdersPage;
 import com.servicepoints.PageObjects.TeamleaderProductsPage;
 import com.servicepoints.utilities.ReadConfig;
 
-
-public class TC67_VerifySimpleSpecialRequestFunctionalityBySupportAndTeamleader extends BaseClass{
+public class TC67_VerifySimpleSpecialRequestFunctionalityBySupportAndTeamleader extends BaseClass {
 
 	ReadConfig rd = new ReadConfig();
 	public String product67 = rd.getProductForTC67();
@@ -28,12 +27,12 @@ public class TC67_VerifySimpleSpecialRequestFunctionalityBySupportAndTeamleader 
 	public String clientMailPP = rd.getClientMailForProductsPage();
 	public String clientPassPP = rd.getClientPassForProductsPage();
 	public String teamleadName = rd.getTeamleadNameForProductsPage();
-	
-	public String clientName=rd.getclientNameForPP();
-	public String orderStatus=rd.getOrderStatus();
-	public String message=rd.getMessageBySupplier();
-	
-	@Test(enabled = false, priority = 1)
+
+	public String clientName = rd.getclientNameForPP();
+	public String orderStatus = rd.getOrderStatus();
+	public String message = rd.getMessageBySupplier();
+
+	@Test(enabled = true, priority = 1)
 	public void submitAndAcceptQuotation() throws InterruptedException, IOException {
 		logger.info("Application Opened.");
 		LoginPage lp = new LoginPage(driver);
@@ -92,9 +91,9 @@ public class TC67_VerifySimpleSpecialRequestFunctionalityBySupportAndTeamleader 
 		}
 
 		BaseClass.closeAllWinTabsExceptParent();
-		
+
 		driver.get(baseURL);
-		
+
 		lp.setAdminMailId(AdminMailID);
 		logger.info("Email_id is entered.");
 
@@ -170,21 +169,21 @@ public class TC67_VerifySimpleSpecialRequestFunctionalityBySupportAndTeamleader 
 
 		if (sop.getOrderStatusFromSupportSide().equals("Processing")) {
 			Assert.assertTrue(true);
+			Thread.sleep(2000);
 			logger.info("Verification of accepting quotation is Successed.");
 		} else {
 			logger.info("Verification of accepting quotation is Failed.");
 			Assert.assertTrue(false);
 		}
-		
+
 		BaseClass.closeAllWinTabsExceptParent();
 	}
-	
-	
-	@Test(priority = 2, enabled = false)
+
+	@Test(priority = 2, enabled = true)
 	public void submitSpecialRequestByTeamleader() throws InterruptedException {
-		
-		LoginPage lp=new LoginPage(driver);
-		
+		driver.get(baseURL);
+		LoginPage lp = new LoginPage(driver);
+
 		lp.setAdminMailId(AdminMailID);
 		logger.info("Email_id is entered.");
 
@@ -193,7 +192,7 @@ public class TC67_VerifySimpleSpecialRequestFunctionalityBySupportAndTeamleader 
 
 		lp.clickLoginbtn();
 		Thread.sleep(4000);
-		
+
 		AdminAccountsPage aap = new AdminAccountsPage(driver);
 
 		aap.getAdminAccountsPage();
@@ -207,11 +206,11 @@ public class TC67_VerifySimpleSpecialRequestFunctionalityBySupportAndTeamleader 
 		aap.clickOnLoginBtn();
 		Thread.sleep(2000);
 		logger.info("Teamleader login successfully.");
-		
+
 		String parentWindow = driver.getWindowHandle();
 		Set<String> window = driver.getWindowHandles();
 		Iterator<String> it = window.iterator();
-		String parent= it.next();
+		String parent = it.next();
 		String child = it.next();
 		driver.switchTo().window(child);
 		Thread.sleep(4000);
@@ -223,15 +222,15 @@ public class TC67_VerifySimpleSpecialRequestFunctionalityBySupportAndTeamleader 
 		tpp.searchProduct(product67);
 		Thread.sleep(2000);
 		logger.info("Product name searched.");
-		
+
 		tpp.handleOrderStatusDropdown(orderStatus);
 		Thread.sleep(1000);
 		logger.info("Order status filtered.");
-		
+
 		tpp.handleClientNameDropdown(clientName);
 		Thread.sleep(1000);
 		logger.info("Client name filtered.");
-		
+
 		tpp.clickOnFtab();
 		Thread.sleep(2000);
 
@@ -242,32 +241,33 @@ public class TC67_VerifySimpleSpecialRequestFunctionalityBySupportAndTeamleader 
 				break;
 			}
 		}
-		
+
 		tpp.clickOnSpecialrequestDrop();
 		Thread.sleep(2000);
 		tpp.clickOnNeedSizingChartSp();
 		Thread.sleep(2000);
-		String exp="I need a sizing chart";
-		
-		String act=tpp.getMesssageOfINeedSizeChart();
-		
+		String exp = "I need a sizing chart";
+
+		String act = tpp.getMesssageOfINeedSizeChart();
+
 		Assert.assertEquals(exp, act);
 		logger.info("I need a sizing chart message verified successfully.");
-		
+
 		tpp.clickOnSubmitBtn();
 		Thread.sleep(2000);
-		
-		String expStatus="Open special request";
-		String actStatus=tpp.getOpenSPStatus();
-		
+
+		String expStatus = "Open special request";
+		String actStatus = tpp.getOpenSPStatus();
+
 		Assert.assertEquals(expStatus, actStatus);
 		logger.info("Open special request status verified successfully.");
+		Thread.sleep(3000);
 		BaseClass.closeAllWinTabsExceptParent();
 	}
-	
-	@Test(priority = 3,enabled = false)
+
+	@Test(priority = 3, enabled = true)
 	public void verifySupplierSubmittedTheSpRequest() throws InterruptedException {
-		
+		driver.get(baseURL);
 		LoginPage lp = new LoginPage(driver);
 
 		lp.setAdminMailId(supplierMailPP);
@@ -299,25 +299,26 @@ public class TC67_VerifySimpleSpecialRequestFunctionalityBySupportAndTeamleader 
 		String child1 = it1.next();
 		driver.switchTo().window(child1);
 		Thread.sleep(4000);
-		
+
 		asp.clickOnCheckBoxForSpecialRequest();
 		Thread.sleep(1000);
-		
+
 		asp.sendMessageForSpecialRequest(message);
 		Thread.sleep(2000);
-		
+
 		asp.clickOnSubmitBtn();
 		logger.info("Message sent successfully for the special request.");
-		
+		Thread.sleep(3000);
+
 		BaseClass.closeAllWinTabsExceptParent();
-		
+
 	}
-	
-	@Test(priority = 4, enabled = false)
+
+	@Test(priority = 4, enabled = true)
 	public void verifyCloseSpecialRequestFromTeamleaderSide() throws InterruptedException {
 		driver.get(baseURL);
-		LoginPage lp=new LoginPage(driver);
-		
+		LoginPage lp = new LoginPage(driver);
+
 		lp.setAdminMailId(AdminMailID);
 		logger.info("Email_id is entered.");
 
@@ -326,7 +327,7 @@ public class TC67_VerifySimpleSpecialRequestFunctionalityBySupportAndTeamleader 
 
 		lp.clickLoginbtn();
 		Thread.sleep(4000);
-		
+
 		AdminAccountsPage aap = new AdminAccountsPage(driver);
 
 		aap.getAdminAccountsPage();
@@ -340,11 +341,11 @@ public class TC67_VerifySimpleSpecialRequestFunctionalityBySupportAndTeamleader 
 		aap.clickOnLoginBtn();
 		Thread.sleep(2000);
 		logger.info("Teamleader login successfully.");
-		
+
 		String parentWindow = driver.getWindowHandle();
 		Set<String> window = driver.getWindowHandles();
 		Iterator<String> it = window.iterator();
-		String parent= it.next();
+		String parent = it.next();
 		String child = it.next();
 		driver.switchTo().window(child);
 		Thread.sleep(4000);
@@ -356,15 +357,15 @@ public class TC67_VerifySimpleSpecialRequestFunctionalityBySupportAndTeamleader 
 		tpp.searchProduct(product67);
 		Thread.sleep(2000);
 		logger.info("Product name searched.");
-		
+
 		tpp.handleOrderStatusDropdown(orderStatus);
 		Thread.sleep(1000);
 		logger.info("Order status filtered.");
-		
+
 		tpp.handleClientNameDropdown(clientName);
 		Thread.sleep(1000);
 		logger.info("Client name filtered.");
-		
+
 		tpp.clickOnFtab();
 		Thread.sleep(2000);
 
@@ -375,21 +376,21 @@ public class TC67_VerifySimpleSpecialRequestFunctionalityBySupportAndTeamleader 
 				break;
 			}
 		}
-		
-		String exp="Closed special request";
-		String act=tpp.getClosedSpRequestTag();
-		
+
+		String exp = "Closed special request";
+		String act = tpp.getClosedSpRequestTag();
+
 		Assert.assertEquals(exp, act);
 		logger.info("Close Special request status verified successfully.");
-		
+		Thread.sleep(3000);
 		BaseClass.closeAllWinTabsExceptParent();
 	}
-	
+
 	@Test(priority = 5, enabled = true)
 	public void verifySumbmittingSpRequestFromSupport() throws InterruptedException {
 		driver.get(baseURL);
 		LoginPage lp = new LoginPage(driver);
-		
+
 		lp.setAdminMailId(supportMailPP);
 		logger.info("Email_id is entered.");
 
@@ -401,10 +402,10 @@ public class TC67_VerifySimpleSpecialRequestFunctionalityBySupportAndTeamleader 
 
 		SupportProductsPage cl = new SupportProductsPage(driver);
 		cl.clickOnProductsTab();
-		
+
 		cl.searchProducts(product67);
 		Thread.sleep(4000);
-		
+
 		cl.clickOnFDiv();
 		Thread.sleep(1000);
 
@@ -415,33 +416,33 @@ public class TC67_VerifySimpleSpecialRequestFunctionalityBySupportAndTeamleader 
 		String child = it.next();
 		driver.switchTo().window(child);
 		Thread.sleep(4000);
-		
+
 		cl.clickOnSpecialRequestDrop();
 		Thread.sleep(2000);
-		
+
 		cl.clickOnIWantRealFactoryPicSp();
 		Thread.sleep(2000);
-		
-		String exp="I want real factory pictures";
-		String actText=cl.getTextOFiWantRealFactoryPicSp();
-		
+
+		String exp = "I want real factory pictures";
+		String actText = cl.getTextOFiWantRealFactoryPicSp();
+
 		Assert.assertEquals(exp, actText);
 		logger.info("I want real factory pictures message is verified successfully.");
 		cl.clickOnSubmitBtn();
 		Thread.sleep(2000);
-		
-		String expStatus="Open special request";
-		
-		String actStatus=cl.getSPStatus();
-		
+
+		String expStatus = "Open special request";
+
+		String actStatus = cl.getSPStatus();
+
 		Assert.assertEquals(expStatus, actStatus);
 		logger.info("Status is verified successfully.");
-		
+		Thread.sleep(3000);
 		BaseClass.closeAllWinTabsExceptParent();
-		
+
 	}
-	
-	@Test(priority = 6,enabled = true)
+
+	@Test(priority = 6, enabled = true)
 	public void verifySupplierSubmittedTheSpRequestFromSupport() throws InterruptedException {
 		driver.get(baseURL);
 		LoginPage lp = new LoginPage(driver);
@@ -475,20 +476,200 @@ public class TC67_VerifySimpleSpecialRequestFunctionalityBySupportAndTeamleader 
 		String child = it.next();
 		driver.switchTo().window(child);
 		Thread.sleep(4000);
-		
+
 		asp.clickOnCheckBoxForSpecialRequest();
 		Thread.sleep(1000);
-		
+
 		asp.sendMessageForSpecialRequest(message);
 		Thread.sleep(2000);
-		
+
 		asp.clickOnSubmitBtn();
 		logger.info("Message sent successfully for the special request.");
+		Thread.sleep(3000);
+		BaseClass.closeAllWinTabsExceptParent();
+
+	}
+
+	@Test(priority = 7, enabled = true)
+	public void verifyCloseSpRequestFromSupplier() throws InterruptedException {
+		driver.get(baseURL);
+		LoginPage lp = new LoginPage(driver);
+
+		lp.setAdminMailId(supportMailPP);
+		logger.info("Email_id is entered.");
+
+		lp.setAdminPassword(supportPassPP);
+		logger.info("Password is entered.");
+
+		lp.clickLoginbtn();
+		Thread.sleep(4000);
+
+		SupportProductsPage cl = new SupportProductsPage(driver);
+		cl.clickOnProductsTab();
+
+		cl.searchProducts(product67);
+		Thread.sleep(4000);
+
+		cl.clickOnFDiv();
+		Thread.sleep(1000);
+
+		String parentWindow = driver.getWindowHandle();
+		Set<String> window = driver.getWindowHandles();
+		Iterator<String> it = window.iterator();
+		String parent = it.next();
+		String child = it.next();
+		driver.switchTo().window(child);
+		Thread.sleep(4000);
+
+		String expVal = "Closed special request";
+		String actVal = cl.getSpecialRequstStatus();
+
+		Assert.assertEquals(expVal, actVal);
+		Thread.sleep(3000);
+
+		logger.info("Status verified successfully from support side.");
+		BaseClass.closeAllWinTabsExceptParent();
+	}
+
+	@Test(priority = 8, enabled = true)
+	public void verifyRequestingSpecialRequestFromClient() throws InterruptedException {
+		driver.get(baseURL);
+		LoginPage lp = new LoginPage(driver);
+
+		lp.setAdminMailId(clientMailPP);
+		logger.info("Email_id is entered.");
+
+		lp.setAdminPassword(clientPassPP);
+		logger.info("Password is entered.");
+
+		lp.clickLoginbtn();
+		Thread.sleep(4000);
+
+		ClientProductPage cpp = new ClientProductPage(driver);
+		cpp.getProductsPage();
+		Thread.sleep(2000);
+
+		cpp.searchProduct(product67);
+		Thread.sleep(2000);
+
+		cpp.clickOnFirstPDiv();
+		Thread.sleep(2000);
+
+		String parentWindow = driver.getWindowHandle();
+		Set<String> window = driver.getWindowHandles();
+		Iterator<String> it = window.iterator();
+		String parent = it.next();
+		String child = it.next();
+		driver.switchTo().window(child);
+		Thread.sleep(4000);
+
+		cpp.clickOnSpecialRequestDrop();
+		Thread.sleep(2000);
+		cpp.getINeedListOfIngredientsOption();
+		Thread.sleep(2000);
+
+		String expMsg = "I need a list of ingredients";
+		String actMsg = cpp.getiNeedListOfIngredientsMessageOnPopUp();
+
+		Assert.assertEquals(expMsg, actMsg);
+
+		Thread.sleep(3000);
+
+		cpp.clickOnSubmitBtnAfterSimpleSp();
+		Thread.sleep(4000);
+		logger.info("Message on special request pop up is verified.");
 		
 		BaseClass.closeAllWinTabsExceptParent();
-		
+
 	}
-	
-	
-	
+
+	@Test(priority = 9, enabled = true)
+	public void verifySupplierSubmittedTheSpRequestFromClient() throws InterruptedException {
+		driver.get(baseURL);
+		LoginPage lp = new LoginPage(driver);
+
+		lp.setAdminMailId(supplierMailPP);
+		logger.info("Email_id is entered.");
+
+		lp.setAdminPassword(supplierPassPP);
+		logger.info("Password is entered.");
+
+		lp.clickLoginbtn();
+		Thread.sleep(4000);
+
+		AgentSupProductsPage asp = new AgentSupProductsPage(driver);
+		asp.getProductsPage();
+		Thread.sleep(1000);
+
+		asp.clickOnProductsTab();
+		Thread.sleep(2000);
+
+		asp.searchProductName(product67);
+		Thread.sleep(4000);
+		logger.info("Product name entered.");
+		asp.clickOnfdiv();
+		Thread.sleep(4000);
+
+		String parentWindow = driver.getWindowHandle();
+		Set<String> window = driver.getWindowHandles();
+		Iterator<String> it = window.iterator();
+		String parent = it.next();
+		String child = it.next();
+		driver.switchTo().window(child);
+		Thread.sleep(4000);
+
+		asp.clickOnCheckBoxForSpecialRequest();
+		Thread.sleep(1000);
+
+		asp.sendMessageForSpecialRequest(message);
+		Thread.sleep(2000);
+
+		asp.clickOnSubmitBtn();
+		logger.info("Message sent successfully for the special request.");
+		Thread.sleep(3000);
+		BaseClass.closeAllWinTabsExceptParent();
+
+	}
+
+	@Test(priority = 10, enabled = true)
+	public void verifyCloseSpecialRequestSubmittedFromSupplier() throws InterruptedException {
+		driver.get(baseURL);
+		LoginPage lp = new LoginPage(driver);
+
+		lp.setAdminMailId(clientMailPP);
+		logger.info("Email_id is entered.");
+
+		lp.setAdminPassword(clientPassPP);
+		logger.info("Password is entered.");
+
+		lp.clickLoginbtn();
+		Thread.sleep(4000);
+
+		ClientProductPage cpp = new ClientProductPage(driver);
+		cpp.getProductsPage();
+		Thread.sleep(2000);
+
+		cpp.searchProduct(product67);
+		Thread.sleep(2000);
+
+		cpp.clickOnFirstPDiv();
+		Thread.sleep(2000);
+
+		String parentWindow = driver.getWindowHandle();
+		Set<String> window = driver.getWindowHandles();
+		Iterator<String> it = window.iterator();
+		String parent = it.next();
+		String child = it.next();
+		driver.switchTo().window(child);
+		Thread.sleep(4000);
+
+		String expSt="Closed special request";
+		String actSt=cpp.getCloseSpecialRequestStatus();
+		
+		Assert.assertEquals(actSt, expSt);
+		
+		Thread.sleep(3000);
+		logger.info("Close special request status verified successfully.");
+		BaseClass.closeAllWinTabsExceptParent();
+	}
 }

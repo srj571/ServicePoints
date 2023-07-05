@@ -1127,6 +1127,11 @@ public class ReadConfig {
 		String pro67=po.getProperty("product67");
 		return pro67;
 	}
+	
+	public String getProductForTC68() {
+		String pro68=po.getProperty("product68");
+		return pro68;
+	}
 }
 
 

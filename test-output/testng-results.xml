@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="4" total="6" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-04T13:38:34 IST" name="Suite" finished-at="2023-07-04T13:39:27 IST" duration-ms="52388">
+  <suite started-at="2023-07-05T12:52:11 IST" name="Suite" finished-at="2023-07-05T12:56:25 IST" duration-ms="254104">
     <groups>
     </groups>
-    <test started-at="2023-07-04T13:38:34 IST" name="Test" finished-at="2023-07-04T13:39:27 IST" duration-ms="52388">
-      <class name="com.servicepoints.testCases.TC67_VerifySimpleSpecialRequestFunctionalityBySupportAndTeamleader">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.servicepoints.testCases.TC67_VerifySimpleSpecialRequestFunctionalityBySupportAndTeamleader@7e985ce9]" started-at="2023-07-04T13:38:35 IST" name="setup" finished-at="2023-07-04T13:38:39 IST" duration-ms="4323" status="PASS">
+    <test started-at="2023-07-05T12:52:11 IST" name="Test" finished-at="2023-07-05T12:56:25 IST" duration-ms="254104">
+      <class name="com.servicepoints.testCases.TC68_VerifyAskForPriceChangeFunctionFromSupportAndTeamleaderSide">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.servicepoints.testCases.TC68_VerifyAskForPriceChangeFunctionFromSupportAndTeamleaderSide@42b64ab8]" started-at="2023-07-05T12:52:11 IST" name="setup" finished-at="2023-07-05T12:52:15 IST" duration-ms="4730" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,19 +18,31 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifySumbmittingSpRequestFromSupport()[pri:5, instance:com.servicepoints.testCases.TC67_VerifySimpleSpecialRequestFunctionalityBySupportAndTeamleader@7e985ce9]" started-at="2023-07-04T13:38:39 IST" name="verifySumbmittingSpRequestFromSupport" finished-at="2023-07-04T13:39:00 IST" duration-ms="21588" status="PASS">
+        <test-method signature="submitAndAcceptQuotation()[pri:1, instance:com.servicepoints.testCases.TC68_VerifyAskForPriceChangeFunctionFromSupportAndTeamleaderSide@42b64ab8]" started-at="2023-07-05T12:52:15 IST" name="submitAndAcceptQuotation" finished-at="2023-07-05T12:53:27 IST" duration-ms="71741" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifySumbmittingSpRequestFromSupport -->
-        <test-method signature="verifySupplierSubmittedTheSpRequestFromSupport()[pri:6, instance:com.servicepoints.testCases.TC67_VerifySimpleSpecialRequestFunctionalityBySupportAndTeamleader@7e985ce9]" started-at="2023-07-04T13:39:00 IST" name="verifySupplierSubmittedTheSpRequestFromSupport" finished-at="2023-07-04T13:39:27 IST" duration-ms="26257" status="PASS">
+        </test-method> <!-- submitAndAcceptQuotation -->
+        <test-method signature="verifySubmitingAskForPriceChange()[pri:2, instance:com.servicepoints.testCases.TC68_VerifyAskForPriceChangeFunctionFromSupportAndTeamleaderSide@42b64ab8]" started-at="2023-07-05T12:53:27 IST" name="verifySubmitingAskForPriceChange" finished-at="2023-07-05T12:54:10 IST" duration-ms="42665" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifySupplierSubmittedTheSpRequestFromSupport -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.servicepoints.testCases.TC67_VerifySimpleSpecialRequestFunctionalityBySupportAndTeamleader@7e985ce9]" started-at="2023-07-04T13:39:27 IST" name="tearDown" finished-at="2023-07-04T13:39:27 IST" duration-ms="87" status="PASS">
+        </test-method> <!-- verifySubmitingAskForPriceChange -->
+        <test-method signature="verifyClientAcceptedTheNewPrice()[pri:3, instance:com.servicepoints.testCases.TC68_VerifyAskForPriceChangeFunctionFromSupportAndTeamleaderSide@42b64ab8]" started-at="2023-07-05T12:54:10 IST" name="verifyClientAcceptedTheNewPrice" finished-at="2023-07-05T12:54:51 IST" duration-ms="41273" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyClientAcceptedTheNewPrice -->
+        <test-method signature="verifyDisableQuotationFromSupplier()[pri:4, instance:com.servicepoints.testCases.TC68_VerifyAskForPriceChangeFunctionFromSupportAndTeamleaderSide@42b64ab8]" started-at="2023-07-05T12:54:51 IST" name="verifyDisableQuotationFromSupplier" finished-at="2023-07-05T12:55:29 IST" duration-ms="37942" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDisableQuotationFromSupplier -->
+        <test-method signature="verifyAcceptingNewQuotation()[pri:5, instance:com.servicepoints.testCases.TC68_VerifyAskForPriceChangeFunctionFromSupportAndTeamleaderSide@42b64ab8]" started-at="2023-07-05T12:55:29 IST" name="verifyAcceptingNewQuotation" finished-at="2023-07-05T12:56:25 IST" duration-ms="55510" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAcceptingNewQuotation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.servicepoints.testCases.TC68_VerifyAskForPriceChangeFunctionFromSupportAndTeamleaderSide@42b64ab8]" started-at="2023-07-05T12:56:25 IST" name="tearDown" finished-at="2023-07-05T12:56:25 IST" duration-ms="99" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.servicepoints.testCases.TC67_VerifySimpleSpecialRequestFunctionalityBySupportAndTeamleader -->
+      </class> <!-- com.servicepoints.testCases.TC68_VerifyAskForPriceChangeFunctionFromSupportAndTeamleaderSide -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

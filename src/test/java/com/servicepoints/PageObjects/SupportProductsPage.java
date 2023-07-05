@@ -107,5 +107,13 @@ public class SupportProductsPage {
 		return val;
 	}
 	
+	@FindBy(xpath="(//span[normalize-space()='Closed special request'])[1]")
+	WebElement specialRequestStatus;
+	
+	public String getSpecialRequstStatus() {
+		String val=specialRequestStatus.getText();
+		return val;
+	}
+	
 	
 }

@@ -388,4 +388,39 @@ public class ClientProductPage {
 		quoteTabSupportSide.click();
 	}
 	
+	@FindBy(xpath="(//a[normalize-space()='I need a list of ingredients'])[1]")
+	WebElement iNeedListOfIngredientsOption;
+	
+	public void getINeedListOfIngredientsOption() {
+		iNeedListOfIngredientsOption.click();
+	}
+	
+	@FindBy(xpath="(//p[@class='special_request_messgae'][normalize-space()='I need a list of ingredients'])[1]")
+	WebElement iNeedListOfIngredientsMessage;
+	
+	public String getiNeedListOfIngredientsMessageOnPopUp() {
+		String val=iNeedListOfIngredientsMessage.getText();
+		return val;
+	}
+	
+	@FindBy(xpath="(//button[@type='button'][normalize-space()='Submit'])[1]")
+	WebElement SubmitBtnAfterSimpleSp;
+	
+	public void clickOnSubmitBtnAfterSimpleSp() {
+		SubmitBtnAfterSimpleSp.click();
+	}
+	
+	@FindBy(xpath="(//span[normalize-space()='Closed special request'])[1]")
+	WebElement closeSpecialRequestStatus;
+	
+	public String getCloseSpecialRequestStatus() {
+		String val=closeSpecialRequestStatus.getText();
+		return val;
+	}
+	
+	
+	
+	
 }
+
+

@@ -7,14 +7,13 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.servicepoints.testCases.TC67_VerifySimpleSpecialRequestFunctionalityBySupportAndTeamleader">
+      <class name="com.servicepoints.testCases.TC68_VerifyAskForPriceChangeFunctionFromSupportAndTeamleaderSide">
         <methods>
-          <include name="verifySupplierSubmittedTheSpRequestFromSupport"/>
+          <include name="verifyAcceptingNewQuotation"/>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="verifySumbmittingSpRequestFromSupport"/>
         </methods>
-      </class> <!-- com.servicepoints.testCases.TC67_VerifySimpleSpecialRequestFunctionalityBySupportAndTeamleader -->
+      </class> <!-- com.servicepoints.testCases.TC68_VerifyAskForPriceChangeFunctionFromSupportAndTeamleaderSide -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -2,9 +2,9 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
 
-	<listeners>
+	<!--<listeners>
 		<listener class-name="com.servicepoints.utilities.Reporting"></listener>
-	</listeners>
+	</listeners> -->
 		
 	<parameter name="browser" value="chrome"></parameter>
 	
@@ -346,7 +346,7 @@
 			  <include name="acceptQuotationFromSupport"></include>
 			  <include name="tearDown"></include>
 		  </methods>
-	  </class>-->
+	  </class>
 	  <class name="com.servicepoints.testCases.TC67_VerifySimpleSpecialRequestFunctionalityBySupportAndTeamleader">
 		  <methods>
 			  <include name="setup"></include>
@@ -356,6 +356,21 @@
 			  <include name="verifyCloseSpecialRequestFromTeamleaderSide"></include>
 			  <include name="verifySumbmittingSpRequestFromSupport"></include>
 			  <include name="verifySupplierSubmittedTheSpRequestFromSupport"></include>
+			  <include name="verifyCloseSpRequestFromSupplier"></include>
+			  <include name="verifyRequestingSpecialRequestFromClient"></include>
+			  <include name="verifySupplierSubmittedTheSpRequestFromClient"></include>
+			  <include name="verifyCloseSpecialRequestSubmittedFromSupplier"></include>
+			  <include name="tearDown"></include>
+		  </methods>
+	  </class>-->
+	  <class name="com.servicepoints.testCases.TC68_VerifyAskForPriceChangeFunctionFromSupportAndTeamleaderSide">
+		  <methods>
+			  <include name="setup"></include>
+			  <include name="submitAndAcceptQuotation"></include>
+			  <include name="verifySubmitingAskForPriceChange"></include>
+			  <include name="verifyClientAcceptedTheNewPrice"></include>
+			  <include name="verifyDisableQuotationFromSupplier"></include>
+			  <include name="verifyAcceptingNewQuotation"></include>
 			  <include name="tearDown"></include>
 		  </methods>
 	  </class>
