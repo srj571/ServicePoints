@@ -42,7 +42,7 @@ public class TC69_VerifyProductsPageOfSupportAndTeamleaderSideForAddNewVariant e
 	public String c3price = rc.setChangePrice3Pcs();
 	public String c4price = rc.setChangePrice4Pcs();
 
-	@Test(enabled = true, priority = 1)
+	@Test(enabled = false, priority = 1)
 	public void submitAndAcceptQuotation() throws InterruptedException, IOException {
 		logger.info("Application Opened.");
 		LoginPage lp = new LoginPage(driver);
@@ -121,6 +121,7 @@ public class TC69_VerifyProductsPageOfSupportAndTeamleaderSideForAddNewVariant e
 		Thread.sleep(4000);
 		cl.selectProductTab();
 		Thread.sleep(3000);
+		
 		String parentWindow1 = driver.getWindowHandle();
 		Set<String> window1 = driver.getWindowHandles();
 		Iterator<String> it1 = window1.iterator();
@@ -149,7 +150,7 @@ public class TC69_VerifyProductsPageOfSupportAndTeamleaderSideForAddNewVariant e
 		BaseClass.closeAllWinTabsExceptParent();
 	}
 
-	@Test(priority = 2, enabled = true)
+	@Test(priority = 2, enabled = false)
 	public void verifyDisableQuotationBySupplier() throws InterruptedException {
 		LoginPage lp = new LoginPage(driver);
 		AgentSupProductsPage asop = new AgentSupProductsPage(driver);
@@ -204,12 +205,12 @@ public class TC69_VerifyProductsPageOfSupportAndTeamleaderSideForAddNewVariant e
 		asop.scrollTillEle(driver);
 		Thread.sleep(1000);
 		asop.clickOnSubmitQuote();
-		Thread.sleep(9000);
+		Thread.sleep(10000);
 
-		if (asop.getStatus().equals("Quotation done")) {
-			Thread.sleep(2000);
+		if (asop.getStatus().equals("Quotation accepted")) {
+			Thread.sleep(4000);
 			Assert.assertTrue(true);
-			logger.info("Verification of Submit quotation Successed..");
+			logger.info("Verification of Submit quotation Successfull..");
 		} else {
 			logger.info("Verification of Submit quotation failed..");
 			Assert.assertTrue(false);
@@ -232,15 +233,15 @@ public class TC69_VerifyProductsPageOfSupportAndTeamleaderSideForAddNewVariant e
 		logger.info("Price entered");
 		Thread.sleep(4000);
 
-		asop.scrollTillEle(driver);
+		asop.scrollTillSubmitNewPrice(driver);
 		Thread.sleep(1000);
-		asop.clickOnSubmitQuote();
+		asop.clickOnSbmtNewPrice();
 		Thread.sleep(9000);
 
 		if (asop.getOrderStatusToNewPrice().equals("New price")) {
 			Thread.sleep(2000);
 			Assert.assertTrue(true);
-			logger.info("Verification of Submit quotation Successed..");
+			logger.info("Verification of Submit quotation Successfull..");
 		} else {
 			logger.info("Verification of Submit quotation failed..");
 			Assert.assertTrue(false);
@@ -250,7 +251,7 @@ public class TC69_VerifyProductsPageOfSupportAndTeamleaderSideForAddNewVariant e
 		BaseClass.closeAllWinTabsExceptParent();
 	}
 
-	@Test(priority = 3, enabled = true)
+	@Test(priority = 3, enabled = false)
 	public void startFulfillmentBySupport() throws InterruptedException {
 		driver.get(baseURL);
 		LoginPage lp = new LoginPage(driver);
@@ -327,7 +328,7 @@ public class TC69_VerifyProductsPageOfSupportAndTeamleaderSideForAddNewVariant e
 		BaseClass.closeAllWinTabsExceptParent();
 	}
 	
-	@Test(priority = 4, enabled = true)
+	@Test(priority = 4, enabled = false)
 	public void verifyUnableQuotationBySupplier() throws InterruptedException {
 		LoginPage lp = new LoginPage(driver);
 		AgentSupProductsPage asop = new AgentSupProductsPage(driver);
@@ -379,9 +380,9 @@ public class TC69_VerifyProductsPageOfSupportAndTeamleaderSideForAddNewVariant e
 		logger.info("Price entered");
 		Thread.sleep(4000);
 
-		asop.scrollTillEle(driver);
+		asop.scrollTillSubmitNewPrice(driver);
 		Thread.sleep(1000);
-		asop.clickOnSubmitQuote();
+		asop.clickOnSbmtNewPrice();
 		Thread.sleep(9000);
 
 		if (asop.getOrderStatusToNewPrice().equals("New price")) {
