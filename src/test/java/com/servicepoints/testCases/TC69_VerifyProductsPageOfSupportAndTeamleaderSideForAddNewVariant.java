@@ -37,12 +37,8 @@ public class TC69_VerifyProductsPageOfSupportAndTeamleaderSideForAddNewVariant e
 	public String productFetch = rd.fetchProducts();
 	public String ordersFetch = rd.fetchOrders();
 
-	public String c1price = rc.setChangePrice1Pcs();
-	public String c2price = rc.setChangePrice2Pcs();
-	public String c3price = rc.setChangePrice3Pcs();
-	public String c4price = rc.setChangePrice4Pcs();
 
-	@Test(enabled = false, priority = 1)
+	@Test(enabled = true, priority = 1)
 	public void submitAndAcceptQuotation() throws InterruptedException, IOException {
 		logger.info("Application Opened.");
 		LoginPage lp = new LoginPage(driver);
@@ -150,7 +146,7 @@ public class TC69_VerifyProductsPageOfSupportAndTeamleaderSideForAddNewVariant e
 		BaseClass.closeAllWinTabsExceptParent();
 	}
 
-	@Test(priority = 2, enabled = false)
+	@Test(priority = 2, enabled = true)
 	public void verifyDisableQuotationBySupplier() throws InterruptedException {
 		LoginPage lp = new LoginPage(driver);
 		AgentSupProductsPage asop = new AgentSupProductsPage(driver);
@@ -251,7 +247,7 @@ public class TC69_VerifyProductsPageOfSupportAndTeamleaderSideForAddNewVariant e
 		BaseClass.closeAllWinTabsExceptParent();
 	}
 
-	@Test(priority = 3, enabled = false)
+	@Test(priority = 3, enabled = true)
 	public void startFulfillmentBySupport() throws InterruptedException {
 		driver.get(baseURL);
 		LoginPage lp = new LoginPage(driver);
@@ -328,7 +324,7 @@ public class TC69_VerifyProductsPageOfSupportAndTeamleaderSideForAddNewVariant e
 		BaseClass.closeAllWinTabsExceptParent();
 	}
 	
-	@Test(priority = 4, enabled = false)
+	@Test(priority = 4, enabled = true)
 	public void verifyUnableQuotationBySupplier() throws InterruptedException {
 		LoginPage lp = new LoginPage(driver);
 		AgentSupProductsPage asop = new AgentSupProductsPage(driver);
@@ -452,14 +448,14 @@ public class TC69_VerifyProductsPageOfSupportAndTeamleaderSideForAddNewVariant e
 		tpp.clickOnQouteTab();
 		Thread.sleep(2000);
 
-		tpp.clickOnAcceptQuoteBtn();
+		tpp.clickOnAcceptAskForPriceChangeBtn();
 		Thread.sleep(4000);
 		
 		tpp.clickOnYesImSureBtn();
 		Thread.sleep(4000);
 		
 		tpp.clickCloseBtnOnYouHaveAcceptedTheNewPrice();
-		Thread.sleep(8000);
+		Thread.sleep(5000);
 
 		if (driver.getPageSource().contains("Quotation accepted")) {
 			Thread.sleep(4000);

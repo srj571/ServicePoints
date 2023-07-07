@@ -240,14 +240,7 @@ public class TC66_VerifyProductPageOffSupportAndTeamleaderSideAnotherScenario ex
 		Thread.sleep(2000);
 		logger.info("Status changed to Hold.");
 		
-//		window = driver.getWindowHandles();
-//		for (String handle : window) {
-//			if (!handle.equals(parentWindow) && !handle.equals(driver.getWindowHandle())) {
-//				driver.switchTo().window(handle);
-//				break;
-//			}
-//		}
-//		
+	
 		if(cp.checkOrderStatusHold().equals("Hold")) {
 			logger.info("Verification of Order status to Hold is Successfull.");
 			Assert.assertTrue(true);
