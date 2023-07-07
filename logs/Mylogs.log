@@ -7072,3 +7072,9 @@
 [INFO ] 2023-07-06 18:35:51.169 [main] BaseClass - Password is entered.
 [INFO ] 2023-07-06 18:37:51.608 [main] BaseClass - Email_id is entered.
 [INFO ] 2023-07-06 18:37:51.696 [main] BaseClass - Password is entered.
+[INFO ] 2023-07-07 09:40:20.112 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-07-07 09:40:20.203 [main] BaseClass - Password is entered.
+[INFO ] 2023-07-07 09:41:06.101 [main] BaseClass - Verification of accepting quotation is Successed.
+[INFO ] 2023-07-07 09:41:07.893 [main] BaseClass - Go to Orders page.
+[INFO ] 2023-07-07 09:41:16.182 [main] BaseClass - Status changed to Processing.
+[INFO ] 2023-07-07 09:41:16.259 [main] BaseClass - Verification of accepting quotation is Successed.
