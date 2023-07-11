@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-07T15:33:43 IST" name="Suite" finished-at="2023-07-07T15:37:55 IST" duration-ms="252204">
+  <suite started-at="2023-07-11T16:52:09 IST" name="Suite" finished-at="2023-07-11T16:57:57 IST" duration-ms="348124">
     <groups>
     </groups>
-    <test started-at="2023-07-07T15:33:43 IST" name="Test" finished-at="2023-07-07T15:37:55 IST" duration-ms="252204">
-      <class name="com.servicepoints.testCases.TC68_VerifyAskForPriceChangeFunctionFromSupportAndTeamleaderSide">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.servicepoints.testCases.TC68_VerifyAskForPriceChangeFunctionFromSupportAndTeamleaderSide@ab7a938]" started-at="2023-07-07T15:33:43 IST" name="setup" finished-at="2023-07-07T15:33:47 IST" duration-ms="3946" status="PASS">
+    <test started-at="2023-07-11T16:52:09 IST" name="Test" finished-at="2023-07-11T16:57:57 IST" duration-ms="348124">
+      <class name="com.servicepoints.testCases.TC61_VerifyChangeDiscountWithRefundFunctionality">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.servicepoints.testCases.TC61_VerifyChangeDiscountWithRefundFunctionality@3faf2e7d]" started-at="2023-07-11T16:52:09 IST" name="setup" finished-at="2023-07-11T16:52:13 IST" duration-ms="4090" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,31 +18,35 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="submitAndAcceptQuotation()[pri:1, instance:com.servicepoints.testCases.TC68_VerifyAskForPriceChangeFunctionFromSupportAndTeamleaderSide@ab7a938]" started-at="2023-07-07T15:33:47 IST" name="submitAndAcceptQuotation" finished-at="2023-07-07T15:34:58 IST" duration-ms="70919" status="PASS">
+        <test-method signature="submitAndAcceptQuotation()[pri:1, instance:com.servicepoints.testCases.TC61_VerifyChangeDiscountWithRefundFunctionality@3faf2e7d]" started-at="2023-07-11T16:52:13 IST" name="submitAndAcceptQuotation" finished-at="2023-07-11T16:53:12 IST" duration-ms="58161" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitAndAcceptQuotation -->
-        <test-method signature="verifySubmitingAskForPriceChange()[pri:2, instance:com.servicepoints.testCases.TC68_VerifyAskForPriceChangeFunctionFromSupportAndTeamleaderSide@ab7a938]" started-at="2023-07-07T15:34:58 IST" name="verifySubmitingAskForPriceChange" finished-at="2023-07-07T15:35:41 IST" duration-ms="43804" status="PASS">
+        <test-method signature="verifyAddTrackingOnProduct()[pri:2, instance:com.servicepoints.testCases.TC61_VerifyChangeDiscountWithRefundFunctionality@3faf2e7d]" started-at="2023-07-11T16:53:12 IST" name="verifyAddTrackingOnProduct" finished-at="2023-07-11T16:54:18 IST" duration-ms="66299" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifySubmitingAskForPriceChange -->
-        <test-method signature="verifyClientAcceptedTheNewPrice()[pri:3, instance:com.servicepoints.testCases.TC68_VerifyAskForPriceChangeFunctionFromSupportAndTeamleaderSide@ab7a938]" started-at="2023-07-07T15:35:41 IST" name="verifyClientAcceptedTheNewPrice" finished-at="2023-07-07T15:36:22 IST" duration-ms="40338" status="PASS">
+        </test-method> <!-- verifyAddTrackingOnProduct -->
+        <test-method signature="raiseRefundDispute()[pri:3, instance:com.servicepoints.testCases.TC61_VerifyChangeDiscountWithRefundFunctionality@3faf2e7d]" started-at="2023-07-11T16:54:18 IST" name="raiseRefundDispute" finished-at="2023-07-11T16:55:17 IST" duration-ms="58602" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyClientAcceptedTheNewPrice -->
-        <test-method signature="verifyDisableQuotationFromSupplier()[pri:4, instance:com.servicepoints.testCases.TC68_VerifyAskForPriceChangeFunctionFromSupportAndTeamleaderSide@ab7a938]" started-at="2023-07-07T15:36:22 IST" name="verifyDisableQuotationFromSupplier" finished-at="2023-07-07T15:36:59 IST" duration-ms="37279" status="PASS">
+        </test-method> <!-- raiseRefundDispute -->
+        <test-method signature="verifyAddingDiscount()[pri:4, instance:com.servicepoints.testCases.TC61_VerifyChangeDiscountWithRefundFunctionality@3faf2e7d]" started-at="2023-07-11T16:55:17 IST" name="verifyAddingDiscount" finished-at="2023-07-11T16:56:30 IST" duration-ms="73912" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyDisableQuotationFromSupplier -->
-        <test-method signature="verifyAcceptingNewQuotation()[pri:5, instance:com.servicepoints.testCases.TC68_VerifyAskForPriceChangeFunctionFromSupportAndTeamleaderSide@ab7a938]" started-at="2023-07-07T15:36:59 IST" name="verifyAcceptingNewQuotation" finished-at="2023-07-07T15:37:55 IST" duration-ms="55690" status="PASS">
+        </test-method> <!-- verifyAddingDiscount -->
+        <test-method signature="raiseRefundDisputeAgain()[pri:5, instance:com.servicepoints.testCases.TC61_VerifyChangeDiscountWithRefundFunctionality@3faf2e7d]" started-at="2023-07-11T16:56:30 IST" name="raiseRefundDisputeAgain" finished-at="2023-07-11T16:57:28 IST" duration-ms="57378" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyAcceptingNewQuotation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.servicepoints.testCases.TC68_VerifyAskForPriceChangeFunctionFromSupportAndTeamleaderSide@ab7a938]" started-at="2023-07-07T15:37:55 IST" name="tearDown" finished-at="2023-07-07T15:37:55 IST" duration-ms="178" status="PASS">
+        </test-method> <!-- raiseRefundDisputeAgain -->
+        <test-method signature="verifyDiscountFromClientSide()[pri:6, instance:com.servicepoints.testCases.TC61_VerifyChangeDiscountWithRefundFunctionality@3faf2e7d]" started-at="2023-07-11T16:57:28 IST" name="verifyDiscountFromClientSide" finished-at="2023-07-11T16:57:57 IST" duration-ms="29541" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDiscountFromClientSide -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.servicepoints.testCases.TC61_VerifyChangeDiscountWithRefundFunctionality@3faf2e7d]" started-at="2023-07-11T16:57:57 IST" name="tearDown" finished-at="2023-07-11T16:57:57 IST" duration-ms="97" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.servicepoints.testCases.TC68_VerifyAskForPriceChangeFunctionFromSupportAndTeamleaderSide -->
+      </class> <!-- com.servicepoints.testCases.TC61_VerifyChangeDiscountWithRefundFunctionality -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
