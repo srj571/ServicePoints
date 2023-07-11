@@ -39,6 +39,7 @@ public class TC55_VerifyAddDiscountFunctionality extends BaseClass{
 
 	public String storeFilter=rd.storeForDisputeFilter();
 	//private String amountAsString;
+	String formattedPrice;
 	
 	@Test(enabled = true,priority = 1)
 	public void submitAndAcceptQuotation() throws InterruptedException, IOException {
@@ -237,7 +238,7 @@ public class TC55_VerifyAddDiscountFunctionality extends BaseClass{
 		
 		System.out.println(val);
 		
-		String formattedPrice = String.format("%.2f", val);
+		formattedPrice = String.format("%.2f", val);
 		
 		System.out.println(formattedPrice);
 		
@@ -281,26 +282,30 @@ public class TC55_VerifyAddDiscountFunctionality extends BaseClass{
 		Thread.sleep(2000);
 		
 		cl.clickOnFDiv(); 
-		Thread.sleep(1000);
+		Thread.sleep(4000);
 		logger.info("Verification of discount is successfull.");
-//		String val2=cl.getDiscountOfClient();
-//		
-//		String amountWithoutSymbol = val2.replace("€", "").replace(",", ".");
-//
-//		double amount = Double.parseDouble(amountWithoutSymbol);
-//		
-//		String actualDiscount=String.valueOf(amount);
-//		
-//		Assert.assertEquals(formattedPrice, actualDiscount);
-//		
-//		
-//		if(formattedPrice.equals(actualDiscount)) {
-//			logger.info("Both discount price is equal to discount price entered by supplier is successfully verified.");
-//			Assert.assertTrue(true);
-//			Thread.sleep(3000);
-//		}else {
-//			logger.info("Both discount price is equal to discount price entered by supplier is failed to verified..");
-//			Assert.assertTrue(false);
-//		}
+		
+		String val2=cl.getDiscountOfClient();
+		
+		String amountWithoutSymbol = val2.replace("€", "").replace(",", ".");
+
+		double amount = Double.parseDouble(amountWithoutSymbol);
+		
+		
+		String formattedPrice1= String.format("%.2f", amount);
+		
+		String actualDiscount=String.valueOf(formattedPrice);
+		
+		Assert.assertEquals(formattedPrice1, actualDiscount);
+		
+		
+		if(formattedPrice1.equals(actualDiscount)) {
+			logger.info("Both discount price is equal to discount price entered by supplier is successfully verified.");
+			Assert.assertTrue(true);
+			Thread.sleep(3000);
+		}else {
+			logger.info("Both discount price is equal to discount price entered by supplier is failed to verified..");
+			Assert.assertTrue(false);
+		}
 	}	
 }

@@ -39,6 +39,7 @@ public class TC57_VerifyDiscountFunctionalityWithRefundDispute2 extends BaseClas
 
 	public String storeFilter = rd.storeForDisputeFilter();
 	private String amountAsString;
+	String formattedPrice;
 
 	@Test(enabled = true, priority = 1)
 	public void submitAndAcceptQuotation() throws InterruptedException, IOException {
@@ -364,7 +365,7 @@ public class TC57_VerifyDiscountFunctionalityWithRefundDispute2 extends BaseClas
 		amountAsString = String.valueOf(val);
 		Thread.sleep(1000);
 		
-		String formattedPrice = String.format("%.2f", val);
+		formattedPrice = String.format("%.2f", val);
 
 		aop.enterDiscountAmountField(formattedPrice);
 		Thread.sleep(2000);
@@ -407,6 +408,6 @@ public class TC57_VerifyDiscountFunctionalityWithRefundDispute2 extends BaseClas
 		cop.clickOnFDiv();
 		logger.info("Clicked on first div.");
 		Thread.sleep(4000);
-
+		
 	}
 }

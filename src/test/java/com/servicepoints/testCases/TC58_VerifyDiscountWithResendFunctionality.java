@@ -38,6 +38,7 @@ public class TC58_VerifyDiscountWithResendFunctionality extends BaseClass {
 	public String trackingNum = rd.setTrackingNum();
 
 	public String storeFilter = rd.storeForDisputeFilter();
+	String formattedPrice;
 
 	@Test(enabled = true, priority = 1)
 	public void submitAndAcceptQuotation() throws InterruptedException, IOException {
@@ -440,7 +441,7 @@ public class TC58_VerifyDiscountWithResendFunctionality extends BaseClass {
 		String amountAsString = String.valueOf(val);
 		Thread.sleep(1000);
 		
-		String formattedPrice = String.format("%.2f", val);
+		formattedPrice = String.format("%.2f", val);
 
 
 		aop.enterDiscountAmountField(formattedPrice);
@@ -568,7 +569,7 @@ public class TC58_VerifyDiscountWithResendFunctionality extends BaseClass {
 			Thread.sleep(3000);
 			logger.info("Verification of Refund Dispute acceptance is successed.");
 		} else {
-			captureScreen(driver, "Dispute for resend");
+			captureScreen(driver, "Dispute for refund");
 			logger.info("Verification of Refund Dispute acceptance is failed.");
 			Assert.assertTrue(false);
 		}
@@ -595,6 +596,8 @@ public class TC58_VerifyDiscountWithResendFunctionality extends BaseClass {
 		cop.clickOnFDiv();
 		logger.info("Clicked on first div.");
 		Thread.sleep(4000);
+		
+	
 	}
 
 }
