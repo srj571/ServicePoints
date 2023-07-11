@@ -9,6 +9,7 @@ import org.testng.annotations.Test;
 
 import com.servicepoints.PageObjects.AdminAccountsPage;
 import com.servicepoints.PageObjects.AgentSupProductsPage;
+import com.servicepoints.PageObjects.ClientOrdersPage;
 import com.servicepoints.PageObjects.ClientProductPage;
 import com.servicepoints.PageObjects.LoginPage;
 import com.servicepoints.PageObjects.SupportProductsPage;
@@ -670,6 +671,24 @@ public class TC67_VerifySimpleSpecialRequestFunctionalityBySupportAndTeamleader 
 		
 		Thread.sleep(3000);
 		logger.info("Close special request status verified successfully.");
+		
+		ClientOrdersPage cop=new ClientOrdersPage(driver);
+		cop.clickOnOrdersTab();
+		Thread.sleep(2000);
+		cop.sendPnameinSearch(product67);
+		Thread.sleep(1000);
+		cop.clickOnFDiv();
+		Thread.sleep(3000);
+		
+		if(cop.verifyStatusToProcessing().equals("Processing")) {
+			Assert.assertTrue(true);
+			Thread.sleep(2000);
+			logger.info("Verification of order status to Processing is Successed.");
+		}else {
+			logger.info("Verification of order status to Processing is Failed.");
+			Assert.assertTrue(false);
+		}
+		
 		BaseClass.closeAllWinTabsExceptParent();
 	}
 }

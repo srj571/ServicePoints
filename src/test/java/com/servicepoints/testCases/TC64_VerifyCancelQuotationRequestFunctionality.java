@@ -7,7 +7,6 @@ import java.util.Iterator;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
-import org.testng.annotations.Test;
 
 import com.servicepoints.PageObjects.AgentSupProductsPage;
 import com.servicepoints.PageObjects.ClientOrdersPage;
@@ -20,10 +19,10 @@ public class TC64_VerifyCancelQuotationRequestFunctionality extends BaseClass{
 	ReadConfig rd = new ReadConfig();
 	public String product64 = rd.getProductForTC64();
 
-	public String clientMailRQ = rd.getClientMailForMaxRequotaion();
-	public String clientPassRQ = rd.getClientPassForMaxRequotaion();
-	public String agentMailRQ = rd.getSupplierMailForMaxRequotaion();
-	public String agentPassRQ = rd.getSupplierPassForMaxRequotaion();
+	public String clientMailRQ = rd.getClientMailForMaxRequotation();
+	public String clientPassRQ = rd.getClientPassForMaxRequotation();
+	public String agentMailRQ = rd.getSupplierMailForMaxRequotation();
+	public String agentPassRQ = rd.getSupplierPassForMaxRequotation();
 
 	@Test(enabled = true, priority = 1)
 	public void submitAndAcceptQuotation() throws InterruptedException, IOException {

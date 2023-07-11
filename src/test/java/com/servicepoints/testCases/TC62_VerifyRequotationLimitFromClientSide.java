@@ -21,10 +21,10 @@ public class TC62_VerifyRequotationLimitFromClientSide extends BaseClass {
 	ReadConfig rd = new ReadConfig();
 	public String product62 = rd.getProductForTC62();
 
-	public String clientMailRQ = rd.getClientMailForMaxRequotaion();
-	public String clientPassRQ = rd.getClientPassForMaxRequotaion();
-	public String agentMailRQ = rd.getSupplierMailForMaxRequotaion();
-	public String agentPassRQ = rd.getSupplierPassForMaxRequotaion();
+	public String clientMailRQ = rd.getClientMailForMaxRequotation();
+	public String clientPassRQ = rd.getClientPassForMaxRequotation();
+	public String agentMailRQ = rd.getSupplierMailForMaxRequotation();
+	public String agentPassRQ = rd.getSupplierPassForMaxRequotation();
 
 	public String productFetch = rd.fetchProducts();
 	public String ordersFetch = rd.fetchOrders();

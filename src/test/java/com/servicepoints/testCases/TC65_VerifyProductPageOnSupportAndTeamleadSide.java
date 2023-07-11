@@ -10,7 +10,6 @@ import java.util.concurrent.TimeUnit;
 
 import com.servicepoints.PageObjects.AdminAccountsPage;
 import com.servicepoints.PageObjects.AgentSupProductsPage;
-import com.servicepoints.PageObjects.ClientOrdersPage;
 import com.servicepoints.PageObjects.ClientProductPage;
 import com.servicepoints.PageObjects.LoginPage;
 import com.servicepoints.PageObjects.SupportOrdersPage;

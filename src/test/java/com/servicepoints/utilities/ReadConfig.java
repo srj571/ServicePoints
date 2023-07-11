@@ -1018,22 +1018,22 @@ public class ReadConfig {
 		return pro62;
 	}
 	
-	public String getClientMailForMaxRequotaion() {
+	public String getClientMailForMaxRequotation() {
 		String cmail=po.getProperty("clientMailRQ");
 		return cmail;
 	}
 	
-	public String getClientPassForMaxRequotaion() {
+	public String getClientPassForMaxRequotation() {
 		String cpass=po.getProperty("clientPassRQ");
 		return cpass;
 	}
 	
-	public String getSupplierMailForMaxRequotaion() {
+	public String getSupplierMailForMaxRequotation() {
 		String amail=po.getProperty("agentMailRQ");
 		return amail;
 	}
 	
-	public String getSupplierPassForMaxRequotaion() {
+	public String getSupplierPassForMaxRequotation() {
 		String apass=po.getProperty("agentPassRQ");
 		return apass;
 	}

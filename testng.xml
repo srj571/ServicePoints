@@ -335,7 +335,7 @@
 			  <include name="tearDown"></include>
 		  </methods>
 	  </class>
-	  <class name="com.servicepoints.testCases.TC66_VerifyProductPageOffSupportAndTeamleaderSideAnotherScenario">
+	<class name="com.servicepoints.testCases.TC66_VerifyProductPageOffSupportAndTeamleaderSideAnotherScenario">
 		  <methods>
 			  <include name="setup"></include>
 			  <include name="submitAndAcceptQuotation"></include>
@@ -347,7 +347,7 @@
 			  <include name="tearDown"></include>
 		  </methods>
 	  </class>
-	  <class name="com.servicepoints.testCases.TC67_VerifySimpleSpecialRequestFunctionalityBySupportAndTeamleader">
+	    <class name="com.servicepoints.testCases.TC67_VerifySimpleSpecialRequestFunctionalityBySupportAndTeamleader">
 		  <methods>
 			  <include name="setup"></include>
 			  <include name="submitAndAcceptQuotation"></include>
@@ -362,7 +362,7 @@
 			  <include name="verifyCloseSpecialRequestSubmittedFromSupplier"></include>
 			  <include name="tearDown"></include>
 		  </methods>
-	  </class>
+	  </class>-->
 	  <class name="com.servicepoints.testCases.TC68_VerifyAskForPriceChangeFunctionFromSupportAndTeamleaderSide">
 		  <methods>
 			  <include name="setup"></include>
@@ -373,8 +373,8 @@
 			  <include name="verifyAcceptingNewQuotation"></include>
 			  <include name="tearDown"></include>
 		  </methods>
-	  </class>-->
-	  <class name="com.servicepoints.testCases.TC69_VerifyProductsPageOfSupportAndTeamleaderSideForAddNewVariant">
+	  </class>
+	  <!--<class name="com.servicepoints.testCases.TC69_VerifyProductsPageOfSupportAndTeamleaderSideForAddNewVariant">
 		  <methods>
 			  <include name="setup"></include>
 			  <include name="submitAndAcceptQuotation"></include>
@@ -384,7 +384,7 @@
 			  <include name="verifyAcceptQuotationByTeamleader"></include>
 			  <include name="tearDown"></include>
 		  </methods>
-	  </class>
+	  </class>-->
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
