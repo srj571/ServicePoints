@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-11T16:52:09 IST" name="Suite" finished-at="2023-07-11T16:57:57 IST" duration-ms="348124">
+  <suite started-at="2023-07-11T18:27:45 IST" name="Suite" finished-at="2023-07-11T18:30:59 IST" duration-ms="193769">
     <groups>
     </groups>
-    <test started-at="2023-07-11T16:52:09 IST" name="Test" finished-at="2023-07-11T16:57:57 IST" duration-ms="348124">
-      <class name="com.servicepoints.testCases.TC61_VerifyChangeDiscountWithRefundFunctionality">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.servicepoints.testCases.TC61_VerifyChangeDiscountWithRefundFunctionality@3faf2e7d]" started-at="2023-07-11T16:52:09 IST" name="setup" finished-at="2023-07-11T16:52:13 IST" duration-ms="4090" status="PASS">
+    <test started-at="2023-07-11T18:27:45 IST" name="Test" finished-at="2023-07-11T18:30:59 IST" duration-ms="193769">
+      <class name="com.servicepoints.testCases.TC65_VerifyProductPageOnSupportAndTeamleadSide">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.servicepoints.testCases.TC65_VerifyProductPageOnSupportAndTeamleadSide@29ef6856]" started-at="2023-07-11T18:27:45 IST" name="setup" finished-at="2023-07-11T18:27:49 IST" duration-ms="4003" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,35 +18,27 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="submitAndAcceptQuotation()[pri:1, instance:com.servicepoints.testCases.TC61_VerifyChangeDiscountWithRefundFunctionality@3faf2e7d]" started-at="2023-07-11T16:52:13 IST" name="submitAndAcceptQuotation" finished-at="2023-07-11T16:53:12 IST" duration-ms="58161" status="PASS">
+        <test-method signature="submitAndAcceptQuotation()[pri:1, instance:com.servicepoints.testCases.TC65_VerifyProductPageOnSupportAndTeamleadSide@29ef6856]" started-at="2023-07-11T18:27:49 IST" name="submitAndAcceptQuotation" finished-at="2023-07-11T18:28:55 IST" duration-ms="65882" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitAndAcceptQuotation -->
-        <test-method signature="verifyAddTrackingOnProduct()[pri:2, instance:com.servicepoints.testCases.TC61_VerifyChangeDiscountWithRefundFunctionality@3faf2e7d]" started-at="2023-07-11T16:53:12 IST" name="verifyAddTrackingOnProduct" finished-at="2023-07-11T16:54:18 IST" duration-ms="66299" status="PASS">
+        <test-method signature="requoteQuoteByClient()[pri:2, instance:com.servicepoints.testCases.TC65_VerifyProductPageOnSupportAndTeamleadSide@29ef6856]" started-at="2023-07-11T18:28:55 IST" name="requoteQuoteByClient" finished-at="2023-07-11T18:29:40 IST" duration-ms="44508" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyAddTrackingOnProduct -->
-        <test-method signature="raiseRefundDispute()[pri:3, instance:com.servicepoints.testCases.TC61_VerifyChangeDiscountWithRefundFunctionality@3faf2e7d]" started-at="2023-07-11T16:54:18 IST" name="raiseRefundDispute" finished-at="2023-07-11T16:55:17 IST" duration-ms="58602" status="PASS">
+        </test-method> <!-- requoteQuoteByClient -->
+        <test-method signature="supplierSubmitQuotationAgain()[pri:3, instance:com.servicepoints.testCases.TC65_VerifyProductPageOnSupportAndTeamleadSide@29ef6856]" started-at="2023-07-11T18:29:40 IST" name="supplierSubmitQuotationAgain" finished-at="2023-07-11T18:30:18 IST" duration-ms="38402" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- raiseRefundDispute -->
-        <test-method signature="verifyAddingDiscount()[pri:4, instance:com.servicepoints.testCases.TC61_VerifyChangeDiscountWithRefundFunctionality@3faf2e7d]" started-at="2023-07-11T16:55:17 IST" name="verifyAddingDiscount" finished-at="2023-07-11T16:56:30 IST" duration-ms="73912" status="PASS">
+        </test-method> <!-- supplierSubmitQuotationAgain -->
+        <test-method signature="acceptQuotationFromTeamlead()[pri:4, instance:com.servicepoints.testCases.TC65_VerifyProductPageOnSupportAndTeamleadSide@29ef6856]" started-at="2023-07-11T18:30:18 IST" name="acceptQuotationFromTeamlead" finished-at="2023-07-11T18:30:59 IST" duration-ms="40827" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyAddingDiscount -->
-        <test-method signature="raiseRefundDisputeAgain()[pri:5, instance:com.servicepoints.testCases.TC61_VerifyChangeDiscountWithRefundFunctionality@3faf2e7d]" started-at="2023-07-11T16:56:30 IST" name="raiseRefundDisputeAgain" finished-at="2023-07-11T16:57:28 IST" duration-ms="57378" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- raiseRefundDisputeAgain -->
-        <test-method signature="verifyDiscountFromClientSide()[pri:6, instance:com.servicepoints.testCases.TC61_VerifyChangeDiscountWithRefundFunctionality@3faf2e7d]" started-at="2023-07-11T16:57:28 IST" name="verifyDiscountFromClientSide" finished-at="2023-07-11T16:57:57 IST" duration-ms="29541" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyDiscountFromClientSide -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.servicepoints.testCases.TC61_VerifyChangeDiscountWithRefundFunctionality@3faf2e7d]" started-at="2023-07-11T16:57:57 IST" name="tearDown" finished-at="2023-07-11T16:57:57 IST" duration-ms="97" status="PASS">
+        </test-method> <!-- acceptQuotationFromTeamlead -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.servicepoints.testCases.TC65_VerifyProductPageOnSupportAndTeamleadSide@29ef6856]" started-at="2023-07-11T18:30:59 IST" name="tearDown" finished-at="2023-07-11T18:30:59 IST" duration-ms="108" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.servicepoints.testCases.TC61_VerifyChangeDiscountWithRefundFunctionality -->
+      </class> <!-- com.servicepoints.testCases.TC65_VerifyProductPageOnSupportAndTeamleadSide -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
