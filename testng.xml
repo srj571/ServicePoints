@@ -42,11 +42,11 @@
       <class name="com.servicepoints.testCases.TC22_VerifyDeclinedDisputeFunction"/>
       <class name="com.servicepoints.testCases.TC23_VerifyAddTrackingAndRefundDspFunction"/>
       <class name="com.servicepoints.testCases.TC24_VerifyRefundDspDeclined"/>
-      <class name="com.servicepoints.testCases.TC25_VerifyDisputeForConversation"/>-->
+      <class name="com.servicepoints.testCases.TC25_VerifyDisputeForConversation"/>
       <class name="com.servicepoints.testCases.TC26_VerifyRefundAndConversation"/> 
-      <class name="com.servicepoints.testCases.TC27_VerifyAddTrackingAndResend"/>      
-      <!--<class name="com.servicepoints.testCases.TC28_VerifyDeclinedResendDispute"/>
-      <class name="com.servicepoints.testCases.TC29_VerifySpecialRequestFunction"/>
+      <class name="com.servicepoints.testCases.TC27_VerifyAddTrackingAndResend"/>-->      
+      <class name="com.servicepoints.testCases.TC28_VerifyDeclinedResendDispute"/>
+      <!--<class name="com.servicepoints.testCases.TC29_VerifySpecialRequestFunction"/>
       <class name="com.servicepoints.testCases.TC30_VerifyCloseSpecialRequestFunction"/>
       <class name="com.servicepoints.testCases.TC31_VerifySpecialRequestCloseByAdminSP"/>
       <class name="com.servicepoints.testCases.TC33_VerifyPaymentPendingOrderOffTest"/>

@@ -16,6 +16,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 
 import com.servicepoints.utilities.ReadConfig;
@@ -78,7 +79,7 @@ public class BaseClass {
 					
 	public static WebDriver driver;
 
-	@BeforeClass
+	@BeforeMethod
 	@Parameters("browser")
 	public void setup(String br) {
 		if (br.equalsIgnoreCase("chrome")) {

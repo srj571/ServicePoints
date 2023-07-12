@@ -196,11 +196,22 @@ public class TC28_VerifyDeclinedResendDispute extends BaseClass {
 
 		if (driver.getPageSource().contains("Dispute declined successfully")) {
 			Assert.assertTrue(true);
+			Thread.sleep(3000);
 			logger.info("Verification of Dispute declining is successfull.");
 		} else {
 			captureScreen(driver, "acceptDispute");
 			Assert.assertTrue(false);
 			logger.info("Verification of Dispute declining is failed.");
+		}
+		
+		
+		if(asop.getDisputeStatus().equals("Close dispute - Declined")) {
+			Assert.assertTrue(true);
+			logger.info("Verification of status for Dispute of refund raised Successfully.");
+			Thread.sleep(3000);
+		}else {
+			logger.info("Verification of status for Dispute of refund raising failed.");
+			Assert.assertTrue(false);
 		}
 
 		driver.get(baseURL);
