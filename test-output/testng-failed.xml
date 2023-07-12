@@ -4,13 +4,20 @@
   <parameter name="browser" value="chrome"/>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.servicepoints.testCases.TC28_VerifyDeclinedResendDispute">
+      <class name="com.servicepoints.testCases.TC26_VerifyRefundAndConversation">
         <methods>
           <include name="setup"/>
+          <include name="verifyRefundAndConversation"/>
           <include name="tearDown"/>
-          <include name="verifyDeclinedResendDispute"/>
         </methods>
-      </class> <!-- com.servicepoints.testCases.TC28_VerifyDeclinedResendDispute -->
+      </class> <!-- com.servicepoints.testCases.TC26_VerifyRefundAndConversation -->
+      <class name="com.servicepoints.testCases.TC27_VerifyAddTrackingAndResend">
+        <methods>
+          <include name="verifyAddTrackingAndResendProduct"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.servicepoints.testCases.TC27_VerifyAddTrackingAndResend -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
