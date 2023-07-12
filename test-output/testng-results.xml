@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-12T18:47:17 IST" name="Suite" finished-at="2023-07-12T18:52:26 IST" duration-ms="308973">
+  <suite started-at="2023-07-12T18:59:02 IST" name="Suite" finished-at="2023-07-12T19:01:31 IST" duration-ms="148544">
     <groups>
     </groups>
-    <test started-at="2023-07-12T18:47:17 IST" name="Test" finished-at="2023-07-12T18:52:26 IST" duration-ms="308973">
-      <class name="com.servicepoints.testCases.TC26_VerifyRefundAndConversation">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.servicepoints.testCases.TC26_VerifyRefundAndConversation@7813cb11]" started-at="2023-07-12T18:47:17 IST" name="setup" finished-at="2023-07-12T18:47:22 IST" duration-ms="5087" status="PASS">
+    <test started-at="2023-07-12T18:59:02 IST" name="Test" finished-at="2023-07-12T19:01:31 IST" duration-ms="148544">
+      <class name="com.servicepoints.testCases.TC28_VerifyDeclinedResendDispute">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.servicepoints.testCases.TC28_VerifyDeclinedResendDispute@3a320ade]" started-at="2023-07-12T18:59:02 IST" name="setup" finished-at="2023-07-12T18:59:06 IST" duration-ms="4226" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,36 +18,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyRefundAndConversation()[pri:0, instance:com.servicepoints.testCases.TC26_VerifyRefundAndConversation@7813cb11]" started-at="2023-07-12T18:47:22 IST" name="verifyRefundAndConversation" finished-at="2023-07-12T18:49:55 IST" duration-ms="153381" status="PASS">
+        <test-method signature="verifyDeclinedResendDispute()[pri:0, instance:com.servicepoints.testCases.TC28_VerifyDeclinedResendDispute@3a320ade]" started-at="2023-07-12T18:59:06 IST" name="verifyDeclinedResendDispute" finished-at="2023-07-12T19:01:31 IST" duration-ms="144179" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyRefundAndConversation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.servicepoints.testCases.TC26_VerifyRefundAndConversation@7813cb11]" started-at="2023-07-12T18:49:55 IST" name="tearDown" finished-at="2023-07-12T18:49:55 IST" duration-ms="164" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.servicepoints.testCases.TC26_VerifyRefundAndConversation -->
-      <class name="com.servicepoints.testCases.TC27_VerifyAddTrackingAndResend">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.servicepoints.testCases.TC27_VerifyAddTrackingAndResend@ab7a938]" started-at="2023-07-12T18:49:55 IST" name="setup" finished-at="2023-07-12T18:50:01 IST" duration-ms="6059" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verifyAddTrackingAndResendProduct()[pri:0, instance:com.servicepoints.testCases.TC27_VerifyAddTrackingAndResend@ab7a938]" started-at="2023-07-12T18:50:01 IST" name="verifyAddTrackingAndResendProduct" finished-at="2023-07-12T18:52:26 IST" duration-ms="144149" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAddTrackingAndResendProduct -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.servicepoints.testCases.TC27_VerifyAddTrackingAndResend@ab7a938]" started-at="2023-07-12T18:52:26 IST" name="tearDown" finished-at="2023-07-12T18:52:26 IST" duration-ms="102" status="PASS">
+        </test-method> <!-- verifyDeclinedResendDispute -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.servicepoints.testCases.TC28_VerifyDeclinedResendDispute@3a320ade]" started-at="2023-07-12T19:01:31 IST" name="tearDown" finished-at="2023-07-12T19:01:31 IST" duration-ms="110" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.servicepoints.testCases.TC27_VerifyAddTrackingAndResend -->
+      </class> <!-- com.servicepoints.testCases.TC28_VerifyDeclinedResendDispute -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

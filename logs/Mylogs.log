@@ -8650,3 +8650,29 @@
 [INFO ] 2023-07-12 18:52:11.725 [main] BaseClass - Product name is entered.
 [INFO ] 2023-07-12 18:52:26.094 [main] BaseClass - Verification of Dispute history opening is successfull.
 [INFO ] 2023-07-12 18:52:26.130 [main] BaseClass - Verification of Dispute acceptance is successed.
+[INFO ] 2023-07-12 18:59:07.321 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-07-12 18:59:14.961 [main] BaseClass - Product name is entered.
+[INFO ] 2023-07-12 18:59:18.112 [main] BaseClass - Clicked on status dropdown.
+[INFO ] 2023-07-12 18:59:21.232 [main] BaseClass - Processing status is searched.
+[INFO ] 2023-07-12 18:59:24.457 [main] BaseClass - Processing status is searched.
+[INFO ] 2023-07-12 18:59:30.778 [main] BaseClass - Tracking number entered.
+[INFO ] 2023-07-12 18:59:33.865 [main] BaseClass - clicked on add tracking button.
+[INFO ] 2023-07-12 18:59:39.601 [main] BaseClass - Clicked on submit tracking button.
+[INFO ] 2023-07-12 18:59:50.955 [main] BaseClass - Verification of adding tracking number is Successfull.
+[INFO ] 2023-07-12 18:59:54.223 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-07-12 19:00:04.694 [main] BaseClass - Product name is entered.
+[INFO ] 2023-07-12 19:00:08.063 [main] BaseClass - clicked on first div
+[INFO ] 2023-07-12 19:00:16.177 [main] BaseClass - click on open dispute button.
+[INFO ] 2023-07-12 19:00:22.604 [main] BaseClass - dispute solution entered.
+[INFO ] 2023-07-12 19:00:30.969 [main] BaseClass - Dispute saved.
+[INFO ] 2023-07-12 19:00:34.345 [main] BaseClass - Verification of Dispute for resend raised Successfully.
+[INFO ] 2023-07-12 19:00:38.453 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-07-12 19:00:42.540 [main] BaseClass - Open disputes page.
+[INFO ] 2023-07-12 19:00:50.843 [main] BaseClass - Clicked on show disputes.
+[INFO ] 2023-07-12 19:00:53.978 [main] BaseClass - Dispute declined.
+[INFO ] 2023-07-12 19:01:00.184 [main] BaseClass - Dispute send.
+[INFO ] 2023-07-12 19:01:05.430 [main] BaseClass - Verification of Dispute declining is successfull.
+[INFO ] 2023-07-12 19:01:06.347 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-07-12 19:01:16.775 [main] BaseClass - Product name is entered.
+[INFO ] 2023-07-12 19:01:31.123 [main] BaseClass - Verification of Dispute history opening is successfull.
+[INFO ] 2023-07-12 19:01:31.159 [main] BaseClass - Verification of Dispute declined is successed.
