@@ -84,7 +84,8 @@ public class TC24_VerifyRefundDspDeclined extends BaseClass {
 
 		aop.clickOnSbmtTracking();
 		logger.info("Clicked on submit tracking button.");
-		Thread.sleep(7000);
+		
+		aop.waitTillSuccessBoxOfTrackingNum(driver);
 
 		if (driver.getPageSource().contains("Tracking number successfully added")) {
 			logger.info("Verification of adding tracking number is Successfull.");
@@ -116,6 +117,9 @@ public class TC24_VerifyRefundDspDeclined extends BaseClass {
 		cop.clickOnFDiv();
 		Thread.sleep(3000);
 		logger.info("clicked on first div");
+		
+		
+		
 
 		cop.scrollTillOpenDisputesBtn(driver);
 		Thread.sleep(2000);
@@ -170,6 +174,20 @@ public class TC24_VerifyRefundDspDeclined extends BaseClass {
 		asop.clickOnFrstDsp();
 		Thread.sleep(3000);
 
+		String exp="Open dispute - Message received";
+		
+		String act=asop.getDisputeStatus();
+		Assert.assertEquals(act, exp);
+//		
+//		if(Assert.assertEquals(act, exp)) {
+//			Assert.assertTrue(true);
+//			logger.info("Verification of status for Dispute of refund raised Successfully.");
+//			Thread.sleep(3000);
+//		}else {
+//			logger.info("Verification of status for Dispute of refund raising failed.");
+//			Assert.assertTrue(false);
+//		}
+		
 		asop.scrollTillShowDispute(driver);
 		Thread.sleep(2000);
 
@@ -190,10 +208,20 @@ public class TC24_VerifyRefundDspDeclined extends BaseClass {
 
 		if (driver.getPageSource().contains("Dispute declined successfully")) {
 			Assert.assertTrue(true);
+			Thread.sleep(3000);
 			logger.info("Verification of Dispute declined is successfull.");
 		} else {
 			captureScreen(driver, "acceptDispute");
 			logger.info("Verification of Dispute declined is failed.");
+			Assert.assertTrue(false);
+		}
+		
+		if(asop.getDisputeStatus().equals("Close dispute - Declined")) {
+			Assert.assertTrue(true);
+			logger.info("Verification of status for Dispute of refund raised Successfully.");
+			Thread.sleep(3000);
+		}else {
+			logger.info("Verification of status for Dispute of refund raising failed.");
 			Assert.assertTrue(false);
 		}
 

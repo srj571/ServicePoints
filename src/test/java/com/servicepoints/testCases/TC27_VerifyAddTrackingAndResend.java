@@ -83,8 +83,9 @@ public class TC27_VerifyAddTrackingAndResend extends BaseClass {
 
 		aop.clickOnSbmtTracking();
 		logger.info("Clicked on submit tracking button.");
-		Thread.sleep(6000);
 
+		aop.waitTillSuccessBoxOfTrackingNum(driver);
+		
 		if (driver.getPageSource().contains("Tracking number successfully added")) {
 			logger.info("Verification of adding tracking number is Successfull.");
 			Assert.assertTrue(true);

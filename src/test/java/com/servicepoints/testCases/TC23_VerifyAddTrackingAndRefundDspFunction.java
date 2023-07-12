@@ -81,15 +81,13 @@ public class TC23_VerifyAddTrackingAndRefundDspFunction extends BaseClass {
 		Thread.sleep(1000);
 
 		aop.setTrackingNum(trackingNum);
-		// aop.clickOnCloseTrackingPopup();
 		Thread.sleep(3000);
-		// wait.until(ExpectedConditions.visibilityOf(aop.sbmtTracking));
 
 		aop.clickOnSbmtTracking();
 		logger.info("Clicked on submit tracking button.");
-		// wait.until(ExpectedConditions.visibi);
-		Thread.sleep(6000);
-
+		
+		aop.waitTillSuccessBoxOfTrackingNum(driver);
+		
 		if (driver.getPageSource().contains("Tracking number successfully added")) {
 			logger.info("Verification of adding tracking number is Successfull.");
 			Assert.assertTrue(true);
@@ -116,20 +114,10 @@ public class TC23_VerifyAddTrackingAndRefundDspFunction extends BaseClass {
 		Thread.sleep(3000);
 		logger.info("Product name is entered.");
 
-		// cop.clickOnStatusDrop();
-		// Thread.sleep(3000);
-		// cop.dropdownSearch(process);
-		// logger.info("fulfilled status is entered.");
-		// cop.clickOnFulfillTab();
-		// cop.clickOnFProcessingTab();
-		// Thread.sleep(3000);
 		cop.clickOnStatusDrop();
-		// Thread.sleep(3000);
+		
 		cop.dropdownSearch(process);
-		// logger.info("fulfilled status is entered.");
-		// cop.clickOnFulfillTab();
-		// cop.clickOnFProcessingTab();
-		// aop.clickOnProcessTab();
+	
 		cop.clickOnProcessingTab();
 		Thread.sleep(3000);
 
@@ -260,6 +248,8 @@ public class TC23_VerifyAddTrackingAndRefundDspFunction extends BaseClass {
 		cop.clickOnDispHistory();
 		Thread.sleep(6000);
 		logger.info("Verification of open Dispute History successfull.");
+		cop.clickOnFirstDisputeTab();
+		Thread.sleep(5000);
 
 		if (cop.getDspHistoryStatusA().equals("Accepted")) {
 			Assert.assertTrue(true);

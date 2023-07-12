@@ -85,8 +85,9 @@ public class TC28_VerifyDeclinedResendDispute extends BaseClass {
 
 		aop.clickOnSbmtTracking();
 		logger.info("Clicked on submit tracking button.");
-		Thread.sleep(6000);
 
+		aop.waitTillSuccessBoxOfTrackingNum(driver);
+		
 		if (driver.getPageSource().contains("Tracking number successfully added")) {
 			logger.info("Verification of adding tracking number is Successfull.");
 			Assert.assertTrue(true);
@@ -113,31 +114,17 @@ public class TC28_VerifyDeclinedResendDispute extends BaseClass {
 		logger.info("Product name is entered.");
 
 		cop.clickOnStatusDrop();
-		// Thread.sleep(3000);
 		cop.dropdownSearch(process);
-		// logger.info("fulfilled status is entered.");
-		// cop.clickOnFulfillTab();
-		// cop.clickOnFProcessingTab();
-		// aop.clickOnProcessTab();
+		
 		cop.clickOnProcessingTab();
 		Thread.sleep(3000);
 		cop.clickOnFDiv();
 
-//		if(driver.getPageSource().contains("No orders found ")) {
-//			cop.clickOnStatusDrop();
-//			Thread.sleep(1000);
-//			cop.dropdownSearch(fulfillStatus);
-//			Thread.sleep(1000);
-//			cop.clickOnFulfillTab();
-//			Thread.sleep(1000);
-//			cop.clickOnFDiv();
-//			Thread.sleep(1000);
-//		}
-
 		logger.info("clicked on first div");
-
-		cop.scrollTillOpenDisputesBtn(driver);
 		Thread.sleep(2000);
+
+		cop.scrollTillTheLast(driver);
+		Thread.sleep(3000);
 
 		cop.clickOnOpenDspbtn();
 		Thread.sleep(3000);
@@ -232,12 +219,7 @@ public class TC28_VerifyDeclinedResendDispute extends BaseClass {
 		logger.info("Product name is entered.");
 
 		cop.clickOnStatusDrop();
-		// Thread.sleep(3000);
 		cop.dropdownSearch(process);
-		// logger.info("fulfilled status is entered.");
-		// cop.clickOnFulfillTab();
-		// cop.clickOnFProcessingTab();
-		// aop.clickOnProcessTab();
 		cop.clickOnProcessingTab();
 		Thread.sleep(3000);
 		cop.clickOnFDiv();

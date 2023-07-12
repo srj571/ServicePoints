@@ -141,6 +141,8 @@ public class TC21_VerifyOpenAcceptDisputeForOtherIssue extends BaseClass {
 		cop.clickOnDispHistory();
 		Thread.sleep(5000);
 		logger.info("Verification of open Dispute History successfull.");
+		cop.clickOnFirstDisputeTab();
+		Thread.sleep(5000);
 
 		if (cop.getDspHistoryStatusA().equals("Accepted")) {
 			Assert.assertTrue(true);

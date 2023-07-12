@@ -331,4 +331,17 @@ public class AgentDisputesPage {
 		JavascriptExecutor exe = (JavascriptExecutor) driver;
 		exe.executeScript("arguments[0].scrollIntoView();", approvedDispute);
 	}
+	
+	@FindBy(xpath="//div[@class='d-xl-flex align-items-stretch justify-content-center table_expand_rel']/div[4]//span/span")
+	WebElement disputeStatus;
+	
+	public String getDisputeStatus() {
+		String val=disputeStatus.getText();
+		return val;
+	}
+	
+	
+	
+	
+	
 }
