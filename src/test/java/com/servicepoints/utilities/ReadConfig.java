@@ -36,6 +36,16 @@ public class ReadConfig {
 		return pwd;
 	}
 	
+	public String getInvalidAdminMailId() {
+		String uname=po.getProperty("InvalidMailId");
+		return uname;
+	}
+	
+	public String getAdminInvalidPassword() {
+		String pwd=po.getProperty("InvalidPassword");
+		return pwd;
+	}
+	
 	public String getChromePath() {
 		String chromepath=po.getProperty("chromepath");
 		return chromepath;

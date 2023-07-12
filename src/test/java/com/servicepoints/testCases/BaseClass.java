@@ -29,7 +29,9 @@ public class BaseClass {
 
 	public String baseURL = rc.getApplicationUrl();
 	public String AdminMailID = rc.getAdminUsername();
+	public String InvalidAdminMailId=rc.getInvalidAdminMailId();
 	public String AdminPassword = rc.getAdminPassword();
+	public String adminInvalidPass=rc.getAdminInvalidPassword();
 	public String clientName = rc.getClientName();
 
 	public String fname = rc.getFirstName();

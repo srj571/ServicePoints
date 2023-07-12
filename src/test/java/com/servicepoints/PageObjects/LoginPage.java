@@ -22,6 +22,14 @@ public class LoginPage {
 	@FindBy(id="login_signin")
 	WebElement btnLogin;
 	
+	@FindBy(xpath="//li[@class='parsley-type']")
+	WebElement mailErrorMsg;
+	
+	public String getErrorMsgOfInvalidMailId() {
+		String val=mailErrorMsg.getText();
+		return val;
+	}
+	
 	public void setAdminMailId(String uname) {
 		txtAdminMailID.sendKeys(uname);
 	}
