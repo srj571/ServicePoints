@@ -8269,3 +8269,329 @@
 [INFO ] 2023-07-12 10:38:13.401 [main] BaseClass - Email_id is entered.
 [INFO ] 2023-07-12 10:38:13.478 [main] BaseClass - Password is entered.
 [INFO ] 2023-07-12 10:38:18.631 [main] BaseClass - Verification with invalid credentials while login is Successfully.
+[INFO ] 2023-07-12 11:01:17.167 [main] BaseClass - client logged in Successfully.
+[INFO ] 2023-07-12 11:03:32.068 [main] BaseClass - client logged in Successfully.
+[INFO ] 2023-07-12 11:03:33.958 [main] BaseClass - Product name is entered.
+[INFO ] 2023-07-12 11:03:39.230 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-07-12 11:03:45.459 [main] BaseClass - Customer got wrong product option selected.
+[INFO ] 2023-07-12 11:03:45.628 [main] BaseClass - I want the order to be shipped immediately option is selected.
+[INFO ] 2023-07-12 11:03:49.028 [main] BaseClass - Queries entered in text fields.
+[INFO ] 2023-07-12 11:03:54.137 [main] BaseClass - Dispute saved.
+[INFO ] 2023-07-12 11:03:54.215 [main] BaseClass - Verification of Dispute raised Successfully.
+[INFO ] 2023-07-12 11:04:46.874 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-07-12 11:04:49.718 [main] BaseClass - Open disputes page.
+[INFO ] 2023-07-12 11:04:58.018 [main] BaseClass - Clicked on show disputes.
+[INFO ] 2023-07-12 11:05:01.171 [main] BaseClass - Dispute Accepted.
+[INFO ] 2023-07-12 11:05:08.470 [main] BaseClass - Dispute send.
+[INFO ] 2023-07-12 11:05:16.535 [main] BaseClass - Verification of Dispute acceptance is successed.
+[INFO ] 2023-07-12 11:05:17.189 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-07-12 11:05:21.406 [main] BaseClass - Product name is entered.
+[INFO ] 2023-07-12 11:05:26.851 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-07-12 11:05:38.969 [main] BaseClass - Verification of open Dispute History successfull.
+[INFO ] 2023-07-12 11:05:39.009 [main] BaseClass - Verification of Dispute acceptance is successed.
+[INFO ] 2023-07-12 11:06:17.689 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-07-12 11:06:22.001 [main] BaseClass - Product name is entered.
+[INFO ] 2023-07-12 11:06:24.090 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-07-12 11:06:30.343 [main] BaseClass - Customer got wrong product option selected.
+[INFO ] 2023-07-12 11:06:32.560 [main] BaseClass - I want the order to be shipped immediately option is selected.
+[INFO ] 2023-07-12 11:06:41.062 [main] BaseClass - Dispute saved.
+[INFO ] 2023-07-12 11:06:41.136 [main] BaseClass - Verification of Dispute raised Successfully.
+[INFO ] 2023-07-12 11:06:41.137 [main] BaseClass - Client logged out Successfully.
+[INFO ] 2023-07-12 11:06:41.801 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-07-12 11:06:47.570 [main] BaseClass - Open disputes page.
+[INFO ] 2023-07-12 11:06:55.936 [main] BaseClass - Clicked on show disputes.
+[INFO ] 2023-07-12 11:06:59.052 [main] BaseClass - Dispute Accepted.
+[INFO ] 2023-07-12 11:07:06.244 [main] BaseClass - Dispute send.
+[INFO ] 2023-07-12 11:07:09.295 [main] BaseClass - Verification of Dispute acceptance is successed.
+[INFO ] 2023-07-12 11:07:09.963 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-07-12 11:07:16.009 [main] BaseClass - Product name is entered.
+[INFO ] 2023-07-12 11:07:18.147 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-07-12 11:07:29.255 [main] BaseClass - Verification of open Dispute History successfull.
+[INFO ] 2023-07-12 11:07:29.319 [main] BaseClass - Verification of Dispute acceptance is successed.
+[INFO ] 2023-07-12 11:14:26.090 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-07-12 11:14:30.523 [main] BaseClass - Product name is entered.
+[INFO ] 2023-07-12 11:14:32.592 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-07-12 11:14:38.874 [main] BaseClass - Customer got wrong product option selected.
+[INFO ] 2023-07-12 11:14:41.136 [main] BaseClass - I want the order to be shipped immediately option is selected.
+[INFO ] 2023-07-12 11:14:49.673 [main] BaseClass - Dispute saved.
+[INFO ] 2023-07-12 11:14:49.752 [main] BaseClass - Verification of Dispute raised Successfully.
+[INFO ] 2023-07-12 11:14:49.752 [main] BaseClass - Client logged out Successfully.
+[INFO ] 2023-07-12 11:14:50.400 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-07-12 11:14:56.207 [main] BaseClass - Open disputes page.
+[INFO ] 2023-07-12 11:15:04.487 [main] BaseClass - Clicked on show disputes.
+[INFO ] 2023-07-12 11:15:07.607 [main] BaseClass - Dispute Accepted.
+[INFO ] 2023-07-12 11:15:14.849 [main] BaseClass - Dispute send.
+[INFO ] 2023-07-12 11:15:17.900 [main] BaseClass - Verification of Dispute acceptance is successed.
+[INFO ] 2023-07-12 11:15:18.545 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-07-12 11:15:24.611 [main] BaseClass - Product name is entered.
+[INFO ] 2023-07-12 11:15:26.738 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-07-12 11:15:37.891 [main] BaseClass - Verification of open Dispute History successfull.
+[INFO ] 2023-07-12 11:15:42.997 [main] BaseClass - Verification of Dispute acceptance is successed.
+[INFO ] 2023-07-12 11:16:30.269 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-07-12 11:16:34.597 [main] BaseClass - Product name is entered.
+[INFO ] 2023-07-12 11:16:36.671 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-07-12 11:16:42.954 [main] BaseClass - Customer got wrong product option selected.
+[INFO ] 2023-07-12 11:16:45.168 [main] BaseClass - I want the order to be shipped immediately option is selected.
+[INFO ] 2023-07-12 11:16:58.684 [main] BaseClass - Dispute saved.
+[INFO ] 2023-07-12 11:16:58.782 [main] BaseClass - Verification of Dispute raised Successfully.
+[INFO ] 2023-07-12 11:16:58.782 [main] BaseClass - Client logged out Successfully.
+[INFO ] 2023-07-12 11:16:59.449 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-07-12 11:17:05.178 [main] BaseClass - Open disputes page.
+[INFO ] 2023-07-12 11:17:13.409 [main] BaseClass - Clicked on show disputes.
+[INFO ] 2023-07-12 11:17:16.530 [main] BaseClass - Dispute Declined Status selected from dropdown.
+[INFO ] 2023-07-12 11:17:23.807 [main] BaseClass - Dispute send.
+[INFO ] 2023-07-12 11:17:28.852 [main] BaseClass - Verification of Dispute rejection is successed.
+[INFO ] 2023-07-12 11:17:29.743 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-07-12 11:17:35.831 [main] BaseClass - Product name is entered.
+[INFO ] 2023-07-12 11:17:37.967 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-07-12 11:17:48.155 [main] BaseClass - Verification of open Dispute History successfull.
+[INFO ] 2023-07-12 11:17:53.263 [main] BaseClass - Verification of Dispute declined is successed.
+[INFO ] 2023-07-12 11:18:49.536 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-07-12 11:18:56.782 [main] BaseClass - Product name is entered.
+[INFO ] 2023-07-12 11:18:59.969 [main] BaseClass - Clicked on status dropdown.
+[INFO ] 2023-07-12 11:19:03.068 [main] BaseClass - Processing status is searched.
+[INFO ] 2023-07-12 11:19:06.228 [main] BaseClass - Processing status is searched.
+[INFO ] 2023-07-12 11:19:08.336 [main] BaseClass - Processing status is searched.
+[INFO ] 2023-07-12 11:19:11.491 [main] BaseClass - Tracking number entered.
+[INFO ] 2023-07-12 11:19:15.616 [main] BaseClass - clicked on add tracking button.
+[INFO ] 2023-07-12 11:19:21.121 [main] BaseClass - Clicked on submit tracking button.
+[INFO ] 2023-07-12 11:23:03.169 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-07-12 11:23:10.544 [main] BaseClass - Product name is entered.
+[INFO ] 2023-07-12 11:23:13.740 [main] BaseClass - Clicked on status dropdown.
+[INFO ] 2023-07-12 11:23:16.898 [main] BaseClass - Processing status is searched.
+[INFO ] 2023-07-12 11:23:20.046 [main] BaseClass - Processing status is searched.
+[INFO ] 2023-07-12 11:23:22.121 [main] BaseClass - Processing status is searched.
+[INFO ] 2023-07-12 11:23:25.296 [main] BaseClass - Tracking number entered.
+[INFO ] 2023-07-12 11:23:29.459 [main] BaseClass - clicked on add tracking button.
+[INFO ] 2023-07-12 11:23:34.962 [main] BaseClass - Clicked on submit tracking button.
+[INFO ] 2023-07-12 11:24:01.577 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-07-12 11:24:08.955 [main] BaseClass - Product name is entered.
+[INFO ] 2023-07-12 11:24:12.129 [main] BaseClass - Clicked on status dropdown.
+[INFO ] 2023-07-12 11:24:15.227 [main] BaseClass - Processing status is searched.
+[INFO ] 2023-07-12 11:24:18.433 [main] BaseClass - Processing status is searched.
+[INFO ] 2023-07-12 11:24:20.544 [main] BaseClass - Processing status is searched.
+[INFO ] 2023-07-12 11:24:23.711 [main] BaseClass - Tracking number entered.
+[INFO ] 2023-07-12 11:24:27.888 [main] BaseClass - clicked on add tracking button.
+[INFO ] 2023-07-12 11:24:33.296 [main] BaseClass - Clicked on submit tracking button.
+[INFO ] 2023-07-12 11:38:59.634 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-07-12 11:39:06.986 [main] BaseClass - Product name is entered.
+[INFO ] 2023-07-12 11:39:10.136 [main] BaseClass - Clicked on status dropdown.
+[INFO ] 2023-07-12 11:39:13.229 [main] BaseClass - Processing status is searched.
+[INFO ] 2023-07-12 11:39:16.408 [main] BaseClass - Processing status is searched.
+[INFO ] 2023-07-12 11:39:18.498 [main] BaseClass - Processing status is searched.
+[INFO ] 2023-07-12 11:39:23.686 [main] BaseClass - Tracking number entered.
+[INFO ] 2023-07-12 11:39:26.805 [main] BaseClass - clicked on add tracking button.
+[INFO ] 2023-07-12 11:39:32.598 [main] BaseClass - Clicked on submit tracking button.
+[INFO ] 2023-07-12 11:39:43.534 [main] BaseClass - Verification of adding tracking number is Successfull.
+[INFO ] 2023-07-12 11:39:46.214 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-07-12 11:39:56.348 [main] BaseClass - Product name is entered.
+[INFO ] 2023-07-12 11:39:59.489 [main] BaseClass - clicked on first div
+[INFO ] 2023-07-12 11:40:04.590 [main] BaseClass - click on open dispute button.
+[INFO ] 2023-07-12 11:40:11.002 [main] BaseClass - dispute solution entered.
+[INFO ] 2023-07-12 11:40:19.249 [main] BaseClass - Dispute saved.
+[INFO ] 2023-07-12 11:40:22.295 [main] BaseClass - Verification of Dispute for refund raised Successfully.
+[INFO ] 2023-07-12 11:40:26.217 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-07-12 11:40:30.078 [main] BaseClass - Open disputes page.
+[INFO ] 2023-07-12 11:40:38.371 [main] BaseClass - Clicked on show disputes.
+[INFO ] 2023-07-12 11:40:41.496 [main] BaseClass - Dispute Declined status selected.
+[INFO ] 2023-07-12 11:40:47.721 [main] BaseClass - Dispute send.
+[INFO ] 2023-07-12 11:40:50.784 [main] BaseClass - Verification of Dispute declined is successfull.
+[INFO ] 2023-07-12 11:41:04.184 [main] BaseClass - Verification of Refund Dispute acceptance is successfully.
+[INFO ] 2023-07-12 11:41:04.842 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-07-12 11:41:09.897 [main] BaseClass - Product name is entered.
+[INFO ] 2023-07-12 11:41:12.000 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-07-12 11:41:23.175 [main] BaseClass - Verification of open Dispute History successfull.
+[INFO ] 2023-07-12 11:41:28.304 [main] BaseClass - Verification of Dispute declined is successed.
+[INFO ] 2023-07-12 12:02:41.870 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-07-12 12:02:49.232 [main] BaseClass - Product name is entered.
+[INFO ] 2023-07-12 12:02:52.431 [main] BaseClass - Clicked on status dropdown.
+[INFO ] 2023-07-12 12:02:55.535 [main] BaseClass - Processing status is searched.
+[INFO ] 2023-07-12 12:02:58.684 [main] BaseClass - Processing status is searched.
+[INFO ] 2023-07-12 12:03:00.764 [main] BaseClass - Processing status is searched.
+[INFO ] 2023-07-12 12:03:05.952 [main] BaseClass - Tracking number entered.
+[INFO ] 2023-07-12 12:03:09.021 [main] BaseClass - clicked on add tracking button.
+[INFO ] 2023-07-12 12:03:14.624 [main] BaseClass - Clicked on submit tracking button.
+[INFO ] 2023-07-12 12:03:25.170 [main] BaseClass - Verification of adding tracking number is Successfull.
+[INFO ] 2023-07-12 12:03:27.835 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-07-12 12:03:37.949 [main] BaseClass - Product name is entered.
+[INFO ] 2023-07-12 12:03:41.018 [main] BaseClass - clicked on first div
+[INFO ] 2023-07-12 12:03:46.123 [main] BaseClass - click on open dispute button.
+[INFO ] 2023-07-12 12:03:52.480 [main] BaseClass - dispute solution entered.
+[INFO ] 2023-07-12 12:04:00.822 [main] BaseClass - Dispute saved.
+[INFO ] 2023-07-12 12:04:03.870 [main] BaseClass - Verification of Dispute for refund raised Successfully.
+[INFO ] 2023-07-12 12:04:07.827 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-07-12 12:04:11.638 [main] BaseClass - Open disputes page.
+[INFO ] 2023-07-12 12:04:17.813 [main] BaseClass - Verification of status for Dispute of refund raising failed.
+[INFO ] 2023-07-12 12:10:23.296 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-07-12 12:10:27.084 [main] BaseClass - Open disputes page.
+[INFO ] 2023-07-12 12:11:20.152 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-07-12 12:11:23.976 [main] BaseClass - Open disputes page.
+[INFO ] 2023-07-12 12:12:50.464 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-07-12 12:12:57.904 [main] BaseClass - Product name is entered.
+[INFO ] 2023-07-12 12:13:01.093 [main] BaseClass - Clicked on status dropdown.
+[INFO ] 2023-07-12 12:13:04.289 [main] BaseClass - Processing status is searched.
+[INFO ] 2023-07-12 12:13:07.463 [main] BaseClass - Processing status is searched.
+[INFO ] 2023-07-12 12:13:09.568 [main] BaseClass - Processing status is searched.
+[INFO ] 2023-07-12 12:13:14.792 [main] BaseClass - Tracking number entered.
+[INFO ] 2023-07-12 12:13:17.897 [main] BaseClass - clicked on add tracking button.
+[INFO ] 2023-07-12 12:13:23.678 [main] BaseClass - Clicked on submit tracking button.
+[INFO ] 2023-07-12 12:13:34.831 [main] BaseClass - Verification of adding tracking number is Successfull.
+[INFO ] 2023-07-12 12:13:37.579 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-07-12 12:13:47.768 [main] BaseClass - Product name is entered.
+[INFO ] 2023-07-12 12:13:50.832 [main] BaseClass - clicked on first div
+[INFO ] 2023-07-12 12:13:56.008 [main] BaseClass - click on open dispute button.
+[INFO ] 2023-07-12 12:14:02.359 [main] BaseClass - dispute solution entered.
+[INFO ] 2023-07-12 12:14:10.808 [main] BaseClass - Dispute saved.
+[INFO ] 2023-07-12 12:14:13.886 [main] BaseClass - Verification of Dispute for refund raised Successfully.
+[INFO ] 2023-07-12 12:14:17.883 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-07-12 12:14:21.786 [main] BaseClass - Open disputes page.
+[INFO ] 2023-07-12 12:14:30.182 [main] BaseClass - Clicked on show disputes.
+[INFO ] 2023-07-12 12:14:33.357 [main] BaseClass - Dispute Declined status selected.
+[INFO ] 2023-07-12 12:14:39.593 [main] BaseClass - Dispute send.
+[INFO ] 2023-07-12 12:14:45.670 [main] BaseClass - Verification of Dispute declined is successfull.
+[INFO ] 2023-07-12 12:14:45.730 [main] BaseClass - Verification of status for Dispute of refund raised Successfully.
+[INFO ] 2023-07-12 12:15:02.336 [main] BaseClass - Verification of Refund Dispute acceptance is successfully.
+[INFO ] 2023-07-12 12:15:03.052 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-07-12 12:15:08.211 [main] BaseClass - Product name is entered.
+[INFO ] 2023-07-12 12:15:10.329 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-07-12 12:15:21.488 [main] BaseClass - Verification of open Dispute History successfull.
+[INFO ] 2023-07-12 12:15:26.593 [main] BaseClass - Verification of Dispute declined is successed.
+[INFO ] 2023-07-12 12:29:14.863 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-07-12 12:29:19.236 [main] BaseClass - Product name is entered.
+[INFO ] 2023-07-12 12:29:24.589 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-07-12 12:29:31.892 [main] BaseClass - Customer got wrong product option selected.
+[INFO ] 2023-07-12 12:29:34.118 [main] BaseClass - I want the order to be shipped immediately option is selected.
+[INFO ] 2023-07-12 12:29:47.757 [main] BaseClass - Dispute saved.
+[INFO ] 2023-07-12 12:29:47.831 [main] BaseClass - Verification of Dispute raised Successfully.
+[INFO ] 2023-07-12 12:29:47.831 [main] BaseClass - Client logged out Successfully.
+[INFO ] 2023-07-12 12:29:48.472 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-07-12 12:29:52.278 [main] BaseClass - Open disputes page.
+[INFO ] 2023-07-12 12:30:00.576 [main] BaseClass - Clicked on show disputes.
+[INFO ] 2023-07-12 12:30:06.839 [main] BaseClass - Dispute send.
+[INFO ] 2023-07-12 12:30:12.876 [main] BaseClass - Verification of Dispute conversation is successed.
+[INFO ] 2023-07-12 12:30:24.016 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-07-12 12:30:34.185 [main] BaseClass - Product name is entered.
+[INFO ] 2023-07-12 12:30:48.108 [main] BaseClass - Verification of Dispute history opening is successfull.
+[INFO ] 2023-07-12 12:31:33.804 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-07-12 12:31:41.160 [main] BaseClass - Product name is entered.
+[INFO ] 2023-07-12 12:31:44.332 [main] BaseClass - Clicked on status dropdown.
+[INFO ] 2023-07-12 12:31:47.490 [main] BaseClass - Processing status is searched.
+[INFO ] 2023-07-12 12:31:50.647 [main] BaseClass - Processing status is searched.
+[INFO ] 2023-07-12 12:31:55.899 [main] BaseClass - Tracking number entered.
+[INFO ] 2023-07-12 12:32:00.068 [main] BaseClass - clicked on add tracking button.
+[INFO ] 2023-07-12 12:32:06.739 [main] BaseClass - Clicked on submit tracking button.
+[INFO ] 2023-07-12 12:32:12.853 [main] BaseClass - Verification of adding tracking number is failed.
+[INFO ] 2023-07-12 12:34:02.870 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-07-12 12:34:10.212 [main] BaseClass - Product name is entered.
+[INFO ] 2023-07-12 12:34:13.360 [main] BaseClass - Clicked on status dropdown.
+[INFO ] 2023-07-12 12:34:16.454 [main] BaseClass - Processing status is searched.
+[INFO ] 2023-07-12 12:34:19.617 [main] BaseClass - Processing status is searched.
+[INFO ] 2023-07-12 12:34:24.879 [main] BaseClass - Tracking number entered.
+[INFO ] 2023-07-12 12:34:29.012 [main] BaseClass - clicked on add tracking button.
+[INFO ] 2023-07-12 12:34:35.460 [main] BaseClass - Clicked on submit tracking button.
+[INFO ] 2023-07-12 12:34:46.126 [main] BaseClass - Verification of adding tracking number is Successfull.
+[INFO ] 2023-07-12 12:34:50.089 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-07-12 12:35:00.219 [main] BaseClass - Product name is entered.
+[INFO ] 2023-07-12 12:35:03.514 [main] BaseClass - clicked on first div
+[INFO ] 2023-07-12 12:35:08.608 [main] BaseClass - click on open dispute button.
+[INFO ] 2023-07-12 12:35:14.841 [main] BaseClass - dispute solution entered.
+[INFO ] 2023-07-12 12:35:23.121 [main] BaseClass - Dispute saved.
+[INFO ] 2023-07-12 12:35:26.197 [main] BaseClass - Verification of Dispute for refund raised Successfully.
+[INFO ] 2023-07-12 12:35:29.858 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-07-12 12:35:33.699 [main] BaseClass - Open disputes page.
+[INFO ] 2023-07-12 12:35:41.994 [main] BaseClass - Clicked on show disputes.
+[INFO ] 2023-07-12 12:35:48.156 [main] BaseClass - Dispute send.
+[INFO ] 2023-07-12 12:35:55.194 [main] BaseClass - Verification of conversation in dispute is successfull.
+[INFO ] 2023-07-12 12:36:01.504 [main] BaseClass - Verification of close refund dispute.
+[INFO ] 2023-07-12 12:36:05.577 [main] BaseClass - Agent loggout successfully
+[INFO ] 2023-07-12 12:36:06.282 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-07-12 12:36:16.404 [main] BaseClass - Product name is entered.
+[INFO ] 2023-07-12 12:36:30.452 [main] BaseClass - Verification of Dispute history opening is successfull.
+[INFO ] 2023-07-12 12:46:50.857 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-07-12 12:46:58.189 [main] BaseClass - Product name is entered.
+[INFO ] 2023-07-12 12:47:01.413 [main] BaseClass - Clicked on status dropdown.
+[INFO ] 2023-07-12 12:47:04.509 [main] BaseClass - Processing status is searched.
+[INFO ] 2023-07-12 12:47:13.919 [main] BaseClass - Tracking number entered.
+[INFO ] 2023-07-12 12:47:17.045 [main] BaseClass - clicked on add tracking button.
+[INFO ] 2023-07-12 12:47:22.652 [main] BaseClass - Clicked on submit tracking button.
+[INFO ] 2023-07-12 12:47:34.015 [main] BaseClass - Verification of adding tracking number is Successfull.
+[INFO ] 2023-07-12 12:47:36.956 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-07-12 12:47:47.065 [main] BaseClass - Product name is entered.
+[INFO ] 2023-07-12 12:47:50.368 [main] BaseClass - clicked on first div
+[INFO ] 2023-07-12 12:47:55.465 [main] BaseClass - click on open dispute button.
+[INFO ] 2023-07-12 12:48:01.694 [main] BaseClass - dispute solution entered.
+[INFO ] 2023-07-12 12:48:10.045 [main] BaseClass - Dispute saved.
+[INFO ] 2023-07-12 12:48:13.095 [main] BaseClass - Verification of Dispute raised for resend Successfully.
+[INFO ] 2023-07-12 12:48:16.753 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-07-12 12:48:20.533 [main] BaseClass - Open disputes page.
+[INFO ] 2023-07-12 12:48:28.800 [main] BaseClass - Clicked on show disputes.
+[INFO ] 2023-07-12 12:48:31.909 [main] BaseClass - Dispute Accepted.
+[INFO ] 2023-07-12 12:48:38.138 [main] BaseClass - Dispute send.
+[INFO ] 2023-07-12 12:48:43.174 [main] BaseClass - Verification of Dispute acceptance is successfull.
+[INFO ] 2023-07-12 12:48:43.828 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-07-12 12:48:53.892 [main] BaseClass - Product name is entered.
+[INFO ] 2023-07-12 12:49:07.744 [main] BaseClass - Verification of Dispute history opening is successfull.
+[INFO ] 2023-07-12 12:49:07.770 [main] BaseClass - Verification of Dispute acceptance is successed.
+[INFO ] 2023-07-12 12:50:08.206 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-07-12 12:50:15.566 [main] BaseClass - Product name is entered.
+[INFO ] 2023-07-12 12:50:18.752 [main] BaseClass - Clicked on status dropdown.
+[INFO ] 2023-07-12 12:50:21.862 [main] BaseClass - Processing status is searched.
+[INFO ] 2023-07-12 12:50:25.058 [main] BaseClass - Processing status is searched.
+[INFO ] 2023-07-12 12:50:31.382 [main] BaseClass - Tracking number entered.
+[INFO ] 2023-07-12 12:50:34.511 [main] BaseClass - clicked on add tracking button.
+[INFO ] 2023-07-12 12:50:40.209 [main] BaseClass - Clicked on submit tracking button.
+[INFO ] 2023-07-12 12:50:51.033 [main] BaseClass - Verification of adding tracking number is Successfull.
+[INFO ] 2023-07-12 12:50:53.702 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-07-12 12:51:03.814 [main] BaseClass - Product name is entered.
+[INFO ] 2023-07-12 12:51:07.118 [main] BaseClass - clicked on first div
+[INFO ] 2023-07-12 13:07:11.457 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-07-12 13:07:18.674 [main] BaseClass - Product name is entered.
+[INFO ] 2023-07-12 13:07:21.782 [main] BaseClass - Clicked on status dropdown.
+[INFO ] 2023-07-12 13:07:24.952 [main] BaseClass - Processing status is searched.
+[INFO ] 2023-07-12 13:07:28.109 [main] BaseClass - Processing status is searched.
+[INFO ] 2023-07-12 13:07:34.373 [main] BaseClass - Tracking number entered.
+[INFO ] 2023-07-12 13:07:37.500 [main] BaseClass - clicked on add tracking button.
+[INFO ] 2023-07-12 13:07:43.028 [main] BaseClass - Clicked on submit tracking button.
+[INFO ] 2023-07-12 13:07:50.994 [main] BaseClass - Verification of adding tracking number is Successfull.
+[INFO ] 2023-07-12 13:07:53.640 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-07-12 13:08:03.630 [main] BaseClass - Product name is entered.
+[INFO ] 2023-07-12 13:08:06.954 [main] BaseClass - clicked on first div
+[INFO ] 2023-07-12 13:09:56.209 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-07-12 13:10:06.431 [main] BaseClass - Product name is entered.
+[INFO ] 2023-07-12 13:10:09.734 [main] BaseClass - clicked on first div
+[INFO ] 2023-07-12 13:12:13.658 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-07-12 13:12:23.873 [main] BaseClass - Product name is entered.
+[INFO ] 2023-07-12 13:12:27.144 [main] BaseClass - clicked on first div
+[INFO ] 2023-07-12 13:12:49.749 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-07-12 13:12:59.908 [main] BaseClass - Product name is entered.
+[INFO ] 2023-07-12 13:13:03.254 [main] BaseClass - clicked on first div
+[INFO ] 2023-07-12 13:13:52.368 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-07-12 13:14:02.668 [main] BaseClass - Product name is entered.
+[INFO ] 2023-07-12 13:14:05.993 [main] BaseClass - clicked on first div
+[INFO ] 2023-07-12 13:14:14.131 [main] BaseClass - click on open dispute button.
+[INFO ] 2023-07-12 13:14:20.447 [main] BaseClass - dispute solution entered.
+[INFO ] 2023-07-12 13:14:28.723 [main] BaseClass - Dispute saved.
+[INFO ] 2023-07-12 13:14:31.825 [main] BaseClass - Verification of Dispute for resend raised Successfully.
+[INFO ] 2023-07-12 13:14:35.656 [main] BaseClass - Agent logged in Successfully.
+[INFO ] 2023-07-12 13:14:39.339 [main] BaseClass - Open disputes page.
+[INFO ] 2023-07-12 13:14:47.613 [main] BaseClass - Clicked on show disputes.
+[INFO ] 2023-07-12 13:14:50.743 [main] BaseClass - Dispute declined.
+[INFO ] 2023-07-12 13:14:57.015 [main] BaseClass - Dispute send.
+[INFO ] 2023-07-12 13:15:02.061 [main] BaseClass - Verification of Dispute declining is successfull.
+[INFO ] 2023-07-12 13:15:02.647 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-07-12 13:15:13.372 [main] BaseClass - Product name is entered.
+[INFO ] 2023-07-12 13:15:27.324 [main] BaseClass - Verification of Dispute history opening is successfull.
+[INFO ] 2023-07-12 13:15:27.352 [main] BaseClass - Verification of Dispute declined is successed.
+[INFO ] 2023-07-12 13:18:20.287 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-07-12 13:18:24.600 [main] BaseClass - Product name is entered.
+[INFO ] 2023-07-12 13:18:26.735 [main] BaseClass - Clicked on first div.
+[INFO ] 2023-07-12 13:18:40.316 [main] BaseClass - Checkboxes selected.
+[INFO ] 2023-07-12 13:18:40.399 [main] BaseClass - Clicked on Send Request.
+[INFO ] 2023-07-12 13:18:46.512 [main] BaseClass - Special Request is opend by Client Successfully..
+[INFO ] 2023-07-12 13:18:52.868 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-07-12 13:18:56.552 [main] BaseClass - Open disputes page.
+[INFO ] 2023-07-12 13:19:00.208 [main] BaseClass - Click on special request.
+[INFO ] 2023-07-12 13:19:03.272 [main] BaseClass - Click on special request.
+[INFO ] 2023-07-12 13:19:21.872 [main] BaseClass - Verification of Close Special request is successfull..
+[INFO ] 2023-07-12 13:19:25.491 [main] BaseClass - Client logged in Successfully.
+[INFO ] 2023-07-12 13:19:50.463 [main] BaseClass - Verification of Close Special request is successfull..
