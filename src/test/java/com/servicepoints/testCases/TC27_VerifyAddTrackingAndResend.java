@@ -112,12 +112,8 @@ public class TC27_VerifyAddTrackingAndResend extends BaseClass {
 		logger.info("Product name is entered.");
 
 		cop.clickOnStatusDrop();
-		// Thread.sleep(3000);
 		cop.dropdownSearch(process);
-		// logger.info("fulfilled status is entered.");
-		// cop.clickOnFulfillTab();
-		// cop.clickOnFProcessingTab();
-		// aop.clickOnProcessTab();
+
 		cop.clickOnProcessingTab();
 		Thread.sleep(3000);
 		cop.clickOnFDiv();
@@ -188,6 +184,11 @@ public class TC27_VerifyAddTrackingAndResend extends BaseClass {
 		asop.clickOnFrstDsp();
 		Thread.sleep(3000);
 
+		String exp="Open dispute - Message received";
+		
+		String act=asop.getDisputeStatus();
+		Assert.assertEquals(act, exp);
+		
 		asop.scrollTillShowDispute(driver);
 		Thread.sleep(2000);
 

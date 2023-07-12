@@ -115,26 +115,10 @@ public class TC26_VerifyRefundAndConversation extends BaseClass {
 		logger.info("Product name is entered.");
 
 		cop.clickOnStatusDrop();
-		// Thread.sleep(3000);
 		cop.dropdownSearch(process);
-		// logger.info("fulfilled status is entered.");
-		// cop.clickOnFulfillTab();
-		// cop.clickOnFProcessingTab();
-		// aop.clickOnProcessTab();
 		cop.clickOnProcessingTab();
 		Thread.sleep(3000);
 		cop.clickOnFDiv();
-
-//		if(driver.getPageSource().contains("No orders found ")) {
-//			cop.clickOnStatusDrop();
-//			Thread.sleep(1000);
-//			cop.dropdownSearch(fulfillStatus);
-//			Thread.sleep(1000);
-//			cop.clickOnFulfillTab();
-//			Thread.sleep(1000);
-//			cop.clickOnFDiv();
-//			Thread.sleep(1000);
-//		}
 
 		logger.info("clicked on first div");
 
@@ -190,17 +174,19 @@ public class TC26_VerifyRefundAndConversation extends BaseClass {
 
 		asop.clickOnFrstDsp();
 		Thread.sleep(3000);
-
+		
+		String exp="Open dispute - Message received";
+		
+		String act=asop.getDisputeStatus();
+		Assert.assertEquals(act, exp);
+		
+		
 		asop.scrollTillShowDispute(driver);
 		Thread.sleep(2000);
 
 		asop.clickOnShowDsp();
 		logger.info("Clicked on show disputes.");
 		Thread.sleep(3000);
-
-//		asop.selectDspStatusToDeclined();
-//		logger.info("Dispute Declined status selected.");
-//		Thread.sleep(3000);
 
 		asop.sendAnswer(agentAnswer);
 		Thread.sleep(3000);

@@ -111,6 +111,11 @@ public class TC25_VerifyDisputeForConversation extends BaseClass {
 		asop.clickOnFrstDsp();
 		Thread.sleep(3000);
 
+		String exp="Open dispute - Message received";
+		
+		String act=asop.getDisputeStatus();
+		Assert.assertEquals(act, exp);
+		
 		asop.scrollTillShowDispute(driver);
 		Thread.sleep(2000);
 

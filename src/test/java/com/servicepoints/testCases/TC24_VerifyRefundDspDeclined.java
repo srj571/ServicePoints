@@ -118,9 +118,6 @@ public class TC24_VerifyRefundDspDeclined extends BaseClass {
 		Thread.sleep(3000);
 		logger.info("clicked on first div");
 		
-		
-		
-
 		cop.scrollTillOpenDisputesBtn(driver);
 		Thread.sleep(2000);
 
@@ -151,7 +148,6 @@ public class TC24_VerifyRefundDspDeclined extends BaseClass {
 			logger.info("Verification of Dispute for refund raised Successfully.");
 			Thread.sleep(3000);
 		} else {
-			// captureScreen(driver, "disputeRaised");
 			logger.info("Verification of Dispute for refund raising failed.");
 			Assert.assertTrue(false);
 		}
