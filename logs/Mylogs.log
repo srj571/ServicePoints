@@ -8226,3 +8226,46 @@
 [INFO ] 2023-07-11 18:30:52.952 [main] BaseClass - Go to Orders page.
 [INFO ] 2023-07-11 18:30:59.264 [main] BaseClass - Status changed to Processing.
 [INFO ] 2023-07-11 18:30:59.312 [main] BaseClass - Verification of accepting quotation is Successed.
+[INFO ] 2023-07-12 10:15:40.152 [main] BaseClass - Application Opened.
+[INFO ] 2023-07-12 10:15:40.280 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-07-12 10:15:40.356 [main] BaseClass - Password is entered.
+[INFO ] 2023-07-12 10:15:45.481 [main] BaseClass - Verification with invalid credentials while login is failed.
+[INFO ] 2023-07-12 10:15:45.496 [main] BaseClass - Application Opened.
+[INFO ] 2023-07-12 10:15:45.568 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-07-12 10:15:45.631 [main] BaseClass - Password is entered.
+[INFO ] 2023-07-12 10:19:11.777 [main] BaseClass - Application Opened.
+[INFO ] 2023-07-12 10:19:11.893 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-07-12 10:19:11.968 [main] BaseClass - Password is entered.
+[INFO ] 2023-07-12 10:19:17.088 [main] BaseClass - Verification with invalid credentials while login is failed.
+[INFO ] 2023-07-12 10:19:17.512 [main] BaseClass - Application Opened.
+[INFO ] 2023-07-12 10:19:17.604 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-07-12 10:19:17.674 [main] BaseClass - Password is entered.
+[INFO ] 2023-07-12 10:19:22.761 [main] BaseClass - Login to the Admin Dashboard Successfully.
+[INFO ] 2023-07-12 10:20:31.307 [main] BaseClass - Application Opened.
+[INFO ] 2023-07-12 10:20:31.454 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-07-12 10:20:31.538 [main] BaseClass - Password is entered.
+[INFO ] 2023-07-12 10:20:36.663 [main] BaseClass - Verification with invalid credentials while login is Successfully.
+[INFO ] 2023-07-12 10:20:37.089 [main] BaseClass - Application Opened.
+[INFO ] 2023-07-12 10:20:37.186 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-07-12 10:20:37.262 [main] BaseClass - Password is entered.
+[INFO ] 2023-07-12 10:20:42.346 [main] BaseClass - Login to the Admin Dashboard Successfully.
+[INFO ] 2023-07-12 10:26:11.723 [main] BaseClass - Application Opened.
+[INFO ] 2023-07-12 10:26:11.881 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-07-12 10:26:11.974 [main] BaseClass - Password is entered.
+[INFO ] 2023-07-12 10:26:17.109 [main] BaseClass - Verification with invalid credentials while login is failed.
+[INFO ] 2023-07-12 10:26:17.536 [main] BaseClass - Application Opened.
+[INFO ] 2023-07-12 10:26:17.633 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-07-12 10:26:17.726 [main] BaseClass - Password is entered.
+[INFO ] 2023-07-12 10:26:22.801 [main] BaseClass - Login to the Admin Dashboard Successfully.
+[INFO ] 2023-07-12 10:38:01.920 [main] BaseClass - Application Opened.
+[INFO ] 2023-07-12 10:38:02.034 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-07-12 10:38:02.112 [main] BaseClass - Password is entered.
+[INFO ] 2023-07-12 10:38:07.213 [main] BaseClass - Verification with invalid credentials while login is Successfully.
+[INFO ] 2023-07-12 10:38:07.642 [main] BaseClass - Application Opened.
+[INFO ] 2023-07-12 10:38:07.741 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-07-12 10:38:07.824 [main] BaseClass - Password is entered.
+[INFO ] 2023-07-12 10:38:12.909 [main] BaseClass - Login to the Admin Dashboard Successfully.
+[INFO ] 2023-07-12 10:38:13.317 [main] BaseClass - Application Opened.
+[INFO ] 2023-07-12 10:38:13.401 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-07-12 10:38:13.478 [main] BaseClass - Password is entered.
+[INFO ] 2023-07-12 10:38:18.631 [main] BaseClass - Verification with invalid credentials while login is Successfully.

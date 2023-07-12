@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-11T18:27:45 IST" name="Suite" finished-at="2023-07-11T18:30:59 IST" duration-ms="193769">
+  <suite started-at="2023-07-12T10:37:57 IST" name="Suite" finished-at="2023-07-12T10:38:18 IST" duration-ms="20802">
     <groups>
     </groups>
-    <test started-at="2023-07-11T18:27:45 IST" name="Test" finished-at="2023-07-11T18:30:59 IST" duration-ms="193769">
-      <class name="com.servicepoints.testCases.TC65_VerifyProductPageOnSupportAndTeamleadSide">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.servicepoints.testCases.TC65_VerifyProductPageOnSupportAndTeamleadSide@29ef6856]" started-at="2023-07-11T18:27:45 IST" name="setup" finished-at="2023-07-11T18:27:49 IST" duration-ms="4003" status="PASS">
+    <test started-at="2023-07-12T10:37:57 IST" name="Test" finished-at="2023-07-12T10:38:18 IST" duration-ms="20802">
+      <class name="com.servicepoints.testCases.TC01_AdminLoginTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.servicepoints.testCases.TC01_AdminLoginTest@545de5a4]" started-at="2023-07-12T10:37:57 IST" name="setup" finished-at="2023-07-12T10:38:01 IST" duration-ms="3983" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,27 +18,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="submitAndAcceptQuotation()[pri:1, instance:com.servicepoints.testCases.TC65_VerifyProductPageOnSupportAndTeamleadSide@29ef6856]" started-at="2023-07-11T18:27:49 IST" name="submitAndAcceptQuotation" finished-at="2023-07-11T18:28:55 IST" duration-ms="65882" status="PASS">
+        <test-method signature="verifyLoginWithInvalidCredentials()[pri:1, instance:com.servicepoints.testCases.TC01_AdminLoginTest@545de5a4]" started-at="2023-07-12T10:38:01 IST" name="verifyLoginWithInvalidCredentials" finished-at="2023-07-12T10:38:07 IST" duration-ms="5302" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- submitAndAcceptQuotation -->
-        <test-method signature="requoteQuoteByClient()[pri:2, instance:com.servicepoints.testCases.TC65_VerifyProductPageOnSupportAndTeamleadSide@29ef6856]" started-at="2023-07-11T18:28:55 IST" name="requoteQuoteByClient" finished-at="2023-07-11T18:29:40 IST" duration-ms="44508" status="PASS">
+        </test-method> <!-- verifyLoginWithInvalidCredentials -->
+        <test-method signature="adminLoginTest()[pri:2, instance:com.servicepoints.testCases.TC01_AdminLoginTest@545de5a4]" started-at="2023-07-12T10:38:07 IST" name="adminLoginTest" finished-at="2023-07-12T10:38:12 IST" duration-ms="5691" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- requoteQuoteByClient -->
-        <test-method signature="supplierSubmitQuotationAgain()[pri:3, instance:com.servicepoints.testCases.TC65_VerifyProductPageOnSupportAndTeamleadSide@29ef6856]" started-at="2023-07-11T18:29:40 IST" name="supplierSubmitQuotationAgain" finished-at="2023-07-11T18:30:18 IST" duration-ms="38402" status="PASS">
+        </test-method> <!-- adminLoginTest -->
+        <test-method signature="verifyErrorMsgAfterPassingWrongMailId()[pri:3, instance:com.servicepoints.testCases.TC01_AdminLoginTest@545de5a4]" started-at="2023-07-12T10:38:12 IST" name="verifyErrorMsgAfterPassingWrongMailId" finished-at="2023-07-12T10:38:18 IST" duration-ms="5716" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- supplierSubmitQuotationAgain -->
-        <test-method signature="acceptQuotationFromTeamlead()[pri:4, instance:com.servicepoints.testCases.TC65_VerifyProductPageOnSupportAndTeamleadSide@29ef6856]" started-at="2023-07-11T18:30:18 IST" name="acceptQuotationFromTeamlead" finished-at="2023-07-11T18:30:59 IST" duration-ms="40827" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- acceptQuotationFromTeamlead -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.servicepoints.testCases.TC65_VerifyProductPageOnSupportAndTeamleadSide@29ef6856]" started-at="2023-07-11T18:30:59 IST" name="tearDown" finished-at="2023-07-11T18:30:59 IST" duration-ms="108" status="PASS">
+        </test-method> <!-- verifyErrorMsgAfterPassingWrongMailId -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.servicepoints.testCases.TC01_AdminLoginTest@545de5a4]" started-at="2023-07-12T10:38:18 IST" name="tearDown" finished-at="2023-07-12T10:38:18 IST" duration-ms="74" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.servicepoints.testCases.TC65_VerifyProductPageOnSupportAndTeamleadSide -->
+      </class> <!-- com.servicepoints.testCases.TC01_AdminLoginTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
