@@ -16,6 +16,7 @@ import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
+import com.servicepoints.testCases.BaseClass;
 
 public class Reporting extends TestListenerAdapter {
 	public ExtentHtmlReporter htmlReporter;
@@ -58,7 +59,7 @@ public class Reporting extends TestListenerAdapter {
 																							// to the report with GREEN
 																							// color highlighted
 
-		String screenshotPath = System.getProperty("user.dir") + "\\Screenshots\\" + tr.getName() + ".png";
+		String screenshotPath = System.getProperty("user.dir") + "/Screenshots/" + tr.getName() + ".png";
 
 		File f = new File(screenshotPath);
 

@@ -2,9 +2,9 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
 
-	<!--<listeners>
+	<listeners>
 		<listener class-name="com.servicepoints.utilities.Reporting"></listener>
-	</listeners> -->
+	</listeners>
 		
 	<parameter name="browser" value="chrome"></parameter>
 	
@@ -44,8 +44,8 @@
       <class name="com.servicepoints.testCases.TC24_VerifyRefundDspDeclined"/>
       <class name="com.servicepoints.testCases.TC25_VerifyDisputeForConversation"/>
       <class name="com.servicepoints.testCases.TC26_VerifyRefundAndConversation"/> 
-      <class name="com.servicepoints.testCases.TC27_VerifyAddTrackingAndResend"/>-->      
-      <class name="com.servicepoints.testCases.TC28_VerifyDeclinedResendDispute"/>
+      <class name="com.servicepoints.testCases.TC27_VerifyAddTrackingAndResend"/>   
+      <class name="com.servicepoints.testCases.TC28_VerifyDeclinedResendDispute"/>-->
       <!--<class name="com.servicepoints.testCases.TC29_VerifySpecialRequestFunction"/>
       <class name="com.servicepoints.testCases.TC30_VerifyCloseSpecialRequestFunction"/>
       <class name="com.servicepoints.testCases.TC31_VerifySpecialRequestCloseByAdminSP"/>
@@ -392,6 +392,13 @@
 			  <include name="tearDown"></include>
 		  </methods>
 	  </class>-->
+	  <class name="com.servicepoints.testCases.TC70_VerifyNotesForSupplierAndSupportFromClient">
+		  <methods>
+			  <include name="setup"></include>
+			  <include name="verifyClientNoteFromSupport"></include>
+			  <include name="tearDown"></include>
+		  </methods>
+	  </class>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

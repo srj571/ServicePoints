@@ -1147,6 +1147,47 @@ public class ReadConfig {
 		String pro69=po.getProperty("product69");
 		return pro69;
 	}
+	
+	public String getProductForTC70() {
+		String pro70=po.getProperty("product70");
+		return pro70;
+	}
+	
+	public String getSupportMailForCNote() {
+		String mail=po.getProperty("supportMailForCNote");
+		return mail;
+	}
+	
+	public String getSupportPassForCNote() {
+		String pass=po.getProperty("supportPassForCNote");
+		return pass;
+	}
+	
+	public String getSupplierMailForCNote() {
+		String smail=po.getProperty("supplierMailForNote");
+		return smail;
+	}
+	
+	public String getSupplierPassForCNote() {
+		String cpass=po.getProperty("supplierPassForNote");
+		return cpass;
+	}
+	
+	public String clientNameForNote() {
+		String cname=po.getProperty("clientNameForNote");
+		return cname;
+	}
+	
+	public String getSupplierNoteContent() {
+		String note=po.getProperty("supplierNote");
+		return note;
+	}
+	
+	public String getTextForAgentNLNotes() {
+		String text=po.getProperty("text");
+		return text;
+	}
+	
 }
 
 

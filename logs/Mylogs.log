@@ -8676,3 +8676,31 @@
 [INFO ] 2023-07-12 19:01:16.775 [main] BaseClass - Product name is entered.
 [INFO ] 2023-07-12 19:01:31.123 [main] BaseClass - Verification of Dispute history opening is successfull.
 [INFO ] 2023-07-12 19:01:31.159 [main] BaseClass - Verification of Dispute declined is successed.
+[INFO ] 2023-07-13 11:12:46.607 [main] BaseClass - Application Opened.
+[INFO ] 2023-07-13 11:12:46.781 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-07-13 11:12:46.890 [main] BaseClass - Password is entered.
+[INFO ] 2023-07-13 11:12:52.064 [main] BaseClass - Verification with invalid credentials while login is Successfully.
+[INFO ] 2023-07-13 11:12:55.791 [main] BaseClass - Application Opened.
+[INFO ] 2023-07-13 11:12:55.902 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-07-13 11:12:55.979 [main] BaseClass - Password is entered.
+[INFO ] 2023-07-13 11:13:01.410 [main] BaseClass - Login to Admin Dashboard failed.
+[INFO ] 2023-07-13 11:13:05.390 [main] BaseClass - Application Opened.
+[INFO ] 2023-07-13 11:13:05.493 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-07-13 11:13:05.572 [main] BaseClass - Password is entered.
+[INFO ] 2023-07-13 11:13:10.732 [main] BaseClass - Verification with invalid mail ID while login is Successfully.
+[INFO ] 2023-07-13 14:40:27.382 [main] BaseClass - Application Opened.
+[INFO ] 2023-07-13 14:40:27.508 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-07-13 14:40:27.593 [main] BaseClass - Password is entered.
+[INFO ] 2023-07-13 14:41:08.747 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-07-13 14:41:08.836 [main] BaseClass - Password is entered.
+[INFO ] 2023-07-13 14:41:19.208 [main] BaseClass - Verification of Client name is Successfull..
+[INFO ] 2023-07-13 14:59:57.694 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-07-13 14:59:57.777 [main] BaseClass - Password is entered.
+[INFO ] 2023-07-13 15:00:07.957 [main] BaseClass - Verification of Client name is Successfull..
+[INFO ] 2023-07-13 15:00:12.547 [main] BaseClass - Verification of Client note for supplier is updated Successfully..
+[INFO ] 2023-07-13 15:00:12.842 [main] BaseClass - Verification of Client note for supplier exapansion is failed..
+[INFO ] 2023-07-13 15:00:40.258 [main] BaseClass - Email_id is entered.
+[INFO ] 2023-07-13 15:00:40.345 [main] BaseClass - Password is entered.
+[INFO ] 2023-07-13 15:00:50.052 [main] BaseClass - Verification of Client name is Successfull..
+[INFO ] 2023-07-13 15:00:54.576 [main] BaseClass - Verification of Client note for supplier is updated Successfully..
+[INFO ] 2023-07-13 15:00:56.855 [main] BaseClass - Verification of Client note for supplier is expanded Successfully..

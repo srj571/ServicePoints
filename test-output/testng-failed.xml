@@ -2,22 +2,18 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="com.servicepoints.utilities.Reporting"/>
+  </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.servicepoints.testCases.TC26_VerifyRefundAndConversation">
+      <class name="com.servicepoints.testCases.TC70_VerifyNotesForSupplierAndSupportFromClient">
         <methods>
           <include name="setup"/>
-          <include name="verifyRefundAndConversation"/>
+          <include name="verifyClientNoteFromSupport"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.servicepoints.testCases.TC26_VerifyRefundAndConversation -->
-      <class name="com.servicepoints.testCases.TC27_VerifyAddTrackingAndResend">
-        <methods>
-          <include name="verifyAddTrackingAndResendProduct"/>
-          <include name="setup"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.servicepoints.testCases.TC27_VerifyAddTrackingAndResend -->
+      </class> <!-- com.servicepoints.testCases.TC70_VerifyNotesForSupplierAndSupportFromClient -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

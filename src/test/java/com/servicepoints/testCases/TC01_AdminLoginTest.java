@@ -24,7 +24,7 @@ public class TC01_AdminLoginTest extends BaseClass {
 		lp.clickLoginbtn();
 		Thread.sleep(5000);
 
-		if (driver.getTitle().equals("Admin Dashboard | Service Points")) {
+		if (driver.getTitle().equals("Admin Dashboard | Service Point")) {
 			Assert.assertTrue(true);
 			driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 			logger.info("Login to the Admin Dashboard Successfully.");

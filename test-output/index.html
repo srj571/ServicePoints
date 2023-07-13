@@ -103,7 +103,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.servicepoints.testCases.TC28_VerifyDeclinedResendDispute" class="method navigator-link" hash-for-method="verifyDeclinedResendDispute">verifyDeclinedResendDispute</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.servicepoints.testCases.TC70_VerifyNotesForSupplierAndSupportFromClient" class="method navigator-link" hash-for-method="verifyClientNoteFromSupport">verifyClientNoteFromSupport</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -121,14 +121,14 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.servicepoints.testCases.TC28_VerifyDeclinedResendDispute</span>
+              <span class="class-name">com.servicepoints.testCases.TC70_VerifyNotesForSupplierAndSupportFromClient</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyDeclinedResendDispute">
-                  </a> <!-- verifyDeclinedResendDispute -->
-                  <span class="method-name">verifyDeclinedResendDispute</span>
+                  <a name="verifyClientNoteFromSupport">
+                  </a> <!-- verifyClientNoteFromSupport -->
+                  <span class="method-name">verifyClientNoteFromSupport</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -144,9 +144,18 @@
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.servicepoints.utilities.Reporting&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.servicepoints.testCases.TC28_VerifyDeclinedResendDispute&quot;/&gt;
+      &lt;class name=&quot;com.servicepoints.testCases.TC70_VerifyNotesForSupplierAndSupportFromClient&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;setup&quot;/&gt;
+          &lt;include name=&quot;verifyClientNoteFromSupport&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.servicepoints.testCases.TC70_VerifyNotesForSupplierAndSupportFromClient --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -188,14 +197,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyDeclinedResendDispute')
-data.setCell(0, 2, 'com.servicepoints.testCases.TC28_VerifyDeclinedResendDispute')
-data.setCell(0, 3, 144179);
+data.setCell(0, 1, 'verifyClientNoteFromSupport')
+data.setCell(0, 2, 'com.servicepoints.testCases.TC70_VerifyNotesForSupplierAndSupportFromClient')
+data.setCell(0, 3, 16812);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 16 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -221,19 +230,19 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.servicepoints.testCases.TC28_VerifyDeclinedResendDispute</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
+              <div class="chronological-class-name">com.servicepoints.testCases.TC70_VerifyNotesForSupplierAndSupportFromClient</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
                 <span class="method-name">setup(chrome)</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-class before -->
+              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifyDeclinedResendDispute</span>
-                <span class="method-start">4233 ms</span>
+                <span class="method-name">verifyClientNoteFromSupport</span>
+                <span class="method-start">3611 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-class after">
+              <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">148416 ms</span>
-              </div> <!-- configuration-class after -->
+                <span class="method-start">20434 ms</span>
+              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
